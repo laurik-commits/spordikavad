@@ -81,10 +81,10 @@ def parse_home_field(page: str) -> str:
     return html.unescape(m.group(1)).strip() if m else ""
 
 
-def to_event(g: dict, venue: str, league: str) -> Event:
+def to_event(g: dict, venue: str, league: str, level: int = 1) -> Event:
     return new_event(
         source=NAME, sport=SPORT, league=league, start=g["start"], home=g["home"], away=g["away"],
-        venue=venue, city="", url=f"{BASE}/protocol/{g['id']}", time_tbc=g["time_tbc"],
+        venue=venue, city="", url=f"{BASE}/protocol/{g['id']}", time_tbc=g["time_tbc"], level=level,
     )
 
 
@@ -113,5 +113,5 @@ def fetch(fetcher, source: dict | None = None, today: date | None = None) -> lis
                     log.warning("%s: protokolli %s ei saanud: %s", NAME, g["id"], exc)
                 if not venue:
                     venue = home_field(g["home_team_url"])
-            events.append(to_event(g, venue, comp["league"]))
+            events.append(to_event(g, venue, comp["league"], comp.get("level", 1)))
     return events

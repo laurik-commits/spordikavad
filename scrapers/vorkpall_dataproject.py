@@ -61,7 +61,7 @@ def parse(page: str, comp: dict) -> list[Event]:
                 source=NAME, sport=SPORT, league=comp["league"], start=start, home=home, away=away,
                 venue=_field(block, "LB_Palasport"), city="",
                 url=f"{base_url(comp)}MatchStatistics.aspx?mID={mid.group(1)}&{comp_query(comp)}",
-                time_tbc=dm.group(2) is None,
+                time_tbc=dm.group(2) is None, level=comp.get("level", 1),
             )
         )
     return events

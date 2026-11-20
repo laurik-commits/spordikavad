@@ -9,6 +9,12 @@ from zoneinfo import ZoneInfo
 
 TALLINN = ZoneInfo("Europe/Tallinn")
 
+# tase → (nimi valikus, kaust, pealkirja algus)
+LEVELS = {
+    1: {"name": "Kõrgliigad", "prefix": "", "title": "Spordimängud"},
+    2: {"name": "Esiliigad", "prefix": "esiliigad/", "title": "Esiliigade mängud"},
+}
+
 SPORTS = {
     "jalgpall": "Jalgpall",
     "korvpall": "Korvpall",
@@ -33,6 +39,7 @@ class Event:
     url: str  # link allika mängulehele (või liiga kalendrile)
     source: str  # adapteri nimi
     time_tbc: bool = False  # True, kui kellaaeg pole veel kinnitatud
+    level: int = 1  # 1 = kõrgliiga, 2 = esiliiga (eraldi kalender)
 
     def __post_init__(self) -> None:
         if self.sport not in SPORTS:
@@ -70,6 +77,7 @@ def new_event(
     city: str,
     url: str,
     time_tbc: bool = False,
+    level: int = 1,
 ) -> Event:
     """Mugav konstruktor adapteritele: arvutab ID ja viib aja Tallinna ajavööndisse."""
     if start.tzinfo is None:
@@ -88,4 +96,5 @@ def new_event(
         url=url,
         source=source,
         time_tbc=time_tbc,
+        level=level,
     )

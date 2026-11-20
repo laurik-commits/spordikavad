@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T13:26:20+02:00",
+ "updated": "2026-11-20T13:42:07+02:00",
  "events": [
   {
    "id": "d51c3c1c3a2e",
@@ -12,7 +12,8 @@
    "city": "Saku",
    "url": "https://jalgpall.ee/voistlused/match_info/196833",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "e495872cd865",
@@ -25,7 +26,8 @@
    "city": "Jõhvi",
    "url": "https://jalgpall.ee/voistlused/match_info/196835",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "9535be11917f",
@@ -38,7 +40,8 @@
    "city": "Saku",
    "url": "https://jalgpall.ee/voistlused/match_info/196832",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "2507eafda39e",
@@ -51,7 +54,8 @@
    "city": "Jõhvi",
    "url": "https://jalgpall.ee/voistlused/match_info/196813",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "410f35c17f88",
@@ -64,7 +68,8 @@
    "city": "Pärnu",
    "url": "https://jalgpall.ee/voistlused/match_info/196830",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "da1ca7e1957c",
@@ -77,7 +82,8 @@
    "city": "Saku",
    "url": "https://jalgpall.ee/voistlused/match_info/196829",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "9b489b39a933",
@@ -90,7 +96,8 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/196828",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "e68edb21736c",
@@ -103,7 +110,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/196827",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "3f411835f4a4",
@@ -116,7 +124,8 @@
    "city": "Narva",
    "url": "https://jalgpall.ee/voistlused/match_info/196825",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "01cdd3cfe84e",
@@ -129,7 +138,8 @@
    "city": "Saku",
    "url": "https://jalgpall.ee/voistlused/match_info/196826",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "b075803a4bb0",
@@ -142,7 +152,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/196824",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "28de6667ba75",
@@ -155,7 +166,8 @@
    "city": "Pärnu",
    "url": "https://jalgpall.ee/voistlused/match_info/196810",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "193a73709084",
@@ -168,7 +180,8 @@
    "city": "Saku",
    "url": "https://jalgpall.ee/voistlused/match_info/196822",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "adc5db5ac29c",
@@ -181,7 +194,8 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/196821",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "a9daa1c1ab1c",
@@ -194,7 +208,8 @@
    "city": "Jõhvi",
    "url": "https://jalgpall.ee/voistlused/match_info/196823",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "d3d5ff867f82",
@@ -207,7 +222,8 @@
    "city": "Jõhvi",
    "url": "https://jalgpall.ee/voistlused/match_info/196820",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "a372fdadc62a",
@@ -220,7 +236,8 @@
    "city": "Pärnu",
    "url": "https://jalgpall.ee/voistlused/match_info/196819",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "4e634525a07c",
@@ -233,7 +250,8 @@
    "city": "Narva",
    "url": "https://jalgpall.ee/voistlused/match_info/196818",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "ad96eb449464",
@@ -246,7 +264,8 @@
    "city": "Saku",
    "url": "https://jalgpall.ee/voistlused/match_info/196817",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "a7663866a61a",
@@ -259,7 +278,8 @@
    "city": "Jõhvi",
    "url": "https://jalgpall.ee/voistlused/match_info/196815",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "f3cf342d5507",
@@ -272,7 +292,8 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/196816",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "b58f1a0d7037",
@@ -285,7 +306,8 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/196814",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "bb3397369d00",
@@ -298,7 +320,8 @@
    "city": "Narva",
    "url": "https://jalgpall.ee/voistlused/match_info/196831",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "ac3ad6a3581e",
@@ -311,7 +334,8 @@
    "city": "Kiili",
    "url": "https://jalgpall.ee/voistlused/match_info/196812",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "4ac2aa1fc525",
@@ -324,7 +348,8 @@
    "city": "Narva",
    "url": "https://jalgpall.ee/voistlused/match_info/196834",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "5b7a70419610",
@@ -337,7 +362,8 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/196811",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "6ec7e9769be7",
@@ -350,7 +376,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/196809",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "b32772543989",
@@ -363,7 +390,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/196806",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "d664b3ed65d0",
@@ -376,7 +404,8 @@
    "city": "Narva",
    "url": "https://jalgpall.ee/voistlused/match_info/196807",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "9024ee684875",
@@ -389,7 +418,8 @@
    "city": "Pärnu",
    "url": "https://jalgpall.ee/voistlused/match_info/196808",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "571574dffc19",
@@ -402,7 +432,8 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/196804",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "1b31a9f815b6",
@@ -415,7 +446,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/196803",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "5e6e0f4aa307",
@@ -428,7 +460,8 @@
    "city": "Jõhvi",
    "url": "https://jalgpall.ee/voistlused/match_info/196805",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "0e39cba1e3b9",
@@ -441,7 +474,8 @@
    "city": "Pärnu",
    "url": "https://jalgpall.ee/voistlused/match_info/196802",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "effca70f0ac8",
@@ -454,7 +488,8 @@
    "city": "Narva",
    "url": "https://jalgpall.ee/voistlused/match_info/196801",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "855a62e04ad2",
@@ -467,7 +502,8 @@
    "city": "Jõhvi",
    "url": "https://jalgpall.ee/voistlused/match_info/196800",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "c4f50b0cd57e",
@@ -480,7 +516,8 @@
    "city": "Saku",
    "url": "https://jalgpall.ee/voistlused/match_info/196798",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "f4fdba0bfcea",
@@ -493,7 +530,8 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/196797",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "95487a60656b",
@@ -506,7 +544,8 @@
    "city": "Pärnu",
    "url": "https://jalgpall.ee/voistlused/match_info/196799",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "c3d15caeb400",
@@ -519,7 +558,8 @@
    "city": "Narva",
    "url": "https://jalgpall.ee/voistlused/match_info/196795",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "5adb45b401d2",
@@ -532,7 +572,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/196794",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "8eea066d30e4",
@@ -545,7 +586,8 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/196796",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "1f84e9a6a241",
@@ -558,7 +600,8 @@
    "city": "Saku",
    "url": "https://jalgpall.ee/voistlused/match_info/196791",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "cf4e3b863bc0",
@@ -571,7 +614,8 @@
    "city": "Jõhvi",
    "url": "https://jalgpall.ee/voistlused/match_info/196793",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "60479aba81bb",
@@ -584,7 +628,8 @@
    "city": "Pärnu",
    "url": "https://jalgpall.ee/voistlused/match_info/196792",
    "source": "saalijalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   }
  ]
 }

@@ -20,11 +20,12 @@ SPORT = "saalihoki"
 BASE = "https://www.saalihoki.ee/Events/"
 URL = BASE + "Uritused.aspx"
 
-# eesliide lehel → liiga nimi meie lehel
+# eesliide lehel → (liiga nimi meie lehel, tase: 1 = kõrgliiga, 2 = esiliiga)
 LEAGUES = {
-    "Meistriliiga M": "Meistriliiga (mehed)",
-    "LAT-EST M": "Eesti-Läti liiga (mehed)",
-    "LAT-EST N": "Eesti-Läti liiga (naised)",
+    "Meistriliiga M": ("Meistriliiga (mehed)", 1),
+    "LAT-EST M": ("Eesti-Läti liiga (mehed)", 1),
+    "LAT-EST N": ("Eesti-Läti liiga (naised)", 1),
+    "Energialiiga": ("Energialiiga", 2),
 }
 
 _ROW = re.compile(
@@ -53,9 +54,10 @@ def parse(page: str) -> list[Event]:
         teams = _split_teams(title[len(prefix):].strip())
         if teams is None:
             continue
+        league, level = LEAGUES[prefix]
         events.append(
             new_event(
-                source=NAME, sport=SPORT, league=LEAGUES[prefix],
+                source=NAME, sport=SPORT, league=league, level=level,
                 start=datetime.strptime(f"{day} {time or '00:00'}", "%d.%m.%Y %H:%M"),
                 home=teams[0], away=teams[1], venue=html.unescape(place).strip(), city="",
                 url=f"{BASE}Uritus.aspx?id={uid}", time_tbc=not time,

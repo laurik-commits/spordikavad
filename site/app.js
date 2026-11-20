@@ -8,26 +8,31 @@
   var none = document.querySelector(".none");
   var notes = document.querySelectorAll(".extnote");
 
-  // linnavalik: jäta valik meelde; avalehel (vaikelinna tänane leht) suuna meelde jäetud linna
-  var CITY = "spordikavad-linn";
+  // linna- ja tasemevalik: jäta valik meelde; avalehel (Tallinn, kõrgliigad, täna) suuna meelde jäetud valikule
+  var CITY = "spordikavad-linn", LEVEL = "spordikavad-tase";
   var body = document.body;
-  if (body.dataset.index && body.dataset.region === body.dataset.default) {
-    var city = "";
-    try { city = localStorage.getItem(CITY) || ""; } catch (e) {}
-    if (city && city !== body.dataset.default) {
-      var target = document.querySelector('.city a[data-region="' + city + '"]');
-      // tänase päeva leht selles linnas = linna kausta avaleht
-      if (target) { location.replace(target.getAttribute("href").replace(/\d{4}-\d{2}-\d{2}\/$/, "")); return; }
+  function get(k) { try { return localStorage.getItem(k) || ""; } catch (e) { return ""; } }
+  function set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  if (body.dataset.index && body.dataset.region === body.dataset.default && body.dataset.level === "1") {
+    var city = get(CITY), level = get(LEVEL);
+    var path = "";
+    if (level === "2") path += "esiliigad/";
+    if (city && city !== body.dataset.default && document.querySelector('.city a[data-region="' + city + '"]')) {
+      path += city + "/";
     }
+    if (path) { location.replace(body.dataset.root + path); return; }
   }
   document.querySelectorAll(".city a[data-region]").forEach(function (a) {
-    a.addEventListener("click", function () {
-      try { localStorage.setItem(CITY, a.dataset.region); } catch (e) {}
-    });
+    a.addEventListener("click", function () { set(CITY, a.dataset.region); });
   });
+  document.querySelectorAll(".tier a[data-level]").forEach(function (a) {
+    a.addEventListener("click", function () { set(LEVEL, a.dataset.level); });
+  });
+  // avatud menüü sulgub, kui klõpsad mujale; korraga on lahti ainult üks
   document.addEventListener("click", function (ev) {
-    var d = document.querySelector(".city[open]");
-    if (d && !d.contains(ev.target)) d.removeAttribute("open");
+    document.querySelectorAll(".pick-menu[open]").forEach(function (d) {
+      if (!d.contains(ev.target)) d.removeAttribute("open");
+    });
   });
 
   // päevade ribal too valitud päev nähtavale

@@ -120,6 +120,166 @@ city = "Tapa"
 name = "Kehra Spordihoone"
 city = "Kehra"
 
+# --- Esiliigad (lisatud 2026-11-20) ---
+# Tallinn
+[[venue]]
+name = "Lasnamäe staadion"
+city = "Tallinn"
+aliases = ["Infoneti Lasnamäe staadion"]
+
+[[venue]]
+name = "Lasnamäe spordikompleksi kunstmurustaadion"
+city = "Tallinn"
+aliases = ["Lasnamäe Spordikompleksi kunstmurustaadion"]
+
+[[venue]]
+name = "Maarjamäe staadion"
+city = "Tallinn"
+
+[[venue]]
+name = "Maarjamäe kunstmuruväljak"
+city = "Tallinn"
+
+[[venue]]
+name = "Kalevi keskstaadioni kunstmuruväljak"
+city = "Tallinn"
+aliases = ["Kalevi Keskstaadioni kunstmuruväljak"]
+
+[[venue]]
+name = "Wismari jalgpallistaadion"
+city = "Tallinn"
+
+[[venue]]
+name = "Raja jalgpallihall"
+city = "Tallinn"
+aliases = ["Raja Jalgpallihall"]
+
+[[venue]]
+name = "Ajaxi kunstmuruväljak"
+city = "Tallinn"
+
+[[venue]]
+name = "Nike Arena"
+city = "Tallinn"
+
+[[venue]]
+name = "Lilleküla gümnaasium"
+city = "Tallinn"
+aliases = ["Lilleküla Gümnaasium"]
+
+# Mujal
+[[venue]]
+name = "Holm jalgpallipark"
+city = "Tartu"
+aliases = ["Holm Jalgpallipark"]
+
+[[venue]]
+name = "Tartu Annelinna kunstmurustaadion"
+city = "Tartu"
+
+[[venue]]
+name = "Tartu Annemõisa jalgpallihall"
+city = "Tartu"
+
+[[venue]]
+name = "Katoliku SK"
+city = "Tartu"
+
+[[venue]]
+name = "Maardu kunstmuruväljak"
+city = "Maardu"
+
+[[venue]]
+name = "Maardu linnastaadion"
+city = "Maardu"
+
+[[venue]]
+name = "Tehvandi staadion"
+city = "Otepää"
+
+[[venue]]
+name = "Viljandi Männimäe jalgpallihall"
+city = "Viljandi"
+aliases = ["Viljandi Männimäe Jalgpallihall"]
+
+[[venue]]
+name = "Viljandi linnastaadion"
+city = "Viljandi"
+
+[[venue]]
+name = "Kohtla-Järve kunstmuruväljak"
+city = "Kohtla-Järve"
+
+[[venue]]
+name = "Tabasalu Arena"
+city = "Harku vald"
+
+[[venue]]
+name = "Jüri staadion"
+city = "Rae vald"
+
+[[venue]]
+name = "Heino Lipu staadion"
+city = "Jõhvi"
+
+[[venue]]
+name = "Jõhvi jalgpallikeskus"
+city = "Jõhvi"
+aliases = ["Jõhvi Jalgpallikeskus"]
+
+[[venue]]
+name = "Ülenurme staadion"
+city = "Kambja vald"
+
+[[venue]]
+name = "Sillamäe Kalevi staadion"
+city = "Sillamäe"
+
+[[venue]]
+name = "Põlva Lootospark"
+city = "Põlva"
+
+[[venue]]
+name = "Pärnu Raeküla staadion"
+city = "Pärnu"
+
+[[venue]]
+name = "Raeküla kool"
+city = "Pärnu"
+aliases = ["Raeküla Kool"]
+
+[[venue]]
+name = "Türi spordihoone"
+city = "Türi"
+aliases = ["Konesko Türi SH"]
+
+[[venue]]
+name = "Põltsamaa Felixhall"
+city = "Põltsamaa"
+
+[[venue]]
+name = "Aruküla spordihoone"
+city = "Aruküla"
+aliases = ["Aruküla Spordihoone"]
+
+[[venue]]
+name = "Tapa spordihoone"
+city = "Tapa"
+aliases = ["Tapa SH"]
+
+[[venue]]
+name = "Kuusalu spordikeskus"
+city = "Kuusalu"
+aliases = ["Kuusalu Spordikeskus"]
+
+[[venue]]
+name = "Lähte spordihoone"
+city = "Tartu vald"
+
+[[venue]]
+name = "Jõgeva Virtus"
+city = "Jõgeva"
+
 # Saalijalgpall mujal
 [[venue]]
 name = "Saku Gümnaasiumi Spordikompleks"

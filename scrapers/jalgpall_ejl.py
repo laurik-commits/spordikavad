@@ -31,7 +31,8 @@ _TEAM = re.compile(r'<div class="team">\s*<p>\s*<a\s[^>]*>\s*([^<]+?)\s*</a>')
 _INFO = re.compile(r'href="(/voistlused/match_info/\d+)"')
 
 
-def parse(page: str, league: str, *, sport: str = SPORT, source: str = NAME, team_prefix: str = "") -> list[Event]:
+def parse(page: str, league: str, *, sport: str = SPORT, source: str = NAME, team_prefix: str = "",
+          level: int = 1) -> list[Event]:
     """team_prefix: eemaldatav eesliide võistkonna nimest (saalijalgpallis "S. ")."""
 
     def team(name: str) -> str:
@@ -52,6 +53,7 @@ def parse(page: str, league: str, *, sport: str = SPORT, source: str = NAME, tea
                 start=datetime.strptime(f"{when.group(1)} {time or '00:00'}", "%d.%m.%Y %H:%M"),
                 home=team(teams[0]), away=team(teams[1]),
                 venue=html.unescape(field).strip(), city="", url=BASE + info.group(1), time_tbc=not time,
+                level=level,
             )
         )
     return events
@@ -61,5 +63,5 @@ def fetch(fetcher, source: dict | None = None, today: date | None = None) -> lis
     today = today or datetime.now(TALLINN).date()
     events: list[Event] = []
     for comp in (source or {}).get("competitions", []):
-        events.extend(parse(fetcher.get(url_for(comp["id"], today.year)), comp["league"]))
+        events.extend(parse(fetcher.get(url_for(comp["id"], today.year)), comp["league"], level=comp.get("level", 1)))
     return events

@@ -8,7 +8,7 @@ Lähteülesanne: [SPEC.md](SPEC.md). Andmeallikad ja nende kontroll: [SOURCES.md
 
 1. **GitHub Actions** ([.github/workflows/build.yml](.github/workflows/build.yml)) käivitub iga päev kell 03:00 UTC (05:00 Tallinna talveajal), iga `main` haru muudatuse järel ja käsitsi (Actions → „Ehita ja avalda“ → Run workflow).
 2. [build.py](build.py) käivitab iga allika adapteri (`scrapers/<ala>_<liiga>.py`), jätab alles Eestis toimuvad mängud ([venues.toml](venues.toml) saalide linnade ja `config.toml` `[geo]` järgi) ja salvestab need kausta `data/`.
-3. Mallidest ([site/](site/)) genereeritakse kausta `dist/` staatiline leht iga piirkonna kohta: Tallinn juurkaustas (`/`, `/2026-11-21/`), teised oma kaustas (`/tartu/…`, `/harjumaa/…`, `/eesti/…` = kogu Eesti). Igal piirkonnal on täna + 14 päeva. Lisaks `events.json` ja `sitemap.xml`. Päise linnavalik jätab valiku kasutaja brauserisse meelde ja avaleht suunab sinna.
+3. Mallidest ([site/](site/)) genereeritakse kausta `dist/` staatiline leht iga piirkonna kohta: Tallinn juurkaustas (`/`, `/2026-11-21/`), teised oma kaustas (`/tartu/…`, `/harjumaa/…`, `/eesti/…` = kogu Eesti). Igal piirkonnal on täna + 14 päeva. **Esiliigad** on eraldi kalender kaustas `/esiliigad/…` (sama linnajaotusega). Lisaks `events.json` ja `sitemap.xml`. Päise linna- ja tasemevalik („Kõrgliigad / Esiliigad“) jätavad valiku kasutaja brauserisse meelde ja avaleht suunab sinna.
 4. `dist/` avaldatakse GitHub Pagesis.
 
 **Kui allikas läheb katki** (viga või hooaja sees 0 mängu), kasutatakse selle allika viimaseid salvestatud andmeid, ülejäänud leht ehitatakse tavapäraselt ja GitHubis avatakse issue „Allikas katki: …“. Sellest tuleb e-kiri. Kui allikas hakkab jälle tööle, suletakse issue automaatselt. Tundmatute toimumiskohtade kohta tekib issue „Tundmatud toimumiskohad“.
@@ -62,6 +62,12 @@ Kolm sammu: adapter, konfiguratsioonirida ja test.
 
    Hooaja kuupäevad on olulised: väljaspool hooaega ei loeta 0 mängu veaks.
 
+   Kui liiga kasutab olemasolevat adapterit (jalgpall.ee, kasipall.ee, DataProject), piisab rea lisamisest selle `competitions` nimekirja. Esiliiga puhul lisa `level = 2`, siis läheb liiga „Esiliigad“ kalendrisse:
+
+   ```toml
+   { id = 360, league = "Esiliiga (mehed)", level = 2 },
+   ```
+
 4. **Test.** Salvesta allika leht kausta `tests/fixtures/<name>.html` (üks kord, näiteks `py -c "from scrapers.http import Fetcher; ..."`) ja kirjuta `tests/test_<name>.py`, mis kontrollib mängude arvu ja üht konkreetset mängu (vaata näiteks [tests/test_jaahoki_optibet.py](tests/test_jaahoki_optibet.py)).
 
 5. **Käivita** `python build.py` ja vaata kokkuvõtet. Kui logis on „Tundmatu toimumiskoht“, lisa see `venues.toml` faili õige linnaga. Kui linn on uus, lisa see ka `config.toml` `[geo]` alla: suurem linn `[[geo.city]]`, väiksem koht `[geo.place]` (koht → maakond) või välismaa `geo.foreign`. Test `GeoTest` annab märku, kui mõni linn on lisamata.
@@ -83,4 +89,5 @@ Kolm sammu: adapter, konfiguratsioonirida ja test.
 - Päevade ribale kuu nimi, kui riba ulatub üle kuu vahetuse.
 - **Jalgpalli karikad** (omanikuga kokku lepitud „millalgi tulevikus“): Tipneri karikas, naiste karikas, superkarikas. Vaja on iCal-lugejat (vt SOURCES.md „Täiendavate võistluste ülevaade“).
 - Eesti jäähoki liigad (Vipers, naiste liiga): vaata uuesti, kas ehis.eestihoki.ee-l on 2026/27 hooaeg.
-- **Madalamad liigad** (esiliigad jm, lähteülesande teine samm): omaniku soov 2026-11-20 – teha tulevikus, aga **eraldi kalendrina**, mitte meistriliigadega segamini (nt eraldi leht/vaade või lüliti „Kõrgliigad / Madalamad liigad“). Tehniliselt lihtne: jalgpall.ee, kasipall.ee, saalihoki.ee ja DataProject kasutavad kõigi liigade jaoks sama süsteemi, vaja on liiga ID-d ja `Event`-ile taseme välja.
+- **Veel madalamad liigad** (II liiga jm): esiliigad on tehtud (2026-11-20, eraldi kalender). Kui tahad rohkem, lisa liigad `level = 2` reaga või tee kolmas tase (`scrapers/model.py` → `LEVELS`).
+- Saalijalgpalli esiliigat jalgpall.ee avalikult ei näita. Lisa, kui see ilmub.

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T13:26:22+02:00",
+ "updated": "2026-11-20T13:42:08+02:00",
  "events": [
   {
    "id": "6a6527882b18",
@@ -12,7 +12,8 @@
    "city": "Tallinn",
    "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-pun/20261101/35866",
    "source": "jaahoki_optibet",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "b4a05826acdc",
@@ -25,7 +26,8 @@
    "city": "Tallinn",
    "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-pri/20261114/35872",
    "source": "jaahoki_optibet",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "9f6ff1a3820d",
@@ -38,7 +40,8 @@
    "city": "Tallinn",
    "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-kyc/20261121/35876",
    "source": "jaahoki_optibet",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "2ca47ec169d5",
@@ -51,7 +54,8 @@
    "city": "Tallinn",
    "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-rhs/20261125/35884",
    "source": "jaahoki_optibet",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "115a0e189728",
@@ -64,7 +68,8 @@
    "city": "Tallinn",
    "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-zmg/20261216/35898",
    "source": "jaahoki_optibet",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "0ef7825ef4c4",
@@ -77,7 +82,8 @@
    "city": "Tallinn",
    "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-hkm/20270123/35922",
    "source": "jaahoki_optibet",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "cc6230c9d5eb",
@@ -90,7 +96,8 @@
    "city": "Tallinn",
    "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-hkm/20270124/35925",
    "source": "jaahoki_optibet",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "f079b0821c7e",
@@ -103,7 +110,8 @@
    "city": "Tallinn",
    "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-zmg/20270127/35927",
    "source": "jaahoki_optibet",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "fcaa1d2db1ce",
@@ -116,7 +124,8 @@
    "city": "Tallinn",
    "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-pri/20270213/35943",
    "source": "jaahoki_optibet",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   }
  ]
 }

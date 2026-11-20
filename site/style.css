@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --bg: #f4f5f7;
   --row: #fff;
   --fg: #16181d;
@@ -48,25 +48,25 @@ a { color: var(--link); text-decoration: none; }
 .top { display: flex; align-items: baseline; gap: .5rem; position: relative; }
 .brand { color: var(--bar-fg); font-weight: 700; font-size: 1.05rem; }
 
-/* linnavalik */
-.city summary {
+/* linna- ja tasemevalik */
+.pick-menu summary {
   list-style: none; cursor: pointer; color: var(--bar-fg); opacity: .9;
   padding: .1rem .5rem; border: 1px solid rgba(255,255,255,.35); border-radius: 999px; font-size: .92rem;
 }
-.city summary::-webkit-details-marker { display: none; }
-.city[open] summary { background: rgba(255,255,255,.15); }
-.city ul {
+.pick-menu summary::-webkit-details-marker { display: none; }
+.pick-menu[open] summary { background: rgba(255,255,255,.15); }
+.pick-menu ul {
   position: absolute; left: 0; right: 0; top: 2rem; z-index: 10; list-style: none; margin: 0; padding: .3rem;
   background: var(--row); border: 1px solid var(--line); border-radius: .6rem; box-shadow: 0 8px 24px rgba(0,0,0,.18);
   max-width: 22rem; max-height: 70vh; overflow-y: auto;
 }
-.city li a { display: flex; justify-content: space-between; gap: 1rem; padding: .45rem .6rem; border-radius: .4rem; color: var(--fg); }
-.city li a:hover { background: var(--bg); }
-.city li a[aria-current] { background: var(--bar); color: var(--bar-fg); }
-.city li a.county span:first-child { font-size: .9rem; }
-.city li a.empty { color: var(--empty); }
-.city .n { color: var(--muted); font-variant-numeric: tabular-nums; }
-.city li a[aria-current] .n { color: var(--bar-fg); }
+.pick-menu li a { display: flex; justify-content: space-between; gap: 1rem; padding: .45rem .6rem; border-radius: .4rem; color: var(--fg); }
+.pick-menu li a:hover { background: var(--bg); }
+.pick-menu li a[aria-current] { background: var(--bar); color: var(--bar-fg); }
+.pick-menu li a.county span:first-child { font-size: .9rem; }
+.pick-menu li a.empty { color: var(--empty); }
+.pick-menu .n { color: var(--muted); font-variant-numeric: tabular-nums; }
+.pick-menu li a[aria-current] .n { color: var(--bar-fg); }
 .city li:nth-child(2) { border-bottom: 1px solid var(--line); padding-bottom: .2rem; margin-bottom: .2rem; }
 .daynav { display: flex; align-items: center; gap: .5rem; margin-top: .2rem; }
 .daynav h1 { margin: 0; font-size: 1.15rem; font-weight: 600; }

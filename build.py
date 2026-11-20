@@ -23,7 +23,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from scrapers import config as cfgmod
 from scrapers.geo import Geo, Region
 from scrapers.http import Fetcher
-from scrapers.model import SPORTS, TALLINN, Event
+from scrapers.model import LEVELS, SPORTS, TALLINN, Event
 from scrapers.venues import Venues
 
 ROOT = Path(__file__).resolve().parent
@@ -170,55 +170,62 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
     for asset in ("style.css", "app.js"):
         shutil.copy(SITE / asset, out / asset)
 
-    # mängud piirkonna ja päeva kaupa
+    # mängud päeva kaupa (14 päeva aken)
     window = {d: [] for d in days}
     for e in events:
         if e.start.date() in window:
             window[e.start.date()].append(e)
-    region_days: dict[str, dict[date, list[Event]]] = {}
-    for r in regions:
-        by_day = {d: sorted((e for e in window[d] if in_region(e, r)),
-                            key=lambda e: (e.time_tbc, e.start, e.sport, e.home)) for d in days}
-        region_days[r.slug] = by_day
-    region_list = [{"slug": r.slug, "name": r.name, "prefix": r.prefix, "kind": r.kind,
-                    "count": sum(len(v) for v in region_days[r.slug].values())} for r in regions]
+
+    def by_day_for(level: int, r: Region) -> dict[date, list[Event]]:
+        return {d: sorted((e for e in window[d] if e.level == level and in_region(e, r)),
+                          key=lambda e: (e.time_tbc, e.start, e.sport, e.home)) for d in days}
 
     common = dict(
-        sports=SPORTS, links=links, today=today, regions=region_list, default_slug=Geo.default_slug,
+        sports=SPORTS, links=links, today=today, default_slug=Geo.default_slug,
         analytics_enabled=site_cfg.get("analytics_enabled", False),
         analytics_token=site_cfg.get("analytics_token", ""), base_url=base_url,
         contact_url=site_cfg.get("contact_url", ""),
     )
 
     urls: list[str] = []
-    for r in regions:
-        by_day = region_days[r.slug]
-        present = sorted({e.sport for lst in by_day.values() for e in lst}, key=list(SPORTS).index)
-        day_list = [{"date": d, "label": et_date(d), "short": SHORT_WEEKDAYS[d.weekday()], "count": len(by_day[d])}
-                    for d in days]
-        rdir = out / r.prefix if r.prefix else out
-        rdir.mkdir(parents=True, exist_ok=True)
-        depth = 1 if r.prefix else 0  # mitu kausta sügavamal kui lehe juur
-        for i, d in enumerate(days):
-            ctx = dict(
-                common, region=r, show_city=r.kind != "city",
-                filters=[{"key": s, "label": SPORTS[s]} for s in present], days=day_list,
-                day=d, events=by_day[d],
-                prev_day=days[i - 1] if i > 0 else None,
-                next_day=days[i + 1] if i + 1 < len(days) else None,
-                next_games=next((x for x in days[i + 1:] if by_day[x]), None),
-            )
-            page_dir = rdir / d.isoformat()
-            page_dir.mkdir()
-            url = f"{base_url}{r.prefix}{d.isoformat()}/"
-            (page_dir / "index.html").write_text(
-                tpl.render(ctx, root="../" * (depth + 1), here="../", canonical=url, is_index=False), encoding="utf-8")
-            urls.append(url)
-            if i == 0:
-                url = f"{base_url}{r.prefix}"
-                (rdir / "index.html").write_text(
-                    tpl.render(ctx, root="../" * depth, here="", canonical=url, is_index=True), encoding="utf-8")
+    for level, lv in LEVELS.items():
+        # samad piirkonnad mõlemal tasemel, et linna/taseme vahetus ei viiks olematule lehele
+        region_days = {r.slug: by_day_for(level, r) for r in regions}
+        region_list = [{"slug": r.slug, "name": r.name, "prefix": r.prefix, "kind": r.kind,
+                        "count": sum(len(v) for v in region_days[r.slug].values())} for r in regions]
+        level_list = [{"level": k, "name": v["name"], "prefix": v["prefix"], "current": k == level,
+                       "count": sum(1 for d in days for e in window[d] if e.level == k)} for k, v in LEVELS.items()]
+        for r in regions:
+            by_day = region_days[r.slug]
+            present = sorted({e.sport for lst in by_day.values() for e in lst}, key=list(SPORTS).index)
+            day_list = [{"date": d, "label": et_date(d), "short": SHORT_WEEKDAYS[d.weekday()],
+                         "count": len(by_day[d])} for d in days]
+            prefix = lv["prefix"] + r.prefix
+            rdir = out / prefix if prefix else out
+            rdir.mkdir(parents=True, exist_ok=True)
+            depth = prefix.count("/")  # mitu kausta sügavamal kui lehe juur
+            for i, d in enumerate(days):
+                ctx = dict(
+                    common, region=r, regions=region_list, level=level, level_info=lv, levels=level_list,
+                    show_city=r.kind != "city",
+                    filters=[{"key": s, "label": SPORTS[s]} for s in present], days=day_list,
+                    day=d, events=by_day[d],
+                    prev_day=days[i - 1] if i > 0 else None,
+                    next_day=days[i + 1] if i + 1 < len(days) else None,
+                    next_games=next((x for x in days[i + 1:] if by_day[x]), None),
+                )
+                page_dir = rdir / d.isoformat()
+                page_dir.mkdir()
+                url = f"{base_url}{prefix}{d.isoformat()}/"
+                (page_dir / "index.html").write_text(
+                    tpl.render(ctx, root="../" * (depth + 1), here="../", canonical=url, is_index=False),
+                    encoding="utf-8")
                 urls.append(url)
+                if i == 0:
+                    url = f"{base_url}{prefix}"
+                    (rdir / "index.html").write_text(
+                        tpl.render(ctx, root="../" * depth, here="", canonical=url, is_index=True), encoding="utf-8")
+                    urls.append(url)
 
     upcoming = sorted((e for e in events if e.start.date() >= today), key=lambda e: (e.start, e.id))
     (out / "events.json").write_text(

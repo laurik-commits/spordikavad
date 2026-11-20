@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T13:27:13+02:00",
+ "updated": "2026-11-20T13:43:13+02:00",
  "events": [
   {
    "id": "fbd1eceb1641",
@@ -12,7 +12,8 @@
    "city": "Tartu",
    "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8841",
    "source": "saalihoki_meistriliiga",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "97596fd76e48",
@@ -25,7 +26,8 @@
    "city": "Märjamaa",
    "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8734",
    "source": "saalihoki_meistriliiga",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "1d0bb2338db1",
@@ -38,7 +40,8 @@
    "city": "Jõgeva",
    "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8733",
    "source": "saalihoki_meistriliiga",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "d6c456c48349",
@@ -51,7 +54,8 @@
    "city": "Märjamaa",
    "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8736",
    "source": "saalihoki_meistriliiga",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "813e606ff709",
@@ -64,7 +68,8 @@
    "city": "Jõgeva",
    "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8735",
    "source": "saalihoki_meistriliiga",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "b38782d2bcf9",
@@ -77,7 +82,8 @@
    "city": "Ääsmäe",
    "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8698",
    "source": "saalihoki_meistriliiga",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "f645a788f498",
@@ -90,7 +96,8 @@
    "city": "Tartu",
    "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8843",
    "source": "saalihoki_meistriliiga",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "0aceb93ddb47",
@@ -103,7 +110,8 @@
    "city": "Tallinn",
    "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8700",
    "source": "saalihoki_meistriliiga",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "099eacc5231f",
@@ -116,7 +124,8 @@
    "city": "Tallinn",
    "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8701",
    "source": "saalihoki_meistriliiga",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "61586e1d78af",
@@ -129,7 +138,8 @@
    "city": "Tallinn",
    "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8702",
    "source": "saalihoki_meistriliiga",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "c1f36b37e2fc",
@@ -142,7 +152,8 @@
    "city": "Tartu",
    "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8844",
    "source": "saalihoki_meistriliiga",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "07db83741717",
@@ -155,7 +166,8 @@
    "city": "Ääsmäe",
    "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8738",
    "source": "saalihoki_meistriliiga",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "b4dfb8a35a0b",
@@ -168,7 +180,8 @@
    "city": "Märjamaa",
    "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8845",
    "source": "saalihoki_meistriliiga",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "4fa4a2ff220b",
@@ -181,7 +194,8 @@
    "city": "Tallinn",
    "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8706",
    "source": "saalihoki_meistriliiga",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "145398d5858d",
@@ -194,7 +208,8 @@
    "city": "Jõgeva",
    "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8741",
    "source": "saalihoki_meistriliiga",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "0d3861ba986d",
@@ -207,7 +222,8 @@
    "city": "Jõgeva",
    "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8743",
    "source": "saalihoki_meistriliiga",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "ff1b39ebaa5b",
@@ -220,7 +236,8 @@
    "city": "Ääsmäe",
    "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8709",
    "source": "saalihoki_meistriliiga",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "e97e4d2bab09",
@@ -233,7 +250,50 @@
    "city": "Tallinn",
    "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8711",
    "source": "saalihoki_meistriliiga",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "241b43736979",
+   "sport": "saalihoki",
+   "league": "Energialiiga",
+   "start": "2027-02-20T11:15:00+02:00",
+   "home": "Arenculle",
+   "away": "Kaitseliidu Rapla malev",
+   "venue": "Ääsmäe spordihoone",
+   "city": "Ääsmäe",
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8681",
+   "source": "saalihoki_meistriliiga",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "e48ba2262f75",
+   "sport": "saalihoki",
+   "league": "Energialiiga",
+   "start": "2027-02-20T13:45:00+02:00",
+   "home": "SK Voore",
+   "away": "Flash by FF",
+   "venue": "Ääsmäe spordihoone",
+   "city": "Ääsmäe",
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8683",
+   "source": "saalihoki_meistriliiga",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "188cf3213df4",
+   "sport": "saalihoki",
+   "league": "Energialiiga",
+   "start": "2027-02-20T16:15:00+02:00",
+   "home": "EMÜ SK II",
+   "away": "Järva- Jaani",
+   "venue": "Ääsmäe spordihoone",
+   "city": "Ääsmäe",
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8685",
+   "source": "saalihoki_meistriliiga",
+   "time_tbc": false,
+   "level": 2
   }
  ]
 }

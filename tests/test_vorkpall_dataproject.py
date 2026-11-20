@@ -34,6 +34,9 @@ class FakeFetcher:
         return (FIX / FILES[league]).read_text(encoding="utf-8")
 
 
+TOP = [c for l, c in COMPS.items() if l in FILES]  # kõrgliigad, millel on fixture
+
+
 class VorkpallDataprojectTest(unittest.TestCase):
     def test_counts_per_competition(self):
         counts = {l: len(parse(l)) for l in FILES}
@@ -59,7 +62,7 @@ class VorkpallDataprojectTest(unittest.TestCase):
 
     def test_fetch_uses_all_configured_competitions(self):
         f = FakeFetcher()
-        src = {"competitions": list(COMPS.values())}
+        src = {"competitions": TOP}
         events = adapter.fetch(f, source=src)
         self.assertEqual(len(f.urls), 6)
         self.assertEqual(len(events), 124)
@@ -69,6 +72,13 @@ class VorkpallDataprojectTest(unittest.TestCase):
         v = Venues.load()
         unknown = {e.venue for l in FILES for e in parse(l) if v.lookup(e.venue) is None}
         self.assertEqual(unknown, set())
+
+    def test_level_from_config(self):
+        self.assertEqual({e.level for e in parse("Balti liiga (mehed)")}, {1})
+        esiliiga = dict(COMPS["Balti liiga (mehed)"], level=2)
+        page = (FIX / FILES["Balti liiga (mehed)"]).read_text(encoding="utf-8")
+        self.assertEqual({e.level for e in adapter.parse(page, esiliiga)}, {2})
+        self.assertEqual(COMPS["Esiliiga (mehed)"]["level"], 2)
 
     def test_no_markup_in_team_names(self):
         self.assertFalse(any("<" in e.home + e.away for l in FILES for e in parse(l)))

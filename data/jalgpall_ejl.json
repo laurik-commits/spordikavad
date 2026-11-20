@@ -1,6 +1,20 @@
 {
- "updated": "2026-11-20T13:26:15+02:00",
+ "updated": "2026-11-20T13:42:02+02:00",
  "events": [
+  {
+   "id": "7bac6b279eb7",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-03-06T18:30:00+02:00",
+   "home": "Viimsi JK",
+   "away": "Tallinna FC Flora U21",
+   "venue": "Viimsi staadion",
+   "city": "Viimsi",
+   "url": "https://jalgpall.ee/voistlused/match_info/186464",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
   {
    "id": "e1db4aeda3ea",
    "sport": "jalgpall",
@@ -12,7 +26,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186106",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "7b83e84200fa",
@@ -25,7 +40,8 @@
    "city": "Pärnu",
    "url": "https://jalgpall.ee/voistlused/match_info/186107",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "f79e39d70740",
@@ -38,7 +54,22 @@
    "city": "Narva",
    "url": "https://jalgpall.ee/voistlused/match_info/186108",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "a5a48dfb6572",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-03-07T17:30:00+02:00",
+   "home": "FC Tallinn",
+   "away": "FC Elva",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186462",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "84440c7f3d82",
@@ -51,7 +82,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186109",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "4f66773c493a",
@@ -64,7 +96,50 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/186110",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "55ac6eba229b",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-03-08T17:00:00+02:00",
+   "home": "FC Nõmme United U21",
+   "away": "Maardu Linnameeskond",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186465",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "e3cfe0b65630",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-03-08T17:00:00+02:00",
+   "home": "Pärnu JK Vaprus U21",
+   "away": "FA Tartu Kalev",
+   "venue": "Pärnu Rehepapi kunstmuruväljak",
+   "city": "Pärnu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186730",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "865e88c81e2c",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-03-10T18:00:00+02:00",
+   "home": "Tartu JK Tammeka U21",
+   "away": "Tallinna FCI Levadia U19",
+   "venue": "Tartu Coop staadioni kunstmuruväljak",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186731",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "5e543d7d6334",
@@ -77,7 +152,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186111",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "39b03aa8860a",
@@ -90,7 +166,36 @@
    "city": "Kuressaare",
    "url": "https://jalgpall.ee/voistlused/match_info/186112",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "456797497284",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-03-14T14:30:00+02:00",
+   "home": "Nõmme Kalju FC U21",
+   "away": "Viimsi JK",
+   "venue": "Hiiu staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186467",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "bbea626630c0",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-03-14T17:00:00+02:00",
+   "home": "Tallinna FC Flora U21",
+   "away": "Tartu JK Welco",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186468",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "bdfecb28681d",
@@ -103,7 +208,8 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/186113",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "326a1c78b12d",
@@ -116,7 +222,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186114",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "82d149d73d97",
@@ -129,7 +236,64 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/186115",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "b56cb06b2475",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-03-15T17:00:00+02:00",
+   "home": "Tartu JK Tammeka U21",
+   "away": "JK Tabasalu",
+   "venue": "Tartu Coop staadioni kunstmuruväljak",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186735",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "4f069e353b75",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-03-15T19:00:00+02:00",
+   "home": "JK Tallinna Kalev",
+   "away": "FC Tallinn",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186469",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "21cd37685aeb",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-03-19T18:00:00+02:00",
+   "home": "Tallinna FC Flora U21",
+   "away": "Nõmme Kalju FC U21",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186475",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "265bca7d67be",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-03-19T18:00:00+02:00",
+   "home": "Viimsi JK",
+   "away": "JK Tallinna Kalev",
+   "venue": "Viimsi staadion",
+   "city": "Viimsi",
+   "url": "https://jalgpall.ee/voistlused/match_info/186471",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "d7ae850371b2",
@@ -142,7 +306,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186987",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "2363564a081b",
@@ -155,7 +320,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186118",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "63d4da35eb57",
@@ -168,7 +334,22 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186116",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "c9cc95ecc3bf",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-03-21T12:30:00+02:00",
+   "home": "FC Elva",
+   "away": "Tallinna FCI Levadia U21",
+   "venue": "Nike Arena Elva",
+   "city": "Elva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186472",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "3f4fb05256dc",
@@ -181,7 +362,8 @@
    "city": "Narva",
    "url": "https://jalgpall.ee/voistlused/match_info/186117",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "85f7ce5269e9",
@@ -194,7 +376,8 @@
    "city": "Saku",
    "url": "https://jalgpall.ee/voistlused/match_info/186989",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "e0db39961096",
@@ -207,7 +390,8 @@
    "city": "Viimsi",
    "url": "https://jalgpall.ee/voistlused/match_info/186988",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "f8a174d3847a",
@@ -220,7 +404,8 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/186119",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "44ec362cd63d",
@@ -233,7 +418,64 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186120",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "795f01934fed",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-03-22T17:00:00+02:00",
+   "home": "JK Narva Trans U21",
+   "away": "Pärnu JK Vaprus U21",
+   "venue": "Narva Kalev-Fama staadion",
+   "city": "Narva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186740",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "efa32203695f",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-03-22T17:00:00+02:00",
+   "home": "Tartu JK Tammeka U21",
+   "away": "Jõhvi FC Phoenix",
+   "venue": "Tartu Coop staadioni kunstmuruväljak",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186739",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "ba296e9c28f5",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-03-22T19:00:00+02:00",
+   "home": "FC Nõmme United U21",
+   "away": "FC Tallinn",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186474",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "bc247229cc20",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-04-03T12:30:00+03:00",
+   "home": "FC Elva",
+   "away": "Viimsi JK",
+   "venue": "Nike Arena Elva",
+   "city": "Elva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186477",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "179132910353",
@@ -246,7 +488,8 @@
    "city": "Kuressaare",
    "url": "https://jalgpall.ee/voistlused/match_info/186122",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "27e9d8683377",
@@ -259,7 +502,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186121",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "8c1d727652d1",
@@ -272,7 +516,50 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/186123",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "077de892dab9",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-04-03T19:00:00+03:00",
+   "home": "Pärnu JK Vaprus U21",
+   "away": "Jõhvi FC Phoenix",
+   "venue": "Pärnu Rehepapi kunstmuruväljak",
+   "city": "Pärnu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186744",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "c51161d0dc88",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-04-03T19:00:00+03:00",
+   "home": "FC Nõmme United U21",
+   "away": "Tartu JK Welco",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186479",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "d018264b51b2",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-04-04T12:30:00+03:00",
+   "home": "JK Narva Trans U21",
+   "away": "JK Tallinna Kalev U21",
+   "venue": "Narva Kalev-Fama staadion",
+   "city": "Narva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186745",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "1d68f53500a6",
@@ -285,7 +572,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186124",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "e98fd231897f",
@@ -298,7 +586,8 @@
    "city": "Pärnu",
    "url": "https://jalgpall.ee/voistlused/match_info/186125",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "81ace62d2450",
@@ -311,7 +600,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186990",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "852bb12d6503",
@@ -324,7 +614,8 @@
    "city": "Elva",
    "url": "https://jalgpall.ee/voistlused/match_info/186992",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "d83827c876dc",
@@ -337,7 +628,8 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/186991",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "54422f911ff5",
@@ -350,7 +642,8 @@
    "city": "Narva",
    "url": "https://jalgpall.ee/voistlused/match_info/186127",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "a96c3f76fde2",
@@ -363,7 +656,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186126",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "26783667590c",
@@ -376,7 +670,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186128",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "ce2781cae6a6",
@@ -389,7 +684,8 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/186129",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "d9e2106dc020",
@@ -402,7 +698,50 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/186130",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "238f2e7c1333",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-04-09T19:00:00+03:00",
+   "home": "JK Tallinna Kalev",
+   "away": "FC Elva",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186481",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "531c2663f8dd",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-04-10T19:00:00+03:00",
+   "home": "Tallinna FC Flora U21",
+   "away": "FC Tallinn",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186482",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "743fc3dfad86",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-04-11T12:30:00+03:00",
+   "home": "Nõmme Kalju FC U21",
+   "away": "Tartu JK Welco",
+   "venue": "Hiiu staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186483",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "b4bc2c00d969",
@@ -415,7 +754,8 @@
    "city": "Kuressaare",
    "url": "https://jalgpall.ee/voistlused/match_info/186131",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "2a2b7138ec36",
@@ -428,7 +768,36 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186132",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "5831ea690bc1",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-04-11T19:00:00+03:00",
+   "home": "Tartu JK Tammeka U21",
+   "away": "JK Tallinna Kalev U21",
+   "venue": "Tartu Coop staadioni kunstmuruväljak",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186748",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "471dcc2a32dd",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-04-12T12:30:00+03:00",
+   "home": "Viimsi JK",
+   "away": "FC Nõmme United U21",
+   "venue": "Viimsi staadion",
+   "city": "Viimsi",
+   "url": "https://jalgpall.ee/voistlused/match_info/186485",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "0127950d973a",
@@ -441,7 +810,8 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/186134",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "0bfb5bfd06e4",
@@ -454,7 +824,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186133",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "6a96ec71566d",
@@ -467,7 +838,64 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186135",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "c945d1156fb9",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-04-16T19:00:00+03:00",
+   "home": "JK Tallinna Kalev",
+   "away": "Tallinna FC Flora U21",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186488",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "bff5527ad7d0",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-04-16T19:30:00+03:00",
+   "home": "Viimsi JK",
+   "away": "FC Tallinn",
+   "venue": "Viimsi staadion",
+   "city": "Viimsi",
+   "url": "https://jalgpall.ee/voistlused/match_info/186486",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "ea6605d168e6",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-04-18T12:00:00+03:00",
+   "home": "Pärnu JK Poseidon (N)",
+   "away": "Tallinna FC Levadia (N)",
+   "venue": "Pärnu Rehepapi kunstmuruväljak",
+   "city": "Pärnu",
+   "url": "https://jalgpall.ee/voistlused/match_info/187166",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "b20851d2cc8a",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-04-18T12:30:00+03:00",
+   "home": "Nõmme Kalju FC U21",
+   "away": "Maardu Linnameeskond",
+   "venue": "Hiiu staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186489",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "abab3a925a6d",
@@ -480,7 +908,8 @@
    "city": "Narva",
    "url": "https://jalgpall.ee/voistlused/match_info/186136",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "5ac597140776",
@@ -493,7 +922,8 @@
    "city": "Pärnu",
    "url": "https://jalgpall.ee/voistlused/match_info/186138",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "20a3e1ccccf0",
@@ -506,7 +936,50 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186137",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "2d3e1b772908",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-04-19T12:30:00+03:00",
+   "home": "Pärnu JK Vaprus U21",
+   "away": "Tallinna JK Legion",
+   "venue": "Pärnu Rehepapi kunstmuruväljak",
+   "city": "Pärnu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186756",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "6ac8821b7ff5",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-04-19T12:30:00+03:00",
+   "home": "FC Elva",
+   "away": "FC Nõmme United U21",
+   "venue": "Nike Arena Elva",
+   "city": "Elva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186490",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "85b82a4d30cf",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-04-19T12:30:00+03:00",
+   "home": "Tartu JK Tammeka U21",
+   "away": "FA Tartu Kalev",
+   "venue": "Tartu Coop staadioni kunstmuruväljak",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186754",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "79ae3b35774b",
@@ -519,7 +992,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186139",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "3157a7496d6d",
@@ -532,7 +1006,22 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/186140",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "46f0ac466033",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-04-19T17:00:00+03:00",
+   "home": "Harju JK Laagri II (N)",
+   "away": "Tartu NJK Electra (N)",
+   "venue": "Laagri kunstmurustaadion",
+   "city": "Saue vald",
+   "url": "https://jalgpall.ee/voistlused/match_info/187168",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "ea1605bb9795",
@@ -545,7 +1034,8 @@
    "city": "Kuressaare",
    "url": "https://jalgpall.ee/voistlused/match_info/186141",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "8f36d4b17a3b",
@@ -558,7 +1048,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186142",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "08c0844e1d0e",
@@ -571,7 +1062,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186144",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "17a3f19de7ea",
@@ -584,7 +1076,8 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/186145",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "36da2c322de5",
@@ -597,7 +1090,50 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/186143",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "11085478fdfe",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-04-23T18:00:00+03:00",
+   "home": "JK Narva Trans U21",
+   "away": "Tartu JK Tammeka U21",
+   "venue": "Narva Kalev-Fama staadion",
+   "city": "Narva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186757",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "59d04a466f5b",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-04-23T18:00:00+03:00",
+   "home": "Tallinna FC Flora U21",
+   "away": "FC Elva",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186492",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "11dc69b960d7",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-04-23T19:00:00+03:00",
+   "home": "Viimsi JK",
+   "away": "Tartu JK Welco",
+   "venue": "Viimsi staadion",
+   "city": "Viimsi",
+   "url": "https://jalgpall.ee/voistlused/match_info/186493",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "73ad8beac6f1",
@@ -610,7 +1146,22 @@
    "city": "Saku",
    "url": "https://jalgpall.ee/voistlused/match_info/186994",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "8191d970ab43",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-04-24T19:00:00+03:00",
+   "home": "FC Nõmme United U21",
+   "away": "Nõmme Kalju FC U21",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186495",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "d84fca6e7dc5",
@@ -623,7 +1174,8 @@
    "city": "Elva",
    "url": "https://jalgpall.ee/voistlused/match_info/186993",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "474a9ace70c3",
@@ -636,7 +1188,8 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/186146",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "76237a04b5ac",
@@ -649,7 +1202,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186147",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "1ace83743f42",
@@ -662,7 +1216,22 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/186995",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "75a607faab29",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-04-26T12:30:00+03:00",
+   "home": "Tartu JK Tammeka U21",
+   "away": "Viljandi JK Tulevik",
+   "venue": "Tartu Coop staadioni kunstmuruväljak",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186762",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "7b362f6cd2cf",
@@ -675,7 +1244,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186149",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "bf1d9d964073",
@@ -688,7 +1258,36 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/186148",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "ade1b2d67a06",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-04-26T17:00:00+03:00",
+   "home": "Tartu JK Tammeka (N)",
+   "away": "Pärnu JK Poseidon (N)",
+   "venue": "Tartu Coop staadioni kunstmuruväljak",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/187170",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "e4f51c96fb46",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-04-26T17:00:00+03:00",
+   "home": "Harju JK Laagri II (N)",
+   "away": "Lasnamäe FC Ajax (N)",
+   "venue": "Laagri kunstmurustaadion",
+   "city": "Saue vald",
+   "url": "https://jalgpall.ee/voistlused/match_info/187172",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "eabc0ac3ddbf",
@@ -701,7 +1300,36 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186150",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "cf39ffbcd814",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-04-26T19:00:00+03:00",
+   "home": "Viimsi JK",
+   "away": "Maardu Linnameeskond",
+   "venue": "Viimsi staadion",
+   "city": "Viimsi",
+   "url": "https://jalgpall.ee/voistlused/match_info/186500",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "602aa4d8af73",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-04-27T19:00:00+03:00",
+   "home": "Nõmme Kalju FC U21",
+   "away": "JK Tallinna Kalev",
+   "venue": "Hiiu staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186498",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "630a8a101ad8",
@@ -714,7 +1342,22 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186151",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "be2feb93cfe1",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-05-01T12:30:00+03:00",
+   "home": "JK Tallinna Kalev",
+   "away": "FC Nõmme United U21",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186502",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "92b99e678c79",
@@ -727,7 +1370,8 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/186996",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "1fcb846e7907",
@@ -740,7 +1384,8 @@
    "city": "Narva",
    "url": "https://jalgpall.ee/voistlused/match_info/186152",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "3e486214e8c9",
@@ -753,7 +1398,8 @@
    "city": "Viimsi",
    "url": "https://jalgpall.ee/voistlused/match_info/186998",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "7c700cd7f9f1",
@@ -766,7 +1412,50 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/186153",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "7c9317a5c2dc",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-05-01T19:00:00+03:00",
+   "home": "Tallinna FC Flora U21",
+   "away": "Maardu Linnameeskond",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186503",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "17b929c9e4ff",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-05-02T12:30:00+03:00",
+   "home": "FC Elva",
+   "away": "Nõmme Kalju FC U21",
+   "venue": "Nike Arena Elva",
+   "city": "Elva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186505",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "81740885283f",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-05-02T12:30:00+03:00",
+   "home": "JK Narva Trans U21",
+   "away": "Tallinna JK Legion",
+   "venue": "Narva Kalev-Fama staadion",
+   "city": "Narva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186769",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "3152f27b05e8",
@@ -779,7 +1468,8 @@
    "city": "Kuressaare",
    "url": "https://jalgpall.ee/voistlused/match_info/186154",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "09836bdaa7da",
@@ -792,7 +1482,8 @@
    "city": "Pärnu",
    "url": "https://jalgpall.ee/voistlused/match_info/186155",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "cbb491754562",
@@ -805,7 +1496,22 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/186997",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "b19d72d0712a",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-05-03T12:30:00+03:00",
+   "home": "Pärnu JK Vaprus U21",
+   "away": "Tartu JK Tammeka U21",
+   "venue": "Pärnu Rehepapi kunstmuruväljak",
+   "city": "Pärnu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186771",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "cf5773d33546",
@@ -818,7 +1524,8 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/186156",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "70fdaccad626",
@@ -831,7 +1538,8 @@
    "city": "Elva",
    "url": "https://jalgpall.ee/voistlused/match_info/186999",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "7f6c22e89da9",
@@ -844,7 +1552,22 @@
    "city": "Saku",
    "url": "https://jalgpall.ee/voistlused/match_info/187000",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "db8c2fba7852",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-05-09T12:30:00+03:00",
+   "home": "Tallinna FC Flora U21",
+   "away": "Viimsi JK",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186507",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "6fb6a51293f8",
@@ -857,7 +1580,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186157",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "6e04d7c34b5f",
@@ -870,7 +1594,22 @@
    "city": "Pärnu",
    "url": "https://jalgpall.ee/voistlused/match_info/186158",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "e3d327950e31",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-05-09T17:00:00+03:00",
+   "home": "JK Tallinna Kalev",
+   "away": "Tartu JK Welco",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186509",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "1a0edceae028",
@@ -883,7 +1622,50 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/187001",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "eac19fff90a5",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-05-09T19:00:00+03:00",
+   "home": "Tartu JK Tammeka U21",
+   "away": "Tallinna JK Legion",
+   "venue": "Tartu Coop staadioni kunstmuruväljak",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186772",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "23be40642c5b",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-05-10T12:00:00+03:00",
+   "home": "Pärnu JK Poseidon (N)",
+   "away": "Harju JK Laagri II (N)",
+   "venue": "Pärnu Rehepapi kunstmuruväljak",
+   "city": "Pärnu",
+   "url": "https://jalgpall.ee/voistlused/match_info/187175",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "d4886e6e2d00",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-05-10T12:30:00+03:00",
+   "home": "JK Narva Trans U21",
+   "away": "Tallinna FCI Levadia U19",
+   "venue": "Narva Kalev-Fama staadion",
+   "city": "Narva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186774",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "2b2439f680a4",
@@ -896,7 +1678,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186159",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "8fd324f46caa",
@@ -909,7 +1692,36 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186160",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "058c2a7fdc3d",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-05-11T19:00:00+03:00",
+   "home": "Nõmme Kalju FC U21",
+   "away": "Tallinna FCI Levadia U21",
+   "venue": "Hiiu staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186510",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "e7b9c2f10baa",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-05-13T19:00:00+03:00",
+   "home": "Tallinna FC Flora U21",
+   "away": "FC Nõmme United U21",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186525",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "c00b63d58827",
@@ -922,7 +1734,8 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/186161",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "bfd7a9af2997",
@@ -935,7 +1748,8 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/187003",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "de2a3dd4019c",
@@ -948,7 +1762,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/187002",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "18b3660b48dd",
@@ -961,7 +1776,8 @@
    "city": "Narva",
    "url": "https://jalgpall.ee/voistlused/match_info/186162",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "e394cd48c689",
@@ -974,7 +1790,22 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/186165",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "48fc70fb5365",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-05-16T19:00:00+03:00",
+   "home": "FC Nõmme United U21",
+   "away": "FC Elva",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186514",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "c281f4e3b952",
@@ -987,7 +1818,36 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/187004",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "c919f5e34384",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-05-16T19:00:00+03:00",
+   "home": "Nõmme Kalju FC U21",
+   "away": "Viimsi JK",
+   "venue": "Hiiu staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186512",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "fee8dc4e2c4c",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-05-17T12:00:00+03:00",
+   "home": "Tartu JK Tammeka (N)",
+   "away": "Põlva FC Lootos (N)",
+   "venue": "Tartu Coop staadioni kunstmuruväljak",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/187178",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "8c709c640aa0",
@@ -1000,7 +1860,8 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/186164",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "2acbb34adab0",
@@ -1013,7 +1874,36 @@
    "city": "Kuressaare",
    "url": "https://jalgpall.ee/voistlused/match_info/186163",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "7928ea98c63e",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-05-17T17:00:00+03:00",
+   "home": "Harju JK Laagri II (N)",
+   "away": "Tallinna FC Flora II (N)",
+   "venue": "Laagri kunstmurustaadion",
+   "city": "Saue vald",
+   "url": "https://jalgpall.ee/voistlused/match_info/187180",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "c4baa09a44c5",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-05-17T17:00:00+03:00",
+   "home": "Pärnu JK Vaprus U21",
+   "away": "JK Narva Trans U21",
+   "venue": "Pärnu Rehepapi kunstmuruväljak",
+   "city": "Pärnu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186780",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "14de15ba7b79",
@@ -1026,7 +1916,8 @@
    "city": "Narva",
    "url": "https://jalgpall.ee/voistlused/match_info/186168",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "6086d2d64be1",
@@ -1039,7 +1930,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186170",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "da87dc40a385",
@@ -1052,7 +1944,22 @@
    "city": "Kuressaare",
    "url": "https://jalgpall.ee/voistlused/match_info/186167",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "e4ed45cf86a8",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-05-24T12:30:00+03:00",
+   "home": "Tartu JK Tammeka U21",
+   "away": "JK Narva Trans U21",
+   "venue": "Tartu Coop staadioni kunstmuruväljak",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186783",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "ac879553c52a",
@@ -1065,7 +1972,36 @@
    "city": "Pärnu",
    "url": "https://jalgpall.ee/voistlused/match_info/186169",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "c539a585d21d",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-05-27T19:00:00+03:00",
+   "home": "JK Tallinna Kalev",
+   "away": "Viimsi JK",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186521",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "01fe0ccce28c",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-05-28T19:00:00+03:00",
+   "home": "JK Narva Trans U21",
+   "away": "Jõhvi FC Phoenix",
+   "venue": "Narva Kalev-Fama staadion",
+   "city": "Narva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186788",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "47cf9045b94f",
@@ -1078,7 +2014,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186171",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "5ffb90874a19",
@@ -1091,7 +2028,8 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/187005",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "24f96640f4e8",
@@ -1104,7 +2042,8 @@
    "city": "Saku",
    "url": "https://jalgpall.ee/voistlused/match_info/187006",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "66ddd7f8bf20",
@@ -1117,7 +2056,8 @@
    "city": "Elva",
    "url": "https://jalgpall.ee/voistlused/match_info/187007",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "ea92243fc038",
@@ -1130,7 +2070,8 @@
    "city": "Pärnu",
    "url": "https://jalgpall.ee/voistlused/match_info/186174",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "f727f3709bc8",
@@ -1143,7 +2084,8 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/186172",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "271ac31a71af",
@@ -1156,7 +2098,36 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/186173",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "f3f120ce9be4",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-05-31T12:30:00+03:00",
+   "home": "JK Narva Trans U21",
+   "away": "JK Tabasalu",
+   "venue": "Narva Kalev-Fama staadion",
+   "city": "Narva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186792",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "4535969ac11e",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-05-31T17:00:00+03:00",
+   "home": "JK Tallinna Kalev",
+   "away": "Tallinna FCI Levadia U21",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186528",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "efced60e363f",
@@ -1169,7 +2140,64 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/186175",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "4f4e0b38168d",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-06-01T19:00:00+03:00",
+   "home": "Tartu JK Tammeka U21",
+   "away": "Pärnu JK Vaprus U21",
+   "venue": "Tartu Coop staadioni kunstmuruväljak",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186795",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "5c8e38c34eb9",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-06-01T19:00:00+03:00",
+   "home": "Nõmme Kalju FC U21",
+   "away": "FC Tallinn",
+   "venue": "Hiiu staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186530",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "713bf45e1c73",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-06-06T16:00:00+03:00",
+   "home": "Harju JK Laagri II (N)",
+   "away": "Tallinna FC Levadia (N)",
+   "venue": "Laagri kunstmurustaadion",
+   "city": "Saue vald",
+   "url": "https://jalgpall.ee/voistlused/match_info/187188",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "9e18dade9d39",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-06-10T20:00:00+03:00",
+   "home": "Pärnu JK Poseidon (N)",
+   "away": "Tallinna FC Flora II (N)",
+   "venue": "Pärnu Rehepapi kunstmuruväljak",
+   "city": "Pärnu",
+   "url": "https://jalgpall.ee/voistlused/match_info/187186",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "7975fe8d23ec",
@@ -1182,7 +2210,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/187009",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "643648157824",
@@ -1195,7 +2224,8 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/186176",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "d2cc2ae422e0",
@@ -1208,7 +2238,8 @@
    "city": "Narva",
    "url": "https://jalgpall.ee/voistlused/match_info/186180",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "a706695ac52a",
@@ -1221,7 +2252,8 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/186178",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "b52a3d3b9f44",
@@ -1234,7 +2266,8 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/187010",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "e642e0f3b31a",
@@ -1247,7 +2280,22 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186177",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "c4f7f5c53503",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-06-14T12:30:00+03:00",
+   "home": "Tallinna FC Flora U21",
+   "away": "JK Tallinna Kalev",
+   "venue": "Lilleküla harjutusväljak I",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186534",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "24b185a61191",
@@ -1260,7 +2308,50 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186179",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "2e908bfd0d97",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-06-14T17:00:00+03:00",
+   "home": "Tartu JK Tammeka (N)",
+   "away": "Harju JK Laagri II (N)",
+   "venue": "Tartu Coop staadioni kunstmuruväljak",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/187189",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "60d30a0efa7f",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-06-15T19:00:00+03:00",
+   "home": "Pärnu JK Vaprus U21",
+   "away": "Tallinna FCI Levadia U19",
+   "venue": "Pärnu Rannastaadion",
+   "city": "Pärnu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186801",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "bcbb475a32ec",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-06-15T19:00:00+03:00",
+   "home": "Nõmme Kalju FC U21",
+   "away": "FC Nõmme United U21",
+   "venue": "Hiiu staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186532",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "b519f916634c",
@@ -1273,7 +2364,8 @@
    "city": "Kuressaare",
    "url": "https://jalgpall.ee/voistlused/match_info/186182",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "e948b3ebedf7",
@@ -1286,7 +2378,8 @@
    "city": "Pärnu",
    "url": "https://jalgpall.ee/voistlused/match_info/186181",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "1b73ffc9af2c",
@@ -1299,7 +2392,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186184",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "667e698f1d2a",
@@ -1312,7 +2406,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186183",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "b78c2726ffe1",
@@ -1325,7 +2420,36 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/186185",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "f103b93746b0",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-06-18T18:00:00+03:00",
+   "home": "FC Nõmme United U21",
+   "away": "JK Tallinna Kalev",
+   "venue": "Männiku staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186537",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "331a30d14cb2",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-06-18T19:00:00+03:00",
+   "home": "Tartu JK Tammeka U21",
+   "away": "JK Tabasalu",
+   "venue": "Tartu Coop staadioni kunstmuruväljak",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186802",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "512f0da3d1d5",
@@ -1338,7 +2462,50 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/187013",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "ea78ef660b2e",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-06-18T19:00:00+03:00",
+   "home": "JK Narva Trans U21",
+   "away": "FA Tartu Kalev",
+   "venue": "Narva Kalev-Fama staadion",
+   "city": "Narva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186804",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "3c19b931d9ee",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-06-19T19:00:00+03:00",
+   "home": "Pärnu JK Vaprus U21",
+   "away": "JK Tallinna Kalev U21",
+   "venue": "Pärnu Rannastaadion",
+   "city": "Pärnu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186805",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "1855c471696a",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-06-20T13:00:00+03:00",
+   "home": "Tartu JK Tammeka (N)",
+   "away": "Lasnamäe FC Ajax (N)",
+   "venue": "Tartu Coop staadioni kunstmuruväljak",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/187194",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "6de245ff2b6a",
@@ -1351,7 +2518,8 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/186186",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "37e08027ea6f",
@@ -1364,7 +2532,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186187",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "638b1cc99d16",
@@ -1377,7 +2546,22 @@
    "city": "Elva",
    "url": "https://jalgpall.ee/voistlused/match_info/187011",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "1c58827d574b",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-06-21T12:30:00+03:00",
+   "home": "JK Tallinna Kalev",
+   "away": "Nõmme Kalju FC U21",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186541",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "73bca5e4b9f9",
@@ -1390,7 +2574,8 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/186188",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "7be113f69ea3",
@@ -1403,7 +2588,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186189",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "c84a3c4f4c5e",
@@ -1416,7 +2602,8 @@
    "city": "Pärnu",
    "url": "https://jalgpall.ee/voistlused/match_info/186190",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "1d4d6fb43e07",
@@ -1429,7 +2616,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186196",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "918c1d9c11a4",
@@ -1442,7 +2630,22 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186197",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "d7de2d673855",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-06-30T19:00:00+03:00",
+   "home": "FC Nõmme United U21",
+   "away": "Tallinna FC Flora U21",
+   "venue": "Männiku staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186497",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "65e48f5c41b1",
@@ -1455,7 +2658,8 @@
    "city": "Kuressaare",
    "url": "https://jalgpall.ee/voistlused/match_info/186191",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "6f4b9aa0bba9",
@@ -1468,7 +2672,22 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186192",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "66b7c0ab43d9",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-07-03T20:30:00+03:00",
+   "home": "JK Tallinna Kalev",
+   "away": "Maardu Linnameeskond",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186547",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "0cb30120918c",
@@ -1481,7 +2700,8 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/186194",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "8e748610a023",
@@ -1494,7 +2714,50 @@
    "city": "Narva",
    "url": "https://jalgpall.ee/voistlused/match_info/186193",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "1e363f6cc53d",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-07-05T15:00:00+03:00",
+   "home": "Nõmme Kalju FC U21",
+   "away": "FC Elva",
+   "venue": "Hiiu staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186548",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "6ed578fb12a6",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-07-05T15:00:00+03:00",
+   "home": "Tallinna FC Flora U21",
+   "away": "Tallinna FCI Levadia U21",
+   "venue": "Lilleküla harjutusväljak I",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186550",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "eae67ffa67fd",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-07-05T15:00:00+03:00",
+   "home": "JK Narva Trans U21",
+   "away": "Viljandi JK Tulevik",
+   "venue": "Narva Kalev-Fama staadion",
+   "city": "Narva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186815",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "95bae71ea438",
@@ -1507,7 +2770,8 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/186195",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "815a4d5c28e0",
@@ -1520,7 +2784,8 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/186198",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "0b5d7a0bfe28",
@@ -1533,7 +2798,8 @@
    "city": "Pärnu",
    "url": "https://jalgpall.ee/voistlused/match_info/186200",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "5b8d006fe729",
@@ -1546,7 +2812,64 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186199",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "3110d6715568",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-07-11T19:00:00+03:00",
+   "home": "Viimsi JK",
+   "away": "Nõmme Kalju FC U21",
+   "venue": "Viimsi staadion",
+   "city": "Viimsi",
+   "url": "https://jalgpall.ee/voistlused/match_info/186551",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "fb35fe304ece",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-07-12T17:00:00+03:00",
+   "home": "Tartu JK Tammeka U21",
+   "away": "JK Narva Trans U21",
+   "venue": "Tartu Coop staadioni kunstmuruväljak",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186819",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "dde3796eee6f",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-07-12T19:00:00+03:00",
+   "home": "FC Nõmme United U21",
+   "away": "Tallinna FC Flora U21",
+   "venue": "Männiku staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186554",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "55a0d2bec759",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-07-16T19:00:00+03:00",
+   "home": "Viimsi JK",
+   "away": "FC Elva",
+   "venue": "Viimsi staadion",
+   "city": "Viimsi",
+   "url": "https://jalgpall.ee/voistlused/match_info/186556",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "89c2b7f24f46",
@@ -1559,7 +2882,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186201",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "b79be1f071e4",
@@ -1572,7 +2896,8 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/187014",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "ff0994772370",
@@ -1585,7 +2910,8 @@
    "city": "Viimsi",
    "url": "https://jalgpall.ee/voistlused/match_info/187015",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "df1e26e15963",
@@ -1598,7 +2924,64 @@
    "city": "Narva",
    "url": "https://jalgpall.ee/voistlused/match_info/186202",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "32c4f9a7069e",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-07-18T19:00:00+03:00",
+   "home": "Nõmme Kalju FC U21",
+   "away": "Tallinna FCI Levadia U21",
+   "venue": "Hiiu staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186560",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "5e886542f1d6",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-07-18T19:00:00+03:00",
+   "home": "Tallinna FC Flora U21",
+   "away": "Maardu Linnameeskond",
+   "venue": "Lilleküla harjutusväljak I",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186559",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "846e9383f76f",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-07-18T19:00:00+03:00",
+   "home": "JK Tallinna Kalev",
+   "away": "FC Nõmme United U21",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186558",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "58ea314fb55d",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-07-19T12:30:00+03:00",
+   "home": "JK Narva Trans U21",
+   "away": "Pärnu JK Vaprus U21",
+   "venue": "Narva Kalev-Fama staadion",
+   "city": "Narva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186823",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "8b1cedaee32c",
@@ -1611,7 +2994,8 @@
    "city": "Kuressaare",
    "url": "https://jalgpall.ee/voistlused/match_info/186204",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "23270ae92df8",
@@ -1624,7 +3008,22 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/186205",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "dcbd2eaf1a1a",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-07-20T17:00:00+03:00",
+   "home": "Tartu JK Tammeka U21",
+   "away": "JK Tallinna Kalev U21",
+   "venue": "Tartu Coop staadioni kunstmuruväljak",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186825",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "63458b82d122",
@@ -1637,7 +3036,22 @@
    "city": "Saku",
    "url": "https://jalgpall.ee/voistlused/match_info/187012",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "77c0acbbd9b0",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-07-25T19:00:00+03:00",
+   "home": "Nõmme Kalju FC U21",
+   "away": "Tallinna FC Flora U21",
+   "venue": "Hiiu staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186519",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "add1e1c7e130",
@@ -1650,7 +3064,8 @@
    "city": "Viimsi",
    "url": "https://jalgpall.ee/voistlused/match_info/187017",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "86a2645105ce",
@@ -1663,7 +3078,22 @@
    "city": "Saku",
    "url": "https://jalgpall.ee/voistlused/match_info/187018",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "bb415cfffe8f",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-07-27T19:00:00+03:00",
+   "home": "FC Nõmme United U21",
+   "away": "Viimsi JK",
+   "venue": "Männiku staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186527",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "41e41cc266da",
@@ -1676,7 +3106,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186206",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "bcddd870a87f",
@@ -1689,7 +3120,8 @@
    "city": "Elva",
    "url": "https://jalgpall.ee/voistlused/match_info/187020",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "cbfb5303a1b0",
@@ -1702,7 +3134,22 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/187019",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "599815c4bc2e",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-08-01T17:00:00+03:00",
+   "home": "JK Narva Trans U21",
+   "away": "JK Tallinna Kalev U21",
+   "venue": "Narva Kalev-Fama staadion",
+   "city": "Narva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186828",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "c02f4603e3f1",
@@ -1715,7 +3162,36 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/187021",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "454ddb810ed7",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-08-01T19:00:00+03:00",
+   "home": "Nõmme Kalju FC U21",
+   "away": "Maardu Linnameeskond",
+   "venue": "Hiiu staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186561",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "f23658e16317",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-08-01T19:00:00+03:00",
+   "home": "FC Nõmme United U21",
+   "away": "Tartu JK Welco",
+   "venue": "Männiku staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186564",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "00233b504bff",
@@ -1728,7 +3204,22 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186207",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "6cc2e7686fc3",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-08-02T17:00:00+03:00",
+   "home": "Harju JK Laagri II (N)",
+   "away": "Pärnu JK Poseidon (N)",
+   "venue": "Laagri kunstmurustaadion",
+   "city": "Saue vald",
+   "url": "https://jalgpall.ee/voistlused/match_info/187204",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "c9c8d1d07942",
@@ -1741,7 +3232,8 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/186208",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "4ad3178b6e46",
@@ -1754,7 +3246,8 @@
    "city": "Pärnu",
    "url": "https://jalgpall.ee/voistlused/match_info/186209",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "7b766a91e776",
@@ -1767,7 +3260,36 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186210",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "9bdd17ac0850",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-08-03T19:00:00+03:00",
+   "home": "Pärnu JK Vaprus U21",
+   "away": "Tallinna FCI Levadia U19",
+   "venue": "Pärnu Rannastaadion",
+   "city": "Pärnu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186831",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "c7a49b7e2baa",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-08-03T19:00:00+03:00",
+   "home": "Viimsi JK",
+   "away": "JK Tallinna Kalev",
+   "venue": "Viimsi staadion",
+   "city": "Viimsi",
+   "url": "https://jalgpall.ee/voistlused/match_info/186565",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "0d2a389b126d",
@@ -1780,7 +3302,8 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/187016",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "fc64e226ef41",
@@ -1793,7 +3316,8 @@
    "city": "Kuressaare",
    "url": "https://jalgpall.ee/voistlused/match_info/186211",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "a1649e3f215e",
@@ -1806,7 +3330,36 @@
    "city": "Saku",
    "url": "https://jalgpall.ee/voistlused/match_info/187023",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "05731e0863e1",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-08-08T15:00:00+03:00",
+   "home": "JK Tallinna Kalev",
+   "away": "FC Tallinn",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186567",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "8cf06e95d686",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-08-08T15:00:00+03:00",
+   "home": "FC Elva",
+   "away": "Tartu JK Welco",
+   "venue": "Elva linnastaadion",
+   "city": "Elva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186566",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "4378304894e3",
@@ -1819,7 +3372,22 @@
    "city": "Narva",
    "url": "https://jalgpall.ee/voistlused/match_info/186213",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "aa6c7eb59023",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-08-08T19:00:00+03:00",
+   "home": "FC Nõmme United U21",
+   "away": "Tallinna FCI Levadia U21",
+   "venue": "Männiku staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186568",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "b84b8c82e8e1",
@@ -1832,7 +3400,22 @@
    "city": "Elva",
    "url": "https://jalgpall.ee/voistlused/match_info/187022",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "0af25be9f56e",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-08-09T12:00:00+03:00",
+   "home": "Tartu JK Tammeka (N)",
+   "away": "Põlva FC Lootos (N)",
+   "venue": "Tartu Coop staadioni kunstmuruväljak",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/187234",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "71013286e294",
@@ -1845,7 +3428,8 @@
    "city": "Viimsi",
    "url": "https://jalgpall.ee/voistlused/match_info/187024",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "286094c6b776",
@@ -1858,7 +3442,50 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186215",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "5056a9460e33",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-08-10T19:00:00+03:00",
+   "home": "Tallinna FC Flora U21",
+   "away": "Nõmme Kalju FC U21",
+   "venue": "Lilleküla harjutusväljak I",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186570",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "b184826b9776",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-08-10T19:00:00+03:00",
+   "home": "Tartu JK Tammeka U21",
+   "away": "Pärnu JK Vaprus U21",
+   "venue": "Tartu Coop staadioni kunstmuruväljak",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186836",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "7370e5aa95c0",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-08-12T18:00:00+03:00",
+   "home": "Tallinna FC Flora II (N)",
+   "away": "Pärnu JK Poseidon (N)",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/187215",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "222090d81544",
@@ -1871,7 +3498,8 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/187026",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "8c1dd823631b",
@@ -1884,7 +3512,22 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186216",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "d4b1f9a8f47c",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-08-15T12:00:00+03:00",
+   "home": "Tartu JK Tammeka (N)",
+   "away": "Tallinna FC Levadia (N)",
+   "venue": "Tartu Coop staadioni kunstmuruväljak",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/187210",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "00eb4c182247",
@@ -1897,7 +3540,8 @@
    "city": "Saku",
    "url": "https://jalgpall.ee/voistlused/match_info/187027",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "10538bb07ebb",
@@ -1910,7 +3554,78 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/187025",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "2d500ed66d75",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-08-15T19:00:00+03:00",
+   "home": "JK Tallinna Kalev",
+   "away": "FC Elva",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186572",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "e8cba02a4e94",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-08-15T19:00:00+03:00",
+   "home": "Viimsi JK",
+   "away": "Tallinna FCI Levadia U21",
+   "venue": "Viimsi staadion",
+   "city": "Viimsi",
+   "url": "https://jalgpall.ee/voistlused/match_info/186573",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "ed92e5cb35ba",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-08-15T19:00:00+03:00",
+   "home": "JK Narva Trans U21",
+   "away": "Jõhvi FC Phoenix",
+   "venue": "Narva Kalev-Fama staadion",
+   "city": "Narva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186839",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "5d341c528952",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-08-16T14:00:00+03:00",
+   "home": "Harju JK Laagri II (N)",
+   "away": "Põlva FC Lootos (N)",
+   "venue": "Laagri kunstmurustaadion",
+   "city": "Saue vald",
+   "url": "https://jalgpall.ee/voistlused/match_info/187212",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "1b28d6d2d65e",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-08-16T15:00:00+03:00",
+   "home": "Tallinna FC Flora II (N)",
+   "away": "Lasnamäe FC Ajax (N)",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/187211",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "cf967266dd25",
@@ -1923,7 +3638,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186217",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "f80b56467813",
@@ -1936,7 +3652,8 @@
    "city": "Narva",
    "url": "https://jalgpall.ee/voistlused/match_info/186218",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "bf87181892b2",
@@ -1949,7 +3666,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186220",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "ca1979813761",
@@ -1962,7 +3680,36 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/186219",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "95d093d6ffab",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-08-17T19:00:00+03:00",
+   "home": "FC Nõmme United U21",
+   "away": "Nõmme Kalju FC U21",
+   "venue": "Männiku staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186575",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "90d78292c815",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-08-20T12:30:00+03:00",
+   "home": "FC Elva",
+   "away": "Maardu Linnameeskond",
+   "venue": "Elva linnastaadion",
+   "city": "Elva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186576",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "2cde2f3e97f4",
@@ -1975,7 +3722,36 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/187028",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "5bf33808cb2d",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-08-20T15:00:00+03:00",
+   "home": "Nõmme Kalju FC U21",
+   "away": "JK Tallinna Kalev",
+   "venue": "Hiiu staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186578",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "901fdd03dd8b",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-08-20T15:00:00+03:00",
+   "home": "Pärnu JK Vaprus U21",
+   "away": "Viljandi JK Tulevik",
+   "venue": "Pärnu Rannastaadion",
+   "city": "Pärnu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186844",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "0270cde2998f",
@@ -1988,7 +3764,8 @@
    "city": "Viimsi",
    "url": "https://jalgpall.ee/voistlused/match_info/187030",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "ff9a1b5874c4",
@@ -2001,7 +3778,22 @@
    "city": "Elva",
    "url": "https://jalgpall.ee/voistlused/match_info/187029",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "520c027e82a1",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-08-21T18:30:00+03:00",
+   "home": "Tallinna FC Flora U21",
+   "away": "Viimsi JK",
+   "venue": "Lilleküla harjutusväljak I",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186580",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "72c36ba9f41d",
@@ -2014,7 +3806,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186221",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "e1281504a6c6",
@@ -2027,7 +3820,8 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/186223",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "75972211ec5f",
@@ -2040,7 +3834,22 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/186222",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "c64ca70a60f5",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-08-22T20:00:00+03:00",
+   "home": "Tartu JK Tammeka (N)",
+   "away": "Tartu NJK Electra (N)",
+   "venue": "Tartu Tamme staadion",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/187213",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "8a94aa1eb94c",
@@ -2053,7 +3862,36 @@
    "city": "Elva",
    "url": "https://jalgpall.ee/voistlused/match_info/187008",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "fb67cc406d70",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-08-23T15:00:00+03:00",
+   "home": "Nõmme Kalju FC U21",
+   "away": "Tartu JK Welco",
+   "venue": "Hiiu staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186581",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "fb8c0d4625a2",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-08-23T15:00:00+03:00",
+   "home": "Tartu JK Tammeka U21",
+   "away": "Jõhvi FC Phoenix",
+   "venue": "Tartu Coop staadioni kunstmuruväljak",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186847",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "66799d52c9ae",
@@ -2066,7 +3904,8 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/186224",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "41a0643ada50",
@@ -2079,7 +3918,64 @@
    "city": "Pärnu",
    "url": "https://jalgpall.ee/voistlused/match_info/186225",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "dbef4777e142",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-08-24T18:30:00+03:00",
+   "home": "FC Elva",
+   "away": "Tallinna FC Flora U21",
+   "venue": "Elva linnastaadion",
+   "city": "Elva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186585",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "14d0cfbc35d5",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-08-24T19:00:00+03:00",
+   "home": "JK Tallinna Kalev",
+   "away": "Maardu Linnameeskond",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186583",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "53cc07916238",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-08-24T19:00:00+03:00",
+   "home": "Pärnu JK Vaprus U21",
+   "away": "JK Tabasalu",
+   "venue": "Pärnu Rannastaadion",
+   "city": "Pärnu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186849",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "d820a53b3562",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-08-24T19:00:00+03:00",
+   "home": "Viimsi JK",
+   "away": "FC Nõmme United U21",
+   "venue": "Viimsi staadion",
+   "city": "Viimsi",
+   "url": "https://jalgpall.ee/voistlused/match_info/186584",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "84898ce1c5fc",
@@ -2092,7 +3988,8 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/186166",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "8a11145ade7f",
@@ -2105,7 +4002,22 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/187032",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "cf8bc0d88186",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-08-29T12:30:00+03:00",
+   "home": "Tallinna FC Flora U21",
+   "away": "JK Tallinna Kalev",
+   "venue": "Lilleküla harjutusväljak I",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186586",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "b06f71b209f3",
@@ -2118,7 +4030,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186227",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "7feb83e4245f",
@@ -2131,7 +4044,22 @@
    "city": "Elva",
    "url": "https://jalgpall.ee/voistlused/match_info/187033",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "962879db5519",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-08-29T15:00:00+03:00",
+   "home": "JK Narva Trans U21",
+   "away": "JK Tabasalu",
+   "venue": "Narva Kalev-Fama staadion",
+   "city": "Narva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186853",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "2e45ea3a6674",
@@ -2144,7 +4072,8 @@
    "city": "Kuressaare",
    "url": "https://jalgpall.ee/voistlused/match_info/186228",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "69e8c8241127",
@@ -2157,7 +4086,8 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/187034",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "3f95e3352654",
@@ -2170,7 +4100,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186229",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "3a216c0610b4",
@@ -2183,7 +4114,22 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186230",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "94dc3dc25d8f",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-08-30T17:00:00+03:00",
+   "home": "Harju JK Laagri II (N)",
+   "away": "Tartu JK Tammeka (N)",
+   "venue": "Laagri kunstmurustaadion",
+   "city": "Saue vald",
+   "url": "https://jalgpall.ee/voistlused/match_info/187220",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "0b145088c111",
@@ -2196,7 +4142,22 @@
    "city": "Narva",
    "url": "https://jalgpall.ee/voistlused/match_info/186226",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "4da2a4acb164",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-08-31T19:00:00+03:00",
+   "home": "Tartu JK Tammeka U21",
+   "away": "Tallinna FCI Levadia U19",
+   "venue": "Tartu Coop staadioni kunstmuruväljak",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186855",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "2994540d1a5f",
@@ -2209,7 +4170,8 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/187031",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "5da645aad0d7",
@@ -2222,7 +4184,36 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186214",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "f9ad233f9db0",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-09-03T19:00:00+03:00",
+   "home": "Viimsi JK",
+   "away": "FC Tallinn",
+   "venue": "Viimsi staadion",
+   "city": "Viimsi",
+   "url": "https://jalgpall.ee/voistlused/match_info/186591",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "bbb2435d1aa4",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-09-03T19:30:00+03:00",
+   "home": "FC Nõmme United U21",
+   "away": "FC Elva",
+   "venue": "Männiku staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186590",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "be1da504fd59",
@@ -2235,7 +4226,8 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/187035",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "ddf325819776",
@@ -2248,7 +4240,8 @@
    "city": "Saku",
    "url": "https://jalgpall.ee/voistlused/match_info/187036",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "0cb6d8f3b2ad",
@@ -2261,7 +4254,8 @@
    "city": "Kuressaare",
    "url": "https://jalgpall.ee/voistlused/match_info/186232",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "82343ea8b1d6",
@@ -2274,7 +4268,8 @@
    "city": "Pärnu",
    "url": "https://jalgpall.ee/voistlused/match_info/186233",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "03244a8dd6a6",
@@ -2287,7 +4282,36 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186231",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "784fae0c0654",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-09-06T12:00:00+03:00",
+   "home": "Tartu JK Tammeka (N)",
+   "away": "Harju JK Laagri II (N)",
+   "venue": "Tartu Coop staadioni kunstmuruväljak",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/187221",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "d1a6e9eb211a",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-09-06T12:30:00+03:00",
+   "home": "Pärnu JK Vaprus U21",
+   "away": "JK Tallinna Kalev U21",
+   "venue": "Pärnu Rannastaadion",
+   "city": "Pärnu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186860",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "a91bf5a17c52",
@@ -2300,7 +4324,8 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/186234",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "1737e486e9d6",
@@ -2313,7 +4338,22 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/186235",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "4c8a49bc57b6",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-09-06T17:00:00+03:00",
+   "home": "FC Elva",
+   "away": "Nõmme Kalju FC U21",
+   "venue": "Elva linnastaadion",
+   "city": "Elva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186592",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "2f56871c54e6",
@@ -2326,7 +4366,8 @@
    "city": "Viimsi",
    "url": "https://jalgpall.ee/voistlused/match_info/187037",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "b0e333b08dbc",
@@ -2339,7 +4380,8 @@
    "city": "Narva",
    "url": "https://jalgpall.ee/voistlused/match_info/186237",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "c57284742ad3",
@@ -2352,7 +4394,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186236",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "105790613bee",
@@ -2365,7 +4408,8 @@
    "city": "Pärnu",
    "url": "https://jalgpall.ee/voistlused/match_info/186240",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "16da2aa233b3",
@@ -2378,7 +4422,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186239",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "dd0512cd0873",
@@ -2391,7 +4436,92 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/186238",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "88bef873b375",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-09-10T17:30:00+03:00",
+   "home": "Nõmme Kalju FC U21",
+   "away": "Tallinna FC Flora U21",
+   "venue": "Hiiu staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186596",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "af5ff0f2f41f",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-09-10T17:30:00+03:00",
+   "home": "FC Nõmme United U21",
+   "away": "JK Tallinna Kalev",
+   "venue": "Männiku staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186597",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "b2c0aee372a2",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-09-10T18:00:00+03:00",
+   "home": "Pärnu JK Vaprus U21",
+   "away": "Jõhvi FC Phoenix",
+   "venue": "Pärnu Rannastaadion",
+   "city": "Pärnu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186863",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "072b4ff62a85",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-09-10T19:00:00+03:00",
+   "home": "Tartu JK Tammeka U21",
+   "away": "Viljandi JK Tulevik",
+   "venue": "Tartu Coop staadioni kunstmuruväljak",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186864",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "0fdefc3d7f19",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-09-10T19:00:00+03:00",
+   "home": "Viimsi JK",
+   "away": "FC Elva",
+   "venue": "Viimsi staadion",
+   "city": "Viimsi",
+   "url": "https://jalgpall.ee/voistlused/match_info/186599",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "3fad9989aae6",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-09-11T18:15:00+03:00",
+   "home": "JK Narva Trans U21",
+   "away": "Tallinna FCI Levadia U19",
+   "venue": "Narva Kalev-Fama staadion",
+   "city": "Narva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186866",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "8fa35e9df33f",
@@ -2404,7 +4534,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/187038",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "c2c319365472",
@@ -2417,7 +4548,8 @@
    "city": "Elva",
    "url": "https://jalgpall.ee/voistlused/match_info/187039",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "f582057607a1",
@@ -2430,7 +4562,8 @@
    "city": "Viimsi",
    "url": "https://jalgpall.ee/voistlused/match_info/187040",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "5e367f082ebf",
@@ -2443,7 +4576,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186242",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "74a4b9537b6f",
@@ -2456,7 +4590,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186241",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "3e583909a3ce",
@@ -2469,7 +4604,50 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186243",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "3b9ebd2c9062",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-09-13T12:30:00+03:00",
+   "home": "Tallinna FC Flora U21",
+   "away": "FC Elva",
+   "venue": "Lilleküla harjutusväljak I",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186601",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "957be0b95a11",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-09-13T12:30:00+03:00",
+   "home": "Pärnu JK Vaprus U21",
+   "away": "FA Tartu Kalev",
+   "venue": "Pärnu Rannastaadion",
+   "city": "Pärnu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186867",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "f4f8a969af84",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-09-13T12:30:00+03:00",
+   "home": "FC Nõmme United U21",
+   "away": "Viimsi JK",
+   "venue": "Männiku staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186604",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "2be2459738ed",
@@ -2482,7 +4660,8 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/186244",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "1b9776eed9f6",
@@ -2495,7 +4674,36 @@
    "city": "Kuressaare",
    "url": "https://jalgpall.ee/voistlused/match_info/186245",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "5eada2c3a73b",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-09-13T17:00:00+03:00",
+   "home": "Harju JK Laagri II (N)",
+   "away": "Tallinna FC Levadia (N)",
+   "venue": "Laagri kunstmurustaadion",
+   "city": "Saue vald",
+   "url": "https://jalgpall.ee/voistlused/match_info/187228",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "868354c08226",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-09-15T17:30:00+03:00",
+   "home": "JK Narva Trans U21",
+   "away": "Tartu JK Tammeka U21",
+   "venue": "Narva Kalev-Fama staadion",
+   "city": "Narva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186869",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "07ccdde4d479",
@@ -2508,7 +4716,8 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/186212",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "80b048e23e4d",
@@ -2521,7 +4730,22 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186203",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "8c2020e90d66",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-09-17T19:00:00+03:00",
+   "home": "Viimsi JK",
+   "away": "Tartu JK Welco",
+   "venue": "Viimsi staadion",
+   "city": "Viimsi",
+   "url": "https://jalgpall.ee/voistlused/match_info/186606",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "af5488613055",
@@ -2534,7 +4758,22 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/186246",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "f35931cd196a",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-09-18T19:00:00+03:00",
+   "home": "Pärnu JK Vaprus U21",
+   "away": "Tallinna JK Legion",
+   "venue": "Pärnu Rannastaadion",
+   "city": "Pärnu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186874",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "5247186f2a01",
@@ -2547,7 +4786,8 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/187041",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "5e5db634fb97",
@@ -2560,7 +4800,22 @@
    "city": "Viimsi",
    "url": "https://jalgpall.ee/voistlused/match_info/187042",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "ce664810a9cd",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-09-19T16:00:00+03:00",
+   "home": "FC Elva",
+   "away": "FC Tallinn",
+   "venue": "Elva linnastaadion",
+   "city": "Elva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186607",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "db085367f5fb",
@@ -2573,7 +4828,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186248",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "8e241ac3319b",
@@ -2586,7 +4842,8 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/187043",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "22f2e0958b64",
@@ -2599,7 +4856,8 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/186249",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "3e407b7dd969",
@@ -2612,7 +4870,8 @@
    "city": "Narva",
    "url": "https://jalgpall.ee/voistlused/match_info/186250",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "ee07a1642dde",
@@ -2625,7 +4884,22 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186247",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "0c21cf8980e6",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-09-21T17:30:00+03:00",
+   "home": "Nõmme Kalju FC U21",
+   "away": "FC Nõmme United U21",
+   "venue": "Hiiu staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186610",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "293c67dccaff",
@@ -2638,7 +4912,8 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/187044",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "ed6d75dfda97",
@@ -2651,7 +4926,8 @@
    "city": "Viimsi",
    "url": "https://jalgpall.ee/voistlused/match_info/187045",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "9a60519a22b4",
@@ -2664,7 +4940,22 @@
    "city": "Saku",
    "url": "https://jalgpall.ee/voistlused/match_info/187046",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "84e9e41fb8f7",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-09-27T17:00:00+03:00",
+   "home": "Harju JK Laagri II (N)",
+   "away": "Tallinna FC Flora II (N)",
+   "venue": "Laagri kunstmurustaadion",
+   "city": "Saue vald",
+   "url": "https://jalgpall.ee/voistlused/match_info/187236",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "ac9fdfb26af9",
@@ -2677,7 +4968,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/187048",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "ce1a14e423f0",
@@ -2690,7 +4982,8 @@
    "city": "Viimsi",
    "url": "https://jalgpall.ee/voistlused/match_info/187047",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "2be1a6e7cf2f",
@@ -2703,7 +4996,36 @@
    "city": "Saku",
    "url": "https://jalgpall.ee/voistlused/match_info/187049",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "96e722796799",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-10-09T18:00:00+03:00",
+   "home": "FC Nõmme United U21",
+   "away": "Tallinna FCI Levadia U21",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186615",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "e3c8f4fbccfc",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-10-10T12:30:00+03:00",
+   "home": "Tallinna FC Flora U21",
+   "away": "FC Tallinn",
+   "venue": "Lilleküla harjutusväljak I",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186612",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "134c7f10b44b",
@@ -2716,7 +5038,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186252",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "5b96ebdd6937",
@@ -2729,7 +5052,8 @@
    "city": "Pärnu",
    "url": "https://jalgpall.ee/voistlused/match_info/186251",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "304831b65a19",
@@ -2742,7 +5066,8 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/186253",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "23aa3f0e2511",
@@ -2755,7 +5080,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186254",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "6f22a8c60592",
@@ -2768,7 +5094,22 @@
    "city": "Kuressaare",
    "url": "https://jalgpall.ee/voistlused/match_info/186255",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "cf68fd7c7a15",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-10-11T17:30:00+03:00",
+   "home": "Harju JK Laagri II (N)",
+   "away": "Lasnamäe FC Ajax (N)",
+   "venue": "Laagri kunstmurustaadion",
+   "city": "Saue vald",
+   "url": "https://jalgpall.ee/voistlused/match_info/187244",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "0f8e27c7f440",
@@ -2781,7 +5122,8 @@
    "city": "Pärnu",
    "url": "https://jalgpall.ee/voistlused/match_info/186256",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "2738b262fe61",
@@ -2794,7 +5136,8 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/186257",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "155d715da026",
@@ -2807,7 +5150,22 @@
    "city": "Narva",
    "url": "https://jalgpall.ee/voistlused/match_info/186259",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "09dbefc4e745",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-10-14T18:00:00+03:00",
+   "home": "Pärnu JK Vaprus U21",
+   "away": "JK Tabasalu",
+   "venue": "Pärnu Rannastaadion",
+   "city": "Pärnu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186884",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "929709a55346",
@@ -2820,7 +5178,8 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/186258",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "1c28d6eeaeaa",
@@ -2833,7 +5192,22 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186260",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "a41bb5e9bf9a",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-10-15T19:00:00+03:00",
+   "home": "JK Narva Trans U21",
+   "away": "FA Tartu Kalev",
+   "venue": "Narva Jalgpallihall",
+   "city": "Narva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186886",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "f5019a758969",
@@ -2846,7 +5220,8 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/187050",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "15e8f5e20db4",
@@ -2859,7 +5234,8 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/187052",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "19be5b8909bc",
@@ -2872,7 +5248,22 @@
    "city": "Elva",
    "url": "https://jalgpall.ee/voistlused/match_info/187051",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "70b91c769d8c",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-10-17T12:30:00+03:00",
+   "home": "Pärnu JK Vaprus U21",
+   "away": "Viljandi JK Tulevik",
+   "venue": "Pärnu Rannastaadion",
+   "city": "Pärnu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186887",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "d80c563fc1fb",
@@ -2885,7 +5276,64 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186261",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "5918597627ad",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-10-17T17:00:00+03:00",
+   "home": "Tallinna FC Flora II (N)",
+   "away": "Põlva FC Lootos (N)",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/187245",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "86ac9cf717d4",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-10-17T17:00:00+03:00",
+   "home": "Pärnu JK Poseidon (N)",
+   "away": "Tallinna FC Levadia (N)",
+   "venue": "Pärnu Rehepapi kunstmuruväljak",
+   "city": "Pärnu",
+   "url": "https://jalgpall.ee/voistlused/match_info/187246",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "de5ca2820711",
+   "sport": "jalgpall",
+   "league": "Naiste esiliiga",
+   "start": "2026-10-17T17:00:00+03:00",
+   "home": "Harju JK Laagri II (N)",
+   "away": "Tartu NJK Electra (N)",
+   "venue": "Laagri kunstmurustaadion",
+   "city": "Saue vald",
+   "url": "https://jalgpall.ee/voistlused/match_info/187248",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "7fbbae04c506",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-10-18T12:30:00+03:00",
+   "home": "Nõmme Kalju FC U21",
+   "away": "FC Elva",
+   "venue": "Hiiu staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186623",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "af5c88f9970f",
@@ -2898,7 +5346,8 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/186264",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "19a908dcf978",
@@ -2911,7 +5360,8 @@
    "city": "Kuressaare",
    "url": "https://jalgpall.ee/voistlused/match_info/186262",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "e1d6fd3a4d60",
@@ -2924,7 +5374,8 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/186265",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "1227cf1b241d",
@@ -2937,7 +5388,36 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186263",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "5d878c3bfbba",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-10-19T18:00:00+03:00",
+   "home": "JK Tallinna Kalev",
+   "away": "Tallinna FCI Levadia U21",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186621",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "e92692182f36",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-10-19T19:00:00+03:00",
+   "home": "Tartu JK Tammeka U21",
+   "away": "Tallinna JK Legion",
+   "venue": "Tartu Coop staadioni kunstmuruväljak",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186888",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "3b8f59c29bc1",
@@ -2950,7 +5430,22 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/186273",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "024305d2fb17",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-10-22T19:00:00+03:00",
+   "home": "Tallinna FC Flora U21",
+   "away": "FC Nõmme United U21",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186616",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "0a886fa9f390",
@@ -2963,7 +5458,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186266",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "4d6f2f20de23",
@@ -2976,7 +5472,22 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/186267",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "6038af1cb6b3",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-10-24T12:30:00+03:00",
+   "home": "Nõmme Kalju FC U21",
+   "away": "FC Tallinn",
+   "venue": "Hiiu staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186627",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "e64e7a8eee40",
@@ -2989,7 +5500,8 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/187055",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "08f22bcf5e63",
@@ -3002,7 +5514,8 @@
    "city": "Kuressaare",
    "url": "https://jalgpall.ee/voistlused/match_info/186270",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "5602f7f91869",
@@ -3015,7 +5528,36 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186268",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "a95c42a6b452",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-10-25T12:30:00+02:00",
+   "home": "FC Elva",
+   "away": "Tallinna FCI Levadia U21",
+   "venue": "Elva linnastaadion",
+   "city": "Elva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186629",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "f60ef945a5e6",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-10-25T12:30:00+02:00",
+   "home": "JK Narva Trans U21",
+   "away": "Viljandi JK Tulevik",
+   "venue": "Narva Kalev-Fama staadion",
+   "city": "Narva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186895",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "c055c7b423c5",
@@ -3028,7 +5570,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/187053",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "35da0ffe4f9d",
@@ -3041,7 +5584,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186269",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "fb50021e8097",
@@ -3054,7 +5598,22 @@
    "city": "Saku",
    "url": "https://jalgpall.ee/voistlused/match_info/187054",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "ae2e2eaaeed2",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-10-26T19:00:00+02:00",
+   "home": "Viimsi JK",
+   "away": "Tallinna FC Flora U21",
+   "venue": "Viimsi staadion",
+   "city": "Viimsi",
+   "url": "https://jalgpall.ee/voistlused/match_info/186628",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "642dcef17350",
@@ -3067,7 +5626,8 @@
    "city": "Narva",
    "url": "https://jalgpall.ee/voistlused/match_info/186272",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "b81e50c2a440",
@@ -3080,7 +5640,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186271",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "8c47438a2d69",
@@ -3093,7 +5654,8 @@
    "city": "Pärnu",
    "url": "https://jalgpall.ee/voistlused/match_info/186274",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "37840385b18e",
@@ -3106,7 +5668,8 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/186275",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "ee36fa89a347",
@@ -3119,7 +5682,8 @@
    "city": "Saku",
    "url": "https://jalgpall.ee/voistlused/match_info/187056",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "125f28f9ed40",
@@ -3132,7 +5696,8 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/186278",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "a2982b0fb8a3",
@@ -3145,7 +5710,8 @@
    "city": "Pärnu",
    "url": "https://jalgpall.ee/voistlused/match_info/186277",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "3c49acd20652",
@@ -3158,7 +5724,22 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186276",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "b1ad7fc2e67e",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-10-31T17:00:00+02:00",
+   "home": "JK Narva Trans U21",
+   "away": "Tallinna JK Legion",
+   "venue": "Narva Kalev-Fama staadion",
+   "city": "Narva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186898",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "e13218d76966",
@@ -3171,7 +5752,8 @@
    "city": "Saue vald",
    "url": "https://jalgpall.ee/voistlused/match_info/187057",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "e76cc45e4749",
@@ -3184,7 +5766,22 @@
    "city": "Viimsi",
    "url": "https://jalgpall.ee/voistlused/match_info/187058",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "564d6d125da8",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-10-31T19:00:00+02:00",
+   "home": "Tallinna FC Flora U21",
+   "away": "Tartu JK Welco",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186633",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "36583e293343",
@@ -3197,7 +5794,22 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186279",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "8632adb823c2",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-11-01T13:00:00+02:00",
+   "home": "FC Elva",
+   "away": "JK Tallinna Kalev",
+   "venue": "Elva linnastaadion",
+   "city": "Elva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186618",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "75b732e6cc68",
@@ -3210,7 +5822,50 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186280",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "5f8bfa149434",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-11-01T17:00:00+02:00",
+   "home": "Viimsi JK",
+   "away": "Tallinna FCI Levadia U21",
+   "venue": "Viimsi staadion",
+   "city": "Viimsi",
+   "url": "https://jalgpall.ee/voistlused/match_info/186634",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "9e746120c81a",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-11-01T17:00:00+02:00",
+   "home": "Pärnu JK Vaprus U21",
+   "away": "Tartu JK Tammeka U21",
+   "venue": "Pärnu Rehepapi kunstmuruväljak",
+   "city": "Pärnu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186901",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "233fb7477874",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-11-01T19:00:00+02:00",
+   "home": "FC Nõmme United U21",
+   "away": "FC Tallinn",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186635",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "0b3d62d13f83",
@@ -3223,7 +5878,8 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/186282",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "0f4923122759",
@@ -3236,7 +5892,8 @@
    "city": "Narva",
    "url": "https://jalgpall.ee/voistlused/match_info/186283",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "13c95cda4c66",
@@ -3249,7 +5906,8 @@
    "city": "Kuressaare",
    "url": "https://jalgpall.ee/voistlused/match_info/186285",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "5931698bff4e",
@@ -3262,7 +5920,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186281",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "e6664b5bef46",
@@ -3275,7 +5934,78 @@
    "city": "Tartu",
    "url": "https://jalgpall.ee/voistlused/match_info/186284",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
+  },
+  {
+   "id": "4749745d6e49",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-11-08T12:30:00+02:00",
+   "home": "Tartu JK Tammeka U21",
+   "away": "FA Tartu Kalev",
+   "venue": "Tartu Coop staadioni kunstmuruväljak",
+   "city": "Tartu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186902",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "55c040514576",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-11-08T12:30:00+02:00",
+   "home": "Tallinna FC Flora U21",
+   "away": "Tallinna FCI Levadia U21",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186638",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "6bb26c6f818c",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-11-08T12:30:00+02:00",
+   "home": "Viimsi JK",
+   "away": "Nõmme Kalju FC U21",
+   "venue": "Viimsi staadion",
+   "city": "Viimsi",
+   "url": "https://jalgpall.ee/voistlused/match_info/186639",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "e2d6b3809a8f",
+   "sport": "jalgpall",
+   "league": "Esiliiga B",
+   "start": "2026-11-08T12:30:00+02:00",
+   "home": "Pärnu JK Vaprus U21",
+   "away": "JK Narva Trans U21",
+   "venue": "Pärnu Rehepapi kunstmuruväljak",
+   "city": "Pärnu",
+   "url": "https://jalgpall.ee/voistlused/match_info/186906",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "f3946e0e5294",
+   "sport": "jalgpall",
+   "league": "Esiliiga",
+   "start": "2026-11-08T12:30:00+02:00",
+   "home": "FC Elva",
+   "away": "FC Nõmme United U21",
+   "venue": "Elva linnastaadion",
+   "city": "Elva",
+   "url": "https://jalgpall.ee/voistlused/match_info/186637",
+   "source": "jalgpall_ejl",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "2063b617f917",
@@ -3288,7 +6018,8 @@
    "city": "Viimsi",
    "url": "https://jalgpall.ee/voistlused/match_info/187060",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "30f57fcfd311",
@@ -3301,7 +6032,8 @@
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/187059",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   },
   {
    "id": "f192183922fc",
@@ -3314,7 +6046,8 @@
    "city": "Paide",
    "url": "https://jalgpall.ee/voistlused/match_info/187061",
    "source": "jalgpall_ejl",
-   "time_tbc": false
+   "time_tbc": false,
+   "level": 1
   }
  ]
 }

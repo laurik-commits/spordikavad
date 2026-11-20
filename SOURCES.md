@@ -113,6 +113,20 @@ Omaniku palvel vaadati üle kõigi alade täiskasvanute tippvõistlused.
 - Saalihoki: naiste kodumaist liigat ega täiskasvanute karikat pole.
 - Jäähoki: täiskasvanute karikat 2026/27 pole.
 
+## Esiliigad (eraldi kalender, lisatud 2026-11-20)
+
+Omaniku valik: iga ala teine tase (mehed ja naised), samades süsteemides mis kõrgliigad. Seadistuses `level = 2`:
+
+| Ala | Võistlus | ID |
+|---|---|---|
+| Jalgpall | Esiliiga, Esiliiga B, naiste esiliiga | jalgpall.ee 53, 186, 64 |
+| Käsipall | Meeste esiliiga | kasipall.ee 360 |
+| Võrkpall | Meeste ja naiste esiliiga | evf-web ID=98/PID=148, ID=106/PID=164 |
+| Saalihoki | Energialiiga | saalihoki.ee eesliide „Energialiiga“ |
+| Saalijalgpall | – (esiliigat jalgpall.ee-st ei leitud) | |
+
+Lisapäringuid on umbes 6 päevas (pluss käsipalli protokollid). Lisandus ~37 uut saali/väljakut. **NET Spordihall** (võrkpall, TBD Pharmatech) on jäetud lisamata, sest linn pole kinnitatud. Selle mänge ei kuvata, kuni see `venues.toml` faili lisatakse.
+
 ## Pistekontroll 2026-11-20
 
 Iga allika kohta üks mäng lehel olevatest andmetest, võrreldud allika enda mängulehega:

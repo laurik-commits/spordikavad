@@ -10,10 +10,10 @@ from scrapers.model import new_event
 from scrapers.venues import Venues
 
 
-def ev(day, hour, home, sport="jaahoki", venue="Haabersti jäähall", city="Tallinn"):
+def ev(day, hour, home, sport="jaahoki", venue="Haabersti jäähall", city="Tallinn", level=1):
     return new_event(source="t", sport=sport, league="Liiga", start=datetime(2026, 11, day, hour, 0),
                      home=home, away="Külalised", venue=venue, city=city,
-                     url="https://example.org/" + home)
+                     url="https://example.org/" + home, level=level)
 
 
 class RenderTest(unittest.TestCase):
@@ -25,7 +25,8 @@ class RenderTest(unittest.TestCase):
                                   "note": "Korvpalli andmeid ei koguta.", "link_text": "Ajakava"}]}
         events = [ev(22, 19, "B"), ev(22, 13, "A", sport="vorkpall"), ev(30, 12, "Kaugel"),
                   ev(21, 18, "Tartlased", sport="kasipall", venue="Tartu Ülikooli spordihoone", city="Tartu"),
-                  ev(21, 17, "Viimsilased", sport="kasipall", venue="Viimsi Kool", city="Viimsi")]
+                  ev(21, 17, "Viimsilased", sport="kasipall", venue="Viimsi Kool", city="Viimsi"),
+                  ev(21, 19, "Esiliigalased", sport="jalgpall", venue="Wismari jalgpallistaadion", level=2)]
         build.render(events, cfg, date(2026, 11, 20), self.tmp)
 
     def read(self, rel):
@@ -42,7 +43,7 @@ class RenderTest(unittest.TestCase):
 
     def test_empty_day_links_to_next_games(self):
         html = self.read("index.html")
-        self.assertIn("Täna Tallinnas mänge pole", html)
+        self.assertIn("Täna Tallinnas kõrgliigade mänge pole", html)
         self.assertIn('href="2026-11-22/"', html)
 
     def test_day_sorted_and_relative_links(self):
@@ -81,6 +82,21 @@ class RenderTest(unittest.TestCase):
         root = self.read("index.html")
         self.assertIn('data-index="1"', root)
         self.assertIn('href="tartu/2026-11-20/" data-region="tartu"', root)
+
+    def test_esiliigad_separate_calendar(self):
+        top = self.read("2026-11-21/index.html")
+        self.assertNotIn("Esiliigalased", top)
+        low = self.read("esiliigad/2026-11-21/index.html")
+        self.assertIn("Esiliigalased", low)
+        self.assertNotIn("Tartlased", low)                       # kõrgliiga mäng ei satu esiliigadesse
+        self.assertIn("Esiliigade mängud Tallinnas", low)
+        self.assertIn('href="../../style.css"', low)
+        self.assertIn('href="../../2026-11-21/" data-level="1"', low)  # tagasi kõrgliigadesse, sama päev
+        self.assertIn('href="../../esiliigad/tartu/2026-11-21/" data-region="tartu"', low)
+        self.assertTrue((self.tmp / "esiliigad/tartu/2026-11-21/index.html").exists())
+        tartu_low = self.read("esiliigad/tartu/2026-11-21/index.html")
+        self.assertIn('href="../../../style.css"', tartu_low)
+        self.assertIn("Sel päeval Tartus esiliigade mänge pole", tartu_low)
 
     def test_day_strip_marks_empty_days(self):
         html = self.read("index.html")
