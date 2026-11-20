@@ -140,7 +140,8 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
 
     present = sorted({e.sport for lst in by_day.values() for e in lst}, key=list(SPORTS).index)
     filters = [{"key": s, "label": SPORTS[s]} for s in present]
-    links = [{"sport": l["sport"], "label": SPORTS[l["sport"]], "url": l["url"]} for l in cfg.get("external_link", [])]
+    links = [{"sport": l["sport"], "label": SPORTS[l["sport"]], "url": l["url"],
+              "note": l.get("note", ""), "link_text": l.get("link_text", "")} for l in cfg.get("external_link", [])]
 
     env = Environment(loader=FileSystemLoader(SITE), autoescape=select_autoescape(["html"]), trim_blocks=True, lstrip_blocks=True)
     env.filters["et_date"] = et_date

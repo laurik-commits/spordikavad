@@ -28,6 +28,8 @@ retries = 3
 [[external_link]]
 sport = "korvpall"
 url = "https://www.basket.ee/et/ajakava-ja-tulemused?action=schedule"
+note = "Korvpalliliidu koduleht ei luba andmete automaatset kogumist, seetõttu korvpallimänge siin ei kuvata."
+link_text = "Korvpalli ajakava basket.ee lehel"
 
 # Allikad. Hooaja kuupäevad on ligikaudsed (vt SOURCES.md). Hooaja sees tähendab
 # 0 mängu viga, väljaspool hooaega mitte.

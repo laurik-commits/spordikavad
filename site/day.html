@@ -49,6 +49,9 @@
     {% for l in links %}<a class="ext" href="{{ l.url }}" rel="noopener" title="{{ l.label }} – ajakava allika lehel">{{ l.label }} ↗</a>{% endfor %}
   </div>
   {% endif %}
+  {% for l in links if l.note %}
+  <p class="extnote">{{ l.note }} <a href="{{ l.url }}" rel="noopener">{{ l.link_text or l.label }} ↗</a></p>
+  {% endfor %}
 
   {% if events %}
   <ol class="games">

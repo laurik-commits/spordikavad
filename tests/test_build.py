@@ -17,7 +17,8 @@ class RenderTest(unittest.TestCase):
     def setUp(self):
         self.tmp = Path(tempfile.mkdtemp())
         cfg = {"site": {"days_ahead": 3, "base_url": "https://example.org/sk/"},
-               "external_link": [{"sport": "korvpall", "url": "https://basket.example/"}]}
+               "external_link": [{"sport": "korvpall", "url": "https://basket.example/",
+                                  "note": "Korvpalli andmeid ei koguta.", "link_text": "Ajakava"}]}
         events = [ev(22, 19, "B"), ev(22, 13, "A", sport="vorkpall"), ev(30, 12, "Kaugel")]
         build.render(events, cfg, date(2026, 11, 20), self.tmp)
 
@@ -44,6 +45,7 @@ class RenderTest(unittest.TestCase):
         self.assertIn('data-filter="vorkpall"', html)
         self.assertIn('aria-current="page"', html)  # päevade ribal valitud päev
         self.assertIn('class="s-jaahoki"', html)    # ala värviplokk
+        self.assertIn('Korvpalli andmeid ei koguta. <a href="https://basket.example/"', html)
 
     def test_day_strip_marks_empty_days(self):
         html = self.read("index.html")

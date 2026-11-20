@@ -81,6 +81,8 @@ a { color: var(--link); text-decoration: none; }
 }
 .filters button[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
 .filters .ext { color: var(--muted); }
+.extnote { margin: -.2rem 0 .7rem; font-size: .78rem; color: var(--muted); }
+.extnote a { white-space: nowrap; }
 .dot { width: .6rem; height: .6rem; border-radius: 50%; display: inline-block; }
 
 /* mängud */
