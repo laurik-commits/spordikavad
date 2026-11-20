@@ -59,7 +59,7 @@
 <nav class="days" aria-label="Vali päev">
   <ol class="wrap">
   {% for d in days %}
-    <li><a href="{{ here }}{{ d.date.isoformat() }}/" class="{{ 'empty' if not d.count }}"{% if d.date == day %} aria-current="page"{% endif %} title="{{ d.label }}: {{ d.count if d.count else 'mänge pole' }}">
+    <li><a href="{{ here }}{{ d.date.isoformat() }}/" class="{{ 'empty' if not d.count }}" data-sports="{{ d.sports | join(' ') }}"{% if d.date == day %} aria-current="page"{% endif %} title="{{ d.label }}: {{ d.count if d.count else 'mänge pole' }}">
       <span class="wd">{{ d.short }}</span><span class="dn">{{ d.date.day }}</span>
     </a></li>
   {% endfor %}

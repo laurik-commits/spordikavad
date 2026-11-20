@@ -63,6 +63,12 @@
     });
     if (empty) empty.hidden = ext || shown > 0 || rows.length === 0;
     if (none) none.hidden = ext;
+    // päevade riba: valitud ala korral on paksud ainult päevad, kus selle ala mänge on
+    document.querySelectorAll(".days a[data-sports]").forEach(function (a) {
+      var list = a.dataset.sports ? a.dataset.sports.split(" ") : [];
+      var has = sport === "" ? list.length > 0 : list.indexOf(sport) !== -1;
+      a.classList.toggle("empty", !has);
+    });
     var list = document.querySelector(".games");
     if (list) list.hidden = ext;
   }

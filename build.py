@@ -272,7 +272,8 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
             by_day = region_days[r.slug]
             present = sorted({e.sport for lst in by_day.values() for e in lst}, key=list(SPORTS).index)
             day_list = [{"date": d, "label": et_date(d), "short": SHORT_WEEKDAYS[d.weekday()],
-                         "count": len(by_day[d])} for d in days]
+                         "count": len(by_day[d]),
+                         "sports": sorted({e.sport for e in by_day[d]})} for d in days]
             prefix = lv["prefix"] + r.prefix
             rdir = out / prefix if prefix else out
             rdir.mkdir(parents=True, exist_ok=True)

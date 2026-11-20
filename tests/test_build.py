@@ -107,6 +107,9 @@ class RenderTest(unittest.TestCase):
         html = self.read("index.html")
         self.assertIn('class="empty"', html)
         self.assertIn('<span class="wd">P</span><span class="dn">22</span>', html)
+        # päeva alad filtri jaoks (22.11: jäähoki ja võrkpall, 21.11 Tallinna kõrgliigades tühi)
+        self.assertIn('href="2026-11-22/" class="" data-sports="jaahoki vorkpall"', html)
+        self.assertIn('href="2026-11-21/" class="empty" data-sports=""', html)
 
     def test_out_of_range_event_not_listed(self):
         self.assertNotIn("Kaugel", self.read("2026-11-23/index.html"))
