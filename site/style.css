@@ -120,6 +120,13 @@ a { color: var(--link); text-decoration: none; }
   background: var(--row); border: 1px solid var(--line); border-left: 4px solid var(--korvpall); border-radius: 0;
 }
 .extnote a { display: inline-block; margin-top: .3rem; font-weight: 600; }
+.sportnote { font-size: .82rem; color: var(--muted); }
+.s-border-jaahoki { border-left-color: var(--jaahoki); }
+.s-border-kasipall { border-left-color: var(--kasipall); }
+.s-border-jalgpall { border-left-color: var(--jalgpall); }
+.s-border-vorkpall { border-left-color: var(--vorkpall); }
+.s-border-saalihoki { border-left-color: var(--saalihoki); }
+.s-border-saalijalgpall { border-left-color: var(--saalijalgpall); }
 .js .extnote { display: none; }       /* JS-iga näidatakse alles nupu vajutamisel */
 .js .extnote.show { display: block; }
 .dot { width: .6rem; height: .6rem; border-radius: 50%; display: inline-block; }

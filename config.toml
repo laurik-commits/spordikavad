@@ -144,6 +144,20 @@ county = "Põlvamaa"
 "Läänemaa" = { slug = "laanemaa", in = "Läänemaal" }
 "Hiiumaa" = { slug = "hiiumaa", in = "Hiiumaal" }
 
+# Märkus, mis ilmub ala filtri vajutamisel mängude kohale (mänge ei peideta).
+# Selgitab, mis selle ala kohta lehel puudub (vt SOURCES.md).
+[[sport_note]]
+sport = "jaahoki"
+note = "Eesti hokiliigade (Unibet Hokiliiga, naiste hokiliiga) mänge siin pole, sest nende ajakava pole avalikult kättesaadaval kujul."
+url = "https://eestihoki.ee/"
+link_text = "Eesti Jäähokiliit"
+
+[[sport_note]]
+sport = "kasipall"
+note = "Käsipalli Balti liiga mänge (nt Tallinna Mistra) siin pole, sest nende ajakava pole avalikult kättesaadav."
+url = "https://handball.ee/"
+link_text = "Eesti Käsipalliliit"
+
 # Väline link ilma andmete kogumiseta (vt SOURCES.md, korvpall)
 [[external_link]]
 sport = "korvpall"

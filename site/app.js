@@ -54,7 +54,8 @@
     var ext = !!(btn && btn.dataset.ext);
     var shown = 0;
     buttons.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.filter === sport)); });
-    notes.forEach(function (n) { n.classList.toggle("show", ext && n.dataset.note === sport); });
+    // välise lingi ala (korvpall): märkus mängude asemel; tavalise ala märkus (nt hoki): märkus mängude kohal
+    notes.forEach(function (n) { n.classList.toggle("show", sport !== "" && n.dataset.note === sport); });
     rows.forEach(function (r) {
       var hide = ext || (sport !== "" && r.dataset.sport !== sport);
       r.hidden = hide;

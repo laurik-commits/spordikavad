@@ -205,6 +205,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
 
     links = [{"sport": l["sport"], "label": SPORTS[l["sport"]], "url": l["url"],
               "note": l.get("note", ""), "link_text": l.get("link_text", "")} for l in cfg.get("external_link", [])]
+    sport_notes = {n["sport"]: n for n in cfg.get("sport_note", [])}
 
     env = Environment(loader=FileSystemLoader(SITE), autoescape=select_autoescape(["html"]), trim_blocks=True, lstrip_blocks=True)
     env.filters["et_date"] = et_date
@@ -228,7 +229,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
 
     now = datetime.now(TALLINN)
     common = dict(
-        sports=SPORTS, links=links, today=today, default_slug=Geo.default_slug,
+        sports=SPORTS, links=links, sport_notes=sport_notes, today=today, default_slug=Geo.default_slug,
         updated=f"{now.day}.{now.month:02d} kell {now:%H:%M}", built=today.isoformat(),
         analytics_enabled=site_cfg.get("analytics_enabled", False),
         analytics_token=site_cfg.get("analytics_token", ""), base_url=base_url,

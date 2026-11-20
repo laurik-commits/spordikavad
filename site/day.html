@@ -81,6 +81,10 @@
   {% for l in links %}
   <p class="extnote" data-note="{{ l.sport }}">{{ l.note }} <a href="{{ l.url }}" rel="noopener">{{ l.link_text or l.label }} ↗</a></p>
   {% endfor %}
+  {% for f in filters if f.key in sport_notes %}
+  {% set sn = sport_notes[f.key] %}
+  <p class="extnote sportnote s-border-{{ f.key }}" data-note="{{ f.key }}">{{ sn.note }}{% if sn.url %} <a href="{{ sn.url }}" rel="noopener">{{ sn.link_text or 'Lisainfo' }} ↗</a>{% endif %}</p>
+  {% endfor %}
 
   {% if events %}
   <ol class="games">

@@ -22,7 +22,8 @@ class RenderTest(unittest.TestCase):
         cfg = {"site": {"days_ahead": 3, "base_url": "https://example.org/sk/"},
                "geo": config.load()["geo"],
                "external_link": [{"sport": "korvpall", "url": "https://basket.example/",
-                                  "note": "Korvpalli andmeid ei koguta.", "link_text": "Ajakava"}]}
+                                  "note": "Korvpalli andmeid ei koguta.", "link_text": "Ajakava"}],
+               "sport_note": [{"sport": "jaahoki", "note": "Eesti hokiliigasid pole.", "url": "https://hoki.example/"}]}
         events = [ev(22, 19, "B"), ev(22, 13, "A", sport="vorkpall"), ev(30, 12, "Kaugel"),
                   ev(21, 18, "Tartlased", sport="kasipall", venue="Tartu Ülikooli spordihoone", city="Tartu"),
                   ev(21, 17, "Viimsilased", sport="kasipall", venue="Viimsi Kool", city="Viimsi"),
@@ -57,6 +58,10 @@ class RenderTest(unittest.TestCase):
         self.assertIn('class="s-jaahoki"', html)    # ala värviplokk
         self.assertIn('Korvpalli andmeid ei koguta. <a href="https://basket.example/"', html)
         self.assertIn('data-filter="korvpall" data-ext="1"', html)  # korvpall on nupp, mitte link
+
+    def test_sport_note_only_where_sport_is_listed(self):
+        self.assertIn('data-note="jaahoki">Eesti hokiliigasid pole.', self.read("2026-11-22/index.html"))
+        self.assertNotIn("Eesti hokiliigasid pole", self.read("tartu/2026-11-21/index.html"))  # Tartus hokit pole
 
     def test_regions_split_and_city_shown_only_when_needed(self):
         tallinn = self.read("2026-11-21/index.html")
