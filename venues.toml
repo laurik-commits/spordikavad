@@ -186,6 +186,11 @@ name = "Katoliku SK"
 city = "Tartu"
 
 [[venue]]
+name = "NET spordihall"
+city = "Tartu"
+aliases = ["NET Spordihall"]
+
+[[venue]]
 name = "Maardu kunstmuruväljak"
 city = "Maardu"
 

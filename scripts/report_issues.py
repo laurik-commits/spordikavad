@@ -45,6 +45,8 @@ def plan(report: dict, open_titles: set[str]) -> tuple[list[tuple[str, str]], li
         elif not broken and src["status"] == "ok" and title in open_titles:
             to_close.append(title)
     unknown = report.get("unknown_venues", [])
+    if not unknown and VENUE_TITLE in open_titles:
+        to_close.append(VENUE_TITLE)
     if unknown and VENUE_TITLE not in open_titles:
         lines = "\n".join(f"- {v}" for v in unknown)
         to_open.append((VENUE_TITLE, f"Need toimumiskohad puuduvad failist `venues.toml`. "
@@ -78,7 +80,8 @@ def main(argv: list[str] | None = None) -> int:
     for title in to_close:
         print(f"Sulgen: {title}")
         if not args.dry_run:
-            gh("issue", "close", str(by_title[title]), "--comment", f"Allikas töötab jälle ({report.get('date')}).")
+            msg = ("Kõik toimumiskohad on nüüd teada" if title == VENUE_TITLE else "Allikas töötab jälle")
+            gh("issue", "close", str(by_title[title]), "--comment", f"{msg} ({report.get('date')}).")
     if not to_open and not to_close:
         print("Muudatusi pole.")
     return 0

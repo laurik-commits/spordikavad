@@ -26,6 +26,12 @@ class PlanTest(unittest.TestCase):
         _, to_close = plan(report(("a", "offline"), ("b", "no_adapter")), {title_for("a"), title_for("b")})
         self.assertEqual(to_close, [])
 
+    def test_unknown_venues_issue_closes_when_resolved(self):
+        _, to_close = plan(report(("a", "ok")), {VENUE_TITLE})
+        self.assertEqual(to_close, [VENUE_TITLE])
+        _, to_close = plan(report(("a", "ok"), unknown=["X"]), {VENUE_TITLE})
+        self.assertEqual(to_close, [])
+
     def test_unknown_venues_issue(self):
         to_open, _ = plan(report(("a", "ok"), unknown=["Uus saal"]), set())
         self.assertEqual(to_open[0][0], VENUE_TITLE)

@@ -125,7 +125,7 @@ Omaniku valik: iga ala teine tase (mehed ja naised), samades süsteemides mis k�
 | Saalihoki | Energialiiga | saalihoki.ee eesliide „Energialiiga“ |
 | Saalijalgpall | – (esiliigat jalgpall.ee-st ei leitud) | |
 
-Lisapäringuid on umbes 6 päevas (pluss käsipalli protokollid). Lisandus ~37 uut saali/väljakut. **NET Spordihall** (võrkpall, TBD Pharmatech) on jäetud lisamata, sest linn pole kinnitatud. Selle mänge ei kuvata, kuni see `venues.toml` faili lisatakse.
+Lisapäringuid on umbes 6 päevas (pluss käsipalli protokollid). Lisandus ~38 uut saali/väljakut, sh NET Spordihall (Tartu, omaniku kinnitus).
 
 ## Pistekontroll 2026-11-20
 
