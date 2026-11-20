@@ -16,6 +16,7 @@ SPORTS = {
     "vorkpall": "Võrkpall",
     "kasipall": "Käsipall",
     "saalihoki": "Saalihoki",
+    "saalijalgpall": "Saalijalgpall",
 }
 
 

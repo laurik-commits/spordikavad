@@ -36,6 +36,11 @@ name = "Lilleküla harjutusväljak I"
 city = "Tallinn"
 
 [[venue]]
+name = "Sõle spordikeskus"
+city = "Tallinn"
+aliases = ["Sõle Spordikeskus"]
+
+[[venue]]
 name = "Kristiine spordihall"
 city = "Tallinn"
 aliases = ["Kristiine Spordihall"]
@@ -95,7 +100,7 @@ aliases = ["Viimsi kooli Spordikeskus"]
 [[venue]]
 name = "Eesti Maaülikooli spordihoone"
 city = "Tartu"
-aliases = ["Maaülikooli Spordihoone"]
+aliases = ["Maaülikooli Spordihoone", "EMÜ Spordihoone"]
 
 [[venue]]
 name = "Märjamaa spordihoone"
@@ -114,6 +119,23 @@ city = "Tapa"
 [[venue]]
 name = "Kehra Spordihoone"
 city = "Kehra"
+
+# Saalijalgpall mujal
+[[venue]]
+name = "Saku Gümnaasiumi Spordikompleks"
+city = "Saku"
+
+[[venue]]
+name = "Jõhvi Spordihall"
+city = "Jõhvi"
+
+[[venue]]
+name = "Narva Spordikeskus"
+city = "Narva"
+
+[[venue]]
+name = "Kiili Spordihoone"
+city = "Kiili"
 
 # Jalgpall mujal (naiste meistriliiga)
 [[venue]]

@@ -13,6 +13,7 @@ Kasutustingimusi, mis keelaksid automaatse kogumise, ühegi allika lehtedelt ei 
 | Võrkpall | Balti liiga, Eesti meistriliiga, karikad (M+N) | bvl-web / evf-web.dataproject.com | staatiline HTML | lubatud | ✅ |
 | Käsipall | Meistriliiga (mehed) | kasipall.ee | staatiline HTML | lubatud | ✅ |
 | Saalihoki | Meistriliiga + Eesti-Läti ühisliiga | saalihoki.ee | staatiline HTML | lubatud | ✅ (vähe Tallinna mänge) |
+| Saalijalgpall | Saalijalgpalli meistriliiga | jalgpall.ee | staatiline HTML | lubatud, `Crawl-Delay: 5` | ✅ (lisatud 2026-11-20) |
 
 MVP-sse sobib 5 ala 6-st.
 
@@ -95,7 +96,14 @@ Omaniku palvel vaadati üle kõigi alade täiskasvanute tippvõistlused.
 
 **Hiljem (vajab uut koodi):**
 - Jalgpalli karikad: Tipneri karikas (id 137), naiste karikas (id 138), superkarikas (id 136). Kalendrilehte pole, on ainult iCal `download.php?type=calendar.download&action=download&league_id=<id>`. Mänge on peamiselt kevadel (veerandfinaalid aprillis).
-- Saalijalgpall (futsal) meistriliiga (jalgpall.ee id 125, Tallinna FC Bunker Partner). See oleks uus ala.
+- ~~Saalijalgpall~~ → lisatud uue alana (vt allpool).
+
+## Saalijalgpall: meistriliiga (lisatud 2026-11-20 omaniku soovil)
+
+- **Ajakava leht:** https://jalgpall.ee/voistlused/125/liigad/calendar?season=2026. Sama süsteem ja HTML mis jalgpallil (adapter `saalijalgpall_ejl` kasutab `jalgpall_ejl` parserit).
+- **Eripärad:** `season` on hooaja **alguse** aasta (2026 = 2026/27, oktoober–märts). Võistkondade nimede ees on "S. ", see eemaldatakse. Playoffid (id 187) lisa `competitions` alla, kui need on avaldatud.
+- **robots.txt:** sama mis jalgpall.ee (lubatud, `Crawl-Delay: 5`).
+- **Tallinna klubi:** Tallinna FC Bunker Partner (Sõle spordikeskus), umbes 6 kodumängu põhiturniiril.
 
 **Ei kasutata:**
 - **Eesti jäähoki liigad** (Unibet Hokiliiga: Tallinna HC Vipers; naiste hokiliiga: Roosa Panter, Grizzlyz, Wolferines). Ajakava on ehs.eestihoki.ee-l, aga see laaditakse JavaScriptiga kommertsteenusest **hockeydata.net**, kasutades liidu enda API-võtit. Meie skriptil pole õigust seda võtit kasutada (lähteülesanne: küsitavad allikad jäta vahele). ehis.eestihoki.ee (serveri HTML, robots lubab) lõpeb hooajaga 2024/25. **Vaata uuesti**, kui ehis-is ilmub 2026/27 hooaeg.

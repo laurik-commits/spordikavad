@@ -1,0 +1,83 @@
+{
+ "updated": "2026-11-20T13:00:02+02:00",
+ "events": [
+  {
+   "id": "e68edb21736c",
+   "sport": "saalijalgpall",
+   "league": "Saalijalgpalli meistriliiga",
+   "start": "2026-10-24T18:00:00+03:00",
+   "home": "Tallinna FC Bunker Partner",
+   "away": "Narva United Coolbet",
+   "venue": "Sõle spordikeskus",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/196827",
+   "source": "saalijalgpall_ejl",
+   "time_tbc": false
+  },
+  {
+   "id": "b075803a4bb0",
+   "sport": "saalijalgpall",
+   "league": "Saalijalgpalli meistriliiga",
+   "start": "2026-11-01T18:00:00+02:00",
+   "home": "Tallinna FC Bunker Partner",
+   "away": "Jõhvi FC Phoenix",
+   "venue": "Sõle spordikeskus",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/196824",
+   "source": "saalijalgpall_ejl",
+   "time_tbc": false
+  },
+  {
+   "id": "6ec7e9769be7",
+   "sport": "saalijalgpall",
+   "league": "Saalijalgpalli meistriliiga",
+   "start": "2026-12-12T18:00:00+02:00",
+   "home": "Tallinna FC Bunker Partner",
+   "away": "Saku Sporting",
+   "venue": "Sõle spordikeskus",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/196809",
+   "source": "saalijalgpall_ejl",
+   "time_tbc": false
+  },
+  {
+   "id": "b32772543989",
+   "sport": "saalijalgpall",
+   "league": "Saalijalgpalli meistriliiga",
+   "start": "2026-12-19T18:00:00+02:00",
+   "home": "Tallinna FC Bunker Partner",
+   "away": "Tartu Ravens Futsal",
+   "venue": "Sõle spordikeskus",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/196806",
+   "source": "saalijalgpall_ejl",
+   "time_tbc": false
+  },
+  {
+   "id": "1b31a9f815b6",
+   "sport": "saalijalgpall",
+   "league": "Saalijalgpalli meistriliiga",
+   "start": "2027-01-09T18:00:00+02:00",
+   "home": "Tallinna FC Bunker Partner",
+   "away": "Narva United Coolbet",
+   "venue": "Sõle spordikeskus",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/196803",
+   "source": "saalijalgpall_ejl",
+   "time_tbc": false
+  },
+  {
+   "id": "5adb45b401d2",
+   "sport": "saalijalgpall",
+   "league": "Saalijalgpalli meistriliiga",
+   "start": "2027-01-30T18:00:00+02:00",
+   "home": "Tallinna FC Bunker Partner",
+   "away": "Pärnu SJK Hagalaz",
+   "venue": "Sõle spordikeskus",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/196794",
+   "source": "saalijalgpall_ejl",
+   "time_tbc": false
+  }
+ ]
+}

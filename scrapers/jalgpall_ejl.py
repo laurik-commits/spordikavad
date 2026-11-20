@@ -31,7 +31,13 @@ _TEAM = re.compile(r'<div class="team">\s*<p>\s*<a\s[^>]*>\s*([^<]+?)\s*</a>')
 _INFO = re.compile(r'href="(/voistlused/match_info/\d+)"')
 
 
-def parse(page: str, league: str) -> list[Event]:
+def parse(page: str, league: str, *, sport: str = SPORT, source: str = NAME, team_prefix: str = "") -> list[Event]:
+    """team_prefix: eemaldatav eesliide võistkonna nimest (saalijalgpallis "S. ")."""
+
+    def team(name: str) -> str:
+        name = html.unescape(name)
+        return name[len(team_prefix):] if team_prefix and name.startswith(team_prefix) else name
+
     marks = [(m.start(), m.group(1)) for m in _BLOCK.finditer(page)] + [(len(page), "")]
     events: list[Event] = []
     for (a, field), (b, _) in zip(marks, marks[1:]):
@@ -42,9 +48,9 @@ def parse(page: str, league: str) -> list[Event]:
         time = when.group(2)
         events.append(
             new_event(
-                source=NAME, sport=SPORT, league=league,
+                source=source, sport=sport, league=league,
                 start=datetime.strptime(f"{when.group(1)} {time or '00:00'}", "%d.%m.%Y %H:%M"),
-                home=html.unescape(teams[0]), away=html.unescape(teams[1]),
+                home=team(teams[0]), away=team(teams[1]),
                 venue=html.unescape(field).strip(), city="", url=BASE + info.group(1), time_tbc=not time,
             )
         )

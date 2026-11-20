@@ -79,6 +79,6 @@ Kolm sammu: adapter, konfiguratsioonirida ja test.
   - Kui allika mängulehel on piletilink või ülekande info juba olemas, võtta see kaasa.
   - Mängupõhist kogumist piletimüüjatelt ega telekanalitelt ei tee (hooldus, tingimused).
 - Päevade ribale kuu nimi, kui riba ulatub üle kuu vahetuse.
-- Jalgpalli karikad (iCal-lugeja vaja) enne kevadet; saalijalgpall uue alana (vt SOURCES.md „Täiendavate võistluste ülevaade“).
+- **Jalgpalli karikad** (omanikuga kokku lepitud „millalgi tulevikus“): Tipneri karikas, naiste karikas, superkarikas. Vaja on iCal-lugejat (vt SOURCES.md „Täiendavate võistluste ülevaade“).
 - Eesti jäähoki liigad (Vipers, naiste liiga): vaata uuesti, kas ehis.eestihoki.ee-l on 2026/27 hooaeg.
 - Esiliigad ja naiste liigad (lähteülesande teine samm): jalgpall.ee, kasipall.ee ja saalihoki.ee kasutavad kõigi liigade jaoks sama süsteemi.

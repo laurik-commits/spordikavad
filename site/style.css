@@ -17,6 +17,7 @@
   --vorkpall: #6a1b9a;
   --kasipall: #c2410c;
   --saalihoki: #00796b;
+  --saalijalgpall: #8a5a00;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -105,6 +106,7 @@ a { color: var(--link); text-decoration: none; }
 .s-vorkpall { background: var(--vorkpall); }
 .s-kasipall { background: var(--kasipall); }
 .s-saalihoki { background: var(--saalihoki); }
+.s-saalijalgpall { background: var(--saalijalgpall); }
 
 .none, .empty-filter { padding: 1.5rem .25rem; color: var(--muted); }
 .none p { margin: .3rem 0; }
