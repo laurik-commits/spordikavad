@@ -4,16 +4,19 @@
 days_ahead = 14
 # Lehe avalik aadress (kanoonilised lingid, sitemap). Muuda, kui spordikavad.ee domeen on seadistatud.
 base_url = "https://laurik-commits.github.io/spordikavad/"
-# Kontakt jaluses
-contact_url = "mailto:info@spordikavad.ee"
+# Kontakt jaluses. Ajutiselt GitHubi issue'd; kui info@spordikavad.ee postkast töötab,
+# muuda: contact_url = "mailto:info@spordikavad.ee"
+contact_url = "https://github.com/laurik-commits/spordikavad/issues"
 # Cloudflare Web Analytics (küpsisevaba). Vaikimisi välja lülitatud.
 analytics_enabled = false
 analytics_token = ""
 
 [http]
 # Kontaktaadress lisatakse User-Agenti, et allika omanik saaks vajadusel ühendust võtta.
-contact = "info@spordikavad.ee"
-user_agent = "spordikavad.ee-bot/0.1 (+https://spordikavad.ee)"
+# Ajutiselt GitHubi issue'de leht; hiljem "info@spordikavad.ee", kui postkast töötab.
+contact = "https://github.com/laurik-commits/spordikavad/issues"
+# Kui domeen spordikavad.ee on kasutusel, vaheta URL siin ära.
+user_agent = "spordikavad-bot/0.1 (+https://laurik-commits.github.io/spordikavad/)"
 delay = 3.0       # sekundit päringute vahel samale saidile
 timeout = 20.0
 retries = 3
