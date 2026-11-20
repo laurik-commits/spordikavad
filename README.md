@@ -74,6 +74,8 @@ Kolm sammu: adapter, konfiguratsioonirida ja test.
 
 ## Tulevikuideed
 
+- **Korvpall** (omaniku plaan 2026-11-20): kui leht on mõnda aega stabiilselt töötanud, kirjutab omanik Eesti Korvpalliliidule ja küsib luba ajakava kasutamiseks või avalikku andmevoogu. Claude koostab siis kirja mustandi. Loa korral: adapter (`scrapers/korvpall_...py`), `config.toml` rida ja test; korvpalli välise lingi saab siis eemaldada. Taust: SOURCES.md → Korvpall.
+
 - **Piletid ja ülekanded** (omanikuga kokku lepitud 2026-11-20, teha pärast MVP-d):
   - Püsiinfo seadistusfailis: klubi → piletimüüja link, liiga → ülekandekanal. Mängu real „Piletid ↗“ ja „📺 kanal“. Üle vaadata kord hooajas.
   - Kui allika mängulehel on piletilink või ülekande info juba olemas, võtta see kaasa.

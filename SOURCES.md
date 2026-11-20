@@ -35,7 +35,8 @@ MVP-sse sobib 5 ala 6-st.
 - **Lehed:** https://www.estlatbl.com/et/mangud, https://www.basket.ee/et/ajakava-ja-tulemused?action=schedule
 - **robots.txt:** mõlemal domeenil `User-agent: *` / `Disallow: /`. Lubatud on ainult Googlebot, Bingbot ja Applebot. Lisaks näitab estlatbl.com robotitele turvakontrolli lehte.
 - **Otsus:** jäetud välja vastavalt lähteülesandele (automaatne kogumine on keelatud). Ainus seaduslik tee oleks liidu luba või avalik voog. Seda praegu pole.
-- **Omaniku otsus 2026-11-20:** andmeid ei koguta, aga alafiltris on nupp „Korvpall“, mis on tavaline väline link basket.ee ajakavale (https://www.basket.ee/et/ajakava-ja-tulemused?action=schedule). Lehe ehitamisel basket.ee poole päringuid ei tehta.
+- **Omaniku otsus 2026-11-20:** andmeid ei koguta. Alafiltris on nupp „Korvpall“, mis näitab selgitust ja linki basket.ee ajakavale (https://www.basket.ee/et/ajakava-ja-tulemused?action=schedule). Lehe ehitamisel basket.ee poole päringuid ei tehta.
+- **Plaan:** kui leht on stabiilselt töötanud, küsib omanik Korvpalliliidult luba või avalikku andmevoogu (vt README „Tulevikuideed“). Kuni loa saamiseni ei koguta midagi.
 - **Tallinna klubid:** Bigbank/Kalev, TalTech/ALEXELA. (Kahju, sest need on populaarsed mängud.)
 - Ka Korvpalli Meistriliiga ja naiste liiga on samal basket.ee domeenil, seega samuti välja.
 
