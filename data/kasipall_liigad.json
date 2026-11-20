@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T13:14:59+02:00",
+ "updated": "2026-11-20T13:21:28+02:00",
  "events": [
   {
    "id": "8c9d3723f8b0",
@@ -15,6 +15,45 @@
    "time_tbc": false
   },
   {
+   "id": "ad2706e019c4",
+   "sport": "kasipall",
+   "league": "Meistriliiga (mehed)",
+   "start": "2026-11-25T19:00:00+02:00",
+   "home": "HC Viimsi/Alexela",
+   "away": "SK Tapa",
+   "venue": "Viimsi kooli spordikeskus",
+   "city": "Viimsi",
+   "url": "https://kasipall.ee/protocol/9232",
+   "source": "kasipall_liigad",
+   "time_tbc": false
+  },
+  {
+   "id": "b510ff29fe6e",
+   "sport": "kasipall",
+   "league": "Meistriliiga (mehed)",
+   "start": "2026-11-25T19:00:00+02:00",
+   "home": "HC Kehra/Horizon Pulp&Paper",
+   "away": "Viljandi HC/LEONHARD WEISS",
+   "venue": "Kehra Spordihoone",
+   "city": "Kehra",
+   "url": "https://kasipall.ee/protocol/9231",
+   "source": "kasipall_liigad",
+   "time_tbc": false
+  },
+  {
+   "id": "7d2f7876927e",
+   "sport": "kasipall",
+   "league": "Meistriliiga (mehed)",
+   "start": "2026-12-02T19:00:00+02:00",
+   "home": "HC Viimsi/Alexela",
+   "away": "HC Kehra/Horizon Pulp&Paper",
+   "venue": "Viimsi kooli spordikeskus",
+   "city": "Viimsi",
+   "url": "https://kasipall.ee/protocol/9235",
+   "source": "kasipall_liigad",
+   "time_tbc": false
+  },
+  {
    "id": "7d6b8d03ed43",
    "sport": "kasipall",
    "league": "Meistriliiga (mehed)",
@@ -24,6 +63,45 @@
    "venue": "Kalevi spordihall",
    "city": "Tallinn",
    "url": "https://kasipall.ee/protocol/9234",
+   "source": "kasipall_liigad",
+   "time_tbc": false
+  },
+  {
+   "id": "2bbd945f7bbc",
+   "sport": "kasipall",
+   "league": "Meistriliiga (mehed)",
+   "start": "2026-12-03T19:00:00+02:00",
+   "home": "SK Tapa",
+   "away": "Põlva Serviti",
+   "venue": "Tapa Valla Spordikeskus",
+   "city": "Tapa",
+   "url": "https://kasipall.ee/protocol/9233",
+   "source": "kasipall_liigad",
+   "time_tbc": false
+  },
+  {
+   "id": "61af9d538e11",
+   "sport": "kasipall",
+   "league": "Meistriliiga (naised)",
+   "start": "2026-12-04T19:45:00+02:00",
+   "home": "HC Tabasalu",
+   "away": "Mistra",
+   "venue": "Tabasalu kooli spordihoone",
+   "city": "Harku vald",
+   "url": "https://kasipall.ee/protocol/9483",
+   "source": "kasipall_liigad",
+   "time_tbc": false
+  },
+  {
+   "id": "6760140f04c1",
+   "sport": "kasipall",
+   "league": "Meistriliiga (mehed)",
+   "start": "2026-12-05T18:00:00+02:00",
+   "home": "Põlva Serviti",
+   "away": "Viljandi HC/LEONHARD WEISS",
+   "venue": "Mesikäpa hall",
+   "city": "Põlva",
+   "url": "https://kasipall.ee/protocol/9236",
    "source": "kasipall_liigad",
    "time_tbc": false
   }

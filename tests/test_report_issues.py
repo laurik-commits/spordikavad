@@ -5,7 +5,7 @@ from scripts.report_issues import VENUE_TITLE, plan, title_for
 
 def report(*sources, unknown=()):
     return {"date": "2026-11-20", "unknown_venues": list(unknown),
-            "sources": [{"source": n, "status": s, "error": "x", "tallinn": 3} for n, s in sources]}
+            "sources": [{"source": n, "status": s, "error": "x", "saved": 3} for n, s in sources]}
 
 
 class PlanTest(unittest.TestCase):

@@ -4,12 +4,15 @@ from datetime import date, datetime
 from pathlib import Path
 
 import build
+from scrapers import config
+from scrapers.geo import Geo
 from scrapers.model import new_event
+from scrapers.venues import Venues
 
 
-def ev(day, hour, home, sport="jaahoki"):
+def ev(day, hour, home, sport="jaahoki", venue="Haabersti jäähall", city="Tallinn"):
     return new_event(source="t", sport=sport, league="Liiga", start=datetime(2026, 11, day, hour, 0),
-                     home=home, away="Külalised", venue="Haabersti jäähall", city="Tallinn",
+                     home=home, away="Külalised", venue=venue, city=city,
                      url="https://example.org/" + home)
 
 
@@ -17,9 +20,12 @@ class RenderTest(unittest.TestCase):
     def setUp(self):
         self.tmp = Path(tempfile.mkdtemp())
         cfg = {"site": {"days_ahead": 3, "base_url": "https://example.org/sk/"},
+               "geo": config.load()["geo"],
                "external_link": [{"sport": "korvpall", "url": "https://basket.example/",
                                   "note": "Korvpalli andmeid ei koguta.", "link_text": "Ajakava"}]}
-        events = [ev(22, 19, "B"), ev(22, 13, "A", sport="vorkpall"), ev(30, 12, "Kaugel")]
+        events = [ev(22, 19, "B"), ev(22, 13, "A", sport="vorkpall"), ev(30, 12, "Kaugel"),
+                  ev(21, 18, "Tartlased", sport="kasipall", venue="Tartu Ülikooli spordihoone", city="Tartu"),
+                  ev(21, 17, "Viimsilased", sport="kasipall", venue="Viimsi Kool", city="Viimsi")]
         build.render(events, cfg, date(2026, 11, 20), self.tmp)
 
     def read(self, rel):
@@ -27,13 +33,16 @@ class RenderTest(unittest.TestCase):
 
     def test_pages_and_files(self):
         for rel in ["index.html", "2026-11-20/index.html", "2026-11-23/index.html",
+                    "eesti/index.html", "eesti/2026-11-21/index.html", "tartu/2026-11-21/index.html",
+                    "harjumaa/2026-11-21/index.html",
                     "events.json", "sitemap.xml", "robots.txt", "style.css", "app.js"]:
             self.assertTrue((self.tmp / rel).exists(), rel)
         self.assertFalse((self.tmp / "2026-11-24").exists())
+        self.assertFalse((self.tmp / "parnu").exists())  # Pärnus mänge pole → valikus pole
 
     def test_empty_day_links_to_next_games(self):
         html = self.read("index.html")
-        self.assertIn("Täna mänge pole", html)
+        self.assertIn("Täna Tallinnas mänge pole", html)
         self.assertIn('href="2026-11-22/"', html)
 
     def test_day_sorted_and_relative_links(self):
@@ -48,6 +57,31 @@ class RenderTest(unittest.TestCase):
         self.assertIn('Korvpalli andmeid ei koguta. <a href="https://basket.example/"', html)
         self.assertIn('data-filter="korvpall" data-ext="1"', html)  # korvpall on nupp, mitte link
 
+    def test_regions_split_and_city_shown_only_when_needed(self):
+        tallinn = self.read("2026-11-21/index.html")
+        self.assertNotIn("Tartlased", tallinn)
+        tartu = self.read("tartu/2026-11-21/index.html")
+        self.assertIn("Tartlased", tartu)
+        self.assertNotIn("spordihoone, Tartu", tartu)          # linna vaates linna ei korrata
+        self.assertIn('href="../../style.css"', tartu)
+        self.assertIn("Spordimängud Tartus", tartu)
+        harju = self.read("harjumaa/2026-11-21/index.html")
+        self.assertIn("Viimsilased", harju)
+        self.assertIn("Viimsi Kool, Viimsi", harju)
+        self.assertIn("Harjumaa (v.a Tallinn)", harju)
+        eesti = self.read("eesti/2026-11-21/index.html")
+        self.assertIn("Tartlased", eesti)
+        self.assertIn("Viimsilased", eesti)
+        self.assertIn("Spordimängud Eestis", eesti)
+
+    def test_city_picker_links_keep_the_day(self):
+        tartu = self.read("tartu/2026-11-21/index.html")
+        self.assertIn('href="../../2026-11-21/" data-region="tallinn"', tartu)
+        self.assertIn('href="../../eesti/2026-11-21/" data-region="eesti"', tartu)
+        root = self.read("index.html")
+        self.assertIn('data-index="1"', root)
+        self.assertIn('href="tartu/2026-11-20/" data-region="tartu"', root)
+
     def test_day_strip_marks_empty_days(self):
         html = self.read("index.html")
         self.assertIn('class="empty"', html)
@@ -55,7 +89,25 @@ class RenderTest(unittest.TestCase):
 
     def test_out_of_range_event_not_listed(self):
         self.assertNotIn("Kaugel", self.read("2026-11-23/index.html"))
-        self.assertIn("https://example.org/sk/2026-11-21/", self.read("sitemap.xml"))
+        sitemap = self.read("sitemap.xml")
+        self.assertIn("https://example.org/sk/2026-11-21/", sitemap)
+        self.assertIn("https://example.org/sk/tartu/2026-11-21/", sitemap)
+
+
+class GeoTest(unittest.TestCase):
+    def test_every_venue_city_is_classified(self):
+        geo = Geo(config.load())
+        unclassified = {v.city for v in Venues.load().venues if not geo.is_known(v.city)}
+        self.assertEqual(unclassified, set(), "lisa config.toml [geo] alla")
+
+    def test_regions(self):
+        geo = Geo(config.load())
+        self.assertEqual(geo.region_of("Tallinn").slug, "tallinn")
+        self.assertEqual(geo.region_of("Rae vald").slug, "harjumaa")
+        self.assertEqual(geo.region_of("Elva").name, "Tartumaa (v.a Tartu)")
+        self.assertEqual(geo.region_of("Raplamaa") , None)
+        self.assertIsNone(geo.region_of("Riia"))
+        self.assertFalse(geo.is_estonian("Riia"))
 
 
 if __name__ == "__main__":

@@ -24,6 +24,117 @@ retries = 3
 [http.host_delays]
 "jalgpall.ee" = 5.0   # robots.txt: Crawl-Delay: 5
 
+# --- Linnad ja maakonnad (linnavalik) ---
+# Suuremad linnad on valikus eraldi, ülejäänud kohad oma maakonna all ("Harjumaa (v.a Tallinn)").
+# Iga venues.toml linn peab olema kas [[geo.city]], [geo.place] või geo.foreign all (test kontrollib).
+# `in` = pealkirja vorm ("Spordimängud Tartus").
+
+[geo]
+default = "tallinn"
+foreign = ["Cēsis", "Daugavpils", "Elektrėnai", "Jelgava", "Jēkabpils", "Kaunas", "Kocēni", "Liepāja",
+           "Riia", "Talsi", "Ulbroka", "Vilnius", "Ādaži", "Šiauliai"]
+
+[[geo.city]]
+slug = "tallinn"
+name = "Tallinn"
+in = "Tallinnas"
+county = "Harjumaa"
+
+[[geo.city]]
+slug = "tartu"
+name = "Tartu"
+in = "Tartus"
+county = "Tartumaa"
+
+[[geo.city]]
+slug = "parnu"
+name = "Pärnu"
+in = "Pärnus"
+county = "Pärnumaa"
+
+[[geo.city]]
+slug = "narva"
+name = "Narva"
+in = "Narvas"
+county = "Ida-Virumaa"
+
+[[geo.city]]
+slug = "viljandi"
+name = "Viljandi"
+in = "Viljandis"
+county = "Viljandimaa"
+
+[[geo.city]]
+slug = "rakvere"
+name = "Rakvere"
+in = "Rakveres"
+county = "Lääne-Virumaa"
+
+[[geo.city]]
+slug = "kuressaare"
+name = "Kuressaare"
+in = "Kuressaares"
+county = "Saaremaa"
+
+[[geo.city]]
+slug = "johvi"
+name = "Jõhvi"
+in = "Jõhvis"
+county = "Ida-Virumaa"
+
+[[geo.city]]
+slug = "voru"
+name = "Võru"
+in = "Võrus"
+county = "Võrumaa"
+
+[[geo.city]]
+slug = "paide"
+name = "Paide"
+in = "Paides"
+county = "Järvamaa"
+
+[[geo.city]]
+slug = "polva"
+name = "Põlva"
+in = "Põlvas"
+county = "Põlvamaa"
+
+# Väiksemad kohad → maakond
+[geo.place]
+"Viimsi" = "Harjumaa"
+"Rae vald" = "Harjumaa"
+"Saue vald" = "Harjumaa"
+"Harku vald" = "Harjumaa"
+"Kiili" = "Harjumaa"
+"Saku" = "Harjumaa"
+"Kehra" = "Harjumaa"
+"Raasiku" = "Harjumaa"
+"Ääsmäe" = "Harjumaa"
+"Tartu vald" = "Tartumaa"
+"Elva" = "Tartumaa"
+"Märjamaa" = "Raplamaa"
+"Jõgeva" = "Jõgevamaa"
+"Tapa" = "Lääne-Virumaa"
+
+# Maakonnad (slug ja pealkirja vorm)
+[geo.county]
+"Harjumaa" = { slug = "harjumaa", in = "Harjumaal" }
+"Tartumaa" = { slug = "tartumaa", in = "Tartumaal" }
+"Ida-Virumaa" = { slug = "ida-virumaa", in = "Ida-Virumaal" }
+"Lääne-Virumaa" = { slug = "laane-virumaa", in = "Lääne-Virumaal" }
+"Pärnumaa" = { slug = "parnumaa", in = "Pärnumaal" }
+"Raplamaa" = { slug = "raplamaa", in = "Raplamaal" }
+"Järvamaa" = { slug = "jarvamaa", in = "Järvamaal" }
+"Jõgevamaa" = { slug = "jogevamaa", in = "Jõgevamaal" }
+"Viljandimaa" = { slug = "viljandimaa", in = "Viljandimaal" }
+"Võrumaa" = { slug = "vorumaa", in = "Võrumaal" }
+"Põlvamaa" = { slug = "polvamaa", in = "Põlvamaal" }
+"Valgamaa" = { slug = "valgamaa", in = "Valgamaal" }
+"Saaremaa" = { slug = "saaremaa", in = "Saaremaal" }
+"Läänemaa" = { slug = "laanemaa", in = "Läänemaal" }
+"Hiiumaa" = { slug = "hiiumaa", in = "Hiiumaal" }
+
 # Väline link ilma andmete kogumiseta (vt SOURCES.md, korvpall)
 [[external_link]]
 sport = "korvpall"

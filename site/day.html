@@ -5,28 +5,40 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {% set human = day | et_date %}
 {% set n = events | length %}
-<title>Spordimängud Tallinnas – {{ human }} {{ day.year }} | Spordikavad</title>
-<meta name="description" content="{% if n %}{{ n }} {{ 'mäng' if n == 1 else 'mängu' }} Tallinnas: {{ human }}. {% endif %}Jalgpalli, saalijalgpalli, jäähoki, võrkpalli, käsipalli ja saalihoki kõrgliigade mängud Tallinnas ühes nimekirjas.">
+<title>Spordimängud {{ region.in_form }} – {{ human }} {{ day.year }} | Spordikavad</title>
+<meta name="description" content="{% if n %}{{ n }} {{ 'mäng' if n == 1 else 'mängu' }} {{ region.in_form }}: {{ human }}. {% endif %}Jalgpalli, saalijalgpalli, jäähoki, võrkpalli, käsipalli ja saalihoki kõrgliigade mängud {{ region.in_form }} ühes nimekirjas.">
 <link rel="canonical" href="{{ canonical }}">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="et_EE">
 <meta property="og:site_name" content="Spordikavad">
-<meta property="og:title" content="Spordimängud Tallinnas – {{ human }}">
-<meta property="og:description" content="Kõrgliigade mängud Tallinnas kellaaja järgi.">
+<meta property="og:title" content="Spordimängud {{ region.in_form }} – {{ human }}">
+<meta property="og:description" content="Kõrgliigade mängud {{ region.in_form }} kellaaja järgi.">
 <meta property="og:url" content="{{ canonical }}">
 <meta name="theme-color" content="#14457a">
 <meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="{{ root }}style.css">
 <script>document.documentElement.classList.add("js")</script>
 </head>
-<body>
+<body data-region="{{ region.slug }}" data-default="{{ default_slug }}" data-root="{{ root }}"{% if is_index %} data-index="1"{% endif %}>
 <header class="bar">
   <div class="wrap">
-    <a class="brand" href="{{ root }}">Spordikavad <span>Tallinn</span></a>
+    <div class="top">
+      <a class="brand" href="{{ root }}">Spordikavad</a>
+      <details class="city">
+        <summary>{{ region.name }} <span aria-hidden="true">▾</span></summary>
+        <ul>
+        {% for r in regions %}
+          <li><a href="{{ root }}{{ r.prefix }}{{ day.isoformat() }}/" data-region="{{ r.slug }}" class="{{ 'empty' if not r.count }}{{ ' county' if r.kind == 'county' }}"{% if r.slug == region.slug %} aria-current="true"{% endif %}>
+            <span>{{ r.name }}</span><span class="n">{{ r.count if r.count else '–' }}</span>
+          </a></li>
+        {% endfor %}
+        </ul>
+      </details>
+    </div>
     <nav class="daynav" aria-label="Päev">
-      {% if prev_day %}<a href="{{ root }}{{ prev_day.isoformat() }}/" rel="prev" aria-label="Eelmine päev">◀</a>{% else %}<span class="off" aria-hidden="true">◀</span>{% endif %}
+      {% if prev_day %}<a href="{{ here }}{{ prev_day.isoformat() }}/" rel="prev" aria-label="Eelmine päev">◀</a>{% else %}<span class="off" aria-hidden="true">◀</span>{% endif %}
       <h1>{% if day == today %}Täna, {% endif %}{{ human }}</h1>
-      {% if next_day %}<a href="{{ root }}{{ next_day.isoformat() }}/" rel="next" aria-label="Järgmine päev">▶</a>{% else %}<span class="off" aria-hidden="true">▶</span>{% endif %}
+      {% if next_day %}<a href="{{ here }}{{ next_day.isoformat() }}/" rel="next" aria-label="Järgmine päev">▶</a>{% else %}<span class="off" aria-hidden="true">▶</span>{% endif %}
     </nav>
   </div>
 </header>
@@ -34,7 +46,7 @@
 <nav class="days" aria-label="Vali päev">
   <ol class="wrap">
   {% for d in days %}
-    <li><a href="{{ root }}{{ d.date.isoformat() }}/" class="{{ 'empty' if not d.count }}"{% if d.date == day %} aria-current="page"{% endif %} title="{{ d.label }}: {{ d.count if d.count else 'mänge pole' }}">
+    <li><a href="{{ here }}{{ d.date.isoformat() }}/" class="{{ 'empty' if not d.count }}"{% if d.date == day %} aria-current="page"{% endif %} title="{{ d.label }}: {{ d.count if d.count else 'mänge pole' }}">
       <span class="wd">{{ d.short }}</span><span class="dn">{{ d.date.day }}</span>
     </a></li>
   {% endfor %}
@@ -64,7 +76,7 @@
         </time>
         <span class="info">
           <span class="match">{{ e.home }} – {{ e.away }}</span>
-          <span class="meta">{{ e.league }} · {{ e.venue }}{% if e.time_tbc %} · <em>kellaaeg täpsustamisel</em>{% endif %}</span>
+          <span class="meta">{{ e.league }} · {{ e.venue }}{% if show_city %}, {{ e.city }}{% endif %}{% if e.time_tbc %} · <em>kellaaeg täpsustamisel</em>{% endif %}</span>
         </span>
         <span class="go" aria-hidden="true">↗</span>
       </a>
@@ -74,8 +86,8 @@
   <p class="empty-filter" hidden>Selle ala mänge sel päeval pole.</p>
   {% else %}
   <div class="none">
-    <p>{{ 'Täna' if day == today else 'Sel päeval' }} mänge pole.</p>
-    {% if next_games %}<p><a href="{{ root }}{{ next_games.isoformat() }}/">Järgmised mängud: {{ next_games | et_date }} →</a></p>{% endif %}
+    <p>{{ 'Täna' if day == today else 'Sel päeval' }} {{ region.in_form }} mänge pole.</p>
+    {% if next_games %}<p><a href="{{ here }}{{ next_games.isoformat() }}/">Järgmised mängud: {{ next_games | et_date }} →</a></p>{% endif %}
   </div>
   {% endif %}
 </main>

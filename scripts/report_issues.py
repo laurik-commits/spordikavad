@@ -37,7 +37,7 @@ def plan(report: dict, open_titles: set[str]) -> tuple[list[tuple[str, str]], li
                 f"- Allikas: `{src['source']}`\n"
                 f"- Olek: `{src['status']}`\n"
                 f"- Viga: {src.get('error') or '–'}\n"
-                f"- Lehel kasutatakse viimaseid salvestatud andmeid ({src.get('tallinn', 0)} mängu).\n\n"
+                f"- Lehel kasutatakse viimaseid salvestatud andmeid ({src.get('saved', 0)} mängu).\n\n"
                 "Tõenäoline põhjus: allika leht muutus. Vaata Actions'i logi ja SOURCES.md. "
                 "Issue suletakse ise, kui allikas jälle töötab."
             )

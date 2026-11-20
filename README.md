@@ -7,8 +7,8 @@ Lähteülesanne: [SPEC.md](SPEC.md). Andmeallikad ja nende kontroll: [SOURCES.md
 ## Kuidas see töötab
 
 1. **GitHub Actions** ([.github/workflows/build.yml](.github/workflows/build.yml)) käivitub iga päev kell 03:00 UTC (05:00 Tallinna talveajal), iga `main` haru muudatuse järel ja käsitsi (Actions → „Ehita ja avalda“ → Run workflow).
-2. [build.py](build.py) käivitab iga allika adapteri (`scrapers/<ala>_<liiga>.py`), jätab alles Tallinna mängud ([venues.toml](venues.toml) järgi) ja salvestab need kausta `data/`.
-3. Mallidest ([site/](site/)) genereeritakse kausta `dist/` staatiline leht: `index.html` (täna), üks leht päeva kohta 14 päeva ette, `events.json`, `sitemap.xml`.
+2. [build.py](build.py) käivitab iga allika adapteri (`scrapers/<ala>_<liiga>.py`), jätab alles Eestis toimuvad mängud ([venues.toml](venues.toml) saalide linnade ja `config.toml` `[geo]` järgi) ja salvestab need kausta `data/`.
+3. Mallidest ([site/](site/)) genereeritakse kausta `dist/` staatiline leht iga piirkonna kohta: Tallinn juurkaustas (`/`, `/2026-11-21/`), teised oma kaustas (`/tartu/…`, `/harjumaa/…`, `/eesti/…` = kogu Eesti). Igal piirkonnal on täna + 14 päeva. Lisaks `events.json` ja `sitemap.xml`. Päise linnavalik jätab valiku kasutaja brauserisse meelde ja avaleht suunab sinna.
 4. `dist/` avaldatakse GitHub Pagesis.
 
 **Kui allikas läheb katki** (viga või hooaja sees 0 mängu), kasutatakse selle allika viimaseid salvestatud andmeid, ülejäänud leht ehitatakse tavapäraselt ja GitHubis avatakse issue „Allikas katki: …“. Sellest tuleb e-kiri. Kui allikas hakkab jälle tööle, suletakse issue automaatselt. Tundmatute toimumiskohtade kohta tekib issue „Tundmatud toimumiskohad“.
@@ -64,7 +64,7 @@ Kolm sammu: adapter, konfiguratsioonirida ja test.
 
 4. **Test.** Salvesta allika leht kausta `tests/fixtures/<name>.html` (üks kord, näiteks `py -c "from scrapers.http import Fetcher; ..."`) ja kirjuta `tests/test_<name>.py`, mis kontrollib mängude arvu ja üht konkreetset mängu (vaata näiteks [tests/test_jaahoki_optibet.py](tests/test_jaahoki_optibet.py)).
 
-5. **Käivita** `python build.py` ja vaata kokkuvõtet. Kui logis on „Tundmatu toimumiskoht“, lisa see `venues.toml` faili õige linnaga.
+5. **Käivita** `python build.py` ja vaata kokkuvõtet. Kui logis on „Tundmatu toimumiskoht“, lisa see `venues.toml` faili õige linnaga. Kui linn on uus, lisa see ka `config.toml` `[geo]` alla: suurem linn `[[geo.city]]`, väiksem koht `[geo.place]` (koht → maakond) või välismaa `geo.foreign`. Test `GeoTest` annab märku, kui mõni linn on lisamata.
 
 ## Hooldus
 

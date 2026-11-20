@@ -21,6 +21,7 @@ from pathlib import Path
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from scrapers import config as cfgmod
+from scrapers.geo import Geo, Region
 from scrapers.http import Fetcher
 from scrapers.model import SPORTS, TALLINN, Event
 from scrapers.venues import Venues
@@ -62,27 +63,30 @@ def save(name: str, events: list[Event]) -> None:
     _data_file(name).write_text(json.dumps(payload, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
-def only_tallinn(events: list[Event], venues: Venues) -> list[Event]:
+def only_estonia(events: list[Event], venues: Venues, geo: Geo) -> list[Event]:
+    """Jätab alles Eestis toimuvad mängud (välismaa saalid välja) ja normaliseerib saali nime ja linna."""
     out = []
     for e in events:
         v = venues.lookup(e.venue)
-        if v is not None and v.city == "Tallinn":
+        if v is not None and geo.is_estonian(v.city):
             out.append(replace(e, venue=v.name, city=v.city))
     return out
 
 
-def collect(cfg: dict, venues: Venues, fetcher: Fetcher | None, today: date) -> tuple[list[Event], list[dict]]:
-    """Tagastab kõik Tallinna mängud ja aruande iga allika kohta.
+def collect(cfg: dict, venues: Venues, fetcher: Fetcher | None, today: date,
+            geo: Geo | None = None) -> tuple[list[Event], list[dict]]:
+    """Tagastab kõik Eesti mängud ja aruande iga allika kohta.
 
     Ühe allika viga ei peata ehitust: siis kasutatakse selle allika viimaseid salvestatud andmeid.
     """
+    geo = geo or Geo(cfg)
     all_events: list[Event] = []
     report: list[dict] = []
     for src in cfg.get("source", []):
         name = src["name"]
         if not src.get("enabled", True):
             continue
-        entry = {"source": name, "status": "ok", "fetched": 0, "tallinn": 0, "error": ""}
+        entry = {"source": name, "status": "ok", "fetched": 0, "saved": 0, "error": ""}
         events: list[Event] | None = None
         if fetcher is None:
             entry["status"] = "offline"
@@ -102,7 +106,7 @@ def collect(cfg: dict, venues: Venues, fetcher: Fetcher | None, today: date) -> 
                         entry["status"] = "empty"
                         entry["error"] = "Hooaja sees 0 mängu"
                     else:
-                        events = only_tallinn(fetched, venues)
+                        events = only_estonia(fetched, venues, geo)
                         save(name, events)
                 except Exception as exc:  # noqa: BLE001 - ükski adapter ei tohi ehitust katki teha
                     entry["status"] = "failed"
@@ -112,7 +116,7 @@ def collect(cfg: dict, venues: Venues, fetcher: Fetcher | None, today: date) -> 
             events = load_saved(name)
             if entry["status"] in ("failed", "empty"):
                 log.warning("%s: kasutan viimaseid salvestatud andmeid (%d mängu)", name, len(events))
-        entry["tallinn"] = len(events)
+        entry["saved"] = len(events)
         all_events.extend(events)
         report.append(entry)
     return all_events, report
@@ -124,22 +128,35 @@ def et_date(d: date) -> str:
     return f"{WEEKDAYS[d.weekday()]}, {d.day}. {MONTHS[d.month - 1]}"
 
 
+def regions_for(events: list[Event], geo: Geo) -> list[Region]:
+    """Valiku järjekord: Kogu Eesti, vaikelinn, teised linnad mängude arvu järgi, siis maakonnad.
+    Linn või maakond on valikus, kui selle kohta on hooaja andmetes vähemalt üks mäng (vaikelinn alati)."""
+    counts: dict[str, int] = {}
+    for e in events:
+        r = geo.region_of(e.city)
+        if r:
+            counts[r.slug] = counts.get(r.slug, 0) + 1
+    default = next(r for r in geo.city_regions.values() if r.slug == Geo.default_slug)
+    cities = sorted((r for r in geo.city_regions.values() if r.slug != default.slug and counts.get(r.slug)),
+                    key=lambda r: (-counts[r.slug], r.name))
+    counties = sorted((r for r in geo.county_regions.values() if counts.get(r.slug)), key=lambda r: r.name)
+    return [geo.all, default, *cities, *counties]
+
+
 def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int:
     site_cfg = cfg.get("site", {})
     days_ahead = int(site_cfg.get("days_ahead", 14))
     base_url = site_cfg.get("base_url", "").rstrip("/") + "/"
     days = [today + timedelta(days=i) for i in range(days_ahead + 1)]
+    geo = Geo(cfg)
+    regions = regions_for(events, geo)
 
-    by_day: dict[date, list[Event]] = {d: [] for d in days}
-    for e in events:
-        d = e.start.date()
-        if d in by_day:
-            by_day[d].append(e)
-    for lst in by_day.values():
-        lst.sort(key=lambda e: (e.time_tbc, e.start, e.sport, e.home))
+    def in_region(e: Event, r: Region) -> bool:
+        if r.kind == "all":
+            return True
+        er = geo.region_of(e.city)
+        return er is not None and er.slug == r.slug
 
-    present = sorted({e.sport for lst in by_day.values() for e in lst}, key=list(SPORTS).index)
-    filters = [{"key": s, "label": SPORTS[s]} for s in present]
     links = [{"sport": l["sport"], "label": SPORTS[l["sport"]], "url": l["url"],
               "note": l.get("note", ""), "link_text": l.get("link_text", "")} for l in cfg.get("external_link", [])]
 
@@ -153,31 +170,55 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
     for asset in ("style.css", "app.js"):
         shutil.copy(SITE / asset, out / asset)
 
-    day_list = [{"date": d, "label": et_date(d), "short": SHORT_WEEKDAYS[d.weekday()], "count": len(by_day[d])}
-                for d in days]
+    # mängud piirkonna ja päeva kaupa
+    window = {d: [] for d in days}
+    for e in events:
+        if e.start.date() in window:
+            window[e.start.date()].append(e)
+    region_days: dict[str, dict[date, list[Event]]] = {}
+    for r in regions:
+        by_day = {d: sorted((e for e in window[d] if in_region(e, r)),
+                            key=lambda e: (e.time_tbc, e.start, e.sport, e.home)) for d in days}
+        region_days[r.slug] = by_day
+    region_list = [{"slug": r.slug, "name": r.name, "prefix": r.prefix, "kind": r.kind,
+                    "count": sum(len(v) for v in region_days[r.slug].values())} for r in regions]
+
     common = dict(
-        sports=SPORTS, filters=filters, links=links, days=day_list, today=today,
+        sports=SPORTS, links=links, today=today, regions=region_list, default_slug=Geo.default_slug,
         analytics_enabled=site_cfg.get("analytics_enabled", False),
         analytics_token=site_cfg.get("analytics_token", ""), base_url=base_url,
         contact_url=site_cfg.get("contact_url", ""),
     )
 
-    def next_with_games(i: int) -> date | None:
-        return next((d for d in days[i + 1:] if by_day[d]), None)
-
-    for i, d in enumerate(days):
-        ctx = dict(
-            common, day=d, events=by_day[d],
-            prev_day=days[i - 1] if i > 0 else None,
-            next_day=days[i + 1] if i + 1 < len(days) else None,
-            next_games=next_with_games(i),
-        )
-        page_dir = out / d.isoformat()
-        page_dir.mkdir()
-        (page_dir / "index.html").write_text(
-            tpl.render(ctx, root="../", canonical=f"{base_url}{d.isoformat()}/"), encoding="utf-8")
-        if i == 0:
-            (out / "index.html").write_text(tpl.render(ctx, root="", canonical=base_url), encoding="utf-8")
+    urls: list[str] = []
+    for r in regions:
+        by_day = region_days[r.slug]
+        present = sorted({e.sport for lst in by_day.values() for e in lst}, key=list(SPORTS).index)
+        day_list = [{"date": d, "label": et_date(d), "short": SHORT_WEEKDAYS[d.weekday()], "count": len(by_day[d])}
+                    for d in days]
+        rdir = out / r.prefix if r.prefix else out
+        rdir.mkdir(parents=True, exist_ok=True)
+        depth = 1 if r.prefix else 0  # mitu kausta sügavamal kui lehe juur
+        for i, d in enumerate(days):
+            ctx = dict(
+                common, region=r, show_city=r.kind != "city",
+                filters=[{"key": s, "label": SPORTS[s]} for s in present], days=day_list,
+                day=d, events=by_day[d],
+                prev_day=days[i - 1] if i > 0 else None,
+                next_day=days[i + 1] if i + 1 < len(days) else None,
+                next_games=next((x for x in days[i + 1:] if by_day[x]), None),
+            )
+            page_dir = rdir / d.isoformat()
+            page_dir.mkdir()
+            url = f"{base_url}{r.prefix}{d.isoformat()}/"
+            (page_dir / "index.html").write_text(
+                tpl.render(ctx, root="../" * (depth + 1), here="../", canonical=url, is_index=False), encoding="utf-8")
+            urls.append(url)
+            if i == 0:
+                url = f"{base_url}{r.prefix}"
+                (rdir / "index.html").write_text(
+                    tpl.render(ctx, root="../" * depth, here="", canonical=url, is_index=True), encoding="utf-8")
+                urls.append(url)
 
     upcoming = sorted((e for e in events if e.start.date() >= today), key=lambda e: (e.start, e.id))
     (out / "events.json").write_text(
@@ -185,14 +226,13 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
                     "events": [e.to_dict() for e in upcoming]}, ensure_ascii=False, indent=1),
         encoding="utf-8")
 
-    urls = [base_url] + [f"{base_url}{d.isoformat()}/" for d in days]
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     sitemap += [f"  <url><loc>{u}</loc><lastmod>{today.isoformat()}</lastmod></url>" for u in urls]
     sitemap.append("</urlset>")
     (out / "sitemap.xml").write_text("\n".join(sitemap) + "\n", encoding="utf-8")
     (out / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {base_url}sitemap.xml\n", encoding="utf-8")
     (out / ".nojekyll").write_text("", encoding="utf-8")
-    return len(days)
+    return len(urls)
 
 
 # --- Käivitamine ------------------------------------------------------------
@@ -220,7 +260,7 @@ def main(argv: list[str] | None = None) -> int:
     log.info("Kokkuvõte (%s):", today.isoformat())
     for r in report:
         extra = f" – {r['error']}" if r["error"] else ""
-        log.info("  %-26s %-10s allikas %4d, Tallinnas %3d%s", r["source"], r["status"], r["fetched"], r["tallinn"], extra)
+        log.info("  %-26s %-10s allikas %4d, Eestis %3d%s", r["source"], r["status"], r["fetched"], r["saved"], extra)
     if venues.unknown:
         log.info("  Tundmatud toimumiskohad: %s", ", ".join(sorted(venues.unknown)))
     log.info("  Lehti: %d, mänge kokku: %d", pages, len(events))
