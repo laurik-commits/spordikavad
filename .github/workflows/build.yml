@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write   # data/ kausta uuenduste commit
+  issues: write     # katkiste allikate teavitused
   pages: write
   id-token: write
 
@@ -39,6 +40,12 @@ jobs:
 
       - name: Kogu andmed ja ehita leht
         run: python build.py
+
+      - name: Teavita katkistest allikatest (GitHub Issues)
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/report_issues.py
 
       - name: Salvesta uuendatud andmed
         run: |

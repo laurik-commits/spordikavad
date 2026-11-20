@@ -30,6 +30,8 @@ class SaalihokiTest(unittest.TestCase):
         e = next(e for e in self.events if e.url.endswith("id=8700"))
         self.assertEqual(e.start, datetime(2026, 12, 12, 14, 30, tzinfo=TALLINN))
         self.assertTrue(Venues.load().is_tallinn(e.venue))
+        # pistekontrollis leitud viga: link peab olema /Events/ kaustas (muidu 404)
+        self.assertEqual(e.url, "https://www.saalihoki.ee/Events/Uritus.aspx?id=8700")
 
     def test_all_venues_known(self):
         v = Venues.load()

@@ -15,8 +15,10 @@ from .model import Event, new_event
 
 NAME = "saalihoki_meistriliiga"
 SPORT = "saalihoki"
-BASE = "https://saalihoki.ee/"
-URL = BASE + "Ajakavad.aspx"
+# saalihoki.ee/Ajakavad.aspx suunab siia; lehe suhtelised lingid (Uritus.aspx?id=N)
+# kehtivad /Events/ kausta suhtes.
+BASE = "https://www.saalihoki.ee/Events/"
+URL = BASE + "Uritused.aspx"
 
 # eesliide lehel → liiga nimi meie lehel
 LEAGUES = {

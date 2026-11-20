@@ -68,7 +68,7 @@ MVP-sse sobib 5 ala 6-st.
 
 ## Saalihoki: Meistriliiga + Eesti-Läti ühisliiga
 
-- **Ajakava leht:** https://saalihoki.ee/Ajakavad.aspx (kõik tulevased mängud, filtrid liiga järgi). Liigad: Meistriliiga `Liigad/Liiga.aspx?id=9`, EST-LAT mehed `id=136`.
+- **Ajakava leht:** https://saalihoki.ee/Ajakavad.aspx (suunab aadressile https://www.saalihoki.ee/Events/Uritused.aspx; mängu lingid on kujul `https://www.saalihoki.ee/Events/Uritus.aspx?id=N`) (kõik tulevased mängud, filtrid liiga järgi). Liigad: Meistriliiga `Liigad/Liiga.aspx?id=9`, EST-LAT mehed `id=136`.
 - **Kuju:** staatiline ASP.NET HTML-tabel: aeg, mäng koos lingiga (`Uritus.aspx?id=NNNN`) ja koht.
 - **robots.txt:** keelatud ainult tehnilised kaustad (`/Bootstrap/`, `/handlers/`, `/Scripts/`, `*.axd` jm). Ajakavad ja liigade lehed on lubatud. floorball.ee suunab saalihoki.ee-le.
 - **Hooaeg:** 2026/27. Ühisliiga alates 21.11.2026, meistriliiga esimene mäng 22.11.2026. Lõpp pole kirjas.
@@ -77,6 +77,18 @@ MVP-sse sobib 5 ala 6-st.
 - **Teostus (2026-11-20):** meeste klubid (Sparta jt) mängivad kodumänge Märjamaal ja Ääsmäel, mitte Tallinnas. Seepärast on kaasas ka **naiste Eesti-Läti liiga** (lähteülesandes „teine samm“, sama allikas ja adapter): Sparta naiskond mängib Õismäe sportmängude hallis. Muud liigad (noored, M35+, Energialiiga) on välja jäetud.
 
 ---
+
+## Pistekontroll 2026-11-20
+
+Iga allika kohta üks mäng lehel olevatest andmetest, võrreldud allika enda mängulehega:
+
+| Mäng | Kuupäev, kell | Tulemus |
+|---|---|---|
+| HC Panter – Rīgas HS/Dinaburga (jäähoki) | 25.11 19:00 | ✅ (allikas näitab kohana ainult „Tallina“) |
+| Audentes/Solarstone – Barrus Võru VK (võrkpall) | 27.11 19:00 | ✅ |
+| Tallinna Mistra – Põlva Serviti (käsipall) | 25.11 19:00 | ✅ |
+| Sparta – Rubene (saalihoki) | 12.12 14:30 | ✅ andmed õiged, **link oli 404** → parandatud (`/Events/` kaust) |
+| Tallinna FCI Levadia – Nõmme Kalju FC (jalgpall) | 07.11 12:30 | ✅ |
 
 ## Hilisemaks (teine samm)
 
