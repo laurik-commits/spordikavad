@@ -12,6 +12,7 @@ import importlib
 import inspect
 import json
 import logging
+import re
 import shutil
 import sys
 from dataclasses import replace
@@ -174,6 +175,29 @@ def et_date(d: date) -> str:
     return f"{WEEKDAYS[d.weekday()]}, {d.day}. {MONTHS[d.month - 1]}"
 
 
+def _norm_team(name: str) -> str:
+    return re.sub(r"[^\w]+", " ", name.lower()).strip()
+
+
+def dedupe(events: list[Event]) -> tuple[list[Event], int]:
+    """Eemaldab sama mängu, mis tuleb mitmest allikast (nt Balti liiga mäng on ka kasipall.ee-s).
+
+    Sama mäng = sama ala ja algusaeg ning kas samad võistkonnad VÕI sama saal (allikad kirjutavad
+    võistkondi eri moodi, nt "KPK Mella" / "Käsipalliklubi Mella", aga ühes saalis ei saa samal ajal
+    kaht mängu olla). Alles jääb esimene (config.toml allikate järjekord)."""
+    seen: set[tuple] = set()
+    out: list[Event] = []
+    for e in events:
+        keys = [("teams", e.sport, e.start, _norm_team(e.home), _norm_team(e.away))]
+        if e.venue:
+            keys.append(("venue", e.sport, e.start, e.venue))
+        if any(k in seen for k in keys):
+            continue
+        seen.update(keys)
+        out.append(e)
+    return out, len(events) - len(out)
+
+
 def regions_for(events: list[Event], geo: Geo) -> list[Region]:
     """Valiku järjekord: Kogu Eesti, vaikelinn, teised linnad mängude arvu järgi, siis maakonnad.
     Linn või maakond on valikus, kui selle kohta on hooaja andmetes vähemalt üks mäng (vaikelinn alati)."""
@@ -316,7 +340,7 @@ SOURCE_SITES = {
     "saalijalgpall": ("Eesti Jalgpalli Liit", "https://jalgpall.ee/voistlused"),
     "jaahoki": ("Läti Jäähokiliit (Optibet Hokiliiga)", "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/schedule"),
     "vorkpall": ("DataProject (Eesti Võrkpalli Liit, Balti liiga)", "https://evf-web.dataproject.com/MainHome.aspx"),
-    "kasipall": ("Eesti Käsipalliliit", "https://kasipall.ee/"),
+    "kasipall": ("Eesti Käsipalliliit ja Balti Käsipalliliiga", "https://kasipall.ee/"),
     "saalihoki": ("Eesti Saalihoki Liit", "https://www.saalihoki.ee/Events/Uritused.aspx"),
 }
 
@@ -360,6 +384,9 @@ def main(argv: list[str] | None = None) -> int:
         timeout=http.get("timeout", 20.0), retries=http.get("retries", 3))
 
     events, report = collect(cfg, venues, fetcher, today)
+    events, dupes = dedupe(events)
+    if dupes:
+        log.info("Eemaldasin %d topelt mängu (sama mäng mitmest allikast)", dupes)
     pages = render(events, cfg, today)
     REPORT.write_text(json.dumps({"date": today.isoformat(), "sources": report,
                                   "unknown_venues": sorted(venues.unknown)}, ensure_ascii=False, indent=1),

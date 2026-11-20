@@ -32,7 +32,8 @@ retries = 3
 [geo]
 default = "tallinn"
 foreign = ["Cēsis", "Daugavpils", "Elektrėnai", "Jelgava", "Jēkabpils", "Kaunas", "Kocēni", "Liepāja",
-           "Riia", "Talsi", "Ulbroka", "Vilnius", "Ādaži", "Šiauliai"]
+           "Riia", "Talsi", "Ulbroka", "Vilnius", "Ādaži", "Šiauliai",
+           "Dobele", "Molėtai", "Ogre", "Pasvalys", "Ludza", "Salaspils"]
 
 [[geo.city]]
 slug = "tallinn"
@@ -152,12 +153,6 @@ note = "Eesti hokiliigade (Unibet Hokiliiga, naiste hokiliiga) mänge siin pole,
 url = "https://eestihoki.ee/"
 link_text = "Eesti Jäähokiliit"
 
-[[sport_note]]
-sport = "kasipall"
-note = "Käsipalli Balti liiga mänge (nt Tallinna Mistra) siin pole, sest nende ajakava pole avalikult kättesaadav."
-url = "https://handball.ee/"
-link_text = "Eesti Käsipalliliit"
-
 # Väline link ilma andmete kogumiseta (vt SOURCES.md, korvpall)
 [[external_link]]
 sport = "korvpall"
@@ -234,6 +229,18 @@ competitions = [
   { id = 361, league = "Meistriliiga (naised)" },
   { id = 362, league = "Eesti karikas (mehed)", check = false },
   { id = 360, league = "Esiliiga (mehed)", level = 2 },
+]
+
+[[source]]
+name = "kasipall_bhl"
+sport = "kasipall"
+league = "Käsipall (Balti liiga)"
+enabled = true
+seasons = [["09-15", "04-30"]]
+# baltichandball.eu: season ja id URL-ist .../season/<season>/league/<id>; muutuvad IGAL HOOAJAL
+competitions = [
+  { season = 206, id = 636, league = "Balti liiga (mehed)" },
+  { season = 206, id = 637, league = "Eesti-Läti liiga (naised)" },
 ]
 
 [[source]]

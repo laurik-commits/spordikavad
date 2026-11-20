@@ -109,10 +109,22 @@ Omaniku palvel vaadati üle kõigi alade täiskasvanute tippvõistlused.
 **Ei kasutata:**
 - **Eesti jäähoki liigad** (Unibet Hokiliiga: Tallinna HC Vipers; naiste hokiliiga: Roosa Panter, Grizzlyz, Wolferines). Ajakava on ehs.eestihoki.ee-l, aga see laaditakse JavaScriptiga kommertsteenusest **hockeydata.net**, kasutades liidu enda API-võtit. Meie skriptil pole õigust seda võtit kasutada (lähteülesanne: küsitavad allikad jäta vahele). ehis.eestihoki.ee (serveri HTML, robots lubab) lõpeb hooajaga 2024/25. **Vaata uuesti**, kui ehis-is ilmub 2026/27 hooaeg.
   - **Plaan (omaniku otsus 2026-11-20):** kui leht on stabiilselt töötanud, küsib omanik koos Korvpalliliiduga ka Jäähokiliidult luba (vt README „Tulevikuideed“). Kuni loani API-võtit ei kasutata. Lehel on jäähoki filtri juures märkus.
-- Käsipalli Balti liiga (Mistra): mänge ei leitud ei kasipall.ee-st ega mujalt.
+- ~~Käsipalli Balti liiga~~ → leitud ja lisatud (omanik leidis baltichandball.eu), vt allpool.
 - Naiste käsipallikarikas (id 363): 2026/27 mänge pole veel avaldatud. Lisa `competitions` alla, kui need ilmuvad.
 - Saalihoki: naiste kodumaist liigat ega täiskasvanute karikat pole.
 - Jäähoki: täiskasvanute karikat 2026/27 pole.
+
+## Käsipall: Balti liiga ja naiste Eesti-Läti liiga (lisatud 2026-11-20)
+
+- **Allikas:** https://baltichandball.eu/season/206/league/636/fixtures (mehed) ja `/season/206/league/637/fixtures` (naised). Omanik leidis selle.
+- **robots.txt:** puudub (404), seega piiranguid pole. Kasutustingimusi lehelt ei leitud (on ainult privaatsuspoliitika).
+- **Kuju:** serveri HTML. Kuu ja päeva päised, iga mängu juures võistkonnad, „HH:MM · Saal“ ja mängu link. Üks päring liiga kohta.
+- **Eripärad:**
+  - Tallinna Mistra Balti liiga kodumängud on **Raasiku spordihoones** (Harjumaa), mitte Kalevi spordihallis.
+  - Naiste liigas on Tallinnast Mella (Kristiine spordihall).
+  - Eesti klubide omavahelised Balti liiga mängud on ka kasipall.ee-s. `build.py` eemaldab topelt mängud: sama aeg ja kas samad võistkonnad või sama saal (võistkonnanimed erinevad, nt „KPK Mella“ / „Käsipalliklubi Mella“). Alles jääb kasipall.ee versioon.
+  - Hooaja ja liiga ID-d (`season`, `id`) muutuvad igal hooajal.
+- Adapter: `kasipall_bhl`.
 
 ## Esiliigad (eraldi kalender, lisatud 2026-11-20)
 

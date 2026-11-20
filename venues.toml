@@ -43,7 +43,7 @@ aliases = ["Sõle Spordikeskus"]
 [[venue]]
 name = "Kristiine spordihall"
 city = "Tallinn"
-aliases = ["Kristiine Spordihall"]
+aliases = ["Kristiine Spordihall", "Kristiine Sport"]
 
 # --- Tallinn: jäähoki ---
 
@@ -284,6 +284,57 @@ city = "Tartu vald"
 [[venue]]
 name = "Jõgeva Virtus"
 city = "Jõgeva"
+
+# --- Käsipalli Balti liiga ja naiste Eesti-Läti liiga (baltichandball.eu) ---
+[[venue]]
+name = "Viljandi spordikeskus"
+city = "Viljandi"
+aliases = ["Viljandi Spordikeskus"]
+
+[[venue]]
+name = "BI baziu valdymo sporto sale"
+city = "Vilnius"
+
+[[venue]]
+name = "VMSM Sostines Tauras"
+city = "Vilnius"
+
+[[venue]]
+name = "Dobeles sporta centrs"
+city = "Dobele"
+
+[[venue]]
+name = "LSMU Sporto Centras"
+city = "Kaunas"
+
+[[venue]]
+name = "Molėtų sporto centras"
+city = "Molėtai"
+aliases = ["MOLĖTŲ SPORTO CENTRAS"]
+
+[[venue]]
+name = "NBS Sporta klubs"
+city = "Riia"
+
+[[venue]]
+name = "Ogres novada sporta centrs"
+city = "Ogre"
+
+[[venue]]
+name = "Pieno Žvaigždžių arena"
+city = "Pasvalys"
+
+[[venue]]
+name = "Jēkabpils 3. vidusskola"
+city = "Jēkabpils"
+
+[[venue]]
+name = "Ludza sport hall"
+city = "Ludza"
+
+[[venue]]
+name = "Salaspils sporta hall"
+city = "Salaspils"
 
 # Saalijalgpall mujal
 [[venue]]
