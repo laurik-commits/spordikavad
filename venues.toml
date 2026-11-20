@@ -78,3 +78,40 @@ aliases = []
 name = "Märjamaa spordihoone"
 city = "Märjamaa"
 aliases = []
+
+# Optibet Hokiliiga võõrsil (Läti, Leedu)
+[[venue]]
+name = "Daugavpils ledus halle"
+city = "Daugavpils"
+
+[[venue]]
+name = "Elektrenai ice arena"
+city = "Elektrėnai"
+
+[[venue]]
+name = "Inbox.LV ledus halle"
+city = "Riia"
+
+[[venue]]
+name = "Jelgavas ledus halle"
+city = "Jelgava"
+
+[[venue]]
+name = "Liepājas OC ledus halle"
+city = "Liepāja"
+
+[[venue]]
+name = "Mogo ledus halle"
+city = "Riia"
+
+[[venue]]
+name = "Rīgas Hokeja skolas ledus halle"
+city = "Riia"
+
+[[venue]]
+name = "Volvo SC ledus halle"
+city = "Riia"
+
+[[venue]]
+name = "Vilniaus pramogų arena"
+city = "Vilnius"

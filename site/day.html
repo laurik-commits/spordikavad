@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="et">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% set human = day | et_date %}
+{% set n = events | length %}
+<title>Spordimängud Tallinnas – {{ human }} {{ day.year }} | Spordikavad</title>
+<meta name="description" content="{% if n %}{{ n }} {{ 'mäng' if n == 1 else 'mängu' }} Tallinnas: {{ human }}. {% endif %}Jalgpalli, jäähoki, võrkpalli, käsipalli ja saalihoki kõrgliigade mängud Tallinnas ühes nimekirjas.">
+<link rel="canonical" href="{{ canonical }}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="et_EE">
+<meta property="og:site_name" content="Spordikavad">
+<meta property="og:title" content="Spordimängud Tallinnas – {{ human }}">
+<meta property="og:description" content="Kõrgliigade mängud Tallinnas kellaaja järgi.">
+<meta property="og:url" content="{{ canonical }}">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="{{ root }}style.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="{{ root }}">Spordikavad</a>
+  <span class="city">Tallinn</span>
+</header>
+
+<main>
+  <nav class="daynav" aria-label="Päevad">
+    {% if prev_day %}<a href="{{ root }}{{ prev_day.isoformat() }}/" rel="prev">← Eelmine</a>{% else %}<span></span>{% endif %}
+    <h1>{% if day == today %}Täna, {% endif %}{{ human }}</h1>
+    {% if next_day %}<a href="{{ root }}{{ next_day.isoformat() }}/" rel="next">Järgmine →</a>{% else %}<span></span>{% endif %}
+  </nav>
+
+  <details class="pick">
+    <summary>Vali päev</summary>
+    <ul>
+    {% for d in days %}
+      <li><a href="{{ root }}{{ d.date.isoformat() }}/"{% if d.date == day %} aria-current="page"{% endif %}>{{ d.label }}</a> <span class="muted">{{ d.count if d.count else '–' }}</span></li>
+    {% endfor %}
+    </ul>
+  </details>
+
+  {% if filters or links %}
+  <div class="filters" role="group" aria-label="Ala">
+    <button type="button" data-filter="" aria-pressed="true">Kõik</button>
+    {% for f in filters %}<button type="button" data-filter="{{ f.key }}" aria-pressed="false">{{ f.label }}</button>{% endfor %}
+    {% for l in links %}<a class="ext" href="{{ l.url }}" rel="noopener" title="{{ l.label }} – ajakava allika lehel">{{ l.label }} ↗</a>{% endfor %}
+  </div>
+  {% endif %}
+
+  {% if events %}
+  <ol class="games">
+  {% for e in events %}
+    <li data-sport="{{ e.sport }}">
+      <time datetime="{{ e.start.isoformat() }}">{{ 'täpsustamisel' if e.time_tbc else e.start.strftime('%H:%M') }}</time>
+      <div class="info">
+        <a class="match" href="{{ e.url }}" rel="noopener">{{ e.home }} – {{ e.away }}</a>
+        <div class="meta"><span class="tag tag-{{ e.sport }}">{{ sports[e.sport] }}</span> {{ e.league }} · {{ e.venue }}</div>
+      </div>
+    </li>
+  {% endfor %}
+  </ol>
+  <p class="empty" hidden>Selle ala mänge sel päeval pole.</p>
+  {% else %}
+  <div class="none">
+    <p>{{ 'Täna' if day == today else 'Sel päeval' }} mänge pole.</p>
+    {% if next_games %}<p><a href="{{ root }}{{ next_games.isoformat() }}/">Järgmised mängud: {{ next_games | et_date }} →</a></p>{% endif %}
+  </div>
+  {% endif %}
+</main>
+
+<footer>
+  <p>Andmed: liitude ja klubide avalikud kodulehed. Kontrolli aega enne kohaleminekut.</p>
+  <p>Kui olete andmete omanik ja ei soovi, et teie andmeid siin kuvataks, <a href="{{ contact_url }}">kirjutage meile</a>.</p>
+</footer>
+<script src="{{ root }}app.js" defer></script>
+{% if analytics_enabled and analytics_token %}
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ analytics_token }}"}'></script>
+{% endif %}
+</body>
+</html>
