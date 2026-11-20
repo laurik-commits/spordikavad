@@ -88,7 +88,9 @@ Kolm sammu: adapter, konfiguratsioonirida ja test.
 
 ## Tulevikuideed
 
-- **Korvpall** (omaniku plaan 2026-11-20): kui leht on mõnda aega stabiilselt töötanud, kirjutab omanik Eesti Korvpalliliidule ja küsib luba ajakava kasutamiseks või avalikku andmevoogu. Claude koostab siis kirja mustandi. Loa korral: adapter (`scrapers/korvpall_...py`), `config.toml` rida ja test; korvpalli välise lingi saab siis eemaldada. Taust: SOURCES.md → Korvpall.
+- **Loapalved liitudele** (omaniku plaan 2026-11-20): kui leht on mõnda aega stabiilselt töötanud, kirjutab omanik ja küsib luba ajakava kasutamiseks või avalikku andmevoogu. Claude koostab siis kirjade mustandid.
+  - **Eesti Korvpalliliit** (basket.ee, estlatbl.com): robots.txt keelab automaatse kogumise. Loa korral: adapter (`scrapers/korvpall_...py`), `config.toml` rida ja test; korvpalli välise lingi saab siis eemaldada. Taust: SOURCES.md → Korvpall.
+  - **Eesti Jäähokiliit** (Unibet Hokiliiga, naiste hokiliiga): ajakava on ehs.eestihoki.ee lehel, aga brauser laadib selle hockeydata.net kommertsteenusest liidu API-võtmega. Küsida luba (või avalikku voogu / iCal-i), et tohiks seda kasutada. Loa korral: adapter (`scrapers/jaahoki_ehl.py`), `config.toml` rida ja test; `sport_note` jäähoki märkuse saab siis eemaldada. Taust: SOURCES.md → Täiendavate võistluste ülevaade.
 
 - **Piletid ja ülekanded** (omanikuga kokku lepitud 2026-11-20, teha pärast MVP-d):
   - Püsiinfo seadistusfailis: klubi → piletimüüja link, liiga → ülekandekanal. Mängu real „Piletid ↗“ ja „📺 kanal“. Üle vaadata kord hooajas.
