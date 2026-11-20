@@ -46,11 +46,11 @@
   <div class="filters" role="group" aria-label="Ala">
     <button type="button" data-filter="" aria-pressed="true">Kõik</button>
     {% for f in filters %}<button type="button" data-filter="{{ f.key }}" aria-pressed="false"><i class="dot s-{{ f.key }}"></i>{{ f.label }}</button>{% endfor %}
-    {% for l in links %}<a class="ext" href="{{ l.url }}" rel="noopener" title="{{ l.label }} – ajakava allika lehel">{{ l.label }} ↗</a>{% endfor %}
+    {% for l in links %}<button type="button" class="ext" data-filter="{{ l.sport }}" data-ext="1" aria-pressed="false"><i class="dot s-{{ l.sport }}"></i>{{ l.label }}</button>{% endfor %}
   </div>
   {% endif %}
-  {% for l in links if l.note %}
-  <p class="extnote">{{ l.note }} <a href="{{ l.url }}" rel="noopener">{{ l.link_text or l.label }} ↗</a></p>
+  {% for l in links %}
+  <p class="extnote" data-note="{{ l.sport }}">{{ l.note }} <a href="{{ l.url }}" rel="noopener">{{ l.link_text or l.label }} ↗</a></p>
   {% endfor %}
 
   {% if events %}

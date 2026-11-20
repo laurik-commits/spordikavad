@@ -81,4 +81,4 @@ Kolm sammu: adapter, konfiguratsioonirida ja test.
 - Päevade ribale kuu nimi, kui riba ulatub üle kuu vahetuse.
 - **Jalgpalli karikad** (omanikuga kokku lepitud „millalgi tulevikus“): Tipneri karikas, naiste karikas, superkarikas. Vaja on iCal-lugejat (vt SOURCES.md „Täiendavate võistluste ülevaade“).
 - Eesti jäähoki liigad (Vipers, naiste liiga): vaata uuesti, kas ehis.eestihoki.ee-l on 2026/27 hooaeg.
-- Esiliigad ja naiste liigad (lähteülesande teine samm): jalgpall.ee, kasipall.ee ja saalihoki.ee kasutavad kõigi liigade jaoks sama süsteemi.
+- **Madalamad liigad** (esiliigad jm, lähteülesande teine samm): omaniku soov 2026-11-20 – teha tulevikus, aga **eraldi kalendrina**, mitte meistriliigadega segamini (nt eraldi leht/vaade või lüliti „Kõrgliigad / Madalamad liigad“). Tehniliselt lihtne: jalgpall.ee, kasipall.ee, saalihoki.ee ja DataProject kasutavad kõigi liigade jaoks sama süsteemi, vaja on liiga ID-d ja `Event`-ile taseme välja.

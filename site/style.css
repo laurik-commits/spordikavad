@@ -80,9 +80,14 @@ a { color: var(--link); text-decoration: none; }
   display: inline-flex; align-items: center; gap: .35rem;
 }
 .filters button[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
-.filters .ext { color: var(--muted); }
-.extnote { margin: -.2rem 0 .7rem; font-size: .78rem; color: var(--muted); }
-.extnote a { white-space: nowrap; }
+.filters .ext[aria-pressed="false"] { color: var(--muted); }
+.extnote {
+  margin: 0 0 .8rem; padding: .7rem .8rem; font-size: .88rem; color: var(--fg);
+  background: var(--row); border: 1px solid var(--line); border-left: 4px solid var(--korvpall); border-radius: 0;
+}
+.extnote a { display: inline-block; margin-top: .3rem; font-weight: 600; }
+.js .extnote { display: none; }       /* JS-iga näidatakse alles nupu vajutamisel */
+.js .extnote.show { display: block; }
 .dot { width: .6rem; height: .6rem; border-radius: 50%; display: inline-block; }
 
 /* mängud */

@@ -46,6 +46,7 @@ class RenderTest(unittest.TestCase):
         self.assertIn('aria-current="page"', html)  # päevade ribal valitud päev
         self.assertIn('class="s-jaahoki"', html)    # ala värviplokk
         self.assertIn('Korvpalli andmeid ei koguta. <a href="https://basket.example/"', html)
+        self.assertIn('data-filter="korvpall" data-ext="1"', html)  # korvpall on nupp, mitte link
 
     def test_day_strip_marks_empty_days(self):
         html = self.read("index.html")
