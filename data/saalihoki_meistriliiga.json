@@ -1,0 +1,70 @@
+{
+ "updated": "2026-11-20T11:30:22+02:00",
+ "events": [
+  {
+   "id": "0aceb93ddb47",
+   "sport": "saalihoki",
+   "league": "Eesti-Läti liiga (naised)",
+   "start": "2026-12-12T14:30:00+02:00",
+   "home": "Sparta",
+   "away": "Rubene",
+   "venue": "Õismäe sportmängude hall",
+   "city": "Tallinn",
+   "url": "https://saalihoki.ee/Uritus.aspx?id=8700",
+   "source": "saalihoki_meistriliiga",
+   "time_tbc": false
+  },
+  {
+   "id": "099eacc5231f",
+   "sport": "saalihoki",
+   "league": "Eesti-Läti liiga (naised)",
+   "start": "2026-12-19T14:30:00+02:00",
+   "home": "Sparta",
+   "away": "Lekrings/CPSS",
+   "venue": "Õismäe sportmängude hall",
+   "city": "Tallinn",
+   "url": "https://saalihoki.ee/Uritus.aspx?id=8701",
+   "source": "saalihoki_meistriliiga",
+   "time_tbc": false
+  },
+  {
+   "id": "61586e1d78af",
+   "sport": "saalihoki",
+   "league": "Eesti-Läti liiga (naised)",
+   "start": "2026-12-20T14:30:00+02:00",
+   "home": "Sparta",
+   "away": "Lekrings/CPSS",
+   "venue": "Õismäe sportmängude hall",
+   "city": "Tallinn",
+   "url": "https://saalihoki.ee/Uritus.aspx?id=8702",
+   "source": "saalihoki_meistriliiga",
+   "time_tbc": false
+  },
+  {
+   "id": "4fa4a2ff220b",
+   "sport": "saalihoki",
+   "league": "Eesti-Läti liiga (naised)",
+   "start": "2027-01-17T14:30:00+02:00",
+   "home": "Sparta",
+   "away": "NND/RJTC",
+   "venue": "Õismäe sportmängude hall",
+   "city": "Tallinn",
+   "url": "https://saalihoki.ee/Uritus.aspx?id=8706",
+   "source": "saalihoki_meistriliiga",
+   "time_tbc": false
+  },
+  {
+   "id": "e97e4d2bab09",
+   "sport": "saalihoki",
+   "league": "Eesti-Läti liiga (naised)",
+   "start": "2027-02-07T14:30:00+02:00",
+   "home": "Sparta",
+   "away": "Rubene",
+   "venue": "Õismäe sportmängude hall",
+   "city": "Tallinn",
+   "url": "https://saalihoki.ee/Uritus.aspx?id=8711",
+   "source": "saalihoki_meistriliiga",
+   "time_tbc": false
+  }
+ ]
+}

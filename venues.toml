@@ -25,7 +25,11 @@ aliases = ["Kadriorg Stadium"]
 [[venue]]
 name = "Hiiu staadion"
 city = "Tallinn"
-aliases = ["Nõmme Kalju staadion"]
+aliases = ["Nõmme Kalju staadion", "Hiiu kunstmurustaadion"]
+
+[[venue]]
+name = "Männiku staadion"
+city = "Tallinn"
 
 # --- Tallinn: jäähoki ---
 
@@ -58,6 +62,11 @@ city = "Tallinn"
 aliases = ["Kalev Sports Hall"]
 
 [[venue]]
+name = "Õismäe sportmängude hall"
+city = "Tallinn"
+aliases = ["Õismäe Sportmängude Hall"]
+
+[[venue]]
 name = "Saku Suurhall"
 city = "Tallinn"
 aliases = ["Unibet Arena", "Saku Arena"]
@@ -78,6 +87,127 @@ aliases = []
 name = "Märjamaa spordihoone"
 city = "Märjamaa"
 aliases = []
+
+# Käsipall mujal
+[[venue]]
+name = "Mesikäpa hall"
+city = "Põlva"
+
+[[venue]]
+name = "Tapa Valla Spordikeskus"
+city = "Tapa"
+
+[[venue]]
+name = "Kehra Spordihoone"
+city = "Kehra"
+
+# Jalgpall mujal
+[[venue]]
+name = "Laagri kunstmurustaadion"
+city = "Saue vald"
+
+[[venue]]
+name = "Paide kunstmuruväljak"
+city = "Paide"
+
+[[venue]]
+name = "Narva Kalev-Fama staadion"
+city = "Narva"
+
+[[venue]]
+name = "Narva Jalgpallihall"
+city = "Narva"
+
+[[venue]]
+name = "Kuressaare linnastaadion"
+city = "Kuressaare"
+
+[[venue]]
+name = "Kuressaare kunstmurustaadion"
+city = "Kuressaare"
+
+[[venue]]
+name = "Tartu Tamme staadion"
+city = "Tartu"
+
+[[venue]]
+name = "Tartu Coop staadioni kunstmuruväljak"
+city = "Tartu"
+
+[[venue]]
+name = "Pärnu Rannastaadion"
+city = "Pärnu"
+
+[[venue]]
+name = "Pärnu Rehepapi kunstmuruväljak"
+city = "Pärnu"
+
+# Saalihoki mujal
+[[venue]]
+name = "Märjamaa Valla Spordikeskus"
+city = "Märjamaa"
+
+[[venue]]
+name = "Jõgeva spordihoone"
+city = "Jõgeva"
+aliases = ["Jõgeva spordihoone, Rohu 10"]
+
+[[venue]]
+name = "Ääsmäe spordihoone"
+city = "Ääsmäe"
+aliases = ["Ääsmäe Spordihoone, Kasesalu tn 16, Ääsmäe", "Ääsmäe"]
+
+[[venue]]
+name = "Cēsise spordikompleks"
+city = "Cēsis"
+aliases = ["Gaujas iela 45, Cēsis", "Sporta komplekss Cēsis"]
+
+[[venue]]
+name = "Kocēnu sporta nams"
+city = "Kocēni"
+
+[[venue]]
+name = "Talsu valsts ģimnāzija"
+city = "Talsi"
+
+[[venue]]
+name = "Ulbrokas sporta komplekss"
+city = "Ulbroka"
+
+[[venue]]
+name = "Ādažu sporta centrs"
+city = "Ādaži"
+
+# Võrkpalli Balti liiga mujal
+[[venue]]
+name = "Dubysa spordikeskus"
+city = "Šiauliai"
+aliases = ['"Dubysa" Sports Centre']
+
+[[venue]]
+name = "Daugavpils BJSS SH"
+city = "Daugavpils"
+
+[[venue]]
+name = "Jēkabpils Sporta nams"
+city = "Jēkabpils"
+
+[[venue]]
+name = "Pärnu Spordihall"
+city = "Pärnu"
+
+[[venue]]
+name = "Rimi Olympic center"
+city = "Riia"
+
+[[venue]]
+name = "Tartu Ülikooli spordihoone"
+city = "Tartu"
+aliases = ["Tartu Ülikooli SH Ilmar Kullami nimeline peaväljak"]
+
+[[venue]]
+name = "Võru Spordikeskus"
+city = "Võru"
 
 # Optibet Hokiliiga võõrsil (Läti, Leedu)
 [[venue]]

@@ -26,7 +26,8 @@ MVP-sse sobib 5 ala 6-st.
 - **robots.txt:** `/voistlused/` pole keelatud. Keelatud on `/otsing`, `/errors/`, `/ejl/staadionid/loaders`. `Crawl-Delay: 5` → päringute vahel vähemalt 5 s.
 - **Hooaeg:** märts–november. 2026. a hooaeg lõppes 07.11.2026. 2027. a algus pole veel teada (eeldatavalt märtsi algus).
 - **Tallinna klubid 2026:** FCI Levadia, FC Flora, Nõmme Kalju, Nõmme United.
-- **Eripärad:** praegu (hooajaväline aeg) on iCal tühi. Adapteri testiks tuleb fixture teha iCal-i formaadi järgi ja kontrollida päris andmetega märtsis.
+- **Eripärad:** praegu (hooajaväline aeg) on iCal tühi.
+- **Teostus (2026-11-20):** adapter kasutab iCal-i asemel HTML-kalendrit `/voistlused/52/liigad/calendar?season=<aasta>`, sest seal on ka staadion (`data-field`) ja terve hooaeg ühe päringuga.
 
 ## Korvpall: FenixBet Eesti-Läti Korvpalliliiga ❌
 
@@ -62,7 +63,8 @@ MVP-sse sobib 5 ala 6-st.
 - **robots.txt:** `User-agent: *` / `Disallow:` (tühi), kõik lubatud. handball.ee-l robots.txt puudub (404).
 - **Hooaeg:** 2026/27 (URL-ides `2027`). Nähtavad mängud kuni 01.01.2027, edasi „etapi mängud selgumisel“.
 - **Tallinna klubi:** Tallinna Mistra. (HC Viimsi/Alexela on Viimsis, mitte Tallinnas.)
-- **Eripärad:** liiga lehel on „Laadi veel“ nupp. Lihtsaim lahendus on päevavaade `/calendar/YYYY-MM-DD` 15 päeva kohta. Saali saamiseks tuleb avada iga mängu leht, aga Tallinna mänge on vähe ja leht jätab saalinime vahemällu. Balti liiga ametlikku lehte ei leitud, osa Mistra mänge võib seega puududa.
+- **Eripärad:** Balti liiga ametlikku lehte ei leitud, osa Mistra mänge võib seega puududa.
+- **Teostus (2026-11-20):** liiga leht näitab ka mitu nädalat ette (1 päring). Saali jaoks avatakse protokolli leht ainult järgmise 15 päeva mängude kohta (tavaliselt 4–8 päringut). Mistra kodusaal: Kalevi spordihall.
 
 ## Saalihoki: Meistriliiga + Eesti-Läti ühisliiga
 
@@ -71,7 +73,8 @@ MVP-sse sobib 5 ala 6-st.
 - **robots.txt:** keelatud ainult tehnilised kaustad (`/Bootstrap/`, `/handlers/`, `/Scripts/`, `*.axd` jm). Ajakavad ja liigade lehed on lubatud. floorball.ee suunab saalihoki.ee-le.
 - **Hooaeg:** 2026/27. Ühisliiga alates 21.11.2026, meistriliiga esimene mäng 22.11.2026. Lõpp pole kirjas.
 - **Tallinna klubid:** tõenäoliselt Sparta Team Automaailm (kontrollimata). Teised meistriliiga klubid on Tartust, Jõgevalt ja Märjamaalt.
-- **Eripärad:** Tallinna mänge on hooaja jooksul vähe. Kuna adapter on lihtne, võtame ala sisse ja `venues.yaml` filtreerib Tallinna saalid välja.
+- **Eripärad:** Tallinna mänge on hooaja jooksul vähe. Kuna adapter on lihtne, võtame ala sisse ja `venues.toml` filtreerib Tallinna saalid välja.
+- **Teostus (2026-11-20):** meeste klubid (Sparta jt) mängivad kodumänge Märjamaal ja Ääsmäel, mitte Tallinnas. Seepärast on kaasas ka **naiste Eesti-Läti liiga** (lähteülesandes „teine samm“, sama allikas ja adapter): Sparta naiskond mängib Õismäe sportmängude hallis. Muud liigad (noored, M35+, Energialiiga) on välja jäetud.
 
 ---
 

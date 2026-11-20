@@ -1,0 +1,31 @@
+{
+ "updated": "2026-11-20T11:30:22+02:00",
+ "events": [
+  {
+   "id": "e25f3e4bdc90",
+   "sport": "kasipall",
+   "league": "Meistriliiga (mehed)",
+   "start": "2026-11-25T19:00:00+02:00",
+   "home": "Tallinna Mistra",
+   "away": "Põlva Serviti",
+   "venue": "Kalevi spordihall",
+   "city": "Tallinn",
+   "url": "https://kasipall.ee/protocol/9230",
+   "source": "kasipall_meistriliiga",
+   "time_tbc": false
+  },
+  {
+   "id": "3da04da35c8a",
+   "sport": "kasipall",
+   "league": "Meistriliiga (mehed)",
+   "start": "2026-12-02T19:00:00+02:00",
+   "home": "Tallinna Mistra",
+   "away": "Viljandi HC/LEONHARD WEISS",
+   "venue": "Kalevi spordihall",
+   "city": "Tallinn",
+   "url": "https://kasipall.ee/protocol/9234",
+   "source": "kasipall_meistriliiga",
+   "time_tbc": false
+  }
+ ]
+}
