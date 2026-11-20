@@ -1,0 +1,62 @@
+# spordikavad.ee seadistus
+
+[site]
+days_ahead = 14
+# Cloudflare Web Analytics (küpsisevaba). Vaikimisi välja lülitatud.
+analytics_enabled = false
+analytics_token = ""
+
+[http]
+# Kontaktaadress lisatakse User-Agenti, et allika omanik saaks vajadusel ühendust võtta.
+# TODO: omanik lisab enne esimest päris kogumist oma kontaktaadressi.
+contact = ""
+user_agent = "spordikavad.ee-bot/0.1 (+https://spordikavad.ee)"
+delay = 3.0       # sekundit päringute vahel samale saidile
+timeout = 20.0
+retries = 3
+
+[http.host_delays]
+"jalgpall.ee" = 5.0   # robots.txt: Crawl-Delay: 5
+
+# Väline link ilma andmete kogumiseta (vt SOURCES.md, korvpall)
+[[external_link]]
+sport = "korvpall"
+url = "https://www.basket.ee/et/ajakava-ja-tulemused?action=schedule"
+
+# Allikad. Hooaja kuupäevad on ligikaudsed (vt SOURCES.md). Hooaja sees tähendab
+# 0 mängu viga, väljaspool hooaega mitte.
+
+[[source]]
+name = "jalgpall_premiumliiga"
+sport = "jalgpall"
+league = "Premium liiga"
+enabled = true
+seasons = [["2027-03-01", "2027-11-30"]]
+
+[[source]]
+name = "jaahoki_optibet"
+sport = "jaahoki"
+league = "Optibet Hokiliiga"
+enabled = true
+seasons = [["2026-09-05", "2027-04-15"]]
+
+[[source]]
+name = "vorkpall_baltiliiga"
+sport = "vorkpall"
+league = "Balti liiga"
+enabled = true
+seasons = [["2026-11-14", "2027-03-31"]]
+
+[[source]]
+name = "kasipall_meistriliiga"
+sport = "kasipall"
+league = "Meistriliiga"
+enabled = true
+seasons = [["2026-09-15", "2027-05-15"]]
+
+[[source]]
+name = "saalihoki_meistriliiga"
+sport = "saalihoki"
+league = "Meistriliiga"
+enabled = true
+seasons = [["2026-11-20", "2027-04-15"]]

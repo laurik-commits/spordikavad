@@ -1,0 +1,80 @@
+# Toimumiskohad. Iga [[venue]] on üks koht: normaliseeritud nimi, linn ja
+# kirjapildid (aliases), mida allikad kasutavad. Suur- ja väiketähti, täpitähti
+# ning kirjavahemärke võrdlusel ei arvestata.
+#
+# Kui ehituse logis on "Tundmatu toimumiskoht", lisa see siia õige linnaga.
+# Ka mitte-Tallinna kohti tasub lisada, siis logi enam nende pärast ei hoiata.
+
+# --- Tallinn: jalgpall ---
+
+[[venue]]
+name = "A. Le Coq Arena"
+city = "Tallinn"
+aliases = ["Lilleküla staadion", "A Le Coq Arena"]
+
+[[venue]]
+name = "Sportland Arena"
+city = "Tallinn"
+aliases = ["Lilleküla kunstmuruväljak"]
+
+[[venue]]
+name = "Kadrioru staadion"
+city = "Tallinn"
+aliases = ["Kadriorg Stadium"]
+
+[[venue]]
+name = "Hiiu staadion"
+city = "Tallinn"
+aliases = ["Nõmme Kalju staadion"]
+
+# --- Tallinn: jäähoki ---
+
+[[venue]]
+name = "Haabersti jäähall"
+city = "Tallinn"
+# lhf.lv näitab HC Panteri kodumängude kohana ainult linna
+aliases = ["Tallina, Igaunija", "Haabersti Jäähall", "Haabersti Ice Hall"]
+
+[[venue]]
+name = "Tondiraba jäähall"
+city = "Tallinn"
+aliases = ["Tondiraba Ice Hall", "Tondiraba Jäähall"]
+
+# --- Tallinn: saalispordid ---
+
+[[venue]]
+name = "Audentese spordihall"
+city = "Tallinn"
+aliases = ["Audentese Sports Hall", "Audentes Sports Hall", "Audentese spordikeskus"]
+
+[[venue]]
+name = "TalTechi spordihall"
+city = "Tallinn"
+aliases = ["TalTech Spordihall", "TalTech Sports Hall", "TTÜ spordihoone"]
+
+[[venue]]
+name = "Kalevi spordihall"
+city = "Tallinn"
+aliases = ["Kalev Sports Hall"]
+
+[[venue]]
+name = "Saku Suurhall"
+city = "Tallinn"
+aliases = ["Unibet Arena", "Saku Arena"]
+
+# --- Mujal (et logi ei hoiataks) ---
+
+[[venue]]
+name = "Viimsi kooli spordikeskus"
+city = "Viimsi"
+aliases = ["Viimsi kooli Spordikeskus"]
+
+[[venue]]
+name = "Eesti Maaülikooli spordihoone"
+city = "Tartu"
+aliases = []
+
+[[venue]]
+name = "Märjamaa spordihoone"
+city = "Märjamaa"
+aliases = []
