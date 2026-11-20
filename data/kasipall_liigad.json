@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T13:43:13+02:00",
+ "updated": "2026-11-20T13:47:18+02:00",
  "events": [
   {
    "id": "8c9d3723f8b0",
@@ -70,6 +70,20 @@
    "source": "kasipall_liigad",
    "time_tbc": false,
    "level": 1
+  },
+  {
+   "id": "e30255af5285",
+   "sport": "kasipall",
+   "league": "Esiliiga (mehed)",
+   "start": "2026-12-02T19:00:00+02:00",
+   "home": "Aruküla SK",
+   "away": "HC Tallas",
+   "venue": "Aruküla spordihoone",
+   "city": "Aruküla",
+   "url": "https://kasipall.ee/protocol/9531",
+   "source": "kasipall_liigad",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "2bbd945f7bbc",

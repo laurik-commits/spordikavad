@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T13:43:13+02:00",
+ "updated": "2026-11-20T13:47:19+02:00",
  "events": [
   {
    "id": "fbd1eceb1641",
@@ -16,6 +16,34 @@
    "level": 1
   },
   {
+   "id": "b15897373df8",
+   "sport": "saalihoki",
+   "league": "Energialiiga",
+   "start": "2026-11-28T12:30:00+02:00",
+   "home": "Flash by FF",
+   "away": "Järva- Jaani",
+   "venue": "Tapa spordihoone",
+   "city": "Tapa",
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8628",
+   "source": "saalihoki_meistriliiga",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "0dc913477c47",
+   "sport": "saalihoki",
+   "league": "Energialiiga",
+   "start": "2026-11-28T13:45:00+02:00",
+   "home": "EMÜ SK II",
+   "away": "Arenculle",
+   "venue": "Tapa spordihoone",
+   "city": "Tapa",
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8629",
+   "source": "saalihoki_meistriliiga",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
    "id": "97596fd76e48",
    "sport": "saalihoki",
    "league": "Eesti-Läti liiga (mehed)",
@@ -28,6 +56,20 @@
    "source": "saalihoki_meistriliiga",
    "time_tbc": false,
    "level": 1
+  },
+  {
+   "id": "83aa32c93992",
+   "sport": "saalihoki",
+   "league": "Energialiiga",
+   "start": "2026-11-28T16:15:00+02:00",
+   "home": "SK Voore",
+   "away": "Kuusalu Eluterve Naine",
+   "venue": "Tapa spordihoone",
+   "city": "Tapa",
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8631",
+   "source": "saalihoki_meistriliiga",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "1d0bb2338db1",
@@ -170,6 +212,48 @@
    "level": 1
   },
   {
+   "id": "7a5ff5b9f95f",
+   "sport": "saalihoki",
+   "league": "Energialiiga",
+   "start": "2027-01-09T10:00:00+02:00",
+   "home": "Kuusalu Eluterve Naine",
+   "away": "Arenculle",
+   "venue": "Kuusalu spordikeskus",
+   "city": "Kuusalu",
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8633",
+   "source": "saalihoki_meistriliiga",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "3271401fca70",
+   "sport": "saalihoki",
+   "league": "Energialiiga",
+   "start": "2027-01-09T11:15:00+02:00",
+   "home": "SK Voore",
+   "away": "Järva- Jaani",
+   "venue": "Kuusalu spordikeskus",
+   "city": "Kuusalu",
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8664",
+   "source": "saalihoki_meistriliiga",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "bf22155a7bb1",
+   "sport": "saalihoki",
+   "league": "Energialiiga",
+   "start": "2027-01-09T12:30:00+02:00",
+   "home": "Kaitseliidu Rapla malev",
+   "away": "EMÜ SK II",
+   "venue": "Kuusalu spordikeskus",
+   "city": "Kuusalu",
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8635",
+   "source": "saalihoki_meistriliiga",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
    "id": "b4dfb8a35a0b",
    "sport": "saalihoki",
    "league": "Meistriliiga (mehed)",
@@ -212,6 +296,62 @@
    "level": 1
   },
   {
+   "id": "d98fb29d0725",
+   "sport": "saalihoki",
+   "league": "Energialiiga",
+   "start": "2027-01-23T11:15:00+02:00",
+   "home": "EMÜ SK II",
+   "away": "SK Voore",
+   "venue": "Lähte spordihoone",
+   "city": "Tartu vald",
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8667",
+   "source": "saalihoki_meistriliiga",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "01c0b0cb3d1d",
+   "sport": "saalihoki",
+   "league": "Energialiiga",
+   "start": "2027-01-23T12:30:00+02:00",
+   "home": "Kuusalu Eluterve Naine",
+   "away": "Kaitseliidu Rapla malev",
+   "venue": "Lähte spordihoone",
+   "city": "Tartu vald",
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8638",
+   "source": "saalihoki_meistriliiga",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "e33060d270d7",
+   "sport": "saalihoki",
+   "league": "Energialiiga",
+   "start": "2027-01-23T15:00:00+02:00",
+   "home": "Flash by FF",
+   "away": "Arenculle",
+   "venue": "Lähte spordihoone",
+   "city": "Tartu vald",
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8670",
+   "source": "saalihoki_meistriliiga",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "00659aeca12b",
+   "sport": "saalihoki",
+   "league": "Energialiiga",
+   "start": "2027-01-23T16:15:00+02:00",
+   "home": "Kadrina Tabajad",
+   "away": "Tallinn United",
+   "venue": "Lähte spordihoone",
+   "city": "Tartu vald",
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8641",
+   "source": "saalihoki_meistriliiga",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
    "id": "0d3861ba986d",
    "sport": "saalihoki",
    "league": "Eesti-Läti liiga (mehed)",
@@ -226,6 +366,34 @@
    "level": 1
   },
   {
+   "id": "d7eaf6292ef0",
+   "sport": "saalihoki",
+   "league": "Energialiiga",
+   "start": "2027-02-06T10:00:00+02:00",
+   "home": "Flash By FF",
+   "away": "EMÜ SK II",
+   "venue": "Jõgeva Virtus",
+   "city": "Jõgeva",
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8673",
+   "source": "saalihoki_meistriliiga",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "33a9559cb437",
+   "sport": "saalihoki",
+   "league": "Energialiiga",
+   "start": "2027-02-06T12:30:00+02:00",
+   "home": "Kuusalu Eluterve Naine",
+   "away": "Järva- Jaani",
+   "venue": "Jõgeva Virtus",
+   "city": "Jõgeva",
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8675",
+   "source": "saalihoki_meistriliiga",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
    "id": "ff1b39ebaa5b",
    "sport": "saalihoki",
    "league": "Eesti-Läti liiga (naised)",
@@ -238,6 +406,34 @@
    "source": "saalihoki_meistriliiga",
    "time_tbc": false,
    "level": 1
+  },
+  {
+   "id": "64a1f10056ae",
+   "sport": "saalihoki",
+   "league": "Energialiiga",
+   "start": "2027-02-06T16:15:00+02:00",
+   "home": "SK Voore",
+   "away": "Kaitseliidu Rapla malev",
+   "venue": "Jõgeva Virtus",
+   "city": "Jõgeva",
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8678",
+   "source": "saalihoki_meistriliiga",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "7248847a5b3b",
+   "sport": "saalihoki",
+   "league": "Energialiiga",
+   "start": "2027-02-06T18:45:00+02:00",
+   "home": "Järva- Jaani",
+   "away": "Arenculle",
+   "venue": "Jõgeva Virtus",
+   "city": "Jõgeva",
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8903",
+   "source": "saalihoki_meistriliiga",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "e97e4d2bab09",

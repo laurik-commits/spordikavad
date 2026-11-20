@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T13:42:26+02:00",
+ "updated": "2026-11-20T13:46:31+02:00",
  "events": [
   {
    "id": "899216e6d23a",
@@ -86,6 +86,20 @@
    "level": 2
   },
   {
+   "id": "5fcfa16ebeca",
+   "sport": "vorkpall",
+   "league": "Esiliiga (mehed)",
+   "start": "2026-10-04T13:00:00+03:00",
+   "home": "Pärnu SK/VK",
+   "away": "Structura/Tartu vald",
+   "venue": "Raeküla kool",
+   "city": "Pärnu",
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3525&ID=98&PID=148",
+   "source": "vorkpall_dataproject",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
    "id": "62d4a799e0ce",
    "sport": "vorkpall",
    "league": "Esiliiga (mehed)",
@@ -95,6 +109,48 @@
    "venue": "TalTechi spordihall",
    "city": "Tallinn",
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3526&ID=98&PID=148",
+   "source": "vorkpall_dataproject",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "337f2dea1387",
+   "sport": "vorkpall",
+   "league": "Esiliiga (mehed)",
+   "start": "2026-10-04T16:00:00+03:00",
+   "home": "Eesti Küte/Türi SK",
+   "away": "Eesti Maaülikool/Embach",
+   "venue": "Türi spordihoone",
+   "city": "Türi",
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3527&ID=98&PID=148",
+   "source": "vorkpall_dataproject",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "f4c0b522cd84",
+   "sport": "vorkpall",
+   "league": "Esiliiga (naised)",
+   "start": "2026-10-04T18:00:00+03:00",
+   "home": "Põltsamaa Võrkpalliklubi",
+   "away": "Rae Spordikool",
+   "venue": "Põltsamaa Felixhall",
+   "city": "Põltsamaa",
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3519&ID=106&PID=164",
+   "source": "vorkpall_dataproject",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
+   "id": "0330af31cbb4",
+   "sport": "vorkpall",
+   "league": "Esiliiga (naised)",
+   "start": "2026-10-06T20:15:00+03:00",
+   "home": "Gerardo`s Toys/Neemeco",
+   "away": "EstNor/Kiili",
+   "venue": "Lilleküla gümnaasium",
+   "city": "Tallinn",
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3518&ID=106&PID=164",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
    "level": 2
@@ -224,6 +280,20 @@
    "source": "vorkpall_dataproject",
    "time_tbc": false,
    "level": 1
+  },
+  {
+   "id": "573777a4e236",
+   "sport": "vorkpall",
+   "league": "Esiliiga (naised)",
+   "start": "2026-10-18T16:00:00+03:00",
+   "home": "Dorpat/Tartu vald/ TKSK",
+   "away": "Gerardo`s Toys/Neemeco",
+   "venue": "Katoliku SK",
+   "city": "Tartu",
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3613&ID=106&PID=164",
+   "source": "vorkpall_dataproject",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "c87d121b26c3",
@@ -478,6 +548,20 @@
    "level": 1
   },
   {
+   "id": "29a2f17cc329",
+   "sport": "vorkpall",
+   "league": "Esiliiga (mehed)",
+   "start": "2026-10-30T19:30:00+02:00",
+   "home": "Eesti Küte/Türi SK",
+   "away": "Structura/Tartu vald",
+   "venue": "Türi spordihoone",
+   "city": "Türi",
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3533&ID=98&PID=148",
+   "source": "vorkpall_dataproject",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
    "id": "8d3ebc0d235e",
    "sport": "vorkpall",
    "league": "Esiliiga (naised)",
@@ -588,6 +672,20 @@
    "source": "vorkpall_dataproject",
    "time_tbc": false,
    "level": 1
+  },
+  {
+   "id": "e4f8a2628b4c",
+   "sport": "vorkpall",
+   "league": "Esiliiga (naised)",
+   "start": "2026-11-01T18:00:00+02:00",
+   "home": "Põltsamaa Võrkpalliklubi",
+   "away": "Dorpat/Tartu vald/ TKSK",
+   "venue": "Põltsamaa Felixhall",
+   "city": "Põltsamaa",
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3620&ID=106&PID=164",
+   "source": "vorkpall_dataproject",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "ee6df23783c9",
@@ -730,6 +828,20 @@
    "level": 1
   },
   {
+   "id": "60591120f161",
+   "sport": "vorkpall",
+   "league": "Esiliiga (naised)",
+   "start": "2026-11-12T19:00:00+02:00",
+   "home": "Dorpat/Tartu vald/ TKSK",
+   "away": "Rae Spordikool",
+   "venue": "Katoliku SK",
+   "city": "Tartu",
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3625&ID=106&PID=164",
+   "source": "vorkpall_dataproject",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
    "id": "8ed4a38ddfe5",
    "sport": "vorkpall",
    "league": "Eesti karikas (mehed)",
@@ -772,6 +884,20 @@
    "level": 1
   },
   {
+   "id": "e8130ace65e0",
+   "sport": "vorkpall",
+   "league": "Esiliiga (mehed)",
+   "start": "2026-11-13T19:30:00+02:00",
+   "home": "Eesti Küte/Türi SK",
+   "away": "Pärnu SK/VK",
+   "venue": "Türi spordihoone",
+   "city": "Türi",
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3539&ID=98&PID=148",
+   "source": "vorkpall_dataproject",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
    "id": "5775f4da0f86",
    "sport": "vorkpall",
    "league": "Balti liiga (naised)",
@@ -784,6 +910,20 @@
    "source": "vorkpall_dataproject",
    "time_tbc": false,
    "level": 1
+  },
+  {
+   "id": "9506ff932f9e",
+   "sport": "vorkpall",
+   "league": "Esiliiga (mehed)",
+   "start": "2026-11-14T13:00:00+02:00",
+   "home": "Pärnu SK/VK",
+   "away": "E-Lux Tallinn",
+   "venue": "Raeküla kool",
+   "city": "Pärnu",
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3538&ID=98&PID=148",
+   "source": "vorkpall_dataproject",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "16a337b597b2",
@@ -1024,6 +1164,20 @@
    "level": 1
   },
   {
+   "id": "0317a89a114c",
+   "sport": "vorkpall",
+   "league": "Esiliiga (naised)",
+   "start": "2026-11-23T20:00:00+02:00",
+   "home": "Põltsamaa Võrkpalliklubi",
+   "away": "TBD Pharmatech",
+   "venue": "Põltsamaa Felixhall",
+   "city": "Põltsamaa",
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3662&ID=106&PID=164",
+   "source": "vorkpall_dataproject",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
    "id": "34b79d88222f",
    "sport": "vorkpall",
    "league": "Eesti karikas (mehed)",
@@ -1036,6 +1190,20 @@
    "source": "vorkpall_dataproject",
    "time_tbc": false,
    "level": 1
+  },
+  {
+   "id": "4b0eb2f0b6b9",
+   "sport": "vorkpall",
+   "league": "Esiliiga (naised)",
+   "start": "2026-11-24T20:15:00+02:00",
+   "home": "Gerardo`s Toys/Neemeco",
+   "away": "Põltsamaa Võrkpalliklubi",
+   "venue": "Lilleküla gümnaasium",
+   "city": "Tallinn",
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3656&ID=106&PID=164",
+   "source": "vorkpall_dataproject",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "346854c658ef",
@@ -1134,6 +1302,20 @@
    "source": "vorkpall_dataproject",
    "time_tbc": false,
    "level": 1
+  },
+  {
+   "id": "396304e5c1c5",
+   "sport": "vorkpall",
+   "league": "Esiliiga (mehed)",
+   "start": "2026-11-28T13:00:00+02:00",
+   "home": "Pärnu SK/VK",
+   "away": "Tallinna Ülikool",
+   "venue": "Raeküla kool",
+   "city": "Pärnu",
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3544&ID=98&PID=148",
+   "source": "vorkpall_dataproject",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "a7d4be050f12",
@@ -1260,6 +1442,20 @@
    "source": "vorkpall_dataproject",
    "time_tbc": false,
    "level": 1
+  },
+  {
+   "id": "7091f2dd16cb",
+   "sport": "vorkpall",
+   "league": "Esiliiga (mehed)",
+   "start": "2026-12-04T19:30:00+02:00",
+   "home": "Eesti Küte/Türi SK",
+   "away": "Tallinna Ülikool",
+   "venue": "Türi spordihoone",
+   "city": "Türi",
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3551&ID=98&PID=148",
+   "source": "vorkpall_dataproject",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "e0d20b4037d2",
@@ -1400,6 +1596,20 @@
    "source": "vorkpall_dataproject",
    "time_tbc": false,
    "level": 1
+  },
+  {
+   "id": "ec6f402adc48",
+   "sport": "vorkpall",
+   "league": "Esiliiga (mehed)",
+   "start": "2026-12-12T13:00:00+02:00",
+   "home": "Pärnu SK/VK",
+   "away": "Eesti Maaülikool/Embach",
+   "venue": "Raeküla kool",
+   "city": "Pärnu",
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3549&ID=98&PID=148",
+   "source": "vorkpall_dataproject",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "6f440f97f70c",
