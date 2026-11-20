@@ -33,11 +33,16 @@ url = "https://www.basket.ee/et/ajakava-ja-tulemused?action=schedule"
 # 0 mängu viga, väljaspool hooaega mitte.
 
 [[source]]
-name = "jalgpall_premiumliiga"
+name = "jalgpall_ejl"
 sport = "jalgpall"
-league = "Premium liiga"
+league = "Jalgpall (EJL)"
 enabled = true
 seasons = [["2027-03-01", "2027-11-30"]]
+# jalgpall.ee liigade ID-d (/voistlused/<id>/liigad/calendar?season=<aasta>)
+competitions = [
+  { id = 52, league = "Premium liiga" },
+  { id = 63, league = "Naiste meistriliiga" },
+]
 
 [[source]]
 name = "jaahoki_optibet"
@@ -64,11 +69,17 @@ competitions = [
 ]
 
 [[source]]
-name = "kasipall_meistriliiga"
+name = "kasipall_liigad"
 sport = "kasipall"
-league = "Meistriliiga"
+league = "Käsipall (EKL)"
 enabled = true
 seasons = [["2026-09-15", "2027-05-15"]]
+# kasipall.ee võistluste ID-d (https://kasipall.ee/league/<id>), võivad uuel hooajal muutuda
+competitions = [
+  { id = 359, league = "Meistriliiga (mehed)" },
+  { id = 361, league = "Meistriliiga (naised)" },
+  { id = 362, league = "Eesti karikas (mehed)" },
+]
 
 [[source]]
 name = "saalihoki_meistriliiga"

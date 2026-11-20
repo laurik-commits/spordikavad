@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-20T12:21:33+02:00",
+ "updated": "2026-11-20T12:51:48+02:00",
  "events": [
   {
-   "id": "3e3fd4c64777",
+   "id": "e1db4aeda3ea",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-03-07T12:30:00+02:00",
@@ -11,11 +11,11 @@
    "venue": "Sportland Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186106",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "34331009f401",
+   "id": "84440c7f3d82",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-03-08T12:30:00+02:00",
@@ -24,11 +24,11 @@
    "venue": "Sportland Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186109",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "a800a09672b9",
+   "id": "5e543d7d6334",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-03-14T12:30:00+02:00",
@@ -37,11 +37,11 @@
    "venue": "Sportland Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186111",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "1f604642bb64",
+   "id": "326a1c78b12d",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-03-15T14:30:00+02:00",
@@ -50,24 +50,24 @@
    "venue": "Sportland Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186114",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "4fe2430c2ee2",
+   "id": "d7ae850371b2",
    "sport": "jalgpall",
-   "league": "Premium liiga",
-   "start": "2026-03-21T12:30:00+02:00",
-   "home": "Nõmme Kalju FC",
-   "away": "FC Kuressaare",
-   "venue": "Hiiu staadion",
+   "league": "Naiste meistriliiga",
+   "start": "2026-03-20T18:00:00+02:00",
+   "home": "Tallinna FC Flora (N)",
+   "away": "Harju JK Laagri (N)",
+   "venue": "Sportland Arena",
    "city": "Tallinn",
-   "url": "https://jalgpall.ee/voistlused/match_info/186116",
-   "source": "jalgpall_premiumliiga",
+   "url": "https://jalgpall.ee/voistlused/match_info/186987",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "d3b4bcd1b7aa",
+   "id": "2363564a081b",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-03-21T12:30:00+02:00",
@@ -76,11 +76,24 @@
    "venue": "Sportland Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186118",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "ced81062c5ae",
+   "id": "63d4da35eb57",
+   "sport": "jalgpall",
+   "league": "Premium liiga",
+   "start": "2026-03-21T12:30:00+02:00",
+   "home": "Nõmme Kalju FC",
+   "away": "FC Kuressaare",
+   "venue": "Hiiu staadion",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186116",
+   "source": "jalgpall_ejl",
+   "time_tbc": false
+  },
+  {
+   "id": "44ec362cd63d",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-03-22T15:00:00+02:00",
@@ -89,11 +102,11 @@
    "venue": "Sportland Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186120",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "a5046260cde6",
+   "id": "27e9d8683377",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-04-03T14:30:00+03:00",
@@ -102,11 +115,11 @@
    "venue": "Hiiu staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186121",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "cc25a8cdbf16",
+   "id": "1d68f53500a6",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-04-04T14:30:00+03:00",
@@ -115,11 +128,24 @@
    "venue": "Sportland Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186124",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "3ae8e866e6d5",
+   "id": "81ace62d2450",
+   "sport": "jalgpall",
+   "league": "Naiste meistriliiga",
+   "start": "2026-04-05T12:30:00+03:00",
+   "home": "Tallinna FC Flora (N)",
+   "away": "Saku Sporting (N)",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/186990",
+   "source": "jalgpall_ejl",
+   "time_tbc": false
+  },
+  {
+   "id": "a96c3f76fde2",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-04-07T19:00:00+03:00",
@@ -128,11 +154,11 @@
    "venue": "Sportland Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186126",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "9a3612bc52e4",
+   "id": "26783667590c",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-04-08T19:00:00+03:00",
@@ -141,11 +167,11 @@
    "venue": "Sportland Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186128",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "086306a983c1",
+   "id": "2a2b7138ec36",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-04-11T17:00:00+03:00",
@@ -154,11 +180,11 @@
    "venue": "Sportland Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186132",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "83dae59f6cf8",
+   "id": "0bfb5bfd06e4",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-04-12T14:30:00+03:00",
@@ -167,11 +193,11 @@
    "venue": "Hiiu staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186133",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "99b06b692fe7",
+   "id": "6a96ec71566d",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-04-12T17:00:00+03:00",
@@ -180,11 +206,11 @@
    "venue": "Sportland Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186135",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "c3e4d4d4272f",
+   "id": "20a3e1ccccf0",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-04-18T20:30:00+03:00",
@@ -193,11 +219,11 @@
    "venue": "Sportland Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186137",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "1fc93c0e3270",
+   "id": "79ae3b35774b",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-04-19T14:30:00+03:00",
@@ -206,11 +232,11 @@
    "venue": "Sportland Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186139",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "9f4183b0f645",
+   "id": "8f36d4b17a3b",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-04-22T18:45:00+03:00",
@@ -219,11 +245,11 @@
    "venue": "Hiiu staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186142",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "bee4b3ba57fe",
+   "id": "08c0844e1d0e",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-04-22T19:00:00+03:00",
@@ -232,11 +258,11 @@
    "venue": "Sportland Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186144",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "a798ec9b3ba9",
+   "id": "76237a04b5ac",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-04-25T17:00:00+03:00",
@@ -245,11 +271,11 @@
    "venue": "Sportland Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186147",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "4f7334f5f9a8",
+   "id": "7b362f6cd2cf",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-04-26T14:30:00+03:00",
@@ -258,11 +284,11 @@
    "venue": "Hiiu staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186149",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "6a8a29862df4",
+   "id": "eabc0ac3ddbf",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-04-26T17:00:00+03:00",
@@ -271,11 +297,11 @@
    "venue": "Sportland Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186150",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "00c1276767d8",
+   "id": "630a8a101ad8",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-04-30T19:00:00+03:00",
@@ -284,11 +310,11 @@
    "venue": "A. Le Coq Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186151",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "c7c3a222c3de",
+   "id": "6fb6a51293f8",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-05-09T14:30:00+03:00",
@@ -297,11 +323,11 @@
    "venue": "A. Le Coq Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186157",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "ee617b023909",
+   "id": "2b2439f680a4",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-05-10T14:30:00+03:00",
@@ -310,11 +336,11 @@
    "venue": "Hiiu staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186159",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "f38b7470de69",
+   "id": "8fd324f46caa",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-05-10T17:00:00+03:00",
@@ -323,11 +349,24 @@
    "venue": "Männiku staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186160",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "b803f19ef2e7",
+   "id": "de2a3dd4019c",
+   "sport": "jalgpall",
+   "league": "Naiste meistriliiga",
+   "start": "2026-05-16T12:30:00+03:00",
+   "home": "Tallinna FC Flora (N)",
+   "away": "FC Elva (N)",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/187002",
+   "source": "jalgpall_ejl",
+   "time_tbc": false
+  },
+  {
+   "id": "6086d2d64be1",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-05-20T19:00:00+03:00",
@@ -336,11 +375,11 @@
    "venue": "Hiiu staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186170",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "51241116fd24",
+   "id": "47cf9045b94f",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-05-29T19:00:00+03:00",
@@ -349,11 +388,24 @@
    "venue": "Männiku staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186171",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "7081e7d25359",
+   "id": "7975fe8d23ec",
+   "sport": "jalgpall",
+   "league": "Naiste meistriliiga",
+   "start": "2026-06-12T19:00:00+03:00",
+   "home": "Tallinna FC Flora (N)",
+   "away": "Harju JK Laagri (N)",
+   "venue": "Lilleküla harjutusväljak I",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/187009",
+   "source": "jalgpall_ejl",
+   "time_tbc": false
+  },
+  {
+   "id": "e642e0f3b31a",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-06-13T19:00:00+03:00",
@@ -362,11 +414,11 @@
    "venue": "A. Le Coq Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186177",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "c7f8ac10fd40",
+   "id": "24b185a61191",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-06-14T14:30:00+03:00",
@@ -375,11 +427,11 @@
    "venue": "Hiiu staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186179",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "c941d09f7972",
+   "id": "1b73ffc9af2c",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-06-17T19:00:00+03:00",
@@ -388,11 +440,11 @@
    "venue": "Hiiu staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186184",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "e8169a81b718",
+   "id": "667e698f1d2a",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-06-17T19:00:00+03:00",
@@ -401,11 +453,24 @@
    "venue": "Männiku staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186183",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "b92859926058",
+   "id": "512f0da3d1d5",
+   "sport": "jalgpall",
+   "league": "Naiste meistriliiga",
+   "start": "2026-06-18T19:00:00+03:00",
+   "home": "Tallinna FC Flora (N)",
+   "away": "Viimsi JK (N)",
+   "venue": "Lilleküla harjutusväljak I",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/187013",
+   "source": "jalgpall_ejl",
+   "time_tbc": false
+  },
+  {
+   "id": "37e08027ea6f",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-06-20T17:00:00+03:00",
@@ -414,11 +479,11 @@
    "venue": "A. Le Coq Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186187",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "d7faca45b532",
+   "id": "7be113f69ea3",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-06-21T17:00:00+03:00",
@@ -427,11 +492,11 @@
    "venue": "A. Le Coq Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186189",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "d3062d18c70c",
+   "id": "1d4d6fb43e07",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-06-28T17:00:00+03:00",
@@ -440,11 +505,11 @@
    "venue": "Hiiu staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186196",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "e4b8c6cc98b3",
+   "id": "918c1d9c11a4",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-06-28T19:00:00+03:00",
@@ -453,11 +518,11 @@
    "venue": "A. Le Coq Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186197",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "5ff95adbd5e7",
+   "id": "6f4b9aa0bba9",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-07-03T19:00:00+03:00",
@@ -466,11 +531,11 @@
    "venue": "Männiku staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186192",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "d7c3d4b4ee4f",
+   "id": "5b8d006fe729",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-07-11T17:00:00+03:00",
@@ -479,11 +544,11 @@
    "venue": "Männiku staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186199",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "ada3d15340f1",
+   "id": "89c2b7f24f46",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-07-17T19:00:00+03:00",
@@ -492,11 +557,11 @@
    "venue": "A. Le Coq Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186201",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "8c26fbe817fc",
+   "id": "41e41cc266da",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-07-31T19:00:00+03:00",
@@ -505,11 +570,24 @@
    "venue": "Männiku staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186206",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "86ba65db5e6f",
+   "id": "c02f4603e3f1",
+   "sport": "jalgpall",
+   "league": "Naiste meistriliiga",
+   "start": "2026-08-01T17:00:00+03:00",
+   "home": "Tallinna FC Flora (N)",
+   "away": "Viimsi JK (N)",
+   "venue": "Lilleküla harjutusväljak I",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/187021",
+   "source": "jalgpall_ejl",
+   "time_tbc": false
+  },
+  {
+   "id": "00233b504bff",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-08-02T17:00:00+03:00",
@@ -518,11 +596,11 @@
    "venue": "Hiiu staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186207",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "2e24058bd0a4",
+   "id": "7b766a91e776",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-08-02T19:00:00+03:00",
@@ -531,11 +609,11 @@
    "venue": "A. Le Coq Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186210",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "755fd2cf134c",
+   "id": "286094c6b776",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-08-09T19:00:00+03:00",
@@ -544,11 +622,11 @@
    "venue": "A. Le Coq Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186215",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "a606649667fb",
+   "id": "8c1dd823631b",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-08-14T19:00:00+03:00",
@@ -557,11 +635,24 @@
    "venue": "Männiku staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186216",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "a111c6b12235",
+   "id": "10538bb07ebb",
+   "sport": "jalgpall",
+   "league": "Naiste meistriliiga",
+   "start": "2026-08-15T12:30:00+03:00",
+   "home": "Tallinna FC Flora (N)",
+   "away": "Paide Linnanaiskond (N)",
+   "venue": "Lilleküla harjutusväljak I",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/187025",
+   "source": "jalgpall_ejl",
+   "time_tbc": false
+  },
+  {
+   "id": "cf967266dd25",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-08-16T17:00:00+03:00",
@@ -570,11 +661,11 @@
    "venue": "Hiiu staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186217",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "8abb2b41a279",
+   "id": "bf87181892b2",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-08-16T19:00:00+03:00",
@@ -583,11 +674,24 @@
    "venue": "A. Le Coq Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186220",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "4cc771d03395",
+   "id": "2cde2f3e97f4",
+   "sport": "jalgpall",
+   "league": "Naiste meistriliiga",
+   "start": "2026-08-20T15:00:00+03:00",
+   "home": "Tallinna FC Flora (N)",
+   "away": "Saku Sporting (N)",
+   "venue": "Lilleküla harjutusväljak I",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/187028",
+   "source": "jalgpall_ejl",
+   "time_tbc": false
+  },
+  {
+   "id": "72c36ba9f41d",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-08-21T19:00:00+03:00",
@@ -596,11 +700,11 @@
    "venue": "A. Le Coq Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186221",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "46e84e7d53f6",
+   "id": "b06f71b209f3",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-08-29T14:30:00+03:00",
@@ -609,11 +713,11 @@
    "venue": "Männiku staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186227",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "6e1c4d6c0855",
+   "id": "3f95e3352654",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-08-30T14:30:00+03:00",
@@ -622,11 +726,11 @@
    "venue": "Hiiu staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186229",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "8b92bbff94e8",
+   "id": "3a216c0610b4",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-08-30T17:00:00+03:00",
@@ -635,11 +739,11 @@
    "venue": "A. Le Coq Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186230",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "3c4aa0c6b912",
+   "id": "5da645aad0d7",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-09-02T19:00:00+03:00",
@@ -648,11 +752,11 @@
    "venue": "A. Le Coq Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186214",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "7ecfc9c83c33",
+   "id": "03244a8dd6a6",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-09-05T19:00:00+03:00",
@@ -661,11 +765,11 @@
    "venue": "A. Le Coq Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186231",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "852df94f1312",
+   "id": "c57284742ad3",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-09-08T18:00:00+03:00",
@@ -674,11 +778,11 @@
    "venue": "Hiiu staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186236",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "26fe87996471",
+   "id": "16da2aa233b3",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-09-09T19:00:00+03:00",
@@ -687,11 +791,24 @@
    "venue": "A. Le Coq Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186239",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "aaf3c10cf15c",
+   "id": "8fa35e9df33f",
+   "sport": "jalgpall",
+   "league": "Naiste meistriliiga",
+   "start": "2026-09-12T12:30:00+03:00",
+   "home": "Tallinna FC Flora (N)",
+   "away": "Paide Linnanaiskond (N)",
+   "venue": "Lilleküla harjutusväljak I",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/187038",
+   "source": "jalgpall_ejl",
+   "time_tbc": false
+  },
+  {
+   "id": "5e367f082ebf",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-09-12T14:30:00+03:00",
@@ -700,11 +817,11 @@
    "venue": "A. Le Coq Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186242",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "f9aa94a38c62",
+   "id": "74a4b9537b6f",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-09-12T14:30:00+03:00",
@@ -713,11 +830,11 @@
    "venue": "Hiiu staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186241",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "9d8aa90433b6",
+   "id": "3e583909a3ce",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-09-12T17:00:00+03:00",
@@ -726,11 +843,11 @@
    "venue": "Männiku staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186243",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "8b1bf317d16c",
+   "id": "80b048e23e4d",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-09-17T19:00:00+03:00",
@@ -739,11 +856,11 @@
    "venue": "A. Le Coq Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186203",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "c5824b93ecb3",
+   "id": "db085367f5fb",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-09-19T17:00:00+03:00",
@@ -752,11 +869,11 @@
    "venue": "Männiku staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186248",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "cbb645faedb6",
+   "id": "ee07a1642dde",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-09-20T19:00:00+03:00",
@@ -765,11 +882,24 @@
    "venue": "A. Le Coq Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186247",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "e6df5c24dec1",
+   "id": "ac9fdfb26af9",
+   "sport": "jalgpall",
+   "league": "Naiste meistriliiga",
+   "start": "2026-10-03T12:00:00+03:00",
+   "home": "Tallinna FC Flora (N)",
+   "away": "Harju JK Laagri (N)",
+   "venue": "Lilleküla harjutusväljak I",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/187048",
+   "source": "jalgpall_ejl",
+   "time_tbc": false
+  },
+  {
+   "id": "134c7f10b44b",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-10-10T14:30:00+03:00",
@@ -778,11 +908,11 @@
    "venue": "Hiiu staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186252",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "0739f789f225",
+   "id": "23aa3f0e2511",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-10-11T14:30:00+03:00",
@@ -791,11 +921,11 @@
    "venue": "A. Le Coq Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186254",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "fa1775decdc7",
+   "id": "1c28d6eeaeaa",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-10-15T19:00:00+03:00",
@@ -804,11 +934,11 @@
    "venue": "A. Le Coq Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186260",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "cf943295b07d",
+   "id": "d80c563fc1fb",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-10-17T12:30:00+03:00",
@@ -817,11 +947,11 @@
    "venue": "Sportland Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186261",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "40e61b1c4690",
+   "id": "1227cf1b241d",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-10-18T19:00:00+03:00",
@@ -830,11 +960,11 @@
    "venue": "A. Le Coq Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186263",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "133877aee55c",
+   "id": "0a886fa9f390",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-10-23T19:00:00+03:00",
@@ -843,11 +973,11 @@
    "venue": "Sportland Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186266",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "c4b6389e878e",
+   "id": "5602f7f91869",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-10-24T17:00:00+03:00",
@@ -856,11 +986,24 @@
    "venue": "A. Le Coq Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186268",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "913bee755593",
+   "id": "c055c7b423c5",
+   "sport": "jalgpall",
+   "league": "Naiste meistriliiga",
+   "start": "2026-10-25T13:00:00+02:00",
+   "home": "Tallinna FC Flora (N)",
+   "away": "Viimsi JK (N)",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/187053",
+   "source": "jalgpall_ejl",
+   "time_tbc": false
+  },
+  {
+   "id": "35da0ffe4f9d",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-10-25T14:30:00+02:00",
@@ -869,11 +1012,11 @@
    "venue": "Hiiu staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186269",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "342523b2a671",
+   "id": "b81e50c2a440",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-10-27T18:00:00+02:00",
@@ -882,11 +1025,11 @@
    "venue": "Sportland Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186271",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "d132bb8018c7",
+   "id": "3c49acd20652",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-10-31T15:00:00+02:00",
@@ -895,11 +1038,11 @@
    "venue": "Sportland Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186276",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "3f384f84b1ea",
+   "id": "36583e293343",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-11-01T12:30:00+02:00",
@@ -908,11 +1051,11 @@
    "venue": "Hiiu staadion",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186279",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "d8af152783e4",
+   "id": "75b732e6cc68",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-11-01T14:30:00+02:00",
@@ -921,11 +1064,11 @@
    "venue": "Sportland Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186280",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   },
   {
-   "id": "8faada08174b",
+   "id": "5931698bff4e",
    "sport": "jalgpall",
    "league": "Premium liiga",
    "start": "2026-11-07T12:30:00+02:00",
@@ -934,7 +1077,20 @@
    "venue": "Sportland Arena",
    "city": "Tallinn",
    "url": "https://jalgpall.ee/voistlused/match_info/186281",
-   "source": "jalgpall_premiumliiga",
+   "source": "jalgpall_ejl",
+   "time_tbc": false
+  },
+  {
+   "id": "30f57fcfd311",
+   "sport": "jalgpall",
+   "league": "Naiste meistriliiga",
+   "start": "2026-11-08T17:00:00+02:00",
+   "home": "Tallinna FC Flora (N)",
+   "away": "FC Elva (N)",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/voistlused/match_info/187059",
+   "source": "jalgpall_ejl",
    "time_tbc": false
   }
  ]

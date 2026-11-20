@@ -85,6 +85,25 @@ MVP-sse sobib 5 ala 6-st.
 
 ---
 
+## Täiendavate võistluste ülevaade 2026-11-20
+
+Omaniku palvel vaadati üle kõigi alade täiskasvanute tippvõistlused.
+
+**Lisatud:**
+- Jalgpall: **naiste meistriliiga** (jalgpall.ee id 63, sama kalendrileht). Tallinnas Sportland Arena ja Lilleküla harjutusväljak I, umbes 12 mängu hooajas. Adapter on nüüd `jalgpall_ejl`, liigad on `config.toml`-is.
+- Käsipall: **naiste meistriliiga** (kasipall.ee id 361; Mella, Kristiine spordihall) ja **meeste Eesti karikas** (id 362; Mistra, Mustamäe KK). Adapter on nüüd `kasipall_liigad`, võistlused on `config.toml`-is. Võistkondade nimede lõpust eemaldatakse " N" ja " K".
+
+**Hiljem (vajab uut koodi):**
+- Jalgpalli karikad: Tipneri karikas (id 137), naiste karikas (id 138), superkarikas (id 136). Kalendrilehte pole, on ainult iCal `download.php?type=calendar.download&action=download&league_id=<id>`. Mänge on peamiselt kevadel (veerandfinaalid aprillis).
+- Saalijalgpall (futsal) meistriliiga (jalgpall.ee id 125, Tallinna FC Bunker Partner). See oleks uus ala.
+
+**Ei kasutata:**
+- **Eesti jäähoki liigad** (Unibet Hokiliiga: Tallinna HC Vipers; naiste hokiliiga: Roosa Panter, Grizzlyz, Wolferines). Ajakava on ehs.eestihoki.ee-l, aga see laaditakse JavaScriptiga kommertsteenusest **hockeydata.net**, kasutades liidu enda API-võtit. Meie skriptil pole õigust seda võtit kasutada (lähteülesanne: küsitavad allikad jäta vahele). ehis.eestihoki.ee (serveri HTML, robots lubab) lõpeb hooajaga 2024/25. **Vaata uuesti**, kui ehis-is ilmub 2026/27 hooaeg.
+- Käsipalli Balti liiga (Mistra): mänge ei leitud ei kasipall.ee-st ega mujalt.
+- Naiste käsipallikarikas (id 363): 2026/27 mänge pole veel avaldatud. Lisa `competitions` alla, kui need ilmuvad.
+- Saalihoki: naiste kodumaist liigat ega täiskasvanute karikat pole.
+- Jäähoki: täiskasvanute karikat 2026/27 pole.
+
 ## Pistekontroll 2026-11-20
 
 Iga allika kohta üks mäng lehel olevatest andmetest, võrreldud allika enda mängulehega:

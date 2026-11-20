@@ -31,6 +31,15 @@ aliases = ["Nõmme Kalju staadion", "Hiiu kunstmurustaadion"]
 name = "Männiku staadion"
 city = "Tallinn"
 
+[[venue]]
+name = "Lilleküla harjutusväljak I"
+city = "Tallinn"
+
+[[venue]]
+name = "Kristiine spordihall"
+city = "Tallinn"
+aliases = ["Kristiine Spordihall"]
+
 # --- Tallinn: jäähoki ---
 
 [[venue]]
@@ -105,6 +114,36 @@ city = "Tapa"
 [[venue]]
 name = "Kehra Spordihoone"
 city = "Kehra"
+
+# Jalgpall mujal (naiste meistriliiga)
+[[venue]]
+name = "Viimsi staadion"
+city = "Viimsi"
+
+[[venue]]
+name = "Elva linnastaadion"
+city = "Elva"
+
+[[venue]]
+name = "Nike Arena Elva"
+city = "Elva"
+
+[[venue]]
+name = "Saku staadion"
+city = "Saku"
+
+[[venue]]
+name = "Saku kunstmuruväljak"
+city = "Saku"
+
+[[venue]]
+name = "Tabasalu kooli spordihoone"
+city = "Harku vald"
+
+[[venue]]
+name = "Raasiku spordihoone"
+city = "Raasiku"
+aliases = ["Raasiku Spordihoone"]
 
 # Jalgpall mujal
 [[venue]]
