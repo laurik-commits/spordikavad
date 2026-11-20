@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T13:46:31+02:00",
+ "updated": "2026-11-20T13:52:49+02:00",
  "events": [
   {
    "id": "899216e6d23a",
@@ -156,6 +156,20 @@
    "level": 2
   },
   {
+   "id": "bbf4dd259be6",
+   "sport": "vorkpall",
+   "league": "Esiliiga (naised)",
+   "start": "2026-10-07T19:00:00+03:00",
+   "home": "TBD Pharmatech",
+   "away": "Dorpat/Tartu vald/ TKSK",
+   "venue": "NET spordihall",
+   "city": "Tartu",
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3570&ID=106&PID=164",
+   "source": "vorkpall_dataproject",
+   "time_tbc": false,
+   "level": 2
+  },
+  {
    "id": "bede3effa672",
    "sport": "vorkpall",
    "league": "Eesti karikas (mehed)",
@@ -196,6 +210,20 @@
    "source": "vorkpall_dataproject",
    "time_tbc": false,
    "level": 1
+  },
+  {
+   "id": "498a91922dfa",
+   "sport": "vorkpall",
+   "league": "Esiliiga (naised)",
+   "start": "2026-10-15T18:30:00+03:00",
+   "home": "TBD Pharmatech",
+   "away": "Rae Spordikool",
+   "venue": "NET spordihall",
+   "city": "Tartu",
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3561&ID=106&PID=164",
+   "source": "vorkpall_dataproject",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "de086606a826",
@@ -910,6 +938,20 @@
    "source": "vorkpall_dataproject",
    "time_tbc": false,
    "level": 1
+  },
+  {
+   "id": "b60d26619a36",
+   "sport": "vorkpall",
+   "league": "Esiliiga (naised)",
+   "start": "2026-11-14T12:00:00+02:00",
+   "home": "TBD Pharmatech",
+   "away": "EstNor/Kiili",
+   "venue": "NET spordihall",
+   "city": "Tartu",
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3623&ID=106&PID=164",
+   "source": "vorkpall_dataproject",
+   "time_tbc": false,
+   "level": 2
   },
   {
    "id": "9506ff932f9e",
