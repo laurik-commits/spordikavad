@@ -74,12 +74,15 @@
   {% if filters or links %}
   <div class="filters" role="group" aria-label="Ala">
     <button type="button" data-filter="" aria-pressed="true">Kõik</button>
-    {% for f in filters %}<button type="button" data-filter="{{ f.key }}" aria-pressed="false"><i class="dot s-{{ f.key }}"></i>{{ f.label }}</button>{% endfor %}
+    {% for f in filters %}<button type="button" data-filter="{{ f.key }}" aria-pressed="false"{% if f.none %} class="nogames" data-none="1" title="{{ f.msg }}"{% endif %}><i class="dot s-{{ f.key }}"></i>{{ f.label }}</button>{% endfor %}
     {% for l in links %}<button type="button" class="ext" data-filter="{{ l.sport }}" data-ext="1" aria-pressed="false"><i class="dot s-{{ l.sport }}"></i>{{ l.label }}</button>{% endfor %}
   </div>
   {% endif %}
   {% for l in links %}
   <p class="extnote" data-note="{{ l.sport }}">{{ l.note }} <a href="{{ l.url }}" rel="noopener">{{ l.link_text or l.label }} ↗</a></p>
+  {% endfor %}
+  {% for f in filters if f.none %}
+  <p class="extnote sportnote s-border-{{ f.key }}" data-note="{{ f.key }}">{{ f.msg }}</p>
   {% endfor %}
   {% for f in filters if f.key in sport_notes %}
   {% set sn = sport_notes[f.key] %}

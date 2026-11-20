@@ -37,6 +37,11 @@ log = logging.getLogger("build")
 
 WEEKDAYS = ["esmaspäev", "teisipäev", "kolmapäev", "neljapäev", "reede", "laupäev", "pühapäev"]
 SHORT_WEEKDAYS = ["E", "T", "K", "N", "R", "L", "P"]
+MONTHS_IN = ["jaanuaris", "veebruaris", "märtsis", "aprillis", "mais", "juunis", "juulis",
+             "augustis", "septembris", "oktoobris", "novembris", "detsembris"]
+# ala omastav ("Tallinnas pole … jalgpalli mänge")
+SPORT_GEN = {"jalgpall": "jalgpalli", "korvpall": "korvpalli", "jaahoki": "jäähoki", "vorkpall": "võrkpalli",
+             "kasipall": "käsipalli", "saalihoki": "saalihoki", "saalijalgpall": "saalijalgpalli"}
 MONTHS = ["jaanuar", "veebruar", "märts", "aprill", "mai", "juuni", "juuli",
           "august", "september", "oktoober", "november", "detsember"]
 
@@ -230,6 +235,21 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
     links = [{"sport": l["sport"], "label": SPORTS[l["sport"]], "url": l["url"],
               "note": l.get("note", ""), "link_text": l.get("link_text", "")} for l in cfg.get("external_link", [])]
     sport_notes = {n["sport"]: n for n in cfg.get("sport_note", [])}
+    external = {l["sport"] for l in links}
+
+    # millised alad on igal tasemel olemas (filtrinupud on alati nähtaval, ka siis kui mänge pole)
+    cov = coverage(cfg)
+    sports_at = {1: [r["key"] for r in cov if r["top"] and r["key"] not in external],
+                 2: [r["key"] for r in cov if r["low"] and r["key"] not in external]}
+
+    def offseason_note(sport: str) -> str:
+        """Kui ala ükski allikas pole hooajas: "Jalgpalli hooaeg algab märtsis." """
+        srcs = [s for s in cfg.get("source", []) if s.get("enabled", True) and s["sport"] == sport]
+        if not srcs or any(cfgmod.in_season(s, today) for s in srcs):
+            return ""
+        starts = sorted(int(start[-5:-3]) for s in srcs for start, _ in s.get("seasons", []))
+        upcoming = [m for m in starts if m > today.month] or starts
+        return f"{SPORT_GEN[sport].capitalize()} hooaeg algab {MONTHS_IN[upcoming[0] - 1]}." if upcoming else ""
 
     env = Environment(loader=FileSystemLoader(SITE), autoescape=select_autoescape(["html"]), trim_blocks=True, lstrip_blocks=True)
     env.filters["et_date"] = et_date
@@ -270,7 +290,16 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
                        "count": sum(1 for d in days for e in window[d] if e.level == k)} for k, v in LEVELS.items()]
         for r in regions:
             by_day = region_days[r.slug]
-            present = sorted({e.sport for lst in by_day.values() for e in lst}, key=list(SPORTS).index)
+            present = {e.sport for lst in by_day.values() for e in lst}
+            tier_word = "kõrgliigade" if level == 1 else "esiliigade"
+            filters = []
+            for s in sports_at[level]:
+                if s in present:
+                    filters.append({"key": s, "label": SPORTS[s], "none": False, "msg": ""})
+                else:
+                    msg = offseason_note(s) or (f"{r.in_form} pole järgmise 2 nädala jooksul {SPORT_GEN[s]} "
+                                                f"{tier_word} mänge.")
+                    filters.append({"key": s, "label": SPORTS[s], "none": True, "msg": msg})
             day_list = [{"date": d, "label": et_date(d), "short": SHORT_WEEKDAYS[d.weekday()],
                          "count": len(by_day[d]),
                          "sports": sorted({e.sport for e in by_day[d]})} for d in days]
@@ -282,7 +311,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
                 ctx = dict(
                     common, region=r, regions=region_list, level=level, level_info=lv, levels=level_list,
                     show_city=r.kind != "city",
-                    filters=[{"key": s, "label": SPORTS[s]} for s in present], days=day_list,
+                    filters=filters, days=day_list,
                     day=d, events=by_day[d],
                     prev_day=days[i - 1] if i > 0 else None,
                     next_day=days[i + 1] if i + 1 < len(days) else None,

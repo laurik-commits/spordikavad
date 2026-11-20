@@ -20,7 +20,7 @@ class RenderTest(unittest.TestCase):
     def setUp(self):
         self.tmp = Path(tempfile.mkdtemp())
         cfg = {"site": {"days_ahead": 3, "base_url": "https://example.org/sk/"},
-               "geo": config.load()["geo"],
+               "geo": config.load()["geo"], "source": config.load()["source"],
                "external_link": [{"sport": "korvpall", "url": "https://basket.example/",
                                   "note": "Korvpalli andmeid ei koguta.", "link_text": "Ajakava"}],
                "sport_note": [{"sport": "jaahoki", "note": "Eesti hokiliigasid pole.", "url": "https://hoki.example/"}]}
@@ -59,9 +59,21 @@ class RenderTest(unittest.TestCase):
         self.assertIn('Korvpalli andmeid ei koguta. <a href="https://basket.example/"', html)
         self.assertIn('data-filter="korvpall" data-ext="1"', html)  # korvpall on nupp, mitte link
 
+    def test_all_sports_always_listed_with_reason_when_empty(self):
+        html = self.read("2026-11-22/index.html")
+        for s in ("jalgpall", "jaahoki", "vorkpall", "kasipall", "saalihoki", "saalijalgpall"):
+            self.assertIn(f'data-filter="{s}"', html)
+        self.assertIn('data-filter="saalihoki" aria-pressed="false" class="nogames" data-none="1"', html)
+        self.assertIn("Tallinnas pole järgmise 2 nädala jooksul saalihoki kõrgliigade mänge.", html)
+        self.assertIn("Jalgpalli hooaeg algab märtsis.", html)          # talvel hooajaväline
+        self.assertNotIn('data-filter="vorkpall" aria-pressed="false" class="nogames"', html)
+        # esiliigades jäähokit pole üldse → nuppu pole
+        self.assertNotIn('data-filter="jaahoki"', self.read("esiliigad/2026-11-21/index.html"))
+
     def test_sport_note_only_where_sport_is_listed(self):
         self.assertIn('data-note="jaahoki">Eesti hokiliigasid pole.', self.read("2026-11-22/index.html"))
-        self.assertNotIn("Eesti hokiliigasid pole", self.read("tartu/2026-11-21/index.html"))  # Tartus hokit pole
+        self.assertIn("Eesti hokiliigasid pole", self.read("tartu/2026-11-21/index.html"))  # hoki nupp on alati
+        self.assertNotIn("Eesti hokiliigasid pole", self.read("esiliigad/2026-11-21/index.html"))  # esiliigas hokit pole
 
     def test_regions_split_and_city_shown_only_when_needed(self):
         tallinn = self.read("2026-11-21/index.html")

@@ -61,8 +61,10 @@
       r.hidden = hide;
       if (!hide) shown++;
     });
-    if (empty) empty.hidden = ext || shown > 0 || rows.length === 0;
-    if (none) none.hidden = ext;
+    // ala ilma mängudeta (hall nupp): oma teade on juba näha, üldist "mänge pole" teksti ei korrata
+    var nogames = !!(btn && btn.dataset.none);
+    if (empty) empty.hidden = ext || nogames || shown > 0 || rows.length === 0;
+    if (none) none.hidden = ext || nogames;
     // päevade riba: valitud ala korral on paksud ainult päevad, kus selle ala mänge on
     document.querySelectorAll(".days a[data-sports]").forEach(function (a) {
       var list = a.dataset.sports ? a.dataset.sports.split(" ") : [];

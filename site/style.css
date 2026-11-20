@@ -114,7 +114,8 @@ a { color: var(--link); text-decoration: none; }
   display: inline-flex; align-items: center; gap: .35rem;
 }
 .filters button[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
-.filters .ext[aria-pressed="false"] { color: var(--muted); }
+.filters .ext[aria-pressed="false"], .filters .nogames[aria-pressed="false"] { color: var(--empty); }
+.filters .nogames[aria-pressed="false"] .dot { opacity: .35; }
 .extnote {
   margin: 0 0 .8rem; padding: .7rem .8rem; font-size: .88rem; color: var(--fg);
   background: var(--row); border: 1px solid var(--line); border-left: 4px solid var(--korvpall); border-radius: 0;
