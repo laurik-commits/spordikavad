@@ -33,6 +33,7 @@ REPORT = ROOT / "build_report.json"
 log = logging.getLogger("build")
 
 WEEKDAYS = ["esmaspäev", "teisipäev", "kolmapäev", "neljapäev", "reede", "laupäev", "pühapäev"]
+SHORT_WEEKDAYS = ["E", "T", "K", "N", "R", "L", "P"]
 MONTHS = ["jaanuar", "veebruar", "märts", "aprill", "mai", "juuni", "juuli",
           "august", "september", "oktoober", "november", "detsember"]
 
@@ -148,7 +149,8 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
     for asset in ("style.css", "app.js"):
         shutil.copy(SITE / asset, out / asset)
 
-    day_list = [{"date": d, "label": et_date(d), "count": len(by_day[d])} for d in days]
+    day_list = [{"date": d, "label": et_date(d), "short": SHORT_WEEKDAYS[d.weekday()], "count": len(by_day[d])}
+                for d in days]
     common = dict(
         sports=SPORTS, filters=filters, links=links, days=day_list, today=today,
         analytics_enabled=site_cfg.get("analytics_enabled", False),

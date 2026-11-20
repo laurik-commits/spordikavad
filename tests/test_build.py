@@ -42,6 +42,13 @@ class RenderTest(unittest.TestCase):
         self.assertIn('rel="prev"', html)
         self.assertIn("https://basket.example/", html)
         self.assertIn('data-filter="vorkpall"', html)
+        self.assertIn('aria-current="page"', html)  # päevade ribal valitud päev
+        self.assertIn('class="s-jaahoki"', html)    # ala värviplokk
+
+    def test_day_strip_marks_empty_days(self):
+        html = self.read("index.html")
+        self.assertIn('class="empty"', html)
+        self.assertIn('<span class="wd">P</span><span class="dn">22</span>', html)
 
     def test_out_of_range_event_not_listed(self):
         self.assertNotIn("Kaugel", self.read("2026-11-23/index.html"))

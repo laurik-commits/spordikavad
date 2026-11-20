@@ -3,7 +3,11 @@
   var KEY = "spordikavad-ala";
   var buttons = document.querySelectorAll(".filters button");
   var rows = document.querySelectorAll(".games li");
-  var empty = document.querySelector(".empty");
+  var empty = document.querySelector(".empty-filter");
+
+  // päevade ribal too valitud päev nähtavale
+  var cur = document.querySelector('.days [aria-current="page"]');
+  if (cur && cur.parentNode.previousElementSibling) cur.scrollIntoView({ block: "nearest", inline: "center" });
 
   function apply(sport) {
     var shown = 0;

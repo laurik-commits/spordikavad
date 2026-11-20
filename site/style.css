@@ -1,69 +1,113 @@
 :root {
-  --bg: #fff;
-  --fg: #1a1a1a;
-  --muted: #6b6b6b;
-  --line: #e6e6e6;
-  --accent: #0b5cad;
-  --chip: #f2f2f2;
+  --bg: #f4f5f7;
+  --row: #fff;
+  --fg: #16181d;
+  --muted: #5d6470;
+  --line: #e3e5e9;
+  --accent: #14457a;
+  --link: #1557a0;
+  --bar: #14457a;
+  --bar-fg: #fff;
+  --chip: #fff;
+  --empty: #a3a9b3;
+  /* alade värvid: valge tekst vähemalt 4.5:1 */
+  --jalgpall: #2e7d32;
+  --korvpall: #6b7280;
+  --jaahoki: #1565c0;
+  --vorkpall: #6a1b9a;
+  --kasipall: #c2410c;
+  --saalihoki: #00796b;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #121212;
-    --fg: #ececec;
-    --muted: #9a9a9a;
-    --line: #2a2a2a;
-    --accent: #7ab4f5;
-    --chip: #222;
+    --bg: #101216;
+    --row: #191c22;
+    --fg: #e9ebef;
+    --muted: #9aa1ac;
+    --line: #2a2e36;
+    --link: #8ab8f0;
+    --bar: #0f3460;
+    --chip: #191c22;
+    --empty: #5b616b;
   }
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
 body {
-  margin: 0 auto;
-  max-width: 42rem;
-  padding: 0 1rem;
+  margin: 0;
   background: var(--bg);
   color: var(--fg);
-  font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font: 16px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
-a { color: var(--accent); text-decoration: none; }
-a:hover { text-decoration: underline; }
-.muted { color: var(--muted); }
+a { color: var(--link); text-decoration: none; }
+.wrap { max-width: 42rem; margin: 0 auto; padding: 0 .75rem; }
 
-.top { display: flex; align-items: baseline; gap: .6rem; padding: 1rem 0 .5rem; }
-.brand { font-weight: 700; font-size: 1.15rem; color: var(--fg); }
-.city { color: var(--muted); }
-
-.daynav { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem .5rem; padding: .5rem 0; }
-.daynav a { white-space: nowrap; }
-.daynav h1 { order: -1; flex: 1 0 100%; margin: 0; font-size: 1.25rem; }
+/* päis */
+.bar { background: var(--bar); color: var(--bar-fg); padding: .6rem 0 .5rem; }
+.brand { color: var(--bar-fg); font-weight: 700; font-size: 1.05rem; }
+.brand span { font-weight: 400; opacity: .8; margin-left: .25rem; }
+.daynav { display: flex; align-items: center; gap: .5rem; margin-top: .2rem; }
+.daynav h1 { margin: 0; font-size: 1.15rem; font-weight: 600; }
 .daynav h1::first-letter { text-transform: uppercase; }
+.daynav a, .daynav .off { color: var(--bar-fg); font-size: .85rem; padding: .35rem .3rem; line-height: 1; }
+.daynav .off { opacity: .3; }
 
-.pick { margin: .25rem 0 .75rem; }
-.pick summary { cursor: pointer; color: var(--accent); }
-.pick ul { list-style: none; padding: 0; margin: .5rem 0; columns: 2; }
-.pick li { padding: .15rem 0; }
-.pick [aria-current] { font-weight: 700; color: var(--fg); }
+/* päevade riba */
+.days { background: var(--row); border-bottom: 1px solid var(--line); }
+.days ol {
+  list-style: none; margin: 0 auto; display: flex; gap: .3rem;
+  padding-top: .45rem; padding-bottom: .45rem;
+  overflow-x: auto; scrollbar-width: none;
+}
+.days ol::-webkit-scrollbar { display: none; }
+.days a {
+  display: flex; flex-direction: column; align-items: center; min-width: 2.6rem;
+  padding: .25rem .2rem; border-radius: .5rem; color: var(--fg); line-height: 1.15;
+}
+.days .wd { font-size: .7rem; text-transform: uppercase; color: var(--muted); }
+.days .dn { font-size: 1.05rem; font-weight: 600; }
+.days a.empty .dn, .days a.empty .wd { color: var(--empty); font-weight: 400; }
+.days a[aria-current] { background: var(--bar); }
+.days a[aria-current] .wd, .days a[aria-current] .dn { color: var(--bar-fg); }
 
-.filters { display: none; flex-wrap: wrap; gap: .4rem; margin: .5rem 0 1rem; }
+/* alafilter */
+.filters { display: none; gap: .35rem; flex-wrap: wrap; padding: .6rem 0; }
 .js .filters { display: flex; }
 .filters button, .filters .ext {
-  font: inherit; font-size: .9rem; padding: .3rem .75rem; border-radius: 999px;
+  font: inherit; font-size: .85rem; padding: .3rem .7rem; border-radius: 999px;
   border: 1px solid var(--line); background: var(--chip); color: var(--fg); cursor: pointer;
+  display: inline-flex; align-items: center; gap: .35rem;
 }
 .filters button[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
 .filters .ext { color: var(--muted); }
+.dot { width: .6rem; height: .6rem; border-radius: 50%; display: inline-block; }
 
-.games { list-style: none; padding: 0; margin: 0; }
-.games li { display: grid; grid-template-columns: 4.2rem 1fr; gap: .75rem; padding: .7rem 0; border-top: 1px solid var(--line); }
-.games li:last-child { border-bottom: 1px solid var(--line); }
-.games time { font-weight: 700; font-variant-numeric: tabular-nums; }
-.match { font-weight: 600; color: var(--fg); }
-.meta { color: var(--muted); font-size: .9rem; }
-.tag { display: inline-block; padding: 0 .4rem; border-radius: 4px; background: var(--chip); color: var(--fg); font-size: .8rem; }
+/* mängud */
+.games { list-style: none; margin: 0 0 .5rem; padding: 0; border-radius: .5rem; overflow: hidden; border: 1px solid var(--line); }
+.games li + li { border-top: 1px solid var(--line); }
+.games a { display: flex; align-items: stretch; background: var(--row); color: var(--fg); min-height: 3.6rem; }
+.games a:hover .match { text-decoration: underline; }
+.games time {
+  flex: 0 0 4.6rem; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  color: #fff; padding: .3rem 0;
+}
+.games time b { font-size: 1.3rem; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1.1; }
+.games time small { font-size: .62rem; text-transform: uppercase; letter-spacing: .03em; }
+.info { flex: 1; min-width: 0; padding: .45rem .7rem; display: flex; flex-direction: column; justify-content: center; }
+.match { font-weight: 650; line-height: 1.25; }
+.meta { font-size: .78rem; color: var(--muted); margin-top: .1rem; }
+.meta em { font-style: normal; color: var(--kasipall); }
+.go { align-self: center; padding: 0 .6rem 0 0; color: var(--empty); font-size: .85rem; }
 
-.none, .empty { padding: 1.5rem 0; color: var(--muted); }
+.s-jalgpall { background: var(--jalgpall); }
+.s-korvpall { background: var(--korvpall); }
+.s-jaahoki { background: var(--jaahoki); }
+.s-vorkpall { background: var(--vorkpall); }
+.s-kasipall { background: var(--kasipall); }
+.s-saalihoki { background: var(--saalihoki); }
+
+.none, .empty-filter { padding: 1.5rem .25rem; color: var(--muted); }
 .none p { margin: .3rem 0; }
 
-footer { margin: 2.5rem 0 2rem; color: var(--muted); font-size: .85rem; }
+footer { padding-top: 1.5rem; padding-bottom: 2rem; color: var(--muted); font-size: .8rem; }
 footer p { margin: .3rem 0; }
