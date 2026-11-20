@@ -48,6 +48,8 @@ jobs:
         run: python scripts/report_issues.py
 
       - name: Salvesta uuendatud andmed
+        # ei tohi avaldamist takistada (nt kui main on vahepeal liikunud)
+        continue-on-error: true
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -56,6 +58,7 @@ jobs:
             echo "Andmed ei muutunud"
           else
             git commit -m "Andmete uuendus $(TZ=Europe/Tallinn date +%F)"
+            git pull --rebase -X theirs origin main
             git push
           fi
 
