@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="et">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lehte ei leitud | Spordikavad</title>
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="{{ base_path }}style.css">
+<script>
+// Vana kuupäevaleht (nt /tartu/2026-11-19/) → sama piirkonna tänane leht (/tartu/)
+(function () {
+  var m = location.pathname.match(/^(.*\/)\d{4}-\d{2}-\d{2}\/?(index\.html)?$/);
+  if (m && m[1].indexOf("{{ base_path }}") === 0) location.replace(m[1]);
+})();
+</script>
+</head>
+<body>
+<header class="bar"><div class="wrap"><div class="top"><a class="brand" href="{{ base_path }}">Spordikavad</a></div></div></header>
+<main class="wrap">
+  <div class="none">
+    <p>Seda lehte ei ole. Kui see oli möödunud päeva leht, on see juba eemaldatud.</p>
+    <p><a href="{{ base_path }}">Vaata tänaseid mänge →</a></p>
+  </div>
+</main>
+</body>
+</html>

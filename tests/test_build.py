@@ -106,8 +106,33 @@ class RenderTest(unittest.TestCase):
     def test_out_of_range_event_not_listed(self):
         self.assertNotIn("Kaugel", self.read("2026-11-23/index.html"))
         sitemap = self.read("sitemap.xml")
-        self.assertIn("https://example.org/sk/2026-11-21/", sitemap)
+        self.assertIn("https://example.org/sk/2026-11-22/", sitemap)
+        self.assertNotIn("https://example.org/sk/2026-11-21/", sitemap)   # tühi päev sitemap'i ei lähe
+        self.assertNotIn("https://example.org/sk/2026-11-20/", sitemap)   # tänane = avaleht
         self.assertIn("https://example.org/sk/tartu/2026-11-21/", sitemap)
+        self.assertIn("https://example.org/sk/info/", sitemap)
+
+    def test_canonical_today_points_to_index(self):
+        self.assertIn('<link rel="canonical" href="https://example.org/sk/">', self.read("2026-11-20/index.html"))
+        self.assertIn('<link rel="canonical" href="https://example.org/sk/2026-11-22/">',
+                      self.read("2026-11-22/index.html"))
+
+    def test_404_redirects_old_dates_within_site(self):
+        page = self.read("404.html")
+        self.assertIn('href="/sk/style.css"', page)
+        self.assertIn('indexOf("/sk/")', page)
+        self.assertIn("noindex", page)
+
+    def test_info_page_lists_coverage_and_update_time(self):
+        info = self.read("info/index.html")
+        self.assertIn("Mis siin on?", info)
+        self.assertIn("Korvpall", info)
+        self.assertIn("Viimati uuendatud", info)
+        root = self.read("index.html")
+        self.assertIn('href="info/"', root)
+        self.assertIn('class="intro"', root)
+        self.assertNotIn('class="intro"', self.read("2026-11-22/index.html"))  # sissejuhatus ainult avalehel
+        self.assertIn('data-built="2026-11-20"', root)
 
 
 class GeoTest(unittest.TestCase):

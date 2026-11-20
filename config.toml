@@ -159,8 +159,9 @@ name = "jalgpall_ejl"
 sport = "jalgpall"
 league = "Jalgpall (EJL)"
 enabled = true
-seasons = [["2027-03-01", "2027-11-30"]]
+seasons = [["03-01", "11-15"]]   # igal aastal: MM-DD
 # jalgpall.ee liigade ID-d (/voistlused/<id>/liigad/calendar?season=<aasta>)
+# check = false: karikad/playoffid, millel võib olla pikki pause (muidu: hooaja sees ≥1 mäng 42 päeva jooksul, vt build.py)
 # level: 1 = kõrgliiga (vaikimisi), 2 = esiliiga (eraldi kalender „Esiliigad“, /esiliigad/…)
 competitions = [
   { id = 52, league = "Premium liiga" },
@@ -175,7 +176,7 @@ name = "saalijalgpall_ejl"
 sport = "saalijalgpall"
 league = "Saalijalgpall (EJL)"
 enabled = true
-seasons = [["2026-10-01", "2027-04-15"]]
+seasons = [["10-01", "03-31"]]
 # jalgpall.ee saalijalgpalli liigad; playoffid (id 187) lisa siia, kui need on avaldatud
 competitions = [
   { id = 125, league = "Saalijalgpalli meistriliiga" },
@@ -186,23 +187,23 @@ name = "jaahoki_optibet"
 sport = "jaahoki"
 league = "Optibet Hokiliiga"
 enabled = true
-seasons = [["2026-09-05", "2027-04-15"]]
+seasons = [["09-05", "03-31"]]
 
 [[source]]
 name = "vorkpall_dataproject"
 sport = "vorkpall"
 league = "Võrkpall (DataProject)"
 enabled = true
-seasons = [["2026-09-20", "2027-04-30"]]
+seasons = [["10-01", "04-15"]]
 # DataProjecti võistlused. ID-d muutuvad IGAL HOOAJAL: augustis vaata üle
 # https://bvl-web.dataproject.com/MainHome.aspx ja https://evf-web.dataproject.com/MainHome.aspx
 competitions = [
   { host = "bvl-web", id = 29, pid = 30, league = "Balti liiga (mehed)" },
   { host = "bvl-web", id = 31, pid = 32, league = "Balti liiga (naised)" },
-  { host = "evf-web", id = 96, league = "Meistriliiga (mehed)" },   # playoffid kevadel, PID lisandub hiljem
+  { host = "evf-web", id = 96, league = "Meistriliiga (mehed)", check = false },   # playoffid kevadel
   { host = "evf-web", id = 97, pid = 147, league = "Meistriliiga (naised)" },
-  { host = "evf-web", id = 100, pid = 150, league = "Eesti karikas (mehed)" },
-  { host = "evf-web", id = 99, pid = 149, league = "Eesti karikas (naised)" },
+  { host = "evf-web", id = 100, pid = 150, league = "Eesti karikas (mehed)", check = false },
+  { host = "evf-web", id = 99, pid = 149, league = "Eesti karikas (naised)", check = false },
   { host = "evf-web", id = 98, pid = 148, league = "Esiliiga (mehed)", level = 2 },
   { host = "evf-web", id = 106, pid = 164, league = "Esiliiga (naised)", level = 2 },
 ]
@@ -212,12 +213,12 @@ name = "kasipall_liigad"
 sport = "kasipall"
 league = "Käsipall (EKL)"
 enabled = true
-seasons = [["2026-09-15", "2027-05-15"]]
+seasons = [["09-15", "05-15"]]
 # kasipall.ee võistluste ID-d (https://kasipall.ee/league/<id>), võivad uuel hooajal muutuda
 competitions = [
   { id = 359, league = "Meistriliiga (mehed)" },
   { id = 361, league = "Meistriliiga (naised)" },
-  { id = 362, league = "Eesti karikas (mehed)" },
+  { id = 362, league = "Eesti karikas (mehed)", check = false },
   { id = 360, league = "Esiliiga (mehed)", level = 2 },
 ]
 
@@ -226,4 +227,4 @@ name = "saalihoki_meistriliiga"
 sport = "saalihoki"
 league = "Meistriliiga"
 enabled = true
-seasons = [["2026-11-20", "2027-04-15"]]
+seasons = [["10-15", "03-31"]]

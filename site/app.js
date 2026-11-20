@@ -35,6 +35,16 @@
     });
   });
 
+  // kui igapäevane uuendus on seiskunud, ütle seda (leht on ehitatud rohkem kui 1 päev tagasi)
+  var built = body.dataset.built;
+  if (built) {
+    var now = new Date();
+    var today = now.getFullYear() + "-" + ("0" + (now.getMonth() + 1)).slice(-2) + "-" + ("0" + now.getDate()).slice(-2);
+    var ageDays = (Date.parse(today) - Date.parse(built)) / 864e5;
+    var stale = document.querySelector(".stale");
+    if (stale && ageDays >= 2) stale.hidden = false;
+  }
+
   // päevade ribal too valitud päev nähtavale
   var cur = document.querySelector('.days [aria-current="page"]');
   if (cur && cur.parentNode.previousElementSibling) cur.scrollIntoView({ block: "nearest", inline: "center" });

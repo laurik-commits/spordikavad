@@ -11,7 +11,15 @@ Lähteülesanne: [SPEC.md](SPEC.md). Andmeallikad ja nende kontroll: [SOURCES.md
 3. Mallidest ([site/](site/)) genereeritakse kausta `dist/` staatiline leht iga piirkonna kohta: Tallinn juurkaustas (`/`, `/2026-11-21/`), teised oma kaustas (`/tartu/…`, `/harjumaa/…`, `/eesti/…` = kogu Eesti). Igal piirkonnal on täna + 14 päeva. **Esiliigad** on eraldi kalender kaustas `/esiliigad/…` (sama linnajaotusega). Lisaks `events.json` ja `sitemap.xml`. Päise linna- ja tasemevalik („Kõrgliigad / Esiliigad“) jätavad valiku kasutaja brauserisse meelde ja avaleht suunab sinna.
 4. `dist/` avaldatakse GitHub Pagesis.
 
-**Kui allikas läheb katki** (viga või hooaja sees 0 mängu), kasutatakse selle allika viimaseid salvestatud andmeid, ülejäänud leht ehitatakse tavapäraselt ja GitHubis avatakse issue „Allikas katki: …“. Sellest tuleb e-kiri. Kui allikas hakkab jälle tööle, suletakse issue automaatselt. Tundmatute toimumiskohtade kohta tekib issue „Tundmatud toimumiskohad“.
+**Jälgimine (GitHub Issues, sellest tuleb e-kiri):**
+- **„Allikas katki: …“**: allikas annab vea või **hooaja sees pole 42 päeva jooksul ühtegi tulevast mängu**. Kontrolli tehakse iga võistluse kohta eraldi, möödunud mänge ei arvestata, nii et ka uuel hooajal muutunud liiga ID tuleb välja. Kui kõik võistlused on tühjad, kasutatakse viimaseid salvestatud andmeid. Kui tühi on ainult osa (`partial`), uuenevad teised tavapäraselt. Karikad ja playoffid on märgitud `check = false`, sest neil on pikad pausid.
+- **„Tundmatud toimumiskohad“**: saal puudub `venues.toml` failist. Kui nimekiri muutub, issue uueneb.
+- **„Mängud ilma toimumiskohata“**: lähipäevade mängul pole allikas saali märgitud.
+- Kõik issue'd suletakse ise, kui probleem kaob.
+- Hooajad on `config.toml`-is kujul `MM-DD` (nt `["09-15", "05-15"]`) ja kehtivad igal aastal.
+- Kui igapäevane uuendus seiskub, näitab leht ise teadet „Andmed võivad olla vananenud“.
+
+Lehel on ka „Mis siin on?“ leht (`/info/`). Möödunud päevade aadressid (`/2026-11-19/`) suunatakse 404-lehe kaudu tänasele päevale.
 
 ## Kohapeal käivitamine
 
@@ -57,7 +65,7 @@ Kolm sammu: adapter, konfiguratsioonirida ja test.
    sport = "kasipall"
    league = "Esiliiga"
    enabled = true
-   seasons = [["2026-09-15", "2027-05-15"]]
+   seasons = [["09-15", "05-15"]]   # igal aastal, võib üle aastavahetuse
    ```
 
    Hooaja kuupäevad on olulised: väljaspool hooaega ei loeta 0 mängu veaks.

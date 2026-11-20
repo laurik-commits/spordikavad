@@ -67,7 +67,20 @@ a { color: var(--link); text-decoration: none; }
 .pick-menu li a.empty { color: var(--empty); }
 .pick-menu .n { color: var(--muted); font-variant-numeric: tabular-nums; }
 .pick-menu li a[aria-current] .n { color: var(--bar-fg); }
-.city li:nth-child(2) { border-bottom: 1px solid var(--line); padding-bottom: .2rem; margin-bottom: .2rem; }
+.city li:nth-child(3) { border-bottom: 1px solid var(--line); padding-bottom: .2rem; margin-bottom: .2rem; }
+.pick-menu li.cap { padding: .2rem .6rem .35rem; font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .03em; }
+
+/* sissejuhatus, vananenud andmete teade, info leht */
+.intro { margin: .6rem 0 0; font-size: .85rem; color: var(--muted); }
+.stale { margin: .6rem 0 0; padding: .5rem .7rem; font-size: .85rem; background: #fff4d6; color: #5c4400; border-radius: .4rem; }
+.info { padding-top: .8rem; padding-bottom: 1rem; }
+.info h2 { font-size: 1.05rem; margin: 1.4rem 0 .5rem; }
+.info table { width: 100%; border-collapse: collapse; font-size: .88rem; background: var(--row); }
+.info th, .info td { text-align: left; vertical-align: top; padding: .45rem .5rem; border-bottom: 1px solid var(--line); }
+.info th { font-size: .78rem; color: var(--muted); font-weight: 600; }
+.info td:first-child { white-space: nowrap; }
+.info ul { padding-left: 1.2rem; }
+.info li { margin: .3rem 0; }
 .daynav { display: flex; align-items: center; gap: .5rem; margin-top: .2rem; }
 .daynav h1 { margin: 0; font-size: 1.15rem; font-weight: 600; }
 .daynav h1::first-letter { text-transform: uppercase; }

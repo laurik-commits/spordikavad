@@ -55,18 +55,56 @@ def load_saved(name: str) -> list[Event]:
 
 
 def save(name: str, events: list[Event]) -> None:
+    """Salvestab allika andmed. Kui mängud pole muutunud, faili ei puudutata (siis pole ka igapäevast commit'i)."""
     DATA.mkdir(exist_ok=True)
-    payload = {
-        "updated": datetime.now(TALLINN).isoformat(timespec="seconds"),
-        "events": [e.to_dict() for e in sorted(events, key=lambda e: (e.start, e.id))],
-    }
-    _data_file(name).write_text(json.dumps(payload, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    rows = [e.to_dict() for e in sorted(events, key=lambda e: (e.start, e.id))]
+    path = _data_file(name)
+    if path.exists():
+        try:
+            if json.loads(path.read_text(encoding="utf-8")).get("events") == rows:
+                return
+        except ValueError:
+            pass
+    payload = {"updated": datetime.now(TALLINN).isoformat(timespec="seconds"), "events": rows}
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
-def only_estonia(events: list[Event], venues: Venues, geo: Geo) -> list[Event]:
-    """Jätab alles Eestis toimuvad mängud (välismaa saalid välja) ja normaliseerib saali nime ja linna."""
+UPCOMING_DAYS = 42  # hooaja sees peab igal võistlusel olema mänge selle aja jooksul (talvepaus mahub sisse)
+
+
+def missing_upcoming(src: dict, fetched: list[Event], today: date) -> list[str]:
+    """Võistlused, millel on hooaja sees järgmise UPCOMING_DAYS päeva jooksul 0 mängu.
+
+    Möödunud mänge ei arvestata: kui uuel hooajal liiga ID muutub, näitab vana leht ikka eelmise hooaja
+    mänge ja ilma selle kontrollita kaoks liiga vaikselt. Võistlus `check = false` (karikad, playoffid) jäetakse välja.
+    """
+    if not cfgmod.in_season(src, today):
+        return []
+    horizon = today + timedelta(days=UPCOMING_DAYS)
+
+    def has_upcoming(league: str | None) -> bool:
+        return any(today <= e.start.date() <= horizon and (league is None or e.league == league) for e in fetched)
+
+    comps = src.get("competitions")
+    if not comps:
+        return [] if has_upcoming(None) else [src.get("league", src["name"])]
+    return [c["league"] for c in comps
+            if c.get("check", True) and cfgmod.in_season(c, today, src) and not has_upcoming(c["league"])]
+
+
+def only_estonia(events: list[Event], venues: Venues, geo: Geo, today: date | None = None,
+                 entry: dict | None = None) -> list[Event]:
+    """Jätab alles Eestis toimuvad mängud (välismaa saalid välja) ja normaliseerib saali nime ja linna.
+
+    Lähipäevade mängud, millel saal üldse puudub, loetakse kokku (entry["no_venue"]), et need ei kaoks vaikselt.
+    """
     out = []
+    window_end = today + timedelta(days=15) if today else None
     for e in events:
+        if not e.venue.strip():
+            if entry is not None and today and today <= e.start.date() <= window_end:
+                entry.setdefault("no_venue", []).append(f"{e.start:%d.%m %H:%M} {e.home} – {e.away} ({e.league})")
+            continue
         v = venues.lookup(e.venue)
         if v is not None and geo.is_estonian(v.city):
             out.append(replace(e, venue=v.name, city=v.city))
@@ -102,11 +140,19 @@ def collect(cfg: dict, venues: Venues, fetcher: Fetcher | None, today: date,
                     wants_source = "source" in inspect.signature(module.fetch).parameters
                     fetched = module.fetch(fetcher, source=src) if wants_source else module.fetch(fetcher)
                     entry["fetched"] = len(fetched)
-                    if not fetched and cfgmod.in_season(src, today):
+                    missing = missing_upcoming(src, fetched, today)
+                    checked = [c for c in src.get("competitions", [{}])
+                               if c.get("check", True) and cfgmod.in_season(c, today, src)]
+                    if missing and len(missing) >= len(checked):
+                        # ükski võistlus ei andnud tulevasi mänge → kasuta viimaseid salvestatud andmeid
                         entry["status"] = "empty"
-                        entry["error"] = "Hooaja sees 0 mängu"
+                        entry["error"] = f"Hooaja sees {UPCOMING_DAYS} päeva jooksul 0 mängu"
                     else:
-                        events = only_estonia(fetched, venues, geo)
+                        if missing:
+                            entry["status"] = "partial"
+                            entry["error"] = (f"Hooaja sees {UPCOMING_DAYS} päeva jooksul 0 mängu: "
+                                              + ", ".join(missing) + ". Kas liiga ID on muutunud?")
+                        events = only_estonia(fetched, venues, geo, today, entry)
                         save(name, events)
                 except Exception as exc:  # noqa: BLE001 - ükski adapter ei tohi ehitust katki teha
                     entry["status"] = "failed"
@@ -114,7 +160,7 @@ def collect(cfg: dict, venues: Venues, fetcher: Fetcher | None, today: date,
                     log.exception("%s ebaõnnestus", name)
         if events is None:
             events = load_saved(name)
-            if entry["status"] in ("failed", "empty"):
+            if entry["status"] in ("failed", "empty", "partial"):
                 log.warning("%s: kasutan viimaseid salvestatud andmeid (%d mängu)", name, len(events))
         entry["saved"] = len(events)
         all_events.extend(events)
@@ -180,8 +226,10 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
         return {d: sorted((e for e in window[d] if e.level == level and in_region(e, r)),
                           key=lambda e: (e.time_tbc, e.start, e.sport, e.home)) for d in days}
 
+    now = datetime.now(TALLINN)
     common = dict(
         sports=SPORTS, links=links, today=today, default_slug=Geo.default_slug,
+        updated=f"{now.day}.{now.month:02d} kell {now:%H:%M}", built=today.isoformat(),
         analytics_enabled=site_cfg.get("analytics_enabled", False),
         analytics_token=site_cfg.get("analytics_token", ""), base_url=base_url,
         contact_url=site_cfg.get("contact_url", ""),
@@ -216,22 +264,41 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
                 )
                 page_dir = rdir / d.isoformat()
                 page_dir.mkdir()
+                index_url = f"{base_url}{prefix}"
                 url = f"{base_url}{prefix}{d.isoformat()}/"
+                # tänase päeva kuupäevaleht on sama sisu mis piirkonna avaleht → kanooniline on avaleht
                 (page_dir / "index.html").write_text(
-                    tpl.render(ctx, root="../" * (depth + 1), here="../", canonical=url, is_index=False),
+                    tpl.render(ctx, root="../" * (depth + 1), here="../", canonical=index_url if i == 0 else url,
+                               is_index=False),
                     encoding="utf-8")
-                urls.append(url)
-                if i == 0:
-                    url = f"{base_url}{prefix}"
-                    (rdir / "index.html").write_text(
-                        tpl.render(ctx, root="../" * depth, here="", canonical=url, is_index=True), encoding="utf-8")
+                # sitemap: avalehed alati, kuupäevalehed ainult siis, kui seal on mänge (tühje lehti ei pakuta)
+                if i > 0 and by_day[d]:
                     urls.append(url)
+                if i == 0:
+                    (rdir / "index.html").write_text(
+                        tpl.render(ctx, root="../" * depth, here="", canonical=index_url, is_index=True),
+                        encoding="utf-8")
+                    urls.append(index_url)
 
     upcoming = sorted((e for e in events if e.start.date() >= today), key=lambda e: (e.start, e.id))
     (out / "events.json").write_text(
         json.dumps({"generated": datetime.now(TALLINN).isoformat(timespec="seconds"),
                     "events": [e.to_dict() for e in upcoming]}, ensure_ascii=False, indent=1),
         encoding="utf-8")
+
+    # 404: vana kuupäevaleht (nt eilne) suunatakse sama piirkonna tänasele lehele
+    base_path = "/" + base_url.split("://", 1)[1].split("/", 1)[1] if "://" in base_url else "/"
+    (out / "404.html").write_text(env.get_template("404.html").render(common, base_path=base_path),
+                                  encoding="utf-8")
+
+    # „Mis siin on?“ leht
+    info_dir = out / "info"
+    info_dir.mkdir()
+    (info_dir / "index.html").write_text(
+        env.get_template("info.html").render(common, root="../", canonical=f"{base_url}info/",
+                                             coverage=coverage(cfg)),
+        encoding="utf-8")
+    urls.append(f"{base_url}info/")
 
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     sitemap += [f"  <url><loc>{u}</loc><lastmod>{today.isoformat()}</lastmod></url>" for u in urls]
@@ -240,6 +307,39 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
     (out / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {base_url}sitemap.xml\n", encoding="utf-8")
     (out / ".nojekyll").write_text("", encoding="utf-8")
     return len(urls)
+
+
+# Allikate avalehed „Mis siin on?“ lehe jaoks (adapteri nime algus → (nimi, URL))
+SOURCE_SITES = {
+    "jalgpall": ("Eesti Jalgpalli Liit", "https://jalgpall.ee/voistlused"),
+    "saalijalgpall": ("Eesti Jalgpalli Liit", "https://jalgpall.ee/voistlused"),
+    "jaahoki": ("Läti Jäähokiliit (Optibet Hokiliiga)", "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/schedule"),
+    "vorkpall": ("DataProject (Eesti Võrkpalli Liit, Balti liiga)", "https://evf-web.dataproject.com/MainHome.aspx"),
+    "kasipall": ("Eesti Käsipalliliit", "https://kasipall.ee/"),
+    "saalihoki": ("Eesti Saalihoki Liit", "https://www.saalihoki.ee/Events/Uritused.aspx"),
+}
+
+
+def coverage(cfg: dict) -> list[dict]:
+    """„Mis siin on?“ lehe tabel: ala, kõrgliigad, esiliigad, allikas."""
+    from scrapers import saalihoki_meistriliiga as floorball
+
+    rows: dict[str, dict] = {}
+    for src in cfg.get("source", []):
+        if not src.get("enabled", True):
+            continue
+        sport = src["sport"]
+        row = rows.setdefault(sport, {"key": sport, "sport": SPORTS[sport], "top": [], "low": [],
+                                      "source": SOURCE_SITES.get(sport, ("", ""))})
+        if src.get("competitions"):
+            for c in src["competitions"]:
+                (row["low"] if c.get("level", 1) == 2 else row["top"]).append(c["league"])
+        elif sport == "saalihoki":
+            for league, level in floorball.LEAGUES.values():
+                (row["low"] if level == 2 else row["top"]).append(league)
+        else:
+            row["top"].append(src.get("league", ""))
+    return [rows[s] for s in SPORTS if s in rows]
 
 
 # --- Käivitamine ------------------------------------------------------------
@@ -270,7 +370,7 @@ def main(argv: list[str] | None = None) -> int:
         log.info("  %-26s %-10s allikas %4d, Eestis %3d%s", r["source"], r["status"], r["fetched"], r["saved"], extra)
     if venues.unknown:
         log.info("  Tundmatud toimumiskohad: %s", ", ".join(sorted(venues.unknown)))
-    log.info("  Lehti: %d, mänge kokku: %d", pages, len(events))
+    log.info("  Lehti sitemapis: %d, mänge kokku: %d", pages, len(events))
     return 0
 
 

@@ -22,8 +22,16 @@ def user_agent(cfg: dict) -> str:
     return ua
 
 
-def in_season(source: dict, day: date) -> bool:
-    for start, end in source.get("seasons", []):
-        if date.fromisoformat(start) <= day <= date.fromisoformat(end):
-            return True
-    return False
+def _in_range(start: str, end: str, day: date) -> bool:
+    """Vahemik kujul "MM-DD" (kordub igal aastal, võib üle aastavahetuse) või "YYYY-MM-DD"."""
+    if len(start) == 5 and len(end) == 5:
+        md = day.strftime("%m-%d")
+        return start <= md <= end if start <= end else (md >= start or md <= end)
+    return date.fromisoformat(start) <= day <= date.fromisoformat(end)
+
+
+def in_season(item: dict, day: date, default: dict | None = None) -> bool:
+    """Kas `day` on hooaja sees. `item` võib olla allikas või võistlus; kui võistlusel `seasons` puudub,
+    kasutatakse allika (`default`) oma."""
+    seasons = item.get("seasons") or (default or {}).get("seasons", [])
+    return any(_in_range(s, e, day) for s, e in seasons)

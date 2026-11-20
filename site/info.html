@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="et">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mis siin on? | Spordikavad</title>
+<meta name="description" content="Spordikavad näitab Eesti kõrgliigade ja esiliigade mänge, mida saab kohapeal vaatamas käia. Millised alad ja liigad on kaetud ning kust andmed tulevad.">
+<link rel="canonical" href="{{ canonical }}">
+<meta name="theme-color" content="#14457a">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="{{ root }}style.css">
+</head>
+<body>
+<header class="bar"><div class="wrap"><div class="top"><a class="brand" href="{{ root }}">Spordikavad</a></div>
+  <nav class="daynav"><h1>Mis siin on?</h1></nav></div></header>
+<main class="wrap info">
+  <p>Spordikavad on lihtne nimekiri spordimängudest, mida saab <strong>kohapeal vaatamas käia</strong>: iga päeva mängud kellaaja järgi, linna kaupa. Päises saad valida linna või maakonna ning <strong>kõrgliigade</strong> või <strong>esiliigade</strong> kalendri.</p>
+
+  <h2>Alad ja liigad</h2>
+  <table>
+    <thead><tr><th>Ala</th><th>Kõrgliigad</th><th>Esiliigad</th></tr></thead>
+    <tbody>
+    {% for row in coverage %}
+      <tr><td><i class="dot s-{{ row.key }}"></i> {{ row.sport }}</td><td>{{ row.top | join(', ') }}</td><td>{{ row.low | join(', ') or '–' }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+
+  <h2>Mida siin pole</h2>
+  <ul>
+    <li><strong>Korvpall:</strong> Korvpalliliidu koduleht ei luba andmete automaatset kogumist. Ajakava leiad <a href="https://www.basket.ee/et/ajakava-ja-tulemused?action=schedule">basket.ee lehelt</a>.</li>
+    <li><strong>Eesti jäähoki liigad</strong> (Unibet Hokiliiga, naiste hokiliiga): ajakava pole avalikult kättesaadaval kujul. Optibet Hokiliiga (HC Panter) on olemas.</li>
+    <li>Tulemused, tabelid ja ülekanded.</li>
+  </ul>
+  <p>Talvel on jalgpall hooajavälisel ajal, seetõttu on mänge siis vähem.</p>
+
+  <h2>Kust andmed tulevad</h2>
+  <p>Ainult liitude ja klubide avalikelt kodulehtedelt, mille kasutustingimused ja robots.txt seda lubavad. Iga mäng viib tagasi allika mängulehele. Andmeid uuendatakse kord päevas varahommikul.</p>
+  <ul>
+  {% for row in coverage if row.source[0] %}
+    <li>{{ row.sport }}: <a href="{{ row.source[1] }}" rel="noopener">{{ row.source[0] }}</a></li>
+  {% endfor %}
+  </ul>
+  <p><strong>Kontrolli aega enne kohaleminekut</strong>, sest kellaajad võivad muutuda.</p>
+  <p class="muted">Viimati uuendatud: {{ updated }}.</p>
+</main>
+<footer class="wrap">
+  <p>Kui olete andmete omanik ja ei soovi, et teie andmeid siin kuvataks, <a href="{{ contact_url }}">kirjutage meile</a>.</p>
+</footer>
+</body>
+</html>
