@@ -47,11 +47,21 @@ enabled = true
 seasons = [["2026-09-05", "2027-04-15"]]
 
 [[source]]
-name = "vorkpall_baltiliiga"
+name = "vorkpall_dataproject"
 sport = "vorkpall"
-league = "Balti liiga"
+league = "Võrkpall (DataProject)"
 enabled = true
-seasons = [["2026-11-14", "2027-03-31"]]
+seasons = [["2026-09-20", "2027-04-30"]]
+# DataProjecti võistlused. ID-d muutuvad IGAL HOOAJAL: augustis vaata üle
+# https://bvl-web.dataproject.com/MainHome.aspx ja https://evf-web.dataproject.com/MainHome.aspx
+competitions = [
+  { host = "bvl-web", id = 29, pid = 30, league = "Balti liiga (mehed)" },
+  { host = "bvl-web", id = 31, pid = 32, league = "Balti liiga (naised)" },
+  { host = "evf-web", id = 96, league = "Meistriliiga (mehed)" },   # playoffid kevadel, PID lisandub hiljem
+  { host = "evf-web", id = 97, pid = 147, league = "Meistriliiga (naised)" },
+  { host = "evf-web", id = 100, pid = 150, league = "Eesti karikas (mehed)" },
+  { host = "evf-web", id = 99, pid = 149, league = "Eesti karikas (naised)" },
+]
 
 [[source]]
 name = "kasipall_meistriliiga"

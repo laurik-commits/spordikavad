@@ -49,7 +49,12 @@ aliases = ["Tondiraba Ice Hall", "Tondiraba Jäähall"]
 [[venue]]
 name = "Audentese spordihall"
 city = "Tallinn"
-aliases = ["Audentese Sports Hall", "Audentes Sports Hall", "Audentese spordikeskus"]
+aliases = ["Audentese Sports Hall", "Audentes Sports Hall", "Audentese spordikeskus", "Audentese SH suur saal"]
+
+[[venue]]
+name = "Tallinna Ülikooli spordihoone"
+city = "Tallinn"
+aliases = ["Tallinna Ülikooli SH"]
 
 [[venue]]
 name = "TalTechi spordihall"
@@ -81,7 +86,7 @@ aliases = ["Viimsi kooli Spordikeskus"]
 [[venue]]
 name = "Eesti Maaülikooli spordihoone"
 city = "Tartu"
-aliases = []
+aliases = ["Maaülikooli Spordihoone"]
 
 [[venue]]
 name = "Märjamaa spordihoone"
@@ -208,6 +213,54 @@ aliases = ["Tartu Ülikooli SH Ilmar Kullami nimeline peaväljak"]
 [[venue]]
 name = "Võru Spordikeskus"
 city = "Võru"
+aliases = ["Võru Spordihall"]
+
+[[venue]]
+name = "Jüri spordihoone"
+city = "Rae vald"
+aliases = ["Jüri Sports hall"]
+
+[[venue]]
+name = "Tuule spordihoone"
+city = "Rae vald"
+aliases = ["Tuule Sportshall"]
+
+[[venue]]
+name = "Kindluse spordihoone"
+city = "Rae vald"
+
+[[venue]]
+name = "Viimsi Kool"
+city = "Viimsi"
+
+[[venue]]
+name = "Viljandi SH"
+city = "Viljandi"
+
+[[venue]]
+name = "Kiili SH"
+city = "Kiili"
+
+[[venue]]
+name = "Kõrveküla kooli SH"
+city = "Tartu vald"
+
+[[venue]]
+name = "Rahu Hall"
+city = "Rakvere"
+
+[[venue]]
+name = "President Valdas Adamkus Sports Center (VDU)"
+city = "Kaunas"
+
+[[venue]]
+name = "RSU Sports Hall"
+city = "Riia"
+aliases = ["RSU Sports Hall, Cigorinu str. 3, Riga"]
+
+[[venue]]
+name = "Riga VS SH"
+city = "Riia"
 
 # Optibet Hokiliiga võõrsil (Läti, Leedu)
 [[venue]]

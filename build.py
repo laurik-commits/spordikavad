@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import importlib
+import inspect
 import json
 import logging
 import shutil
@@ -93,7 +94,9 @@ def collect(cfg: dict, venues: Venues, fetcher: Fetcher | None, today: date) -> 
                 module = None
             if module is not None:
                 try:
-                    fetched = module.fetch(fetcher)
+                    # adapter, mis vajab config.toml-i rida (nt võistluste nimekirja), saab selle kaasa
+                    wants_source = "source" in inspect.signature(module.fetch).parameters
+                    fetched = module.fetch(fetcher, source=src) if wants_source else module.fetch(fetcher)
                     entry["fetched"] = len(fetched)
                     if not fetched and cfgmod.in_season(src, today):
                         entry["status"] = "empty"

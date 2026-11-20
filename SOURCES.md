@@ -10,7 +10,7 @@ Kasutustingimusi, mis keelaksid automaatse kogumise, ühegi allika lehtedelt ei 
 | Jalgpall | A. Le Coq Premium liiga | jalgpall.ee | iCal (+ HTML) | lubatud, `Crawl-Delay: 5` | ✅ |
 | Korvpall | FenixBet Eesti-Läti Korvpalliliiga | estlatbl.com, basket.ee | HTML | **keelatud** (`User-agent: *` / `Disallow: /`) | ❌ välja jäetud |
 | Jäähoki | Optibet Hokiliiga | lhf.lv | staatiline HTML | lubatud | ✅ |
-| Võrkpall | Elme Messer Balti liiga | bvl-web.dataproject.com | staatiline HTML | lubatud | ✅ |
+| Võrkpall | Balti liiga, Eesti meistriliiga, karikad (M+N) | bvl-web / evf-web.dataproject.com | staatiline HTML | lubatud | ✅ |
 | Käsipall | Meistriliiga (mehed) | kasipall.ee | staatiline HTML | lubatud | ✅ |
 | Saalihoki | Meistriliiga + Eesti-Läti ühisliiga | saalihoki.ee | staatiline HTML | lubatud | ✅ (vähe Tallinna mänge) |
 
@@ -54,7 +54,14 @@ MVP-sse sobib 5 ala 6-st.
 - **robots.txt:** `User-Agent: *` / `Disallow:` (tühi), kõik lubatud.
 - **Hooaeg:** mehed alates 14.11.2026, nähtav kuni 06.02.2027, playoffid määramata.
 - **Tallinna klubid:** Audentes/Solarstone (Audentese spordihall), Selver x TalTech (TalTechi spordihall).
-- **Eripärad:** Eesti meistriliiga (playoffid) on volley.ee järgi samuti DataProjecti süsteemis (`evf-web.dataproject.com`). Seda pole veel kontrollitud, lisame hiljem sama adapteriga. Naiste liigas Tallinna klubi pole (Rae Spordikool on Rae vallas).
+- **Eripärad:** Eesti meistriliiga (playoffid) on volley.ee järgi samuti DataProjecti süsteemis (`evf-web.dataproject.com`).
+- **Laiendus (omaniku otsus 2026-11-20):** algul võeti ainult meeste Balti liiga ja Tallinna mänge oli seetõttu vähe. Nüüd loeb adapter `vorkpall_dataproject` kõiki täiskasvanute tippvõistlusi, mis on loetletud `config.toml`-is (`competitions`):
+  - Balti liiga, mehed `bvl-web` ID=29/PID=30 ja naised ID=31/PID=32
+  - Eesti meistriliiga, mehed `evf-web` ID=96 (playoffid kevadel, praegu mänge pole) ja naised ID=97/PID=147
+  - Eesti karikas, mehed `evf-web` ID=100/PID=150 ja naised ID=99/PID=149
+  - `evf-web.dataproject.com/robots.txt`: `User-Agent: *` / `Disallow:` (tühi), kõik lubatud.
+  - Tallinna saalid: Audentese spordihall, TalTechi spordihall, Tallinna Ülikooli spordihoone.
+  - **Hooldus:** DataProjecti ID-d muutuvad igal hooajal. Augustis vaata üle `MainHome.aspx` mõlemal hostil.
 
 ## Käsipall: Meistriliiga (mehed)
 

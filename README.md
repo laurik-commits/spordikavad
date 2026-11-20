@@ -68,7 +68,7 @@ Kolm sammu: adapter, konfiguratsioonirida ja test.
 
 ## Hooldus
 
-- **Kord hooajas** (august ja veebruar) vaata üle `config.toml` hooaegade kuupäevad ja liigade URL-id (võrkpalli DataProjecti `ID=29` on hooajapõhine, käsipalli liiga ID 359 võib uuel hooajal muutuda).
+- **Kord hooajas** (august ja veebruar) vaata üle `config.toml` hooaegade kuupäevad ja liigade URL-id (võrkpalli DataProjecti võistluste ID-d muutuvad igal hooajal, vt `config.toml` → `competitions`; käsipalli liiga ID 359 võib samuti muutuda).
 - **Issue tuli:** ava Actions'i logi, võrdle allika lehte salvestatud fixture'iga ja paranda adapterit. Kuni seda pole tehtud, näitab leht viimaseid töötanud andmeid.
 - Kontaktaadress jaluses ja User-Agentis: `config.toml` → `site.contact_url` ja `http.contact`.
 
