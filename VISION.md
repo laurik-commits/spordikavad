@@ -25,7 +25,7 @@ AI ajastul on veebilehe, API või küsimustele vastava agendi ehitamine odav: ko
 ## Mida ehitame (järjekorras)
 
 1. **Ajalooarhiiv** (tehtud, [archive.py](archive.py)): iga mäng ja selle muutused (ümberpandud aeg, vahetunud saal, ära jäänud mäng). Allikad näitavad ainult praegust seisu, seega kadunud andmeid tagantjärele ei saa. Iga päev ilma arhiivita on kaotus.
-2. **Tulemused**: Event ei sisalda praegu tulemust. Kui adapterid hakkavad lugema ka skoori, saab ajalugu päris väärtuse. Teha allikahaaval, alustades suurimast (jalgpall.ee).
+2. **Tulemused**: `Event.result` ("3-0", tühi kuni mäng on mängitud). Tehtud jalgpall.ee-s (jalgpall, saalijalgpall ja koondised, 2026-11-21). Teha allikahaaval edasi: käsipall, võrkpall (DataProject), saalihoki, jäähoki. Arhiiv märgib tulemuse ilmumise muutusena.
 3. **Liikluse numbrid** (nt kui palju külastusi lehel): loapalve kirjas on see konkreetne argument.
 4. **Loapalved liitudele** (README → Tulevikuideed): korvpall ja jäähoki on praegu robots.txt tõttu kinni. Parim tulemus on ametlik partnerlus või täpsem andmevoog, mitte ainult luba.
 

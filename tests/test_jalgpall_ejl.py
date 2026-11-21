@@ -37,6 +37,17 @@ class JalgpallTest(unittest.TestCase):
         self.assertEqual(e.venue, "Sportland Arena")
         self.assertEqual(e.league, "Premium liiga")
 
+    def test_results_are_read(self):
+        e = next(e for e in self.men if e.url.endswith("/match_info/186106"))
+        self.assertEqual(e.result, "3-0")
+        self.assertTrue(all(g.result for g in self.men))  # kogu hooaeg on mängitud
+        self.assertTrue(all(g.result for g in self.women))
+
+    def test_unplayed_game_has_no_result(self):
+        page = MEN.replace("3 - 0</a>", "-</a>", 1)
+        e = next(e for e in adapter.parse(page, "Premium liiga") if e.url.endswith("/match_info/186106"))
+        self.assertEqual(e.result, "")
+
     def test_all_venues_known_and_tallinn_share(self):
         v = Venues.load()
         self.assertEqual([e.venue for e in self.men + self.women if v.lookup(e.venue) is None], [])

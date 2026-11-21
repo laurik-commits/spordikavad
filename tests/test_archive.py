@@ -48,6 +48,21 @@ class ArchiveTest(unittest.TestCase):
         self.assertEqual(fields["venue"]["on"], "2026-11-21")
         self.assertEqual(rec["event"]["venue"], "Saal B")
 
+    def test_result_is_recorded_and_old_records_without_result_are_not_a_change(self):
+        g = game(self.start)
+        archive.update("s", [g], self.d1, root=self.root)
+        path = self.root / "2026" / "s.json"
+        data = json.loads(path.read_text(encoding="utf-8"))
+        del data[g.id]["event"]["result"]  # arhiiv, mis tehti enne tulemuse välja lisamist
+        path.write_text(json.dumps(data), encoding="utf-8")
+        archive.update("s", [g], self.d2, root=self.root)
+        self.assertEqual(self.read()[g.id]["changes"], [])
+        played = new_event(source="s", sport="korvpall", league="L", start=self.start, home="A", away="B",
+                           venue="Saal A", city="Tallinn", url="https://example.org/", result="3-0")
+        archive.update("s", [played], date(2026, 12, 6), root=self.root)
+        change = self.read()[g.id]["changes"][0]
+        self.assertEqual((change["field"], change["from"], change["to"]), ("result", "", "3-0"))
+
     def test_vanished_future_game_is_marked_missing_and_unmarked_on_return(self):
         g = game(self.start)
         archive.update("s", [g], self.d1, root=self.root)

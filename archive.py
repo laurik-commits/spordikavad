@@ -23,7 +23,7 @@ ROOT = Path(__file__).parent
 ARCHIVE = ROOT / "archive"
 
 # väljad, mille muutumine on ajaloo mõttes oluline (id ja allikas ei muutu)
-TRACKED = ("start", "home", "away", "venue", "city", "league", "time_tbc", "url")
+TRACKED = ("start", "home", "away", "venue", "city", "league", "time_tbc", "url", "result")
 
 
 def _path(year: int, source: str, root: Path) -> Path:
@@ -71,8 +71,9 @@ def update(source: str, events: list[Event], today: date, *, complete: bool = Tr
                 data[e.id] = {"first_seen": today.isoformat(), "event": now, "changes": []}
                 continue
             old = rec["event"]
-            diff = [{"on": today.isoformat(), "field": f, "from": old.get(f), "to": now.get(f)}
-                    for f in TRACKED if old.get(f) != now.get(f)]
+            # vanemas kirjes puudub "result" (lisati hiljem): puudumine = tühi tulemus, mitte muutus
+            diff = [{"on": today.isoformat(), "field": f, "from": old.get(f, ""), "to": now.get(f, "")}
+                    for f in TRACKED if old.get(f, "" if f == "result" else None) != now.get(f)]
             if diff:
                 rec["changes"].extend(diff)
                 rec["event"] = now

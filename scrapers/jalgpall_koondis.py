@@ -18,7 +18,7 @@ import html
 import re
 from datetime import datetime
 
-from .model import Event, new_event
+from .model import Event, new_event, parse_score
 
 NAME = "jalgpall_koondis"
 SPORT = "jalgpall"
@@ -30,6 +30,7 @@ _WHEN = re.compile(r"<p>\s*(\d{2}\.\d{2}\.\d{4})\s+(?:kell|Aeg)\s+(\d{1,2}:\d{2}
 _VENUE = re.compile(r"</p>\s*<p>\s*([^<]*?)\s*</p>\s*</div>\s*<div class=\"teams\">", re.S)
 _TEAM = re.compile(r'<div class="team">.*?<p>\s*([^<]+?)\s*</p>\s*</div>', re.S)
 _INFO = re.compile(r'href="(/koondis/\d+/matchinfo/match/\d+)"')
+_RESULT = re.compile(r'<div class="result">(.*?)</div>', re.S)
 
 
 def url_for(team_id: int) -> str:
@@ -52,12 +53,14 @@ def parse(page: str, team_name: str, *, sport: str = SPORT, source: str = NAME) 
         if "," in place:
             continue  # välisriigi väljak on kirjas "Saal, Riik" (nt "Globall Football Park, Ungari"); Eesti saalidel koma pole
         day, hhmm = when.groups()
+        res = _RESULT.search(block)
+        score = parse_score(re.sub(r"<[^>]+>", " ", res.group(1))) if res else ""
         events.append(
             new_event(
                 source=source, sport=sport, league=f"{team_name}: {html.unescape(title.group(1))}",
                 start=datetime.strptime(f"{day} {hhmm}", "%d.%m.%Y %H:%M"),
                 home=home, away=away, venue=place, city="",
-                url=BASE + info.group(1), time_tbc=hhmm == "00:00", level=5,
+                url=BASE + info.group(1), time_tbc=hhmm == "00:00", level=5, result=score,
             )
         )
     return events

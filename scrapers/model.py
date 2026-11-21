@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import hashlib
+import re
 from dataclasses import asdict, dataclass
 from datetime import datetime
 from zoneinfo import ZoneInfo
@@ -43,7 +44,8 @@ class Event:
     url: str  # link allika mängulehele (või liiga kalendrile)
     source: str  # adapteri nimi
     time_tbc: bool = False  # True, kui kellaaeg pole veel kinnitatud
-    level: int = 1  # 1 = kõrgliiga, 2 = esiliiga, 3 = madalamad liigad, 4 = noored, 5 = koondised (igaühel eraldi kalender)
+    result: str = ""  # lõppseis "kodu-võõras" (nt "3-0"), tühi kuni mäng on mängitud või kui allikas seda ei anna
+    level: int = 1 # 1 = kõrgliiga, 2 = esiliiga, 3 = madalamad liigad, 4 = noored, 5 = koondised (igaühel eraldi kalender)
 
     def __post_init__(self) -> None:
         if self.sport not in SPORTS:
@@ -82,6 +84,7 @@ def new_event(
     url: str,
     time_tbc: bool = False,
     level: int = 1,
+    result: str = "",
 ) -> Event:
     """Mugav konstruktor adapteritele: arvutab ID ja viib aja Tallinna ajavööndisse."""
     if start.tzinfo is None:
@@ -101,4 +104,14 @@ def new_event(
         source=source,
         time_tbc=time_tbc,
         level=level,
+        result=result,
     )
+
+
+_SCORE = re.compile(r"(\d{1,3})\s*[-–:]\s*(\d{1,3})")
+
+
+def parse_score(text: str) -> str:
+    """"3 - 0" → "3-0". Tühi tekst või "-" (mäng pole veel mängitud) → "". """
+    m = _SCORE.search(text or "")
+    return f"{int(m.group(1))}-{int(m.group(2))}" if m else ""
