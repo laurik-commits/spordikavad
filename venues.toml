@@ -305,7 +305,7 @@ aliases = ["Tapa SH"]
 [[venue]]
 name = "Kuusalu spordikeskus"
 city = "Kuusalu"
-aliases = ["Kuusalu Spordikeskus"]
+aliases = ["Kuusalu Spordikeskus", "Kuusalu SH"]  # "SH" = spordihoone (saalihoki.ee lõppenud mängud; Kuusalus on üks saal, seos oletatud)
 
 [[venue]]
 name = "Lähte spordihoone"
@@ -802,6 +802,29 @@ city = "Türgi"
 [[venue]]
 name = "Karksi-Nuia Gümnaasiumi staadion"
 city = "Mulgi vald"
+
+# saalihoki.ee lõppenud mängud kirjutavad saale lühemalt
+[[venue]]
+name = "Rapla Sadolin Spordihoone"
+city = "Rapla"
+aliases = ["Sadolin SH"]
+
+[[venue]]
+name = "Ķekavas vsk. sporta komplekss"
+city = "Ķekava"
+
+[[venue]]
+name = "Spuņciems"
+city = "Spuņciems"
+
+# baltichandball.eu tulemuste leht (mängitud mängud, ka välismaal)
+[[venue]]
+name = "Aizkraukles novada Sporta centrs"
+city = "Aizkraukle"
+
+[[venue]]
+name = "HC VILNIUS RANKINIO SALĖ"
+city = "Vilnius"
 
 [[venue]]
 name = "Narva Spordikeskuse spordiväljak"

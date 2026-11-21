@@ -36,7 +36,7 @@ default = "tallinn"
 foreign = ["Cēsis", "Daugavpils", "Elektrėnai", "Jelgava", "Jēkabpils", "Kaunas", "Kocēni", "Liepāja",
            "Riia", "Talsi", "Ulbroka", "Vilnius", "Ādaži", "Šiauliai",
            "Dobele", "Molėtai", "Ogre", "Pasvalys", "Ludza", "Salaspils",
-           "Valmiera", "Kosovo", "Türgi"]
+           "Valmiera", "Kosovo", "Türgi", "Ķekava", "Spuņciems", "Aizkraukle"]
 
 [[geo.city]]
 slug = "tallinn"
