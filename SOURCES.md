@@ -8,14 +8,15 @@ Kasutustingimusi, mis keelaksid automaatse kogumise, ühegi allika lehtedelt ei 
 | Ala | Liiga | Allikas | Kuju | robots.txt | MVP |
 |---|---|---|---|---|---|
 | Jalgpall | A. Le Coq Premium liiga | jalgpall.ee | iCal (+ HTML) | lubatud, `Crawl-Delay: 5` | ✅ |
-| Korvpall | FenixBet Eesti-Läti Korvpalliliiga | estlatbl.com, basket.ee | HTML | **keelatud** (`User-agent: *` / `Disallow: /`) | ❌ välja jäetud |
+| Korvpall | Bigbank/Kalevi mängud (Eesti-Läti liiga, FIBA Europe Cup) | bckalev.ee (klubi koduleht) | staatiline HTML (SportPressi tabel) | lubatud (`/ajakava/`), crawl-delay'd pole | ✅ (lisatud 2026-11-21, ainult Kalev) |
+| Korvpall | Liidu andmed (Eesti-Läti liiga, meistriliiga) | estlatbl.com, basket.ee | HTML | **keelatud** (`User-agent: *` / `Disallow: /`) | ❌ välja jäetud |
 | Jäähoki | Optibet Hokiliiga | lhf.lv | staatiline HTML | lubatud | ✅ |
 | Võrkpall | Balti liiga, Eesti meistriliiga, karikad (M+N) | bvl-web / evf-web.dataproject.com | staatiline HTML | lubatud | ✅ |
 | Käsipall | Meistriliiga (mehed) | kasipall.ee | staatiline HTML | lubatud | ✅ |
 | Saalihoki | Meistriliiga + Eesti-Läti ühisliiga | saalihoki.ee | staatiline HTML | lubatud | ✅ (vähe Tallinna mänge) |
 | Saalijalgpall | Saalijalgpalli meistriliiga | jalgpall.ee | staatiline HTML | lubatud, `Crawl-Delay: 5` | ✅ (lisatud 2026-11-20) |
 
-MVP-sse sobib 5 ala 6-st.
+MVP-sse sobib 6 ala 7-st (korvpallist ainult Kalev).
 
 ---
 
@@ -30,15 +31,38 @@ MVP-sse sobib 5 ala 6-st.
 - **Eripärad:** praegu (hooajaväline aeg) on iCal tühi.
 - **Teostus (2026-11-20):** adapter kasutab iCal-i asemel HTML-kalendrit `/voistlused/52/liigad/calendar?season=<aasta>`, sest seal on ka staadion (`data-field`) ja terve hooaeg ühe päringuga.
 
-## Korvpall: FenixBet Eesti-Läti Korvpalliliiga ❌
+## Korvpall
+
+### Liit (basket.ee, estlatbl.com) ❌
 
 - **Lehed:** https://www.estlatbl.com/et/mangud, https://www.basket.ee/et/ajakava-ja-tulemused?action=schedule
 - **robots.txt:** mõlemal domeenil `User-agent: *` / `Disallow: /`. Lubatud on ainult Googlebot, Bingbot ja Applebot. Lisaks näitab estlatbl.com robotitele turvakontrolli lehte.
-- **Otsus:** jäetud välja vastavalt lähteülesandele (automaatne kogumine on keelatud). Ainus seaduslik tee oleks liidu luba või avalik voog. Seda praegu pole.
-- **Omaniku otsus 2026-11-20:** andmeid ei koguta. Alafiltris on nupp „Korvpall“, mis näitab selgitust ja linki basket.ee ajakavale (https://www.basket.ee/et/ajakava-ja-tulemused?action=schedule). Lehe ehitamisel basket.ee poole päringuid ei tehta.
-- **Plaan:** kui leht on stabiilselt töötanud, küsib omanik Korvpalliliidult luba või avalikku andmevoogu (vt README „Tulevikuideed“). Kuni loa saamiseni ei koguta midagi.
-- **Tallinna klubid:** Bigbank/Kalev, TalTech/ALEXELA. (Kahju, sest need on populaarsed mängud.)
-- Ka Korvpalli Meistriliiga ja naiste liiga on samal basket.ee domeenil, seega samuti välja.
+- **Otsus:** liidu ja estlatbl.com lehti ei kogu. Ainus seaduslik tee oleks liidu luba või avalik voog. Seda praegu pole.
+- **Plaan:** kui leht on stabiilselt töötanud, küsib omanik Korvpalliliidult luba või avalikku andmevoogu (vt README „Tulevikuideed“). Kuni loa saamiseni liidu lehtedelt midagi ei koguta. Lehe korvpalli märkus viitab endiselt basket.ee ajakavale (https://www.basket.ee/et/ajakava-ja-tulemused?action=schedule), sinna päringuid ei tehta.
+- Korvpalli Meistriliiga ja naiste liiga on samal basket.ee domeenil, seega samuti välja.
+- **TalTech/ALEXELA:** TalTechi enda lehel ajakava pole, see viitab estlatbl.com lehele, seega TalTechi kodumänge siia ei saa (v.a mängud Kalevi vastu, mis on Kalevi lehel).
+
+### Bigbank/Kalev: klubi koduleht ✅ (lisatud 2026-11-21)
+
+- **Leht:** https://bckalev.ee/ajakava/ (WordPress + SportPress). Adapter `korvpall_kalev`.
+- **robots.txt (kontrollitud 2026-11-21):** `User-agent: *`. Keelatud on `/wp-admin/` (v.a `admin-ajax.php`), WooCommerce'i logid ja üleslaadimised, `?add-to-cart=` ning `?kategooria=` ja `?srch=` parameetrid. `/ajakava/` pole keelatud. Crawl-delay'd pole, kasutame viisakat 5 s (`config.toml` → `http.host_delays`), päring tehakse üks päevas.
+- **Kuju:** tabel veergudega Kuupäev / Meeskonnad / Liiga / Väljak. Kõik mängud on ühes HTML-is (lehekülgedeks jagab brauser, `data-sp-rows="10"`), seega piisab ühest päringust. Masinloetav aeg on `<td class="data-date" content="2026-11-21T19:00+02:00">`, mängu link samas lahtris.
+- **Hooaeg:** 2026/27, nähtavad mängud kuni märtsini 2027. Seadistuses 15.09–15.06.
+- **„A vs B“ järjekord on kodu vs võõrsil.** Kontrollitud: Keila KK vs Kalev (Keila Tervisekeskus), BC Pärnu vs Kalev (Pärnu Spordihoone), Taltech/Alexela vs Kalev (TalTech Spordihoone), Valmiera Glass VIA vs Kalev (Valmieras Olimpiskais Centrs). Kalevi kodumängud on kirjas „Bigbank/Kalev vs …“.
+- **Saal puudub**, kui väli on tühi või „Asukoht selgumisel“. Neid mänge lehel ei näidata, lähipäevade (15 päeva) puhul tuleb „Mängud ilma toimumiskohata“ issue.
+- **Välismaa mängud** jäävad geo-filtriga välja (Kosovo, Valmieras Olimpiskais Centrs, Riga Arena, KSSH, `config.toml` → `geo.foreign`).
+- **Saalid (venues.toml):** Kalevi spordihall, Unibet Arena (= Saku Suurhall), TalTechi spordihall (alias „TalTech Spordihoone“), uued: **Nord Spordihoone** (Tallinn), Keila Tervisekeskus (Keila), Pärnu Spordihoone (Pärnu). Kontrollimata: Nord Spordihoone asukoht (arvatud Tallinn, Kalevi kodumängude saal), „Pärnu Spordihoone“ ja olemasolev „Pärnu Spordihall“ võivad olla sama hoone, ja KSSH asukoht (arvatud Riia).
+- **Eripärad:** ainult Kalevi mängud. Eesti-Läti liigas on ka teisi mänge, neid siit ei saa. FIBA Europe Cup on `check = false` (pikad pausid). Võistluse nimi tuleb tabeli veerust.
+- **Fixture:** `tests/fixtures/korvpall_kalev.html` on lehe lähtekoodist (2026-11-21) lühendatud tabel, logopildid on välja jäetud.
+
+### Teised klubid: veel kontrollimata
+
+Klubilehti pole veel vaadatud (robots.txt ja ajakava). Vaata, kas nende lehed lubavad kogumist:
+- **Viimsi:** https://kkviimsi.ee/?id=1005
+- **Pärnu:** https://bcparnu.ee
+- **Tartu:** https://basket.ut.ee
+
+Need on vaja kontrollida enne adapterit. Märkus 2026-11-21: seanss ei pääsenud neile lehtedele (keskkonna võrgupoliitika), seega tulemust siin veel pole.
 
 ## Jäähoki: Optibet Hokiliiga
 
@@ -154,6 +178,6 @@ Iga allika kohta üks mäng lehel olevatest andmetest, võrreldud allika enda m�
 
 ## Hilisemaks (teine samm)
 
-- Korvpall: kui liit kunagi avaldab avaliku voo või robots.txt muutub, vaatame uuesti.
+- Korvpall: kui liit kunagi avaldab avaliku voo või robots.txt muutub, vaatame uuesti. Teiste klubide (Viimsi, Pärnu, Tartu) lehed on kontrollimata.
 - Võrkpall: Eesti meistriliiga playoffid (`evf-web.dataproject.com`).
 - Esiliigad ja naiste liigad: jalgpall.ee, kasipall.ee ja saalihoki.ee kasutavad kõigi liigade jaoks sama süsteemi, seega piisab uuest liiga ID-st.

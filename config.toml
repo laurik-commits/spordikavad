@@ -23,6 +23,7 @@ retries = 3
 
 [http.host_delays]
 "jalgpall.ee" = 5.0   # robots.txt: Crawl-Delay: 5
+"bckalev.ee" = 5.0    # robots.txt-s crawl-delay'd pole; 1 päring päevas, viisakas 5 s
 
 # --- Linnad ja maakonnad (linnavalik) ---
 # Suuremad linnad on valikus eraldi, ülejäänud kohad oma maakonna all ("Harjumaa (v.a Tallinn)").
@@ -33,7 +34,8 @@ retries = 3
 default = "tallinn"
 foreign = ["Cēsis", "Daugavpils", "Elektrėnai", "Jelgava", "Jēkabpils", "Kaunas", "Kocēni", "Liepāja",
            "Riia", "Talsi", "Ulbroka", "Vilnius", "Ādaži", "Šiauliai",
-           "Dobele", "Molėtai", "Ogre", "Pasvalys", "Ludza", "Salaspils"]
+           "Dobele", "Molėtai", "Ogre", "Pasvalys", "Ludza", "Salaspils",
+           "Valmiera", "Kosovo"]
 
 [[geo.city]]
 slug = "tallinn"
@@ -104,6 +106,7 @@ county = "Põlvamaa"
 # Väiksemad kohad → maakond
 [geo.place]
 "Viimsi" = "Harjumaa"
+"Keila" = "Harjumaa"
 "Rae vald" = "Harjumaa"
 "Saue vald" = "Harjumaa"
 "Harku vald" = "Harjumaa"
@@ -153,12 +156,11 @@ note = "Eesti hokiliigade (Unibet Hokiliiga, naiste hokiliiga) mänge siin pole,
 url = "https://eestihoki.ee/"
 link_text = "Eesti Jäähokiliit"
 
-# Väline link ilma andmete kogumiseta (vt SOURCES.md, korvpall)
-[[external_link]]
+[[sport_note]]
 sport = "korvpall"
+note = "Näitame Bigbank/Kalevi mänge klubi kodulehelt. Korvpalliliidu leht ei luba andmete automaatset kogumist, seetõttu teiste klubide mänge siin pole."
 url = "https://www.basket.ee/et/ajakava-ja-tulemused?action=schedule"
-note = "Korvpalliliidu koduleht ei luba andmete automaatset kogumist, seetõttu korvpallimänge siin ei kuvata."
-link_text = "Korvpalli ajakava basket.ee lehel"
+link_text = "Kõik mängud basket.ee lehel"
 
 # Allikad. Hooaja kuupäevad on ligikaudsed (vt SOURCES.md). Hooaja sees tähendab
 # 0 mängu viga, väljaspool hooaega mitte.
@@ -229,6 +231,19 @@ competitions = [
   { id = 361, league = "Meistriliiga (naised)" },
   { id = 362, league = "Eesti karikas (mehed)", check = false },
   { id = 360, league = "Esiliiga (mehed)", level = 2 },
+]
+
+[[source]]
+name = "korvpall_kalev"
+sport = "korvpall"
+league = "Bigbank/Kalev"
+enabled = true
+seasons = [["09-15", "06-15"]]
+# bckalev.ee/ajakava/: ühe päringuga kõik Kalevi mängud (robots.txt lubab, crawl-delay'd pole). Võistluse nimi on lehel.
+# FIBA Europe Cup: pikad pausid, seetõttu check = false.
+competitions = [
+  { league = "Eesti-Läti Korvpalliliiga" },
+  { league = "FIBA Europe Cup", check = false },
 ]
 
 [[source]]

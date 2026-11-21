@@ -370,6 +370,7 @@ SOURCE_SITES = {
     "saalijalgpall": ("Eesti Jalgpalli Liit", "https://jalgpall.ee/voistlused"),
     "jaahoki": ("Läti Jäähokiliit (Optibet Hokiliiga)", "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/schedule"),
     "vorkpall": ("DataProject (Eesti Võrkpalli Liit, Balti liiga)", "https://evf-web.dataproject.com/MainHome.aspx"),
+    "korvpall": ("Bigbank/Kalev (klubi koduleht)", "https://bckalev.ee/ajakava/"),
     "kasipall": ("Eesti Käsipalliliit ja Balti Käsipalliliiga", "https://kasipall.ee/"),
     "saalihoki": ("Eesti Saalihoki Liit", "https://www.saalihoki.ee/Events/Uritused.aspx"),
 }
