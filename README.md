@@ -4,7 +4,7 @@
 
 Tallinna kõrgliigade spordimängud ühel lihtsal lehel: https://laurik-commits.github.io/spordikavad/
 
-Lähteülesanne: [SPEC.md](SPEC.md). Andmeallikad ja nende kontroll: [SOURCES.md](SOURCES.md). Suund, ajalooarhiiv ja turvalisus: [VISION.md](VISION.md).
+Lähteülesanne: [SPEC.md](SPEC.md). Andmeallikad ja nende kontroll: [SOURCES.md](SOURCES.md). Suund, ajalooarhiiv ja turvalisus: [docs/VISION.md](docs/VISION.md).
 
 ## Kuidas see töötab
 

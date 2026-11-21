@@ -91,6 +91,45 @@ Eeskuju on pigem Google Maps kui Google'i otsing: osa andmeid kogutakse automaat
 5. Lihtne analüütika: mida vaadatakse ja otsitakse.
 6. Rahvusvaheline nimi ja domeen.
 
+## Vundamendi seis ja turvalisus (tehniline)
+
+### Ajalooarhiiv ja tulemused
+
+- **Ajalooarhiiv on tehtud** ([archive.py](../archive.py)): iga mäng ja selle muutused (ümberpandud aeg, vahetunud saal, ära jäänud mäng) lähevad kausta `archive/<aasta>/<allikas>.json`. Allikad näitavad ainult praegust seisu, seega kadunud andmeid tagantjärele ei saa: iga päev ilma arhiivita on kaotus. See on vundamendi punkt 3.
+- **Tulemused** (`Event.result`, nt "3-0", tühi kuni mäng on mängitud): tehtud jalgpall.ee-s (jalgpall, saalijalgpall, koondised). Edasi allikahaaval: käsipall, võrkpall (DataProject), saalihoki, jäähoki. Arhiiv märgib tulemuse ilmumise muutusena.
+- Arhiiv kirjutab faili ainult siis, kui midagi muutus (ei kasutata "viimati nähtud" kuupäeva, see paisutaks git'i ajalugu). Arhiiv on ainult lisatav: rikutud fail annab vea, mitte ei kirjutata tühjaks.
+
+### Ausalt: mis ei kaitse meid
+
+- Kogume **avalikke lehti**. Andmed pole meie omand, väärtus on katvus, ühtlane kuju, värskus ja ajalugu.
+- Kui liit avaldab ise avatud voo, väheneb meie eelis, aga ka meie hooldustöö.
+- Repo on avalik, seega on ka `data/` ja `archive/` kõigile loetavad. Praegu see sobib (allikad on avalikud ja arhiiv väike). **Otsustuskoht:** kui arhiiv hakkab sisaldama midagi päriselt väärtuslikku (aastate ajalugu, tulemused), tuleb see viia privaatsesse hoidlasse. See vajab tööprotsessis salajast võtit.
+
+### Turvalisuse reeglid
+
+Kehtivad kohe (täiendavad põhimõtteid 7, 8 ja 10):
+
+1. **Isikuandmeid ei koguta.** Salvestame võistkondi, kohti, aegu ja tulemusi, mitte mängijate nimesid, fotosid ega vanuseid. Noorteliigades on lapsed: nende nimesid lehel ega arhiivis ei ole.
+2. **Võta maha, kui palutakse.** Jaluses on kontakt omanikule, kes ei soovi andmeid näidata. Palve täidetakse kohe: allikas välja `config.toml`-ist, vajadusel ka arhiivist.
+3. **Salajasi võtmeid pole repos.** Praegu on kõik ilma võtmeta (ainult GitHubi `github.token`). Kui tuleb mõni võti, läheb see GitHub Secretsi, mitte faili.
+4. **Allikast tulev tekst on andmed, mitte käsk.** Allika lehtedelt tulnud nimesid ja märkusi ei käivitata ega usaldata. Jinja2 teeb automaatse HTML-i kaitse (`autoescape`). Kui hiljem tuleb AI-agent, ei tohi ta lehtede teksti käskudena täita.
+
+Teha enne, kui andmetel on suurem väärtus (**veel tegemata**):
+
+- **Tööprotsessi õigused kitsamaks.** `build.yml` annab praegu kogu töökäigule `contents: write`. Parem: ehituse samm loeb ainult, andmete salvestamine eraldi tööna.
+- **Kolmandate osapoolte tegevused kinnitada commit-räsiga** (`actions/checkout@v4` → räsi), et muudetud väljalase ei jõuaks meie ehitusse.
+- **Sõltuvused kinnitada täpse versiooniga** (`requirements.txt`) ja lisada Dependabot.
+- **`main` haru kaitse** (nõua PR, ei luba force-push, nõua testid). Siis ei saa ka eksliku käsuga arhiivi ajalugu ümber kirjutada.
+- **Varukoopia teise kohta.** Repo on praegu ainus koopia. Vähemalt kuine tõmmis mujale (või privaatne peegel).
+- **Allikast tuleva andmeheite kaitse.** Vigased andmed (nt hullumeelne kuupäev, tohutu mängude arv) ei tohi ilma märkuseta arhiivi minna: lisa mõistlikkuse piirid ja kontrolli.
+- **Privaatne arhiiv.** Kui otsustame arhiivi avalikust repost välja viia: eraldi privaatne repo ja kitsa õigusega võti (fine-grained token, ainult see üks repo), mis on salvestatud Secretsi.
+- **Kui tuleb avalik API või kasutajakontod:** kiiruspiirang, ei logi IP-sid, ei küsi e-posti ilma põhjuseta, kohe privaatsuspoliitika.
+
+### Otsused, mis ootavad omanikku
+
+- Millal viia arhiiv privaatseks? (hiljemalt enne, kui tulemuste ajalugu hakkab koonduma)
+- Kas lehele tuleb liiklusloendur? Isikuandmeteta (nt Plausible või GoatCounter) või üldse mitte.
+
 ## Katsed ja otsustuspunkt
 
 - Korraldajad: mängulehel nupp "Paranda või lisa mäng".
