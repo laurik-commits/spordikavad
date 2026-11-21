@@ -73,7 +73,7 @@ aliases = ["Tallinna Ülikooli SH"]
 [[venue]]
 name = "TalTechi spordihall"
 city = "Tallinn"
-aliases = ["TalTech Spordihall", "TalTech Sports Hall", "TTÜ spordihoone"]
+aliases = ["TalTech Spordihall", "TalTech Sports Hall", "TTÜ spordihoone", "TalTech Spordihoone"]
 
 [[venue]]
 name = "Kalevi spordihall"
@@ -90,7 +90,37 @@ name = "Saku Suurhall"
 city = "Tallinn"
 aliases = ["Unibet Arena", "Saku Arena"]
 
+[[venue]]
+name = "Nord Spordihoone"
+city = "Tallinn"
+
 # --- Mujal (et logi ei hoiataks) ---
+
+[[venue]]
+name = "Keila Tervisekeskus"
+city = "Keila"
+
+[[venue]]
+name = "Pärnu Spordihoone"
+city = "Pärnu"
+
+# Korvpall, välismaa (geo-filter jätab välja)
+
+[[venue]]
+name = "Kosovo"
+city = "Kosovo"
+
+[[venue]]
+name = "Valmieras Olimpiskais Centrs"
+city = "Valmiera"
+
+[[venue]]
+name = "Riga Arena"
+city = "Riia"
+
+[[venue]]
+name = "KSSH"
+city = "Riia"
 
 [[venue]]
 name = "Viimsi kooli spordikeskus"
