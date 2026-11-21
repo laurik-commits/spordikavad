@@ -292,7 +292,8 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
         region_list = [{"slug": r.slug, "name": r.name, "prefix": r.prefix, "kind": r.kind,
                         "count": sum(len(v) for v in region_days[r.slug].values())} for r in regions]
         level_list = [{"level": k, "name": v["name"], "prefix": v["prefix"], "current": k == level,
-                       "count": sum(1 for d in days for e in window[d] if e.level == k)} for k, v in LEVELS.items()]
+                       "count": sum(1 for d in days for e in window[d] if e.level == k)}
+                      for k, v in LEVELS.items() if not v.get("hidden") or k == level]
         for r in regions:
             by_day = region_days[r.slug]
             present = {e.sport for lst in by_day.values() for e in lst}

@@ -142,7 +142,7 @@ class RenderTest(unittest.TestCase):
         for rel in ("2026-11-21", "esiliigad/2026-11-21", "madalamad/2026-11-21"):
             self.assertNotIn("Noorukid", self.read(f"{rel}/index.html"))
         self.assertIn("Noorte mängud Tallinnas", youth)
-        self.assertIn('href="../../madalamad/2026-11-21/" data-level="3"', youth)
+        self.assertNotIn('data-level="3"', youth)  # madalamad liigad on ajutiselt valikust peidus
         self.assertIn('data-level="4" aria-current="true"', youth)
         self.assertIn("Sel päeval Tartus noorteliigade mänge pole", self.read("noored/tartu/2026-11-21/index.html"))
         self.assertTrue((self.tmp / "noored/index.html").exists())
