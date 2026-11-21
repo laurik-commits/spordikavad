@@ -28,7 +28,8 @@ class RenderTest(unittest.TestCase):
                   ev(21, 18, "Tartlased", sport="kasipall", venue="Tartu Ülikooli spordihoone", city="Tartu"),
                   ev(21, 17, "Viimsilased", sport="kasipall", venue="Viimsi Kool", city="Viimsi"),
                   ev(21, 19, "Esiliigalased", sport="jalgpall", venue="Wismari jalgpallistaadion", level=2),
-                  ev(21, 15, "Madalamlased", sport="jalgpall", venue="Männiku kunstmuruväljak", level=3)]
+                  ev(21, 15, "Madalamlased", sport="jalgpall", venue="Männiku kunstmuruväljak", level=3),
+                  ev(21, 12, "Noorukid", sport="saalijalgpall", venue="Kalevi spordihall", level=4)]
         build.render(events, cfg, date(2026, 11, 20), self.tmp)
 
     def read(self, rel):
@@ -131,6 +132,26 @@ class RenderTest(unittest.TestCase):
         # madalamates liigades on ainult jalgpall → teisi alanuppe pole
         self.assertIn('data-filter="jalgpall"', low)
         self.assertNotIn('data-filter="jaahoki"', low)
+
+    def test_noored_separate_calendar(self):
+        youth = self.read("noored/2026-11-21/index.html")
+        self.assertIn("Noorukid", youth)
+        for other in ("Madalamlased", "Esiliigalased", "Tartlased"):
+            self.assertNotIn(other, youth)
+        for rel in ("2026-11-21", "esiliigad/2026-11-21", "madalamad/2026-11-21"):
+            self.assertNotIn("Noorukid", self.read(f"{rel}/index.html"))
+        self.assertIn("Noorte mängud Tallinnas", youth)
+        self.assertIn('href="../../madalamad/2026-11-21/" data-level="3"', youth)
+        self.assertIn('data-level="4" aria-current="true"', youth)
+        self.assertIn("Sel päeval Tartus noorteliigade mänge pole", self.read("noored/tartu/2026-11-21/index.html"))
+        self.assertTrue((self.tmp / "noored/index.html").exists())
+
+    def test_coverage_youth_column(self):
+        rows = {r["key"]: r for r in build.coverage(config.load())}
+        self.assertIn("U18 saalijalgpalli eliitliiga", rows["saalijalgpall"]["youth"])
+        self.assertIn("U16 esiliiga", rows["jalgpall"]["youth"])
+        self.assertNotIn("U16 esiliiga", rows["jalgpall"]["minor"])
+        self.assertEqual(rows["korvpall"]["youth"], [])
 
     def test_coverage_has_minor_column(self):
         rows = {r["key"]: r for r in build.coverage(config.load())}

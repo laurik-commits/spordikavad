@@ -241,7 +241,8 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
     cov = coverage(cfg)
     sports_at = {1: [r["key"] for r in cov if r["top"] and r["key"] not in external],
                  2: [r["key"] for r in cov if r["low"] and r["key"] not in external],
-                 3: [r["key"] for r in cov if r["minor"] and r["key"] not in external]}
+                 3: [r["key"] for r in cov if r["minor"] and r["key"] not in external],
+                 4: [r["key"] for r in cov if r["youth"] and r["key"] not in external]}
 
     def offseason_note(sport: str) -> str:
         """Kui ala ükski allikas pole hooajas: "Jalgpalli hooaeg algab märtsis." """
@@ -378,16 +379,16 @@ SOURCE_SITES = {
 
 
 def coverage(cfg: dict) -> list[dict]:
-    """„Mis siin on?“ lehe tabel: ala, kõrgliigad (top), esiliigad (low), madalamad liigad (minor), allikas."""
+    """„Mis siin on?“ lehe tabel: ala, kõrgliigad (top), esiliigad (low), madalamad liigad (minor), noored (youth), allikas."""
     from scrapers import saalihoki_meistriliiga as floorball
 
-    column = {1: "top", 2: "low", 3: "minor"}
+    column = {1: "top", 2: "low", 3: "minor", 4: "youth"}
     rows: dict[str, dict] = {}
     for src in cfg.get("source", []):
         if not src.get("enabled", True):
             continue
         sport = src["sport"]
-        row = rows.setdefault(sport, {"key": sport, "sport": SPORTS[sport], "top": [], "low": [], "minor": [],
+        row = rows.setdefault(sport, {"key": sport, "sport": SPORTS[sport], "top": [], "low": [], "minor": [], "youth": [],
                                       "source": SOURCE_SITES.get(sport, ("", ""))})
         if src.get("competitions"):
             for c in src["competitions"]:
