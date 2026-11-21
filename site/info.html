@@ -14,14 +14,14 @@
 <header class="bar"><div class="wrap"><div class="top"><a class="brand" href="{{ root }}">Spordikavad</a></div>
   <nav class="daynav"><h1>Mis siin on?</h1></nav></div></header>
 <main class="wrap info">
-  <p>Spordikavad on lihtne nimekiri spordimängudest, mida saab <strong>kohapeal vaatamas käia</strong>: iga päeva mängud kellaaja järgi, linna kaupa. Päises saad valida linna või maakonna ning <strong>kõrgliigade</strong>, <strong>esiliigade</strong>, <strong>madalamate liigade</strong> või <strong>noorte</strong> kalendri.</p>
+  <p>Spordikavad on lihtne nimekiri spordimängudest, mida saab <strong>kohapeal vaatamas käia</strong>: iga päeva mängud kellaaja järgi, linna kaupa. Päises saad valida linna või maakonna ning <strong>kõrgliigade</strong>, <strong>esiliigade</strong>, <strong>madalamate liigade</strong> <strong>noorte</strong> või <strong>koondiste</strong> kalendri.</p>
 
   <h2>Alad ja liigad</h2>
   <table>
-    <thead><tr><th>Ala</th><th>Kõrgliigad</th><th>Esiliigad</th><th>Madalamad liigad</th><th>Noored</th></tr></thead>
+    <thead><tr><th>Ala</th><th>Kõrgliigad</th><th>Esiliigad</th><th>Madalamad liigad</th><th>Noored</th><th>Koondised</th></tr></thead>
     <tbody>
     {% for row in coverage %}
-      <tr><td><i class="dot s-{{ row.key }}"></i> {{ row.sport }}</td><td>{{ row.top | join(', ') }}</td><td>{{ row.low | join(', ') or '–' }}</td><td>{{ row.minor | join(', ') or '–' }}</td><td>{{ row.youth | join(', ') or '–' }}</td></tr>
+      <tr><td><i class="dot s-{{ row.key }}"></i> {{ row.sport }}</td><td>{{ row.top | join(', ') }}</td><td>{{ row.low | join(', ') or '–' }}</td><td>{{ row.minor | join(', ') or '–' }}</td><td>{{ row.youth | join(', ') or '–' }}</td><td>{{ row.national | join(', ') or '–' }}</td></tr>
     {% endfor %}
     </tbody>
   </table>

@@ -312,6 +312,42 @@ competitions = [
   { season = 206, id = 637, league = "Eesti-Läti liiga (naised)" },
 ]
 
+# Koondised (level = 5, eraldi kalender „Koondised“). Ainult Eesti koondise kodumängud Eestis (SOURCES.md → Koondised).
+# Mänge on vähe ja need lisanduvad ajakavasse hilja, seetõttu check = false ja hooaeg terve aasta.
+[[source]]
+name = "jalgpall_koondis"
+sport = "jalgpall"
+league = "Jalgpalli koondised"
+enabled = true
+year_round = true
+seasons = [["01-01", "12-31"]]
+# jalgpall.ee/koondis/<id>/mangud; "league" on koondise nimi, mängu liigaks tuleb "<nimi>: <turniir>"
+competitions = [
+  { id = 1, league = "Meeste koondis", level = 5, check = false },
+  { id = 2, league = "U21 koondis", level = 5, check = false },
+  { id = 3, league = "U19 koondis", level = 5, check = false },
+  { id = 4, league = "U18 koondis", level = 5, check = false },
+  { id = 5, league = "U17 koondis", level = 5, check = false },
+  { id = 6, league = "U16 koondis", level = 5, check = false },
+  { id = 16, league = "U15 koondis", level = 5, check = false },
+  { id = 7, league = "Naiste koondis", level = 5, check = false },
+  { id = 8, league = "NU19 koondis", level = 5, check = false },
+  { id = 10, league = "NU17 koondis", level = 5, check = false },
+  { id = 9, league = "NU15 koondis", level = 5, check = false },
+]
+
+[[source]]
+name = "saalijalgpall_koondis"
+sport = "saalijalgpall"
+league = "Saalijalgpalli koondised"
+enabled = true
+year_round = true
+seasons = [["01-01", "12-31"]]
+competitions = [
+  { id = 14, league = "Saalijalgpalli koondis", level = 5, check = false },
+  { id = 18, league = "Saalijalgpalli U19 koondis", level = 5, check = false },
+]
+
 [[source]]
 name = "saalihoki_meistriliiga"
 sport = "saalihoki"

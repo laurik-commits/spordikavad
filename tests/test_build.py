@@ -29,7 +29,8 @@ class RenderTest(unittest.TestCase):
                   ev(21, 17, "Viimsilased", sport="kasipall", venue="Viimsi Kool", city="Viimsi"),
                   ev(21, 19, "Esiliigalased", sport="jalgpall", venue="Wismari jalgpallistaadion", level=2),
                   ev(21, 15, "Madalamlased", sport="jalgpall", venue="Männiku kunstmuruväljak", level=3),
-                  ev(21, 12, "Noorukid", sport="saalijalgpall", venue="Kalevi spordihall", level=4)]
+                  ev(21, 12, "Noorukid", sport="saalijalgpall", venue="Kalevi spordihall", level=4),
+                  ev(21, 20, "Koondislased", sport="jalgpall", venue="Wismari jalgpallistaadion", level=5)]
         build.render(events, cfg, date(2026, 11, 20), self.tmp)
 
     def read(self, rel):
@@ -145,6 +146,28 @@ class RenderTest(unittest.TestCase):
         self.assertIn('data-level="4" aria-current="true"', youth)
         self.assertIn("Sel päeval Tartus noorteliigade mänge pole", self.read("noored/tartu/2026-11-21/index.html"))
         self.assertTrue((self.tmp / "noored/index.html").exists())
+
+    def test_koondised_separate_calendar(self):
+        national = self.read("koondised/2026-11-21/index.html")
+        self.assertIn("Koondislased", national)
+        for other in ("Noorukid", "Madalamlased", "Esiliigalased"):
+            self.assertNotIn(other, national)
+        for rel in ("2026-11-21", "esiliigad/2026-11-21", "madalamad/2026-11-21", "noored/2026-11-21"):
+            self.assertNotIn("Koondislased", self.read(f"{rel}/index.html"))
+        self.assertIn("Koondiste mängud Tallinnas", national)
+        self.assertIn('data-level="5" aria-current="true"', national)
+        self.assertIn("Sel päeval Tartus koondiste mänge pole", self.read("koondised/tartu/2026-11-21/index.html"))
+
+    def test_year_round_sources_do_not_hide_offseason_note(self):
+        # koondised on terve aasta "hooajas", aga jalgpalli liigahooaeg algab ikka märtsis
+        self.assertIn("Jalgpalli hooaeg algab märtsis.", self.read("2026-11-22/index.html"))
+
+    def test_coverage_national_column(self):
+        rows = {r["key"]: r for r in build.coverage(config.load())}
+        self.assertIn("Meeste koondis", rows["jalgpall"]["national"])
+        self.assertIn("Saalijalgpalli koondis", rows["saalijalgpall"]["national"])
+        self.assertNotIn("Meeste koondis", rows["jalgpall"]["top"])
+        self.assertEqual(rows["korvpall"]["national"], [])
 
     def test_coverage_youth_column(self):
         rows = {r["key"]: r for r in build.coverage(config.load())}

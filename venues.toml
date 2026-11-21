@@ -826,3 +826,9 @@ city = "Rae vald"
 [[venue]]
 name = "Rakvere SH"
 city = "Rakvere"
+
+# Koondiste saalid
+
+[[venue]]
+name = "Rakvere Spordikeskus"
+city = "Rakvere"

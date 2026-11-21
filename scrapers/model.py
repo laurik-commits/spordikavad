@@ -16,6 +16,7 @@ LEVELS = {
     3: {"name": "Madalamad liigad", "prefix": "madalamad/", "title": "Madalamate liigade mängud",
         "tier": "madalamate liigade"},
     4: {"name": "Noored", "prefix": "noored/", "title": "Noorte mängud", "tier": "noorteliigade"},
+    5: {"name": "Koondised", "prefix": "koondised/", "title": "Koondiste mängud", "tier": "koondiste"},
 }
 
 SPORTS = {
@@ -42,7 +43,7 @@ class Event:
     url: str  # link allika mängulehele (või liiga kalendrile)
     source: str  # adapteri nimi
     time_tbc: bool = False  # True, kui kellaaeg pole veel kinnitatud
-    level: int = 1  # 1 = kõrgliiga, 2 = esiliiga, 3 = madalamad liigad, 4 = noored (igaühel eraldi kalender)
+    level: int = 1  # 1 = kõrgliiga, 2 = esiliiga, 3 = madalamad liigad, 4 = noored, 5 = koondised (igaühel eraldi kalender)
 
     def __post_init__(self) -> None:
         if self.sport not in SPORTS:

@@ -208,6 +208,29 @@ Omaniku valik: noorteliigad on oma tase (`/noored/…`) ja kõik alad koos. Võe
 - **Saalihoki:** noorte liigasid ei leitud. **Jäähoki:** noorteliigad pole avalikult kättesaadavad.
 - **Uued saalid (11):** Bauroc Rakvere Jalgpallihall, EJL jalgpallihall (arvatud Tallinn), Karksi-Nuia Gümnaasiumi staadion (Mulgi vald), Narva Spordikeskuse spordiväljak, Pärnu Rannastaadioni harjutusväljak, Tartu Tamme kunstmuruväljak, Viljandi kunstmuruväljak, Sillamäe Spordikompleks, Valga Spordihoone, Jüri Pallihall väike saal (Rae vald), Rakvere SH. „Lähte Spordihall“ on olemasoleva „Lähte spordihoone“ alias. Kontrollimata: EJL jalgpallihall asukoht.
 
+## Koondised (eraldi kalender „Koondised“, `level = 5`, lisatud 2026-11-21)
+
+Omaniku valik: koondised on oma tase (`/koondised/…`). Praegu on olemas ainult jalgpalli koondised.
+
+| Ala | Koondised | Allikas |
+|---|---|---|
+| Jalgpall | Mehed, U21, U19, U18, U17, U16, U15, naised, NU19, NU17, NU15 | jalgpall.ee/koondis/1, 2, 3, 4, 5, 6, 16, 7, 8, 10, 9 (adapter `jalgpall_koondis`) |
+| Saalijalgpall | Meeste koondis, U19 koondis | jalgpall.ee/koondis/14, 18 (adapter `saalijalgpall_koondis`) |
+
+- **Leht:** `https://jalgpall.ee/koondis/<id>/mangud`, serveris renderdatud. Kaks loendit: `national-upcoming-matches` (tulevased) ja `national-previous-matches`. Sama sait ja robots.txt mis kõrgliigadel (`/koondis/` on lubatud, Crawl-Delay 5, juba `host_delays` all). Kontrollitud 2026-11-21.
+- **Ainult Eesti kodumängud:** võtame mängud, kus esimene võistkond on „Eesti …“, ja jätame välja väljakud, mille nimes on koma („Saal, Ungari“: NU19 turniirid välismaal, kus Eesti on formaalselt kodumeeskond). Eesti saalidel koma pole. Lisandub geo-filter. Neutraalse kodu/võõra järjekorraga Eestis peetavad mängud (nt Balti turniir, kui Eesti on kirjas teisena) võivad puududa.
+- **Kellaaeg:** `00:00` loetakse „kell pole teada“ (`time_tbc`).
+- **Tulevaste mängude arv:** naiste koondise lehel oli 4 tulevast ja 4 mängitud mängu, lehel on nupp „Näita järgnevaid mänge“ ja `data-total="8"`. Ma ei tea, kas kaugemad mängud on peidus (nupp tundub näitavat ainult olemasolevat loendit). Kui mänge hiljem puudu on, kontrolli seda.
+- **Hooaeg:** terve aasta (`year_round = true`), `check = false`, sest mänge on vähe ja need lisanduvad ajakavasse hilja. `year_round` jätab koondised välja jalgpalli liigahooaja märkusest („Jalgpalli hooaeg algab märtsis“).
+- **Hetkel tulevasi mänge** (2026-11-21): naiste koondis–(selgub) 01.12 Paide jalgpallihallis ja meeste saalijalgpalli koondis–Slovakkia 09.12 Jõhvi Spordihallis. Meeste A-koondisel järgmisi kodumänge lehel veel pole.
+- **Jäetud välja:** rannajalgpall (id 15, lehel pole sellist ala), NU23 (id 560, mänge pole).
+- **Teised alad, mida EI ole:**
+  - **Korvpall:** koondised on Korvpalliliidu lehtedel, mis robotid keelavad.
+  - **Käsipall:** kasipall.ee koondiste leht on JavaScriptil põhinev, serveris renderdatud ajakava ei leidnud.
+  - **Võrkpall:** volley.ee kalender ja koondiste lehed ei andnud serveris renderdatud ajakava (robots.txt lubab). Vaata uuesti, kui klubi/liit selle avaldab.
+  - **Hoki:** koondised on Jäähokiliidu lehtedel, vt „Täiendavate võistluste ülevaade“.
+- **Uued saalid:** Rakvere Spordikeskus (venues.toml). Paide jalgpallihall, Pärnu Rannastaadion, Jõhvi Spordihall, A. Le Coq Arena, Tehvandi staadion olid juba olemas.
+
 ## Pistekontroll 2026-11-20
 
 Iga allika kohta üks mäng lehel olevatest andmetest, võrreldud allika enda mängulehega:
