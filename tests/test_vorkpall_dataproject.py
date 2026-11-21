@@ -80,6 +80,23 @@ class VorkpallDataprojectTest(unittest.TestCase):
         self.assertEqual({e.level for e in adapter.parse(page, esiliiga)}, {2})
         self.assertEqual(COMPS["Esiliiga (mehed)"]["level"], 2)
 
+    def test_results_are_sets_won_for_played_games_only(self):
+        events = parse("Balti liiga (mehed)")
+        played = [e for e in events if e.result]
+        self.assertEqual(len(played), 18)
+        self.assertTrue(all(e.start.date().isoformat() <= "2026-11-07" for e in played))
+        # võitja on võitnud 3 setti, kaotaja alla selle
+        for e in played:
+            home, guest = map(int, e.result.split("-"))
+            self.assertEqual(max(home, guest), 3)
+            self.assertLess(min(home, guest), 3)
+        # mängimata mängul tulemust ei ole (DataProject näitab seal 0-0)
+        self.assertTrue(all(e.result == "" for e in events if e.start.date().isoformat() >= "2026-11-14"))
+
+    def test_result_is_home_first(self):
+        e = next(e for e in parse("Balti liiga (naised)") if e.result == "2-3")
+        self.assertEqual(e.result, "2-3")
+
     def test_no_markup_in_team_names(self):
         self.assertFalse(any("<" in e.home + e.away for l in FILES for e in parse(l)))
 

@@ -96,7 +96,7 @@ Eeskuju on pigem Google Maps kui Google'i otsing: osa andmeid kogutakse automaat
 ### Ajalooarhiiv ja tulemused
 
 - **Ajalooarhiiv on tehtud** ([archive.py](../archive.py)): iga mäng ja selle muutused (ümberpandud aeg, vahetunud saal, ära jäänud mäng) lähevad kausta `archive/<aasta>/<allikas>.json`. Allikad näitavad ainult praegust seisu, seega kadunud andmeid tagantjärele ei saa: iga päev ilma arhiivita on kaotus. See on vundamendi punkt 3.
-- **Tulemused** (`Event.result`, nt "3-0", tühi kuni mäng on mängitud): tehtud jalgpall.ee-s (jalgpall, saalijalgpall, koondised). Edasi allikahaaval: käsipall, võrkpall (DataProject), saalihoki, jäähoki. Arhiiv märgib tulemuse ilmumise muutusena.
+- **Tulemused** (`Event.result`, nt "3-0", tühi kuni mäng on mängitud): tehtud jalgpall.ee-s (jalgpall, saalijalgpall, koondised) ja võrkpallis (DataProject, tulemus on võidetud setid, nt "3-1"). Edasi allikahaaval: käsipall, saalihoki, jäähoki. Arhiiv märgib tulemuse ilmumise muutusena.
 - Arhiiv kirjutab faili ainult siis, kui midagi muutus (ei kasutata "viimati nähtud" kuupäeva, see paisutaks git'i ajalugu). Arhiiv on ainult lisatav: rikutud fail annab vea, mitte ei kirjutata tühjaks.
 
 ### Ausalt: mis ei kaitse meid
