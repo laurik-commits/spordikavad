@@ -43,6 +43,16 @@ class KasipallTest(unittest.TestCase):
         self.assertIn("Tallinna Mistra", {g["home"] for g in cup})         # " K" eemaldatud
         self.assertIn("SK Tapa/Tapa valla Spordikool", {g["home"] for g in women})
 
+    def test_results(self):
+        games = adapter.parse_list(LEAGUES[359])
+        played = {g["id"]: g["result"] for g in games if g["result"]}
+        self.assertEqual(played["9223"], "24-33")  # HC Viimsi/Alexela, 28.10.2026
+        self.assertTrue(all(g["result"] == "" for g in games if g["start"].year == 2027))
+        self.assertGreater(len(played), 5)
+        self.assertLess(len(played), len(games))
+        e = adapter.to_event(next(g for g in games if g["id"] == "9223"), "Saal", "Meistriliiga")
+        self.assertEqual(e.result, "24-33")
+
     def test_entities_unescaped(self):
         self.assertIn("HC Kehra/Horizon Pulp&Paper", {g["home"] for g in adapter.parse_list(LEAGUES[359])})
 

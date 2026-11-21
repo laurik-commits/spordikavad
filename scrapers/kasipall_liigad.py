@@ -18,7 +18,7 @@ import re
 from datetime import date, datetime, timedelta
 
 from .http import FetchError
-from .model import TALLINN, Event, new_event
+from .model import TALLINN, Event, new_event, parse_score
 
 log = logging.getLogger(__name__)
 
@@ -33,7 +33,8 @@ _TIME = re.compile(r'<span class="text align-middle align-middle">\s*(\d{1,2}:\d
 _TEAM = re.compile(r'<img src="[^"]*/image/club/[^"]*"\s+alt="\s*([^"]+?)\s*"')
 _VENUE = re.compile(r"location_on\s*</span>.*?<strong>([^<]+)</strong>", re.S)
 _HOME_FIELD = re.compile(r"Koduväljak</h6>.*?<strong>([^<]+)</strong>", re.S)
-_TEAM_LINK = re.compile(r'href="(https://kasipall\.ee/team/\d+/\d+)"')
+_SCORE = re.compile(r'id="calendar_score_text_\d+"[^>]*>\s*([^<]*?)\s*</strong>')  # mängitud: "24 : 33"
+_TEAM_LINK =re.compile(r'href="(https://kasipall\.ee/team/\d+/\d+)"')
 # Võistkonna nime lõpus olev " N" (naised) või " K" (karikas) – liiga nimi ütleb sama
 _SUFFIX = re.compile(r"\s+[NK]$")
 
@@ -60,7 +61,9 @@ def parse_list(page: str) -> list[dict]:
             continue
         seen.add(gid)
         team_link = _TEAM_LINK.search(block)
+        score = _SCORE.search(block)
         games.append({
+            "result": parse_score(score.group(1)) if score else "",
             "home_team_url": team_link.group(1) if team_link else "",
             "id": gid,
             "start": datetime.strptime(f"{d.group(1)} {t.group(1) if t else '00:00'}", "%d.%m.%Y %H:%M"),
@@ -85,6 +88,7 @@ def to_event(g: dict, venue: str, league: str, level: int = 1) -> Event:
     return new_event(
         source=NAME, sport=SPORT, league=league, start=g["start"], home=g["home"], away=g["away"],
         venue=venue, city="", url=f"{BASE}/protocol/{g['id']}", time_tbc=g["time_tbc"], level=level,
+        result=g.get("result", ""),
     )
 
 
