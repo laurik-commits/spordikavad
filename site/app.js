@@ -17,7 +17,6 @@
     var city = get(CITY), level = get(LEVEL);
     var path = "";
     if (level === "2") path += "esiliigad/";
-    if (level === "3") path += "madalamad/";
     if (level === "4") path += "noored/";
     if (level === "5") path += "koondised/";
     if (city && city !== body.dataset.default && document.querySelector('.city a[data-region="' + city + '"]')) {

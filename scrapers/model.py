@@ -14,7 +14,7 @@ LEVELS = {
     1: {"name": "Kõrgliigad", "prefix": "", "title": "Spordimängud", "tier": "kõrgliigade"},
     2: {"name": "Esiliigad", "prefix": "esiliigad/", "title": "Esiliigade mängud", "tier": "esiliigade"},
     3: {"name": "Madalamad liigad", "prefix": "madalamad/", "title": "Madalamate liigade mängud",
-        "tier": "madalamate liigade"},
+        "tier": "madalamate liigade", "hidden": True},  # ajutiselt peidus valikust; lehed ehitatakse edasi
     4: {"name": "Noored", "prefix": "noored/", "title": "Noorte mängud", "tier": "noorteliigade"},
     5: {"name": "Koondised", "prefix": "koondised/", "title": "Koondiste mängud", "tier": "koondiste"},
 }
