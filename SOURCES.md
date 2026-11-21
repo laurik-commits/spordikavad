@@ -62,7 +62,11 @@ MVP-sse sobib 6 ala 7-st (korvpallist ainult Kalev).
   - **Ajakava:** leht „Kalender“ (`?id=1005`) on lähtekoodis **tühi** (sisutabel `class="content"` ilma ridadeta) ja külgriba „Mängukalender“ on samuti tühi. Mänge ei saa lugeda. Mängud on vaid uudistes (nt „ATEA kutsub: Viimsi vs BK Liepaja“, 16.11.2026), mis pole masinloetav ajakava.
   - **Järeldus:** jätta vahele. Kui kalender hiljem täitub, vaata uuesti, ja siis lisa `config.toml` `http.host_delays` alla `"kkviimsi.ee" = 15.0`. Viimsi mängud Kalevi vastu tulevad ka Kalevi lehelt.
   - Kontrollitud käsitsi kopeeritud lähtekoodist, sest seansi võrk oli selle saidi jaoks blokeeritud.
-- **Pärnu (bcparnu.ee):** veel kontrollimata.
+- **Pärnu (bcparnu.ee), kontrollitud 2026-11-21: adapterit ei tee.**
+  - **robots.txt:** `User-agent: *` / `Allow: /` (ka Googlebot, Bingbot jt eraldi lubatud), crawl-delay'd pole. Kogumine on lubatud.
+  - **Ajakava:** avaleht on JavaScripti rakendus (Vite, `<div id="root"></div>` ja `/assets/index-….js`), mängud joonistatakse brauseris. Staatilises HTML-is mänge pole, seega praegune meetod (serveri HTML) ei tööta. Võimalik oleks lugeda rakenduse enda andmepäringut (JSON), aga seda pole uuritud ega kinnitatud, et selle kasutamine on lubatud.
+  - **Järeldus:** jätta vahele. Vaata uuesti, kui leht saab serveris renderdatud ajakava või avaliku andmevoo. Pärnu mängud Kalevi vastu tulevad Kalevi lehelt.
+  - Kontrollitud käsitsi kopeeritud lähtekoodist, sest seansi võrk oli selle saidi jaoks blokeeritud.
 - **Tartu (basket.ut.ee):** veel kontrollimata.
 
 ## Jäähoki: Optibet Hokiliiga
@@ -179,6 +183,6 @@ Iga allika kohta üks mäng lehel olevatest andmetest, võrreldud allika enda m�
 
 ## Hilisemaks (teine samm)
 
-- Korvpall: kui liit kunagi avaldab avaliku voo või robots.txt muutub, vaatame uuesti. Viimsi kalender on tühi (vt Korvpall), Pärnu ja Tartu klubilehed on kontrollimata.
+- Korvpall: kui liit kunagi avaldab avaliku voo või robots.txt muutub, vaatame uuesti. Viimsi kalender on tühi ja Pärnu leht on JavaScripti rakendus (vt Korvpall), Tartu klubileht on kontrollimata.
 - Võrkpall: Eesti meistriliiga playoffid (`evf-web.dataproject.com`).
 - Esiliigad ja naiste liigad: jalgpall.ee, kasipall.ee ja saalihoki.ee kasutavad kõigi liigade jaoks sama süsteemi, seega piisab uuest liiga ID-st.
