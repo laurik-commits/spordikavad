@@ -242,11 +242,14 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
     sports_at = {1: [r["key"] for r in cov if r["top"] and r["key"] not in external],
                  2: [r["key"] for r in cov if r["low"] and r["key"] not in external],
                  3: [r["key"] for r in cov if r["minor"] and r["key"] not in external],
-                 4: [r["key"] for r in cov if r["youth"] and r["key"] not in external]}
+                 4: [r["key"] for r in cov if r["youth"] and r["key"] not in external],
+                 5: [r["key"] for r in cov if r["national"] and r["key"] not in external]}
 
     def offseason_note(sport: str) -> str:
         """Kui ala ükski allikas pole hooajas: "Jalgpalli hooaeg algab märtsis." """
-        srcs = [s for s in cfg.get("source", []) if s.get("enabled", True) and s["sport"] == sport]
+        # terve aasta allikad (koondised) ei ütle midagi liigahooaja kohta
+        srcs = [s for s in cfg.get("source", [])
+                if s.get("enabled", True) and s["sport"] == sport and not s.get("year_round")]
         if not srcs or any(cfgmod.in_season(s, today) for s in srcs):
             return ""
         starts = sorted(int(start[-5:-3]) for s in srcs for start, _ in s.get("seasons", []))
@@ -379,16 +382,16 @@ SOURCE_SITES = {
 
 
 def coverage(cfg: dict) -> list[dict]:
-    """„Mis siin on?“ lehe tabel: ala, kõrgliigad (top), esiliigad (low), madalamad liigad (minor), noored (youth), allikas."""
+    """„Mis siin on?“ lehe tabel: ala, kõrgliigad (top), esiliigad (low), madalamad liigad (minor), noored (youth), koondised (national), allikas."""
     from scrapers import saalihoki_meistriliiga as floorball
 
-    column = {1: "top", 2: "low", 3: "minor", 4: "youth"}
+    column = {1: "top", 2: "low", 3: "minor", 4: "youth", 5: "national"}
     rows: dict[str, dict] = {}
     for src in cfg.get("source", []):
         if not src.get("enabled", True):
             continue
         sport = src["sport"]
-        row = rows.setdefault(sport, {"key": sport, "sport": SPORTS[sport], "top": [], "low": [], "minor": [], "youth": [],
+        row = rows.setdefault(sport, {"key": sport, "sport": SPORTS[sport], "top": [], "low": [], "minor": [], "youth": [], "national": [],
                                       "source": SOURCE_SITES.get(sport, ("", ""))})
         if src.get("competitions"):
             for c in src["competitions"]:
