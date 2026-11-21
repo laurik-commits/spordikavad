@@ -14,7 +14,7 @@ import html
 import re
 from datetime import date, datetime
 
-from .model import TALLINN, Event, new_event
+from .model import TALLINN, Event, new_event, parse_score
 
 NAME = "jalgpall_ejl"
 SPORT = "jalgpall"
@@ -29,6 +29,7 @@ _BLOCK = re.compile(r'<div class="event-single" data-field="([^"]*)"')
 _WHEN = re.compile(r'<p class="title">\s*(\d{2}\.\d{2}\.\d{4})(?:\s+(\d{1,2}:\d{2}))?\s*</p>')
 _TEAM = re.compile(r'<div class="team">\s*<p>\s*<a\s[^>]*>\s*([^<]+?)\s*</a>')
 _INFO = re.compile(r'href="(/voistlused/match_info/\d+)"')
+_RESULT = re.compile(r'<div class="result">(.*?)</div>', re.S)  # mängimata mängul "-", mängitul "3 - 0"
 
 
 def parse(page: str, league: str, *, sport: str = SPORT, source: str = NAME, team_prefix: str = "",
@@ -47,13 +48,15 @@ def parse(page: str, league: str, *, sport: str = SPORT, source: str = NAME, tea
         if not when or len(teams) < 2 or not info:
             continue
         time = when.group(2)
+        res = _RESULT.search(block)
+        score = parse_score(re.sub(r"<[^>]+>", " ", res.group(1))) if res else ""
         events.append(
             new_event(
                 source=source, sport=sport, league=league,
                 start=datetime.strptime(f"{when.group(1)} {time or '00:00'}", "%d.%m.%Y %H:%M"),
                 home=team(teams[0]), away=team(teams[1]),
                 venue=html.unescape(field).strip(), city="", url=BASE + info.group(1), time_tbc=not time,
-                level=level,
+                level=level, result=score,
             )
         )
     return events

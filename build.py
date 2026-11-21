@@ -21,6 +21,7 @@ from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
+import archive
 from scrapers import config as cfgmod
 from scrapers.geo import Geo, Region
 from scrapers.http import Fetcher
@@ -118,7 +119,7 @@ def only_estonia(events: list[Event], venues: Venues, geo: Geo, today: date | No
 
 
 def collect(cfg: dict, venues: Venues, fetcher: Fetcher | None, today: date,
-            geo: Geo | None = None) -> tuple[list[Event], list[dict]]:
+            geo: Geo | None = None, archive_root: Path | None = None) -> tuple[list[Event], list[dict]]:
     """Tagastab kõik Eesti mängud ja aruande iga allika kohta.
 
     Ühe allika viga ei peata ehitust: siis kasutatakse selle allika viimaseid salvestatud andmeid.
@@ -160,6 +161,11 @@ def collect(cfg: dict, venues: Venues, fetcher: Fetcher | None, today: date,
                                               + ", ".join(missing) + ". Kas liiga ID on muutunud?")
                         events = only_estonia(fetched, venues, geo, today, entry)
                         save(name, events)
+                        try:
+                            archive.update(name, events, today, complete=entry["status"] == "ok",
+                                           root=archive_root or archive.ARCHIVE)
+                        except Exception:  # noqa: BLE001 - arhiivi viga ei tohi lehe ehitust takistada
+                            log.exception("%s: arhiveerimine ebaõnnestus", name)
                 except Exception as exc:  # noqa: BLE001 - ükski adapter ei tohi ehitust katki teha
                     entry["status"] = "failed"
                     entry["error"] = f"{type(exc).__name__}: {exc}"
