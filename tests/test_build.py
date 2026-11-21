@@ -210,6 +210,36 @@ class RenderTest(unittest.TestCase):
         self.assertIn('indexOf("/sk/")', page)
         self.assertIn("noindex", page)
 
+    def test_old_days_are_kept_for_two_weeks(self):
+        self.assertTrue((self.tmp / "2026-11-06" / "index.html").exists())   # 14 päeva tagasi
+        self.assertFalse((self.tmp / "2026-11-05").exists())
+        self.assertIn('rel="prev"', self.read("2026-11-20/index.html"))  # tänasel on nüüd eelmine päev
+        self.assertIn('<li><a href="2026-11-19/" class="empty past"', self.read("index.html"))  # ribal hallilt
+
+    def test_old_day_page_shows_result_and_stats_link(self):
+        events = [new_event(source="t", sport="jaahoki", league="Liiga", start=datetime(2026, 11, 14, 18, 0),
+                            home="Kodu", away="Võõras", venue="Haabersti jäähall", city="Tallinn",
+                            url="https://example.org/mang", result="3-1"),
+                  new_event(source="t", sport="jaahoki", league="Liiga", start=datetime(2026, 11, 14, 20, 0),
+                            home="Teine", away="Kolmas", venue="Haabersti jäähall", city="Tallinn",
+                            url="https://example.org/mang2")]
+        out = Path(tempfile.mkdtemp())
+        cfg = {"site": {"days_ahead": 3, "base_url": "https://example.org/sk/"}, "geo": config.load()["geo"],
+               "source": config.load()["source"]}
+        build.render(events, cfg, date(2026, 11, 20), out)
+        page = (out / "2026-11-14" / "index.html").read_text(encoding="utf-8")
+        self.assertIn('<meta name="robots" content="noindex">', page)
+        self.assertIn("Möödunud päev", page)
+        self.assertIn('<b class="score" title="Tulemus">3:1</b>', page)
+        self.assertIn("Statistika ↗", page)   # tulemusega mäng
+        self.assertIn("Seis ↗", page)          # tulemuseta mäng: viide allika lehele
+        self.assertIn('href="https://example.org/mang"', page)
+        self.assertNotIn("noindex", (out / "2026-11-21" / "index.html").read_text(encoding="utf-8"))
+        # vanu päevi ei pakuta otsingumootoritele, valikute numbrid loevad ainult tulevasi mänge
+        self.assertNotIn("2026-11-14", (out / "sitemap.xml").read_text(encoding="utf-8"))
+        self.assertNotIn("Statistika", (out / "index.html").read_text(encoding="utf-8"))
+        self.assertIn('<span class="n">–</span>', (out / "index.html").read_text(encoding="utf-8"))
+
     def test_info_page_lists_coverage_and_update_time(self):
         info = self.read("info/index.html")
         self.assertIn("Mis siin on?", info)

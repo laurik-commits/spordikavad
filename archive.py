@@ -46,6 +46,30 @@ def _write(path: Path, data: dict) -> None:
     path.write_text(text, encoding="utf-8")
 
 
+def past_events(today: date, days: int, *, root: Path = ARCHIVE) -> list[Event]:
+    """Möödunud `days` päeva mängud arhiivist (lehel nähtavad vanad päevad).
+
+    Jäetakse välja mängud, mis allikast kadusid enne algust (`missing_since`): need jäid ära või
+    lükati teisele päevale, seega neid ei saa "toimunuks" pidada. Vigane fail jäetakse vahele."""
+    first = today.toordinal() - days
+    out: list[Event] = []
+    for year in range(date.fromordinal(first).year, today.year + 1):
+        if not (root / str(year)).is_dir():
+            continue
+        for path in sorted((root / str(year)).glob("*.json")):
+            try:
+                data = _load(path)
+            except ValueError:
+                continue
+            for rec in data.values():
+                if rec.get("missing_since"):
+                    continue
+                d = date.fromisoformat(rec["event"]["start"][:10])
+                if first <= d.toordinal() < today.toordinal():
+                    out.append(Event.from_dict(rec["event"]))
+    return out
+
+
 def update(source: str, events: list[Event], today: date, *, complete: bool = True,
            root: Path = ARCHIVE) -> int:
     """Lisab arhiivi uued mängud, märgib muutused. Tagastab muudetud kirjete arvu.

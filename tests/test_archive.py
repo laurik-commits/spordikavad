@@ -71,6 +71,24 @@ class ArchiveTest(unittest.TestCase):
         archive.update("s", [g], date(2026, 11, 22), root=self.root)
         self.assertNotIn("missing_since", self.read()[g.id])
 
+    def test_past_events_for_last_days_only_and_without_vanished(self):
+        today = date(2026, 11, 20)
+        recent = game(datetime(2026, 11, 15, 18, tzinfo=TALLINN), home="Hiljuti")
+        old = game(datetime(2026, 11, 1, 18, tzinfo=TALLINN), home="Vana")
+        future = game(datetime(2026, 11, 25, 18, tzinfo=TALLINN), home="Tulevane")
+        gone = game(datetime(2026, 11, 16, 18, tzinfo=TALLINN), home="Kadunud")
+        archive.update("s", [recent, old, future, gone], date(2026, 10, 1), root=self.root)
+        archive.update("s", [recent, old, future], date(2026, 11, 10), root=self.root)  # "Kadunud" puudub allikast
+        names = {e.home for e in archive.past_events(today, 14, root=self.root)}
+        self.assertEqual(names, {"Hiljuti"})  # Vana on üle 14 päeva, Tulevane pole möödas, Kadunud jäi ära
+
+    def test_past_events_ignores_missing_folder_and_corrupt_file(self):
+        self.assertEqual(archive.past_events(date(2026, 11, 20), 14, root=self.root / "puudub"), [])
+        path = self.root / "2026" / "x.json"
+        path.parent.mkdir(parents=True)
+        path.write_text("{ rikutud", encoding="utf-8")
+        self.assertEqual(archive.past_events(date(2026, 11, 20), 14, root=self.root), [])
+
     def test_partial_fetch_does_not_mark_missing(self):
         g = game(self.start)
         archive.update("s", [g], self.d1, root=self.root)
