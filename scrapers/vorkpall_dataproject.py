@@ -42,6 +42,19 @@ def _field(block: str, suffix: str) -> str:
     return html.unescape(re.sub(r"<[^>]+>", "", m.group(1))).strip()
 
 
+def _hidden(block: str, suffix: str) -> str:
+    m = re.search(r'RADLIST_Matches_ctrl\d+_' + suffix + r'"[^>]*\svalue="([^"]*)"', block)
+    return m.group(1).strip() if m else ""
+
+
+def _result(block: str) -> str:
+    """Võidetud setid "kodu-võõras" (nt "3-1"). Mängimata mängul on mõlemad 0 või puuduvad: tulemus tühi."""
+    home, guest = _hidden(block, "HF_WonSetHome"), _hidden(block, "HF_WonSetGuest")
+    if home.isdigit() and guest.isdigit() and int(home) + int(guest) > 0:
+        return f"{int(home)}-{int(guest)}"
+    return ""
+
+
 def parse(page: str, comp: dict) -> list[Event]:
     starts = [m.start() for m in _ROW_START.finditer(page)] + [len(page)]
     events: list[Event] = []
@@ -61,7 +74,7 @@ def parse(page: str, comp: dict) -> list[Event]:
                 source=NAME, sport=SPORT, league=comp["league"], start=start, home=home, away=away,
                 venue=_field(block, "LB_Palasport"), city="",
                 url=f"{base_url(comp)}MatchStatistics.aspx?mID={mid.group(1)}&{comp_query(comp)}",
-                time_tbc=dm.group(2) is None, level=comp.get("level", 1),
+                time_tbc=dm.group(2) is None, level=comp.get("level", 1), result=_result(block),
             )
         )
     return events
