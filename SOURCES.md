@@ -55,14 +55,15 @@ MVP-sse sobib 6 ala 7-st (korvpallist ainult Kalev).
 - **Eripärad:** ainult Kalevi mängud. Eesti-Läti liigas on ka teisi mänge, neid siit ei saa. FIBA Europe Cup on `check = false` (pikad pausid). Võistluse nimi tuleb tabeli veerust.
 - **Fixture:** `tests/fixtures/korvpall_kalev.html` on lehe lähtekoodist (2026-11-21) lühendatud tabel, logopildid on välja jäetud.
 
-### Teised klubid: veel kontrollimata
+### Teised klubid
 
-Klubilehti pole veel vaadatud (robots.txt ja ajakava). Vaata, kas nende lehed lubavad kogumist:
-- **Viimsi:** https://kkviimsi.ee/?id=1005
-- **Pärnu:** https://bcparnu.ee
-- **Tartu:** https://basket.ut.ee
-
-Need on vaja kontrollida enne adapterit. Märkus 2026-11-21: seanss ei pääsenud neile lehtedele (keskkonna võrgupoliitika), seega tulemust siin veel pole.
+- **Viimsi (kkviimsi.ee/?id=1005), kontrollitud 2026-11-21: adapterit ei tee.**
+  - **robots.txt:** `User-agent: *`, keelatud ainult `/cache/noindex/`, **`Crawl-delay: 15`**. Kogumine on lubatud, päringute vahel peaks olema vähemalt 15 s.
+  - **Ajakava:** leht „Kalender“ (`?id=1005`) on lähtekoodis **tühi** (sisutabel `class="content"` ilma ridadeta) ja külgriba „Mängukalender“ on samuti tühi. Mänge ei saa lugeda. Mängud on vaid uudistes (nt „ATEA kutsub: Viimsi vs BK Liepaja“, 16.11.2026), mis pole masinloetav ajakava.
+  - **Järeldus:** jätta vahele. Kui kalender hiljem täitub, vaata uuesti, ja siis lisa `config.toml` `http.host_delays` alla `"kkviimsi.ee" = 15.0`. Viimsi mängud Kalevi vastu tulevad ka Kalevi lehelt.
+  - Kontrollitud käsitsi kopeeritud lähtekoodist, sest seansi võrk oli selle saidi jaoks blokeeritud.
+- **Pärnu (bcparnu.ee):** veel kontrollimata.
+- **Tartu (basket.ut.ee):** veel kontrollimata.
 
 ## Jäähoki: Optibet Hokiliiga
 
@@ -178,6 +179,6 @@ Iga allika kohta üks mäng lehel olevatest andmetest, võrreldud allika enda m�
 
 ## Hilisemaks (teine samm)
 
-- Korvpall: kui liit kunagi avaldab avaliku voo või robots.txt muutub, vaatame uuesti. Teiste klubide (Viimsi, Pärnu, Tartu) lehed on kontrollimata.
+- Korvpall: kui liit kunagi avaldab avaliku voo või robots.txt muutub, vaatame uuesti. Viimsi kalender on tühi (vt Korvpall), Pärnu ja Tartu klubilehed on kontrollimata.
 - Võrkpall: Eesti meistriliiga playoffid (`evf-web.dataproject.com`).
 - Esiliigad ja naiste liigad: jalgpall.ee, kasipall.ee ja saalihoki.ee kasutavad kõigi liigade jaoks sama süsteemi, seega piisab uuest liiga ID-st.
