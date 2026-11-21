@@ -9,10 +9,12 @@ from zoneinfo import ZoneInfo
 
 TALLINN = ZoneInfo("Europe/Tallinn")
 
-# tase → (nimi valikus, kaust, pealkirja algus)
+# tase → nimi valikus, kaust, pealkirja algus, omastav vorm ("tier": "kõrgliigade mänge pole")
 LEVELS = {
-    1: {"name": "Kõrgliigad", "prefix": "", "title": "Spordimängud"},
-    2: {"name": "Esiliigad", "prefix": "esiliigad/", "title": "Esiliigade mängud"},
+    1: {"name": "Kõrgliigad", "prefix": "", "title": "Spordimängud", "tier": "kõrgliigade"},
+    2: {"name": "Esiliigad", "prefix": "esiliigad/", "title": "Esiliigade mängud", "tier": "esiliigade"},
+    3: {"name": "Madalamad liigad", "prefix": "madalamad/", "title": "Madalamate liigade mängud",
+        "tier": "madalamate liigade"},
 }
 
 SPORTS = {
@@ -39,7 +41,7 @@ class Event:
     url: str  # link allika mängulehele (või liiga kalendrile)
     source: str  # adapteri nimi
     time_tbc: bool = False  # True, kui kellaaeg pole veel kinnitatud
-    level: int = 1  # 1 = kõrgliiga, 2 = esiliiga (eraldi kalender)
+    level: int = 1  # 1 = kõrgliiga, 2 = esiliiga, 3 = madalamad liigad (igaühel eraldi kalender)
 
     def __post_init__(self) -> None:
         if self.sport not in SPORTS:

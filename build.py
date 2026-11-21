@@ -240,7 +240,8 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
     # millised alad on igal tasemel olemas (filtrinupud on alati nähtaval, ka siis kui mänge pole)
     cov = coverage(cfg)
     sports_at = {1: [r["key"] for r in cov if r["top"] and r["key"] not in external],
-                 2: [r["key"] for r in cov if r["low"] and r["key"] not in external]}
+                 2: [r["key"] for r in cov if r["low"] and r["key"] not in external],
+                 3: [r["key"] for r in cov if r["minor"] and r["key"] not in external]}
 
     def offseason_note(sport: str) -> str:
         """Kui ala ükski allikas pole hooajas: "Jalgpalli hooaeg algab märtsis." """
@@ -291,7 +292,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
         for r in regions:
             by_day = region_days[r.slug]
             present = {e.sport for lst in by_day.values() for e in lst}
-            tier_word = "kõrgliigade" if level == 1 else "esiliigade"
+            tier_word = lv["tier"]
             filters = []
             for s in sports_at[level]:
                 if s in present:
@@ -377,22 +378,23 @@ SOURCE_SITES = {
 
 
 def coverage(cfg: dict) -> list[dict]:
-    """„Mis siin on?“ lehe tabel: ala, kõrgliigad, esiliigad, allikas."""
+    """„Mis siin on?“ lehe tabel: ala, kõrgliigad (top), esiliigad (low), madalamad liigad (minor), allikas."""
     from scrapers import saalihoki_meistriliiga as floorball
 
+    column = {1: "top", 2: "low", 3: "minor"}
     rows: dict[str, dict] = {}
     for src in cfg.get("source", []):
         if not src.get("enabled", True):
             continue
         sport = src["sport"]
-        row = rows.setdefault(sport, {"key": sport, "sport": SPORTS[sport], "top": [], "low": [],
+        row = rows.setdefault(sport, {"key": sport, "sport": SPORTS[sport], "top": [], "low": [], "minor": [],
                                       "source": SOURCE_SITES.get(sport, ("", ""))})
         if src.get("competitions"):
             for c in src["competitions"]:
-                (row["low"] if c.get("level", 1) == 2 else row["top"]).append(c["league"])
+                row[column[c.get("level", 1)]].append(c["league"])
         elif sport == "saalihoki":
             for league, level in floorball.LEAGUES.values():
-                (row["low"] if level == 2 else row["top"]).append(league)
+                row[column[level]].append(league)
         else:
             row["top"].append(src.get("league", ""))
     return [rows[s] for s in SPORTS if s in rows]

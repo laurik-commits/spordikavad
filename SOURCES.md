@@ -173,6 +173,21 @@ Omaniku valik: iga ala teine tase (mehed ja naised), samades süsteemides mis k�
 
 Lisapäringuid on umbes 6 päevas (pluss käsipalli protokollid). Lisandus ~38 uut saali/väljakut, sh NET Spordihall (Tartu, omaniku kinnitus).
 
+## Madalamad liigad (eraldi kalender „Madalamad liigad“, `level = 3`, lisatud 2026-11-21)
+
+Omaniku valik: madalamad liigad on esiliigadest eraldi tase (`/madalamad/…`), et tugevad liigad ei sulaks kokku väikeste liigadega.
+
+| Ala | Liigad | Allikas |
+|---|---|---|
+| Jalgpall | II liiga, II liiga B (Põhi/Lääne ja Lõuna/Ida), III liiga (Põhi/Lääs, Põhi/Ida, Lõuna/Ida), IV liiga (Põhi/Ida, Põhi/Lääs) | jalgpall.ee 536, 537, 538, 549, 548, 550, 267, 268 |
+
+- **Allikas:** sama adapter ja sama kalendrileht mis kõrgliigadel (`/voistlused/<id>/liigad/calendar?season=<aasta>`), seega koodimuudatust adapterisse ei vaja. robots.txt: `User-agent: *` keelab ainult `/errors/`, otsingu ja staadionite loaderid, `/voistlused/` on lubatud, Crawl-Delay 5 (juba `host_delays` all).
+- **Kontrollitud 2026-11-21:** kõik 8 liigat andsid 2026. aasta mänge (kokku 1056, märts–november), kõik saalid läbivad Eesti filtri.
+- **Hooaeg 2026 on lõppenud** (viimane mäng 07.11), uued mängud tulevad märtsist 2027. Seetõttu pole lehel enne seda madalamaid mänge näha.
+- **Liiga ID-d ja nimed:** ID-d on püsivad, aga alamlehe nimekirjas on ka „võitja“ ja ülemineku turniirid (281, 559, 180, 181, 560), mida ei kogu. Piirkondade jaotus võib hooajaga muutuda, siis märgib `check` (hooaja sees 42 päeva 0 mängu) probleemi.
+- **Uued saalid (43, `venues.toml`):** linn on tuletatud saali nimest või kodumeeskonnast (jalgpall.ee staadionite nimekiri ei ole serveris renderdatud). Kontrollimata: **Oru Põhikooli staadion** (FC Kose kodu, arvatud Kose), **Kotka staadion** (Tallinna meeskonnad, arvatud Tallinn), **Soe keskasula staadion** (Tõrva JK, arvatud Tõrva), **Rõuge** ja **Vastseliina** (märgitud „Võru vald“). Kui linn on vale, paranda `venues.toml`.
+- **Jäetud välja:** noorteliigad (vt allpool, tehakse eraldi), naiste madalamad liigad, saalijalgpalli madalamad liigad.
+
 ## Pistekontroll 2026-11-20
 
 Iga allika kohta üks mäng lehel olevatest andmetest, võrreldud allika enda mängulehega:
