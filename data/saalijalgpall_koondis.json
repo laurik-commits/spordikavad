@@ -1,0 +1,33 @@
+{
+ "updated": "2026-11-21T14:59:29+02:00",
+ "events": [
+  {
+   "id": "d6d86c0dbbe8",
+   "sport": "saalijalgpall",
+   "league": "Saalijalgpalli koondis: Saalijalgpalli MM-valikturniir 2026/27",
+   "start": "2026-10-20T19:00:00+03:00",
+   "home": "Eesti",
+   "away": "Ukraina",
+   "venue": "Rakvere Spordikeskus",
+   "city": "Rakvere",
+   "url": "https://jalgpall.ee/koondis/14/matchinfo/match/3987",
+   "source": "saalijalgpall_koondis",
+   "time_tbc": false,
+   "level": 5
+  },
+  {
+   "id": "330efa3d0833",
+   "sport": "saalijalgpall",
+   "league": "Saalijalgpalli koondis: Saalijalgpalli MM-valikturniir 2026/27",
+   "start": "2026-12-09T19:00:00+02:00",
+   "home": "Eesti",
+   "away": "Slovakkia",
+   "venue": "Jõhvi Spordihall",
+   "city": "Jõhvi",
+   "url": "https://jalgpall.ee/koondis/14/matchinfo/match/3989",
+   "source": "saalijalgpall_koondis",
+   "time_tbc": false,
+   "level": 5
+  }
+ ]
+}
