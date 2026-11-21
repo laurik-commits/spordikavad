@@ -12,7 +12,7 @@ import html
 import re
 from datetime import datetime
 
-from .model import Event, new_event
+from .model import Event, new_event, parse_score
 
 NAME = "jaahoki_optibet"
 SPORT = "jaahoki"
@@ -26,6 +26,9 @@ _TEAM = re.compile(
 )
 _VENUE = re.compile(r'<td class="ta-l desktop" data-order="([^"]*)"')
 _WHEN = re.compile(r'<td class="desktop" data-order="(\d{14})"')
+# tulemuse lahter on enne tegevusnuppude lahtrit: "5:2", pikendusega "4:5 OT", karistusviskedega "2:3 SO"; mängimata: tühi
+_SCORE = re.compile(r'<td>\s*([^<]*?)\s*</td>\s*<td class="ta-r">')
+_OVERTIME = re.compile(r"\b(OT|SO)\b")
 _LINK = re.compile(r'href="(/en/tournaments/[^"]+/schedule/[^"]+)"')
 
 
@@ -40,6 +43,10 @@ def parse(page: str) -> list[Event]:
         stamp = when.group(1)
         tbc = stamp.endswith("000000") and "TBA" in row
         venue = _VENUE.search(row)
+        cell = _SCORE.search(row)
+        result = parse_score(cell.group(1)) if cell else ""
+        if result and (ot := _OVERTIME.search(cell.group(1))):
+            result += f" {ot.group(1)}"
         events.append(
             new_event(
                 source=NAME,
@@ -52,6 +59,7 @@ def parse(page: str) -> list[Event]:
                 city="",
                 url=BASE + html.unescape(link.group(1)),
                 time_tbc=tbc,
+                result=result,
             )
         )
     return events

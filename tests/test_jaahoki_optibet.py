@@ -26,6 +26,14 @@ class JaahokiOptibetTest(unittest.TestCase):
         self.assertFalse(e.time_tbc)
         self.assertTrue(e.url.startswith("https://www.lhf.lv/en/tournaments/"))
 
+    def test_results(self):
+        by_start = {e.start: e for e in self.events}
+        self.assertEqual(by_start[datetime(2026, 11, 1, 14, 5, tzinfo=TALLINN)].result, "5-2")
+        self.assertEqual(by_start[datetime(2026, 11, 11, 19, 0, tzinfo=TALLINN)].result, "2-3 SO")
+        self.assertEqual(by_start[datetime(2026, 11, 14, 18, 0, tzinfo=TALLINN)].result, "4-5 OT")
+        self.assertEqual(sum(1 for e in self.events if e.result), 10)
+        self.assertEqual(by_start[datetime(2026, 11, 21, 16, 0, tzinfo=TALLINN)].result, "")
+
     def test_tba_times(self):
         tbc = [e for e in self.events if e.time_tbc]
         self.assertEqual(len(tbc), 3)
