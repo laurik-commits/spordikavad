@@ -65,7 +65,9 @@ MVP-sse sobib 6 ala 7-st (korvpallist ainult Kalev).
 - **Pärnu (bcparnu.ee), kontrollitud 2026-11-21: adapterit ei tee.**
   - **robots.txt:** `User-agent: *` / `Allow: /` (ka Googlebot, Bingbot jt eraldi lubatud), crawl-delay'd pole. Kogumine on lubatud.
   - **Ajakava:** avaleht on JavaScripti rakendus (Vite, `<div id="root"></div>` ja `/assets/index-….js`), mängud joonistatakse brauseris. Staatilises HTML-is mänge pole, seega praegune meetod (serveri HTML) ei tööta. Võimalik oleks lugeda rakenduse enda andmepäringut (JSON), aga seda pole uuritud ega kinnitatud, et selle kasutamine on lubatud.
-  - **Järeldus:** jätta vahele. Vaata uuesti, kui leht saab serveris renderdatud ajakava või avaliku andmevoo. Pärnu mängud Kalevi vastu tulevad Kalevi lehelt.
+  - **Kalendrinupp:** leht pakub „Lae kõik mängud kalendrisse“ iCal-faili (5 lähimat mängu), aga see tekitatakse brauseris (`blob:` aadress). Serveris voogu pole, seega adapter ei saa seda alla laadida.
+  - **Andmeallikas:** omaniku hinnangul laeb rakendus mängud basket.ee-st (liit). Kui nii, siis on see sama allikas, mille robots.txt robotitele keelab (`Disallow: /`). Rakenduse enda andmepäringut seetõttu **ei kasutata**, see oleks liidu keelu kõrvalehoidmine.
+  - **Järeldus:** jätta vahele. Vaata uuesti, kui klubi avaldab serveris renderdatud ajakava või avaliku andmevoo, või kui liit annab loa (vt README „Tulevikuideed“). Pärnu mängud Kalevi vastu tulevad Kalevi lehelt.
   - Kontrollitud käsitsi kopeeritud lähtekoodist, sest seansi võrk oli selle saidi jaoks blokeeritud.
 - **Tartu (basket.ut.ee):** veel kontrollimata.
 
