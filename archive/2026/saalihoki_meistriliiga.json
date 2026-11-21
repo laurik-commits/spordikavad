@@ -1,0 +1,287 @@
+{
+ "07db83741717": {
+  "changes": [],
+  "event": {
+   "away": "FK Talsi/TNSS/Krauzers",
+   "city": "Ääsmäe",
+   "home": "Sparta Team Automaailm",
+   "id": "07db83741717",
+   "league": "Eesti-Läti liiga (mehed)",
+   "level": 1,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2026-12-29T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8738",
+   "venue": "Ääsmäe spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "099eacc5231f": {
+  "changes": [],
+  "event": {
+   "away": "Lekrings/CPSS",
+   "city": "Tallinn",
+   "home": "Sparta",
+   "id": "099eacc5231f",
+   "league": "Eesti-Läti liiga (naised)",
+   "level": 1,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2026-12-19T14:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8701",
+   "venue": "Õismäe sportmängude hall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "0aceb93ddb47": {
+  "changes": [],
+  "event": {
+   "away": "Rubene",
+   "city": "Tallinn",
+   "home": "Sparta",
+   "id": "0aceb93ddb47",
+   "league": "Eesti-Läti liiga (naised)",
+   "level": 1,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2026-12-12T14:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8700",
+   "venue": "Õismäe sportmängude hall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "0dc913477c47": {
+  "changes": [],
+  "event": {
+   "away": "Arenculle",
+   "city": "Tapa",
+   "home": "EMÜ SK II",
+   "id": "0dc913477c47",
+   "league": "Energialiiga",
+   "level": 2,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2026-11-28T13:45:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8629",
+   "venue": "Tapa spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "1d0bb2338db1": {
+  "changes": [],
+  "event": {
+   "away": "Masters Ulbroka/LU",
+   "city": "Jõgeva",
+   "home": "Jõgeva SK Tähe/Olivia",
+   "id": "1d0bb2338db1",
+   "league": "Eesti-Läti liiga (mehed)",
+   "level": 1,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2026-11-28T18:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8733",
+   "venue": "Jõgeva spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "61586e1d78af": {
+  "changes": [],
+  "event": {
+   "away": "Lekrings/CPSS",
+   "city": "Tallinn",
+   "home": "Sparta",
+   "id": "61586e1d78af",
+   "league": "Eesti-Läti liiga (naised)",
+   "level": 1,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2026-12-20T14:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8702",
+   "venue": "Õismäe sportmängude hall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "813e606ff709": {
+  "changes": [],
+  "event": {
+   "away": "FBK SĀC",
+   "city": "Jõgeva",
+   "home": "Jõgeva SK Tähe/Olivia",
+   "id": "813e606ff709",
+   "league": "Eesti-Läti liiga (mehed)",
+   "level": 1,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2026-11-29T15:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8735",
+   "venue": "Jõgeva spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "83aa32c93992": {
+  "changes": [],
+  "event": {
+   "away": "Kuusalu Eluterve Naine",
+   "city": "Tapa",
+   "home": "SK Voore",
+   "id": "83aa32c93992",
+   "league": "Energialiiga",
+   "level": 2,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2026-11-28T16:15:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8631",
+   "venue": "Tapa spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "97596fd76e48": {
+  "changes": [],
+  "event": {
+   "away": "FBK SĀC",
+   "city": "Märjamaa",
+   "home": "Sparta Team Automaailm",
+   "id": "97596fd76e48",
+   "league": "Eesti-Läti liiga (mehed)",
+   "level": 1,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2026-11-28T16:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8734",
+   "venue": "Märjamaa Valla Spordikeskus"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "b15897373df8": {
+  "changes": [],
+  "event": {
+   "away": "Järva- Jaani",
+   "city": "Tapa",
+   "home": "Flash by FF",
+   "id": "b15897373df8",
+   "league": "Energialiiga",
+   "level": 2,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2026-11-28T12:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8628",
+   "venue": "Tapa spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "b38782d2bcf9": {
+  "changes": [],
+  "event": {
+   "away": "NND/RJTC",
+   "city": "Ääsmäe",
+   "home": "Sparta",
+   "id": "b38782d2bcf9",
+   "league": "Eesti-Läti liiga (naised)",
+   "level": 1,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2026-12-05T15:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8698",
+   "venue": "Ääsmäe spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "c1f36b37e2fc": {
+  "changes": [],
+  "event": {
+   "away": "Sparta Team Automaailm II",
+   "city": "Tartu",
+   "home": "Eesti Maaülikool",
+   "id": "c1f36b37e2fc",
+   "league": "Meistriliiga (mehed)",
+   "level": 1,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2026-12-20T16:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8844",
+   "venue": "Eesti Maaülikooli spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "d6c456c48349": {
+  "changes": [],
+  "event": {
+   "away": "Masters Ulbroka/LU",
+   "city": "Märjamaa",
+   "home": "Sparta Team Automaailm",
+   "id": "d6c456c48349",
+   "league": "Eesti-Läti liiga (mehed)",
+   "level": 1,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2026-11-29T14:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8736",
+   "venue": "Märjamaa Valla Spordikeskus"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "f645a788f498": {
+  "changes": [],
+  "event": {
+   "away": "Sparta Team Automaailm II",
+   "city": "Tartu",
+   "home": "Eesti Maaülikool",
+   "id": "f645a788f498",
+   "league": "Meistriliiga (mehed)",
+   "level": 1,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2026-12-11T20:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8843",
+   "venue": "Eesti Maaülikooli spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "fbd1eceb1641": {
+  "changes": [],
+  "event": {
+   "away": "Tahmaküla United",
+   "city": "Tartu",
+   "home": "Eesti Maaülikool",
+   "id": "fbd1eceb1641",
+   "league": "Meistriliiga (mehed)",
+   "level": 1,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2026-11-22T17:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8841",
+   "venue": "Eesti Maaülikooli spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ }
+}

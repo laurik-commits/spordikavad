@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T11:28:36+02:00",
+ "updated": "2026-11-22T00:10:36+02:00",
  "events": [
   {
    "id": "f1d14b7536b3",
@@ -13,6 +13,7 @@
    "url": "https://bckalev.ee/event/keila-kk-vs-bigbank-kalev-2/",
    "source": "korvpall_kalev",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -27,6 +28,7 @@
    "url": "https://bckalev.ee/event/bigbank-kalev-vs-liepaja/",
    "source": "korvpall_kalev",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -41,6 +43,7 @@
    "url": "https://bckalev.ee/event/bigbank-kalev-vs-valmiera-glass-via/",
    "source": "korvpall_kalev",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -55,6 +58,7 @@
    "url": "https://bckalev.ee/event/bigbank-kalev-vs-manchester-basketball-2/",
    "source": "korvpall_kalev",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -69,6 +73,7 @@
    "url": "https://bckalev.ee/event/taltech-alexela-vs-bigbank-kalev/",
    "source": "korvpall_kalev",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -83,6 +88,7 @@
    "url": "https://bckalev.ee/event/bigbank-kalev-vs-elan-chalon/",
    "source": "korvpall_kalev",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -97,6 +103,7 @@
    "url": "https://bckalev.ee/event/bc-parnu-vs-bigbank-kalev/",
    "source": "korvpall_kalev",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -111,6 +118,7 @@
    "url": "https://bckalev.ee/event/keila-basket-vs-bigbank-kalev/",
    "source": "korvpall_kalev",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -125,6 +133,7 @@
    "url": "https://bckalev.ee/event/bigbank-kalev-vs-viimsi/",
    "source": "korvpall_kalev",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -139,6 +148,7 @@
    "url": "https://bckalev.ee/event/bigbank-kalev-vs-keila-kk/",
    "source": "korvpall_kalev",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -153,6 +163,7 @@
    "url": "https://bckalev.ee/event/bigbank-kalev-vs-bk-ogre/",
    "source": "korvpall_kalev",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -167,6 +178,7 @@
    "url": "https://bckalev.ee/event/bigbank-kalev-vs-latvijas-universitate/",
    "source": "korvpall_kalev",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -181,6 +193,7 @@
    "url": "https://bckalev.ee/event/bigbank-kalev-vs-taltech-alexela/",
    "source": "korvpall_kalev",
    "time_tbc": false,
+   "result": "",
    "level": 1
   }
  ]

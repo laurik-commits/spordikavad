@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T05:42:30+02:00",
+ "updated": "2026-11-22T00:10:35+02:00",
  "events": [
   {
    "id": "8c9d3723f8b0",
@@ -13,6 +13,7 @@
    "url": "https://kasipall.ee/protocol/9230",
    "source": "kasipall_liigad",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -27,6 +28,7 @@
    "url": "https://kasipall.ee/protocol/9232",
    "source": "kasipall_liigad",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -41,6 +43,7 @@
    "url": "https://kasipall.ee/protocol/9231",
    "source": "kasipall_liigad",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -55,6 +58,7 @@
    "url": "https://kasipall.ee/protocol/9235",
    "source": "kasipall_liigad",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -69,6 +73,7 @@
    "url": "https://kasipall.ee/protocol/9234",
    "source": "kasipall_liigad",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -83,6 +88,7 @@
    "url": "https://kasipall.ee/protocol/9531",
    "source": "kasipall_liigad",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -97,6 +103,7 @@
    "url": "https://kasipall.ee/protocol/9233",
    "source": "kasipall_liigad",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -111,6 +118,7 @@
    "url": "https://kasipall.ee/protocol/9532",
    "source": "kasipall_liigad",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -125,6 +133,7 @@
    "url": "https://kasipall.ee/protocol/9483",
    "source": "kasipall_liigad",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -139,6 +148,7 @@
    "url": "https://kasipall.ee/protocol/9236",
    "source": "kasipall_liigad",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -153,6 +163,7 @@
    "url": "https://kasipall.ee/protocol/9484",
    "source": "kasipall_liigad",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -167,6 +178,7 @@
    "url": "https://kasipall.ee/protocol/9534",
    "source": "kasipall_liigad",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -181,6 +193,7 @@
    "url": "https://kasipall.ee/protocol/9530",
    "source": "kasipall_liigad",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -195,6 +208,7 @@
    "url": "https://kasipall.ee/protocol/9578",
    "source": "kasipall_liigad",
    "time_tbc": false,
+   "result": "",
    "level": 2
   }
  ]

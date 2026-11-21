@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T14:59:29+02:00",
+ "updated": "2026-11-22T00:12:17+02:00",
  "events": [
   {
    "id": "d6d86c0dbbe8",
@@ -13,6 +13,7 @@
    "url": "https://jalgpall.ee/koondis/14/matchinfo/match/3987",
    "source": "saalijalgpall_koondis",
    "time_tbc": false,
+   "result": "2-9",
    "level": 5
   },
   {
@@ -27,6 +28,7 @@
    "url": "https://jalgpall.ee/koondis/14/matchinfo/match/3989",
    "source": "saalijalgpall_koondis",
    "time_tbc": false,
+   "result": "",
    "level": 5
   }
  ]

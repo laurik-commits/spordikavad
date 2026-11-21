@@ -1,0 +1,78 @@
+{
+ "0ef7825ef4c4": {
+  "changes": [],
+  "event": {
+   "away": "HK MOGO/RSU",
+   "city": "Tallinn",
+   "home": "HC Panter",
+   "id": "0ef7825ef4c4",
+   "league": "Optibet Hokiliiga",
+   "level": 1,
+   "result": "",
+   "source": "jaahoki_optibet",
+   "sport": "jaahoki",
+   "start": "2027-01-23T18:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-hkm/20270123/35922",
+   "venue": "Haabersti jäähall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "cc6230c9d5eb": {
+  "changes": [],
+  "event": {
+   "away": "HK MOGO/RSU",
+   "city": "Tallinn",
+   "home": "HC Panter",
+   "id": "cc6230c9d5eb",
+   "league": "Optibet Hokiliiga",
+   "level": 1,
+   "result": "",
+   "source": "jaahoki_optibet",
+   "sport": "jaahoki",
+   "start": "2027-01-24T14:05:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-hkm/20270124/35925",
+   "venue": "Haabersti jäähall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "f079b0821c7e": {
+  "changes": [],
+  "event": {
+   "away": "HK Zemgale/LBTU",
+   "city": "Tallinn",
+   "home": "HC Panter",
+   "id": "f079b0821c7e",
+   "league": "Optibet Hokiliiga",
+   "level": 1,
+   "result": "",
+   "source": "jaahoki_optibet",
+   "sport": "jaahoki",
+   "start": "2027-01-27T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-zmg/20270127/35927",
+   "venue": "Haabersti jäähall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "fcaa1d2db1ce": {
+  "changes": [],
+  "event": {
+   "away": "HK Prizma/RTU",
+   "city": "Tallinn",
+   "home": "HC Panter",
+   "id": "fcaa1d2db1ce",
+   "league": "Optibet Hokiliiga",
+   "level": 1,
+   "result": "",
+   "source": "jaahoki_optibet",
+   "sport": "jaahoki",
+   "start": "2027-02-13T18:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-pri/20270213/35943",
+   "venue": "Haabersti jäähall"
+  },
+  "first_seen": "2026-11-22"
+ }
+}

@@ -1,0 +1,135 @@
+{
+ "1ebcedb8301e": {
+  "changes": [],
+  "event": {
+   "away": "Manchester Basketball",
+   "city": "Tallinn",
+   "home": "Bigbank/Kalev",
+   "id": "1ebcedb8301e",
+   "league": "FIBA Europe Cup",
+   "level": 1,
+   "result": "",
+   "source": "korvpall_kalev",
+   "sport": "korvpall",
+   "start": "2026-12-15T19:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://bckalev.ee/event/bigbank-kalev-vs-manchester-basketball-2/",
+   "venue": "Kalevi spordihall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "345937ced9e4": {
+  "changes": [],
+  "event": {
+   "away": "Liepaja",
+   "city": "Tallinn",
+   "home": "Bigbank/Kalev",
+   "id": "345937ced9e4",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "",
+   "source": "korvpall_kalev",
+   "sport": "korvpall",
+   "start": "2026-12-05T18:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://bckalev.ee/event/bigbank-kalev-vs-liepaja/",
+   "venue": "Nord Spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "c9926af0d9bf": {
+  "changes": [],
+  "event": {
+   "away": "Valmiera Glass VIA",
+   "city": "Tallinn",
+   "home": "Bigbank/Kalev",
+   "id": "c9926af0d9bf",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "",
+   "source": "korvpall_kalev",
+   "sport": "korvpall",
+   "start": "2026-12-12T18:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://bckalev.ee/event/bigbank-kalev-vs-valmiera-glass-via/",
+   "venue": "Nord Spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "d3fe67ca155f": {
+  "changes": [],
+  "event": {
+   "away": "Elan Chalon",
+   "city": "Tallinn",
+   "home": "Bigbank/Kalev",
+   "id": "d3fe67ca155f",
+   "league": "FIBA Europe Cup",
+   "level": 1,
+   "result": "",
+   "source": "korvpall_kalev",
+   "sport": "korvpall",
+   "start": "2026-12-23T19:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://bckalev.ee/event/bigbank-kalev-vs-elan-chalon/",
+   "venue": "Saku Suurhall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "ee0ced786848": {
+  "changes": [],
+  "event": {
+   "away": "Bigbank/Kalev",
+   "city": "Tallinn",
+   "home": "Taltech/Alexela",
+   "id": "ee0ced786848",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "",
+   "source": "korvpall_kalev",
+   "sport": "korvpall",
+   "start": "2026-12-19T17:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://bckalev.ee/event/taltech-alexela-vs-bigbank-kalev/",
+   "venue": "TalTechi spordihall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "ee9f1fcf1eed": {
+  "changes": [],
+  "event": {
+   "away": "Bigbank/Kalev",
+   "city": "Pärnu",
+   "home": "BC Pärnu",
+   "id": "ee9f1fcf1eed",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "",
+   "source": "korvpall_kalev",
+   "sport": "korvpall",
+   "start": "2026-12-27T17:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://bckalev.ee/event/bc-parnu-vs-bigbank-kalev/",
+   "venue": "Pärnu Spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "f1d14b7536b3": {
+  "changes": [],
+  "event": {
+   "away": "Bigbank/Kalev",
+   "city": "Keila",
+   "home": "Keila KK",
+   "id": "f1d14b7536b3",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "",
+   "source": "korvpall_kalev",
+   "sport": "korvpall",
+   "start": "2026-12-02T19:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://bckalev.ee/event/keila-kk-vs-bigbank-kalev-2/",
+   "venue": "Keila Tervisekeskus"
+  },
+  "first_seen": "2026-11-22"
+ }
+}

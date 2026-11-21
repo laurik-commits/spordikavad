@@ -1,0 +1,97 @@
+{
+ "115a0e189728": {
+  "changes": [],
+  "event": {
+   "away": "HK Zemgale/LBTU",
+   "city": "Tallinn",
+   "home": "HC Panter",
+   "id": "115a0e189728",
+   "league": "Optibet Hokiliiga",
+   "level": 1,
+   "result": "",
+   "source": "jaahoki_optibet",
+   "sport": "jaahoki",
+   "start": "2026-12-16T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-zmg/20261216/35898",
+   "venue": "Haabersti jäähall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "2ca47ec169d5": {
+  "changes": [],
+  "event": {
+   "away": "RĪGAS HS/DINABURGA",
+   "city": "Tallinn",
+   "home": "HC Panter",
+   "id": "2ca47ec169d5",
+   "league": "Optibet Hokiliiga",
+   "level": 1,
+   "result": "",
+   "source": "jaahoki_optibet",
+   "sport": "jaahoki",
+   "start": "2026-11-25T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-rhs/20261125/35884",
+   "venue": "Haabersti jäähall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "6a6527882b18": {
+  "changes": [],
+  "event": {
+   "away": "HC Hockey Punks-Mototoja",
+   "city": "Tallinn",
+   "home": "HC Panter",
+   "id": "6a6527882b18",
+   "league": "Optibet Hokiliiga",
+   "level": 1,
+   "result": "",
+   "source": "jaahoki_optibet",
+   "sport": "jaahoki",
+   "start": "2026-11-01T14:05:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-pun/20261101/35866",
+   "venue": "Haabersti jäähall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "9f6ff1a3820d": {
+  "changes": [],
+  "event": {
+   "away": "HC Kyiv Capitals",
+   "city": "Tallinn",
+   "home": "HC Panter",
+   "id": "9f6ff1a3820d",
+   "league": "Optibet Hokiliiga",
+   "level": 1,
+   "result": "",
+   "source": "jaahoki_optibet",
+   "sport": "jaahoki",
+   "start": "2026-11-21T18:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-kyc/20261121/35876",
+   "venue": "Haabersti jäähall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "b4a05826acdc": {
+  "changes": [],
+  "event": {
+   "away": "HK Prizma/RTU",
+   "city": "Tallinn",
+   "home": "HC Panter",
+   "id": "b4a05826acdc",
+   "league": "Optibet Hokiliiga",
+   "level": 1,
+   "result": "",
+   "source": "jaahoki_optibet",
+   "sport": "jaahoki",
+   "start": "2026-11-14T18:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-pri/20261114/35872",
+   "venue": "Haabersti jäähall"
+  },
+  "first_seen": "2026-11-22"
+ }
+}

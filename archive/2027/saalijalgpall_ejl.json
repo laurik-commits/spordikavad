@@ -1,0 +1,496 @@
+{
+ "0e39cba1e3b9": {
+  "changes": [],
+  "event": {
+   "away": "Saku Sporting",
+   "city": "Pärnu",
+   "home": "Pärnu SJK Hagalaz",
+   "id": "0e39cba1e3b9",
+   "league": "Saalijalgpalli meistriliiga",
+   "level": 1,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-01-16T17:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/196802",
+   "venue": "Pärnu Spordihall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "1b31a9f815b6": {
+  "changes": [],
+  "event": {
+   "away": "Narva United Coolbet",
+   "city": "Tallinn",
+   "home": "Tallinna FC Bunker Partner",
+   "id": "1b31a9f815b6",
+   "league": "Saalijalgpalli meistriliiga",
+   "level": 1,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-01-09T18:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/196803",
+   "venue": "Sõle spordikeskus"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "1f84e9a6a241": {
+  "changes": [],
+  "event": {
+   "away": "Tallinna FC Bunker Partner",
+   "city": "Saku",
+   "home": "Saku Sporting",
+   "id": "1f84e9a6a241",
+   "league": "Saalijalgpalli meistriliiga",
+   "level": 1,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-02-05T19:45:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/196791",
+   "venue": "Saku Gümnaasiumi Spordikompleks"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "27499395cc45": {
+  "changes": [],
+  "event": {
+   "away": "U-18 Jõhvi FC Phoenix",
+   "city": "Valga",
+   "home": "U-18 Valga FC Warrior",
+   "id": "27499395cc45",
+   "league": "U18 saalijalgpalli eliitliiga",
+   "level": 4,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-02-13T14:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/197381",
+   "venue": "Valga Spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "48d3f6edfb49": {
+  "changes": [],
+  "event": {
+   "away": "U-18 Põlva FC Lootos",
+   "city": "Jõhvi",
+   "home": "U-18 Jõhvi FC Phoenix",
+   "id": "48d3f6edfb49",
+   "league": "U18 saalijalgpalli eliitliiga",
+   "level": 4,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-01-17T17:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/197370",
+   "venue": "Jõhvi Spordihall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "571574dffc19": {
+  "changes": [],
+  "event": {
+   "away": "Pärnu SJK Hagalaz",
+   "city": "Tartu",
+   "home": "Tartu Ravens Futsal",
+   "id": "571574dffc19",
+   "league": "Saalijalgpalli meistriliiga",
+   "level": 1,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-01-09T17:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/196804",
+   "venue": "Eesti Maaülikooli spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "5adb45b401d2": {
+  "changes": [],
+  "event": {
+   "away": "Pärnu SJK Hagalaz",
+   "city": "Tallinn",
+   "home": "Tallinna FC Bunker Partner",
+   "id": "5adb45b401d2",
+   "league": "Saalijalgpalli meistriliiga",
+   "level": 1,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-01-30T18:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/196794",
+   "venue": "Sõle spordikeskus"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "5e6e0f4aa307": {
+  "changes": [],
+  "event": {
+   "away": "Saku Sporting",
+   "city": "Jõhvi",
+   "home": "Jõhvi FC Phoenix",
+   "id": "5e6e0f4aa307",
+   "league": "Saalijalgpalli meistriliiga",
+   "level": 1,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-01-10T17:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/196805",
+   "venue": "Jõhvi Spordihall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "60479aba81bb": {
+  "changes": [],
+  "event": {
+   "away": "Narva United Coolbet",
+   "city": "Pärnu",
+   "home": "Pärnu SJK Hagalaz",
+   "id": "60479aba81bb",
+   "league": "Saalijalgpalli meistriliiga",
+   "level": 1,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-02-07T14:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/196792",
+   "venue": "Pärnu Spordihall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "740abcdc49c9": {
+  "changes": [],
+  "event": {
+   "away": "U-18 Tartu vald Ravens Futsal",
+   "city": "Jõhvi",
+   "home": "U-18 Jõhvi FC Phoenix",
+   "id": "740abcdc49c9",
+   "league": "U18 saalijalgpalli eliitliiga",
+   "level": 4,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-02-13T15:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/197376",
+   "venue": "Jõhvi Spordihall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "77c6059aebe3": {
+  "changes": [],
+  "event": {
+   "away": "U-18 Jõhvi FC Phoenix",
+   "city": "Sillamäe",
+   "home": "U-18 Sillamäe JK Dina",
+   "id": "77c6059aebe3",
+   "league": "U18 saalijalgpalli eliitliiga",
+   "level": 4,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-01-31T12:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/197374",
+   "venue": "Sillamäe Spordikompleks"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "7d0197b80d70": {
+  "changes": [],
+  "event": {
+   "away": "U-18 Sillamäe JK Dina",
+   "city": "Narva",
+   "home": "U-18 Narva United FC",
+   "id": "7d0197b80d70",
+   "league": "U18 saalijalgpalli eliitliiga",
+   "level": 4,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-02-14T11:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/197377",
+   "venue": "Narva Spordikeskus"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "855a62e04ad2": {
+  "changes": [],
+  "event": {
+   "away": "Tallinna FC Bunker Partner",
+   "city": "Jõhvi",
+   "home": "Jõhvi FC Phoenix",
+   "id": "855a62e04ad2",
+   "league": "Saalijalgpalli meistriliiga",
+   "level": 1,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-01-17T17:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/196800",
+   "venue": "Jõhvi Spordihall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "8d541652b3df": {
+  "changes": [],
+  "event": {
+   "away": "U-18 Põlva FC Lootos",
+   "city": "Põltsamaa",
+   "home": "U-18 Põltsamaa Motiiv Sport",
+   "id": "8d541652b3df",
+   "league": "U18 saalijalgpalli eliitliiga",
+   "level": 4,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-02-14T11:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/197378",
+   "venue": "Põltsamaa Felixhall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "8eea066d30e4": {
+  "changes": [],
+  "event": {
+   "away": "Saku Sporting",
+   "city": "Tartu",
+   "home": "Tartu Ravens Futsal",
+   "id": "8eea066d30e4",
+   "league": "Saalijalgpalli meistriliiga",
+   "level": 1,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-01-31T17:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/196796",
+   "venue": "Eesti Maaülikooli spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "946beabbabad": {
+  "changes": [],
+  "event": {
+   "away": "U-18 Valga FC Warrior",
+   "city": "Tartu vald",
+   "home": "U-18 Tartu vald Ravens Futsal",
+   "id": "946beabbabad",
+   "league": "U18 saalijalgpalli eliitliiga",
+   "level": 4,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-02-07T17:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/197375",
+   "venue": "Lähte spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "95487a60656b": {
+  "changes": [],
+  "event": {
+   "away": "Jõhvi FC Phoenix",
+   "city": "Pärnu",
+   "home": "Pärnu SJK Hagalaz",
+   "id": "95487a60656b",
+   "league": "Saalijalgpalli meistriliiga",
+   "level": 1,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-01-24T14:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/196799",
+   "venue": "Pärnu Spordihall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "afa8e0753dae": {
+  "changes": [],
+  "event": {
+   "away": "U-18 Narva United FC",
+   "city": "Põlva",
+   "home": "U-18 Põlva FC Lootos",
+   "id": "afa8e0753dae",
+   "league": "U18 saalijalgpalli eliitliiga",
+   "level": 4,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-01-31T12:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/197373",
+   "venue": "Mesikäpa hall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "c3d15caeb400": {
+  "changes": [],
+  "event": {
+   "away": "Jõhvi FC Phoenix",
+   "city": "Narva",
+   "home": "Narva United Coolbet",
+   "id": "c3d15caeb400",
+   "league": "Saalijalgpalli meistriliiga",
+   "level": 1,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-01-30T17:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/196795",
+   "venue": "Narva Spordikeskus"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "c4f50b0cd57e": {
+  "changes": [],
+  "event": {
+   "away": "Narva United Coolbet",
+   "city": "Saku",
+   "home": "Saku Sporting",
+   "id": "c4f50b0cd57e",
+   "league": "Saalijalgpalli meistriliiga",
+   "level": 1,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-01-22T19:45:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/196798",
+   "venue": "Saku Gümnaasiumi Spordikompleks"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "cf4e3b863bc0": {
+  "changes": [],
+  "event": {
+   "away": "Tartu Ravens Futsal",
+   "city": "Jõhvi",
+   "home": "Jõhvi FC Phoenix",
+   "id": "cf4e3b863bc0",
+   "league": "Saalijalgpalli meistriliiga",
+   "level": 1,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-02-06T17:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/196793",
+   "venue": "Jõhvi Spordihall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "e8e6102d783c": {
+  "changes": [],
+  "event": {
+   "away": "U-18 Sillamäe JK Dina",
+   "city": "Valga",
+   "home": "U-18 Valga FC Warrior",
+   "id": "e8e6102d783c",
+   "league": "U18 saalijalgpalli eliitliiga",
+   "level": 4,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-01-16T16:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/197372",
+   "venue": "Valga Spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "edcc5cfcfeab": {
+  "changes": [],
+  "event": {
+   "away": "U-18 Põltsamaa Motiiv Sport",
+   "city": "Narva",
+   "home": "U-18 Narva United FC",
+   "id": "edcc5cfcfeab",
+   "league": "U18 saalijalgpalli eliitliiga",
+   "level": 4,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-01-17T15:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/197371",
+   "venue": "Narva Spordikeskus"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "effca70f0ac8": {
+  "changes": [],
+  "event": {
+   "away": "Tartu Ravens Futsal",
+   "city": "Narva",
+   "home": "Narva United Coolbet",
+   "id": "effca70f0ac8",
+   "league": "Saalijalgpalli meistriliiga",
+   "level": 1,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-01-16T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/196801",
+   "venue": "Narva Spordikeskus"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "f4fdba0bfcea": {
+  "changes": [],
+  "event": {
+   "away": "Tallinna FC Bunker Partner",
+   "city": "Tartu",
+   "home": "Tartu Ravens Futsal",
+   "id": "f4fdba0bfcea",
+   "league": "Saalijalgpalli meistriliiga",
+   "level": 1,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-01-23T17:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/196797",
+   "venue": "Eesti Maaülikooli spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "fb01cc7924b7": {
+  "changes": [],
+  "event": {
+   "away": "U-18 Põltsamaa Motiiv Sport",
+   "city": "Sillamäe",
+   "home": "U-18 Sillamäe JK Dina",
+   "id": "fb01cc7924b7",
+   "league": "U18 saalijalgpalli eliitliiga",
+   "level": 4,
+   "result": "",
+   "source": "saalijalgpall_ejl",
+   "sport": "saalijalgpall",
+   "start": "2027-02-21T12:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/voistlused/match_info/197379",
+   "venue": "Sillamäe Spordikompleks"
+  },
+  "first_seen": "2026-11-22"
+ }
+}

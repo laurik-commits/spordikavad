@@ -1,0 +1,154 @@
+{
+ "0e735012bf1c": {
+  "changes": [],
+  "event": {
+   "away": "Viljandi Metall",
+   "city": "Tallinn",
+   "home": "TalTech/Nordaid",
+   "id": "0e735012bf1c",
+   "league": "Meistriliiga (naised)",
+   "level": 1,
+   "result": "",
+   "source": "vorkpall_dataproject",
+   "sport": "vorkpall",
+   "start": "2027-02-20T17:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3609&ID=97&PID=147",
+   "venue": "TalTechi spordihall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "19630d0774ad": {
+  "changes": [],
+  "event": {
+   "away": "TÜ/Bigbank",
+   "city": "Rae vald",
+   "home": "Rae Spordikool/VIASTON",
+   "id": "19630d0774ad",
+   "league": "Balti liiga (naised)",
+   "level": 1,
+   "result": "",
+   "source": "vorkpall_dataproject",
+   "sport": "vorkpall",
+   "start": "2027-02-06T15:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1688&ID=31&PID=32",
+   "venue": "Tuule spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "196cc6378f3c": {
+  "changes": [],
+  "event": {
+   "away": "Barrus Võru VK",
+   "city": "Pärnu",
+   "home": "PÄRNU Võrkpalliklubi",
+   "id": "196cc6378f3c",
+   "league": "Balti liiga (mehed)",
+   "level": 1,
+   "result": "",
+   "source": "vorkpall_dataproject",
+   "sport": "vorkpall",
+   "start": "2027-02-06T17:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1664&ID=29&PID=30",
+   "venue": "Pärnu Spordihall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "86b59932d861": {
+  "changes": [],
+  "event": {
+   "away": "Kaunas-VDU",
+   "city": "Tartu",
+   "home": "TÜ/Bigbank",
+   "id": "86b59932d861",
+   "league": "Balti liiga (naised)",
+   "level": 1,
+   "result": "",
+   "source": "vorkpall_dataproject",
+   "sport": "vorkpall",
+   "start": "2027-01-09T17:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1682&ID=31&PID=32",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "b9a5efc374bc": {
+  "changes": [],
+  "event": {
+   "away": "TÜ/Bigbank",
+   "city": "Tallinn",
+   "home": "Audentese SG / NT",
+   "id": "b9a5efc374bc",
+   "league": "Balti liiga (naised)",
+   "level": 1,
+   "result": "",
+   "source": "vorkpall_dataproject",
+   "sport": "vorkpall",
+   "start": "2027-02-05T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1687&ID=31&PID=32",
+   "venue": "Audentese spordihall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "e5545e8d9f47": {
+  "changes": [],
+  "event": {
+   "away": "Dorpat/Tartu vald/ TKSK",
+   "city": "Tallinn",
+   "home": "Gerardo`s Toys/Neemeco",
+   "id": "e5545e8d9f47",
+   "league": "Esiliiga (naised)",
+   "level": 2,
+   "result": "",
+   "source": "vorkpall_dataproject",
+   "sport": "vorkpall",
+   "start": "2027-01-09T18:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3668&ID=106&PID=164",
+   "venue": "Tallinna Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "e56c0fc9d3f2": {
+  "changes": [],
+  "event": {
+   "away": "RSU",
+   "city": "Rae vald",
+   "home": "Rae Spordikool/VIASTON",
+   "id": "e56c0fc9d3f2",
+   "league": "Balti liiga (naised)",
+   "level": 1,
+   "result": "",
+   "source": "vorkpall_dataproject",
+   "sport": "vorkpall",
+   "start": "2027-02-05T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1691&ID=31&PID=32",
+   "venue": "Tuule spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "ed4d49c7b24e": {
+  "changes": [],
+  "event": {
+   "away": "RSU",
+   "city": "Tallinn",
+   "home": "Audentese SG / NT",
+   "id": "ed4d49c7b24e",
+   "league": "Balti liiga (naised)",
+   "level": 1,
+   "result": "",
+   "source": "vorkpall_dataproject",
+   "sport": "vorkpall",
+   "start": "2027-02-06T15:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1689&ID=31&PID=32",
+   "venue": "Audentese spordihall"
+  },
+  "first_seen": "2026-11-22"
+ }
+}

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T14:56:58+02:00",
+ "updated": "2026-11-22T00:09:25+02:00",
  "events": [
   {
    "id": "899216e6d23a",
@@ -13,6 +13,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3513&ID=100&PID=150",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -27,6 +28,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3515&ID=100&PID=150",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -41,6 +43,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3528&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -55,6 +58,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3522&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -69,6 +73,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3521&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -83,6 +88,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3523&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -97,6 +103,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3525&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -111,6 +118,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3526&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -125,6 +133,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3527&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -139,6 +148,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3519&ID=106&PID=164",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -153,6 +163,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3518&ID=106&PID=164",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -167,6 +178,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3570&ID=106&PID=164",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -181,6 +193,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3593&ID=104&PID=158",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -195,6 +208,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3571&ID=105&PID=161",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -209,6 +223,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3572&ID=105&PID=161",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -223,6 +238,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3594&ID=104&PID=158",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -237,6 +253,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3573&ID=105&PID=161",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -251,6 +268,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3595&ID=104&PID=158",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -265,6 +283,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3574&ID=105&PID=161",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -279,6 +298,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3596&ID=104&PID=158",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -293,6 +313,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3575&ID=105&PID=161",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -307,6 +328,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3597&ID=104&PID=158",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -321,6 +343,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3576&ID=105&PID=161",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -335,6 +358,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3598&ID=104&PID=158",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -349,6 +373,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3599&ID=104&PID=158",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -363,6 +388,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3577&ID=105&PID=161",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -377,6 +403,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3600&ID=104&PID=158",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -391,6 +418,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3578&ID=105&PID=161",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -405,6 +433,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3516&ID=100&PID=150",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -419,6 +448,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3579&ID=105&PID=161",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -433,6 +463,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3601&ID=104&PID=158",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -447,6 +478,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3555&ID=100&PID=150",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -461,6 +493,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3580&ID=105&PID=161",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -475,6 +508,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3602&ID=104&PID=158",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -489,6 +523,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3603&ID=104&PID=158",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -503,6 +538,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3581&ID=105&PID=161",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -517,6 +553,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3582&ID=105&PID=161",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -531,6 +568,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3604&ID=104&PID=158",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -545,6 +583,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3583&ID=105&PID=161",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -559,6 +598,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3605&ID=104&PID=158",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -573,6 +613,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3584&ID=105&PID=161",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -587,6 +628,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3606&ID=104&PID=158",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -601,6 +643,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3585&ID=105&PID=161",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -615,6 +658,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3607&ID=104&PID=158",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -629,6 +673,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3514&ID=100&PID=150",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -643,6 +688,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3561&ID=106&PID=164",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -657,6 +703,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3520&ID=100&PID=150",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -671,6 +718,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3621&ID=97&PID=147",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -685,6 +733,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1627&ID=31&PID=32",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -699,6 +748,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1615&ID=29&PID=30",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -713,6 +763,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1613&ID=29&PID=30",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -727,6 +778,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3563&ID=97&PID=147",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -741,6 +793,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3613&ID=106&PID=164",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -755,6 +808,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1617&ID=29&PID=30",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -769,6 +823,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1618&ID=29&PID=30",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -783,6 +838,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3534&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -797,6 +853,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3553&ID=106&PID=164",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -811,6 +868,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3529&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -825,6 +883,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3530&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -839,6 +898,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3556&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -853,6 +913,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3531&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -867,6 +928,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3591&ID=99&PID=149",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -881,6 +943,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1619&ID=29&PID=30",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -895,6 +958,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3532&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -909,6 +973,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3535&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -923,6 +988,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3562&ID=99&PID=149",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -937,6 +1003,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3612&ID=100&PID=150",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -951,6 +1018,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1621&ID=29&PID=30",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -965,6 +1033,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3624&ID=100&PID=150",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -979,6 +1048,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1644&ID=29&PID=30",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -993,6 +1063,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3586&ID=97&PID=147",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1007,6 +1078,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3533&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -1021,6 +1093,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3560&ID=106&PID=164",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -1035,6 +1108,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3618&ID=97&PID=147",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1049,6 +1123,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1631&ID=31&PID=32",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1063,6 +1138,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3587&ID=97&PID=147",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1077,6 +1153,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1632&ID=31&PID=32",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1091,6 +1168,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3611&ID=99&PID=149",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1105,6 +1183,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3617&ID=99&PID=149",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1119,6 +1198,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1645&ID=29&PID=30",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1133,6 +1213,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3620&ID=106&PID=164",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -1147,6 +1228,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3615&ID=99&PID=149",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1161,6 +1243,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3552&ID=106&PID=164",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -1175,6 +1258,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3616&ID=99&PID=149",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1189,6 +1273,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1647&ID=29&PID=30",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1203,6 +1288,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3614&ID=99&PID=149",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1217,6 +1303,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3641&ID=102&PID=152",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1231,6 +1318,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3627&ID=103&PID=155",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1245,6 +1333,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3628&ID=103&PID=155",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1259,6 +1348,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3642&ID=102&PID=152",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1273,6 +1363,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3626&ID=103&PID=155",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1287,6 +1378,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3643&ID=102&PID=152",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1301,6 +1393,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3644&ID=102&PID=152",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1315,6 +1408,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3631&ID=103&PID=155",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1329,6 +1423,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3630&ID=103&PID=155",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1343,6 +1438,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3629&ID=103&PID=155",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1357,6 +1453,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3645&ID=102&PID=152",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1371,6 +1468,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3646&ID=102&PID=152",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1385,6 +1483,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1650&ID=29&PID=30",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1399,6 +1498,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1649&ID=29&PID=30",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1413,6 +1513,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3647&ID=102&PID=152",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1427,6 +1528,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3632&ID=103&PID=155",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1441,6 +1543,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3633&ID=103&PID=155",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1455,6 +1558,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3648&ID=102&PID=152",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1469,6 +1573,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3634&ID=103&PID=155",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1483,6 +1588,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3649&ID=102&PID=152",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1497,6 +1603,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3592&ID=99&PID=149",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1511,6 +1618,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3635&ID=103&PID=155",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1525,6 +1633,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3650&ID=102&PID=152",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1539,6 +1648,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3651&ID=102&PID=152",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1553,6 +1663,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3636&ID=103&PID=155",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1567,6 +1678,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3652&ID=102&PID=152",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1581,6 +1693,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3637&ID=103&PID=155",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1595,6 +1708,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3638&ID=103&PID=155",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1609,6 +1723,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3653&ID=102&PID=152",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1623,6 +1738,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3654&ID=102&PID=152",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1637,6 +1753,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3639&ID=103&PID=155",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1651,6 +1768,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3655&ID=102&PID=152",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1665,6 +1783,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3640&ID=103&PID=155",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 4
   },
   {
@@ -1679,6 +1798,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3661&ID=97&PID=147",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1693,6 +1813,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1629&ID=31&PID=32",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1707,6 +1828,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3625&ID=106&PID=164",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -1721,6 +1843,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3622&ID=100&PID=150",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1735,6 +1858,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3589&ID=97&PID=147",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1749,6 +1873,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1635&ID=31&PID=32",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1763,6 +1888,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3539&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -1777,6 +1903,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1634&ID=31&PID=32",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1791,6 +1918,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3623&ID=106&PID=164",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -1805,6 +1933,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3538&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -1819,6 +1948,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1637&ID=31&PID=32",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1833,6 +1963,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3557&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -1847,6 +1978,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1638&ID=31&PID=32",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1861,6 +1993,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3537&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -1875,6 +2008,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3517&ID=100&PID=150",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1889,6 +2023,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3536&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -1903,6 +2038,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3540&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -1917,6 +2053,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3541&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -1931,6 +2068,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3588&ID=97&PID=147",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1945,6 +2083,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3542&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -1959,6 +2098,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3619&ID=97&PID=147",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1973,6 +2113,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3664&ID=100&PID=150",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -1987,6 +2128,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1656&ID=29&PID=30",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2001,6 +2143,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3667&ID=100&PID=150",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2015,6 +2158,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1628&ID=31&PID=32",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2029,6 +2173,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3665&ID=100&PID=150",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2043,6 +2188,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1658&ID=29&PID=30",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2057,6 +2203,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3662&ID=106&PID=164",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -2071,6 +2218,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3663&ID=100&PID=150",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2085,6 +2233,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3656&ID=106&PID=164",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -2099,6 +2248,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3659&ID=99&PID=149",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2113,6 +2263,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3660&ID=106&PID=164",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -2127,6 +2278,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3666&ID=100&PID=150",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2141,6 +2293,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3545&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -2155,6 +2308,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1659&ID=29&PID=30",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2169,6 +2323,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3658&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -2183,6 +2338,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3608&ID=97&PID=147",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2197,6 +2353,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3544&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -2211,6 +2368,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3558&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -2225,6 +2383,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3543&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -2239,6 +2398,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1661&ID=29&PID=30",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2253,6 +2413,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3547&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -2267,6 +2428,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3546&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -2281,6 +2443,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3548&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -2295,6 +2458,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3554&ID=106&PID=164",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -2309,6 +2473,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3564&ID=97&PID=147",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2323,6 +2488,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3669&ID=100&PID=150",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2337,6 +2503,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3551&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -2351,6 +2518,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3565&ID=97&PID=147",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2365,6 +2533,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1667&ID=29&PID=30",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2379,6 +2548,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1672&ID=31&PID=32",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2393,6 +2563,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1668&ID=29&PID=30",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2407,6 +2578,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1675&ID=31&PID=32",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2421,6 +2593,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1666&ID=29&PID=30",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2435,6 +2608,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1677&ID=31&PID=32",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2449,6 +2623,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1653&ID=29&PID=30",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2463,6 +2638,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3550&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -2477,6 +2653,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3590&ID=97&PID=147",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2491,6 +2668,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3549&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -2505,6 +2683,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3567&ID=97&PID=147",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2519,6 +2698,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3559&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -2533,6 +2713,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3566&ID=97&PID=147",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2547,6 +2728,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3524&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -2561,6 +2743,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1669&ID=29&PID=30",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2575,6 +2758,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3569&ID=97&PID=147",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2589,6 +2773,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3657&ID=106&PID=164",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -2603,6 +2788,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3568&ID=97&PID=147",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2617,6 +2803,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3610&ID=97&PID=147",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2631,6 +2818,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1679&ID=31&PID=32",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2645,6 +2833,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1693&ID=29&PID=30",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2659,6 +2848,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1682&ID=31&PID=32",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2673,6 +2863,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3668&ID=106&PID=164",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 2
   },
   {
@@ -2687,6 +2878,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1687&ID=31&PID=32",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2701,6 +2893,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1691&ID=31&PID=32",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2715,6 +2908,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1688&ID=31&PID=32",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2729,6 +2923,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1689&ID=31&PID=32",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2743,6 +2938,7 @@
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1664&ID=29&PID=30",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -2757,6 +2953,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3609&ID=97&PID=147",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
+   "result": "",
    "level": 1
   }
  ]

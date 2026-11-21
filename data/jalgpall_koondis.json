@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T15:22:59+02:00",
+ "updated": "2026-11-22T00:12:07+02:00",
  "events": [
   {
    "id": "3c812e967ebc",
@@ -13,6 +13,7 @@
    "url": "https://jalgpall.ee/koondis/4/matchinfo/match/3947",
    "source": "jalgpall_koondis",
    "time_tbc": false,
+   "result": "1-4",
    "level": 5
   },
   {
@@ -27,6 +28,7 @@
    "url": "https://jalgpall.ee/koondis/4/matchinfo/match/3949",
    "source": "jalgpall_koondis",
    "time_tbc": false,
+   "result": "1-3",
    "level": 5
   },
   {
@@ -41,6 +43,7 @@
    "url": "https://jalgpall.ee/koondis/7/matchinfo/match/3901",
    "source": "jalgpall_koondis",
    "time_tbc": false,
+   "result": "1-1",
    "level": 5
   },
   {
@@ -55,6 +58,7 @@
    "url": "https://jalgpall.ee/koondis/16/matchinfo/match/4001",
    "source": "jalgpall_koondis",
    "time_tbc": false,
+   "result": "1-0",
    "level": 5
   },
   {
@@ -69,6 +73,7 @@
    "url": "https://jalgpall.ee/koondis/2/matchinfo/match/3723",
    "source": "jalgpall_koondis",
    "time_tbc": false,
+   "result": "1-2",
    "level": 5
   },
   {
@@ -83,6 +88,7 @@
    "url": "https://jalgpall.ee/koondis/2/matchinfo/match/3748",
    "source": "jalgpall_koondis",
    "time_tbc": false,
+   "result": "0-2",
    "level": 5
   },
   {
@@ -97,6 +103,7 @@
    "url": "https://jalgpall.ee/koondis/1/matchinfo/match/3935",
    "source": "jalgpall_koondis",
    "time_tbc": false,
+   "result": "1-0",
    "level": 5
   },
   {
@@ -111,6 +118,7 @@
    "url": "https://jalgpall.ee/koondis/1/matchinfo/match/3931",
    "source": "jalgpall_koondis",
    "time_tbc": false,
+   "result": "0-0",
    "level": 5
   },
   {
@@ -125,6 +133,7 @@
    "url": "https://jalgpall.ee/koondis/7/matchinfo/match/4051",
    "source": "jalgpall_koondis",
    "time_tbc": false,
+   "result": "2-1",
    "level": 5
   },
   {
@@ -139,6 +148,7 @@
    "url": "https://jalgpall.ee/koondis/8/matchinfo/match/4057",
    "source": "jalgpall_koondis",
    "time_tbc": false,
+   "result": "1-1",
    "level": 5
   },
   {
@@ -153,6 +163,7 @@
    "url": "https://jalgpall.ee/koondis/8/matchinfo/match/4058",
    "source": "jalgpall_koondis",
    "time_tbc": false,
+   "result": "1-2",
    "level": 5
   },
   {
@@ -167,6 +178,7 @@
    "url": "https://jalgpall.ee/koondis/1/matchinfo/match/3932",
    "source": "jalgpall_koondis",
    "time_tbc": false,
+   "result": "2-1",
    "level": 5
   },
   {
@@ -181,6 +193,7 @@
    "url": "https://jalgpall.ee/koondis/7/matchinfo/match/4056",
    "source": "jalgpall_koondis",
    "time_tbc": false,
+   "result": "",
    "level": 5
   }
  ]

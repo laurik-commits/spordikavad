@@ -1,0 +1,249 @@
+{
+ "3c812e967ebc": {
+  "changes": [],
+  "event": {
+   "away": "Hispaania",
+   "city": "Tallinn",
+   "home": "Eesti",
+   "id": "3c812e967ebc",
+   "league": "U18 koondis: UEFA noormeeste U17 EM-finaalturniir 2026 A-alagrupp",
+   "level": 5,
+   "result": "1-4",
+   "source": "jalgpall_koondis",
+   "sport": "jalgpall",
+   "start": "2026-05-25T20:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/koondis/4/matchinfo/match/3947",
+   "venue": "A. Le Coq Arena"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "3e2dd34876a9": {
+  "changes": [],
+  "event": {
+   "away": "Luksemburg",
+   "city": "Tallinn",
+   "home": "Eesti",
+   "id": "3e2dd34876a9",
+   "league": "Meeste koondis: UEFA Rahvuste liiga 2026",
+   "level": 5,
+   "result": "1-0",
+   "source": "jalgpall_koondis",
+   "sport": "jalgpall",
+   "start": "2026-10-03T19:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/koondis/1/matchinfo/match/3935",
+   "venue": "A. Le Coq Arena"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "403b5a7b33ee": {
+  "changes": [],
+  "event": {
+   "away": "Tšehhi U23",
+   "city": "Tallinn",
+   "home": "Eesti",
+   "id": "403b5a7b33ee",
+   "league": "Naiste koondis: Maavõistlused 2026",
+   "level": 5,
+   "result": "2-1",
+   "source": "jalgpall_koondis",
+   "sport": "jalgpall",
+   "start": "2026-10-09T19:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/koondis/7/matchinfo/match/4051",
+   "venue": "A. Le Coq Arena"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "407485ddb13e": {
+  "changes": [],
+  "event": {
+   "away": "Prantsusmaa",
+   "city": "Pärnu",
+   "home": "Eesti",
+   "id": "407485ddb13e",
+   "league": "U21 koondis: EM-valikturniir 2025/27",
+   "level": 5,
+   "result": "0-2",
+   "source": "jalgpall_koondis",
+   "sport": "jalgpall",
+   "start": "2026-09-29T19:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/koondis/2/matchinfo/match/3748",
+   "venue": "Pärnu Rannastaadion"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "74b9f8e12372": {
+  "changes": [],
+  "event": {
+   "away": "Island",
+   "city": "Tallinn",
+   "home": "Eesti",
+   "id": "74b9f8e12372",
+   "league": "Meeste koondis: UEFA Rahvuste liiga 2026",
+   "level": 5,
+   "result": "0-0",
+   "source": "jalgpall_koondis",
+   "sport": "jalgpall",
+   "start": "2026-10-06T21:45:00+03:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/koondis/1/matchinfo/match/3931",
+   "venue": "A. Le Coq Arena"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "967173ac6dd2": {
+  "changes": [],
+  "event": {
+   "away": "Fääri saared",
+   "city": "Pärnu",
+   "home": "Eesti",
+   "id": "967173ac6dd2",
+   "league": "U21 koondis: EM-valikturniir 2025/27",
+   "level": 5,
+   "result": "1-2",
+   "source": "jalgpall_koondis",
+   "sport": "jalgpall",
+   "start": "2026-09-25T19:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/koondis/2/matchinfo/match/3723",
+   "venue": "Pärnu Rannastaadion"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "9b60f11c6621": {
+  "changes": [],
+  "event": {
+   "away": "Läti",
+   "city": "Otepää",
+   "home": "Eesti",
+   "id": "9b60f11c6621",
+   "league": "NU19 koondis: Maavõistlused 2026",
+   "level": 5,
+   "result": "1-2",
+   "source": "jalgpall_koondis",
+   "sport": "jalgpall",
+   "start": "2026-10-12T14:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/koondis/8/matchinfo/match/4058",
+   "venue": "Tehvandi staadion"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "abcbf2675751": {
+  "changes": [],
+  "event": {
+   "away": "Vastane selgumisel",
+   "city": "Paide",
+   "home": "Eesti",
+   "id": "abcbf2675751",
+   "league": "Naiste koondis: Balti turniir 2026",
+   "level": 5,
+   "result": "",
+   "source": "jalgpall_koondis",
+   "sport": "jalgpall",
+   "start": "2026-12-01T18:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/koondis/7/matchinfo/match/4056",
+   "venue": "Paide jalgpallihall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "ddd41d991faa": {
+  "changes": [],
+  "event": {
+   "away": "Läti",
+   "city": "Otepää",
+   "home": "Eesti",
+   "id": "ddd41d991faa",
+   "league": "NU19 koondis: Maavõistlused 2026",
+   "level": 5,
+   "result": "1-1",
+   "source": "jalgpall_koondis",
+   "sport": "jalgpall",
+   "start": "2026-10-10T14:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/koondis/8/matchinfo/match/4057",
+   "venue": "Tehvandi staadion"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "e8bd903dfbef": {
+  "changes": [],
+  "event": {
+   "away": "Horvaatia",
+   "city": "Tallinn",
+   "home": "Eesti",
+   "id": "e8bd903dfbef",
+   "league": "U18 koondis: UEFA noormeeste U17 EM-finaalturniir 2026 A-alagrupp",
+   "level": 5,
+   "result": "1-3",
+   "source": "jalgpall_koondis",
+   "sport": "jalgpall",
+   "start": "2026-05-28T19:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/koondis/4/matchinfo/match/3949",
+   "venue": "A. Le Coq Arena"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "f0032649819d": {
+  "changes": [],
+  "event": {
+   "away": "Leedu",
+   "city": "Tallinn",
+   "home": "Eesti",
+   "id": "f0032649819d",
+   "league": "U15 koondis: Maavõistlused 2026",
+   "level": 5,
+   "result": "1-0",
+   "source": "jalgpall_koondis",
+   "sport": "jalgpall",
+   "start": "2026-08-09T12:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/koondis/16/matchinfo/match/4001",
+   "venue": "EJL TNTK jalgpalliväljak"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "f7aa9da2fe48": {
+  "changes": [],
+  "event": {
+   "away": "Bulgaaria",
+   "city": "Tallinn",
+   "home": "Eesti",
+   "id": "f7aa9da2fe48",
+   "league": "Meeste koondis: UEFA Rahvuste liiga 2026",
+   "level": 5,
+   "result": "2-1",
+   "source": "jalgpall_koondis",
+   "sport": "jalgpall",
+   "start": "2026-11-16T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/koondis/1/matchinfo/match/3932",
+   "venue": "A. Le Coq Arena"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "f9a862a886d9": {
+  "changes": [],
+  "event": {
+   "away": "Bosnia ja Hertsegoviina",
+   "city": "Pärnu",
+   "home": "Eesti",
+   "id": "f9a862a886d9",
+   "league": "Naiste koondis: MM-valikturniir 2026",
+   "level": 5,
+   "result": "1-1",
+   "source": "jalgpall_koondis",
+   "sport": "jalgpall",
+   "start": "2026-06-09T20:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/koondis/7/matchinfo/match/3901",
+   "venue": "Pärnu Rannastaadion"
+  },
+  "first_seen": "2026-11-22"
+ }
+}

@@ -1,0 +1,382 @@
+{
+ "00659aeca12b": {
+  "changes": [],
+  "event": {
+   "away": "Tallinn United",
+   "city": "Tartu vald",
+   "home": "Kadrina Tabajad",
+   "id": "00659aeca12b",
+   "league": "Energialiiga",
+   "level": 2,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2027-01-23T16:15:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8641",
+   "venue": "Lähte spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "01c0b0cb3d1d": {
+  "changes": [],
+  "event": {
+   "away": "Kaitseliidu Rapla malev",
+   "city": "Tartu vald",
+   "home": "Kuusalu Eluterve Naine",
+   "id": "01c0b0cb3d1d",
+   "league": "Energialiiga",
+   "level": 2,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2027-01-23T12:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8638",
+   "venue": "Lähte spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "0d3861ba986d": {
+  "changes": [],
+  "event": {
+   "away": "Sparta Team Automaailm",
+   "city": "Jõgeva",
+   "home": "Jõgeva SK Tähe/Olivia",
+   "id": "0d3861ba986d",
+   "league": "Eesti-Läti liiga (mehed)",
+   "level": 1,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2027-01-30T18:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8743",
+   "venue": "Jõgeva spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "145398d5858d": {
+  "changes": [],
+  "event": {
+   "away": "Lielvārde",
+   "city": "Jõgeva",
+   "home": "Jõgeva SK Tähe/Olivia",
+   "id": "145398d5858d",
+   "league": "Eesti-Läti liiga (mehed)",
+   "level": 1,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2027-01-17T15:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8741",
+   "venue": "Jõgeva spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "188cf3213df4": {
+  "changes": [],
+  "event": {
+   "away": "Järva- Jaani",
+   "city": "Ääsmäe",
+   "home": "EMÜ SK II",
+   "id": "188cf3213df4",
+   "league": "Energialiiga",
+   "level": 2,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2027-02-20T16:15:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8685",
+   "venue": "Ääsmäe spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "241b43736979": {
+  "changes": [],
+  "event": {
+   "away": "Kaitseliidu Rapla malev",
+   "city": "Ääsmäe",
+   "home": "Arenculle",
+   "id": "241b43736979",
+   "league": "Energialiiga",
+   "level": 2,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2027-02-20T11:15:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8681",
+   "venue": "Ääsmäe spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "3271401fca70": {
+  "changes": [],
+  "event": {
+   "away": "Järva- Jaani",
+   "city": "Kuusalu",
+   "home": "SK Voore",
+   "id": "3271401fca70",
+   "league": "Energialiiga",
+   "level": 2,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2027-01-09T11:15:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8664",
+   "venue": "Kuusalu spordikeskus"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "33a9559cb437": {
+  "changes": [],
+  "event": {
+   "away": "Järva- Jaani",
+   "city": "Jõgeva",
+   "home": "Kuusalu Eluterve Naine",
+   "id": "33a9559cb437",
+   "league": "Energialiiga",
+   "level": 2,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2027-02-06T12:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8675",
+   "venue": "Jõgeva Virtus"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "4fa4a2ff220b": {
+  "changes": [],
+  "event": {
+   "away": "NND/RJTC",
+   "city": "Tallinn",
+   "home": "Sparta",
+   "id": "4fa4a2ff220b",
+   "league": "Eesti-Läti liiga (naised)",
+   "level": 1,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2027-01-17T14:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8706",
+   "venue": "Õismäe sportmängude hall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "64a1f10056ae": {
+  "changes": [],
+  "event": {
+   "away": "Kaitseliidu Rapla malev",
+   "city": "Jõgeva",
+   "home": "SK Voore",
+   "id": "64a1f10056ae",
+   "league": "Energialiiga",
+   "level": 2,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2027-02-06T16:15:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8678",
+   "venue": "Jõgeva Virtus"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "7248847a5b3b": {
+  "changes": [],
+  "event": {
+   "away": "Arenculle",
+   "city": "Jõgeva",
+   "home": "Järva- Jaani",
+   "id": "7248847a5b3b",
+   "league": "Energialiiga",
+   "level": 2,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2027-02-06T18:45:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8903",
+   "venue": "Jõgeva Virtus"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "7a5ff5b9f95f": {
+  "changes": [],
+  "event": {
+   "away": "Arenculle",
+   "city": "Kuusalu",
+   "home": "Kuusalu Eluterve Naine",
+   "id": "7a5ff5b9f95f",
+   "league": "Energialiiga",
+   "level": 2,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2027-01-09T10:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8633",
+   "venue": "Kuusalu spordikeskus"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "b4dfb8a35a0b": {
+  "changes": [],
+  "event": {
+   "away": "Eesti Maaülikool",
+   "city": "Märjamaa",
+   "home": "Tahmaküla United",
+   "id": "b4dfb8a35a0b",
+   "league": "Meistriliiga (mehed)",
+   "level": 1,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2027-01-10T13:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8845",
+   "venue": "Märjamaa spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "bf22155a7bb1": {
+  "changes": [],
+  "event": {
+   "away": "EMÜ SK II",
+   "city": "Kuusalu",
+   "home": "Kaitseliidu Rapla malev",
+   "id": "bf22155a7bb1",
+   "league": "Energialiiga",
+   "level": 2,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2027-01-09T12:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8635",
+   "venue": "Kuusalu spordikeskus"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "d7eaf6292ef0": {
+  "changes": [],
+  "event": {
+   "away": "EMÜ SK II",
+   "city": "Jõgeva",
+   "home": "Flash By FF",
+   "id": "d7eaf6292ef0",
+   "league": "Energialiiga",
+   "level": 2,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2027-02-06T10:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8673",
+   "venue": "Jõgeva Virtus"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "d98fb29d0725": {
+  "changes": [],
+  "event": {
+   "away": "SK Voore",
+   "city": "Tartu vald",
+   "home": "EMÜ SK II",
+   "id": "d98fb29d0725",
+   "league": "Energialiiga",
+   "level": 2,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2027-01-23T11:15:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8667",
+   "venue": "Lähte spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "e33060d270d7": {
+  "changes": [],
+  "event": {
+   "away": "Arenculle",
+   "city": "Tartu vald",
+   "home": "Flash by FF",
+   "id": "e33060d270d7",
+   "league": "Energialiiga",
+   "level": 2,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2027-01-23T15:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8670",
+   "venue": "Lähte spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "e48ba2262f75": {
+  "changes": [],
+  "event": {
+   "away": "Flash by FF",
+   "city": "Ääsmäe",
+   "home": "SK Voore",
+   "id": "e48ba2262f75",
+   "league": "Energialiiga",
+   "level": 2,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2027-02-20T13:45:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8683",
+   "venue": "Ääsmäe spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "e97e4d2bab09": {
+  "changes": [],
+  "event": {
+   "away": "Rubene",
+   "city": "Tallinn",
+   "home": "Sparta",
+   "id": "e97e4d2bab09",
+   "league": "Eesti-Läti liiga (naised)",
+   "level": 1,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2027-02-07T14:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8711",
+   "venue": "Õismäe sportmängude hall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "ff1b39ebaa5b": {
+  "changes": [],
+  "event": {
+   "away": "Rubene",
+   "city": "Ääsmäe",
+   "home": "Sparta",
+   "id": "ff1b39ebaa5b",
+   "league": "Eesti-Läti liiga (naised)",
+   "level": 1,
+   "result": "",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2027-02-06T16:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8709",
+   "venue": "Ääsmäe spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ }
+}

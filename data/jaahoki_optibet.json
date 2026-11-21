@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T13:52:29+02:00",
+ "updated": "2026-11-22T00:08:53+02:00",
  "events": [
   {
    "id": "6a6527882b18",
@@ -13,6 +13,7 @@
    "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-pun/20261101/35866",
    "source": "jaahoki_optibet",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -27,6 +28,7 @@
    "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-pri/20261114/35872",
    "source": "jaahoki_optibet",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -41,6 +43,7 @@
    "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-kyc/20261121/35876",
    "source": "jaahoki_optibet",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -55,6 +58,7 @@
    "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-rhs/20261125/35884",
    "source": "jaahoki_optibet",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -69,6 +73,7 @@
    "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-zmg/20261216/35898",
    "source": "jaahoki_optibet",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -83,6 +88,7 @@
    "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-hkm/20270123/35922",
    "source": "jaahoki_optibet",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -97,6 +103,7 @@
    "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-hkm/20270124/35925",
    "source": "jaahoki_optibet",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -111,6 +118,7 @@
    "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-zmg/20270127/35927",
    "source": "jaahoki_optibet",
    "time_tbc": false,
+   "result": "",
    "level": 1
   },
   {
@@ -125,6 +133,7 @@
    "url": "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/2026-2027/1245/schedule/hcp-pri/20270213/35943",
    "source": "jaahoki_optibet",
    "time_tbc": false,
+   "result": "",
    "level": 1
   }
  ]
