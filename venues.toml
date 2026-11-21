@@ -826,6 +826,27 @@ city = "Aizkraukle"
 name = "HC VILNIUS RANKINIO SALĖ"
 city = "Vilnius"
 
+# bckalev.ee tulemuste leht (Kalevi mängitud mängud; välismaa mängudel on "saaliks" riik või linn)
+[[venue]]
+name = "Forus Spordikeskus Viimsi"
+city = "Viimsi"
+
+[[venue]]
+name = "Sporta arena Ogre"
+city = "Ogre"
+
+[[venue]]
+name = "Manchester"
+city = "Manchester"
+
+[[venue]]
+name = "Poola"
+city = "Poola"
+
+[[venue]]
+name = "Prantsusmaa"
+city = "Prantsusmaa"
+
 [[venue]]
 name = "Narva Spordikeskuse spordiväljak"
 city = "Narva"

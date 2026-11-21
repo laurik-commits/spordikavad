@@ -36,6 +36,48 @@ class KorvpallKalevTest(unittest.TestCase):
         p = self.find("bc-parnu-vs-bigbank-kalev")
         self.assertEqual((p.home, p.venue), ("BC Pärnu", "Pärnu Spordihoone"))
 
+    def test_results_page_gives_scores(self):
+        page = (Path(__file__).parent / "fixtures" / "korvpall_kalev_tulemused.html").read_text(encoding="utf-8")
+        games = adapter.parse(page)
+        played = [e for e in games if e.result]
+        self.assertEqual((len(games), len(played)), (20, 19))
+        e = next(e for e in played if e.start.day == 17 and e.start.month == 11)
+        self.assertEqual((e.home, e.away, e.result), ("Bigbank/Kalev", "Valmiera Glass VIA", "83-81"))
+        self.assertTrue(e.url.startswith("https://bckalev.ee/event/"))  # mängu leht = seis ja statistika
+        # ajakava lehel tulemuste veergu pole
+        self.assertTrue(all(g.result == "" for g in self.events))
+        v = Venues.load()
+        self.assertEqual({g.venue for g in played if g.venue and v.lookup(g.venue) is None}, set())
+
+    def test_season_start(self):
+        from datetime import date
+        self.assertEqual(adapter.season_start(date(2026, 11, 22)), date(2026, 8, 1))
+        self.assertEqual(adapter.season_start(date(2027, 3, 1)), date(2026, 8, 1))
+        self.assertEqual(adapter.season_start(date(2027, 8, 2)), date(2027, 8, 1))
+
+    def test_fetch_takes_only_played_games_of_this_season_and_survives_failure(self):
+        from datetime import date
+        from scrapers.http import FetchError
+        schedule = FIXTURE.read_text(encoding="utf-8")
+        results = (Path(__file__).parent / "fixtures" / "korvpall_kalev_tulemused.html").read_text(encoding="utf-8")
+
+        class F:
+            def __init__(self, fail):
+                self.fail = fail
+
+            def get(self, url):
+                if url.endswith("/tulemused/"):
+                    if self.fail:
+                        raise FetchError("x")
+                    return results
+                return schedule
+
+        both = adapter.fetch(F(False), today=date(2026, 11, 22))
+        self.assertEqual(len(both), len(self.events) + 19)  # tulemuste lehelt ainult mängitud mängud
+        self.assertEqual(len(adapter.fetch(F(True), today=date(2026, 11, 22))), len(self.events))
+        # järgmisel hooajal ei võeta eelmise hooaja mänge
+        self.assertEqual(len(adapter.fetch(F(False), today=date(2027, 8, 2))), len(self.events))
+
     def test_missing_venue(self):
         self.assertEqual(self.find("vef-riga-vs-bigbank-kalev").venue, "")           # tühi väli
         self.assertEqual(self.find("bigbank-kalev-vs-vef-riga").venue, "")           # "Asukoht selgumisel"

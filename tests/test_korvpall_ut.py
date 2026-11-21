@@ -32,6 +32,12 @@ class KorvpallUtTest(unittest.TestCase):
         self.assertEqual(e.sport, "korvpall")
         self.assertFalse(e.time_tbc)
 
+    def test_results_in_last_column(self):
+        self.assertEqual(self.find(date(2026, 10, 24), "TalTech/ALEXELA").result, "65-41")
+        played = [e for e in self.events if e.result]
+        self.assertEqual(len(played), 6)
+        self.assertTrue(all(e.start.date() < date(2026, 11, 21) for e in played))  # mängimata mängul tulemust pole
+
     def test_time_formats(self):
         self.assertEqual(self.find(date(2026, 10, 6), "Dziki Warsaw").start.hour, 19)       # "19.00"
         self.assertEqual(self.find(date(2026, 9, 24), "Bigbank/Kalev").start.hour, 19)      # "19:00"
