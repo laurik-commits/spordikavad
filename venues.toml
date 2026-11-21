@@ -310,6 +310,7 @@ aliases = ["Kuusalu Spordikeskus"]
 [[venue]]
 name = "Lähte spordihoone"
 city = "Tartu vald"
+aliases = ["Lähte Spordihall"]
 
 [[venue]]
 name = "Jõgeva Virtus"
@@ -779,3 +780,49 @@ city = "Vändra"
 [[venue]]
 name = "Võru Spordikeskuse staadion"
 city = "Võru"
+
+# Noorteliigade saalid (jalgpall, saalijalgpall, võrkpall). Linn tuletatud nimest, vt SOURCES.md
+
+[[venue]]
+name = "Bauroc Rakvere Jalgpallihall"
+city = "Rakvere"
+
+[[venue]]
+name = "EJL jalgpallihall"
+city = "Tallinn"
+
+[[venue]]
+name = "Karksi-Nuia Gümnaasiumi staadion"
+city = "Mulgi vald"
+
+[[venue]]
+name = "Narva Spordikeskuse spordiväljak"
+city = "Narva"
+
+[[venue]]
+name = "Pärnu Rannastaadioni harjutusväljak"
+city = "Pärnu"
+
+[[venue]]
+name = "Tartu Tamme kunstmuruväljak"
+city = "Tartu"
+
+[[venue]]
+name = "Viljandi kunstmuruväljak"
+city = "Viljandi"
+
+[[venue]]
+name = "Sillamäe Spordikompleks"
+city = "Sillamäe"
+
+[[venue]]
+name = "Valga Spordihoone"
+city = "Valga"
+
+[[venue]]
+name = "Jüri Pallihall väike saal"
+city = "Rae vald"
+
+[[venue]]
+name = "Rakvere SH"
+city = "Rakvere"

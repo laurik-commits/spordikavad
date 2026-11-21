@@ -188,6 +188,26 @@ Omaniku valik: madalamad liigad on esiliigadest eraldi tase (`/madalamad/…`), 
 - **Uued saalid (43, `venues.toml`):** linn on tuletatud saali nimest või kodumeeskonnast (jalgpall.ee staadionite nimekiri ei ole serveris renderdatud). Kontrollimata: **Oru Põhikooli staadion** (FC Kose kodu, arvatud Kose), **Kotka staadion** (Tallinna meeskonnad, arvatud Tallinn), **Soe keskasula staadion** (Tõrva JK, arvatud Tõrva), **Rõuge** ja **Vastseliina** (märgitud „Võru vald“). Kui linn on vale, paranda `venues.toml`.
 - **Jäetud välja:** noorteliigad (vt allpool, tehakse eraldi), naiste madalamad liigad, saalijalgpalli madalamad liigad.
 
+## Noored (eraldi kalender „Noored“, `level = 4`, lisatud 2026-11-21)
+
+Omaniku valik: noorteliigad on oma tase (`/noored/…`) ja kõik alad koos. Võetud on vanemad klassid, kus on tavalised kodu/võõra mängud. Mängitud turniirivormis ja U9–U13 jäävad välja.
+
+| Ala | Liigad | Allikas |
+|---|---|---|
+| Jalgpall | U19 eliitliiga (esiliiga) ja finaalturniir, U17 eliitliiga (esiliiga, II liiga), U16, U15 ja U14 esiliiga | jalgpall.ee 89, 408, 239, 240, 222, 227, 231 |
+| Saalijalgpall | U18 saalijalgpalli eliitliiga | jalgpall.ee 495 (hooaja algusaasta 2026) |
+| Käsipall | TU19 meistrivõistlused | kasipall.ee 374 |
+| Võrkpall | U-18 ja U-20 neiud ja noormehed (EMV) | evf-web ID=102/PID=152, 103/155, 105/161, 104/158 |
+
+- **Allikad:** samad adapterid ja robots.txt-id mis vastava ala kõrgliigadel, uusi adaptereid pole. Kontrollitud 2026-11-21.
+- **Jalgpall:** U19 eliitliiga talveliigad (Meistriliiga A/B, ID 406, 407, jaan–märts) on välja jäetud, sest `season` parameeter sellele ei pruugi talve üle toimida. Muud noorte liigad (U17 III liiga 376, U16 II 224, U15 II 388, U14 II 520 jne) on olemas, aga jäetud välja, et lehte mitte risustada. Lisa `config.toml`-i `level = 4` reaga. Kodu/võõra mängudeta turniiriklassid (U9–U13) ei sobi.
+- **Saalijalgpall:** U18 liigas on 21 tulevast mängu (22.11.2026–21.02.2027), seega see on kohe lehel.
+- **Käsipall:** 2026/27 hooajal on mänge ainult TU19 meistrivõistlustel (6 mängu, jaan–aprill 2027). Teised noorte liigad (PU19 381, PU18 389, PU17 382, TU17 375, TU16 376, PU16 383 jt) on kasipall.ee-s veel vana hooaja ID-de all, uued ID-d lisa siia, kui need ilmuvad. Saalide nimed saame alles protokollidest (lähipäevade mängud), seega võib jaanuaris tulla „tundmatu toimumiskoht“.
+- **Võrkpall:** etapid on turniiriformaadis (3-päevane nädalavahetus). Seni on lehel ainult esimene etapp (okt/nov), järgmised lisanduvad hooaja jooksul, seetõttu `check = false`.
+- **Korvpall:** noorteliigad on Korvpalliliidu lehtedel, mis robotid keelavad, seega ei ole.
+- **Saalihoki:** noorte liigasid ei leitud. **Jäähoki:** noorteliigad pole avalikult kättesaadavad.
+- **Uued saalid (11):** Bauroc Rakvere Jalgpallihall, EJL jalgpallihall (arvatud Tallinn), Karksi-Nuia Gümnaasiumi staadion (Mulgi vald), Narva Spordikeskuse spordiväljak, Pärnu Rannastaadioni harjutusväljak, Tartu Tamme kunstmuruväljak, Viljandi kunstmuruväljak, Sillamäe Spordikompleks, Valga Spordihoone, Jüri Pallihall väike saal (Rae vald), Rakvere SH. „Lähte Spordihall“ on olemasoleva „Lähte spordihoone“ alias. Kontrollimata: EJL jalgpallihall asukoht.
+
 ## Pistekontroll 2026-11-20
 
 Iga allika kohta üks mäng lehel olevatest andmetest, võrreldud allika enda mängulehega:

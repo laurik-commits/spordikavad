@@ -142,6 +142,7 @@ county = "Põlvamaa"
 "Valga" = "Valgamaa"
 "Võru vald" = "Võrumaa"
 "Vändra" = "Pärnumaa"
+"Mulgi vald" = "Viljandimaa"
 
 # Maakonnad (slug ja pealkirja vorm)
 [geo.county]
@@ -202,6 +203,14 @@ competitions = [
   { id = 550, league = "III liiga (Lõuna/Ida)", level = 3 },
   { id = 267, league = "IV liiga (Põhi/Ida)", level = 3 },
   { id = 268, league = "IV liiga (Põhi/Lääs)", level = 3 },
+  # level = 4: noored (eraldi kalender „Noored“). Ainult vanemad klassid, tasemed U9-U13 on turniirid.
+  { id = 89, league = "U19 eliitliiga (esiliiga)", level = 4 },
+  { id = 408, league = "U19 eliitliiga finaalturniir", level = 4, check = false },
+  { id = 239, league = "U17 eliitliiga (esiliiga)", level = 4 },
+  { id = 240, league = "U17 eliitliiga (II liiga)", level = 4 },
+  { id = 222, league = "U16 esiliiga", level = 4 },
+  { id = 227, league = "U15 esiliiga", level = 4 },
+  { id = 231, league = "U14 esiliiga", level = 4 },
 ]
 
 [[source]]
@@ -213,6 +222,7 @@ seasons = [["10-01", "03-31"]]
 # jalgpall.ee saalijalgpalli liigad; playoffid (id 187) lisa siia, kui need on avaldatud
 competitions = [
   { id = 125, league = "Saalijalgpalli meistriliiga" },
+  { id = 495, league = "U18 saalijalgpalli eliitliiga", level = 4 },
 ]
 
 [[source]]
@@ -239,6 +249,11 @@ competitions = [
   { host = "evf-web", id = 99, pid = 149, league = "Eesti karikas (naised)", check = false },
   { host = "evf-web", id = 98, pid = 148, league = "Esiliiga (mehed)", level = 2 },
   { host = "evf-web", id = 106, pid = 164, league = "Esiliiga (naised)", level = 2 },
+  # noorte EMV (turniirid, etapid lisanduvad hooaja jooksul, seetõttu check = false)
+  { host = "evf-web", id = 102, pid = 152, league = "U-18 neiud", level = 4, check = false },
+  { host = "evf-web", id = 103, pid = 155, league = "U-18 noormehed", level = 4, check = false },
+  { host = "evf-web", id = 105, pid = 161, league = "U-20 neiud", level = 4, check = false },
+  { host = "evf-web", id = 104, pid = 158, league = "U-20 noormehed", level = 4, check = false },
 ]
 
 [[source]]
@@ -253,6 +268,9 @@ competitions = [
   { id = 361, league = "Meistriliiga (naised)" },
   { id = 362, league = "Eesti karikas (mehed)", check = false },
   { id = 360, league = "Esiliiga (mehed)", level = 2 },
+  # noored: 2026/27 hooajal on teistel noorte liigadel (PU19 381, PU18 389, PU17 382, TU17 375 jt) mänge alles vana hooaja ID-de all,
+  # lisa need siia (level = 4), kui kasipall.ee uued ID-d avaldab
+  { id = 374, league = "TU19 meistrivõistlused", level = 4 },
 ]
 
 [[source]]
