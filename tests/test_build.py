@@ -27,7 +27,8 @@ class RenderTest(unittest.TestCase):
         events = [ev(22, 19, "B"), ev(22, 13, "A", sport="vorkpall"), ev(30, 12, "Kaugel"),
                   ev(21, 18, "Tartlased", sport="kasipall", venue="Tartu Ülikooli spordihoone", city="Tartu"),
                   ev(21, 17, "Viimsilased", sport="kasipall", venue="Viimsi Kool", city="Viimsi"),
-                  ev(21, 19, "Esiliigalased", sport="jalgpall", venue="Wismari jalgpallistaadion", level=2)]
+                  ev(21, 19, "Esiliigalased", sport="jalgpall", venue="Wismari jalgpallistaadion", level=2),
+                  ev(21, 15, "Madalamlased", sport="jalgpall", venue="Männiku kunstmuruväljak", level=3)]
         build.render(events, cfg, date(2026, 11, 20), self.tmp)
 
     def read(self, rel):
@@ -114,6 +115,28 @@ class RenderTest(unittest.TestCase):
         tartu_low = self.read("esiliigad/tartu/2026-11-21/index.html")
         self.assertIn('href="../../../style.css"', tartu_low)
         self.assertIn("Sel päeval Tartus esiliigade mänge pole", tartu_low)
+
+    def test_madalamad_separate_calendar(self):
+        low = self.read("madalamad/2026-11-21/index.html")
+        self.assertIn("Madalamlased", low)
+        self.assertNotIn("Esiliigalased", low)                   # tasemed ei sega üksteist
+        self.assertNotIn("Madalamlased", self.read("esiliigad/2026-11-21/index.html"))
+        self.assertNotIn("Madalamlased", self.read("2026-11-21/index.html"))
+        self.assertIn("Madalamate liigade mängud Tallinnas", low)
+        self.assertIn('href="../../2026-11-21/" data-level="1"', low)
+        self.assertIn('href="../../esiliigad/2026-11-21/" data-level="2"', low)
+        self.assertIn("Madalamate liigade spordimängud", self.read("madalamad/index.html"))  # sissejuhatus avalehel
+        self.assertIn("Sel päeval Tartus madalamate liigade mänge pole",
+                      self.read("madalamad/tartu/2026-11-21/index.html"))
+        # madalamates liigades on ainult jalgpall → teisi alanuppe pole
+        self.assertIn('data-filter="jalgpall"', low)
+        self.assertNotIn('data-filter="jaahoki"', low)
+
+    def test_coverage_has_minor_column(self):
+        rows = {r["key"]: r for r in build.coverage(config.load())}
+        self.assertIn("II liiga", rows["jalgpall"]["minor"])
+        self.assertNotIn("II liiga", rows["jalgpall"]["low"])
+        self.assertEqual(rows["korvpall"]["minor"], [])
 
     def test_day_strip_marks_empty_days(self):
         html = self.read("index.html")

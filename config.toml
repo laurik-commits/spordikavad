@@ -130,6 +130,18 @@ county = "Põlvamaa"
 "Kambja vald" = "Tartumaa"
 "Türi" = "Järvamaa"
 "Põltsamaa" = "Jõgevamaa"
+"Haapsalu" = "Läänemaa"
+"Kärdla" = "Hiiumaa"
+"Järva-Jaani" = "Järvamaa"
+"Kohila" = "Raplamaa"
+"Rapla" = "Raplamaa"
+"Kose" = "Harjumaa"
+"Paldiski" = "Harjumaa"
+"Jõelähtme vald" = "Harjumaa"
+"Tõrva" = "Valgamaa"
+"Valga" = "Valgamaa"
+"Võru vald" = "Võrumaa"
+"Vändra" = "Pärnumaa"
 
 # Maakonnad (slug ja pealkirja vorm)
 [geo.county]
@@ -181,6 +193,15 @@ competitions = [
   { id = 53, league = "Esiliiga", level = 2 },
   { id = 186, league = "Esiliiga B", level = 2 },
   { id = 64, league = "Naiste esiliiga", level = 2 },
+  # level = 3: madalamad liigad (eraldi kalender „Madalamad liigad“), samad ID-d igal aastal, season = aasta
+  { id = 536, league = "II liiga", level = 3 },
+  { id = 537, league = "II liiga B (Põhi/Lääne)", level = 3 },
+  { id = 538, league = "II liiga B (Lõuna/Ida)", level = 3 },
+  { id = 549, league = "III liiga (Põhi/Lääs)", level = 3 },
+  { id = 548, league = "III liiga (Põhi/Ida)", level = 3 },
+  { id = 550, league = "III liiga (Lõuna/Ida)", level = 3 },
+  { id = 267, league = "IV liiga (Põhi/Ida)", level = 3 },
+  { id = 268, league = "IV liiga (Põhi/Lääs)", level = 3 },
 ]
 
 [[source]]

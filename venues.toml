@@ -605,3 +605,177 @@ city = "Riia"
 [[venue]]
 name = "Vilniaus pramogų arena"
 city = "Vilnius"
+
+# Jalgpalli madalamad liigad (II-IV liiga, noored). Linn on tuletatud kodumeeskonnast/nimest, vt SOURCES.md
+
+[[venue]]
+name = "Aruküla staadion"
+city = "Aruküla"
+
+[[venue]]
+name = "Barrus Arena Võru"
+city = "Võru"
+
+[[venue]]
+name = "Haapsalu Uuemõisa jalgpallihall"
+city = "Haapsalu"
+
+[[venue]]
+name = "Haapsalu Uuemõisa kunstmuruväljak"
+city = "Haapsalu"
+
+[[venue]]
+name = "Haapsalu linnastaadion"
+city = "Haapsalu"
+
+[[venue]]
+name = "Hiiumaa spordikeskuse kunstmuruväljak"
+city = "Kärdla"
+
+[[venue]]
+name = "Järva-Jaani Kasekopli staadion"
+city = "Järva-Jaani"
+
+[[venue]]
+name = "Jõgeva aleviku staadion"
+city = "Jõgeva"
+
+[[venue]]
+name = "Jõgeva linnastaadion"
+city = "Jõgeva"
+
+[[venue]]
+name = "Kalevi Keskstaadion"
+city = "Tallinn"
+
+[[venue]]
+name = "Keila staadioni kunstmuruväljak"
+city = "Keila"
+
+[[venue]]
+name = "Keila staadioni muruväljak"
+city = "Keila"
+
+[[venue]]
+name = "Kernu Põhikooli staadion"
+city = "Saue vald"
+
+[[venue]]
+name = "Kohila staadion"
+city = "Kohila"
+
+[[venue]]
+name = "Kose Gümnaasiumi staadion"
+city = "Kose"
+
+[[venue]]
+name = "Kotka staadion"
+city = "Tallinn"
+
+[[venue]]
+name = "Kuusalu Keskkooli staadion"
+city = "Kuusalu"
+
+[[venue]]
+name = "Kärdla linnastaadion"
+city = "Kärdla"
+
+[[venue]]
+name = "Kääriku Kunstmurustaadion"
+city = "Otepää"
+
+[[venue]]
+name = "Loo kunstmuruväljak"
+city = "Jõelähtme vald"
+
+[[venue]]
+name = "Männiku kunstmuruväljak"
+city = "Tallinn"
+
+[[venue]]
+name = "Märjamaa staadion"
+city = "Märjamaa"
+
+[[venue]]
+name = "Oru Põhikooli staadion"
+city = "Kose"
+
+[[venue]]
+name = "Paide jalgpallihall"
+city = "Paide"
+
+[[venue]]
+name = "Paide linnastaadion"
+city = "Paide"
+
+[[venue]]
+name = "Paldiski Alexela Arena"
+city = "Paldiski"
+
+[[venue]]
+name = "Pärnu Jalgpallihall"
+city = "Pärnu"
+
+[[venue]]
+name = "Pärnu kunstmurustaadion"
+city = "Pärnu"
+
+[[venue]]
+name = "Raasiku Põhikooli kunstmuruväljak"
+city = "Raasiku"
+
+[[venue]]
+name = "Rakvere kunstmurustaadion"
+city = "Rakvere"
+
+[[venue]]
+name = "Rapla Jalgpallihall"
+city = "Rapla"
+
+[[venue]]
+name = "Rapla Kesklinna Kooli staadion"
+city = "Rapla"
+
+[[venue]]
+name = "Rõuge staadion"
+city = "Võru vald"
+
+[[venue]]
+name = "Saaremaa Nooruse Hall (Kuressaare jalgpallihall)"
+city = "Kuressaare"
+
+[[venue]]
+name = "Soe keskasula staadion"
+city = "Tõrva"
+
+[[venue]]
+name = "Sõle kunstmuruväljak"
+city = "Tallinn"
+
+[[venue]]
+name = "Türi linnastaadion"
+city = "Türi"
+
+[[venue]]
+name = "Vaimastvere Arena"
+city = "Jõgeva"
+
+[[venue]]
+name = "Valga Kungla kunstmurustaadion"
+city = "Valga"
+
+[[venue]]
+name = "Vastseliina Gümnaasiumi jalgpalliväljak"
+city = "Võru vald"
+
+[[venue]]
+name = "Viimsi Jalgpalli- ja Kergejõustikuhall"
+city = "Viimsi"
+
+[[venue]]
+name = "Vändra staadion"
+city = "Vändra"
+
+[[venue]]
+name = "Võru Spordikeskuse staadion"
+city = "Võru"

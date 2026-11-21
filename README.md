@@ -8,7 +8,7 @@ Lähteülesanne: [SPEC.md](SPEC.md). Andmeallikad ja nende kontroll: [SOURCES.md
 
 1. **GitHub Actions** ([.github/workflows/build.yml](.github/workflows/build.yml)) käivitub iga päev kell 03:00 UTC (05:00 Tallinna talveajal), iga `main` haru muudatuse järel ja käsitsi (Actions → „Ehita ja avalda“ → Run workflow).
 2. [build.py](build.py) käivitab iga allika adapteri (`scrapers/<ala>_<liiga>.py`), jätab alles Eestis toimuvad mängud ([venues.toml](venues.toml) saalide linnade ja `config.toml` `[geo]` järgi) ja salvestab need kausta `data/`.
-3. Mallidest ([site/](site/)) genereeritakse kausta `dist/` staatiline leht iga piirkonna kohta: Tallinn juurkaustas (`/`, `/2026-11-21/`), teised oma kaustas (`/tartu/…`, `/harjumaa/…`, `/eesti/…` = kogu Eesti). Igal piirkonnal on täna + 14 päeva. **Esiliigad** on eraldi kalender kaustas `/esiliigad/…` (sama linnajaotusega). Lisaks `events.json` ja `sitemap.xml`. Päise linna- ja tasemevalik („Kõrgliigad / Esiliigad“) jätavad valiku kasutaja brauserisse meelde ja avaleht suunab sinna.
+3. Mallidest ([site/](site/)) genereeritakse kausta `dist/` staatiline leht iga piirkonna kohta: Tallinn juurkaustas (`/`, `/2026-11-21/`), teised oma kaustas (`/tartu/…`, `/harjumaa/…`, `/eesti/…` = kogu Eesti). Igal piirkonnal on täna + 14 päeva. **Esiliigad** on eraldi kalender kaustas `/esiliigad/…` ja **madalamad liigad** kaustas `/madalamad/…` (sama linnajaotusega). Lisaks `events.json` ja `sitemap.xml`. Päise linna- ja tasemevalik („Kõrgliigad / Esiliigad / Madalamad liigad“) jätavad valiku kasutaja brauserisse meelde ja avaleht suunab sinna.
 4. `dist/` avaldatakse GitHub Pagesis.
 
 **Jälgimine (GitHub Issues, sellest tuleb e-kiri):**
@@ -99,5 +99,5 @@ Kolm sammu: adapter, konfiguratsioonirida ja test.
 - Päevade ribale kuu nimi, kui riba ulatub üle kuu vahetuse.
 - **Jalgpalli karikad** (omanikuga kokku lepitud „millalgi tulevikus“): Tipneri karikas, naiste karikas, superkarikas. Vaja on iCal-lugejat (vt SOURCES.md „Täiendavate võistluste ülevaade“).
 - Eesti jäähoki liigad (Vipers, naiste liiga): vaata uuesti, kas ehis.eestihoki.ee-l on 2026/27 hooaeg.
-- **Veel madalamad liigad** (II liiga jm): esiliigad on tehtud (2026-11-20, eraldi kalender). Kui tahad rohkem, lisa liigad `level = 2` reaga või tee kolmas tase (`scrapers/model.py` → `LEVELS`).
+- **Madalamad liigad:** esiliigad on tehtud (2026-11-20, `level = 2`), jalgpalli II–IV liiga on kolmas tase „Madalamad liigad“ (2026-11-21, `level = 3`, kaust `/madalamad/…`). Teiste alade madalamad liigad: lisa `competitions` reale `level = 3`. Taust: SOURCES.md → Madalamad liigad.
 - Saalijalgpalli esiliigat jalgpall.ee avalikult ei näita. Lisa, kui see ilmub.
