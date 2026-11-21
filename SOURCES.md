@@ -63,7 +63,15 @@ MVP-sse sobib 6 ala 7-st (korvpallist ainult Kalev).
   - **Järeldus:** jätta vahele. Kui kalender hiljem täitub, vaata uuesti, ja siis lisa `config.toml` `http.host_delays` alla `"kkviimsi.ee" = 15.0`. Viimsi mängud Kalevi vastu tulevad ka Kalevi lehelt.
   - Kontrollitud käsitsi kopeeritud lähtekoodist, sest seansi võrk oli selle saidi jaoks blokeeritud.
 - **Pärnu (bcparnu.ee):** veel kontrollimata.
-- **Tartu (basket.ut.ee):** veel kontrollimata.
+- **Tartu Ülikool Maks & Moorits (basket.ut.ee) ✅ (lisatud 2026-11-21).** Adapter `korvpall_ut`.
+  - **Leht:** https://basket.ut.ee/kalender-26-27/ (WordPress, TablePress). Serveris renderdatud HTML, iga kuu oma tabel (AEG / LIIGA / KODU / KÜLALINE / KOHT / TULEMUS). Andmeid ei laeta basket.ee-st, tulemuste lingid viivad ainult estlatbl.com'i, fiba.basketball'i ja Geniuse lehtedele, neid ei kasutata.
+  - **robots.txt (kontrollitud 2026-11-21):** `User-agent: *`, keelatud ainult `/wp-admin/` (`admin-ajax.php` lubatud). Crawl-delay'd pole, kasutame viisakat 5 s (`config.toml` → `http.host_delays`), päring tehakse üks päevas.
+  - **Aeg:** kirjutatud eri viisil (`19:00`, `19.00`, `16,00`), võõrsil mängudel sageli puudub. Mitmepäevased read (eelhooaja turniirid, Eesti karikas 15.–20.02.2027) jäetakse välja.
+  - **Ainult kodumängud (KODU = „TÜ MM“, KOHT = „TÜ sph“).** Võõrsil mängude KOHT on ainult linn („Keila“, „Riia“, „Tallinn“), mida ei saa saaliga siduda. Eestis võõrsil mängud (Keila, Pärnu, Viimsi, TalTech) jäävad seega puudu, v.a mängud Kalevi vastu (Kalevi leht). Saali alias „TÜ sph“ → Tartu Ülikooli spordihoone (`venues.toml`).
+  - **Nimi:** „TÜ MM“ → „Tartu Ülikool Maks&Moorits“ (sama kirjapilt mis Kalevi lehel, et `dedupe` mäng Kalevi vastu kokku viiks).
+  - **Liigad:** EST-LAT → Eesti-Läti Korvpalliliiga, FEC → FIBA Europe Cup (`check = false`), PRESEASON GAME → Eelhooaja mäng.
+  - **Hooaeg:** lehe URL sisaldab hooaega (`kalender-26-27`), uuel hooajal tuleb `URL` adapteris üle vaadata.
+  - **Fixture:** `tests/fixtures/korvpall_ut.html` on lehe mängutabelid (2026-11-21).
 
 ## Jäähoki: Optibet Hokiliiga
 

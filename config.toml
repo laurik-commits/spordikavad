@@ -24,6 +24,7 @@ retries = 3
 [http.host_delays]
 "jalgpall.ee" = 5.0   # robots.txt: Crawl-Delay: 5
 "bckalev.ee" = 5.0    # robots.txt-s crawl-delay'd pole; 1 päring päevas, viisakas 5 s
+"basket.ut.ee" = 5.0  # robots.txt-s crawl-delay'd pole; 1 päring päevas, viisakas 5 s
 
 # --- Linnad ja maakonnad (linnavalik) ---
 # Suuremad linnad on valikus eraldi, ülejäänud kohad oma maakonna all ("Harjumaa (v.a Tallinn)").
@@ -158,7 +159,7 @@ link_text = "Eesti Jäähokiliit"
 
 [[sport_note]]
 sport = "korvpall"
-note = "Näitame Bigbank/Kalevi mänge klubi kodulehelt. Korvpalliliidu leht ei luba andmete automaatset kogumist, seetõttu teiste klubide mänge siin pole."
+note = "Näitame Bigbank/Kalevi mänge ja Tartu Ülikool Maks & Moorits kodumänge klubide kodulehtedelt. Korvpalliliidu leht ei luba andmete automaatset kogumist, seetõttu teiste klubide mänge siin pole."
 url = "https://www.basket.ee/et/ajakava-ja-tulemused?action=schedule"
 link_text = "Kõik mängud basket.ee lehel"
 
@@ -240,6 +241,20 @@ league = "Bigbank/Kalev"
 enabled = true
 seasons = [["09-15", "06-15"]]
 # bckalev.ee/ajakava/: ühe päringuga kõik Kalevi mängud (robots.txt lubab, crawl-delay'd pole). Võistluse nimi on lehel.
+# FIBA Europe Cup: pikad pausid, seetõttu check = false.
+competitions = [
+  { league = "Eesti-Läti Korvpalliliiga" },
+  { league = "FIBA Europe Cup", check = false },
+]
+
+[[source]]
+name = "korvpall_ut"
+sport = "korvpall"
+league = "Tartu Ülikool Maks & Moorits"
+enabled = true
+seasons = [["09-15", "06-15"]]
+# basket.ut.ee/kalender-26-27/: ühe päringuga kogu hooaja tabelid (robots.txt lubab, crawl-delay'd pole).
+# Ainult Tartu kodumängud. Lehe URL sisaldab hooaega: uuel hooajal vaata adapteri URL üle.
 # FIBA Europe Cup: pikad pausid, seetõttu check = false.
 competitions = [
   { league = "Eesti-Läti Korvpalliliiga" },
