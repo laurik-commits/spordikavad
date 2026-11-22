@@ -85,8 +85,8 @@ def missing_upcoming(src: dict, fetched: list[Event], today: date) -> list[str]:
     Möödunud mänge ei arvestata: kui uuel hooajal liiga ID muutub, näitab vana leht ikka eelmise hooaja
     mänge ja ilma selle kontrollita kaoks liiga vaikselt. Võistlus `check = false` (karikad, playoffid) jäetakse välja.
     """
-    if not cfgmod.in_season(src, today):
-        return []
+    if src.get("manual") or not cfgmod.in_season(src, today):
+        return []  # käsitsi lisatud üritusi võib vahepeal mitte olla
     horizon = today + timedelta(days=UPCOMING_DAYS)
 
     def has_upcoming(league: str | None) -> bool:
@@ -110,7 +110,7 @@ def only_estonia(events: list[Event], venues: Venues, geo: Geo, today: date | No
     for e in events:
         if not e.venue.strip():
             if entry is not None and today and today <= e.start.date() <= window_end:
-                entry.setdefault("no_venue", []).append(f"{e.start:%d.%m %H:%M} {e.home} – {e.away} ({e.league})")
+                entry.setdefault("no_venue", []).append(f"{e.start:%d.%m %H:%M} {matchup(e)} ({e.league})")
             continue
         v = venues.lookup(e.venue)
         if v is not None and geo.is_estonian(v.city):
@@ -193,9 +193,14 @@ def when_where(e: Event) -> str:
     return f"{when}, {place}" if place else when
 
 
+def matchup(e: Event) -> str:
+    """ "Kalev – Valmiera"; turniiril või eriüritusel (külalisi pole, käsitsi lisatud) ainult ürituse nimi."""
+    return f"{e.home} – {e.away}" if e.away else e.home
+
+
 def share_text(e: Event) -> str:
     """Tekst, mis läheb jagatava lingi juurde: "Kalev – Valmiera: laupäev, 21. november kell 19:00, ..."."""
-    return f"{e.home} – {e.away}: {when_where(e)}"
+    return f"{matchup(e)}: {when_where(e)}"
 
 
 def _norm_team(name: str) -> str:
@@ -277,7 +282,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
         """Kui ala ükski allikas pole hooajas: "Jalgpalli hooaeg algab märtsis." """
         # terve aasta allikad (koondised) ei ütle midagi liigahooaja kohta
         srcs = [s for s in cfg.get("source", [])
-                if s.get("enabled", True) and s["sport"] == sport and not s.get("year_round")]
+                if s.get("enabled", True) and s.get("sport") == sport and not s.get("year_round")]
         if not srcs or any(cfgmod.in_season(s, today) for s in srcs):
             return ""
         starts = sorted(int(start[-5:-3]) for s in srcs for start, _ in s.get("seasons", []))
@@ -287,6 +292,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
     env = Environment(loader=FileSystemLoader(SITE), autoescape=select_autoescape(["html"]), trim_blocks=True, lstrip_blocks=True)
     env.filters["et_date"] = et_date
     env.filters["share_text"] = share_text
+    env.filters["matchup"] = matchup
     env.filters["when_where"] = when_where
     tpl = env.get_template("day.html")
 
@@ -440,8 +446,8 @@ def coverage(cfg: dict) -> list[dict]:
     column = {1: "top", 2: "low", 3: "minor", 4: "youth", 5: "national"}
     rows: dict[str, dict] = {}
     for src in cfg.get("source", []):
-        if not src.get("enabled", True):
-            continue
+        if not src.get("enabled", True) or src.get("manual"):
+            continue  # käsitsi lisatud üritustel pole oma ala ega liigat
         sport = src["sport"]
         row = rows.setdefault(sport, {"key": sport, "sport": SPORTS[sport], "top": [], "low": [], "minor": [], "youth": [], "national": [],
                                       "source": SOURCE_SITES.get(sport, ("", ""))})

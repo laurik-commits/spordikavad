@@ -1,0 +1,53 @@
+# Käsitsi lisatud mängud ja üritused, mida automaatsed allikad ei kata:
+# sõprusmängud, turniirid, eriüritused (nt tähtede mäng, karikafinaalid), puuduvad koondiste kodumängud,
+# liigamängud, mida allikas mingil põhjusel ei näita.
+#
+# Reeglid:
+# - Iga kirje põhineb ametlikul avalikul allikal (liit, klubi, korraldaja, CEV/FIBA/EHF jms), url on kohustuslik.
+#   Sotsiaalmeedia (Facebook, Instagram jt) pole lubatud allikas.
+# - Ainult Eestis toimuvad üritused, mida saab kohapeal vaatama minna.
+# - Isikuandmeid (mängijate, treenerite nimesid) ei lisata. Võistkonna või ürituse nimi on lubatud.
+# - Saal peab olema venues.toml failis (uus saal lisa sinna, linn peab olema config.toml-is).
+# - Kui sama mäng ilmub hiljem automaatsesse allikasse, jääb kalendrisse automaatse allika oma (dedupe),
+#   käsitsi kirje võib siis eemaldada. Üle 30 päeva vanad kirjed võib kustutada.
+# - Kontroll enne pull request'i:  python -m scrapers.kasitsi   ja   python -m unittest discover -s tests
+#
+# Väljad:
+#   sport     jalgpall | korvpall | jaahoki | vorkpall | kasipall | saalihoki | saalijalgpall
+#   league    liiga või ürituse nimi, nt "Sõprusmäng", "EEVZA U16 neidude turniir"
+#   level     1 kõrgliigad, 2 esiliigad, 4 noored, 5 koondised (määrab, millises kalendris mäng on)
+#   kind      mäng | sõprusmäng | turniir | eriüritus
+#   start     Tallinna aeg 2026-12-05T18:00:00; kui kellaaeg pole teada, ainult kuupäev 2026-12-05
+#   home      kodumeeskond või ürituse nimi (turniiril: "EEVZA U16 neidude turniir")
+#   away      külalismeeskond (valikuline; turniiril või eriüritusel jäta ära, siis näidatakse ainult home)
+#   venue     saali nimi venues.toml-ist (või selle alias)
+#   url       ametlik allikas, kus mäng või üritus on kirjas
+#   added     lisamise kuupäev, nt 2026-11-22
+#   note      valikuline märkus ülevaatajale (lehel ei näidata), nt kui kindel on allikas
+#   time_tbc  valikuline, true kui kellaaeg pole kinnitatud
+#   result    valikuline lõppseis "3-1"
+#
+# Näited (mäng ja kogu päeva turniir):
+# [[event]]
+# sport = "vorkpall"
+# league = "EEVZA U16 neidude turniir"
+# level = 5
+# kind = "mäng"
+# start = 2026-12-05T15:00:00
+# home = "Eesti U16"
+# away = "Läti U16"
+# venue = "Kääriku spordihoone"
+# url = "https://www.volley.ee/..."
+# added = 2026-11-22
+# note = "Liidu uudis, kellaaeg kinnitatud"
+#
+# [[event]]
+# sport = "korvpall"
+# league = "Noorte jõulukarikas"
+# level = 4
+# kind = "turniir"
+# start = 2026-12-19
+# home = "Noorte jõulukarikas (U14)"
+# venue = "Kalevi spordihall"
+# url = "https://..."
+# added = 2026-11-22

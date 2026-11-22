@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{% set match = e.home ~ ' – ' ~ e.away %}
+{% set match = e | matchup %}
 {% set score = e.result | replace('-', ':') %}
 <title>{{ match }}{% if score %} {{ score }}{% endif %} – {{ day | et_date }} | Spordikavad</title>
 <meta name="description" content="{{ sports[e.sport] }}, {{ e.league }}. {{ e | when_where }}.">
@@ -44,7 +44,7 @@
     </div>
   </article>
   <p class="actions">
-    <a class="btn" href="{{ e.url }}" rel="noopener">{{ ('Statistika' if e.result else 'Mängu leht') if past else 'Mängu leht' }} allikal ↗</a>
+    <a class="btn" href="{{ e.url }}" rel="noopener">{% if e.source == 'kasitsi' %}Teade allikal{% else %}{{ ('Statistika' if e.result else 'Mängu leht') if past else 'Mängu leht' }} allikal{% endif %} ↗</a>
     <button type="button" class="btn share-btn share" data-url="{{ canonical }}" data-title="{{ match }}" data-text="{{ e | share_text }}">Jaga</button>
   </p>
   <p><a href="{{ day_href }}">Kõik {{ level_info.tier }} mängud: {{ day | et_date }} →</a></p>

@@ -242,6 +242,17 @@ Mõlema allika ajakava leht näitab ainult tulevasi mänge, tulemused on eraldi 
 - **Tartu (basket.ut.ee):** tulemus on ajakava tabeli viimases veerus ("65:41"), eraldi päringut pole vaja.
 - Kui tulemuste lehte ei saa, ajakava töötab edasi (hoiatus logis).
 
+## Käsitsi lisatud mängud ja üritused (`kasitsi.toml`, lisatud 2026-11-22)
+
+Automaatsed allikad ei kata sõprusmänge, turniire, eriüritusi (tähtede mäng, karikafinaalid jms), võrkpalli, korvpalli ja käsipalli koondiste kodumänge ega üksikuid mänge, mida allikas mingil põhjusel ei näita. Need on failis `kasitsi.toml` (adapter `kasitsi`, `manual = true` config.toml-is).
+
+- **Kes lisab:** otsingu agent (pilverutiin, E ja N hommikul) otsib neid veebist, hindab ja lisab kindlad leiud pull request'iga harusse `claude/otsing-<kuupäev>`. Omanik vaatab PR-i üle ja merge'ib. Ebakindlad leiud ja puuduvad terved võistlused (uue allika vajadus) lähevad issue'na (silt `puuduv-uritus`). Kasutajate teated (issue mall „Puuduv üritus“) on agendile vihje, mitte allikas: kirje tehakse ainult siis, kui agent leiab ise ametliku kinnituse.
+- **Reeglid:** iga kirje põhineb ametlikul avalikul allikal (`url`, sotsiaalmeedia pole lubatud), ainult Eestis toimuvad üritused, isikuandmeid ei lisata. Saal peab olema `venues.toml`-is. Väljad ja näited on faili päises.
+- **Kontroll:** `python -m scrapers.kasitsi` (loeb faili, kontrollib saale ja prindib kirjed) ja testid. PR-i puhul jooksutab need GitHub Actions („Testid“).
+- **Kalender:** tase (`level`) on igal kirjel eraldi. Turniiril ja eriüritusel võib külalismeeskonna ära jätta, siis näidatakse ainult ürituse nime. Mängu lehel on nupp „Teade allikal ↗“.
+- **Topelt:** allikas on config.toml-is viimane, seega kui sama mäng tuleb hiljem automaatsest allikast (sama ala ja algusaeg ning samad võistkonnad või sama saal), jääb alles automaatse allika oma.
+- **Hooaeg:** terve aasta, 0 tulevast üritust ei ole viga (ei tee „allikas“ issue'd).
+
 ## Pistekontroll 2026-11-20
 
 Iga allika kohta üks mäng lehel olevatest andmetest, võrreldud allika enda mängulehega:
