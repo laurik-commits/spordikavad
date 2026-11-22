@@ -1,0 +1,59 @@
+{
+ "65398d18f42e": {
+  "changes": [],
+  "event": {
+   "away": "Viru Sputnik",
+   "city": "Tallinn",
+   "home": "HC Vipers",
+   "id": "65398d18f42e",
+   "league": "Unibet Hokiliiga",
+   "level": 1,
+   "result": "",
+   "source": "jaahoki_vipers",
+   "sport": "jaahoki",
+   "start": "2027-02-20T16:35:00+02:00",
+   "time_tbc": false,
+   "url": "https://ehs.eestihoki.ee/statistika/maengu-aruanne/?divisionId=21573&gameId=53a7c965-e1ff-4177-a69f-5d2b3c46f634",
+   "venue": "Tondiraba jäähall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "6e58da93d8b4": {
+  "changes": [],
+  "event": {
+   "away": "HC Everest",
+   "city": "Tallinn",
+   "home": "HC Vipers",
+   "id": "6e58da93d8b4",
+   "league": "Unibet Hokiliiga",
+   "level": 1,
+   "result": "",
+   "source": "jaahoki_vipers",
+   "sport": "jaahoki",
+   "start": "2027-01-30T16:35:00+02:00",
+   "time_tbc": false,
+   "url": "https://ehs.eestihoki.ee/statistika/maengu-aruanne/?divisionId=21573&gameId=13173969-e24c-4283-90ca-d1c2a085a260",
+   "venue": "Tondiraba jäähall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "86f9a79d2409": {
+  "changes": [],
+  "event": {
+   "away": "Narva PSK",
+   "city": "Tallinn",
+   "home": "HC Vipers",
+   "id": "86f9a79d2409",
+   "league": "Unibet Hokiliiga",
+   "level": 1,
+   "result": "",
+   "source": "jaahoki_vipers",
+   "sport": "jaahoki",
+   "start": "2027-01-09T16:35:00+02:00",
+   "time_tbc": false,
+   "url": "https://ehs.eestihoki.ee/statistika/maengu-aruanne/?divisionId=21573&gameId=3406ed40-dea1-40e9-8945-f08974d91f70",
+   "venue": "Tondiraba jäähall"
+  },
+  "first_seen": "2026-11-22"
+ }
+}
