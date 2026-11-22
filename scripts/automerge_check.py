@@ -5,7 +5,7 @@ PR-i koodi ei käivitata, seega ei saa PR kontrolli ennast muuta. PR merge'itaks
 kui KÕIK kontrollid läbivad, muidu jääb see omanikule üle vaatamiseks.
 
 Kontrollikihid:
-1. Muudetud failid: ainult kasitsi.toml, venues.toml ja config.toml.
+1. Muudetud failid: ainult kasitsi.toml, venues.toml, config.toml ja allikad.toml.
 2. config.toml: muutuda tohivad ainult uued kohad [geo.place] all (olemasoleva maakonnaga).
 3. venues.toml: olemasolevad saalid muutmata, uusi kuni MAX_NEW_VENUES, linn on Eestis.
 4. kasitsi.toml: fail on korrektne (scrapers.kasitsi); olemasolevaid kirjeid ei muudeta; eemaldada
@@ -13,6 +13,10 @@ Kontrollikihid:
    `added` viimase 3 päeva sees; `note` (hinnang) olemas; saal on teada ja Eestis.
 5. Iga uue kirje allikas: robots.txt lubab, leht vastab ja lehel on mängu kuupäev ning
    võistkonna või ürituse nimi.
+6. allikad.toml (allikate register): fail on korrektne (allikad.check); kirjeid ei kustutata;
+   olemasolevatel kirjetel tohib muuta ainult välju kontrollitud, markus, kuju, robots, kandidaat
+   (ja kasutuse "keelatud"-ks); uusi kuni MAX_NEW_SOURCES, nende kasutus on agent, vihje või keelatud
+   (adapterit saab märkida ainult omanik). Registri muudatus ei muuda lehte, seega allikat ei avata.
 
 Kasutus (GitHub Actions):  python scripts/automerge_check.py --head <sha> --out result.md
 Väljumiskood 0 = võib merge'ida, 1 = jääb omanikule. result.md läheb PR-i kommentaariks.
@@ -36,13 +40,16 @@ from urllib.parse import urlsplit
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
+import allikad  # noqa: E402
 from scrapers import config as cfgmod  # noqa: E402
 from scrapers import kasitsi  # noqa: E402
 from scrapers.geo import Geo  # noqa: E402
 from scrapers.model import TALLINN, Event  # noqa: E402
 from scrapers.venues import Venues  # noqa: E402
 
-ALLOWED_FILES = {"kasitsi.toml", "venues.toml", "config.toml"}
+ALLOWED_FILES = {"kasitsi.toml", "venues.toml", "config.toml", "allikad.toml"}
+MAX_NEW_SOURCES = 15
+SOURCE_EDITABLE = {"kontrollitud", "markus", "kuju", "robots", "kandidaat"}
 MAX_NEW_EVENTS = 10
 MAX_NEW_VENUES = 5
 MAX_DAYS_AHEAD = 60
@@ -115,6 +122,42 @@ def check_venues(base: str, head: str, geo: Geo) -> list[str]:
     except (ValueError, KeyError) as exc:
         problems.append(f"venues.toml ei ole korrektne: {exc}")
     return problems
+
+
+# --- 6: allikad.toml -----------------------------------------------------------
+
+def check_sources(base: str, head: str) -> tuple[list[str], bool]:
+    """Tagastab (probleemid, kas registris muutus midagi)."""
+    if base == head:
+        return [], False
+    try:
+        b, h = allikad.parse(base) if base else [], allikad.parse(head)
+    except ValueError as exc:  # tomllib.TOMLDecodeError on ValueError
+        return [f"allikad.toml ei ole korrektne TOML: {exc}"], True
+    problems = [f"allikad.toml: {e}" for e in allikad.check(h)]
+    key = lambda it: str(it.get("url", "")).rstrip("/").lower()  # noqa: E731
+    hb = {key(it): it for it in h}
+    for old in b:
+        new = hb.get(key(old))
+        if new is None:
+            problems.append(f"allikad.toml: kirje on eemaldatud või selle url muutus: {old.get('nimi')}")
+            continue
+        changed = {k for k in set(old) | set(new) if old.get(k) != new.get(k)}
+        if new.get("kasutus") == "keelatud" and old.get("kasutus") in ("agent", "vihje"):
+            changed.discard("kasutus")
+        bad = sorted(changed - SOURCE_EDITABLE)
+        if bad:
+            problems.append(f"allikad.toml: kirjel {old.get('nimi')!r} on muudetud välju, mida agent "
+                            f"muuta ei tohi: {', '.join(bad)}")
+    bkeys = {key(it) for it in b}
+    added = [it for it in h if key(it) not in bkeys]
+    if len(added) > MAX_NEW_SOURCES:
+        problems.append(f"allikad.toml: uusi allikaid {len(added)} (lubatud kuni {MAX_NEW_SOURCES})")
+    for it in added:
+        if it.get("kasutus") not in ("agent", "vihje", "keelatud"):
+            problems.append(f"allikad.toml: uue allika {it.get('nimi')!r} kasutus peab olema agent, vihje "
+                            "või keelatud (adapterit märgib omanik)")
+    return problems, True
 
 
 # --- 4: kasitsi.toml -----------------------------------------------------------
@@ -262,8 +305,11 @@ def evaluate(changed: list[str], read_base, read_head, today: date, get, user_ag
         return problems
     kp, new = check_kasitsi(read_base("kasitsi.toml"), read_head("kasitsi.toml"), today, venues, geo)
     problems += kp
-    if not new and not kp:
-        problems.append("PR-is pole uusi kasitsi.toml kirjeid (ainult saalid või eemaldused): vaata üle käsitsi")
+    sp, sources_changed = check_sources(read_base("allikad.toml"), read_head("allikad.toml"))
+    problems += sp
+    if not new and not kp and not sources_changed:
+        problems.append("PR-is pole uusi kasitsi.toml kirjeid ega registri muudatusi (ainult saalid või "
+                        "eemaldused): vaata üle käsitsi")
     if problems:
         return problems  # allikaid ei koormata, kui PR nagunii omanikule jääb
     for e in new:
@@ -303,7 +349,7 @@ def main(argv: list[str] | None = None) -> int:
                 + "\n\nKui kõik on korras, merge'i käsitsi. Kontrolli reeglid: `scripts/automerge_check.py`.")
     else:
         body = ("Automaatne kontroll läbis: muudetud ainult lubatud failid, kirjed on korrektsed ja "
-                "iga uue kirje allika lehel on kuupäev ning võistkonna või ürituse nimi.")
+                "iga uue mängu allika lehel on kuupäev ning võistkonna või ürituse nimi.")
     Path(args.out).write_text(body + "\n", encoding="utf-8")
     print(body)
     return 1 if problems else 0

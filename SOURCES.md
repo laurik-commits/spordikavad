@@ -266,6 +266,16 @@ Otsingu agendi PR (`claude/otsing-*`) läheb `main` harusse ilma omaniku ülevaa
 3. **Allika kontroll:** GitHub Actions avab iga uue kirje `url`-i (robots.txt peab lubama). Lehel peab olema mängu kuupäev (5.12, 05.12.2026, 5. detsember, December 5 jms) ja võistkonna või ürituse nimi.
 4. **Merge:** squash, ainult sama commit'iga, mille testid läbisid (`--match-head-commit`). Siis käivitatakse lehe ehitus.
 5. **Järelkontroll:** nädalaplaani agent loetleb eelmise nädala automaatselt merge'itud PR-id. Vale kirje parandamiseks: kustuta see `kasitsi.toml`-ist (tavaline PR).
+6. **Allikate register** (`allikad.toml`): agent võib lisada uusi allikaid (kasutus agent, vihje või keelatud) ning uuendada olemasolevatel välju `kontrollitud`, `markus`, `kuju`, `robots`, `kandidaat`. Kustutada, ümber nimetada või adapteriks märkida saab ainult omanik.
+
+## Allikate register (`allikad.toml`, lisatud 2026-11-22)
+
+Kõik kohad, kust leiab infot Eestis toimuvate mängude kohta, ühes failis: hallid ja areenid, linnade ja valdade sündmuste kalendrid, liidud, rahvusvahelised alaliidud, klubid, piletimüük ja uudised. Iga kirje kohta on url, alad, piirkond, lehe kuju (html/js), robots.txt olek, kasutus ja viimase kontrolli kuupäev.
+
+- **Kasutus:** `adapter:<nimi>` loetakse automaatselt iga päev; `agent` käib otsingu agent igal jooksul läbi; `vihje` on vihjeallikas (uudised, piletimüük), mille põhjal otsitakse ametlik kinnitus; `keelatud` ei loeta (nt basket.ee, estlatbl.com).
+- **Adapteri kandidaadid** (`kandidaat = true`): korrapärase mängukavaga allikad, millest saaks teha automaatse adapteri (praegu HC Vipersi mängude leht ja Eesti Hoki Statistika).
+- **Kontroll:** `python allikad.py` (kokkuvõte ja vead), `python allikad.py --agent` (agendi kontrollnimekiri). Testid kontrollivad faili igal PR-il.
+- **Esimene versioon** (50 allikat) on kontrollitud 2026-11-22: iga url vastas, robots.txt vaadatud. Kalevi spordihallil, Pärnu spordihallil ning Narva spordikeskusel ja jäähallil oma üritustekalendrit ei leitud, nende üritusi otsitakse linnade kalendritest.
 
 ## Pistekontroll 2026-11-20
 
