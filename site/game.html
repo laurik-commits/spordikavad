@@ -55,8 +55,6 @@
   <p>Kui olete andmete omanik ega soovi, et neid siin näidataks, <a href="{{ contact_url }}">kirjutage meile</a>.</p>
 </footer>
 <script src="{{ root }}app.js" defer></script>
-{% if analytics_enabled and analytics_token %}
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ analytics_token }}"}'></script>
-{% endif %}
+{% include "_analytics.html" %}
 </body>
 </html>

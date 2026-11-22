@@ -303,6 +303,39 @@ class RenderTest(unittest.TestCase):
         self.assertIn('data-built="2026-11-20"', root)
 
 
+class AnalyticsTest(unittest.TestCase):
+    BEACON = "static.cloudflareinsights.com/beacon.min.js"
+
+    def render(self, **site):
+        tmp = Path(tempfile.mkdtemp())
+        cfg = {"site": {"days_ahead": 2, "base_url": "https://example.org/", **site},
+               "geo": config.load()["geo"], "source": config.load()["source"]}
+        events = [ev(21, 19, "A")]
+        build.render(events, cfg, date(2026, 11, 20), tmp)
+        pages = ["index.html", "2026-11-21/index.html", "info/index.html", "404.html",
+                 f"m/{events[0].id}/index.html"]
+        return {p: (tmp / p).read_text(encoding="utf-8") for p in pages}
+
+    def test_beacon_on_every_page_when_enabled(self):
+        pages = self.render(analytics_enabled=True, analytics_token="abc123")
+        for name, html in pages.items():
+            with self.subTest(page=name):
+                self.assertIn(self.BEACON, html)
+                self.assertIn('data-cf-beacon=\'{"token": "abc123"}\'', html)
+        self.assertIn("ei kasuta küpsiseid", pages["info/index.html"])
+
+    def test_no_beacon_by_default(self):
+        for name, html in self.render().items():
+            with self.subTest(page=name):
+                self.assertNotIn(self.BEACON, html)
+                self.assertNotIn("Privaatsus", html)
+
+    def test_repo_config_has_token(self):
+        site = config.load()["site"]
+        self.assertTrue(site["analytics_enabled"])
+        self.assertRegex(site["analytics_token"], r"^[0-9a-f]{32}$")
+
+
 class GeoTest(unittest.TestCase):
     def test_every_venue_city_is_classified(self):
         geo = Geo(config.load())
