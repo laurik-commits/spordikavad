@@ -1,4 +1,42 @@
 {
+ "0a73215b68c1": {
+  "changes": [],
+  "event": {
+   "away": "Rigas Ekselences Juniori",
+   "city": "Tallinn",
+   "home": "Bigbank/Kalev",
+   "id": "0a73215b68c1",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "100-79",
+   "source": "korvpall_kalev",
+   "sport": "korvpall",
+   "start": "2026-10-17T18:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://bckalev.ee/event/bigbank-kalev-vs-rigas-ekselences-juniori/",
+   "venue": "Nord Spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "1d8fac9900de": {
+  "changes": [],
+  "event": {
+   "away": "Valmiera Glass VIA",
+   "city": "Tallinn",
+   "home": "Bigbank/Kalev",
+   "id": "1d8fac9900de",
+   "league": "FIBA Europe Cup",
+   "level": 1,
+   "result": "83-81",
+   "source": "korvpall_kalev",
+   "sport": "korvpall",
+   "start": "2026-11-17T19:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://bckalev.ee/event/bigbank-kalev-vs-valmiera-glass-via-3/",
+   "venue": "Kalevi spordihall"
+  },
+  "first_seen": "2026-11-22"
+ },
  "1ebcedb8301e": {
   "changes": [],
   "event": {
@@ -18,6 +56,25 @@
   },
   "first_seen": "2026-11-22"
  },
+ "24da79cbb0e6": {
+  "changes": [],
+  "event": {
+   "away": "BC Pärnu",
+   "city": "Tallinn",
+   "home": "Bigbank/Kalev",
+   "id": "24da79cbb0e6",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "79-78",
+   "source": "korvpall_kalev",
+   "sport": "korvpall",
+   "start": "2026-10-03T18:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://bckalev.ee/event/bigbank-kalev-vs-bc-parnu/",
+   "venue": "Nord Spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
  "345937ced9e4": {
   "changes": [],
   "event": {
@@ -33,6 +90,139 @@
    "start": "2026-12-05T18:00:00+02:00",
    "time_tbc": false,
    "url": "https://bckalev.ee/event/bigbank-kalev-vs-liepaja/",
+   "venue": "Nord Spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "3c6541121ecf": {
+  "changes": [],
+  "event": {
+   "away": "Biotekno Korfez Basket",
+   "city": "Tallinn",
+   "home": "Bigbank/Kalev",
+   "id": "3c6541121ecf",
+   "league": "FIBA Europe Cup",
+   "level": 1,
+   "result": "86-78",
+   "source": "korvpall_kalev",
+   "sport": "korvpall",
+   "start": "2026-10-07T19:30:00+03:00",
+   "time_tbc": false,
+   "url": "https://bckalev.ee/event/bigbank-kalev-vs-glint-manisa-basket/",
+   "venue": "Kalevi spordihall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "6d05b7c95cb4": {
+  "changes": [],
+  "event": {
+   "away": "Bigbank/Kalev",
+   "city": "Keila",
+   "home": "Keila KK",
+   "id": "6d05b7c95cb4",
+   "league": "Pre-season",
+   "level": 1,
+   "result": "74-101",
+   "source": "korvpall_kalev",
+   "sport": "korvpall",
+   "start": "2026-09-09T19:30:00+03:00",
+   "time_tbc": false,
+   "url": "https://bckalev.ee/event/keila-kk-vs-bigbank-kalev/",
+   "venue": "Keila Tervisekeskus"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "8bbd46d625e5": {
+  "changes": [],
+  "event": {
+   "away": "BC Baskhimi",
+   "city": "Tallinn",
+   "home": "Bigbank/Kalev",
+   "id": "8bbd46d625e5",
+   "league": "FIBA Europe Cup",
+   "level": 1,
+   "result": "88-84",
+   "source": "korvpall_kalev",
+   "sport": "korvpall",
+   "start": "2026-10-21T19:30:00+03:00",
+   "time_tbc": false,
+   "url": "https://bckalev.ee/event/bigbank-kalev-vs-bc-baskhimi/",
+   "venue": "Kalevi spordihall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "8cad1c655da4": {
+  "changes": [],
+  "event": {
+   "away": "Bigbank/Kalev",
+   "city": "Tartu",
+   "home": "Tartu Ülikool Maks&Moorits",
+   "id": "8cad1c655da4",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "90-63",
+   "source": "korvpall_kalev",
+   "sport": "korvpall",
+   "start": "2026-09-24T19:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://bckalev.ee/event/tartu-ulikool-maksmoorits-vs-bigbank-kalev/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "9e547515a55c": {
+  "changes": [],
+  "event": {
+   "away": "Keila Basket",
+   "city": "Tallinn",
+   "home": "Bigbank/Kalev",
+   "id": "9e547515a55c",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "98-77",
+   "source": "korvpall_kalev",
+   "sport": "korvpall",
+   "start": "2026-10-24T18:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://bckalev.ee/event/bigbank-kalev-vs-keila-basket/",
+   "venue": "Nord Spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "a012032783da": {
+  "changes": [],
+  "event": {
+   "away": "Rigas Zelli",
+   "city": "Tallinn",
+   "home": "Bigbank/Kalev",
+   "id": "a012032783da",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "87-93",
+   "source": "korvpall_kalev",
+   "sport": "korvpall",
+   "start": "2026-10-31T18:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://bckalev.ee/event/bigbank-kalev-vs-rigas-zelli/",
+   "venue": "Nord Spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "a477044a4fdd": {
+  "changes": [],
+  "event": {
+   "away": "Bigbank/Kalev",
+   "city": "Tallinn",
+   "home": "Latvijas Universitate",
+   "id": "a477044a4fdd",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "89-76",
+   "source": "korvpall_kalev",
+   "sport": "korvpall",
+   "start": "2026-11-14T18:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://bckalev.ee/event/latvijas-universitate-vs-bigbank-kalev/",
    "venue": "Nord Spordihoone"
   },
   "first_seen": "2026-11-22"
@@ -56,6 +246,25 @@
   },
   "first_seen": "2026-11-22"
  },
+ "c9e87c0907f1": {
+  "changes": [],
+  "event": {
+   "away": "Bigbank/Kalev",
+   "city": "Viimsi",
+   "home": "Viimsi",
+   "id": "c9e87c0907f1",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "66-89",
+   "source": "korvpall_kalev",
+   "sport": "korvpall",
+   "start": "2026-09-27T17:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://bckalev.ee/event/viimsi-vs-bigbank-kalev/",
+   "venue": "Forus Spordikeskus Viimsi"
+  },
+  "first_seen": "2026-11-22"
+ },
  "d3fe67ca155f": {
   "changes": [],
   "event": {
@@ -72,6 +281,25 @@
    "time_tbc": false,
    "url": "https://bckalev.ee/event/bigbank-kalev-vs-elan-chalon/",
    "venue": "Saku Suurhall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "db1f6bb8d259": {
+  "changes": [],
+  "event": {
+   "away": "BK Ventspils",
+   "city": "Tallinn",
+   "home": "Bigbank/Kalev",
+   "id": "db1f6bb8d259",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "73-86",
+   "source": "korvpall_kalev",
+   "sport": "korvpall",
+   "start": "2026-10-10T18:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://bckalev.ee/event/bigbank-kalev-vs-bk-ventspils/",
+   "venue": "Nord Spordihoone"
   },
   "first_seen": "2026-11-22"
  },

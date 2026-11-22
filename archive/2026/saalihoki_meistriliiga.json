@@ -75,6 +75,25 @@
   },
   "first_seen": "2026-11-22"
  },
+ "16facb08bb42": {
+  "changes": [],
+  "event": {
+   "away": "Flash by FF",
+   "city": "Kuusalu",
+   "home": "Kuusalu Eluterve Naine",
+   "id": "16facb08bb42",
+   "league": "Energialiiga",
+   "level": 2,
+   "result": "5-0",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2026-10-31T17:45:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Protokoll.aspx?id=eBczY7Thxyo=",
+   "venue": "Kuusalu spordikeskus"
+  },
+  "first_seen": "2026-11-22"
+ },
  "1d0bb2338db1": {
   "changes": [],
   "event": {
@@ -94,6 +113,63 @@
   },
   "first_seen": "2026-11-22"
  },
+ "2066e5febd38": {
+  "changes": [],
+  "event": {
+   "away": "SK Voore",
+   "city": "Kuusalu",
+   "home": "Arenculle",
+   "id": "2066e5febd38",
+   "league": "Energialiiga",
+   "level": 2,
+   "result": "1-5",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2026-10-31T15:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Protokoll.aspx?id=RTjRIcDsUN4=",
+   "venue": "Kuusalu spordikeskus"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "3f1079a79a0b": {
+  "changes": [],
+  "event": {
+   "away": "Lekrings/CPSS",
+   "city": "Märjamaa",
+   "home": "Sparta",
+   "id": "3f1079a79a0b",
+   "league": "Eesti-Läti liiga (naised)",
+   "level": 1,
+   "result": "4-6",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2026-09-26T13:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Protokoll.aspx?id=V08L56cfXKI=",
+   "venue": "Märjamaa Valla Spordikeskus"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "5e7c610ec6a0": {
+  "changes": [],
+  "event": {
+   "away": "Jõgeva SK Tähe / Olivia",
+   "city": "Märjamaa",
+   "home": "Sparta Team Automaailm",
+   "id": "5e7c610ec6a0",
+   "league": "Eesti-Läti liiga (mehed)",
+   "level": 1,
+   "result": "5-4",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2026-11-14T16:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Protokoll.aspx?id=Ri/i0+7leSI=",
+   "venue": "Märjamaa Valla Spordikeskus"
+  },
+  "first_seen": "2026-11-22"
+ },
  "61586e1d78af": {
   "changes": [],
   "event": {
@@ -110,6 +186,44 @@
    "time_tbc": false,
    "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8702",
    "venue": "Õismäe sportmängude hall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "61c03cba9d5e": {
+  "changes": [],
+  "event": {
+   "away": "Kuusalu Eluterve Naine",
+   "city": "Rapla",
+   "home": "EMÜ SK II",
+   "id": "61c03cba9d5e",
+   "league": "Energialiiga",
+   "level": 2,
+   "result": "6-3",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2026-11-14T11:15:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Protokoll.aspx?id=d3/l7sHphJA=",
+   "venue": "Rapla Sadolin Spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "79d1bdbb467f": {
+  "changes": [],
+  "event": {
+   "away": "Järva - Jaani",
+   "city": "Kuusalu",
+   "home": "Kaitseliidu Rapla Malev",
+   "id": "79d1bdbb467f",
+   "league": "Energialiiga",
+   "level": 2,
+   "result": "9-2",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2026-10-31T11:15:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Protokoll.aspx?id=gyhefNMMKJw=",
+   "venue": "Kuusalu spordikeskus"
   },
   "first_seen": "2026-11-22"
  },
@@ -167,6 +281,25 @@
    "time_tbc": false,
    "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8734",
    "venue": "Märjamaa Valla Spordikeskus"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "a2c903906b63": {
+  "changes": [],
+  "event": {
+   "away": "Flash by FF",
+   "city": "Rapla",
+   "home": "Kaitseliidu Rapla Malev",
+   "id": "a2c903906b63",
+   "league": "Energialiiga",
+   "level": 2,
+   "result": "4-0",
+   "source": "saalihoki_meistriliiga",
+   "sport": "saalihoki",
+   "start": "2026-11-14T10:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.saalihoki.ee/Protokoll.aspx?id=KVWLbZ3StEM=",
+   "venue": "Rapla Sadolin Spordihoone"
   },
   "first_seen": "2026-11-22"
  },

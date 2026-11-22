@@ -18,6 +18,120 @@
   },
   "first_seen": "2026-11-22"
  },
+ "03eeadab19f8": {
+  "changes": [],
+  "event": {
+   "away": "ASK/MSĢ",
+   "city": "Raasiku",
+   "home": "HC Cocks",
+   "id": "03eeadab19f8",
+   "league": "Balti liiga (mehed)",
+   "level": 1,
+   "result": "43-27",
+   "source": "kasipall_bhl",
+   "sport": "kasipall",
+   "start": "2026-10-10T18:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://baltichandball.eu/season/206/league/636/game/15202",
+   "venue": "Raasiku spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "04f834b24ada": {
+  "changes": [],
+  "event": {
+   "away": "HC Tabasalu",
+   "city": "Tallinn",
+   "home": "KPK Mella",
+   "id": "04f834b24ada",
+   "league": "Eesti-Läti liiga (naised)",
+   "level": 1,
+   "result": "27-23",
+   "source": "kasipall_bhl",
+   "sport": "kasipall",
+   "start": "2026-10-14T19:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://baltichandball.eu/season/206/league/637/game/15278",
+   "venue": "Kristiine spordihall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "0887c91a824a": {
+  "changes": [],
+  "event": {
+   "away": "Mistra",
+   "city": "Harku vald",
+   "home": "HC Tabasalu",
+   "id": "0887c91a824a",
+   "league": "Eesti-Läti liiga (naised)",
+   "level": 1,
+   "result": "20-29",
+   "source": "kasipall_bhl",
+   "sport": "kasipall",
+   "start": "2026-11-06T19:45:00+02:00",
+   "time_tbc": false,
+   "url": "https://baltichandball.eu/season/206/league/637/game/15279",
+   "venue": "Tabasalu kooli spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "0fb2e746a30f": {
+  "changes": [],
+  "event": {
+   "away": "SK Latgols",
+   "city": "Harku vald",
+   "home": "HC Tabasalu",
+   "id": "0fb2e746a30f",
+   "league": "Eesti-Läti liiga (naised)",
+   "level": 1,
+   "result": "29-32",
+   "source": "kasipall_bhl",
+   "sport": "kasipall",
+   "start": "2026-09-19T18:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://baltichandball.eu/season/206/league/637/game/15271",
+   "venue": "Tabasalu kooli spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "12878b1f8ccb": {
+  "changes": [],
+  "event": {
+   "away": "KPK Mella",
+   "city": "Raasiku",
+   "home": "Mistra",
+   "id": "12878b1f8ccb",
+   "league": "Eesti-Läti liiga (naised)",
+   "level": 1,
+   "result": "33-22",
+   "source": "kasipall_bhl",
+   "sport": "kasipall",
+   "start": "2026-10-08T19:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://baltichandball.eu/season/206/league/637/game/15281",
+   "venue": "Raasiku spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "1cb7dec904c2": {
+  "changes": [],
+  "event": {
+   "away": "Viljandi HC/LEONHARD WEISS",
+   "city": "Raasiku",
+   "home": "HC Cocks",
+   "id": "1cb7dec904c2",
+   "league": "Balti liiga (mehed)",
+   "level": 1,
+   "result": "25-25",
+   "source": "kasipall_bhl",
+   "sport": "kasipall",
+   "start": "2026-11-14T18:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://baltichandball.eu/season/206/league/636/game/15210",
+   "venue": "Raasiku spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
  "383d5093e2ab": {
   "changes": [],
   "event": {
@@ -56,6 +170,120 @@
   },
   "first_seen": "2026-11-22"
  },
+ "4aa662e0ce52": {
+  "changes": [],
+  "event": {
+   "away": "Põlva Serviti",
+   "city": "Raasiku",
+   "home": "HC Cocks",
+   "id": "4aa662e0ce52",
+   "league": "Balti liiga (mehed)",
+   "level": 1,
+   "result": "26-37",
+   "source": "kasipall_bhl",
+   "sport": "kasipall",
+   "start": "2026-11-15T13:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://baltichandball.eu/season/206/league/636/game/15214",
+   "venue": "Raasiku spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "50283d27e577": {
+  "changes": [],
+  "event": {
+   "away": "Pasvalio Pieno žvaigždės",
+   "city": "Tapa",
+   "home": "SK Tapa",
+   "id": "50283d27e577",
+   "league": "Balti liiga (mehed)",
+   "level": 1,
+   "result": "26-25",
+   "source": "kasipall_bhl",
+   "sport": "kasipall",
+   "start": "2026-09-27T14:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://baltichandball.eu/season/206/league/636/game/15252",
+   "venue": "Tapa Valla Spordikeskus"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "50c305c24153": {
+  "changes": [],
+  "event": {
+   "away": "KPK Mella",
+   "city": "Tapa",
+   "home": "SK Tapa",
+   "id": "50c305c24153",
+   "league": "Eesti-Läti liiga (naised)",
+   "level": 1,
+   "result": "27-29",
+   "source": "kasipall_bhl",
+   "sport": "kasipall",
+   "start": "2026-10-28T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://baltichandball.eu/season/206/league/637/game/15280",
+   "venue": "Tapa spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "558daa257ba9": {
+  "changes": [],
+  "event": {
+   "away": "SK Latgols",
+   "city": "Tapa",
+   "home": "SK Tapa",
+   "id": "558daa257ba9",
+   "league": "Eesti-Läti liiga (naised)",
+   "level": 1,
+   "result": "26-27",
+   "source": "kasipall_bhl",
+   "sport": "kasipall",
+   "start": "2026-09-20T12:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://baltichandball.eu/season/206/league/637/game/15276",
+   "venue": "Tapa spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "58795d7e042b": {
+  "changes": [],
+  "event": {
+   "away": "ZRHK TENAX Dobele",
+   "city": "Raasiku",
+   "home": "Tallinna Mistra",
+   "id": "58795d7e042b",
+   "league": "Balti liiga (mehed)",
+   "level": 1,
+   "result": "29-24",
+   "source": "kasipall_bhl",
+   "sport": "kasipall",
+   "start": "2026-10-10T16:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://baltichandball.eu/season/206/league/636/game/15201",
+   "venue": "Raasiku spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "5a699c9e591f": {
+  "changes": [],
+  "event": {
+   "away": "SK Tapa",
+   "city": "Raasiku",
+   "home": "Mistra",
+   "id": "5a699c9e591f",
+   "league": "Eesti-Läti liiga (naised)",
+   "level": 1,
+   "result": "26-20",
+   "source": "kasipall_bhl",
+   "sport": "kasipall",
+   "start": "2026-10-15T19:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://baltichandball.eu/season/206/league/637/game/15277",
+   "venue": "Raasiku spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
  "5c381d294336": {
   "changes": [],
   "event": {
@@ -72,6 +300,63 @@
    "time_tbc": false,
    "url": "https://baltichandball.eu/season/206/league/637/game/15295",
    "venue": "Tabasalu kooli spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "6525e446fbe5": {
+  "changes": [],
+  "event": {
+   "away": "ZRHK TENAX Dobele",
+   "city": "Raasiku",
+   "home": "HC Cocks",
+   "id": "6525e446fbe5",
+   "league": "Balti liiga (mehed)",
+   "level": 1,
+   "result": "32-36",
+   "source": "kasipall_bhl",
+   "sport": "kasipall",
+   "start": "2026-10-11T13:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://baltichandball.eu/season/206/league/636/game/15206",
+   "venue": "Raasiku spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "655ba1804a85": {
+  "changes": [],
+  "event": {
+   "away": "ASK/MSĢ",
+   "city": "Viljandi",
+   "home": "Viljandi HC/LEONHARD WEISS",
+   "id": "655ba1804a85",
+   "league": "Balti liiga (mehed)",
+   "level": 1,
+   "result": "25-24",
+   "source": "kasipall_bhl",
+   "sport": "kasipall",
+   "start": "2026-09-26T18:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://baltichandball.eu/season/206/league/636/game/15196",
+   "venue": "Viljandi spordikeskus"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "6ed6ca364121": {
+  "changes": [],
+  "event": {
+   "away": "Granitas-Karys",
+   "city": "Tapa",
+   "home": "SK Tapa",
+   "id": "6ed6ca364121",
+   "league": "Balti liiga (mehed)",
+   "level": 1,
+   "result": "32-27",
+   "source": "kasipall_bhl",
+   "sport": "kasipall",
+   "start": "2026-11-14T16:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://baltichandball.eu/season/206/league/636/game/15254",
+   "venue": "Tapa Valla Spordikeskus"
   },
   "first_seen": "2026-11-22"
  },
@@ -94,6 +379,25 @@
   },
   "first_seen": "2026-11-22"
  },
+ "78267abab451": {
+  "changes": [],
+  "event": {
+   "away": "Jēkabpils SS",
+   "city": "Harku vald",
+   "home": "HC Tabasalu",
+   "id": "78267abab451",
+   "league": "Eesti-Läti liiga (naised)",
+   "level": 1,
+   "result": "25-29",
+   "source": "kasipall_bhl",
+   "sport": "kasipall",
+   "start": "2026-09-20T16:15:00+03:00",
+   "time_tbc": false,
+   "url": "https://baltichandball.eu/season/206/league/637/game/15275",
+   "venue": "Tabasalu kooli spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
  "7cf14715422f": {
   "changes": [],
   "event": {
@@ -113,6 +417,44 @@
   },
   "first_seen": "2026-11-22"
  },
+ "83dd2400bd5d": {
+  "changes": [],
+  "event": {
+   "away": "Jēkabpils SS",
+   "city": "Tapa",
+   "home": "SK Tapa",
+   "id": "83dd2400bd5d",
+   "league": "Eesti-Läti liiga (naised)",
+   "level": 1,
+   "result": "32-25",
+   "source": "kasipall_bhl",
+   "sport": "kasipall",
+   "start": "2026-09-19T14:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://baltichandball.eu/season/206/league/637/game/15272",
+   "venue": "Tapa spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "86e473f1b145": {
+  "changes": [],
+  "event": {
+   "away": "HC Vilnius",
+   "city": "Tapa",
+   "home": "SK Tapa",
+   "id": "86e473f1b145",
+   "league": "Balti liiga (mehed)",
+   "level": 1,
+   "result": "31-24",
+   "source": "kasipall_bhl",
+   "sport": "kasipall",
+   "start": "2026-11-15T14:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://baltichandball.eu/season/206/league/636/game/15255",
+   "venue": "Tapa Valla Spordikeskus"
+  },
+  "first_seen": "2026-11-22"
+ },
  "8d14e5d8efc2": {
   "changes": [],
   "event": {
@@ -128,6 +470,25 @@
    "start": "2026-12-05T16:00:00+02:00",
    "time_tbc": false,
    "url": "https://baltichandball.eu/season/206/league/636/game/15217",
+   "venue": "Raasiku spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "95f9afbbb6ea": {
+  "changes": [],
+  "event": {
+   "away": "Viljandi HC/LEONHARD WEISS",
+   "city": "Raasiku",
+   "home": "Tallinna Mistra",
+   "id": "95f9afbbb6ea",
+   "league": "Balti liiga (mehed)",
+   "level": 1,
+   "result": "28-24",
+   "source": "kasipall_bhl",
+   "sport": "kasipall",
+   "start": "2026-11-15T15:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://baltichandball.eu/season/206/league/636/game/15213",
    "venue": "Raasiku spordihoone"
   },
   "first_seen": "2026-11-22"
@@ -151,6 +512,44 @@
   },
   "first_seen": "2026-11-22"
  },
+ "bb3421e31c21": {
+  "changes": [],
+  "event": {
+   "away": "ZRHK TENAX Dobele",
+   "city": "Põlva",
+   "home": "Põlva Serviti",
+   "id": "bb3421e31c21",
+   "league": "Balti liiga (mehed)",
+   "level": 1,
+   "result": "34-25",
+   "source": "kasipall_bhl",
+   "sport": "kasipall",
+   "start": "2026-09-26T18:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://baltichandball.eu/season/206/league/636/game/15195",
+   "venue": "Mesikäpa hall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "bdd9fa0411c2": {
+  "changes": [],
+  "event": {
+   "away": "SK Tapa",
+   "city": "Harku vald",
+   "home": "HC Tabasalu",
+   "id": "bdd9fa0411c2",
+   "league": "Eesti-Läti liiga (naised)",
+   "level": 1,
+   "result": "21-30",
+   "source": "kasipall_bhl",
+   "sport": "kasipall",
+   "start": "2026-10-08T19:45:00+03:00",
+   "time_tbc": false,
+   "url": "https://baltichandball.eu/season/206/league/637/game/15282",
+   "venue": "Tabasalu kooli spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
  "ca1f9ba499ec": {
   "changes": [],
   "event": {
@@ -170,6 +569,44 @@
   },
   "first_seen": "2026-11-22"
  },
+ "cfa873175086": {
+  "changes": [],
+  "event": {
+   "away": "ASK/MSĢ",
+   "city": "Põlva",
+   "home": "Põlva Serviti",
+   "id": "cfa873175086",
+   "league": "Balti liiga (mehed)",
+   "level": 1,
+   "result": "36-22",
+   "source": "kasipall_bhl",
+   "sport": "kasipall",
+   "start": "2026-09-27T17:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://baltichandball.eu/season/206/league/636/game/15200",
+   "venue": "Mesikäpa hall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "d9f1b4bce244": {
+  "changes": [],
+  "event": {
+   "away": "ASK/MSĢ",
+   "city": "Raasiku",
+   "home": "Tallinna Mistra",
+   "id": "d9f1b4bce244",
+   "league": "Balti liiga (mehed)",
+   "level": 1,
+   "result": "29-28",
+   "source": "kasipall_bhl",
+   "sport": "kasipall",
+   "start": "2026-10-11T15:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://baltichandball.eu/season/206/league/636/game/15205",
+   "venue": "Raasiku spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
  "ed1a08ed48f3": {
   "changes": [],
   "event": {
@@ -185,6 +622,44 @@
    "start": "2026-12-20T13:00:00+02:00",
    "time_tbc": false,
    "url": "https://baltichandball.eu/season/206/league/636/game/15226",
+   "venue": "Raasiku spordihoone"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "f4014c9d5079": {
+  "changes": [],
+  "event": {
+   "away": "ZRHK TENAX Dobele",
+   "city": "Viljandi",
+   "home": "Viljandi HC/LEONHARD WEISS",
+   "id": "f4014c9d5079",
+   "league": "Balti liiga (mehed)",
+   "level": 1,
+   "result": "31-26",
+   "source": "kasipall_bhl",
+   "sport": "kasipall",
+   "start": "2026-09-27T14:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://baltichandball.eu/season/206/league/636/game/15199",
+   "venue": "Viljandi spordikeskus"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "fe3a4514dca0": {
+  "changes": [],
+  "event": {
+   "away": "Põlva Serviti",
+   "city": "Raasiku",
+   "home": "Tallinna Mistra",
+   "id": "fe3a4514dca0",
+   "league": "Balti liiga (mehed)",
+   "level": 1,
+   "result": "26-27",
+   "source": "kasipall_bhl",
+   "sport": "kasipall",
+   "start": "2026-11-14T16:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://baltichandball.eu/season/206/league/636/game/15209",
    "venue": "Raasiku spordihoone"
   },
   "first_seen": "2026-11-22"
