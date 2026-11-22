@@ -2,7 +2,9 @@
 
 **Visioon, põhimõtted ja strateegia: [docs/VISION.md](docs/VISION.md)**
 
-Tallinna kõrgliigade spordimängud ühel lihtsal lehel: https://laurik-commits.github.io/spordikavad/
+Eesti spordimängud, mida saab kohapeal vaatama minna, ühel lihtsal lehel: https://elakaasa.ee/ (vana aadress laurik-commits.github.io/spordikavad suunab sinna).
+
+Domeen elakaasa.ee on registreeritud Zone.ee kaudu (omanik: lehe omanik). Zone'i DNS-is on GitHub Pagesi A- ja AAAA-kirjed ning `www` CNAME → laurik-commits.github.io. Kohandatud domeen on seatud GitHub Pagesi seadetes (build_type workflow, seega CNAME-faili pole vaja).
 
 Lähteülesanne: [SPEC.md](SPEC.md). Andmeallikad ja nende kontroll: [SOURCES.md](SOURCES.md). Suund, ajalooarhiiv ja turvalisus: [docs/VISION.md](docs/VISION.md).
 

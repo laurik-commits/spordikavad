@@ -1,11 +1,12 @@
-# spordikavad.ee seadistus
+# Lehe seadistus (elakaasa.ee)
 
 [site]
 days_ahead = 14
-# Lehe avalik aadress (kanoonilised lingid, sitemap). Muuda, kui spordikavad.ee domeen on seadistatud.
-base_url = "https://laurik-commits.github.io/spordikavad/"
-# Kontakt jaluses. Ajutiselt GitHubi issue'd; kui info@spordikavad.ee postkast töötab,
-# muuda: contact_url = "mailto:info@spordikavad.ee"
+# Lehe avalik aadress (kanoonilised lingid, sitemap, jagamislingid). Domeen elakaasa.ee (Zone.ee, DNS → GitHub Pages,
+# kohandatud domeen on seatud GitHub Pagesi seadetes). Vana aadress laurik-commits.github.io/spordikavad suunab siia.
+base_url = "https://elakaasa.ee/"
+# Kontakt jaluses. Ajutiselt GitHubi issue'd; kui elakaasa.ee postkast töötab,
+# muuda: contact_url = "mailto:info@elakaasa.ee"
 contact_url = "https://github.com/laurik-commits/spordikavad/issues"
 # Cloudflare Web Analytics (küpsisevaba). Vaikimisi välja lülitatud.
 analytics_enabled = false
@@ -13,10 +14,9 @@ analytics_token = ""
 
 [http]
 # Kontaktaadress lisatakse User-Agenti, et allika omanik saaks vajadusel ühendust võtta.
-# Ajutiselt GitHubi issue'de leht; hiljem "info@spordikavad.ee", kui postkast töötab.
+# Ajutiselt GitHubi issue'de leht; hiljem "info@elakaasa.ee", kui postkast töötab.
 contact = "https://github.com/laurik-commits/spordikavad/issues"
-# Kui domeen spordikavad.ee on kasutusel, vaheta URL siin ära.
-user_agent = "spordikavad-bot/0.1 (+https://laurik-commits.github.io/spordikavad/)"
+user_agent = "elakaasa-bot/0.1 (+https://elakaasa.ee/)"
 delay = 3.0       # sekundit päringute vahel samale saidile
 timeout = 20.0
 retries = 3
