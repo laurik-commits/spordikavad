@@ -1,0 +1,40 @@
+name: Puuduv üritus või mäng
+description: Mäng või turniir, mida kalendris ei ole
+title: "Puuduv üritus: "
+labels: ["puuduv-uritus"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Aitäh! Kalender koosneb avalikest allikatest, mõni üritus jääb vahele (nt koondiste turniirid).
+        **Ära kirjuta siia mängijate nimesid (eriti alaealiste) ega muid isikuandmeid.**
+  - type: input
+    id: mis
+    attributes:
+      label: Mis üritus või mäng?
+      description: Ala, liiga või turniir, võistkonnad
+      placeholder: "nt U16 neidude võrkpalli EEVZA turniir"
+    validations:
+      required: true
+  - type: input
+    id: millal
+    attributes:
+      label: Millal?
+      placeholder: "nt 19.–22.11.2026 või 12.12 kell 18:00"
+    validations:
+      required: true
+  - type: input
+    id: kus
+    attributes:
+      label: Kus (saal, linn)?
+      placeholder: "nt Kääriku spordikeskus"
+    validations:
+      required: true
+  - type: input
+    id: allikas
+    attributes:
+      label: Link ametlikule allikale
+      description: Liidu, klubi või korraldaja avalik leht. Facebooki postitusest palun ära kopeeri sisu, ainult kuupäev ja koht.
+      placeholder: "https://..."
+    validations:
+      required: false
