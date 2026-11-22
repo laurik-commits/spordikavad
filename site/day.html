@@ -17,6 +17,10 @@
 <meta property="og:title" content="{{ level_info.title }} {{ region.in_form }} – {{ human }}">
 <meta property="og:description" content="{{ tier | capitalize }} mängud {{ region.in_form }} kellaaja järgi.">
 <meta property="og:url" content="{{ canonical }}">
+<meta property="og:image" content="{{ base_url }}og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#14457a">
 <meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="{{ root }}style.css">
@@ -109,6 +113,7 @@
         </span>
         {% if past %}<span class="go">{{ 'Statistika' if e.result else 'Seis' }} ↗</span>{% else %}<span class="go" aria-hidden="true">↗</span>{% endif %}
       </a>
+      <button type="button" class="share" data-url="{{ base_url }}m/{{ e.id }}/" data-title="{{ e.home }} – {{ e.away }}" data-text="{{ e | share_text }}" aria-label="Jaga mängu: {{ e.home }} – {{ e.away }}" title="Jaga"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg></button>
     </li>
   {% endfor %}
   </ol>
