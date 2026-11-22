@@ -44,7 +44,7 @@ class Event:
     url: str  # link allika mängulehele (või liiga kalendrile)
     source: str  # adapteri nimi
     time_tbc: bool = False  # True, kui kellaaeg pole veel kinnitatud
-    result: str = ""  # lõppseis "kodu-võõras" (nt "3-0"), tühi kuni mäng on mängitud või kui allikas seda ei anna
+    result: str = ""  # lõppseis "kodu-võõras" (nt "3-0"; jäähokis võib lõpus olla "OT" või "SO"), tühi kuni mäng on mängitud või kui allikas seda ei anna
     level: int = 1 # 1 = kõrgliiga, 2 = esiliiga, 3 = madalamad liigad, 4 = noored, 5 = koondised (igaühel eraldi kalender)
 
     def __post_init__(self) -> None:
