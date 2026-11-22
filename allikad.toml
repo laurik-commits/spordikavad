@@ -575,6 +575,18 @@ kasutus = "agent"
 kontrollitud = 2026-11-22
 markus = "Toores HTML on peaaegu tühi."
 
+[[allikas]]
+nimi = "Narva Paemurru Spordikool (Narva PSK)"
+liik = "klubi"
+url = "https://uus.npsk.ee/kalender"
+alad = ["kõik"]
+piirkond = "Narva"
+kuju = "pdf"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+markus = "Iga kuu ürituste kalenderplaan on PDF-ina (nt /wp-content/uploads/2026/11/detsember-2026.pdf) ja see avaldatakse umbes kuu ette. Seal on Narva PSK kodumängud Narva jäähallis (Unibet Hokiliiga, sõprusmängud) koos kellaajaga. Automaatseks allikaks ei sobi: PDF, aadress muutub igal kuul ja ette on ainult üks kuu. Lisa uued Narva kodumängud kasitsi.toml-i, kui neid pole juba HC Everesti allikas."
+
 # --- Piletimüük ja uudised (vihjed) ----------------------------------------------
 
 [[allikas]]
