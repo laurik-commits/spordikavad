@@ -547,8 +547,9 @@ alad = ["jaahoki"]
 piirkond = "Kohtla-Järve"
 kuju = "html"
 robots = "lubatud"
-kasutus = "agent"
+kasutus = "adapter:jaahoki_everest"
 kontrollitud = 2026-11-22
+markus = "Avalehel on kõigi võistkondade tulevased mängud koos õige toimumiskohaga. Adapter võtab Unibet Hokiliiga, naiste hokiliiga, U19 ja U16. U12 ja nooremad jäävad välja."
 
 [[allikas]]
 nimi = "SK Viru Sputnik"
