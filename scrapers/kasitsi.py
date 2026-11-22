@@ -1,7 +1,8 @@
 """Käsitsi lisatud mängud ja üritused (kasitsi.toml).
 
 Automaatsed allikad ei kata sõprusmänge, turniire, eriüritusi ega osa koondiste kodumänge. Otsingu agent
-(või inimene) lisab need faili kasitsi.toml pull request'iga, omanik vaatab üle ja merge'ib.
+(või inimene) lisab need faili kasitsi.toml pull request'iga. Agendi PR-i merge'ib automaatne kontroll
+(scripts/automerge_check.py), kui kõik kontrollid läbivad. Muidu vaatab omanik selle üle.
 Iga kirje peab põhinema ametlikul avalikul allikal (`url`). Isikuandmeid (mängijate nimesid) ei lisata.
 
 Kontroll enne PR-i:  python -m scrapers.kasitsi
