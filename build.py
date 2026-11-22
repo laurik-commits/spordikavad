@@ -252,6 +252,14 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
                  3: [r["key"] for r in cov if r["minor"] and r["key"] not in external],
                  4: [r["key"] for r in cov if r["youth"] and r["key"] not in external],
                  5: [r["key"] for r in cov if r["national"] and r["key"] not in external]}
+    # "Kõik liigad": kõigi nähtavate tasemete alad, igaüks korra, tabeli järjekorras
+    sports_at[0] = [k for k in dict.fromkeys(s for lvl, lv in LEVELS.items()
+                                              if lvl in sports_at and not lv.get("hidden") for s in sports_at[lvl])]
+
+    def on_level(e: Event, level: int) -> bool:
+        if LEVELS[level].get("all"):
+            return not LEVELS[e.level].get("hidden")
+        return e.level == level
 
     def offseason_note(sport: str) -> str:
         """Kui ala ükski allikas pole hooajas: "Jalgpalli hooaeg algab märtsis." """
@@ -281,7 +289,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
             window[e.start.date()].append(e)
 
     def by_day_for(level: int, r: Region) -> dict[date, list[Event]]:
-        return {d: sorted((e for e in window[d] if e.level == level and in_region(e, r)),
+        return {d: sorted((e for e in window[d] if on_level(e, level) and in_region(e, r)),
                           key=lambda e: (e.time_tbc, e.start, e.sport, e.home)) for d in days}
 
     now = datetime.now(TALLINN)
@@ -301,7 +309,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
         region_list = [{"slug": r.slug, "name": r.name, "prefix": r.prefix, "kind": r.kind,
                         "count": sum(len(v) for d, v in region_days[r.slug].items() if d >= today)} for r in regions]
         level_list = [{"level": k, "name": v["name"], "prefix": v["prefix"], "current": k == level,
-                       "count": sum(1 for d in days if d >= today for e in window[d] if e.level == k)}
+                       "count": sum(1 for d in days if d >= today for e in window[d] if on_level(e, k))}
                       for k, v in LEVELS.items() if not v.get("hidden") or k == level]
         for r in regions:
             by_day = region_days[r.slug]
@@ -343,13 +351,15 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
                     encoding="utf-8")
                 # sitemap: avalehed alati, kuupäevalehed ainult siis, kui seal on mänge (tühje lehti ei pakuta);
                 # möödunud päevi ei paku (neil on noindex)
-                if i > today_i and by_day[d]:
+                # "Kõik liigad" kordab teiste tasemete sisu: otsingumootorile ei paku
+                if i > today_i and by_day[d] and not lv.get("all"):
                     urls.append(url)
                 if i == today_i:
                     (rdir / "index.html").write_text(
                         tpl.render(ctx, root="../" * depth, here="", canonical=index_url, is_index=True),
                         encoding="utf-8")
-                    urls.append(index_url)
+                    if not lv.get("all"):
+                        urls.append(index_url)
 
     upcoming = sorted((e for e in events if e.start.date() >= today), key=lambda e: (e.start, e.id))
     (out / "events.json").write_text(

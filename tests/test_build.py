@@ -158,6 +158,22 @@ class RenderTest(unittest.TestCase):
         self.assertIn('data-level="5" aria-current="true"', national)
         self.assertIn("Sel päeval Tartus koondiste mänge pole", self.read("koondised/tartu/2026-11-21/index.html"))
 
+    def test_all_levels_view_has_everything_except_hidden_lower_leagues(self):
+        everything = self.read("koik/2026-11-21/index.html")
+        for team in ("Esiliigalased", "Noorukid", "Koondislased"):
+            self.assertIn(team, everything)
+        self.assertIn("Tartlased", self.read("koik/tartu/2026-11-21/index.html"))   # piirkonnad töötavad ka siin
+        self.assertNotIn("Madalamlased", everything)           # madalamad liigad pole vaatamas käimiseks
+        self.assertIn("Kõik spordimängud Tallinnas", everything)
+        self.assertIn('data-level="0" aria-current="true"', everything)
+        self.assertIn('<meta name="robots" content="noindex">', everything)    # kordab teisi lehti
+        self.assertTrue((self.tmp / "koik/index.html").exists())
+        self.assertTrue((self.tmp / "koik/tartu/2026-11-21/index.html").exists())
+        # kõrgliigade valik näitab nüüd valikus "Kõik liigad" esimesena ja sitemapis seda ei ole
+        menu = self.read("2026-11-21/index.html")
+        self.assertLess(menu.index("<span>Kõik liigad</span>"), menu.index("<span>Kõrgliigad</span>"))
+        self.assertNotIn("/koik/", self.read("sitemap.xml"))
+
     def test_year_round_sources_do_not_hide_offseason_note(self):
         # koondised on terve aasta "hooajas", aga jalgpalli liigahooaeg algab ikka märtsis
         self.assertIn("Jalgpalli hooaeg algab märtsis.", self.read("2026-11-22/index.html"))
