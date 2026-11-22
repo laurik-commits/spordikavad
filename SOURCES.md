@@ -246,12 +246,26 @@ Mõlema allika ajakava leht näitab ainult tulevasi mänge, tulemused on eraldi 
 
 Automaatsed allikad ei kata sõprusmänge, turniire, eriüritusi (tähtede mäng, karikafinaalid jms), võrkpalli, korvpalli ja käsipalli koondiste kodumänge ega üksikuid mänge, mida allikas mingil põhjusel ei näita. Need on failis `kasitsi.toml` (adapter `kasitsi`, `manual = true` config.toml-is).
 
-- **Kes lisab:** otsingu agent (pilverutiin, E ja N hommikul) otsib neid veebist, hindab ja lisab kindlad leiud pull request'iga harusse `claude/otsing-<kuupäev>`. Omanik vaatab PR-i üle ja merge'ib. Ebakindlad leiud ja puuduvad terved võistlused (uue allika vajadus) lähevad issue'na (silt `puuduv-uritus`). Kasutajate teated (issue mall „Puuduv üritus“) on agendile vihje, mitte allikas: kirje tehakse ainult siis, kui agent leiab ise ametliku kinnituse.
+- **Kes lisab:** otsingu agent (pilverutiin, E ja N hommikul) otsib neid veebist, hindab ja lisab kindlad leiud pull request'iga harusse `claude/otsing-<kuupäev>`. PR merge'itakse automaatselt (vt allpool „Automaatne merge“), kui kõik kontrollid läbivad, muidu vaatab omanik selle üle. Ebakindlad leiud ja puuduvad terved võistlused (uue allika vajadus) lähevad issue'na (silt `puuduv-uritus`). Kasutajate teated (issue mall „Puuduv üritus“) on agendile vihje, mitte allikas: kirje tehakse ainult siis, kui agent leiab ise ametliku kinnituse.
 - **Reeglid:** iga kirje põhineb ametlikul avalikul allikal (`url`, sotsiaalmeedia pole lubatud), ainult Eestis toimuvad üritused, isikuandmeid ei lisata. Saal peab olema `venues.toml`-is. Väljad ja näited on faili päises.
 - **Kontroll:** `python -m scrapers.kasitsi` (loeb faili, kontrollib saale ja prindib kirjed) ja testid. PR-i puhul jooksutab need GitHub Actions („Testid“).
 - **Kalender:** tase (`level`) on igal kirjel eraldi. Turniiril ja eriüritusel võib külalismeeskonna ära jätta, siis näidatakse ainult ürituse nime. Mängu lehel on nupp „Teade allikal ↗“.
 - **Topelt:** allikas on config.toml-is viimane, seega kui sama mäng tuleb hiljem automaatsest allikast (sama ala ja algusaeg ning samad võistkonnad või sama saal), jääb alles automaatse allika oma.
 - **Hooaeg:** terve aasta, 0 tulevast üritust ei ole viga (ei tee „allikas“ issue'd).
+
+### Automaatne merge (lisatud 2026-11-22, omaniku soovil)
+
+Otsingu agendi PR (`claude/otsing-*`) läheb `main` harusse ilma omaniku ülevaatuseta, kui kõik kihid läbivad. Muidu saab PR sildi `vajab-ülevaatust` ja kommentaari põhjustega.
+
+1. **Testid** (töövoog „Testid“): kogu testikomplekt ja `python -m scrapers.kasitsi`.
+2. **Kontroll** (töövoog „Automaatne merge“, skript `scripts/automerge_check.py`). Töövoog ja skript tulevad alati `main` harust, PR-i faile loetakse ainult andmetena, nii et PR ei saa kontrolli muuta.
+   - Muudetud on ainult `kasitsi.toml`, `venues.toml` ja `config.toml`. Koodi muutvad PR-id jäävad alati omanikule.
+   - `config.toml`: ainult uued kohad `[geo.place]` all olemasoleva maakonnaga.
+   - `venues.toml`: olemasolevad saalid muutmata, uusi kuni 5, linn Eestis.
+   - `kasitsi.toml`: fail korrektne, olemasolevaid kirjeid ei muudeta, eemaldada võib ainult üle 30 päeva vanu. Uusi 1–10, algus tänasest kuni 60 päeva, `added` viimase 3 päeva sees, `note` (hinnang) olemas, saal teada ja Eestis.
+3. **Allika kontroll:** GitHub Actions avab iga uue kirje `url`-i (robots.txt peab lubama). Lehel peab olema mängu kuupäev (5.12, 05.12.2026, 5. detsember, December 5 jms) ja võistkonna või ürituse nimi.
+4. **Merge:** squash, ainult sama commit'iga, mille testid läbisid (`--match-head-commit`). Siis käivitatakse lehe ehitus.
+5. **Järelkontroll:** nädalaplaani agent loetleb eelmise nädala automaatselt merge'itud PR-id. Vale kirje parandamiseks: kustuta see `kasitsi.toml`-ist (tavaline PR).
 
 ## Pistekontroll 2026-11-20
 

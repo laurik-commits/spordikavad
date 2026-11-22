@@ -11,6 +11,8 @@
 # - Kui sama mäng ilmub hiljem automaatsesse allikasse, jääb kalendrisse automaatse allika oma (dedupe),
 #   käsitsi kirje võib siis eemaldada. Üle 30 päeva vanad kirjed võib kustutada.
 # - Kontroll enne pull request'i:  python -m scrapers.kasitsi   ja   python -m unittest discover -s tests
+# - Agendi PR (haru claude/otsing-*) merge'itakse automaatselt, kui scripts/automerge_check.py kontrollid
+#   läbivad (url-i lehel peab olema kuupäev ja võistkonna/ürituse nimi, olemasolevaid kirjeid ei muudeta).
 #
 # Väljad:
 #   sport     jalgpall | korvpall | jaahoki | vorkpall | kasipall | saalihoki | saalijalgpall
