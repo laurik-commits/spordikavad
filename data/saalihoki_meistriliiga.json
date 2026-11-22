@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T10:11:17+02:00",
+ "updated": "2026-11-23T00:29:35+02:00",
  "events": [
   {
    "id": "3f1079a79a0b",
@@ -104,21 +104,6 @@
    "source": "saalihoki_meistriliiga",
    "time_tbc": false,
    "result": "5-4",
-   "level": 1
-  },
-  {
-   "id": "fbd1eceb1641",
-   "sport": "saalihoki",
-   "league": "Meistriliiga (mehed)",
-   "start": "2026-11-22T17:30:00+02:00",
-   "home": "Eesti Maaülikool",
-   "away": "Tahmaküla United",
-   "venue": "Eesti Maaülikooli spordihoone",
-   "city": "Tartu",
-   "url": "https://www.saalihoki.ee/Events/Uritus.aspx?id=8841",
-   "source": "saalihoki_meistriliiga",
-   "time_tbc": false,
-   "result": "",
    "level": 1
   },
   {
