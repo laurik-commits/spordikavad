@@ -3902,7 +3902,14 @@
   "first_seen": "2026-11-22"
  },
  "e4ce9f334973": {
-  "changes": [],
+  "changes": [
+   {
+    "field": "result",
+    "from": "",
+    "on": "2026-11-22",
+    "to": "0-1"
+   }
+  ],
   "event": {
    "away": "Jēkabpils Lūši",
    "city": "Võru",
@@ -3910,7 +3917,7 @@
    "id": "e4ce9f334973",
    "league": "Balti liiga (mehed)",
    "level": 1,
-   "result": "",
+   "result": "0-1",
    "source": "vorkpall_dataproject",
    "sport": "vorkpall",
    "start": "2026-11-21T17:00:00+02:00",
