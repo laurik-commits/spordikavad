@@ -304,7 +304,14 @@
   "first_seen": "2026-11-22"
  },
  "a292b0f3caa5": {
-  "changes": [],
+  "changes": [
+   {
+    "field": "result",
+    "from": "",
+    "on": "2026-11-22",
+    "to": "22-2"
+   }
+  ],
   "event": {
    "away": "U-18 Valga FC Warrior",
    "city": "Narva",
@@ -312,7 +319,7 @@
    "id": "a292b0f3caa5",
    "league": "U18 saalijalgpalli eliitliiga",
    "level": 4,
-   "result": "",
+   "result": "22-2",
    "source": "saalijalgpall_ejl",
    "sport": "saalijalgpall",
    "start": "2026-11-22T15:00:00+02:00",

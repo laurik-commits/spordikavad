@@ -64,7 +64,14 @@
   "first_seen": "2026-11-22"
  },
  "03c53403e44d": {
-  "changes": [],
+  "changes": [
+   {
+    "field": "result",
+    "from": "",
+    "on": "2026-11-22",
+    "to": "2-0"
+   }
+  ],
   "event": {
    "away": "Tallinna Ülikool",
    "city": "Kiili",
@@ -72,7 +79,7 @@
    "id": "03c53403e44d",
    "league": "Eesti karikas (mehed)",
    "level": 1,
-   "result": "",
+   "result": "2-0",
    "source": "vorkpall_dataproject",
    "sport": "vorkpall",
    "start": "2026-11-22T13:00:00+02:00",
@@ -3908,6 +3915,12 @@
     "from": "",
     "on": "2026-11-22",
     "to": "0-1"
+   },
+   {
+    "field": "result",
+    "from": "0-1",
+    "on": "2026-11-22",
+    "to": "1-1"
    }
   ],
   "event": {
@@ -3917,7 +3930,7 @@
    "id": "e4ce9f334973",
    "league": "Balti liiga (mehed)",
    "level": 1,
-   "result": "0-1",
+   "result": "1-1",
    "source": "vorkpall_dataproject",
    "sport": "vorkpall",
    "start": "2026-11-21T17:00:00+02:00",
