@@ -1,4 +1,50 @@
 {
- "updated": "2026-11-22T16:29:53+02:00",
- "events": []
+ "updated": "2026-11-22T17:52:32+02:00",
+ "events": [
+  {
+   "id": "3709f689ea15",
+   "sport": "korvpall",
+   "league": "FIBA MM 2027 valiksari (L-alagrupp)",
+   "start": "2026-11-27T19:00:00+02:00",
+   "home": "Eesti",
+   "away": "Prantsusmaa",
+   "venue": "Saku Suurhall",
+   "city": "Tallinn",
+   "url": "https://unibetarena.ee/uritused/kalender/2026-11-27/eesti-prantsusmaa--fiba-basketball-worldcup-2027-qualifiers/",
+   "source": "kasitsi",
+   "time_tbc": false,
+   "result": "",
+   "level": 5
+  },
+  {
+   "id": "ba3981f3e87f",
+   "sport": "jaahoki",
+   "league": "Unibet Hokiliiga",
+   "start": "2026-11-28T16:35:00+02:00",
+   "home": "HC Vipers",
+   "away": "HC Everest",
+   "venue": "Tondiraba jäähall",
+   "city": "Tallinn",
+   "url": "https://hcvipers.ee/",
+   "source": "kasitsi",
+   "time_tbc": false,
+   "result": "",
+   "level": 1
+  },
+  {
+   "id": "252711203f41",
+   "sport": "vorkpall",
+   "league": "Eesti võrkpalli karikafinaalide päev",
+   "start": "2026-12-16T14:00:00+02:00",
+   "home": "Eesti Võrkpallikarika päev",
+   "away": "",
+   "venue": "Saku Suurhall",
+   "city": "Tallinn",
+   "url": "https://unibetarena.ee/uritused/kalender/2026-12-16/eesti-vorkpallikarika-paev-1/",
+   "source": "kasitsi",
+   "time_tbc": false,
+   "result": "",
+   "level": 1
+  }
+ ]
 }

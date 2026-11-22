@@ -70,6 +70,12 @@
     "from": "",
     "on": "2026-11-22",
     "to": "2-0"
+   },
+   {
+    "field": "result",
+    "from": "2-0",
+    "on": "2026-11-22",
+    "to": "3-0"
    }
   ],
   "event": {
@@ -79,7 +85,7 @@
    "id": "03c53403e44d",
    "league": "Eesti karikas (mehed)",
    "level": 1,
-   "result": "2-0",
+   "result": "3-0",
    "source": "vorkpall_dataproject",
    "sport": "vorkpall",
    "start": "2026-11-22T13:00:00+02:00",
@@ -3921,6 +3927,12 @@
     "from": "0-1",
     "on": "2026-11-22",
     "to": "1-1"
+   },
+   {
+    "field": "result",
+    "from": "1-1",
+    "on": "2026-11-22",
+    "to": "2-1"
    }
   ],
   "event": {
@@ -3930,7 +3942,7 @@
    "id": "e4ce9f334973",
    "league": "Balti liiga (mehed)",
    "level": 1,
-   "result": "1-1",
+   "result": "2-1",
    "source": "vorkpall_dataproject",
    "sport": "vorkpall",
    "start": "2026-11-21T17:00:00+02:00",
