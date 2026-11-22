@@ -108,12 +108,12 @@
           <small>{{ sports[e.sport] }}</small>
         </time>
         <span class="info">
-          <span class="match">{{ e.home }} – {{ e.away }}{% if e.result %} <b class="score" title="Tulemus">{{ e.result | replace('-', ':') }}</b>{% endif %}</span>
+          <span class="match">{{ e | matchup }}{% if e.result %} <b class="score" title="Tulemus">{{ e.result | replace('-', ':') }}</b>{% endif %}</span>
           <span class="meta">{{ e.league }} · {{ e.venue }}{% if show_city %}, {{ e.city }}{% endif %}{% if e.time_tbc %} · <em>kellaaeg täpsustamisel</em>{% endif %}</span>
         </span>
         {% if past %}<span class="go">{{ 'Statistika' if e.result else 'Seis' }} ↗</span>{% else %}<span class="go" aria-hidden="true">↗</span>{% endif %}
       </a>
-      <button type="button" class="share" data-url="{{ base_url }}m/{{ e.id }}/" data-title="{{ e.home }} – {{ e.away }}" data-text="{{ e | share_text }}" aria-label="Jaga mängu: {{ e.home }} – {{ e.away }}" title="Jaga"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg></button>
+      <button type="button" class="share" data-url="{{ base_url }}m/{{ e.id }}/" data-title="{{ e | matchup }}" data-text="{{ e | share_text }}" aria-label="Jaga: {{ e | matchup }}" title="Jaga"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg></button>
     </li>
   {% endfor %}
   </ol>

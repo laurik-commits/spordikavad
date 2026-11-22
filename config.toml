@@ -355,3 +355,15 @@ sport = "saalihoki"
 league = "Meistriliiga"
 enabled = true
 seasons = [["10-15", "03-31"]]
+
+# Käsitsi lisatud mängud ja üritused (kasitsi.toml): sõprusmängud, turniirid, eriüritused, puuduvad mängud.
+# Mitu ala, tase igal kirjel eraldi. Otsingu agent lisab need pull request'iga, omanik vaatab üle.
+# Viimasena, et kui sama mäng tuleb ka automaatsest allikast, jääb alles automaatse allika oma (dedupe).
+# manual = true: 0 tulevast mängu pole viga ja allikat ei näidata „Mis siin on?“ ala tabelis.
+[[source]]
+name = "kasitsi"
+league = "Käsitsi lisatud"
+enabled = true
+manual = true
+year_round = true
+seasons = [["01-01", "12-31"]]
