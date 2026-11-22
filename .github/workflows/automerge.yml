@@ -1,0 +1,88 @@
+name: Automaatne merge
+
+# Otsingu agendi andmete PR (haru claude/otsing-*) merge'itakse ise, kui töövoog „Testid“ läbis ja
+# scripts/automerge_check.py kõik kontrollid läbivad. Muidu saab PR sildi „vajab-ülevaatust“ ja
+# kommentaari põhjustega ning jääb omanikule.
+#
+# Turvalisus: workflow_run käivitab selle faili ja kontrolliskripti ALATI main harust, mitte PR-ist.
+# PR-i faile loetakse ainult andmetena (git show), PR-i koodi siin ei käivitata. Koodi muutvaid
+# PR-e (scrapers/, build.py, site/, .github/ jne) kontroll ei luba merge'ida.
+
+on:
+  workflow_run:
+    workflows: ["Testid"]
+    types: [completed]
+
+permissions:
+  contents: write        # merge
+  pull-requests: write   # merge, silt, kommentaar
+  issues: write          # sildi loomine
+  actions: write         # ehituse käivitamine pärast merge'i
+
+concurrency:
+  group: automerge
+  cancel-in-progress: false
+
+jobs:
+  merge:
+    if: >-
+      github.event.workflow_run.event == 'pull_request' &&
+      github.event.workflow_run.conclusion == 'success' &&
+      startsWith(github.event.workflow_run.head_branch, 'claude/otsing-') &&
+      github.event.workflow_run.head_repository.full_name == github.repository
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+      HEAD_BRANCH: ${{ github.event.workflow_run.head_branch }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Sõltuvused
+        run: pip install -r requirements.txt
+
+      - name: Leia PR
+        id: pr
+        run: |
+          n=$(gh pr list --state open --head "$HEAD_BRANCH" --json number,headRefOid \
+                --jq ".[] | select(.headRefOid == \"$HEAD_SHA\") | .number")
+          if [ -z "$n" ]; then
+            echo "Lahtist PR-i commit'iga $HEAD_SHA ei leitud (haru muutus vahepeal?), jätan vahele."
+          fi
+          echo "number=$n" >> "$GITHUB_OUTPUT"
+
+      - name: Kontroll (main haru skript, PR-i failid andmetena)
+        id: check
+        if: steps.pr.outputs.number != ''
+        run: |
+          git fetch --no-tags origin "$HEAD_SHA"
+          if python scripts/automerge_check.py --head "$HEAD_SHA" --base origin/main --out result.md; then
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Merge ja ehita leht
+        if: steps.check.outputs.ok == 'true'
+        run: |
+          gh pr comment "${{ steps.pr.outputs.number }}" --body-file result.md
+          gh pr merge "${{ steps.pr.outputs.number }}" --squash --delete-branch --match-head-commit "$HEAD_SHA"
+          # GITHUB_TOKEN-iga tehtud merge ei käivita teisi töövooge, seepärast käivitame ehituse ise
+          gh workflow run build.yml --ref main
+
+      - name: Jäta omanikule
+        if: steps.check.outputs.ok == 'false'
+        run: |
+          gh label create "vajab-ülevaatust" --color D93F0B \
+            --description "Agendi PR, mida automaatne kontroll ei lubanud merge'ida" 2>/dev/null || true
+          gh pr edit "${{ steps.pr.outputs.number }}" --add-label "vajab-ülevaatust"
+          gh pr comment "${{ steps.pr.outputs.number }}" --body-file result.md

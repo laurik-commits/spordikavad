@@ -34,7 +34,11 @@ class Venues:
 
     @classmethod
     def load(cls, path: Path = DEFAULT_PATH) -> "Venues":
-        data = tomllib.loads(Path(path).read_text(encoding="utf-8"))
+        return cls.from_text(Path(path).read_text(encoding="utf-8"))
+
+    @classmethod
+    def from_text(cls, text: str) -> "Venues":
+        data = tomllib.loads(text)
         venues: list[Venue] = []
         index: dict[str, Venue] = {}
         for item in data.get("venue", []):
