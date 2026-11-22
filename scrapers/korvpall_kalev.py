@@ -19,19 +19,22 @@ from __future__ import annotations
 import html
 import logging
 import re
-from datetime import datetime
+from datetime import date, datetime
 
-from .model import Event, new_event
+from .http import FetchError
+from .model import TALLINN, Event, new_event, parse_score
 
 log = logging.getLogger(__name__)
 
 NAME = "korvpall_kalev"
 SPORT = "korvpall"
 URL = "https://bckalev.ee/ajakava/"
+RESULTS_URL = "https://bckalev.ee/tulemused/"  # sama tabel + tulemuste veerg; ka robots.txt lubab
 
 _ROW = re.compile(r'<tr class="sp-row[^"]*"[^>]*>(.*?)</tr>', re.S)
 _START = re.compile(r'<td class="data-date"[^>]*\bcontent="([^"]+)"[^>]*>\s*<a href="([^"]+)"', re.S)
 _CELL = {k: re.compile(rf'<td class="data-{k}"[^>]*>(.*?)</td>', re.S) for k in ("event", "league", "venue")}
+_RESULTS = re.compile(r'<td class="data-results"[^>]*>(.*?)</td>', re.S)  # ainult tulemuste lehel: "83 - 81" või "-"
 _TAGS = re.compile(r"<[^>]+>")
 _VS = re.compile(r"\s+vs\.?\s+", re.I)
 
@@ -54,16 +57,31 @@ def parse(page: str) -> list[Event]:
         if len(teams) != 2:
             log.warning("korvpall_kalev: ei saa võistkondi eraldada: %r", cells["event"].group(1)[:80])
             continue
+        res = _RESULTS.search(row)
         events.append(
             new_event(
                 source=NAME, sport=SPORT, league=_text(cells["league"].group(1)),
                 start=datetime.fromisoformat(start.group(1)),
                 home=teams[0], away=teams[1],
                 venue=_venue(_text(cells["venue"].group(1))), city="", url=start.group(2),
+                result=parse_score(_text(res.group(1))) if res else "",
             )
         )
     return events
 
 
-def fetch(fetcher) -> list[Event]:
-    return parse(fetcher.get(URL))
+def season_start(today: date) -> date:
+    """Hooaeg algab augustis: tulemuste leht sisaldab ka vanemaid hooaegu, neid ei võeta."""
+    return date(today.year if today.month >= 8 else today.year - 1, 8, 1)
+
+
+def fetch(fetcher, today: date | None = None) -> list[Event]:
+    """Ajakava (tulevased mängud) ja tulemuste leht (mängitud mängud selle hooaja algusest)."""
+    today = today or datetime.now(TALLINN).date()
+    events = parse(fetcher.get(URL))
+    try:
+        first = season_start(today)
+        events += [e for e in parse(fetcher.get(RESULTS_URL)) if e.result and e.start.date() >= first]
+    except FetchError as exc:  # tulemused on lisa: ajakava peab ka ilma nendeta töötama
+        log.warning("%s: tulemuste lehte ei saanud: %s", NAME, exc)
+    return events

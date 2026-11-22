@@ -20,7 +20,7 @@ import logging
 import re
 from datetime import datetime
 
-from .model import Event, new_event
+from .model import Event, new_event, parse_score
 
 log = logging.getLogger(__name__)
 
@@ -64,6 +64,7 @@ def parse(page: str) -> list[Event]:
                 source=NAME, sport=SPORT, league=LEAGUES.get(cells[1], cells[1].title()),
                 start=start, home=TEAM, away=cells[3].rstrip("*").strip(),
                 venue=cells[4], city="", url=URL, time_tbc=hour is None,
+                result=parse_score(cells[5]) if len(cells) > 5 else "",
             )
         )
     return events

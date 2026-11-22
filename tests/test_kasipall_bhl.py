@@ -43,6 +43,42 @@ class BalticHandballTest(unittest.TestCase):
 
     def test_url(self):
         self.assertEqual(adapter.fixtures_url(COMPS[637]), "https://baltichandball.eu/season/206/league/637/fixtures")
+        self.assertEqual(adapter.results_url(COMPS[636]), "https://baltichandball.eu/season/206/league/636/results")
+
+    def test_fixtures_page_has_no_results(self):
+        self.assertTrue(all(e.result == "" for e in parse(636)))
+
+    def test_results_page_gives_scores(self):
+        page = (FIX / "kasipall_bhl_results_636.html").read_text(encoding="utf-8")
+        games = adapter.parse(page, COMPS[636])
+        self.assertEqual(len(games), 32)
+        self.assertTrue(all(e.result for e in games))
+        e = next(e for e in games if e.home == "Tallinna Mistra" and e.away.startswith("Viljandi"))
+        self.assertEqual((e.result, e.venue), ("28-24", "Raasiku Spordihoone"))
+        self.assertRegex(e.url, r"^https://baltichandball\.eu/season/206/league/636/game/\d+$")
+        self.assertFalse(any(x.isdigit() for g in games for x in (g.home, g.away)))  # tulemus ei sega võistkondi
+        v = Venues.load()
+        self.assertEqual({g.venue for g in games if g.venue and v.lookup(g.venue) is None}, set())
+
+    def test_fetch_reads_fixtures_and_results_and_survives_missing_results(self):
+        from scrapers.http import FetchError
+        fixtures = (FIX / "kasipall_bhl_636.html").read_text(encoding="utf-8")
+        results = (FIX / "kasipall_bhl_results_636.html").read_text(encoding="utf-8")
+        src = {"competitions": [COMPS[636]]}
+
+        class F:
+            def __init__(self, fail):
+                self.fail = fail
+
+            def get(self, url):
+                if url.endswith("/results"):
+                    if self.fail:
+                        raise FetchError("x")
+                    return results
+                return fixtures
+
+        self.assertEqual(len(adapter.fetch(F(False), src)), 44 + 32)
+        self.assertEqual(len(adapter.fetch(F(True), src)), 44)
 
 
 class DedupeTest(unittest.TestCase):

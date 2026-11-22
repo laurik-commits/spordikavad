@@ -231,6 +231,17 @@ Omaniku valik: koondised on oma tase (`/koondised/…`). Praegu on olemas ainult
   - **Hoki:** koondised on Jäähokiliidu lehtedel, vt „Täiendavate võistluste ülevaade“.
 - **Uued saalid:** Rakvere Spordikeskus (venues.toml). Paide jalgpallihall, Pärnu Rannastaadion, Jõhvi Spordihall, A. Le Coq Arena, Tehvandi staadion olid juba olemas.
 
+## Tulemused saalihokis ja Balti käsipalliliigas (lisatud 2026-11-22)
+
+Mõlema allika ajakava leht näitab ainult tulevasi mänge, tulemused on eraldi lehel. Kontrollitud 2026-11-22.
+
+- **saalihoki.ee:** https://www.saalihoki.ee/Events/Loppenud-mangud.aspx, kogu hooaja lõppenud mängud (võistlus, „Kodu vs Külalised“, tulemus, aeg, koht, link protokollile). robots.txt keelab ainult tehnilised kaustad (`/Bootstrap/`, `/handlers/` jt), seda lehte mitte. Võistluse nimed on teised kui ajakavas („EST-LAT M meistrivõistlused“ = „LAT-EST M“), seepärast loetakse lõppenud mängud eraldi, mitte ei sobitata ajakavaga. Protokolli link (`Protokoll.aspx?id=…`) on mängu seis ja statistika. Saalide lühendid „Sadolin SH“ ja „Kuusalu SH“ on aliasena `venues.toml`-is (Kuusalu seos oletatud: üks saal).
+- **baltichandball.eu:** `…/season/<s>/league/<id>/results`, sama kujuga plokid kui ajakava lehel, tulemus on kaks numbrit võistkondade nimede järel. robots.txt puudub (404).
+- Tulemuste leht toob ka välismaa saalid; uued saalid on `venues.toml`-is ja `geo.foreign` all (Aizkraukle, Ķekava, Spuņciems, Vilnius).
+- **Kalev (bckalev.ee):** https://bckalev.ee/tulemused/ on sama SportPressi tabel mis ajakava, lisaks veerg „Tulemused“ ("83 - 81" või "-"). robots.txt lubab. Leht on suur (umbes 570 KB, sisaldab ka vanemaid hooaegu), seepärast võetakse sealt ainult mängitud mängud jooksvast hooajast (alates 1. augustist). Mängu link on klubi mängulehele. Mängitud välismaa mängudel on „saaliks“ riik või linn (Türgi, Poola, Manchester jt), need on `venues.toml`-is ja `geo.foreign` all.
+- **Tartu (basket.ut.ee):** tulemus on ajakava tabeli viimases veerus ("65:41"), eraldi päringut pole vaja.
+- Kui tulemuste lehte ei saa, ajakava töötab edasi (hoiatus logis).
+
 ## Pistekontroll 2026-11-20
 
 Iga allika kohta üks mäng lehel olevatest andmetest, võrreldud allika enda mängulehega:

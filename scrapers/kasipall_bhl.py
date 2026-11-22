@@ -13,10 +13,14 @@ topelt mängud eemaldab build.py (dedupe).
 from __future__ import annotations
 
 import html
+import logging
 import re
 from datetime import datetime
 
+from .http import FetchError
 from .model import Event, new_event
+
+log = logging.getLogger(__name__)
 
 NAME = "kasipall_bhl"
 SPORT = "kasipall"
@@ -55,9 +59,13 @@ def parse(page: str, comp: dict) -> list[Event]:
             month, day = MONTHS.get(m.group(1)), int(m.group(2))
         elif year and month and day:
             block = page[pos:games[games.index(pos) + 1]]
-            teams, ww, link = _TEAM.findall(block), _WHEN_WHERE.search(block), _GAME.search(block)
+            found, ww, link = _TEAM.findall(block), _WHEN_WHERE.search(block), _GAME.search(block)
+            # tulemuste lehel on võistkondade nimede järel kaks numbrit (visatud väravad): samad "h6 ms-3" plokid
+            teams = [t for t in found if not t.isdigit()]
+            goals = [t for t in found if t.isdigit()]
             if len(teams) < 2 or not link:
                 continue
+            result = f"{int(goals[0])}-{int(goals[1])}" if len(goals) >= 2 else ""
             time = ww.group(1) if ww else None
             venue = html.unescape(ww.group(2)).strip().strip(",").strip() if ww else ""
             hh, mm = (int(x) for x in (time or "0:00").split(":"))
@@ -66,14 +74,23 @@ def parse(page: str, comp: dict) -> list[Event]:
                     source=NAME, sport=SPORT, league=comp["league"], level=comp.get("level", 1),
                     start=datetime(year, month, day, hh, mm),
                     home=html.unescape(teams[0]), away=html.unescape(teams[1]),
-                    venue=venue, city="", url=link.group(1), time_tbc=time is None,
+                    venue=venue, city="", url=link.group(1), time_tbc=time is None, result=result,
                 )
             )
     return events
 
 
+def results_url(comp: dict) -> str:
+    return f"{BASE}/season/{comp['season']}/league/{comp['id']}/results"
+
+
 def fetch(fetcher, source: dict | None = None) -> list[Event]:
+    """Ajakava (tulevased mängud) ja tulemuste leht (mängitud mängud, skooriga)."""
     events: list[Event] = []
     for comp in (source or {}).get("competitions", []):
         events.extend(parse(fetcher.get(fixtures_url(comp)), comp))
+        try:
+            events.extend(parse(fetcher.get(results_url(comp)), comp))
+        except FetchError as exc:  # tulemused on lisa: ajakava peab ka ilma nendeta töötama
+            log.warning("%s: tulemusi ei saanud (%s): %s", NAME, comp["league"], exc)
     return events

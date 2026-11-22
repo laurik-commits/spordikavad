@@ -8,10 +8,15 @@ Uritus.aspx?id=N) ja "Koht". Võetakse ainult LEAGUES sõnastikus olevad liigad.
 from __future__ import annotations
 
 import html
+import logging
 import re
 from datetime import datetime
+from urllib.parse import urljoin
 
-from .model import Event, new_event
+from .http import FetchError
+from .model import Event, new_event, parse_score
+
+log = logging.getLogger(__name__)
 
 NAME = "saalihoki_meistriliiga"
 SPORT = "saalihoki"
@@ -66,5 +71,56 @@ def parse(page: str) -> list[Event]:
     return events
 
 
+FINISHED_URL = BASE + "Loppenud-mangud.aspx"
+
+# lõppenud mängude lehe võistluse nimi (ilma lõputa " meistrivõistlused") → eesliide LEAGUES sõnastikus
+FINISHED_NAMES = {
+    "Meistriliiga M": "Meistriliiga M",
+    "EST-LAT M": "LAT-EST M",
+    "EST-LAT N": "LAT-EST N",
+    "Energialiiga": "Energialiiga",
+}
+
+_FINISHED_ROW = re.compile(
+    r"<tr>\s*<td>\s*(.*?)\s*</td>\s*<td>\s*<a [^>]*href=\"([^\"]+)\"[^>]*>(.*?)</a>\s*</td>\s*"
+    r"<td>\s*(.*?)\s*</td>\s*<td>\s*(\d{2}\.\d{2}\.\d{4})\s*kell\s*(\d{1,2}:\d{2})?\s*</td>\s*<td>\s*(.*?)\s*</td>",
+    re.S,
+)
+
+
+def _clean(text: str) -> str:
+    return " ".join(html.unescape(text).split())  # ka \xa0 → tavaline tühik
+
+
+def parse_finished(page: str) -> list[Event]:
+    """Lõppenud mängud (Loppenud-mangud.aspx): "võistlus | Kodu vs Külalised | 6 - 7 | aeg | koht | protokolli link".
+
+    Ajakava leht näitab ainult tulevasi mänge, nii et tulemused tulevad siit. Mäng ilmub siia pärast
+    lõppu; sama mäng ei ole korraga ajakavas ja siin. Protokolli link on mängu "seis ja statistika"."""
+    events: list[Event] = []
+    for comp, href, title, score, day, time, place in _FINISHED_ROW.findall(page):
+        comp = _clean(comp).removesuffix(" meistrivõistlused")
+        prefix = FINISHED_NAMES.get(comp)
+        parts = _clean(re.sub(r"<[^>]+>", "", title)).split(" vs ")
+        if prefix is None or len(parts) != 2 or not all(parts):
+            continue
+        league, level = LEAGUES[prefix]
+        events.append(
+            new_event(
+                source=NAME, sport=SPORT, league=league, level=level,
+                start=datetime.strptime(f"{day} {time or '00:00'}", "%d.%m.%Y %H:%M"),
+                home=parts[0], away=parts[1], venue=_clean(place), city="",
+                url=urljoin(BASE, html.unescape(href)), time_tbc=not time,
+                result=parse_score(_clean(re.sub(r"<[^>]+>", "", score))),
+            )
+        )
+    return events
+
+
 def fetch(fetcher) -> list[Event]:
-    return parse(fetcher.get(URL))
+    events = parse(fetcher.get(URL))
+    try:
+        events += parse_finished(fetcher.get(FINISHED_URL))
+    except FetchError as exc:  # tulemused on lisa: ajakava peab ka ilma nendeta töötama
+        log.warning("%s: lõppenud mänge ei saanud: %s", NAME, exc)
+    return events
