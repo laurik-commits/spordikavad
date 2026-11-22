@@ -427,15 +427,17 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
     return len(urls)
 
 
-# Allikate avalehed „Mis siin on?“ lehe jaoks (adapteri nime algus → (nimi, URL))
+# Allikate avalehed „Mis siin on?“ lehe jaoks: ala → [(nimi, URL), ...]
 SOURCE_SITES = {
-    "jalgpall": ("Eesti Jalgpalli Liit", "https://jalgpall.ee/voistlused"),
-    "saalijalgpall": ("Eesti Jalgpalli Liit", "https://jalgpall.ee/voistlused"),
-    "jaahoki": ("Läti Jäähokiliit (Optibet Hokiliiga)", "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/schedule"),
-    "vorkpall": ("DataProject (Eesti Võrkpalli Liit, Balti liiga)", "https://evf-web.dataproject.com/MainHome.aspx"),
-    "korvpall": ("Klubide kodulehed (Bigbank/Kalev, Tartu Ülikool)", "https://bckalev.ee/ajakava/"),
-    "kasipall": ("Eesti Käsipalliliit ja Balti Käsipalliliiga", "https://kasipall.ee/"),
-    "saalihoki": ("Eesti Saalihoki Liit", "https://www.saalihoki.ee/Events/Uritused.aspx"),
+    "jalgpall": [("Eesti Jalgpalli Liit", "https://jalgpall.ee/voistlused")],
+    "saalijalgpall": [("Eesti Jalgpalli Liit", "https://jalgpall.ee/voistlused")],
+    "jaahoki": [("Läti Jäähokiliit (Optibet Hokiliiga)", "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/schedule"),
+                ("HC Vipers (Unibet Hokiliiga)", "https://hcvipers.ee/?page=games&lang=et")],
+    "vorkpall": [("DataProject (Eesti Võrkpalli Liit, Balti liiga)", "https://evf-web.dataproject.com/MainHome.aspx")],
+    "korvpall": [("Bigbank/Kalev", "https://bckalev.ee/ajakava/"),
+                 ("Tartu Ülikool Maks & Moorits", "https://basket.ut.ee/kalender-26-27/")],
+    "kasipall": [("Eesti Käsipalliliit ja Balti Käsipalliliiga", "https://kasipall.ee/")],
+    "saalihoki": [("Eesti Saalihoki Liit", "https://www.saalihoki.ee/Events/Uritused.aspx")],
 }
 
 
@@ -450,7 +452,7 @@ def coverage(cfg: dict) -> list[dict]:
             continue  # käsitsi lisatud üritustel pole oma ala ega liigat
         sport = src["sport"]
         row = rows.setdefault(sport, {"key": sport, "sport": SPORTS[sport], "top": [], "low": [], "minor": [], "youth": [], "national": [],
-                                      "source": SOURCE_SITES.get(sport, ("", ""))})
+                                      "source": SOURCE_SITES.get(sport, [])})
         if src.get("competitions"):
             for c in src["competitions"]:
                 row[column[c.get("level", 1)]].append(c["league"])

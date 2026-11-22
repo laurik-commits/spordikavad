@@ -82,6 +82,18 @@ MVP-sse sobib 6 ala 7-st (korvpallist ainult Kalev).
 - **Tallinna klubi:** HC Panter (kodusaal Haabersti jäähall).
 - **Eripärad:** liiga on Läti liidu hallata (Eesti Jäähokiliidu oma süsteem ehis.eestihoki.ee lõpeb hooajaga 2024/25). Tallinna kodumängude koht on kirjas ainult kui „Tallina, Igaunija“. Selle jaoks tuleb `venues.yaml`-isse alias „Tallina, Igaunija“ → Haabersti jäähall.
 
+## Jäähoki: Unibet Hokiliiga, HC Vipersi kodumängud ✅ (lisatud 2026-11-22)
+
+- **Leht:** https://hcvipers.ee/?page=games&lang=et. Adapter `jaahoki_vipers`.
+- **Kuju:** serveris renderdatud HTML. Iga mäng on kahes vaates: nimekirjas (`<article class="gc10-game-row">`) ja kalendriruudus (`gc10-tile`). Adapter loeb ainult nimekirja. Rea atribuutides on võistkond (`data-team="unibet"`), kuupäev (`data-date`) ja pealkiri „Kodu — Võõras“. Kellaaeg, koht ja Eesti Hoki Statistika mängulehe link on rea sees.
+- **robots.txt:** puudub (404). Päring tehakse üks päevas. Liidu hockeydata.net API-võtit ei kasutata: klubi avaldab ajakava oma lehel tavalise HTML-ina.
+- **Ainult kodumängud.** Koha väli on igal mängul „Tondiraba Jäähall“, ka võõrsil mängudel (nt Viru Sputnik – HC Vipers). Seetõttu võtab adapter ainult read, kus HC Vipers on esimesena (kodumeeskond). Vipersi kodusaal on Tondiraba jäähall. 2026/27 hooajal on lehel 6 tulevast kodumängu.
+- **Nimi:** „HC Vipers Unibet“ → „HC Vipers“, sest liiga nimes on sponsor juba olemas.
+- **Ainult tulevased mängud.** Möödunud mängud tulevad arhiivist (`archive/`), tulemusi lehel pole.
+- **Välja jäetud:** noorte võistkonnad (U19 kuni U8), sest nende kodumängud võivad olla ka teistes jäähallides. Unibet Hokiliiga teiste klubide omavahelised mängud (Narva, Tartu, Kohtla-Järve): HC Everesti leht on HTML ja seda tasub vaadata, Viru Sputniku ja Välk 494 lehed on JavaScriptis.
+- **Kontroll:** hooaeg on `config.toml`-is 01.10–15.02, sest playoffide ajakava selgub hiljem ja siis ei tohi 0 mängu viga anda.
+- **Fixture:** `tests/fixtures/jaahoki_vipers.html` (terve leht, 2026-11-22).
+
 ## Võrkpall: Elme Messer Balti liiga
 
 - **Ajakava leht:** mehed https://bvl-web.dataproject.com/CompetitionMatches.aspx?ID=29&PID=30, naised https://bvl-web.dataproject.com/CompetitionMatches.aspx?ID=31&PID=32
@@ -142,6 +154,7 @@ Omaniku palvel vaadati üle kõigi alade täiskasvanute tippvõistlused.
 **Ei kasutata:**
 - **Eesti jäähoki liigad** (Unibet Hokiliiga: Tallinna HC Vipers; naiste hokiliiga: Roosa Panter, Grizzlyz, Wolferines). Ajakava on ehs.eestihoki.ee-l, aga see laaditakse JavaScriptiga kommertsteenusest **hockeydata.net**, kasutades liidu enda API-võtit. Meie skriptil pole õigust seda võtit kasutada (lähteülesanne: küsitavad allikad jäta vahele). ehis.eestihoki.ee (serveri HTML, robots lubab) lõpeb hooajaga 2024/25. **Vaata uuesti**, kui ehis-is ilmub 2026/27 hooaeg.
   - **Plaan (omaniku otsus 2026-11-20):** kui leht on stabiilselt töötanud, küsib omanik koos Korvpalliliiduga ka Jäähokiliidult luba (vt README „Tulevikuideed“). Kuni loani API-võtit ei kasutata. Lehel on jäähoki filtri juures märkus.
+  - **2026-11-22:** HC Vipersi kodumängud tulevad nüüd klubi lehelt (vt „Jäähoki: Unibet Hokiliiga, HC Vipersi kodumängud“). Teised Unibet Hokiliiga mängud ja naiste liiga on endiselt puudu.
 - ~~Käsipalli Balti liiga~~ → leitud ja lisatud (omanik leidis baltichandball.eu), vt allpool.
 - Naiste käsipallikarikas (id 363): 2026/27 mänge pole veel avaldatud. Lisa `competitions` alla, kui need ilmuvad.
 - Saalihoki: naiste kodumaist liigat ega täiskasvanute karikat pole.

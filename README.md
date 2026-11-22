@@ -92,7 +92,7 @@ Kolm sammu: adapter, konfiguratsioonirida ja test.
 
 - **Loapalved liitudele** (omaniku plaan 2026-11-20): kui leht on mõnda aega stabiilselt töötanud, kirjutab omanik ja küsib luba ajakava kasutamiseks või avalikku andmevoogu. Claude koostab siis kirjade mustandid.
   - **Eesti Korvpalliliit** (basket.ee, estlatbl.com): robots.txt keelab automaatse kogumise, seetõttu on lehel praegu ainult Bigbank/Kalevi mängud (klubi lehelt, adapter `korvpall_kalev`) ja Tartu Ülikool Maks & Moorits kodumängud (klubi lehelt, adapter `korvpall_ut`). Loa korral: liiga adapter (`scrapers/korvpall_...py`), `config.toml` rida ja test; korvpalli märkuse (`sport_note`) saab siis eemaldada. Taust: SOURCES.md → Korvpall.
-  - **Eesti Jäähokiliit** (Unibet Hokiliiga, naiste hokiliiga): ajakava on ehs.eestihoki.ee lehel, aga brauser laadib selle hockeydata.net kommertsteenusest liidu API-võtmega. Küsida luba (või avalikku voogu / iCal-i), et tohiks seda kasutada. Loa korral: adapter (`scrapers/jaahoki_ehl.py`), `config.toml` rida ja test; `sport_note` jäähoki märkuse saab siis eemaldada. Taust: SOURCES.md → Täiendavate võistluste ülevaade.
+  - **Eesti Jäähokiliit** (Unibet Hokiliiga, naiste hokiliiga): ajakava on ehs.eestihoki.ee lehel, aga brauser laadib selle hockeydata.net kommertsteenusest liidu API-võtmega. Praegu on lehel ainult HC Vipersi kodumängud (klubi lehelt, adapter `jaahoki_vipers`). Küsida luba (või avalikku voogu / iCal-i), et tohiks seda kasutada. Loa korral: adapter (`scrapers/jaahoki_ehl.py`), `config.toml` rida ja test; `sport_note` jäähoki märkuse saab siis eemaldada. Taust: SOURCES.md → Täiendavate võistluste ülevaade.
 
 - **Piletid ja ülekanded** (omanikuga kokku lepitud 2026-11-20, teha pärast MVP-d):
   - Püsiinfo seadistusfailis: klubi → piletimüüja link, liiga → ülekandekanal. Mängu real „Piletid ↗“ ja „📺 kanal“. Üle vaadata kord hooajas.
@@ -100,7 +100,7 @@ Kolm sammu: adapter, konfiguratsioonirida ja test.
   - Mängupõhist kogumist piletimüüjatelt ega telekanalitelt ei tee (hooldus, tingimused).
 - Päevade ribale kuu nimi, kui riba ulatub üle kuu vahetuse.
 - **Jalgpalli karikad** (omanikuga kokku lepitud „millalgi tulevikus“): Tipneri karikas, naiste karikas, superkarikas. Vaja on iCal-lugejat (vt SOURCES.md „Täiendavate võistluste ülevaade“).
-- Eesti jäähoki liigad (Vipers, naiste liiga): vaata uuesti, kas ehis.eestihoki.ee-l on 2026/27 hooaeg.
+- Eesti jäähoki liigad (teised Unibet Hokiliiga klubid, naiste liiga): vaata uuesti, kas ehis.eestihoki.ee-l on 2026/27 hooaeg. HC Everesti leht (hceverest.ee) on HTML, sealt võiks tulla Kohtla-Järve kodumängud.
 - **Madalamad liigad:** esiliigad on tehtud (2026-11-20, `level = 2`), jalgpalli II–IV liiga on kolmas tase „Madalamad liigad“ (2026-11-21, `level = 3`, kaust `/madalamad/…`). Teiste alade madalamad liigad: lisa `competitions` reale `level = 3`. Taust: SOURCES.md → Madalamad liigad.
 - **Noored** (`level = 4`, kaust `/noored/…`, 2026-11-21): jalgpalli vanemad klassid, saalijalgpalli U18, käsipalli TU19 ja võrkpalli U-18/U-20. Rohkem noorte liigasid lisa `competitions` reale `level = 4` (käsipalli noorte uued ID-d, kui kasipall.ee need avaldab). Taust: SOURCES.md → Noored.
 - **Koondised** (`level = 5`, kaust `/koondised/…`, 2026-11-21): praegu jalgpalli ja saalijalgpalli koondised (adapterid `jalgpall_koondis`, `saalijalgpall_koondis`, ainult Eesti kodumängud). Teiste alade koondised: korvpall, käsipall ja võrkpall puuduvad, vt SOURCES.md → Koondised. `year_round = true` allikal tähendab terve aasta mänge, mis ei räägi liigahooajast.
