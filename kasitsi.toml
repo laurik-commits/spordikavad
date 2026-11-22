@@ -53,3 +53,41 @@
 # venue = "Kalevi spordihall"
 # url = "https://..."
 # added = 2026-11-22
+
+[[event]]
+sport = "korvpall"
+league = "FIBA MM 2027 valiksari (L-alagrupp)"
+level = 5
+kind = "mäng"
+start = 2026-11-27T19:00:00
+home = "Eesti"
+away = "Prantsusmaa"
+venue = "Unibet Arena"
+url = "https://unibetarena.ee/uritused/kalender/2026-11-27/eesti-prantsusmaa--fiba-basketball-worldcup-2027-qualifiers/"
+added = 2026-11-22
+note = "Halli ametlik ürituse leht: kuupäev, kell 19:00 (uksed 17:30), korraldaja Eesti Korvpalliliit. Mäng väljamüüdud/nõutud, kalendris puudus."
+
+[[event]]
+sport = "vorkpall"
+league = "Eesti võrkpalli karikafinaalide päev"
+level = 1
+kind = "eriüritus"
+start = 2026-12-16T14:00:00
+home = "Eesti Võrkpallikarika päev"
+venue = "Unibet Arena"
+url = "https://unibetarena.ee/uritused/kalender/2026-12-16/eesti-vorkpallikarika-paev-1/"
+added = 2026-11-22
+note = "Halli ametlik leht: väikese karika finaal 14:00, naiste finaal 17:30, meeste Aadu Luukase karika finaal 20:00; korraldaja Delfi. Liidu lehel sama uudis."
+
+[[event]]
+sport = "jaahoki"
+league = "Unibet Hokiliiga"
+level = 1
+kind = "mäng"
+start = 2026-11-28T16:35:00
+home = "HC Vipers"
+away = "HC Everest"
+venue = "Tondiraba jäähall"
+url = "https://hcvipers.ee/"
+added = 2026-11-22
+note = "HC Vipersi klubi ametlik leht (lähimad mängud, kuupäev 28.11, 16:35, Tondiraba Jäähall). Liiga ajakava ise on JS-is (hockeydata), seetõttu klubi leht."
