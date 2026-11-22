@@ -103,6 +103,12 @@ MVP-sse sobib 6 ala 7-st (korvpallist ainult Kalev).
 - **Topelt:** Vipersi kodumängud Everesti vastu tulevad mõlemalt lehelt. Vipersi allikas on `config.toml`-is eespool ja jääb alles.
 - **ID:** noortel võib samal päeval olla kaks mängu samade võistkondade vahel (04.04.2027 U16). Siis lisatakse teise mängu ID-sse kellaaeg.
 - **Fixture:** `tests/fixtures/jaahoki_everest.html` (terve avaleht, 2026-11-22).
+
+## Jäähoki: Narva PSK, adapterit ei tee (kontrollitud 2026-11-22)
+
+- **Leht:** Narva PSK on Narva Paemurru Spordikool (https://uus.npsk.ee/, WordPress, robots.txt keelab ainult `/wp-admin/`). Eraldi hokiklubi lehte pole.
+- **Mängukava:** kalendri lehel (https://uus.npsk.ee/kalender) on iga kuu ürituste kalenderplaan PDF-ina. Seal on kõigi alade üritused, sh Narva kodumängud Narva jäähallis (Juuli 4) koos kellaajaga. Detsembris 2026 on üks Unibet Hokiliiga kodumäng (06.12 Narva PSK – HC Everest, tuleb ka Everesti lehelt), sõprusmäng 19.12 ja U13 turniir.
+- **Järeldus:** automaatseks allikaks ei sobi. Põhjused: fail on PDF, aadress muutub igal kuul (`/wp-content/uploads/<üleslaadimise kuu>/<kuu>-<aasta>.pdf`) ja ette on näha ainult üks kuu. Otsingu agent loeb PDF-i (`allikad.toml`) ja lisab Narva kodumängud `kasitsi.toml`-i.
 - **Kontroll:** hooaeg on `config.toml`-is 01.10–15.02, sest playoffide ajakava selgub hiljem ja siis ei tohi 0 mängu viga anda.
 - **Fixture:** `tests/fixtures/jaahoki_vipers.html` (terve leht, 2026-11-22).
 
