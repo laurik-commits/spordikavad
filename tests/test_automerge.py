@@ -119,6 +119,46 @@ class GateTest(unittest.TestCase):
         self.assertTrue(any("muud" in p for p in am.check_config(CONFIG, other)))
 
 
+SOURCE = '''
+[[allikas]]
+nimi = "Hall"
+liik = "hall"
+url = "https://hall.ee/kalender"
+alad = ["kõik"]
+piirkond = "Tallinn"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+'''
+
+
+class SourceRegisterGateTest(unittest.TestCase):
+    def run_sources(self, head, base=SOURCE):
+        files = {"config.toml": CONFIG, "venues.toml": VENUES, "kasitsi.toml": ""}
+        b = dict(files, **{"allikad.toml": base})
+        h = dict(files, **{"allikad.toml": head})
+        return am.evaluate(["allikad.toml"], b.get, h.get, TODAY, fake_get({}), UA)
+
+    def test_new_source_and_note_update_pass_without_fetching(self):
+        new = SOURCE.replace("Hall", "Teine hall").replace("hall.ee", "teinehall.ee").replace('"hall"', '"hall"')
+        self.assertEqual(self.run_sources(SOURCE + new), [])
+        noted = SOURCE.replace("kontrollitud = 2026-11-22", 'kontrollitud = 2026-11-25\nmarkus = "JS leht"')
+        self.assertEqual(self.run_sources(noted), [])
+        forbidden = SOURCE.replace('robots = "lubatud"', 'robots = "keelatud"').replace(
+            'kasutus = "agent"', 'kasutus = "keelatud"')
+        self.assertEqual(self.run_sources(forbidden), [])
+
+    def test_agent_cannot_remove_rename_or_mark_adapter(self):
+        self.assertTrue(any("eemaldatud" in p for p in self.run_sources("")))
+        renamed = SOURCE.replace('nimi = "Hall"', 'nimi = "Muu"')
+        self.assertTrue(any("nimi" in p for p in self.run_sources(renamed)))
+        adapter = SOURCE + SOURCE.replace("hall.ee", "uus.ee").replace('"agent"', '"adapter:korvpall_kalev"')
+        self.assertTrue(any("adapterit märgib omanik" in p for p in self.run_sources(adapter)))
+        invalid = SOURCE.replace('liik = "hall"', 'liik = "baar"')
+        self.assertTrue(any("tundmatu liik" in p for p in self.run_sources(invalid)))
+
+
 class PageMatchTest(unittest.TestCase):
     def test_date_formats(self):
         d = date(2026, 12, 5)

@@ -1,0 +1,613 @@
+# Allikate register: kust leiab infot Eestis toimuvate spordimängude kohta.
+#
+# Otsingu agent käib iga jooksuga läbi kõik kirjed, mille kasutus on "agent" (kohustuslik) või
+# "vihje" (vihjed, mille põhjal otsitakse ametlik kinnitus). Kirjed kasutusega "adapter:<nimi>"
+# loetakse automaatselt iga päev (scrapers/<nimi>.py), neid agent üle ei käi.
+# "keelatud" = kasutustingimused või robots.txt ei luba lugeda, ära kasuta.
+#
+# Väljad:
+#   nimi          allika nimi
+#   liik          hall | linn | liit | klubi | rahvusvaheline | pilet | uudised
+#   url           leht, kust mänge/üritusi leiab (kalender, ajakava, sündmuste leht)
+#   alad          ["kõik"] või alade võtmed: jalgpall, saalijalgpall, korvpall, vorkpall, kasipall, jaahoki, saalihoki
+#   piirkond      linn, maakond, "Eesti" või "rahvusvaheline"
+#   kuju          html (sisu on lehel tekstina) | js (laaditakse JavaScriptiga) | api | pdf
+#   robots        lubatud | keelatud | puudub (robots.txt puudub) | kontrollimata
+#   kasutus       adapter:<nimi> | agent | vihje | keelatud
+#   kontrollitud  millal viimati kontrolliti (kuupäev)
+#   kandidaat     valikuline, true = korrapärane mängukava, sobiks automaatseks adapteriks
+#   markus        valikuline märkus: mida sealt leiab, mis on keeruline
+#
+# Kontroll:  python allikad.py   (loetelu ja vead)   python allikad.py --agent   (agendi kontrollnimekiri)
+
+# --- Hallid ja areenid ---------------------------------------------------------
+
+[[allikas]]
+nimi = "Unibet Arena (Saku Suurhall)"
+liik = "hall"
+url = "https://unibetarena.ee/uritused/kalender/"
+alad = ["kõik"]
+piirkond = "Tallinn"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+markus = "Ürituse lehtedel (/uritused/kalender/<kuupäev>/<nimi>/) on kuupäev ja kellaaeg tekstina. Siit leiti korvpallikoondise mäng ja võrkpallikarika päev."
+
+[[allikas]]
+nimi = "Tondiraba jäähall"
+liik = "hall"
+url = "https://tondirabaicehall.ee/"
+alad = ["jaahoki"]
+piirkond = "Tallinn"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+markus = "Veebikalender (/en/veebikalender/) näitab ainult broneeringuid, mitte avalikke üritusi. HC Vipersi mängud on klubi lehel."
+
+[[allikas]]
+nimi = "Rakvere Spordikeskus"
+liik = "hall"
+url = "https://www.rakverespordikeskus.ee/"
+alad = ["kõik"]
+piirkond = "Rakvere"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+
+[[allikas]]
+nimi = "Viljandi Spordikeskus"
+liik = "hall"
+url = "https://www.viljandispordikeskus.ee/"
+alad = ["kõik"]
+piirkond = "Viljandi"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+
+[[allikas]]
+nimi = "Tartu Ülikooli spordihoone (Akadeemiline Spordiklubi)"
+liik = "hall"
+url = "https://sport.ut.ee/"
+alad = ["kõik"]
+piirkond = "Tartu"
+kuju = "html"
+robots = "kontrollimata"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+markus = "Arvutist ei vastanud (ühenduse viga), kontrolli pilvest."
+
+# --- Linnade, valdade ja piirkondade sündmuste kalendrid -----------------------
+
+[[allikas]]
+nimi = "Tallinna linn: sport"
+liik = "linn"
+url = "https://www.tallinn.ee/et/sport"
+alad = ["kõik"]
+piirkond = "Tallinn"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+
+[[allikas]]
+nimi = "Tartu ja Lõuna-Eesti Kultuuriaken"
+liik = "linn"
+url = "https://kultuuriaken.tartu.ee/"
+alad = ["kõik"]
+piirkond = "Tartu"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+markus = "Sündmuste kalender, kus on ka spordiüritused."
+
+[[allikas]]
+nimi = "Pärnu sündmused (kultuur.parnu.ee)"
+liik = "linn"
+url = "https://kultuur.parnu.ee/"
+alad = ["kõik"]
+piirkond = "Pärnu"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+markus = "Pärnu spordihallil oma kalendrit ei leitud, üritused on siin."
+
+[[allikas]]
+nimi = "Visit Narva"
+liik = "linn"
+url = "https://visitnarva.ee/et/avaleht/"
+alad = ["kõik"]
+piirkond = "Narva"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+markus = "Narva spordikeskusel ja jäähallil oma kodulehte ei leitud."
+
+[[allikas]]
+nimi = "Rakvere sündmused"
+liik = "linn"
+url = "https://www.rakvere.ee/sundmused"
+alad = ["kõik"]
+piirkond = "Rakvere"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+
+[[allikas]]
+nimi = "Saaremaa vald: sündmused"
+liik = "linn"
+url = "https://www.saaremaavald.ee/sundmused"
+alad = ["kõik"]
+piirkond = "Saaremaa"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+
+[[allikas]]
+nimi = "Visit Harju"
+liik = "linn"
+url = "https://visitharju.ee/"
+alad = ["kõik"]
+piirkond = "Harjumaa"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+
+[[allikas]]
+nimi = "Viljandi linn"
+liik = "linn"
+url = "https://viljandi.ee/"
+alad = ["kõik"]
+piirkond = "Viljandi"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+markus = "Sündmuste lehe aadress leidmata (/sundmused annab 404)."
+
+[[allikas]]
+nimi = "Jõhvi vald"
+liik = "linn"
+url = "https://www.johvi.ee/"
+alad = ["kõik"]
+piirkond = "Jõhvi"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+markus = "Sündmuste lehe aadress leidmata."
+
+[[allikas]]
+nimi = "Paide linn"
+liik = "linn"
+url = "https://paide.ee/"
+alad = ["kõik"]
+piirkond = "Paide"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+
+[[allikas]]
+nimi = "Võru linn"
+liik = "linn"
+url = "https://www.voru.ee/"
+alad = ["kõik"]
+piirkond = "Võru"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+
+[[allikas]]
+nimi = "Haapsalu linn"
+liik = "linn"
+url = "https://haapsalu.ee/"
+alad = ["kõik"]
+piirkond = "Läänemaa"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+
+[[allikas]]
+nimi = "Puhka Eestis (sündmused)"
+liik = "linn"
+url = "https://puhkaeestis.ee/et"
+alad = ["kõik"]
+piirkond = "Eesti"
+kuju = "html"
+robots = "lubatud"
+kasutus = "vihje"
+kontrollitud = 2026-11-22
+markus = "Üle-eestiline sündmuste kalender, suuremad rahvusvahelised võistlused."
+
+# --- Liidud ----------------------------------------------------------------------
+
+[[allikas]]
+nimi = "Eesti Jalgpalli Liit (võistlused)"
+liik = "liit"
+url = "https://jalgpall.ee/voistlused/"
+alad = ["jalgpall", "saalijalgpall"]
+piirkond = "Eesti"
+kuju = "html"
+robots = "lubatud"
+kasutus = "adapter:jalgpall_ejl"
+kontrollitud = 2026-11-22
+markus = "Ka koondised (jalgpall_koondis, saalijalgpall_koondis) ja saalijalgpall (saalijalgpall_ejl). Uudistes sõprusmängud ja karikad."
+
+[[allikas]]
+nimi = "Eesti Jalgpalli Liit (uudised)"
+liik = "liit"
+url = "https://jalgpall.ee/"
+alad = ["jalgpall", "saalijalgpall"]
+piirkond = "Eesti"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+markus = "Sõprusmängud, Balti turniir, Rahvuste liiga kuupäevad."
+
+[[allikas]]
+nimi = "Eesti Käsipalliliit (handball.ee)"
+liik = "liit"
+url = "https://www.handball.ee/"
+alad = ["kasipall"]
+piirkond = "Eesti"
+kuju = "html"
+robots = "puudub"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+markus = "Uudised, koondised, karikas, eurosarjade kodumängud."
+
+[[allikas]]
+nimi = "Eesti Käsipalliliit (kasipall.ee liigad)"
+liik = "liit"
+url = "https://kasipall.ee/"
+alad = ["kasipall"]
+piirkond = "Eesti"
+kuju = "html"
+robots = "lubatud"
+kasutus = "adapter:kasipall_liigad"
+kontrollitud = 2026-11-22
+
+[[allikas]]
+nimi = "Eesti Võrkpalli Liit (kalender)"
+liik = "liit"
+url = "https://volley.ee/kalender/"
+alad = ["vorkpall"]
+piirkond = "Eesti"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+markus = "Koondised, karikafinaalid, rannavõrkpall jäetakse välja."
+
+[[allikas]]
+nimi = "Eesti Võrkpalli Liit (DataProject)"
+liik = "liit"
+url = "https://evf-web.dataproject.com/MainHome.aspx"
+alad = ["vorkpall"]
+piirkond = "Eesti"
+kuju = "html"
+robots = "lubatud"
+kasutus = "adapter:vorkpall_dataproject"
+kontrollitud = 2026-11-22
+
+[[allikas]]
+nimi = "Eesti Jäähokiliit"
+liik = "liit"
+url = "https://www.eestihoki.ee/"
+alad = ["jaahoki"]
+piirkond = "Eesti"
+kuju = "js"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+markus = "Liigade ajakava (Unibet Hokiliiga, naiste liiga) laaditakse hockeydata.net-ist JavaScriptiga."
+
+[[allikas]]
+nimi = "Eesti Hoki Statistika (EHS)"
+liik = "liit"
+url = "https://ehs.eestihoki.ee/statistika/"
+alad = ["jaahoki"]
+piirkond = "Eesti"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+kandidaat = true
+markus = "Mänguaruanded (/statistika/maengu-aruanne/?divisionId=…&gameId=…). Võib sobida Unibet Hokiliiga adapteriks, ajakava lehte veel ei leitud."
+
+[[allikas]]
+nimi = "Eesti Saalihoki Liit"
+liik = "liit"
+url = "https://www.saalihoki.ee/Events/Uritused.aspx"
+alad = ["saalihoki"]
+piirkond = "Eesti"
+kuju = "html"
+robots = "lubatud"
+kasutus = "adapter:saalihoki_meistriliiga"
+kontrollitud = 2026-11-22
+
+[[allikas]]
+nimi = "Eesti Korvpalliliit"
+liik = "liit"
+url = "https://www.basket.ee/"
+alad = ["korvpall"]
+piirkond = "Eesti"
+kuju = "html"
+robots = "keelatud"
+kasutus = "keelatud"
+kontrollitud = 2026-11-22
+markus = "robots.txt keelab kõik robotid. Ei kasutata, ka mitte otsingutulemuste kaudu."
+
+[[allikas]]
+nimi = "Eesti-Läti Korvpalliliiga"
+liik = "liit"
+url = "https://estlatbl.com/"
+alad = ["korvpall"]
+piirkond = "Eesti"
+kuju = "html"
+robots = "keelatud"
+kasutus = "keelatud"
+kontrollitud = 2026-11-20
+markus = "robots.txt keelab kõik robotid (SOURCES.md)."
+
+# --- Rahvusvahelised -------------------------------------------------------------
+
+[[allikas]]
+nimi = "FIBA"
+liik = "rahvusvaheline"
+url = "https://www.fiba.basketball/en"
+alad = ["korvpall"]
+piirkond = "rahvusvaheline"
+kuju = "js"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+markus = "Koondiste MM- ja EM-valiksarjad (ka naised ja noored). Mängulehed on JavaScriptiga, kuupäeva kinnituseks sobib paremini halli leht."
+
+[[allikas]]
+nimi = "EHF (Euroopa Käsipalliliit)"
+liik = "rahvusvaheline"
+url = "https://www.eurohandball.com/"
+alad = ["kasipall"]
+piirkond = "rahvusvaheline"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+markus = "Eurosarjade ja koondiste mängud. Klubi lehel on kuupäev, kellaaeg ja linn tekstina."
+
+[[allikas]]
+nimi = "CEV (Euroopa Võrkpalliliit)"
+liik = "rahvusvaheline"
+url = "https://cev.eu/"
+alad = ["vorkpall"]
+piirkond = "rahvusvaheline"
+kuju = "html"
+robots = "puudub"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+
+[[allikas]]
+nimi = "UEFA"
+liik = "rahvusvaheline"
+url = "https://www.uefa.com/"
+alad = ["jalgpall", "saalijalgpall"]
+piirkond = "rahvusvaheline"
+kuju = "js"
+robots = "lubatud"
+kasutus = "vihje"
+kontrollitud = 2026-11-22
+markus = "Koondised on jalgpall.ee adapteris, siit ainult kontrolliks."
+
+[[allikas]]
+nimi = "IFF (Rahvusvaheline Saalihokiliit)"
+liik = "rahvusvaheline"
+url = "https://floorball.sport/"
+alad = ["saalihoki"]
+piirkond = "rahvusvaheline"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+
+[[allikas]]
+nimi = "IIHF (Rahvusvaheline Jäähokiliit)"
+liik = "rahvusvaheline"
+url = "https://www.iihf.com/"
+alad = ["jaahoki"]
+piirkond = "rahvusvaheline"
+kuju = "html"
+robots = "kontrollimata"
+kasutus = "vihje"
+kontrollitud = 2026-11-22
+markus = "Vastab robotile 403 (blokeerib). Kasuta ainult otsingu vihjena."
+
+[[allikas]]
+nimi = "Läti Jäähokiliit (Optibet Hokiliiga)"
+liik = "rahvusvaheline"
+url = "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/schedule"
+alad = ["jaahoki"]
+piirkond = "rahvusvaheline"
+kuju = "html"
+robots = "lubatud"
+kasutus = "adapter:jaahoki_optibet"
+kontrollitud = 2026-11-22
+
+[[allikas]]
+nimi = "Balti Käsipalliliiga"
+liik = "rahvusvaheline"
+url = "https://baltichandball.eu/"
+alad = ["kasipall"]
+piirkond = "rahvusvaheline"
+kuju = "html"
+robots = "puudub"
+kasutus = "adapter:kasipall_bhl"
+kontrollitud = 2026-11-22
+
+# --- Klubid ----------------------------------------------------------------------
+
+[[allikas]]
+nimi = "Bigbank/Kalev"
+liik = "klubi"
+url = "https://bckalev.ee/ajakava/"
+alad = ["korvpall"]
+piirkond = "Tallinn"
+kuju = "html"
+robots = "lubatud"
+kasutus = "adapter:korvpall_kalev"
+kontrollitud = 2026-11-22
+
+[[allikas]]
+nimi = "Tartu Ülikool Maks & Moorits"
+liik = "klubi"
+url = "https://basket.ut.ee/"
+alad = ["korvpall"]
+piirkond = "Tartu"
+kuju = "html"
+robots = "lubatud"
+kasutus = "adapter:korvpall_ut"
+kontrollitud = 2026-11-22
+
+[[allikas]]
+nimi = "BC Pärnu"
+liik = "klubi"
+url = "https://bcparnu.ee/calendar/kalender/"
+alad = ["korvpall"]
+piirkond = "Pärnu"
+kuju = "js"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+markus = "Kalender laaditakse JavaScriptiga (toores HTML on tühi). Otsi lehe kasutatav API."
+
+[[allikas]]
+nimi = "Rapla Korvpallikool"
+liik = "klubi"
+url = "https://www.raplakk.ee/"
+alad = ["korvpall"]
+piirkond = "Raplamaa"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+
+[[allikas]]
+nimi = "Tallinna Spordiselts Kalev"
+liik = "klubi"
+url = "https://www.tallinnakalev.ee/"
+alad = ["kõik"]
+piirkond = "Tallinn"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+
+[[allikas]]
+nimi = "Eesti Spordiselts Kalev"
+liik = "klubi"
+url = "https://eestikalev.ee/"
+alad = ["kõik"]
+piirkond = "Tallinn"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+markus = "Kalevi spordihallil endal üritustekalendrit ei leitud, siit võib leida halli üritusi."
+
+[[allikas]]
+nimi = "HC Vipers"
+liik = "klubi"
+url = "https://hcvipers.ee/?page=games&lang=et"
+alad = ["jaahoki"]
+piirkond = "Tallinn"
+kuju = "html"
+robots = "puudub"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+kandidaat = true
+markus = "Kõigi võistkondade mängud (Unibet Hokiliiga meeskond on „HC Vipers Unibet“), kuupäev, kellaaeg ja saal tekstina. Sobiks adapteriks."
+
+[[allikas]]
+nimi = "HC Everest"
+liik = "klubi"
+url = "https://hceverest.ee/"
+alad = ["jaahoki"]
+piirkond = "Kohtla-Järve"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+
+[[allikas]]
+nimi = "SK Viru Sputnik"
+liik = "klubi"
+url = "https://virusputnik.ee/"
+alad = ["jaahoki"]
+piirkond = "Kohtla-Järve"
+kuju = "js"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+markus = "Toores HTML on peaaegu tühi."
+
+[[allikas]]
+nimi = "Hokiklubi Välk 494"
+liik = "klubi"
+url = "https://www.valk494.ee/"
+alad = ["jaahoki"]
+piirkond = "Tartu"
+kuju = "js"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-22
+markus = "Toores HTML on peaaegu tühi."
+
+# --- Piletimüük ja uudised (vihjed) ----------------------------------------------
+
+[[allikas]]
+nimi = "Piletilevi: sport"
+liik = "pilet"
+url = "https://www.piletilevi.ee/piletid/sport"
+alad = ["kõik"]
+piirkond = "Eesti"
+kuju = "html"
+robots = "lubatud"
+kasutus = "vihje"
+kontrollitud = 2026-11-22
+markus = "Ametlik piletimüük: kuupäev, koht ja korraldaja. Kinnita korraldaja või halli lehelt."
+
+[[allikas]]
+nimi = "Fienta"
+liik = "pilet"
+url = "https://fienta.com/et"
+alad = ["kõik"]
+piirkond = "Eesti"
+kuju = "html"
+robots = "lubatud"
+kasutus = "vihje"
+kontrollitud = 2026-11-22
+
+[[allikas]]
+nimi = "ERR sport"
+liik = "uudised"
+url = "https://sport.err.ee/"
+alad = ["kõik"]
+piirkond = "Eesti"
+kuju = "html"
+robots = "lubatud"
+kasutus = "vihje"
+kontrollitud = 2026-11-22
+markus = "Uudised koondiste kodumängudest ja turniiridest. Kinnitus otsi ametlikust allikast."
