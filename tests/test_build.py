@@ -235,6 +235,8 @@ class RenderTest(unittest.TestCase):
         self.assertIn("Seis ↗", page)          # tulemuseta mäng: viide allika lehele
         self.assertIn('href="https://example.org/mang"', page)
         self.assertNotIn("noindex", (out / "2026-11-21" / "index.html").read_text(encoding="utf-8"))
+        self.assertIn('<main class="wrap pastday">', page)   # möödunud päeva mänguread on hallid
+        self.assertNotIn("pastday", (out / "2026-11-21" / "index.html").read_text(encoding="utf-8"))
         # vanu päevi ei pakuta otsingumootoritele, valikute numbrid loevad ainult tulevasi mänge
         self.assertNotIn("2026-11-14", (out / "sitemap.xml").read_text(encoding="utf-8"))
         self.assertNotIn("Statistika", (out / "index.html").read_text(encoding="utf-8"))
