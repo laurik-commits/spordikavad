@@ -7,7 +7,7 @@
 {% set n = events | length %}
 {% set tier = level_info.tier %}
 <title>{{ level_info.title }} {{ region.in_form }} – {{ human }} {{ day.year }} | Spordikavad</title>
-<meta name="description" content="{% if n %}{{ n }} {{ 'mäng' if n == 1 else 'mängu' }} {{ region.in_form }}: {{ human }}. {% endif %}Jalgpalli, saalijalgpalli, jäähoki, võrkpalli, käsipalli ja saalihoki {{ tier }} mängud {{ region.in_form }} ühes nimekirjas.">
+<meta name="description" content="{% if n %}{{ n }} {{ 'mäng' if n == 1 else 'mängu' }} {{ region.in_form }}: {{ human }}. {% endif %}Jalgpalli, saalijalgpalli, korvpalli, võrkpalli, käsipalli, jäähoki ja saalihoki {{ tier }} mängud {{ region.in_form }} ühes nimekirjas.">
 <link rel="canonical" href="{{ canonical }}">
 {% if past or level_info.all %}<meta name="robots" content="noindex">
 {% endif %}
@@ -34,7 +34,7 @@
       <details class="city pick-menu">
         <summary>{{ region.name }} <span aria-hidden="true">▾</span></summary>
         <ul>
-          <li class="cap">Mänge 2 nädala jooksul</li>
+          <li class="cap">Mänge kahe nädala jooksul</li>
         {% for r in regions %}
           <li><a href="{{ root }}{{ level_info.prefix }}{{ r.prefix }}{{ day.isoformat() }}/" data-region="{{ r.slug }}" class="{{ 'empty' if not r.count }}{{ ' county' if r.kind == 'county' }}"{% if r.slug == region.slug %} aria-current="true"{% endif %}>
             <span>{{ r.name }}</span><span class="n">{{ r.count if r.count else '–' }}</span>
@@ -45,7 +45,7 @@
       <details class="tier pick-menu">
         <summary>{{ level_info.name }} <span aria-hidden="true">▾</span></summary>
         <ul>
-          <li class="cap">Mänge Eestis 2 nädala jooksul</li>
+          <li class="cap">Mänge Eestis kahe nädala jooksul</li>
         {% for l in levels %}
           <li><a href="{{ root }}{{ l.prefix }}{{ region.prefix }}{{ day.isoformat() }}/" data-level="{{ l.level }}"{% if l.current %} aria-current="true"{% endif %}>
             <span>{{ l.name }}</span><span class="n">{{ l.count }}</span>
@@ -65,7 +65,7 @@
 <nav class="days" aria-label="Vali päev">
   <ol class="wrap">
   {% for d in days %}
-    <li><a href="{{ here }}{{ d.date.isoformat() }}/" class="{{ 'empty' if not d.count }}{{ ' past' if d.past }}" data-sports="{{ d.sports | join(' ') }}"{% if d.date == day %} aria-current="page"{% endif %} title="{{ d.label }}: {{ d.count if d.count else 'mänge pole' }}">
+    <li><a href="{{ here }}{{ d.date.isoformat() }}/" class="{{ 'empty' if not d.count }}{{ ' past' if d.past }}" data-sports="{{ d.sports | join(' ') }}"{% if d.date == day %} aria-current="page"{% endif %} title="{{ d.label }}: {% if d.count == 1 %}1 mäng{% elif d.count %}{{ d.count }} mängu{% else %}mänge pole{% endif %}">
       <span class="wd">{{ d.short }}</span><span class="dn">{{ d.date.day }}</span>
     </a></li>
   {% endfor %}
@@ -73,9 +73,9 @@
 </nav>
 
 <main class="wrap{{ ' pastday' if past }}">
-  <p class="stale" hidden>Andmed võivad olla vananenud (viimati uuendatud {{ updated }}). Kontrolli aega allika lehelt.</p>
+  <p class="stale" hidden>Andmed võivad olla vananenud (viimati uuendatud {{ updated }}). Kontrolli kellaaega allika lehelt.</p>
   {% if past %}
-  <p class="intro pastnote">Möödunud päev. Täpse seisu ja statistika näed mängu lingilt allika lehelt. <a href="{{ root }}{{ level_info.prefix }}{{ region.prefix }}">Tänased mängud →</a></p>
+  <p class="intro pastnote">See päev on möödas. Tulemused ja statistika on allika lehel, vajuta mängule. <a href="{{ root }}{{ level_info.prefix }}{{ region.prefix }}">Tänased mängud →</a></p>
   {% endif %}
   {% if is_index %}
   <p class="intro">{{ tier | capitalize }} spordimängud, mida saab kohapeal vaatamas käia. <a href="{{ root }}info/">Mis siin on?</a></p>
@@ -111,7 +111,7 @@
           <span class="match">{{ e | matchup }}{% if e.result %} <b class="score" title="Tulemus">{{ e.result | replace('-', ':') }}</b>{% endif %}</span>
           <span class="meta">{{ e.league }} · {{ e.venue }}{% if show_city %}, {{ e.city }}{% endif %}{% if e.time_tbc %} · <em>kellaaeg täpsustamisel</em>{% endif %}</span>
         </span>
-        {% if past %}<span class="go">{{ 'Statistika' if e.result else 'Seis' }} ↗</span>{% else %}<span class="go" aria-hidden="true">↗</span>{% endif %}
+        {% if past %}<span class="go">{{ 'Statistika' if e.result else 'Tulemus' }} ↗</span>{% else %}<span class="go" aria-hidden="true">↗</span>{% endif %}
       </a>
       <button type="button" class="share" data-url="{{ base_url }}m/{{ e.id }}/" data-title="{{ e | matchup }}" data-text="{{ e | share_text }}" aria-label="Jaga: {{ e | matchup }}" title="Jaga"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg></button>
     </li>
@@ -127,7 +127,7 @@
 </main>
 
 <footer class="wrap">
-  <p>Andmed: liitude ja klubide avalikud kodulehed. Kontrolli aega enne kohaleminekut. Uuendatud {{ updated }}. <a href="{{ root }}info/">Mis siin on?</a></p>
+  <p>Andmed: liitude, klubide ja korraldajate avalikud kodulehed. Kontrolli kellaaega enne kohaleminekut. Uuendatud {{ updated }}. <a href="{{ root }}info/">Mis siin on?</a></p>
   <p>Kui olete andmete omanik ja ei soovi, et teie andmeid siin kuvataks, <a href="{{ contact_url }}">kirjutage meile</a>.</p>
 </footer>
 <script src="{{ root }}app.js" defer></script>

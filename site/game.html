@@ -29,8 +29,8 @@
 <header class="bar"><div class="wrap"><div class="top"><a class="brand" href="{{ root }}">Spordikavad</a></div></div></header>
 
 <main class="wrap game{{ ' pastday' if past }}">
-  <p class="stale" hidden>Andmed võivad olla vananenud (viimati uuendatud {{ updated }}). Kontrolli aega allika lehelt.</p>
-  {% if past %}<p class="intro pastnote">See mäng on juba mängitud.</p>{% endif %}
+  <p class="stale" hidden>Andmed võivad olla vananenud (viimati uuendatud {{ updated }}). Kontrolli kellaaega allika lehelt.</p>
+  {% if past %}<p class="intro pastnote">See mäng on juba peetud.</p>{% endif %}
   <article class="card">
     <time class="s-{{ e.sport }}" datetime="{{ e.start.isoformat() }}">
       <b>{{ '—:—' if e.time_tbc else e.start.strftime('%H:%M') }}</b>
@@ -44,14 +44,14 @@
     </div>
   </article>
   <p class="actions">
-    <a class="btn" href="{{ e.url }}" rel="noopener">{% if e.source == 'kasitsi' %}Teade allikal{% else %}{{ ('Statistika' if e.result else 'Mängu leht') if past else 'Mängu leht' }} allikal{% endif %} ↗</a>
+    <a class="btn" href="{{ e.url }}" rel="noopener">{% if e.source == 'kasitsi' %}Teade{% elif past and e.result %}Statistika{% else %}Mänguleht{% endif %} allika saidil ↗</a>
     <button type="button" class="btn share-btn share" data-url="{{ canonical }}" data-title="{{ match }}" data-text="{{ e | share_text }}">Jaga</button>
   </p>
   <p><a href="{{ day_href }}">Kõik {{ level_info.tier }} mängud: {{ day | et_date }} →</a></p>
 </main>
 
 <footer class="wrap">
-  <p>Andmed: liitude ja klubide avalikud kodulehed. Kontrolli aega enne kohaleminekut. Uuendatud {{ updated }}. <a href="{{ root }}info/">Mis siin on?</a></p>
+  <p>Andmed: liitude, klubide ja korraldajate avalikud kodulehed. Kontrolli kellaaega enne kohaleminekut. Uuendatud {{ updated }}. <a href="{{ root }}info/">Mis siin on?</a></p>
   <p>Kui olete andmete omanik ja ei soovi, et teie andmeid siin kuvataks, <a href="{{ contact_url }}">kirjutage meile</a>.</p>
 </footer>
 <script src="{{ root }}app.js" defer></script>

@@ -67,7 +67,7 @@ class RenderTest(unittest.TestCase):
         for s in ("jalgpall", "jaahoki", "vorkpall", "kasipall", "saalihoki", "saalijalgpall"):
             self.assertIn(f'data-filter="{s}"', html)
         self.assertIn('data-filter="saalihoki" aria-pressed="false" class="nogames" data-none="1"', html)
-        self.assertIn("Tallinnas pole järgmise 2 nädala jooksul saalihoki kõrgliigade mänge.", html)
+        self.assertIn("Tallinnas pole järgmise kahe nädala jooksul saalihoki kõrgliigade mänge.", html)
         self.assertIn("Jalgpalli hooaeg algab märtsis.", html)          # talvel hooajaväline
         self.assertNotIn('data-filter="vorkpall" aria-pressed="false" class="nogames"', html)
         # esiliigades jäähokit pole üldse → nuppu pole
@@ -218,6 +218,7 @@ class RenderTest(unittest.TestCase):
         self.assertIn("II liiga", rows["jalgpall"]["minor"])
         self.assertNotIn("II liiga", rows["jalgpall"]["low"])
         self.assertEqual(rows["korvpall"]["minor"], [])
+        self.assertEqual(rows["korvpall"]["top"].count("FIBA Europe Cup"), 1)   # kaks allikat, üks rida
 
     def test_day_strip_marks_empty_days(self):
         html = self.read("index.html")
@@ -266,10 +267,10 @@ class RenderTest(unittest.TestCase):
         build.render(events, cfg, date(2026, 11, 20), out)
         page = (out / "2026-11-14" / "index.html").read_text(encoding="utf-8")
         self.assertIn('<meta name="robots" content="noindex">', page)
-        self.assertIn("Möödunud päev", page)
+        self.assertIn("See päev on möödas", page)
         self.assertIn('<b class="score" title="Tulemus">3:1</b>', page)
         self.assertIn("Statistika ↗", page)   # tulemusega mäng
-        self.assertIn("Seis ↗", page)          # tulemuseta mäng: viide allika lehele
+        self.assertIn("Tulemus ↗", page)       # tulemuseta mäng: viide allika lehele
         self.assertIn('href="https://example.org/mang"', page)
         self.assertNotIn("noindex", (out / "2026-11-21" / "index.html").read_text(encoding="utf-8"))
         self.assertIn('<main class="wrap pastday">', page)   # möödunud päeva mänguread on hallid
@@ -284,6 +285,7 @@ class RenderTest(unittest.TestCase):
         self.assertIn("Mis siin on?", info)
         self.assertIn("Korvpall", info)
         self.assertIn("Viimati uuendatud", info)
+        self.assertNotIn("Madalamad liigad", info)   # peidetud tase pole info tabelis
         root = self.read("index.html")
         self.assertIn('href="info/"', root)
         self.assertIn('class="intro"', root)

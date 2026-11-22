@@ -340,7 +340,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
                 if s in present:
                     filters.append({"key": s, "label": SPORTS[s], "none": False, "msg": ""})
                 else:
-                    msg = offseason_note(s) or (f"{r.in_form} pole järgmise 2 nädala jooksul {SPORT_GEN[s]} "
+                    msg = offseason_note(s) or (f"{r.in_form} pole järgmise kahe nädala jooksul {SPORT_GEN[s]} "
                                                 f"{tier_word} mänge.")
                     filters.append({"key": s, "label": SPORTS[s], "none": True, "msg": msg})
             day_list = [{"date": d, "label": et_date(d), "short": SHORT_WEEKDAYS[d.weekday()],
@@ -414,7 +414,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
     info_dir.mkdir()
     (info_dir / "index.html").write_text(
         env.get_template("info.html").render(common, root="../", canonical=f"{base_url}info/",
-                                             coverage=coverage(cfg)),
+                                             coverage=coverage(cfg), show_minor=not LEVELS[3].get("hidden")),
         encoding="utf-8")
     urls.append(f"{base_url}info/")
 
@@ -433,7 +433,7 @@ SOURCE_SITES = {
     "saalijalgpall": ("Eesti Jalgpalli Liit", "https://jalgpall.ee/voistlused"),
     "jaahoki": ("Läti Jäähokiliit (Optibet Hokiliiga)", "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/schedule"),
     "vorkpall": ("DataProject (Eesti Võrkpalli Liit, Balti liiga)", "https://evf-web.dataproject.com/MainHome.aspx"),
-    "korvpall": ("Bigbank/Kalev (klubi koduleht)", "https://bckalev.ee/ajakava/"),
+    "korvpall": ("Klubide kodulehed (Bigbank/Kalev, Tartu Ülikool)", "https://bckalev.ee/ajakava/"),
     "kasipall": ("Eesti Käsipalliliit ja Balti Käsipalliliiga", "https://kasipall.ee/"),
     "saalihoki": ("Eesti Saalihoki Liit", "https://www.saalihoki.ee/Events/Uritused.aspx"),
 }
@@ -459,6 +459,9 @@ def coverage(cfg: dict) -> list[dict]:
                 row[column[level]].append(league)
         else:
             row["top"].append(src.get("league", ""))
+    for row in rows.values():  # sama liiga mitmest allikast (nt Kalev ja Tartu Ülikool) ainult üks kord
+        for col in column.values():
+            row[col] = list(dict.fromkeys(row[col]))
     return [rows[s] for s in SPORTS if s in rows]
 
 
