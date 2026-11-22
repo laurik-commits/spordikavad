@@ -38,7 +38,14 @@
   "first_seen": "2026-11-22"
  },
  "6a6527882b18": {
-  "changes": [],
+  "changes": [
+   {
+    "field": "result",
+    "from": "",
+    "on": "2026-11-22",
+    "to": "5-2"
+   }
+  ],
   "event": {
    "away": "HC Hockey Punks-Mototoja",
    "city": "Tallinn",
@@ -46,7 +53,7 @@
    "id": "6a6527882b18",
    "league": "Optibet Hokiliiga",
    "level": 1,
-   "result": "",
+   "result": "5-2",
    "source": "jaahoki_optibet",
    "sport": "jaahoki",
    "start": "2026-11-01T14:05:00+02:00",
@@ -57,7 +64,14 @@
   "first_seen": "2026-11-22"
  },
  "9f6ff1a3820d": {
-  "changes": [],
+  "changes": [
+   {
+    "field": "result",
+    "from": "",
+    "on": "2026-11-22",
+    "to": "3-5"
+   }
+  ],
   "event": {
    "away": "HC Kyiv Capitals",
    "city": "Tallinn",
@@ -65,7 +79,7 @@
    "id": "9f6ff1a3820d",
    "league": "Optibet Hokiliiga",
    "level": 1,
-   "result": "",
+   "result": "3-5",
    "source": "jaahoki_optibet",
    "sport": "jaahoki",
    "start": "2026-11-21T18:00:00+02:00",
@@ -76,7 +90,14 @@
   "first_seen": "2026-11-22"
  },
  "b4a05826acdc": {
-  "changes": [],
+  "changes": [
+   {
+    "field": "result",
+    "from": "",
+    "on": "2026-11-22",
+    "to": "4-5 OT"
+   }
+  ],
   "event": {
    "away": "HK Prizma/RTU",
    "city": "Tallinn",
@@ -84,7 +105,7 @@
    "id": "b4a05826acdc",
    "league": "Optibet Hokiliiga",
    "level": 1,
-   "result": "",
+   "result": "4-5 OT",
    "source": "jaahoki_optibet",
    "sport": "jaahoki",
    "start": "2026-11-14T18:00:00+02:00",
