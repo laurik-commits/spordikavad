@@ -3799,7 +3799,14 @@
   "first_seen": "2026-11-22"
  },
  "df146ae8b866": {
-  "changes": [],
+  "changes": [
+   {
+    "field": "result",
+    "from": "",
+    "on": "2026-11-22",
+    "to": "1-0"
+   }
+  ],
   "event": {
    "away": "Jēkabpils Lūši",
    "city": "Tartu",
@@ -3807,7 +3814,7 @@
    "id": "df146ae8b866",
    "league": "Balti liiga (mehed)",
    "level": 1,
-   "result": "",
+   "result": "1-0",
    "source": "vorkpall_dataproject",
    "sport": "vorkpall",
    "start": "2026-11-22T16:00:00+02:00",
@@ -3933,6 +3940,12 @@
     "from": "1-1",
     "on": "2026-11-22",
     "to": "2-1"
+   },
+   {
+    "field": "result",
+    "from": "2-1",
+    "on": "2026-11-22",
+    "to": "3-1"
    }
   ],
   "event": {
@@ -3942,7 +3955,7 @@
    "id": "e4ce9f334973",
    "league": "Balti liiga (mehed)",
    "level": 1,
-   "result": "2-1",
+   "result": "3-1",
    "source": "vorkpall_dataproject",
    "sport": "vorkpall",
    "start": "2026-11-21T17:00:00+02:00",
