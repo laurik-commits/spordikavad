@@ -535,10 +535,9 @@ alad = ["jaahoki"]
 piirkond = "Tallinn"
 kuju = "html"
 robots = "puudub"
-kasutus = "agent"
+kasutus = "adapter:jaahoki_vipers"
 kontrollitud = 2026-11-22
-kandidaat = true
-markus = "Kõigi võistkondade mängud (Unibet Hokiliiga meeskond on „HC Vipers Unibet“), kuupäev, kellaaeg ja saal tekstina. Sobiks adapteriks."
+markus = "Kõigi võistkondade tulevased mängud. Adapter võtab Unibet Hokiliiga kodumängud, sest koha väli on igal mängul „Tondiraba Jäähall“, ka võõrsil. Noored (U19 kuni U8) on veel välja jäetud."
 
 [[allikas]]
 nimi = "HC Everest"

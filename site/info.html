@@ -29,7 +29,7 @@
   <h2>Mida siin pole</h2>
   <ul>
     <li><strong>Korvpall:</strong> Bigbank/Kalevi mängud ja Tartu Ülikooli korvpallimeeskonna kodumängud on olemas, need tulevad klubide kodulehtedelt. Korvpalliliidu koduleht ei luba andmeid automaatselt koguda, seepärast on teiste klubide mänge siin vähe. Kõik mängud leiad <a href="https://www.basket.ee/et/ajakava-ja-tulemused?action=schedule">basket.ee lehelt</a>.</li>
-    <li><strong>Eesti jäähokiliigad</strong> (Unibet Hokiliiga, naiste hokiliiga): nende ajakava ei saa automaatselt lugeda, seepärast on siin ainult üksikud käsitsi lisatud mängud. Optibet Hokiliiga (HC Panter) on olemas.</li>
+    <li><strong>Jäähoki:</strong> Optibet Hokiliiga (HC Panter) ja HC Vipersi kodumängud Unibet Hokiliigas on olemas. Unibet Hokiliiga teiste klubide omavaheliste mängude ja naiste hokiliiga ajakava ei saa automaatselt lugeda, neist on siin ainult üksikud käsitsi lisatud mängud.</li>
     <li><strong>Veel tulemas:</strong> naiste käsipallikarikas ja saalijalgpalli esiliiga lisanduvad, kui liidud nende ajakava avaldavad. Jalgpallikarikad lisanduvad hiljem.</li>
     <li><strong>Turniiritabelid ja ülekanded.</strong> Möödunud mängude tulemusi näitame siis, kui allikas need avaldab.</li>
   </ul>
@@ -38,8 +38,8 @@
   <h2>Kust andmed tulevad</h2>
   <p>Andmed tulevad ainult nende liitude ja klubide avalikelt kodulehtedelt, mille kasutustingimused ja robots.txt seda lubavad. Iga mängu link viib allika lehele. Andmeid uuendatakse kord päevas varahommikul.</p>
   <ul>
-  {% for row in coverage if row.source[0] %}
-    <li>{{ row.sport }}: <a href="{{ row.source[1] }}" rel="noopener">{{ row.source[0] }}</a></li>
+  {% for row in coverage if row.source %}
+    <li>{{ row.sport }}: {% for name, url in row.source %}<a href="{{ url }}" rel="noopener">{{ name }}</a>{{ ', ' if not loop.last }}{% endfor %}</li>
   {% endfor %}
   </ul>
   <p>Üksikud sõprusmängud, turniirid, eriüritused ja koondisemängud on lisatud käsitsi. Need põhinevad liitude, klubide, hallide või korraldajate ametlikel teadetel ja nende mängulehel on link teatele.</p>

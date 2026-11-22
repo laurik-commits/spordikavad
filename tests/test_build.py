@@ -220,6 +220,13 @@ class RenderTest(unittest.TestCase):
         self.assertEqual(rows["korvpall"]["minor"], [])
         self.assertEqual(rows["korvpall"]["top"].count("FIBA Europe Cup"), 1)   # kaks allikat, üks rida
 
+    def test_coverage_hockey_sources(self):
+        rows = {r["key"]: r for r in build.coverage(config.load())}
+        self.assertEqual(rows["jaahoki"]["top"], ["Optibet Hokiliiga", "Unibet Hokiliiga (HC Vipersi kodumängud)"])
+        self.assertEqual([name for name, _ in rows["jaahoki"]["source"]],
+                         ["Läti Jäähokiliit (Optibet Hokiliiga)", "HC Vipers (Unibet Hokiliiga)"])
+        self.assertTrue(all(url.startswith("https://") for r in rows.values() for _, url in r["source"]))
+
     def test_day_strip_marks_empty_days(self):
         html = self.read("index.html")
         self.assertIn('class="empty"', html)
@@ -286,6 +293,7 @@ class RenderTest(unittest.TestCase):
         self.assertIn("Korvpall", info)
         self.assertIn("Viimati uuendatud", info)
         self.assertNotIn("Madalamad liigad", info)   # peidetud tase pole info tabelis
+        self.assertIn('<a href="https://hcvipers.ee/?page=games&amp;lang=et" rel="noopener">HC Vipers (Unibet Hokiliiga)</a>', info)
         root = self.read("index.html")
         self.assertIn('href="info/"', root)
         self.assertIn('class="intro"', root)
