@@ -90,7 +90,19 @@ MVP-sse sobib 6 ala 7-st (korvpallist ainult Kalev).
 - **Ainult kodumängud.** Koha väli on igal mängul „Tondiraba Jäähall“, ka võõrsil mängudel (nt Viru Sputnik – HC Vipers). Seetõttu võtab adapter ainult read, kus HC Vipers on esimesena (kodumeeskond). Vipersi kodusaal on Tondiraba jäähall. 2026/27 hooajal on lehel 6 tulevast kodumängu.
 - **Nimi:** „HC Vipers Unibet“ → „HC Vipers“, sest liiga nimes on sponsor juba olemas.
 - **Ainult tulevased mängud.** Möödunud mängud tulevad arhiivist (`archive/`), tulemusi lehel pole.
-- **Välja jäetud:** noorte võistkonnad (U19 kuni U8), sest nende kodumängud võivad olla ka teistes jäähallides. Unibet Hokiliiga teiste klubide omavahelised mängud (Narva, Tartu, Kohtla-Järve): HC Everesti leht on HTML ja seda tasub vaadata, Viru Sputniku ja Välk 494 lehed on JavaScriptis.
+- **Välja jäetud:** noorte võistkonnad (U19 kuni U8), sest nende kodumängud võivad olla ka teistes jäähallides. Unibet Hokiliiga teiste klubide omavahelised mängud: HC Everesti omad tulevad Everesti lehelt (vt allpool), Viru Sputniku ja Välk 494 lehed on JavaScriptis.
+
+## Jäähoki: HC Everest (Unibet Hokiliiga, naiste hokiliiga, noored) ✅ (lisatud 2026-11-22)
+
+- **Leht:** https://hceverest.ee/ (avaleht). Adapter `jaahoki_everest`.
+- **Kuju:** serveris renderdatud HTML (Bootstrap kaardid). Igal kaardil on päis liigaga (`UNIBET HOKILIIGA`, `NAISTE HOKILIIGA`, `Noored U19` …), aeg `DD.MM.YYYY HH:MM`, koht ja „Kodu - Võõras“. Lehel on ainult tulevased mängud, tulemusi pole.
+- **robots.txt:** `User-agent: *` / `Disallow:` (tühi), kõik lubatud. Päring tehakse üks päevas.
+- **Koht on õige** igal mängul, ka võõrsil (Narva jäähall, Tartu Astri Arena, Haabersti, Tondiraba). Seetõttu võtab adapter nii kodu- kui ka võõrsil mängud. Näiteks 16.01.2027 Everest–Vipers on Vipersi lehel kirjas Tondirabas, Everesti lehel õigesti Kohtla-Järve jäähallis.
+- **Liigad:** Unibet Hokiliiga ja naiste hokiliiga (`level = 1`), U19 ja U16 (`level = 4`, nimed „U19 noorteliiga“, „U16 noorteliiga“). U12, U10 ja U8 on lastevõistlused ja jäävad välja. Kuupäevata kaardid („TBD 14:30“) jäetakse vahele.
+- **Saalid** (`venues.toml`): uued on Kohtla-Järve jäähall, Narva jäähall ja Astri Arena (Tartu Lõunakeskuse jäähall). „Haabersti jäähall, A hall“ ja „Tondiraba jäähall, Hall 1“ on põhiväljakute aliased. B hall ja Hall 2 lisa eraldi saaliks, kui need ilmuvad, sest muidu võib `dedupe` ühe samaaegse mängu ära visata.
+- **Topelt:** Vipersi kodumängud Everesti vastu tulevad mõlemalt lehelt. Vipersi allikas on `config.toml`-is eespool ja jääb alles.
+- **ID:** noortel võib samal päeval olla kaks mängu samade võistkondade vahel (04.04.2027 U16). Siis lisatakse teise mängu ID-sse kellaaeg.
+- **Fixture:** `tests/fixtures/jaahoki_everest.html` (terve avaleht, 2026-11-22).
 - **Kontroll:** hooaeg on `config.toml`-is 01.10–15.02, sest playoffide ajakava selgub hiljem ja siis ei tohi 0 mängu viga anda.
 - **Fixture:** `tests/fixtures/jaahoki_vipers.html` (terve leht, 2026-11-22).
 
@@ -154,7 +166,7 @@ Omaniku palvel vaadati üle kõigi alade täiskasvanute tippvõistlused.
 **Ei kasutata:**
 - **Eesti jäähoki liigad** (Unibet Hokiliiga: Tallinna HC Vipers; naiste hokiliiga: Roosa Panter, Grizzlyz, Wolferines). Ajakava on ehs.eestihoki.ee-l, aga see laaditakse JavaScriptiga kommertsteenusest **hockeydata.net**, kasutades liidu enda API-võtit. Meie skriptil pole õigust seda võtit kasutada (lähteülesanne: küsitavad allikad jäta vahele). ehis.eestihoki.ee (serveri HTML, robots lubab) lõpeb hooajaga 2024/25. **Vaata uuesti**, kui ehis-is ilmub 2026/27 hooaeg.
   - **Plaan (omaniku otsus 2026-11-20):** kui leht on stabiilselt töötanud, küsib omanik koos Korvpalliliiduga ka Jäähokiliidult luba (vt README „Tulevikuideed“). Kuni loani API-võtit ei kasutata. Lehel on jäähoki filtri juures märkus.
-  - **2026-11-22:** HC Vipersi kodumängud tulevad nüüd klubi lehelt (vt „Jäähoki: Unibet Hokiliiga, HC Vipersi kodumängud“). Teised Unibet Hokiliiga mängud ja naiste liiga on endiselt puudu.
+  - **2026-11-22:** HC Vipersi kodumängud ning kõik HC Everesti mängud (Unibet Hokiliiga, naiste hokiliiga, U19, U16) tulevad nüüd klubide lehtedelt. Puudu on Narva PSK, Tartu Välk 494 ja Viru Sputniku omavahelised mängud, Vipersi võõrsil mängud (v.a Everesti vastu) ja naiste liiga mängud, kus Everest ei mängi.
 - ~~Käsipalli Balti liiga~~ → leitud ja lisatud (omanik leidis baltichandball.eu), vt allpool.
 - Naiste käsipallikarikas (id 363): 2026/27 mänge pole veel avaldatud. Lisa `competitions` alla, kui need ilmuvad.
 - Saalihoki: naiste kodumaist liigat ega täiskasvanute karikat pole.

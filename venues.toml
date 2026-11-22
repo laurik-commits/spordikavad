@@ -51,12 +51,30 @@ aliases = ["Kristiine Spordihall", "Kristiine Sport"]
 name = "Haabersti jäähall"
 city = "Tallinn"
 # lhf.lv näitab HC Panteri kodumängude kohana ainult linna
-aliases = ["Tallina, Igaunija", "Haabersti Jäähall", "Haabersti Ice Hall"]
+# hceverest.ee märgib halli ("A hall" on põhiväljak). B hall on harjutusväljak: kui see ilmub, lisa eraldi saaliks.
+aliases = ["Tallina, Igaunija", "Haabersti Jäähall", "Haabersti Ice Hall", "Haabersti jäähall, A hall"]
 
 [[venue]]
 name = "Tondiraba jäähall"
 city = "Tallinn"
-aliases = ["Tondiraba Ice Hall", "Tondiraba Jäähall"]
+# "Hall 1" on põhiväljak (hceverest.ee). Hall 2 lisa eraldi saaliks, kui see ilmub.
+aliases = ["Tondiraba Ice Hall", "Tondiraba Jäähall", "Tondiraba jäähall, Hall 1"]
+
+# --- Ida-Virumaa ja Tartu: jäähoki ---
+
+[[venue]]
+name = "Kohtla-Järve jäähall"
+city = "Kohtla-Järve"
+
+[[venue]]
+name = "Narva jäähall"
+city = "Narva"
+
+[[venue]]
+name = "Astri Arena"
+city = "Tartu"
+# Lõunakeskuse jäähall: Tartu Välk 494, HK Kajakas, HK Säde
+aliases = ["Lõunakeskuse jäähall"]
 
 # --- Tallinn: saalispordid ---
 

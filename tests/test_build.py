@@ -222,9 +222,11 @@ class RenderTest(unittest.TestCase):
 
     def test_coverage_hockey_sources(self):
         rows = {r["key"]: r for r in build.coverage(config.load())}
-        self.assertEqual(rows["jaahoki"]["top"], ["Optibet Hokiliiga", "Unibet Hokiliiga (HC Vipersi kodumängud)"])
+        self.assertEqual(rows["jaahoki"]["top"], ["Optibet Hokiliiga", "Unibet Hokiliiga", "Naiste hokiliiga"])
+        self.assertEqual(rows["jaahoki"]["youth"], ["U19 noorteliiga", "U16 noorteliiga"])
         self.assertEqual([name for name, _ in rows["jaahoki"]["source"]],
-                         ["Läti Jäähokiliit (Optibet Hokiliiga)", "HC Vipers (Unibet Hokiliiga)"])
+                         ["Läti Jäähokiliit (Optibet Hokiliiga)", "HC Vipers (Unibet Hokiliiga)",
+                          "HC Everest (Unibet Hokiliiga, naiste hokiliiga, noored)"])
         self.assertTrue(all(url.startswith("https://") for r in rows.values() for _, url in r["source"]))
 
     def test_day_strip_marks_empty_days(self):
