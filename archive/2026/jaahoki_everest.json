@@ -1,0 +1,230 @@
+{
+ "14edca556c0e": {
+  "changes": [],
+  "event": {
+   "away": "HK Tornaado",
+   "city": "Kohtla-Järve",
+   "home": "HC Everest",
+   "id": "14edca556c0e",
+   "league": "U16 noorteliiga",
+   "level": 4,
+   "result": "",
+   "source": "jaahoki_everest",
+   "sport": "jaahoki",
+   "start": "2026-12-12T10:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://hceverest.ee/",
+   "venue": "Kohtla-Järve jäähall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "380fbe34d8f5": {
+  "changes": [],
+  "event": {
+   "away": "HK Säde",
+   "city": "Kohtla-Järve",
+   "home": "HC Everest",
+   "id": "380fbe34d8f5",
+   "league": "Naiste hokiliiga",
+   "level": 1,
+   "result": "",
+   "source": "jaahoki_everest",
+   "sport": "jaahoki",
+   "start": "2026-12-12T12:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://hceverest.ee/",
+   "venue": "Kohtla-Järve jäähall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "5ec1a74c8f4a": {
+  "changes": [],
+  "event": {
+   "away": "HK Tornaado",
+   "city": "Kohtla-Järve",
+   "home": "HC Everest",
+   "id": "5ec1a74c8f4a",
+   "league": "U16 noorteliiga",
+   "level": 4,
+   "result": "",
+   "source": "jaahoki_everest",
+   "sport": "jaahoki",
+   "start": "2026-11-28T12:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://hceverest.ee/",
+   "venue": "Kohtla-Järve jäähall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "82c01cf99d73": {
+  "changes": [],
+  "event": {
+   "away": "HC Everest",
+   "city": "Tallinn",
+   "home": "HC Panter",
+   "id": "82c01cf99d73",
+   "league": "U16 noorteliiga",
+   "level": 4,
+   "result": "",
+   "source": "jaahoki_everest",
+   "sport": "jaahoki",
+   "start": "2026-11-26T17:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://hceverest.ee/",
+   "venue": "Haabersti jäähall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "83f19bb0782d": {
+  "changes": [],
+  "event": {
+   "away": "Tartu Välk 494",
+   "city": "Kohtla-Järve",
+   "home": "HC Everest",
+   "id": "83f19bb0782d",
+   "league": "Unibet Hokiliiga",
+   "level": 1,
+   "result": "",
+   "source": "jaahoki_everest",
+   "sport": "jaahoki",
+   "start": "2026-12-05T16:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://hceverest.ee/",
+   "venue": "Kohtla-Järve jäähall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "b7e5b3c6f6d3": {
+  "changes": [],
+  "event": {
+   "away": "HC Panter",
+   "city": "Kohtla-Järve",
+   "home": "HC Everest",
+   "id": "b7e5b3c6f6d3",
+   "league": "U19 noorteliiga",
+   "level": 4,
+   "result": "",
+   "source": "jaahoki_everest",
+   "sport": "jaahoki",
+   "start": "2026-12-13T12:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://hceverest.ee/",
+   "venue": "Kohtla-Järve jäähall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "b8705b37fc2a": {
+  "changes": [],
+  "event": {
+   "away": "Viru Sputnik",
+   "city": "Kohtla-Järve",
+   "home": "HC Everest",
+   "id": "b8705b37fc2a",
+   "league": "Unibet Hokiliiga",
+   "level": 1,
+   "result": "",
+   "source": "jaahoki_everest",
+   "sport": "jaahoki",
+   "start": "2026-12-12T16:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://hceverest.ee/",
+   "venue": "Kohtla-Järve jäähall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "bd262f58dab3": {
+  "changes": [],
+  "event": {
+   "away": "Narva PSK",
+   "city": "Kohtla-Järve",
+   "home": "HC Everest",
+   "id": "bd262f58dab3",
+   "league": "U19 noorteliiga",
+   "level": 4,
+   "result": "",
+   "source": "jaahoki_everest",
+   "sport": "jaahoki",
+   "start": "2026-11-29T12:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://hceverest.ee/",
+   "venue": "Kohtla-Järve jäähall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "bdb57df6e5b1": {
+  "changes": [],
+  "event": {
+   "away": "HC Everest",
+   "city": "Tallinn",
+   "home": "HC Vipers",
+   "id": "bdb57df6e5b1",
+   "league": "Unibet Hokiliiga",
+   "level": 1,
+   "result": "",
+   "source": "jaahoki_everest",
+   "sport": "jaahoki",
+   "start": "2026-11-28T16:35:00+02:00",
+   "time_tbc": false,
+   "url": "https://hceverest.ee/",
+   "venue": "Tondiraba jäähall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "ce03723397d0": {
+  "changes": [],
+  "event": {
+   "away": "HC Everest",
+   "city": "Tallinn",
+   "home": "HK Roosa Panter",
+   "id": "ce03723397d0",
+   "league": "Naiste hokiliiga",
+   "level": 1,
+   "result": "",
+   "source": "jaahoki_everest",
+   "sport": "jaahoki",
+   "start": "2026-11-28T18:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://hceverest.ee/",
+   "venue": "Haabersti jäähall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "e4208db5b01f": {
+  "changes": [],
+  "event": {
+   "away": "HC Everest",
+   "city": "Narva",
+   "home": "Narva PSK",
+   "id": "e4208db5b01f",
+   "league": "Unibet Hokiliiga",
+   "level": 1,
+   "result": "",
+   "source": "jaahoki_everest",
+   "sport": "jaahoki",
+   "start": "2026-12-06T16:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://hceverest.ee/",
+   "venue": "Narva jäähall"
+  },
+  "first_seen": "2026-11-22"
+ },
+ "f122dd4935e2": {
+  "changes": [],
+  "event": {
+   "away": "HC Everest",
+   "city": "Tartu",
+   "home": "Tartu Välk 494",
+   "id": "f122dd4935e2",
+   "league": "Unibet Hokiliiga",
+   "level": 1,
+   "result": "",
+   "source": "jaahoki_everest",
+   "sport": "jaahoki",
+   "start": "2026-12-20T15:45:00+02:00",
+   "time_tbc": false,
+   "url": "https://hceverest.ee/",
+   "venue": "Astri Arena"
+  },
+  "first_seen": "2026-11-22"
+ }
+}
