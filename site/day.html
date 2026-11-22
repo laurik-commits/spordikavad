@@ -9,6 +9,8 @@
 <title>{{ level_info.title }} {{ region.in_form }} – {{ human }} {{ day.year }} | Spordikavad</title>
 <meta name="description" content="{% if n %}{{ n }} {{ 'mäng' if n == 1 else 'mängu' }} {{ region.in_form }}: {{ human }}. {% endif %}Jalgpalli, saalijalgpalli, jäähoki, võrkpalli, käsipalli ja saalihoki {{ tier }} mängud {{ region.in_form }} ühes nimekirjas.">
 <link rel="canonical" href="{{ canonical }}">
+{% if past %}<meta name="robots" content="noindex">
+{% endif %}
 <meta property="og:type" content="website">
 <meta property="og:locale" content="et_EE">
 <meta property="og:site_name" content="Spordikavad">
@@ -59,7 +61,7 @@
 <nav class="days" aria-label="Vali päev">
   <ol class="wrap">
   {% for d in days %}
-    <li><a href="{{ here }}{{ d.date.isoformat() }}/" class="{{ 'empty' if not d.count }}" data-sports="{{ d.sports | join(' ') }}"{% if d.date == day %} aria-current="page"{% endif %} title="{{ d.label }}: {{ d.count if d.count else 'mänge pole' }}">
+    <li><a href="{{ here }}{{ d.date.isoformat() }}/" class="{{ 'empty' if not d.count }}{{ ' past' if d.past }}" data-sports="{{ d.sports | join(' ') }}"{% if d.date == day %} aria-current="page"{% endif %} title="{{ d.label }}: {{ d.count if d.count else 'mänge pole' }}">
       <span class="wd">{{ d.short }}</span><span class="dn">{{ d.date.day }}</span>
     </a></li>
   {% endfor %}
@@ -68,6 +70,9 @@
 
 <main class="wrap">
   <p class="stale" hidden>Andmed võivad olla vananenud (viimati uuendatud {{ updated }}). Kontrolli aega allika lehelt.</p>
+  {% if past %}
+  <p class="intro pastnote">Möödunud päev. Täpse seisu ja statistika näed mängu lingilt allika lehelt. <a href="{{ root }}{{ level_info.prefix }}{{ region.prefix }}">Tänased mängud →</a></p>
+  {% endif %}
   {% if is_index %}
   <p class="intro">{{ tier | capitalize }} spordimängud, mida saab kohapeal vaatamas käia. <a href="{{ root }}info/">Mis siin on?</a></p>
   {% endif %}
@@ -99,10 +104,10 @@
           <small>{{ sports[e.sport] }}</small>
         </time>
         <span class="info">
-          <span class="match">{{ e.home }} – {{ e.away }}</span>
+          <span class="match">{{ e.home }} – {{ e.away }}{% if e.result %} <b class="score" title="Tulemus">{{ e.result | replace('-', ':') }}</b>{% endif %}</span>
           <span class="meta">{{ e.league }} · {{ e.venue }}{% if show_city %}, {{ e.city }}{% endif %}{% if e.time_tbc %} · <em>kellaaeg täpsustamisel</em>{% endif %}</span>
         </span>
-        <span class="go" aria-hidden="true">↗</span>
+        {% if past %}<span class="go">{{ 'Statistika' if e.result else 'Seis' }} ↗</span>{% else %}<span class="go" aria-hidden="true">↗</span>{% endif %}
       </a>
     </li>
   {% endfor %}

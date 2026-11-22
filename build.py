@@ -228,7 +228,9 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
     site_cfg = cfg.get("site", {})
     days_ahead = int(site_cfg.get("days_ahead", 14))
     base_url = site_cfg.get("base_url", "").rstrip("/") + "/"
-    days = [today + timedelta(days=i) for i in range(days_ahead + 1)]
+    days_back = int(site_cfg.get("days_back", 14))  # möödunud päevad jäävad nähtavale (mängud arhiivist)
+    days = [today + timedelta(days=i) for i in range(-days_back, days_ahead + 1)]
+    today_i = days_back  # tänase päeva koht `days` loendis (avaleht, kanooniline aadress)
     geo = Geo(cfg)
     regions = regions_for(events, geo)
 
@@ -295,14 +297,15 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
     for level, lv in LEVELS.items():
         # samad piirkonnad mõlemal tasemel, et linna/taseme vahetus ei viiks olematule lehele
         region_days = {r.slug: by_day_for(level, r) for r in regions}
+        # valikute numbrid: tulevased mängud (täna + 14 päeva), möödunud päevi ei loeta
         region_list = [{"slug": r.slug, "name": r.name, "prefix": r.prefix, "kind": r.kind,
-                        "count": sum(len(v) for v in region_days[r.slug].values())} for r in regions]
+                        "count": sum(len(v) for d, v in region_days[r.slug].items() if d >= today)} for r in regions]
         level_list = [{"level": k, "name": v["name"], "prefix": v["prefix"], "current": k == level,
-                       "count": sum(1 for d in days for e in window[d] if e.level == k)}
+                       "count": sum(1 for d in days if d >= today for e in window[d] if e.level == k)}
                       for k, v in LEVELS.items() if not v.get("hidden") or k == level]
         for r in regions:
             by_day = region_days[r.slug]
-            present = {e.sport for lst in by_day.values() for e in lst}
+            present = {e.sport for d, lst in by_day.items() if d >= today for e in lst}
             tier_word = lv["tier"]
             filters = []
             for s in sports_at[level]:
@@ -313,7 +316,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
                                                 f"{tier_word} mänge.")
                     filters.append({"key": s, "label": SPORTS[s], "none": True, "msg": msg})
             day_list = [{"date": d, "label": et_date(d), "short": SHORT_WEEKDAYS[d.weekday()],
-                         "count": len(by_day[d]),
+                         "past": d < today, "count": len(by_day[d]),
                          "sports": sorted({e.sport for e in by_day[d]})} for d in days]
             prefix = lv["prefix"] + r.prefix
             rdir = out / prefix if prefix else out
@@ -324,10 +327,10 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
                     common, region=r, regions=region_list, level=level, level_info=lv, levels=level_list,
                     show_city=r.kind != "city",
                     filters=filters, days=day_list,
-                    day=d, events=by_day[d],
+                    day=d, past=d < today, events=by_day[d],
                     prev_day=days[i - 1] if i > 0 else None,
                     next_day=days[i + 1] if i + 1 < len(days) else None,
-                    next_games=next((x for x in days[i + 1:] if by_day[x]), None),
+                    next_games=next((x for x in days[i + 1:] if x >= today and by_day[x]), None),
                 )
                 page_dir = rdir / d.isoformat()
                 page_dir.mkdir()
@@ -335,13 +338,14 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
                 url = f"{base_url}{prefix}{d.isoformat()}/"
                 # tänase päeva kuupäevaleht on sama sisu mis piirkonna avaleht → kanooniline on avaleht
                 (page_dir / "index.html").write_text(
-                    tpl.render(ctx, root="../" * (depth + 1), here="../", canonical=index_url if i == 0 else url,
+                    tpl.render(ctx, root="../" * (depth + 1), here="../", canonical=index_url if i == today_i else url,
                                is_index=False),
                     encoding="utf-8")
-                # sitemap: avalehed alati, kuupäevalehed ainult siis, kui seal on mänge (tühje lehti ei pakuta)
-                if i > 0 and by_day[d]:
+                # sitemap: avalehed alati, kuupäevalehed ainult siis, kui seal on mänge (tühje lehti ei pakuta);
+                # möödunud päevi ei paku (neil on noindex)
+                if i > today_i and by_day[d]:
                     urls.append(url)
-                if i == 0:
+                if i == today_i:
                     (rdir / "index.html").write_text(
                         tpl.render(ctx, root="../" * depth, here="", canonical=index_url, is_index=True),
                         encoding="utf-8")
@@ -428,6 +432,13 @@ def main(argv: list[str] | None = None) -> int:
         timeout=http.get("timeout", 20.0), retries=http.get("retries", 3))
 
     events, report = collect(cfg, venues, fetcher, today)
+    try:
+        # möödunud päevad (nt allikad, mis näitavad ainult tulevasi mänge): arhiivist; praegused andmed on eespool
+        have = {e.id for e in events}
+        events += [e for e in archive.past_events(today, int(cfg.get("site", {}).get("days_back", 14)))
+                   if e.id not in have]
+    except Exception:  # noqa: BLE001 - arhiivi viga ei tohi lehe ehitust takistada
+        log.exception("möödunud mängude lugemine arhiivist ebaõnnestus")
     events, dupes = dedupe(events)
     if dupes:
         log.info("Eemaldasin %d topelt mängu (sama mäng mitmest allikast)", dupes)

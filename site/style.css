@@ -147,6 +147,9 @@ a { color: var(--link); text-decoration: none; }
 .match { font-weight: 650; line-height: 1.25; }
 .meta { font-size: .78rem; color: var(--muted); margin-top: .1rem; }
 .meta em { font-style: normal; color: var(--kasipall); }
+.score { margin-left: .35rem; font-variant-numeric: tabular-nums; }
+.days a.past .wd, .days a.past .dn { opacity: .6; }
+.pastnote { color: var(--muted); }
 .go { align-self: center; padding: 0 .6rem 0 0; color: var(--empty); font-size: .85rem; }
 
 .s-jalgpall { background: var(--jalgpall); }
