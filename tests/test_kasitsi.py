@@ -142,7 +142,7 @@ class BuildIntegrationTest(unittest.TestCase):
         tour = next(e for e in events if not e.away)
         game = (tmp / f"m/{tour.id}/index.html").read_text(encoding="utf-8")
         self.assertIn('<meta property="og:title" content="Noorte jõulukarikas (U14)">', game)
-        self.assertIn("Teade allikal ↗", game)
+        self.assertIn("Teade allika saidil ↗", game)
 
 
 if __name__ == "__main__":

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mis siin on? | Spordikavad</title>
-<meta name="description" content="Spordikavad näitab Eesti kõrgliigade ja esiliigade mänge, mida saab kohapeal vaatamas käia. Millised alad ja liigad on kaetud ning kust andmed tulevad.">
+<meta name="description" content="Spordikavad näitab Eesti spordimänge, mida saab kohapeal vaatamas käia: kõrgliigad, esiliigad, noored ja koondised. Siit leiad, millised alad ja liigad on kaetud ja kust andmed tulevad.">
 <link rel="canonical" href="{{ canonical }}">
 <meta name="theme-color" content="#14457a">
 <meta name="color-scheme" content="light dark">
@@ -14,36 +14,36 @@
 <header class="bar"><div class="wrap"><div class="top"><a class="brand" href="{{ root }}">Spordikavad</a></div>
   <nav class="daynav"><h1>Mis siin on?</h1></nav></div></header>
 <main class="wrap info">
-  <p>Spordikavad on lihtne nimekiri spordimängudest, mida saab <strong>kohapeal vaatamas käia</strong>: iga päeva mängud kellaaja järgi, linna kaupa. Päises saad valida linna või maakonna ning <strong>kõrgliigade</strong>, <strong>esiliigade</strong>, <strong>madalamate liigade</strong> <strong>noorte</strong> või <strong>koondiste</strong> kalendri.</p>
+  <p>Spordikavad on lihtne nimekiri spordimängudest, mida saab <strong>kohapeal vaatamas käia</strong>: iga päeva mängud kellaaja järgi, linna kaupa. Päises saad valida linna või maakonna ja kalendri: <strong>kõrgliigad</strong>, <strong>esiliigad</strong>, <strong>noored</strong>, <strong>koondised</strong> või <strong>kõik liigad</strong> korraga.</p>
 
   <h2>Alad ja liigad</h2>
   <table>
-    <thead><tr><th>Ala</th><th>Kõrgliigad</th><th>Esiliigad</th><th>Madalamad liigad</th><th>Noored</th><th>Koondised</th></tr></thead>
+    <thead><tr><th>Ala</th><th>Kõrgliigad</th><th>Esiliigad</th>{% if show_minor %}<th>Madalamad liigad</th>{% endif %}<th>Noored</th><th>Koondised</th></tr></thead>
     <tbody>
     {% for row in coverage %}
-      <tr><td><i class="dot s-{{ row.key }}"></i> {{ row.sport }}</td><td>{{ row.top | join(', ') }}</td><td>{{ row.low | join(', ') or '–' }}</td><td>{{ row.minor | join(', ') or '–' }}</td><td>{{ row.youth | join(', ') or '–' }}</td><td>{{ row.national | join(', ') or '–' }}</td></tr>
+      <tr><td><i class="dot s-{{ row.key }}"></i> {{ row.sport }}</td><td>{{ row.top | join(', ') }}</td><td>{{ row.low | join(', ') or '–' }}</td>{% if show_minor %}<td>{{ row.minor | join(', ') or '–' }}</td>{% endif %}<td>{{ row.youth | join(', ') or '–' }}</td><td>{{ row.national | join(', ') or '–' }}</td></tr>
     {% endfor %}
     </tbody>
   </table>
 
   <h2>Mida siin pole</h2>
   <ul>
-    <li><strong>Korvpall:</strong> näitame ainult Bigbank/Kalevi mänge (klubi kodulehelt). Korvpalliliidu koduleht ei luba andmete automaatset kogumist, seetõttu teiste klubide mänge siin pole. Need leiad <a href="https://www.basket.ee/et/ajakava-ja-tulemused?action=schedule">basket.ee lehelt</a>.</li>
-    <li><strong>Eesti jäähoki liigad</strong> (Unibet Hokiliiga, naiste hokiliiga): ajakava pole avalikult kättesaadaval kujul. Optibet Hokiliiga (HC Panter) on olemas.</li>
+    <li><strong>Korvpall:</strong> näitame Bigbank/Kalevi mänge ja Tartu Ülikooli korvpallimeeskonna kodumänge klubide kodulehtedelt. Korvpalliliidu koduleht ei luba andmete automaatset kogumist, seetõttu on teiste klubide mänge siin ainult üksikuid. Kõik mängud leiad <a href="https://www.basket.ee/et/ajakava-ja-tulemused?action=schedule">basket.ee lehelt</a>.</li>
+    <li><strong>Eesti jäähokiliigad</strong> (Unibet Hokiliiga, naiste hokiliiga): ajakava pole avalikult masinloetaval kujul, seetõttu on siin neist ainult üksikud käsitsi lisatud mängud. Optibet Hokiliiga (HC Panter) on olemas.</li>
     <li><strong>Veel avaldamata:</strong> naiste käsipallikarikas ja saalijalgpalli esiliiga lisanduvad, kui liidud nende ajakava avaldavad. Jalgpallikarikad lisanduvad hiljem.</li>
-    <li>Tulemused, tabelid ja ülekanded.</li>
+    <li>Turniiritabelid ja ülekanded. Möödunud mängude tulemusi näitame siis, kui allikas need avaldab.</li>
   </ul>
-  <p>Talvel on jalgpall hooajavälisel ajal, seetõttu on mänge siis vähem.</p>
+  <p>Jalgpalli hooaeg kestab märtsist novembrini, talvel on jalgpallimänge seetõttu vähem.</p>
 
   <h2>Kust andmed tulevad</h2>
-  <p>Ainult liitude ja klubide avalikelt kodulehtedelt, mille kasutustingimused ja robots.txt seda lubavad. Iga mäng viib tagasi allika mängulehele. Andmeid uuendatakse kord päevas varahommikul.</p>
+  <p>Ainult liitude ja klubide avalikelt kodulehtedelt, mille kasutustingimused ja robots.txt seda lubavad. Iga mängu link viib allika lehele. Andmeid uuendatakse kord päevas varahommikul.</p>
   <ul>
   {% for row in coverage if row.source[0] %}
     <li>{{ row.sport }}: <a href="{{ row.source[1] }}" rel="noopener">{{ row.source[0] }}</a></li>
   {% endfor %}
   </ul>
-  <p>Üksikud sõprusmängud, turniirid ja eriüritused on lisatud käsitsi liitude, klubide või korraldajate ametlike teadete põhjal. Nende mängulehel on link teatele.</p>
-  <p><strong>Kontrolli aega enne kohaleminekut</strong>, sest kellaajad võivad muutuda.</p>
+  <p>Üksikud sõprusmängud, turniirid, eriüritused ja koondiste mängud on lisatud käsitsi liitude, klubide, hallide või korraldajate ametlike teadete põhjal. Nende mängulehel on link teatele.</p>
+  <p><strong>Kontrolli kellaaega enne kohaleminekut</strong>, sest see võib muutuda.</p>
   <p class="muted">Viimati uuendatud: {{ updated }}.</p>
 </main>
 <footer class="wrap">
