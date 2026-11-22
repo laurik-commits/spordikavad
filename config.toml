@@ -167,13 +167,13 @@ county = "Põlvamaa"
 # Selgitab, mis selle ala kohta lehel puudub (vt SOURCES.md).
 [[sport_note]]
 sport = "jaahoki"
-note = "Eesti hokiliigade (Unibet Hokiliiga, naiste hokiliiga) ajakava pole avalikult masinloetaval kujul, seetõttu on siin neist ainult üksikud käsitsi lisatud mängud."
+note = "Eesti hokiliigade (Unibet Hokiliiga, naiste hokiliiga) ajakava ei saa automaatselt lugeda, seepärast on siin neist ainult üksikud käsitsi lisatud mängud."
 url = "https://eestihoki.ee/"
 link_text = "Eesti Jäähokiliit"
 
 [[sport_note]]
 sport = "korvpall"
-note = "Näitame Bigbank/Kalevi mänge ja Tartu Ülikooli korvpallimeeskonna kodumänge klubide kodulehtedelt. Korvpalliliidu leht ei luba andmete automaatset kogumist, seetõttu on teiste klubide mänge siin ainult üksikuid."
+note = "Siin on Bigbank/Kalevi mängud ja Tartu Ülikooli korvpallimeeskonna kodumängud klubide kodulehtedelt. Korvpalliliidu leht ei luba andmeid automaatselt koguda, seepärast on teiste klubide mänge vähe."
 url = "https://www.basket.ee/et/ajakava-ja-tulemused?action=schedule"
 link_text = "Kõik mängud basket.ee lehel"
 
