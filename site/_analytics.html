@@ -1,0 +1,4 @@
+{# Cloudflare Web Analytics: küpsisevaba külastuste loendur, isikuandmeid ei koguta (config.toml [site] analytics_*). #}
+{% if analytics_enabled and analytics_token %}
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ analytics_token }}"}'></script>
+{% endif %}

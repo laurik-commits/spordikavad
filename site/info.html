@@ -44,10 +44,15 @@
   </ul>
   <p>Üksikud sõprusmängud, turniirid, eriüritused ja koondisemängud on lisatud käsitsi. Need põhinevad liitude, klubide, hallide või korraldajate ametlikel teadetel ja nende mängulehel on link teatele.</p>
   <p><strong>Enne kohaleminekut kontrolli kellaaega</strong>, sest see võib muutuda.</p>
+  {% if analytics_enabled and analytics_token %}
+  <h2>Privaatsus</h2>
+  <p>Külastusi loendame Cloudflare Web Analyticsiga. See ei kasuta küpsiseid ega kogu isikuandmeid. Näeme ainult koondarve, näiteks mitu korda lehti vaadati ja millistelt seadmetelt.</p>
+  {% endif %}
   <p class="muted">Viimati uuendatud {{ updated }}.</p>
 </main>
 <footer class="wrap">
   <p>Kui olete andmete omanik ega soovi, et neid siin näidataks, <a href="{{ contact_url }}">kirjutage meile</a>.</p>
 </footer>
+{% include "_analytics.html" %}
 </body>
 </html>
