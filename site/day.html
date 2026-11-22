@@ -68,7 +68,7 @@
   </ol>
 </nav>
 
-<main class="wrap">
+<main class="wrap{{ ' pastday' if past }}">
   <p class="stale" hidden>Andmed võivad olla vananenud (viimati uuendatud {{ updated }}). Kontrolli aega allika lehelt.</p>
   {% if past %}
   <p class="intro pastnote">Möödunud päev. Täpse seisu ja statistika näed mängu lingilt allika lehelt. <a href="{{ root }}{{ level_info.prefix }}{{ region.prefix }}">Tänased mängud →</a></p>

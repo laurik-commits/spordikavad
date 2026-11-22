@@ -10,6 +10,7 @@
   --bar-fg: #fff;
   --chip: #fff;
   --empty: #a3a9b3;
+  --past: #e4e6ea;
   /* alade värvid: valge tekst vähemalt 4.5:1 */
   --jalgpall: #2e7d32;
   --korvpall: #6b7280;
@@ -30,6 +31,7 @@
     --bar: #0f3460;
     --chip: #191c22;
     --empty: #5b616b;
+    --past: #2a2e36;
   }
 }
 * { box-sizing: border-box; }
@@ -148,8 +150,15 @@ a { color: var(--link); text-decoration: none; }
 .meta { font-size: .78rem; color: var(--muted); margin-top: .1rem; }
 .meta em { font-style: normal; color: var(--kasipall); }
 .score { margin-left: .35rem; font-variant-numeric: tabular-nums; }
-.days a.past .wd, .days a.past .dn { opacity: .6; }
 .pastnote { color: var(--muted); }
+/* möödunud päevad: hall taust päevade ribal ja hallid mänguread */
+.days a.past { background: var(--past); }
+.days a.past .wd, .days a.past .dn { color: var(--muted); }
+.days a.past[aria-current] { background: var(--bar); }
+.days a.past[aria-current] .wd, .days a.past[aria-current] .dn { color: var(--bar-fg); }
+.pastday .games a { background: var(--past); }
+.pastday .games time { filter: grayscale(.9) brightness(1.05); }
+.pastday .match { color: var(--muted); }
 .go { align-self: center; padding: 0 .6rem 0 0; color: var(--empty); font-size: .85rem; }
 
 .s-jalgpall { background: var(--jalgpall); }
