@@ -47,7 +47,7 @@ class RenderTest(unittest.TestCase):
 
     def test_empty_day_links_to_next_games(self):
         html = self.read("index.html")
-        self.assertIn("Täna Tallinnas kõrgliigade mänge pole", html)
+        self.assertIn("Täna ei ole Tallinnas ühtegi kõrgliigamängu.", html)
         self.assertIn('href="2026-11-22/"', html)
 
     def test_day_sorted_and_relative_links(self):
@@ -67,7 +67,7 @@ class RenderTest(unittest.TestCase):
         for s in ("jalgpall", "jaahoki", "vorkpall", "kasipall", "saalihoki", "saalijalgpall"):
             self.assertIn(f'data-filter="{s}"', html)
         self.assertIn('data-filter="saalihoki" aria-pressed="false" class="nogames" data-none="1"', html)
-        self.assertIn("Tallinnas pole järgmise kahe nädala jooksul saalihoki kõrgliigade mänge.", html)
+        self.assertIn("Järgmise kahe nädala jooksul ei ole Tallinnas saalihoki kõrgliigamänge.", html)
         self.assertIn("Jalgpalli hooaeg algab märtsis.", html)          # talvel hooajaväline
         self.assertNotIn('data-filter="vorkpall" aria-pressed="false" class="nogames"', html)
         # esiliigades jäähokit pole üldse → nuppu pole
@@ -116,7 +116,7 @@ class RenderTest(unittest.TestCase):
         self.assertTrue((self.tmp / "esiliigad/tartu/2026-11-21/index.html").exists())
         tartu_low = self.read("esiliigad/tartu/2026-11-21/index.html")
         self.assertIn('href="../../../style.css"', tartu_low)
-        self.assertIn("Sel päeval Tartus esiliigade mänge pole", tartu_low)
+        self.assertIn("Sel päeval ei ole Tartus ühtegi esiliigamängu.", tartu_low)
 
     def test_madalamad_separate_calendar(self):
         low = self.read("madalamad/2026-11-21/index.html")
@@ -127,8 +127,8 @@ class RenderTest(unittest.TestCase):
         self.assertIn("Madalamate liigade mängud Tallinnas", low)
         self.assertIn('href="../../2026-11-21/" data-level="1"', low)
         self.assertIn('href="../../esiliigad/2026-11-21/" data-level="2"', low)
-        self.assertIn("Madalamate liigade spordimängud", self.read("madalamad/index.html"))  # sissejuhatus avalehel
-        self.assertIn("Sel päeval Tartus madalamate liigade mänge pole",
+        self.assertIn("Madalamate liigade mängud, mida saab kohapeal vaatama minna.", self.read("madalamad/index.html"))  # sissejuhatus avalehel
+        self.assertIn("Sel päeval ei ole Tartus ühtegi madalama liiga mängu.",
                       self.read("madalamad/tartu/2026-11-21/index.html"))
         # madalamates liigades on ainult jalgpall → teisi alanuppe pole
         self.assertIn('data-filter="jalgpall"', low)
@@ -144,7 +144,7 @@ class RenderTest(unittest.TestCase):
         self.assertIn("Noorte mängud Tallinnas", youth)
         self.assertNotIn('data-level="3"', youth)  # madalamad liigad on ajutiselt valikust peidus
         self.assertIn('data-level="4" aria-current="true"', youth)
-        self.assertIn("Sel päeval Tartus noorteliigade mänge pole", self.read("noored/tartu/2026-11-21/index.html"))
+        self.assertIn("Sel päeval ei ole Tartus ühtegi noortemängu.", self.read("noored/tartu/2026-11-21/index.html"))
         self.assertTrue((self.tmp / "noored/index.html").exists())
 
     def test_koondised_separate_calendar(self):
@@ -156,7 +156,7 @@ class RenderTest(unittest.TestCase):
             self.assertNotIn("Koondislased", self.read(f"{rel}/index.html"))
         self.assertIn("Koondiste mängud Tallinnas", national)
         self.assertIn('data-level="5" aria-current="true"', national)
-        self.assertIn("Sel päeval Tartus koondiste mänge pole", self.read("koondised/tartu/2026-11-21/index.html"))
+        self.assertIn("Sel päeval ei ole Tartus ühtegi koondisemängu.", self.read("koondised/tartu/2026-11-21/index.html"))
 
     def test_all_levels_view_has_everything_except_hidden_lower_leagues(self):
         everything = self.read("koik/2026-11-21/index.html")

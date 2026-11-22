@@ -6,7 +6,7 @@
 {% set match = e | matchup %}
 {% set score = e.result | replace('-', ':') %}
 <title>{{ match }}{% if score %} {{ score }}{% endif %} – {{ day | et_date }} | Spordikavad</title>
-<meta name="description" content="{{ sports[e.sport] }}, {{ e.league }}. {{ e | when_where }}.">
+<meta name="description" content="{{ sports[e.sport] }}, {{ e.league }}: {{ e | when_where }}.">
 <link rel="canonical" href="{{ canonical }}">
 {% if past %}<meta name="robots" content="noindex">
 {% endif %}
@@ -29,7 +29,7 @@
 <header class="bar"><div class="wrap"><div class="top"><a class="brand" href="{{ root }}">Spordikavad</a></div></div></header>
 
 <main class="wrap game{{ ' pastday' if past }}">
-  <p class="stale" hidden>Andmed võivad olla vananenud (viimati uuendatud {{ updated }}). Kontrolli kellaaega allika lehelt.</p>
+  <p class="stale" hidden>Andmed võivad olla aegunud (viimati uuendatud {{ updated }}). Kontrolli kellaaega allika lehelt.</p>
   {% if past %}<p class="intro pastnote">See mäng on juba peetud.</p>{% endif %}
   <article class="card">
     <time class="s-{{ e.sport }}" datetime="{{ e.start.isoformat() }}">
@@ -47,12 +47,12 @@
     <a class="btn" href="{{ e.url }}" rel="noopener">{% if e.source == 'kasitsi' %}Teade{% elif past and e.result %}Statistika{% else %}Mänguleht{% endif %} allika saidil ↗</a>
     <button type="button" class="btn share-btn share" data-url="{{ canonical }}" data-title="{{ match }}" data-text="{{ e | share_text }}">Jaga</button>
   </p>
-  <p><a href="{{ day_href }}">Kõik {{ level_info.tier }} mängud: {{ day | et_date }} →</a></p>
+  <p><a href="{{ day_href }}">Selle päeva {{ level_info.games }} →</a></p>
 </main>
 
 <footer class="wrap">
-  <p>Andmed: liitude, klubide ja korraldajate avalikud kodulehed. Kontrolli kellaaega enne kohaleminekut. Uuendatud {{ updated }}. <a href="{{ root }}info/">Mis siin on?</a></p>
-  <p>Kui olete andmete omanik ja ei soovi, et teie andmeid siin kuvataks, <a href="{{ contact_url }}">kirjutage meile</a>.</p>
+  <p>Andmed pärinevad liitude, klubide ja korraldajate kodulehtedelt. Enne kohaleminekut kontrolli kellaaega. Viimati uuendatud {{ updated }}. <a href="{{ root }}info/">Mis siin on?</a></p>
+  <p>Kui olete andmete omanik ega soovi, et neid siin näidataks, <a href="{{ contact_url }}">kirjutage meile</a>.</p>
 </footer>
 <script src="{{ root }}app.js" defer></script>
 {% if analytics_enabled and analytics_token %}

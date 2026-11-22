@@ -14,7 +14,7 @@
 <header class="bar"><div class="wrap"><div class="top"><a class="brand" href="{{ root }}">Spordikavad</a></div>
   <nav class="daynav"><h1>Mis siin on?</h1></nav></div></header>
 <main class="wrap info">
-  <p>Spordikavad on lihtne nimekiri spordimängudest, mida saab <strong>kohapeal vaatamas käia</strong>: iga päeva mängud kellaaja järgi, linna kaupa. Päises saad valida linna või maakonna ja kalendri: <strong>kõrgliigad</strong>, <strong>esiliigad</strong>, <strong>noored</strong>, <strong>koondised</strong> või <strong>kõik liigad</strong> korraga.</p>
+  <p>Spordikavad on lihtne nimekiri spordimängudest, mida saab <strong>kohapeal vaatama minna</strong>. Iga päeva mängud on kellaaja järgi ja linnade kaupa. Päisest saad valida linna või maakonna ja kalendri: <strong>kõrgliigad</strong>, <strong>esiliigad</strong>, <strong>noored</strong>, <strong>koondised</strong> või <strong>kõik liigad</strong> korraga.</p>
 
   <h2>Alad ja liigad</h2>
   <table>
@@ -28,26 +28,26 @@
 
   <h2>Mida siin pole</h2>
   <ul>
-    <li><strong>Korvpall:</strong> näitame Bigbank/Kalevi mänge ja Tartu Ülikooli korvpallimeeskonna kodumänge klubide kodulehtedelt. Korvpalliliidu koduleht ei luba andmete automaatset kogumist, seetõttu on teiste klubide mänge siin ainult üksikuid. Kõik mängud leiad <a href="https://www.basket.ee/et/ajakava-ja-tulemused?action=schedule">basket.ee lehelt</a>.</li>
-    <li><strong>Eesti jäähokiliigad</strong> (Unibet Hokiliiga, naiste hokiliiga): ajakava pole avalikult masinloetaval kujul, seetõttu on siin neist ainult üksikud käsitsi lisatud mängud. Optibet Hokiliiga (HC Panter) on olemas.</li>
-    <li><strong>Veel avaldamata:</strong> naiste käsipallikarikas ja saalijalgpalli esiliiga lisanduvad, kui liidud nende ajakava avaldavad. Jalgpallikarikad lisanduvad hiljem.</li>
-    <li>Turniiritabelid ja ülekanded. Möödunud mängude tulemusi näitame siis, kui allikas need avaldab.</li>
+    <li><strong>Korvpall:</strong> Bigbank/Kalevi mängud ja Tartu Ülikooli korvpallimeeskonna kodumängud on olemas, need tulevad klubide kodulehtedelt. Korvpalliliidu koduleht ei luba andmeid automaatselt koguda, seepärast on teiste klubide mänge siin vähe. Kõik mängud leiad <a href="https://www.basket.ee/et/ajakava-ja-tulemused?action=schedule">basket.ee lehelt</a>.</li>
+    <li><strong>Eesti jäähokiliigad</strong> (Unibet Hokiliiga, naiste hokiliiga): nende ajakava ei saa automaatselt lugeda, seepärast on siin ainult üksikud käsitsi lisatud mängud. Optibet Hokiliiga (HC Panter) on olemas.</li>
+    <li><strong>Veel tulemas:</strong> naiste käsipallikarikas ja saalijalgpalli esiliiga lisanduvad, kui liidud nende ajakava avaldavad. Jalgpallikarikad lisanduvad hiljem.</li>
+    <li><strong>Turniiritabelid ja ülekanded.</strong> Möödunud mängude tulemusi näitame siis, kui allikas need avaldab.</li>
   </ul>
-  <p>Jalgpalli hooaeg kestab märtsist novembrini, talvel on jalgpallimänge seetõttu vähem.</p>
+  <p>Jalgpalli hooaeg kestab märtsist novembrini, seepärast on talvel jalgpallimänge vähe.</p>
 
   <h2>Kust andmed tulevad</h2>
-  <p>Ainult liitude ja klubide avalikelt kodulehtedelt, mille kasutustingimused ja robots.txt seda lubavad. Iga mängu link viib allika lehele. Andmeid uuendatakse kord päevas varahommikul.</p>
+  <p>Andmed tulevad ainult nende liitude ja klubide avalikelt kodulehtedelt, mille kasutustingimused ja robots.txt seda lubavad. Iga mängu link viib allika lehele. Andmeid uuendatakse kord päevas varahommikul.</p>
   <ul>
   {% for row in coverage if row.source[0] %}
     <li>{{ row.sport }}: <a href="{{ row.source[1] }}" rel="noopener">{{ row.source[0] }}</a></li>
   {% endfor %}
   </ul>
-  <p>Üksikud sõprusmängud, turniirid, eriüritused ja koondiste mängud on lisatud käsitsi liitude, klubide, hallide või korraldajate ametlike teadete põhjal. Nende mängulehel on link teatele.</p>
-  <p><strong>Kontrolli kellaaega enne kohaleminekut</strong>, sest see võib muutuda.</p>
-  <p class="muted">Viimati uuendatud: {{ updated }}.</p>
+  <p>Üksikud sõprusmängud, turniirid, eriüritused ja koondisemängud on lisatud käsitsi. Need põhinevad liitude, klubide, hallide või korraldajate ametlikel teadetel ja nende mängulehel on link teatele.</p>
+  <p><strong>Enne kohaleminekut kontrolli kellaaega</strong>, sest see võib muutuda.</p>
+  <p class="muted">Viimati uuendatud {{ updated }}.</p>
 </main>
 <footer class="wrap">
-  <p>Kui olete andmete omanik ja ei soovi, et teie andmeid siin kuvataks, <a href="{{ contact_url }}">kirjutage meile</a>.</p>
+  <p>Kui olete andmete omanik ega soovi, et neid siin näidataks, <a href="{{ contact_url }}">kirjutage meile</a>.</p>
 </footer>
 </body>
 </html>

@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {% set human = day | et_date %}
 {% set n = events | length %}
-{% set tier = level_info.tier %}
+{% set games = level_info.games %}
 <title>{{ level_info.title }} {{ region.in_form }} – {{ human }} {{ day.year }} | Spordikavad</title>
-<meta name="description" content="{% if n %}{{ n }} {{ 'mäng' if n == 1 else 'mängu' }} {{ region.in_form }}: {{ human }}. {% endif %}Jalgpalli, saalijalgpalli, korvpalli, võrkpalli, käsipalli, jäähoki ja saalihoki {{ tier }} mängud {{ region.in_form }} ühes nimekirjas.">
+<meta name="description" content="{% if n %}{{ human | capitalize }}: {{ n }} {{ 'mäng' if n == 1 else 'mängu' }} {{ region.in_form }}. {% endif %}{{ games | capitalize }} jalgpallist saalihokini ühes nimekirjas, kellaaja järgi.">
 <link rel="canonical" href="{{ canonical }}">
 {% if past or level_info.all %}<meta name="robots" content="noindex">
 {% endif %}
@@ -15,7 +15,7 @@
 <meta property="og:locale" content="et_EE">
 <meta property="og:site_name" content="Spordikavad">
 <meta property="og:title" content="{{ level_info.title }} {{ region.in_form }} – {{ human }}">
-<meta property="og:description" content="{{ tier | capitalize }} mängud {{ region.in_form }} kellaaja järgi.">
+<meta property="og:description" content="{{ games | capitalize }} {{ region.in_form }} kellaaja järgi.">
 <meta property="og:url" content="{{ canonical }}">
 <meta property="og:image" content="{{ base_url }}og.png">
 <meta property="og:image:width" content="1200">
@@ -73,12 +73,12 @@
 </nav>
 
 <main class="wrap{{ ' pastday' if past }}">
-  <p class="stale" hidden>Andmed võivad olla vananenud (viimati uuendatud {{ updated }}). Kontrolli kellaaega allika lehelt.</p>
+  <p class="stale" hidden>Andmed võivad olla aegunud (viimati uuendatud {{ updated }}). Kontrolli kellaaega allika lehelt.</p>
   {% if past %}
-  <p class="intro pastnote">See päev on möödas. Tulemused ja statistika on allika lehel, vajuta mängule. <a href="{{ root }}{{ level_info.prefix }}{{ region.prefix }}">Tänased mängud →</a></p>
+  <p class="intro pastnote">See päev on möödas. Tulemused ja statistika leiad allika lehelt, vajuta selleks mängule. <a href="{{ root }}{{ level_info.prefix }}{{ region.prefix }}">Tänased mängud →</a></p>
   {% endif %}
   {% if is_index %}
-  <p class="intro">{{ tier | capitalize }} spordimängud, mida saab kohapeal vaatamas käia. <a href="{{ root }}info/">Mis siin on?</a></p>
+  <p class="intro">{{ games | capitalize }}, mida saab kohapeal vaatama minna. <a href="{{ root }}info/">Mis siin on?</a></p>
   {% endif %}
   {% if filters or links %}
   <div class="filters" role="group" aria-label="Ala">
@@ -117,18 +117,18 @@
     </li>
   {% endfor %}
   </ol>
-  <p class="empty-filter" hidden>Selle ala mänge sel päeval pole.</p>
+  <p class="empty-filter" hidden>Sel päeval selle ala mänge ei ole.</p>
   {% else %}
   <div class="none">
-    <p>{{ 'Täna' if day == today else 'Sel päeval' }} {{ region.in_form }} {{ tier }} mänge pole.</p>
+    <p>{{ 'Täna' if day == today else 'Sel päeval' }} ei ole {{ region.in_form }} ühtegi {{ level_info.one }}.</p>
     {% if next_games %}<p><a href="{{ here }}{{ next_games.isoformat() }}/">Järgmised mängud: {{ next_games | et_date }} →</a></p>{% endif %}
   </div>
   {% endif %}
 </main>
 
 <footer class="wrap">
-  <p>Andmed: liitude, klubide ja korraldajate avalikud kodulehed. Kontrolli kellaaega enne kohaleminekut. Uuendatud {{ updated }}. <a href="{{ root }}info/">Mis siin on?</a></p>
-  <p>Kui olete andmete omanik ja ei soovi, et teie andmeid siin kuvataks, <a href="{{ contact_url }}">kirjutage meile</a>.</p>
+  <p>Andmed pärinevad liitude, klubide ja korraldajate kodulehtedelt. Enne kohaleminekut kontrolli kellaaega. Viimati uuendatud {{ updated }}. <a href="{{ root }}info/">Mis siin on?</a></p>
+  <p>Kui olete andmete omanik ega soovi, et neid siin näidataks, <a href="{{ contact_url }}">kirjutage meile</a>.</p>
 </footer>
 <script src="{{ root }}app.js" defer></script>
 {% if analytics_enabled and analytics_token %}

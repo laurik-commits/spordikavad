@@ -10,16 +10,25 @@ from zoneinfo import ZoneInfo
 
 TALLINN = ZoneInfo("Europe/Tallinn")
 
-# tase → nimi valikus, kaust, pealkirja algus, omastav vorm ("tier": "kõrgliigade mänge pole")
+# tase → nimi valikus, kaust, pealkirja algus ja sõnavormid lausetesse:
+#   games: "kõrgliigade mängud" (sissejuhatus, kirjeldus, "Selle päeva … →")
+#   one:   "Täna ei ole Tallinnas ühtegi kõrgliigamängu."
+#   many:  "Järgmise kahe nädala jooksul ei ole Tallinnas saalihoki kõrgliigamänge."
 LEVELS = {
     # 0 = kõik valikus näidatavad tasemed ühes nimekirjas (peidetud taset ei loeta)
-    0: {"name": "Kõik liigad", "prefix": "koik/", "title": "Kõik spordimängud", "tier": "kõigi liigade", "all": True},
-    1: {"name": "Kõrgliigad", "prefix": "", "title": "Spordimängud", "tier": "kõrgliigade"},
-    2: {"name": "Esiliigad", "prefix": "esiliigad/", "title": "Esiliigade mängud", "tier": "esiliigade"},
+    0: {"name": "Kõik liigad", "prefix": "koik/", "title": "Kõik spordimängud",
+        "games": "kõik mängud", "one": "mängu", "many": "mänge", "all": True},
+    1: {"name": "Kõrgliigad", "prefix": "", "title": "Spordimängud",
+        "games": "kõrgliigade mängud", "one": "kõrgliigamängu", "many": "kõrgliigamänge"},
+    2: {"name": "Esiliigad", "prefix": "esiliigad/", "title": "Esiliigade mängud",
+        "games": "esiliigade mängud", "one": "esiliigamängu", "many": "esiliigamänge"},
     3: {"name": "Madalamad liigad", "prefix": "madalamad/", "title": "Madalamate liigade mängud",
-        "tier": "madalamate liigade", "hidden": True},  # ajutiselt peidus valikust; lehed ehitatakse edasi
-    4: {"name": "Noored", "prefix": "noored/", "title": "Noorte mängud", "tier": "noorteliigade"},
-    5: {"name": "Koondised", "prefix": "koondised/", "title": "Koondiste mängud", "tier": "koondiste"},
+        "games": "madalamate liigade mängud", "one": "madalama liiga mängu", "many": "madalamate liigade mänge",
+        "hidden": True},  # ajutiselt peidus valikust; lehed ehitatakse edasi
+    4: {"name": "Noored", "prefix": "noored/", "title": "Noorte mängud",
+        "games": "noorte mängud", "one": "noortemängu", "many": "noortemänge"},
+    5: {"name": "Koondised", "prefix": "koondised/", "title": "Koondiste mängud",
+        "games": "koondiste mängud", "one": "koondisemängu", "many": "koondisemänge"},
 }
 
 SPORTS = {
