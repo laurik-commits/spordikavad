@@ -1337,7 +1337,14 @@
   "first_seen": "2026-11-22"
  },
  "4e29eb9cad32": {
-  "changes": [],
+  "changes": [
+   {
+    "field": "result",
+    "from": "",
+    "on": "2026-11-22",
+    "to": "3-1"
+   }
+  ],
   "event": {
    "away": "Structura/Tartu vald",
    "city": "Rae vald",
@@ -1345,7 +1352,7 @@
    "id": "4e29eb9cad32",
    "league": "Eesti karikas (mehed)",
    "level": 1,
-   "result": "",
+   "result": "3-1",
    "source": "vorkpall_dataproject",
    "sport": "vorkpall",
    "start": "2026-11-21T17:00:00+02:00",
