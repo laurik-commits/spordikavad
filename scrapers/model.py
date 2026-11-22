@@ -12,6 +12,8 @@ TALLINN = ZoneInfo("Europe/Tallinn")
 
 # tase → nimi valikus, kaust, pealkirja algus, omastav vorm ("tier": "kõrgliigade mänge pole")
 LEVELS = {
+    # 0 = kõik valikus näidatavad tasemed ühes nimekirjas (peidetud taset ei loeta)
+    0: {"name": "Kõik liigad", "prefix": "koik/", "title": "Kõik spordimängud", "tier": "kõigi liigade", "all": True},
     1: {"name": "Kõrgliigad", "prefix": "", "title": "Spordimängud", "tier": "kõrgliigade"},
     2: {"name": "Esiliigad", "prefix": "esiliigad/", "title": "Esiliigade mängud", "tier": "esiliigade"},
     3: {"name": "Madalamad liigad", "prefix": "madalamad/", "title": "Madalamate liigade mängud",

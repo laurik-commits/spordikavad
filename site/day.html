@@ -9,7 +9,7 @@
 <title>{{ level_info.title }} {{ region.in_form }} – {{ human }} {{ day.year }} | Spordikavad</title>
 <meta name="description" content="{% if n %}{{ n }} {{ 'mäng' if n == 1 else 'mängu' }} {{ region.in_form }}: {{ human }}. {% endif %}Jalgpalli, saalijalgpalli, jäähoki, võrkpalli, käsipalli ja saalihoki {{ tier }} mängud {{ region.in_form }} ühes nimekirjas.">
 <link rel="canonical" href="{{ canonical }}">
-{% if past %}<meta name="robots" content="noindex">
+{% if past or level_info.all %}<meta name="robots" content="noindex">
 {% endif %}
 <meta property="og:type" content="website">
 <meta property="og:locale" content="et_EE">

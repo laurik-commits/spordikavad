@@ -16,6 +16,7 @@
   if (body.dataset.index && body.dataset.region === body.dataset.default && body.dataset.level === "1") {
     var city = get(CITY), level = get(LEVEL);
     var path = "";
+    if (level === "0") path += "koik/";
     if (level === "2") path += "esiliigad/";
     if (level === "4") path += "noored/";
     if (level === "5") path += "koondised/";
