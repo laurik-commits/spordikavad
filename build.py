@@ -186,6 +186,18 @@ def et_date(d: date) -> str:
     return f"{WEEKDAYS[d.weekday()]}, {d.day}. {MONTHS[d.month - 1]}"
 
 
+def when_where(e: Event) -> str:
+    """Jagamise ja eelvaate tekst: "laupäev, 21. november kell 19:00, Kalevi spordihall, Tallinn"."""
+    when = et_date(e.start.date()) + ("" if e.time_tbc else f" kell {e.start:%H:%M}")
+    place = ", ".join(x for x in (e.venue, e.city) if x)
+    return f"{when}, {place}" if place else when
+
+
+def share_text(e: Event) -> str:
+    """Tekst, mis läheb jagatava lingi juurde: "Kalev – Valmiera: laupäev, 21. november kell 19:00, ..."."""
+    return f"{e.home} – {e.away}: {when_where(e)}"
+
+
 def _norm_team(name: str) -> str:
     return re.sub(r"[^\w]+", " ", name.lower()).strip()
 
@@ -274,12 +286,14 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
 
     env = Environment(loader=FileSystemLoader(SITE), autoescape=select_autoescape(["html"]), trim_blocks=True, lstrip_blocks=True)
     env.filters["et_date"] = et_date
+    env.filters["share_text"] = share_text
+    env.filters["when_where"] = when_where
     tpl = env.get_template("day.html")
 
     if out.exists():
         shutil.rmtree(out)
     out.mkdir(parents=True)
-    for asset in ("style.css", "app.js"):
+    for asset in ("style.css", "app.js", "og.png"):
         shutil.copy(SITE / asset, out / asset)
 
     # mängud päeva kaupa (14 päeva aken)
@@ -360,6 +374,23 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
                         encoding="utf-8")
                     if not lv.get("all"):
                         urls.append(index_url)
+
+    # mängulehed /m/<id>/: jagatud lingi siht, igal mängul oma eelvaade (pealkiri, aeg, koht)
+    game_tpl = env.get_template("game.html")
+    seen: set[str] = set()
+    for d in days:
+        for e in window[d]:
+            if e.id in seen:
+                continue
+            seen.add(e.id)
+            glv = LEVELS[e.level]
+            gdir = out / "m" / e.id
+            gdir.mkdir(parents=True)
+            (gdir / "index.html").write_text(
+                game_tpl.render(common, e=e, root="../../", canonical=f"{base_url}m/{e.id}/", past=d < today,
+                                level_info=glv, day=d,
+                                day_href=f"../../{glv['prefix']}{geo.all.prefix}{d.isoformat()}/"),
+                encoding="utf-8")
 
     upcoming = sorted((e for e in events if e.start.date() >= today), key=lambda e: (e.start, e.id))
     (out / "events.json").write_text(

@@ -83,7 +83,7 @@ class RenderTest(unittest.TestCase):
         self.assertNotIn("Tartlased", tallinn)
         tartu = self.read("tartu/2026-11-21/index.html")
         self.assertIn("Tartlased", tartu)
-        self.assertNotIn("spordihoone, Tartu", tartu)          # linna vaates linna ei korrata
+        self.assertNotIn("spordihoone, Tartu</span>", tartu)   # linna vaates linna ei korrata (jagamistekstis on)
         self.assertIn('href="../../style.css"', tartu)
         self.assertIn("Spordimängud Tartus", tartu)
         harju = self.read("harjumaa/2026-11-21/index.html")
@@ -173,6 +173,27 @@ class RenderTest(unittest.TestCase):
         menu = self.read("2026-11-21/index.html")
         self.assertLess(menu.index("<span>Kõik liigad</span>"), menu.index("<span>Kõrgliigad</span>"))
         self.assertNotIn("/koik/", self.read("sitemap.xml"))
+
+    def test_share_button_and_game_page_with_preview(self):
+        import re
+        day = self.read("2026-11-22/index.html")
+        self.assertIn('<meta property="og:image" content="https://example.org/sk/og.png">', day)
+        self.assertTrue((self.tmp / "og.png").exists())
+        m = re.search(r'class="share" data-url="https://example.org/sk/m/([0-9a-f]{12})/" '
+                      r'data-title="A – Külalised" data-text="([^"]+)"', day)
+        self.assertIsNotNone(m)
+        self.assertEqual(m.group(2), "A – Külalised: pühapäev, 22. november kell 13:00, Haabersti jäähall, Tallinn")
+        game = self.read(f"m/{m.group(1)}/index.html")
+        self.assertIn('<meta property="og:title" content="A – Külalised">', game)
+        self.assertIn('<meta property="og:description" content="pühapäev, 22. november kell 13:00, '
+                      'Haabersti jäähall, Tallinn · Võrkpall, Liiga">', game)
+        self.assertIn(f'<link rel="canonical" href="https://example.org/sk/m/{m.group(1)}/">', game)
+        self.assertIn('href="https://example.org/A"', game)                 # allika mängu leht
+        self.assertIn('href="../../eesti/2026-11-22/"', game)               # sama päeva kõik mängud
+        self.assertNotIn("noindex", game)
+        # igal aknas oleval mängul on oma leht (ka teiste tasemete omadel); 30.11 mäng on aknast väljas
+        self.assertEqual(len(list((self.tmp / "m").iterdir())), 8)
+        self.assertIn("/m/", self.read("404.html"))                         # vana mängu link → tänased mängud
 
     def test_year_round_sources_do_not_hide_offseason_note(self):
         # koondised on terve aasta "hooajas", aga jalgpalli liigahooaeg algab ikka märtsis

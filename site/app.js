@@ -48,6 +48,24 @@
     if (stale && ageDays >= 2) stale.hidden = false;
   }
 
+  // jagamine: telefonis süsteemi jagamisaken, mujal kopeeritakse link (tekst + aadress)
+  document.querySelectorAll(".share[data-url]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var d = { title: b.dataset.title, text: b.dataset.text, url: b.dataset.url };
+      if (navigator.share) { navigator.share(d).catch(function () {}); return; }
+      function done() {
+        b.classList.add("copied");
+        setTimeout(function () { b.classList.remove("copied"); }, 2000);
+      }
+      var line = d.text + " " + d.url;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(line).then(done, function () { window.prompt("Kopeeri link:", d.url); });
+      } else {
+        window.prompt("Kopeeri link:", d.url);
+      }
+    });
+  });
+
   // päevade ribal too valitud päev nähtavale
   var cur = document.querySelector('.days [aria-current="page"]');
   if (cur && cur.parentNode.previousElementSibling) cur.scrollIntoView({ block: "nearest", inline: "center" });
