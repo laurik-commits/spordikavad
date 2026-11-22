@@ -3805,6 +3805,12 @@
     "from": "",
     "on": "2026-11-22",
     "to": "1-0"
+   },
+   {
+    "field": "result",
+    "from": "1-0",
+    "on": "2026-11-22",
+    "to": "3-0"
    }
   ],
   "event": {
@@ -3814,7 +3820,7 @@
    "id": "df146ae8b866",
    "league": "Balti liiga (mehed)",
    "level": 1,
-   "result": "1-0",
+   "result": "3-0",
    "source": "vorkpall_dataproject",
    "sport": "vorkpall",
    "start": "2026-11-22T16:00:00+02:00",
