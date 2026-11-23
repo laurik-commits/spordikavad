@@ -380,6 +380,40 @@ class LinksStoreTest(unittest.TestCase):
         self.assertEqual((len(rows), report[0]["status"], report[0]["fetched"]), (15, "ok", 15))
         self.assertEqual(len(report), 1)   # kavata kanalit ei loeta
 
+    def test_manual_games_become_streams(self):
+        cfg = ulekanded.parse('''
+[[kanal]]
+nimi = "Postimees"
+url = "https://tv.postimees.ee/"
+[[kanal]]
+nimi = "YouTube"
+[[mang]]
+sport = "kasipall"
+algus = 2026-12-01T18:00:00
+kodu = "Põlva Serviti"
+voorad = "Viljandi HC"
+kanal = "Postimees"
+url = "https://sport.postimees.ee/1/otse"
+[[mang]]
+sport = "kasipall"
+algus = 2026-12-02T18:00:00
+kodu = "A"
+kanal = "YouTube"
+url = "https://www.youtube.com/watch?v=x"
+''')
+        self.assertEqual(ulekanded.validate(cfg), [])
+        streams = ulekanded.manual_streams(cfg)
+        self.assertEqual(streams[0]["start"], datetime(2026, 12, 1, 18, 0, tzinfo=TALLINN))
+        self.assertEqual((streams[0]["by"], streams[1]["away"]), ("Postimees", ""))
+        e = game(1, 18, 0, "Põlva Serviti", "Viljandi HC", sport="kasipall", league="Meistriliiga (mehed)")
+        self.assertEqual(ulekanded.match([e], streams)[e.id]["video_by"], "Postimees")
+        bad = dict(cfg, mang=[dict(cfg["mang"][0], url="https://facebook.com/x"),
+                              dict(cfg["mang"][1], url="https://vimeo.com/x"), {"sport": "kasipall"}])
+        errors = " | ".join(ulekanded.validate(bad))
+        self.assertEqual(errors.count("kanali"), 2)
+        self.assertIn("algus peab olema", errors)
+        self.assertIn("kodu puudub", errors)
+
     def test_repo_channels_have_readers(self):
         kavas = {k["nimi"]: k.get("kava") for k in ulekanded.load()["kanal"]}
         self.assertEqual((kavas["Delfi TV"], kavas["ERR"]), ("delfi", "err"))

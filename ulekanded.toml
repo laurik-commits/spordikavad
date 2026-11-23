@@ -8,6 +8,10 @@
 # [[liiga]]: KÄSITSI teadaolev info liiga kaupa. Siia ainult kontrollitud fakt (kava, uudis, liidu teade).
 #   Süsteem õpib ise juurde: iga mäng, millel on ülekande link, lisab selle kanali oma liigale.
 #   liigad = täpsed liiganimed (nagu config.toml-is), liiga_algus = nimi algab nii (koondiste turniirid).
+# [[mang]]: üksik teadaolev ülekanne (otsinguagent või omanik), seotakse olemasoleva mänguga nagu kava rida:
+#   sport, algus (Tallinna aeg, nt 2026-12-05T18:00:00), kodu, voorad (ürituse puhul jäta ära), kanal (nimi
+#   [[kanal]] nimekirjast), url (kanali saidil, ülekande või teate leht), lisatud (kuupäev), markus.
+#   Möödunud kirjeid võib kustutada. Automaatne merge: SOURCES.md → Automaatne merge, punkt 7.
 # Ainult ametlikud ülekanded (liit, klubi, meediamaja). Piraatülekandeid ega sotsiaalmeediat ei lisa.
 
 [[kanal]]

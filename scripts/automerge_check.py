@@ -17,6 +17,12 @@ Kontrollikihid:
    olemasolevatel kirjetel tohib muuta ainult välju kontrollitud, markus, kuju, robots, kandidaat
    (ja kasutuse "keelatud"-ks); uusi kuni MAX_NEW_SOURCES, nende kasutus on agent, vihje või keelatud
    (adapterit saab märkida ainult omanik). Registri muudatus ei muuda lehte, seega allikat ei avata.
+7. ulekanded.toml (ülekanded): fail on korrektne (ulekanded.validate: mängu link on kanali saidil);
+   [[kanal]] nimekiri muutmata (uue kanali lisab omanik); olemasolevad [[liiga]] ja [[mang]] kirjed
+   muutmata, eemaldada võib ainult möödunud [[mang]] kirjeid; uusi [[liiga]] kuni MAX_NEW_LEAGUE_ROWS,
+   uusi [[mang]] kuni MAX_NEW_EVENTS, algus tänasest kuni MAX_BROADCAST_DAYS päeva, `lisatud` viimase
+   3 päeva sees, `markus` olemas. Iga uue [[mang]] lingi kohta: robots.txt lubab, leht vastab ja lehel
+   on mõlema võistkonna nimi (käändes sobib, nt „Viimsit“).
 
 Kasutus (GitHub Actions):  python scripts/automerge_check.py --head <sha> --out result.md
 Väljumiskood 0 = võib merge'ida, 1 = jääb omanikule. result.md läheb PR-i kommentaariks.
@@ -41,13 +47,16 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 import allikad  # noqa: E402
+import ulekanded  # noqa: E402
 from scrapers import config as cfgmod  # noqa: E402
 from scrapers import kasitsi  # noqa: E402
 from scrapers.geo import Geo  # noqa: E402
 from scrapers.model import TALLINN, Event  # noqa: E402
 from scrapers.venues import Venues  # noqa: E402
 
-ALLOWED_FILES = {"kasitsi.toml", "venues.toml", "config.toml", "allikad.toml"}
+ALLOWED_FILES = {"kasitsi.toml", "venues.toml", "config.toml", "allikad.toml", "ulekanded.toml"}
+MAX_NEW_LEAGUE_ROWS = 5     # ulekanded.toml [[liiga]]
+MAX_BROADCAST_DAYS = 21     # ulekanded.toml [[mang]]: ülekanne tänasest kuni nii mitu päeva ette
 MAX_NEW_SOURCES = 15
 SOURCE_EDITABLE = {"kontrollitud", "markus", "kuju", "robots", "kandidaat"}
 MAX_NEW_EVENTS = 10
@@ -158,6 +167,80 @@ def check_sources(base: str, head: str) -> tuple[list[str], bool]:
             problems.append(f"allikad.toml: uue allika {it.get('nimi')!r} kasutus peab olema agent, vihje "
                             "või keelatud (adapterit märgib omanik)")
     return problems, True
+
+
+# --- 7: ulekanded.toml ---------------------------------------------------------
+
+def check_broadcasts(base: str, head: str, today: date) -> tuple[list[str], list[dict], bool]:
+    """Tagastab (probleemid, uued [[mang]] kirjed, kas failis muutus midagi)."""
+    if base == head:
+        return [], [], False
+    try:
+        b = ulekanded.parse(base) if base else {}
+        h = ulekanded.parse(head)
+    except ValueError as exc:
+        return [f"ulekanded.toml ei ole korrektne TOML: {exc}"], [], True
+    problems = [f"ulekanded.toml: {e}" for e in ulekanded.validate(h)]
+    if b.get("kanal", []) != h.get("kanal", []):
+        problems.append("ulekanded.toml: [[kanal]] nimekiri muutus (uue kanali lisab või muudab omanik)")
+    for row in b.get("liiga", []):
+        if row not in h.get("liiga", []):
+            problems.append(f"ulekanded.toml: olemasolev [[liiga]] kirje muutus või kadus ({row.get('sport')})")
+    new_rows = [row for row in h.get("liiga", []) if row not in b.get("liiga", [])]
+    if len(new_rows) > MAX_NEW_LEAGUE_ROWS:
+        problems.append(f"ulekanded.toml: uusi [[liiga]] kirjeid {len(new_rows)} (lubatud kuni {MAX_NEW_LEAGUE_ROWS})")
+    for m in b.get("mang", []):
+        if m not in h.get("mang", []):
+            start = m.get("algus")
+            if not (isinstance(start, datetime) and start.date() < today):
+                problems.append(f"ulekanded.toml: olemasolev tulevane [[mang]] kirje muutus või kadus: {broadcast_title(m)}")
+    new = [m for m in h.get("mang", []) if m not in b.get("mang", [])]
+    if len(new) > MAX_NEW_EVENTS:
+        problems.append(f"ulekanded.toml: uusi [[mang]] kirjeid {len(new)} (lubatud kuni {MAX_NEW_EVENTS})")
+    for m in new:
+        t = broadcast_title(m)
+        start = m.get("algus")
+        if isinstance(start, datetime) and not today <= start.date() <= today + timedelta(days=MAX_BROADCAST_DAYS):
+            problems.append(f"{t}: algus {start:%d.%m.%Y} pole tänasest {MAX_BROADCAST_DAYS} päeva sees")
+        added = m.get("lisatud")
+        if not (isinstance(added, date) and today - timedelta(days=ADDED_SLACK) <= added <= today):
+            problems.append(f"{t}: lisatud = {added} pole viimase {ADDED_SLACK} päeva sees")
+        if not str(m.get("markus", "")).strip():
+            problems.append(f"{t}: puudub markus (kust teade pärit)")
+    return problems, new, True
+
+
+def broadcast_title(m: dict) -> str:
+    start = m.get("algus")
+    when = f"{start:%d.%m}" if isinstance(start, datetime) else "?"
+    name = f"{m.get('kodu', '?')} – {m.get('voorad')}" if m.get("voorad") else m.get("kodu", "?")
+    return f"ülekanne {when} {name} ({m.get('kanal', '?')})"
+
+
+def stem_found(text: str, name: str) -> bool:
+    """Kas mõni nime sisukas sõna (vähemalt 4 tähte) on lehel sõna algusena (käändes: „Viimsi“ → „Viimsit“)."""
+    words = [w for w in re.findall(r"\w+", _norm(name)) if len(w) >= 4]
+    return any(re.search(rf"(?<!\w){re.escape(w)}", text) for w in words)
+
+
+def verify_broadcast(m: dict, get, user_agent: str) -> list[str]:
+    url = str(m.get("url", ""))
+    parts = urlsplit(url)
+    status, robots = get(f"{parts.scheme}://{parts.netloc}/robots.txt")
+    if status == 200:
+        rp = urllib.robotparser.RobotFileParser()
+        rp.parse(robots.splitlines())
+        if not rp.can_fetch(user_agent, url):
+            return [f"robots.txt keelab lehe {url}"]
+    elif status not in (404, 410):
+        return [f"robots.txt-i ei saanud kontrollida ({status or robots})"]
+    status, page = get(url)
+    if status != 200:
+        return [f"ülekande leht ei vasta ({status or page}): {url}"]
+    text = _norm(page)
+    names = [n for n in (m.get("kodu", ""), m.get("voorad", "")) if n]
+    missing = [n for n in names if not stem_found(text, n)]
+    return [f"lehel pole nime {n!r}: {url}" for n in missing]
 
 
 # --- 4: kasitsi.toml -----------------------------------------------------------
@@ -307,13 +390,18 @@ def evaluate(changed: list[str], read_base, read_head, today: date, get, user_ag
     problems += kp
     sp, sources_changed = check_sources(read_base("allikad.toml"), read_head("allikad.toml"))
     problems += sp
-    if not new and not kp and not sources_changed:
-        problems.append("PR-is pole uusi kasitsi.toml kirjeid ega registri muudatusi (ainult saalid või "
-                        "eemaldused): vaata üle käsitsi")
+    bp, new_broadcasts, broadcasts_changed = check_broadcasts(read_base("ulekanded.toml"),
+                                                              read_head("ulekanded.toml"), today)
+    problems += bp
+    if not new and not kp and not sources_changed and not broadcasts_changed:
+        problems.append("PR-is pole uusi kasitsi.toml kirjeid ega registri või ülekannete muudatusi (ainult "
+                        "saalid või eemaldused): vaata üle käsitsi")
     if problems:
         return problems  # allikaid ei koormata, kui PR nagunii omanikule jääb
     for e in new:
         problems += [f"{kasitsi_title(e)}: {p}" for p in verify_source(e, get, user_agent)]
+    for m in new_broadcasts:
+        problems += [f"{broadcast_title(m)}: {p}" for p in verify_broadcast(m, get, user_agent)]
     return problems
 
 

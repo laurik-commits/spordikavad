@@ -591,8 +591,11 @@ def main(argv: list[str] | None = None) -> int:
         if fetcher is not None:
             # ülekandjate kavad (Delfi TV …) → mängude otseülekande lingid (data/ulekanded.json)
             streams, kava_report = ulekanded.fetch_streams(ul_cfg, fetcher)
-            new = ulekanded.match(events, streams)
-            refreshed = {r["channel"] for r in kava_report if r["status"] == "ok"}
+            new = ulekanded.match(events, streams + ulekanded.manual_streams(ul_cfg))
+            # tulevaste päevade seos kustub, kui see enam kavas / ulekanded.toml-is pole (kavata kanalid
+            # loetakse alati „värskeks“: nende allikas on ulekanded.toml ja mängude enda lingid)
+            refreshed = ({r["channel"] for r in kava_report if r["status"] == "ok"}
+                         | {k["nimi"] for k in ul_cfg.get("kanal", []) if not k.get("kava")})
             links = ulekanded.update_links(links, {**videos, **new}, today, refreshed)
             ulekanded.save_links(links)
             for r in kava_report:
