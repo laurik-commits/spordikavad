@@ -1,6 +1,8 @@
 # Uued alad: grupid, andmeallikad ja kuidas need tabelisse sobivad
 
-Analüüs 23.11.2026. Uusi alasid veel ei lisata. Ala valik on juba päises rippmenüü („Kõik alad ▾“), nii et alasid saab juurde panna ilma, et leht läheks segaseks.
+Analüüs 23.11.2026.
+
+**Tehtud 23.11.2026:** ürituse kuju (`end` = viimane päev, mitmepäevane üritus on igal oma päeval, kellaplokis „2./3. päev“) ning kaks ala: **kergejõustik** (`kergejoustik_ekjl`, ekjl.ee) ja **motosport** (`motosport_emf`, msport.ee iCal). Motospordi koht tuleb ürituse nimest (`config.toml` → `venue_hints`). Käsitsi lisatud kirjetel (`kasitsi.toml`) on samuti `end` väli ja liik „võistlus“. Järgmised kandidaadid on all. Ala valik on juba päises rippmenüü („Kõik alad ▾“), nii et alasid saab juurde panna ilma, et leht läheks segaseks.
 
 Iga allika robots.txt on kontrollitud. Kõik allpool nimetatud lehed lubavad lugemist. Erand on sport.ee (EOK), mis keelab ClaudeBoti, nii et otsinguagent seda lehte ei kasuta.
 

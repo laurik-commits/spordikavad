@@ -1,0 +1,3984 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//WordPress - MECv7.20.0//EN
+X-WR-CALNAME:Eesti Mootorrattaspordi Föderatsioon
+BEGIN:VEVENT
+UID:MEC-0f70862222775834f950a5ea2765bf12@msport.ee
+DTSTART:20261114T220000Z
+DTEND:20261115T220000Z
+SUMMARY:Supercross Tallinn 2026 “Avatud trennipäev”
+URL:https://msport.ee/events/supercross-tallinn-2026-avatud-trennipaev/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-fe1602024535d80f168c968b3a8123bd@msport.ee
+DTSTART:20261030T200000Z
+DTEND:20261031T200000Z
+SUMMARY:VALGA ENDURO – MAGNIFICO 2026
+URL:https://msport.ee/events/valga-enduro-magnifico-2026/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-353fc65c07d056d987b2aa1b9c475e6b@msport.ee
+DTSTART:20270313T200000Z
+DTEND:20270314T200000Z
+SUMMARY:Adrenalin Arena Cup IV etapp 26/27
+URL:https://msport.ee/events/adrenalin-arena-cup-iv-etapp-26-27/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-890219d02aed1156b2dbef10134a7b43@msport.ee
+DTSTART:20270213T200000Z
+DTEND:20270214T200000Z
+SUMMARY:Adrenalin Arena Cup III etapp 26/27
+URL:https://msport.ee/events/adrenalin-arena-cup-iii-etapp-26-27/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-7f9e5e4822b3c5dabdaab76f82a26bf7@msport.ee
+DTSTART:20270116T200000Z
+DTEND:20270117T200000Z
+SUMMARY:Adrenalin Arena Cup II etapp 26/27
+URL:https://msport.ee/events/adrenalin-arena-cup-ii-etapp-26-27/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-fb40bb14bda51d7562ae3694411ab9d8@msport.ee
+DTSTART:20261205T200000Z
+DTEND:20261206T200000Z
+SUMMARY:Adrenalin Arena Cup I etapp 26/27
+URL:https://msport.ee/events/adrenalin-arena-cup-i-etapp-26-27/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-dd06c0e97f40cb7671c9b9589df5d2d4@msport.ee
+DTSTART:20261106T120000Z
+DTEND:20261106T190000Z
+SUMMARY:Eesti Mootorrattaspordi Föderatsiooni hooajalõpu Gala 2026
+URL:https://msport.ee/events/eesti-mootorrattaspordi-foderatsiooni-hooajalopu-gala-2026/
+CATEGORIES:Hooaja lõpetamine
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-4cc7882a9d9b58e619e7ee998cd6f125@msport.ee
+DTSTART:20261017T180000Z
+DTEND:20261018T180000Z
+SUMMARY:KTL Klubisarja finaaletapp
+URL:https://msport.ee/events/ktl-klubisarja-finaaletapp/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-6cd7d46977e0c9537143cac14766b62e@msport.ee
+DTSTART:20261112T200000Z
+DTEND:20261114T200000Z
+SUMMARY:SuperCross Tallinn 2026
+URL:https://msport.ee/events/supercross-tallinn-2026-2/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-a9687c9ecbbd4f05a223b2028e1a2eba@msport.ee
+DTSTART:20260911T180000Z
+DTEND:20260913T180000Z
+SUMMARY:Enduro Magnifico 2026- LÜKKUB EDASI!
+URL:https://msport.ee/events/enduro-magnifico-2026/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-49ed31daf635a5990620595a6954cdeb@msport.ee
+DTSTART:20261016T180000Z
+DTEND:20261017T180000Z
+SUMMARY:Väike-Maarja Müüriku Sügiskross 2026
+URL:https://msport.ee/events/vaike-maarja-muuriku-sugiskross-2026/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-00b17786fb6df5d7ec218d65a9664e90@msport.ee
+DTSTART:20260825T020000Z
+DTEND:20260826T120000Z
+SUMMARY:EMF noortelaager vol 3  Maardus
+URL:https://msport.ee/events/emf-noortelaager-maardus/
+CATEGORIES:EMF üritus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-5df1b501763b1962437c5ad1ed895f37@msport.ee
+DTSTART:20260904T180000Z
+DTEND:20260905T180000Z
+SUMMARY:Rannu mäkketõus EMV III etapp 2026- TÜHISTATUD!
+URL:https://msport.ee/events/rannu-makketous-2026/
+CATEGORIES:Mäkketõus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-1ddec7b122d8e02f8477844eb6d7746c@msport.ee
+DTSTART:20260925T180000Z
+DTEND:20260926T180000Z
+SUMMARY:Sõreste mäkketõus EMV IV etapp 2026
+URL:https://msport.ee/events/soreste-makketous-emv-2026/
+CATEGORIES:Mäkketõus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-52e15511d36c939d7fec59e157f3a47c@msport.ee
+DTSTART:20260717T180000Z
+DTEND:20260718T180000Z
+SUMMARY:Tehvandi Mäkketõus 2026 EESS IV ja EMV II etapp
+URL:https://msport.ee/events/tehvandi-makketous-2026-eess-iv-ja-emv-ii-etapp/
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-8b8f1826f19a576e677e34cefcc45564@msport.ee
+DTSTART:20260616T180000Z
+DTEND:20260618T180000Z
+SUMMARY:EMF-i noortelaager Pärnu lennuvälja rajal
+URL:https://msport.ee/events/emf-i-noortelaager-parnu-lennuvalja-rajal/
+CATEGORIES:EMF üritus,Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-90e92965f760e0f057d43345b4f94297@msport.ee
+DTSTART:20260522T180000Z
+DTEND:20260523T180000Z
+SUMMARY:Sõreste mootorrataste mäkketõus 2026
+URL:https://msport.ee/events/soreste-mootorrataste-makketous-2026/
+CATEGORIES:Mäkketõus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-4f93124542eb144a5ce78484c2ca1bc7@msport.ee
+DTSTART:20260611T180000Z
+DTEND:20260614T180000Z
+SUMMARY:I Do Hard Enduro
+URL:https://msport.ee/events/i-do-hard-enduro/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-81fe5fe6109e9ebadda2c611d5eefccc@msport.ee
+DTSTART:20260611T180000Z
+DTEND:20260612T180000Z
+SUMMARY:Aidu kestvusenduro EMV/EKV 2026
+URL:https://msport.ee/events/aidu-kestvusenduro-emv-ekv-2026/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-9400569f026ea9e9d681ae0bf846edcf@msport.ee
+DTSTART:20260829T180000Z
+DTEND:20260830T180000Z
+SUMMARY:Saarte Karikas III etapp 2026 Kaarma krossirajal
+URL:https://msport.ee/events/saarte-karikas-iii-etapp-2026-kaarma-krossirajal/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-f895182198a719f741184553e9e26f5c@msport.ee
+DTSTART:20260626T180000Z
+DTEND:20260627T180000Z
+SUMMARY:Saarte Karikas II etapp 2026 Kaarma
+URL:https://msport.ee/events/saarte-karikas-ii-etapp-2026-kaarma-krossirajal/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-b13bc465b4769eabd50c02428f7c9d5d@msport.ee
+DTSTART:20260328T190000Z
+DTEND:20260329T180000Z
+SUMMARY:Kolmapäevakrossi 1. etapp
+URL:https://msport.ee/events/kolmapaevakrossi-1-etapp/
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-0695e75f359dae2925313b9af8ac807b@msport.ee
+DTSTART:20260410T180000Z
+DTEND:20260411T180000Z
+SUMMARY:Jaanikese kestvusenduro 2026
+URL:https://msport.ee/events/jaanikese-kestvusenduro-2026/
+CATEGORIES:Kestvuskross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-56ef60b2d42084199f8a50e853fcf182@msport.ee
+DTSTART:20260404T180000Z
+DTEND:20260405T180000Z
+SUMMARY:Saarte Karikas I etapp 2026 Viieristi
+URL:https://msport.ee/events/saarte-karikas-i-etapp-2026-viieristi/
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-05b9b8e639d3d6189cb9d5ac59f3334d@msport.ee
+DTSTART:20260404T180000Z
+DTEND:20260405T180000Z
+SUMMARY:Motokrossi korraldajate ja kohtunike koolitus 2026
+URL:https://msport.ee/events/motokrossi-korraldajate-ja-kohtunike-koolitus/
+CATEGORIES:Koolitus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-7e43c77a1896680dd60e7032375eceb2@msport.ee
+DTSTART:20260907T180000Z
+DTEND:20260908T180000Z
+SUMMARY:KTL klubi V etapp 2026
+URL:https://msport.ee/events/ktl-klubi-v-etapp-2026/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-bb2376333fc9a36deaea983885a70373@msport.ee
+DTSTART:20260810T180000Z
+DTEND:20260811T180000Z
+SUMMARY:KTL klubi IV etapp 2026
+URL:https://msport.ee/events/ktl-klubi-iv-etapp-2026/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-892f2ac38da5e4a2f0608e093192e0d4@msport.ee
+DTSTART:20260720T180000Z
+DTEND:20260721T180000Z
+SUMMARY:KTL klubi III etapp 2026
+URL:https://msport.ee/events/ktl-klubi-iii-etapp-2026/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-c9e2323d97c897b3e86a8a6a6bf74c31@msport.ee
+DTSTART:20260608T180000Z
+DTEND:20260609T180000Z
+SUMMARY:KTL klubi II etapp 2026
+URL:https://msport.ee/events/ktl-klubi-ii-etapp-2026/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-4feb252d9c874543e10e92d2cdac32ec@msport.ee
+DTSTART:20260411T180000Z
+DTEND:20260412T180000Z
+SUMMARY:KTL klubi I etapp 2026
+URL:https://msport.ee/events/ktl-klubi-i-etapp-2026/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-ab239c6583ea7422a53a30e597e95c51@msport.ee
+DTSTART:20260925T180000Z
+DTEND:20260927T180000Z
+SUMMARY:Enduro Balti MV 2026 LT- Uoginių Auto-Moto Sporto Trasa
+URL:https://msport.ee/events/rukla-enduro-balti-mv-2026-lt/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-0ccf11d5661ce71f92d4f6b671548903@msport.ee
+DTSTART:20260918T180000Z
+DTEND:20260919T180000Z
+SUMMARY:Võrtsjärve Enduro EMV/EKV 4.etapp 2026- JÄÄB ÄRA!
+URL:https://msport.ee/events/vortsjarve-enduro-emv-ekv-2026/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-6cab695c7472fee1e0d446e144e841e1@msport.ee
+DTSTART:20260821T180000Z
+DTEND:20260822T180000Z
+SUMMARY:Vidriži Enduro EMV/EKV 2026 (LV)
+URL:https://msport.ee/events/vidrizi-enduro-emv-ekv-2026-lv/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-3066e5be00c09667c171d54e34f4d143@msport.ee
+DTSTART:20260814T180000Z
+DTEND:20260815T180000Z
+SUMMARY:Enduro EMV/EKV Kohtla-Nõmme 2026
+URL:https://msport.ee/events/kohtla-nomme-enduro-emv-ekv-2026/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-7d68a8785c2994d32ab42627a4e09a8d@msport.ee
+DTSTART:20260717T180000Z
+DTEND:20260719T180000Z
+SUMMARY:Paikuse Enduro Balti MV, EMV/EKV 2026
+URL:https://msport.ee/events/paikuse-enduro-balti-mv-emv-ekv-2026/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-ceea092e1637b1d1f2ffb0db6520877b@msport.ee
+DTSTART:20260501T180000Z
+DTEND:20260503T180000Z
+SUMMARY:Madona Enduro Balti MV 2026 LV
+URL:https://msport.ee/events/enduro-balti-mv-2026-madona/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-965bf215eea604775f4118ad2bd98784@msport.ee
+DTSTART:20260911T180000Z
+DTEND:20260912T180000Z
+SUMMARY:Supermoto EMV IV etapp 2026 Aravete
+URL:https://msport.ee/events/supermoto-emv-iv-etapp-2026-aravete/
+CATEGORIES:Supermoto
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-ded2459dc37d8ab852c9163d6681f274@msport.ee
+DTSTART:20260731T180000Z
+DTEND:20260801T180000Z
+SUMMARY:Supermoto EMV III etapp 2026 Kulbilohu
+URL:https://msport.ee/events/supermoto-emv-iii-etapp-2026-kulbilohu/
+CATEGORIES:Supermoto
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-5983419307bf2fe198c75b9d86d250a1@msport.ee
+DTSTART:20260626T180000Z
+DTEND:20260627T180000Z
+SUMMARY:Supermoto EMV II etapp Tallinna Lauluväljak 2026
+URL:https://msport.ee/events/supermoto-emv-ii-etapp-tallinna-lauluvaljak-2026/
+CATEGORIES:Supermoto
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-a4de59d5ce8d21c198c3caf07293cb6f@msport.ee
+DTSTART:20260530T180000Z
+DTEND:20260531T180000Z
+SUMMARY:Supermoto EMV I etapp Madona (Läti) 2026
+URL:https://msport.ee/events/supermoto-emv-i-etapp-madona-lati-2026/
+CATEGORIES:Supermoto
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-57f41852a9f753182fe1fdbca9e8681e@msport.ee
+DTSTART:20260828T180000Z
+DTEND:20260830T180000Z
+SUMMARY:Kiirenduse EMV Finaalid 2026– Kiltsi lennuväli
+URL:https://msport.ee/events/kiirenduse-emv-finaalid-2026-kiltsi-lennuvali/
+CATEGORIES:Kiirendus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-54e6195d1bb10caad30bb1da40eefc8c@msport.ee
+DTSTART:20260814T180000Z
+DTEND:20260816T180000Z
+SUMMARY:Kiirenduse EMV IV etapp ja EKV V etapp 2026 – Kiltsi lennuväli
+URL:https://msport.ee/events/kiirenduse-emv-iv-etapp-ja-ekv-v-etapp-2026-kiltsi-lennuvali/
+CATEGORIES:Kiirendus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-4af878526eb592687a95a8f2a7506535@msport.ee
+DTSTART:20260724T180000Z
+DTEND:20260725T180000Z
+SUMMARY:Kiirenduse EMV III etapp ja EKV IV etapp 2026 Ülenurme lennuväli
+URL:https://msport.ee/events/kiirenduse-emv-iii-etapp-ja-ekv-iv-etapp-2026-ulenurme-lennuvali/
+CATEGORIES:Kiirendus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-970b311009bb885caa0736759194a45e@msport.ee
+DTSTART:20260703T180000Z
+DTEND:20260705T180000Z
+SUMMARY:Kiirenduse EMV II etapp ja EKV III etapp 2026 – Kiltsi lennuväli
+URL:https://msport.ee/events/kiirenduse-emv-ii-etapp-ja-ekv-iv-etapp-2026-kiltsi-lennuvali/
+CATEGORIES:Kiirendus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-914d04541a49c578b071eabd317b0c78@msport.ee
+DTSTART:20260619T180000Z
+DTEND:20260621T180000Z
+SUMMARY:Kiirenduse EMV I etapp ja EKV II etapp 2026– Kiltsi lennuväli
+URL:https://msport.ee/events/kiirenduse-emv-i-etapp-ja-ekv-ii-etapp-2026-kiltsi-lennuvali/
+CATEGORIES:Kiirendus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-e11634fde5fd8f25161faae3cefa8ed6@msport.ee
+DTSTART:20260605T180000Z
+DTEND:20260606T180000Z
+SUMMARY:TRF44 Tartu Drag Race EKV I 2026
+URL:https://msport.ee/events/trf44-tartu-drag-race-ekv-i-2026/
+CATEGORIES:Kiirendus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d8d596b693b55a72aacb65f50ea2e4a0@msport.ee
+DTSTART:20260904T180000Z
+DTEND:20260906T180000Z
+SUMMARY:Motoringraja EMV V 2026 Porche Ring BALTIC/EST
+URL:https://msport.ee/events/motoringraja-emv-v-2026-porche-ring-baltic-est/
+CATEGORIES:Motoringrada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-051066758adf313aa213caa59a35808b@msport.ee
+DTSTART:20260806T180000Z
+DTEND:20260808T180000Z
+SUMMARY:Motoringraja EMV IV 2026 Porche Ring Estonian GP EST
+URL:https://msport.ee/events/motoringraja-emv-iv-2026-porche-ring-estonian-gp-est/
+CATEGORIES:Motoringrada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d3aeddf2fecbfab2fa00ad35b50487b0@msport.ee
+DTSTART:20260626T180000Z
+DTEND:20260628T180000Z
+SUMMARY:Motoringraja EMV III 2026 Bikernieki Riga BALTIC/EST
+URL:https://msport.ee/events/motoringraja-emv-iii-2026-bikernieki-riga-baltic-est/
+CATEGORIES:Motoringrada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-47b44af0926264c64bf1ab0edc834a67@msport.ee
+DTSTART:20260611T180000Z
+DTEND:20260614T180000Z
+SUMMARY:Motoringraja EMV II 2026 Kymiring FIN/EST
+URL:https://msport.ee/events/motoringraja-emv-ii-2026-kymiring-fin-est/
+CATEGORIES:Motoringrada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-8e417e442b09616c63be03742b1af852@msport.ee
+DTSTART:20260522T180000Z
+DTEND:20260524T180000Z
+SUMMARY:Motoringraja EMV Porche Ring 2026 EST
+URL:https://msport.ee/events/motoringraja-emv-porche-ring-2026-est/
+CATEGORIES:Motoringrada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-e89aa6ca5fea26adf42dcb47b3340a54@msport.ee
+DTSTART:20261024T190000Z
+DTEND:20261025T200000Z
+SUMMARY:Kolmapäevakrossi finaal 2026 Pärnu
+URL:https://msport.ee/events/motokrossi-mitmevoistlus-2026-parnu/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-ded91fddf99770a4217176ac99a74b52@msport.ee
+DTSTART:20261023T180000Z
+DTEND:20261024T180000Z
+SUMMARY:Kose kestvuskross 5. etapp EMV/EKV 2026
+URL:https://msport.ee/events/kose-kestvuskross-5-etapp-emv-6-etapp-ekv-2026/
+CATEGORIES:Kestvuskross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-395ebaf8b8de9a33b79af361ac1544b0@msport.ee
+DTSTART:20261010T180000Z
+DTEND:20261011T180000Z
+SUMMARY:Paikuse kestvuskross 4. etapp EMV / EKV 2026
+URL:https://msport.ee/events/paikuse-kestvuskross-4-etapp-emv-5-etapp-ekv-2026/
+CATEGORIES:Kestvuskross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-2ed4baf235d9ebc085a8b8c617ed9689@msport.ee
+DTSTART:20260926T180000Z
+DTEND:20260927T180000Z
+SUMMARY:PMC Maardu Särtsukad VI etapp
+URL:https://msport.ee/events/pmc-maardu-sartsukad-vi-etapp/
+CATEGORIES:e-bike
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-dbf93db56e5a7a1823843d124b48f56c@msport.ee
+DTSTART:20261002T180000Z
+DTEND:20261003T180000Z
+SUMMARY:Supikross 2026 Linnamäe
+URL:https://msport.ee/events/supikross-2026-linnamae/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-3b91cc1905d5b205c745ec98a7a45677@msport.ee
+DTSTART:20260925T180000Z
+DTEND:20260926T180000Z
+SUMMARY:Saku Tankodroomi Motokross 2026
+URL:https://msport.ee/events/tanko-mx-liiga-6-etapp-65-85cc-2026/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-bd72e75f3cd0491a9c20bfffbf9c7700@msport.ee
+DTSTART:20260918T180000Z
+DTEND:20260920T180000Z
+SUMMARY:Arctic Sport MX Masters 5. etapp Maardu 2026
+URL:https://msport.ee/events/maardu-mx-masters-5-etapp/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-19986edeeb7c182308e5b0efcfb43334@msport.ee
+DTSTART:20260911T180000Z
+DTEND:20260912T180000Z
+SUMMARY:ENKV 8. etapp Palivere 2026
+URL:https://msport.ee/events/palivere-enkv-8-etapp-2026/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-2a643b1172474f574c45ff0d2d503109@msport.ee
+DTSTART:20260904T180000Z
+DTEND:20260906T180000Z
+SUMMARY:Arctic Sport MX Masters 4. etapp Lange 2026
+URL:https://msport.ee/events/lange-mx-masters-4-etapp/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-22e7baf3015565129e0d549f677e6108@msport.ee
+DTSTART:20260829T180000Z
+DTEND:20260830T180000Z
+SUMMARY:Coop Rapla Särtsukad V etapp
+URL:https://msport.ee/events/coop-rapla-sartsukad-v-etapp/
+CATEGORIES:e-bike
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-fd063e74ac649af4ae2a35589f0f003e@msport.ee
+DTSTART:20260828T180000Z
+DTEND:20260829T180000Z
+SUMMARY:MX Liiga 5. etapp (+ KV ja Q) Karksi-Nuia 2026
+URL:https://msport.ee/events/karksi-nuia-mx-liiga-5-etapp-kv-ja-q-2026/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-ece11d54f621374644411c71c2cda14c@msport.ee
+DTSTART:20260821T180000Z
+DTEND:20260822T180000Z
+SUMMARY:Räpina Isad ja pojad ENKV 7. etapp 2026
+URL:https://msport.ee/events/rapina-isad-ja-pojad-enkv-7-etapp-2026/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-fa66f3dde799869ea6592b897eeb8431@msport.ee
+DTSTART:20260819T180000Z
+DTEND:20260820T180000Z
+SUMMARY:Pärnu Kuningas Arctic Sport MX Masters 3. etapp 2026
+URL:https://msport.ee/events/parnu-kuningas-mx-masters-3-etapp/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-51a83df4640216228047e4174ecd59ea@msport.ee
+DTSTART:20260815T180000Z
+DTEND:20260816T180000Z
+SUMMARY:Arctic Sport MX Masters 3. etapp 2026 Pärnu
+URL:https://msport.ee/events/parnu-mx-masters-3-etapp/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-0fe5e1244e6eb377149921114076aac1@msport.ee
+DTSTART:20260808T180000Z
+DTEND:20260809T180000Z
+SUMMARY:ENKV 6. etapp Äksi / Äksi Cup III 2026
+URL:https://msport.ee/events/aksi-enkv-6-etapp-aksi-cup-iii-2026/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-fb0c9205fac8b545db9eabce336feacf@msport.ee
+DTSTART:20260801T180000Z
+DTEND:20260802T180000Z
+SUMMARY:MMM 2026 Tihemetsa
+URL:https://msport.ee/events/mmm-2026-tihemetsa/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-12498de40b3e58e0b42533dd52fc7a50@msport.ee
+DTSTART:20260731T180000Z
+DTEND:20260801T180000Z
+SUMMARY:ENKV 5. etapp Tihemetsa 2026
+URL:https://msport.ee/events/tihemetsa-enkv-5-etapp-2026/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-dec3ad8005f7d7a9967ed13ece294af1@msport.ee
+DTSTART:20260725T180000Z
+DTEND:20260726T180000Z
+SUMMARY:Alesti Särtsukad IV etapp
+URL:https://msport.ee/events/alesti-sartsukad-iv-etapp/
+CATEGORIES:e-bike
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-2162605c78d67ac4ff4eb84b4332f932@msport.ee
+DTSTART:20260724T180000Z
+DTEND:20260725T180000Z
+SUMMARY:IDA MX Liiga 4. etapp Narva (+ Naised, 50, 65cc ja 85cc) 2026
+URL:https://msport.ee/events/ida-mx-liiga-4-etapp-2026/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-0d90161d0755b7d3aa0320f582f771c2@msport.ee
+DTSTART:20260710T180000Z
+DTEND:20260712T180000Z
+SUMMARY:65, 85cc SEMI Finaal + Naised EMX  Pärnu
+URL:https://msport.ee/events/65-85cc-semi-finaal-naised-emx-parnu/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-4b38613db83c7649bf5206033419f6fc@msport.ee
+DTSTART:20260710T180000Z
+DTEND:20260711T180000Z
+SUMMARY:Pärnu Särtsukad III etapp
+URL:https://msport.ee/events/parnu-sartsukad-iii-etapp/
+CATEGORIES:e-bike
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-1e39ebc266d52b28421feaa97e342a96@msport.ee
+DTSTART:20260704T180000Z
+DTEND:20260705T180000Z
+SUMMARY:MX Liiga 3. etapp (+ KV ja Q) Pühajõe 2026
+URL:https://msport.ee/events/puhajoe-mx-liiga-3-etapp-kv-ja-q-2026/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-70cb58831997c422e0fc42164c4347c3@msport.ee
+DTSTART:20260703T180000Z
+DTEND:20260704T180000Z
+SUMMARY:ENKV 4. etapp Pühajõe 2026
+URL:https://msport.ee/events/puhajoe-enkv-4-etapp-2026/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-ca1447bb616ae8efc083827711fbb133@msport.ee
+DTSTART:20260627T180000Z
+DTEND:20260628T180000Z
+SUMMARY:Ida MX Särtsukad II etapp
+URL:https://msport.ee/events/ida-mx-sartsukad-ii-etapp/
+CATEGORIES:e-bike
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-01b15ffdafadb84d95b1d7c925ea05ed@msport.ee
+DTSTART:20260625T180000Z
+DTEND:20260627T180000Z
+SUMMARY:Akvile Kids motokrossi laager Langel
+URL:https://msport.ee/events/akvile-kids-motokrossi-laager-langel/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-5b5da9427491baa0234422fd26ec3e5c@msport.ee
+DTSTART:20260619T180000Z
+DTEND:20260621T180000Z
+SUMMARY:Arctic Sport MX Masters 2. etapp Tihemetsa 2026
+URL:https://msport.ee/events/tihemetsa-mx-masters-2-etapp/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-a061026d7041ee5dba53c3feecb815e9@msport.ee
+DTSTART:20260612T180000Z
+DTEND:20260614T180000Z
+SUMMARY:WSC – Külgkorvide + Quadide MM Karksi-Nuia
+URL:https://msport.ee/events/wsc-kulgkorvide-quadide-mm-karksi-nuia/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-17115e9f4d0b8f2f2d2746f910f70859@msport.ee
+DTSTART:20260530T180000Z
+DTEND:20260531T180000Z
+SUMMARY:MX Liiga 2. etapp (+ KV ja Q) Valga 2026
+URL:https://msport.ee/events/valga-mx-liiga-2-etapp-kv-ja-q-2026/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-4ccdc74c4f03af32056f70cf41e44d71@msport.ee
+DTSTART:20260529T180000Z
+DTEND:20260530T180000Z
+SUMMARY:ENKV 3. etapp Valga 2026
+URL:https://msport.ee/events/valga-enkv-3-etapp-2026/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-a288ec3e23b88a8fcc0a879a98641363@msport.ee
+DTSTART:20260523T180000Z
+DTEND:20260524T180000Z
+SUMMARY:Mõedaka kestvuskross 2. etapp EMV/ EKV 2026
+URL:https://msport.ee/events/moedaka-kestvuskross-3-etapp-emv-ekv-2026/
+CATEGORIES:Kestvuskross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-4a838a8a0001bbefbdf7ce7c8bae47c6@msport.ee
+DTSTART:20260522T180000Z
+DTEND:20260523T180000Z
+SUMMARY:Äksi Cup II 2026
+URL:https://msport.ee/events/aksi-cup-ii-2026/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-cb29249e05e2578a03c5dd7a30c53536@msport.ee
+DTSTART:20260516T180000Z
+DTEND:20260517T180000Z
+SUMMARY:Aruküla kross 2026
+URL:https://msport.ee/events/arukula-kross-2026/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-61e06d3ff616399e5fa75818505ec501@msport.ee
+DTSTART:20260515T180000Z
+DTEND:20260516T180000Z
+SUMMARY:Pro MX Särtsukad I etapp Aravete
+URL:https://msport.ee/events/pro-mx-sartsukad-i-etapp-aravete/
+CATEGORIES:e-bike
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-e9106cb4ee351f2d497edee46229bdb0@msport.ee
+DTSTART:20260508T180000Z
+DTEND:20260509T180000Z
+SUMMARY:ENKV 2. etapp Linnamäe 2026
+URL:https://msport.ee/events/linnamae-enkv-2-etapp-2026/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-50438dfb2679762b598b1e78648a0968@msport.ee
+DTSTART:20260430T180000Z
+DTEND:20260502T180000Z
+SUMMARY:MX Masters 1. etapp Põlva 2026
+URL:https://msport.ee/events/polva-mx-masters-1-etapp-2026/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-5f0b4e6dd2d781a7d8b19ccafdcea84b@msport.ee
+DTSTART:20260912T180000Z
+DTEND:20260913T180000Z
+SUMMARY:Kestvuskross 3.etapp EMV/EKV Illuka 2026
+URL:https://msport.ee/events/illuka-kestvuskross-2-etapp-emv-ekv-2026/
+CATEGORIES:Kestvuskross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-fdf6025bb38b21d7633b1d04e9fe3562@msport.ee
+DTSTART:20260424T180000Z
+DTEND:20260425T180000Z
+SUMMARY:ENKV 1. etapp Maardu 2026
+URL:https://msport.ee/events/maardu-enkv-1-etapp-2026/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d803d8fe93f2b5f12985a1495f552dfb@msport.ee
+DTSTART:20260418T180000Z
+DTEND:20260419T180000Z
+SUMMARY:Vilaski kestvuskross 1. etapp EMV/EKV 2026
+URL:https://msport.ee/events/vilaski-kestvuskross-1-etapp-emv-ekv-2026/
+CATEGORIES:Kestvuskross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-9326a55c0a85e4a223378aa19748cb28@msport.ee
+DTSTART:20260417T180000Z
+DTEND:20260418T180000Z
+SUMMARY:Mulgikross MX Liiga 1. etapp (+50, 65, 85cc) 2026
+URL:https://msport.ee/events/mulgikross-mx-liiga-1-etapp-50-65-85cc-2026/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-5bbf3023da61910f1ac862b0a7193e05@msport.ee
+DTSTART:20260403T180000Z
+DTEND:20260404T180000Z
+SUMMARY:Äksi Cup I etapp 2026
+URL:https://msport.ee/events/aksi-cup-i-etapp-2026/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-da5b72de21a4185e1fe3129e929c960c@msport.ee
+DTSTART:20260213T200000Z
+DTEND:20260214T200000Z
+SUMMARY:Sõbrapäeva Trial 2026
+URL:https://msport.ee/events/sobrapaeva-trial-2026/
+CATEGORIES:Trial
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-07fc3735af9b0f091868742b7e915347@msport.ee
+DTSTART:20260221T200000Z
+DTEND:20260222T200000Z
+SUMMARY:Tamsalu mootorkelkude SPRINT – ENDURO II 2026
+URL:https://msport.ee/events/tamsalu-mootorkelkude-sprint-enduro-ii-2026/
+CATEGORIES:Jäärada,Mootorkelk
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d6286ac505d4ff1cf00804e533e23b23@msport.ee
+DTSTART:20260904T180000Z
+DTEND:20260905T180000Z
+SUMMARY:Triali klubivõistlus 2026 Keila
+URL:https://msport.ee/events/triali-emv-6-etapp-2026-keila/
+CATEGORIES:Trial
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-44d39678169f09344d0511d4b5124702@msport.ee
+DTSTART:20260117T200000Z
+DTEND:20260118T200000Z
+SUMMARY:Tamsalu mootorkelgu SPRINT – ENDURO 2026
+URL:https://msport.ee/events/tamsalu-mootorkelgu-sprint-enduro-2026/
+CATEGORIES:Mootorkelk
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-bb9cfdb3d07a1e6b99f6479a4ac1a838@msport.ee
+DTSTART:20260223T200000Z
+DTEND:20260224T200000Z
+SUMMARY:Pärnu Jäärada III etapp 2026
+URL:https://msport.ee/events/parnu-jaarada-iv-etapp-2026/
+CATEGORIES:Jäärada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-18844162ca4b5c1867f92296663ac431@msport.ee
+DTSTART:20260213T200000Z
+DTEND:20260214T200000Z
+SUMMARY:Äksi jäärada II etapp 2026- Saadjärve
+URL:https://msport.ee/events/aksi-jaarada-iii-etapp-2026-saadjarve/
+CATEGORIES:Jäärada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-33c599cee08e20eba984bb5026b62f13@msport.ee
+DTSTART:20260206T200000Z
+DTEND:20260207T200000Z
+SUMMARY:Valga jäärada I etapp 2026 – Kaagjärve
+URL:https://msport.ee/events/valga-jaarada-ii-etapp-2026-koosa/
+CATEGORIES:Jäärada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-8e81a0fbc90a1b0fd5353874048f85c6@msport.ee
+DTSTART:20260130T200000Z
+DTEND:20260131T200000Z
+SUMMARY:Äksi jäärada I etapp 2026 -Saadjärve – JÄÄB ÄRA!
+URL:https://msport.ee/events/aksi-jaarada-i-etapp-2026-saadjarve/
+CATEGORIES:Jäärada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-cff9070eb8646bee25598b993b1c5d9d@msport.ee
+DTSTART:20260307T200000Z
+DTEND:20260308T200000Z
+SUMMARY:Adrenalin Arena Cup IV etapp 25/26
+URL:https://msport.ee/events/adrenalin-arena-cup-iv-etapp-25-26/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-06a0267c0f000c50570f595e90f586c0@msport.ee
+DTSTART:20260208T040000Z
+DTEND:20260208T140000Z
+SUMMARY:Adrenalin Arena Cup III etapp 25/26
+URL:https://msport.ee/events/adrenalin-arena-cup-iii-etapp-25-26/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-e6b31d31455f4b00a83e201ccdbec10f@msport.ee
+DTSTART:20260110T200000Z
+DTEND:20260111T200000Z
+SUMMARY:Adrenalin Arena Cup II etapp 25/26
+URL:https://msport.ee/events/adrenalin-arena-cup-ii-etapp-25-26/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-ebebaa6c2ccf66db8ddc86e70f4e5702@msport.ee
+DTSTART:20251213T200000Z
+DTEND:20251214T200000Z
+SUMMARY:Adrenalin Arena Cup I etapp 25/26
+URL:https://msport.ee/events/adrenalin-arena-cup-i-etapp-25-26/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-3f0414a4568387380a09849004415872@msport.ee
+DTSTART:20251122T130000Z
+DTEND:20251122T180000Z
+SUMMARY:Eesti Motosport Gala 2025 – hooaja pidulik finaalõhtu
+URL:https://msport.ee/events/eesti-motosport-gala-2025-hooaja-pidulik-finaalohtu/
+CATEGORIES:EMF üritus,Hooaja lõpetamine
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-b7ad46ebbd5306faeb1f78b637fb3bb3@msport.ee
+DTSTART:20251129T040000Z
+DTEND:20251130T140000Z
+SUMMARY:EKR3 Abitreenerite erialane tasemekoolitus
+URL:https://msport.ee/events/ekr3-abitreenerite-erialane-tasemekoolitus/
+CATEGORIES:Koolitus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-a2afd1e89d63ff337a215240efeb1a86@msport.ee
+DTSTART:20251113T200000Z
+DTEND:20251115T200000Z
+SUMMARY:SuperCross Tallinn, Unibet Arenal
+URL:https://msport.ee/events/supercross-tallinn-unibet-arenal/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-10c6ae5a3d8e84d809a61433126ff475@msport.ee
+DTSTART:20251031T200000Z
+DTEND:20251101T200000Z
+SUMMARY:Äksi kestvussõit 2025
+URL:https://msport.ee/events/aksi-kestvussoit-2/
+CATEGORIES:Kestvuskross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-51cfa6fb4fe0deb411b44db902bc8d41@msport.ee
+DTSTART:20250801T180000Z
+DTEND:20250802T180000Z
+SUMMARY:Sidecar Baltic Cup 2025 III etapp ja MX klassi Kose lahtised meistrivõistlused
+URL:https://msport.ee/events/sidecar-baltic-cup-2025-iii-etapp-ja-mx-klassi-kose-lahtised-meistrivoistlused/
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-903a30161423d13f477f90b3fb74698f@msport.ee
+DTSTART:20250905T180000Z
+DTEND:20250907T180000Z
+SUMMARY:Ringraja EMV 5. etapp Porche Ring, Pärnus
+URL:https://msport.ee/events/ringraja-emv-5-etapp-porche-ring-parnus/
+CATEGORIES:Motoringrada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-54d4ecce0366c24a162737e173b9dc7b@msport.ee
+DTSTART:20250807T180000Z
+DTEND:20250810T180000Z
+SUMMARY:Ringraja EMV 4. etapp Porche Ring, Pärnus
+URL:https://msport.ee/events/ringraja-emv-4-etapp-porche-ring-parnus/
+CATEGORIES:Motoringrada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-c5f93c5135ac1b5e78594cf239eaf679@msport.ee
+DTSTART:20250725T180000Z
+DTEND:20250727T180000Z
+SUMMARY:Ringraja EMV 3. etapp Alastaros, Soomes
+URL:https://msport.ee/events/ringraja-emv-3-etapp-alastaros-soomes/
+CATEGORIES:Motoringrada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d1cf28874583817c3e31f2398998d16f@msport.ee
+DTSTART:20250711T180000Z
+DTEND:20250713T180000Z
+SUMMARY:Ringraja EMV 2.etapp Bikernikis, Lätis
+URL:https://msport.ee/events/ringraja-emv-2-etapp-bikernikis-latis/
+CATEGORIES:Motoringrada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-4c6c52079199fd9b60f97766020f4752@msport.ee
+DTSTART:20250712T020000Z
+DTEND:20250713T120000Z
+SUMMARY:Mototriali EMV ja KV I ja II etapp Vasalemmas
+URL:https://msport.ee/events/mototriali-emv-ja-kv-i-ja-ii-etapp-vasalemmas/
+CATEGORIES:Trial
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-7d38306381364e51dfe38a81cb8c0f9e@msport.ee
+DTSTART:20250815T180000Z
+DTEND:20250816T180000Z
+SUMMARY:Domentor Day 2025
+URL:https://msport.ee/events/domentor-day-2025/
+CATEGORIES:Kiirendus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-f3f32c9f539f25f013cbbd35e61df5e8@msport.ee
+DTSTART:20250606T180000Z
+DTEND:20250608T180000Z
+SUMMARY:BALTI, EESTI, LÄTI JA LEEDU MOOTORRATASTE RINGRAJASÕIDU MEISTRIVÕISTLUSED
+URL:https://msport.ee/events/balti-eesti-lati-ja-leedu-mootorrataste-ringrajasoidu-meistrivoistlused/
+CATEGORIES:Motoringrada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-8375c711257d1ba94767e53f81aa6295@msport.ee
+DTSTART:20250603T180000Z
+DTEND:20250604T180000Z
+SUMMARY:Kolmapäevakrossi 5.etapp Pärnus
+URL:https://msport.ee/events/kolmapaevakrossi-5-etapp-parnus/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-205e0c00c25e80b9d77f1b6819e95e8c@msport.ee
+DTSTART:20250527T180000Z
+DTEND:20250528T180000Z
+SUMMARY:Kolmapäevakrossi 4. etapp  Pärnus
+URL:https://msport.ee/events/kolmapaevakrossi-4-etapp-parnus/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-56550198a7747a40fcc33e2bccd7bc06@msport.ee
+DTSTART:20250522T030000Z
+DTEND:20250523T120000Z
+SUMMARY:KTM Orange Week Tartu
+URL:https://msport.ee/events/ktm-orange-week-tartu/
+CATEGORIES:EMF üritus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-0f60975101bb3c1db393a23ef71b25bd@msport.ee
+DTSTART:20250519T030000Z
+DTEND:20250520T130000Z
+SUMMARY:KTM Orange Week Tallinn
+URL:https://msport.ee/events/ktm-orange-week-tallinn/
+CATEGORIES:EMF üritus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-47c5d94c92b40ecbd5741d76aa1fe3c6@msport.ee
+DTSTART:20251010T180000Z
+DTEND:20251011T180000Z
+SUMMARY:EHKK- Saku Staadionikross 2025
+URL:https://msport.ee/events/ehkk-saku-staadionikross-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-7ba6dbbd693cc53443d8e4387324847a@msport.ee
+DTSTART:20250912T180000Z
+DTEND:20250913T180000Z
+SUMMARY:EHKK- Pikametsa MXPark
+URL:https://msport.ee/events/ehkk-pikametsa-mxpark/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-104b52f005e1ac18e3c3a40e7ffd13d9@msport.ee
+DTSTART:20250802T180000Z
+DTEND:20250803T180000Z
+SUMMARY:EHKK- Türi, Kihli Motokeskus
+URL:https://msport.ee/events/ehkk-turi-kihli-motokeskus/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-8db7b91fbb19e28a715e8ff4c5c9812a@msport.ee
+DTSTART:20250606T180000Z
+DTEND:20250607T180000Z
+SUMMARY:EHKK- Tihemetsa, Lauri krossirada
+URL:https://msport.ee/events/ehkk-aravete-krossirada-2/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-5bf30f5cbb224f91a7cef781f6d6a61f@msport.ee
+DTSTART:20250509T180000Z
+DTEND:20250510T180000Z
+SUMMARY:EHKK Eesti Liivakuningas 2025- Saku
+URL:https://msport.ee/events/ehkk-eesti-liivakuningas-2025-saku/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-122d32b36b2fdf0b65bc5c3d09c5dacd@msport.ee
+DTSTART:20250418T180000Z
+DTEND:20250419T180000Z
+SUMMARY:EHKK 1. etapp Mulgikross
+URL:https://msport.ee/events/ehkk-1-etapp-mulgikross/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-508fd2412e738c800e450c43df3890e0@msport.ee
+DTSTART:20250430T060000Z
+DTEND:20250430T130000Z
+SUMMARY:Suur Motopäev – Kose-Risti krossirada
+URL:https://msport.ee/events/suur-motopaev-kose-risti-krossirada/
+CATEGORIES:EMF üritus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-7eff23c79de27780454eae220bda55f2@msport.ee
+DTSTART:20250809T180000Z
+DTEND:20250810T180000Z
+SUMMARY:Supermoto EMV 4. etapp 2025 ARAVETE
+URL:https://msport.ee/events/supermoto-emv-4-etapp-2025-aravete/
+CATEGORIES:Supermoto
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d00dfbe1a7a4801d8e257485b8995a1b@msport.ee
+DTSTART:20250705T180000Z
+DTEND:20250706T180000Z
+SUMMARY:Supermoto EMV 3. etapp 2025 RAPLA
+URL:https://msport.ee/events/supermoto-emv-3-etapp-2025-rapla/
+CATEGORIES:Supermoto
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-c7b91ffc51356f0d5762b5ded01380d2@msport.ee
+DTSTART:20250607T180000Z
+DTEND:20250608T180000Z
+SUMMARY:Supermoto EMV 2. etapp 2025 RAASSILLA
+URL:https://msport.ee/events/supermoto-emv-2-etapp-2025-raassilla/
+CATEGORIES:Supermoto
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-23bd1211b261f7f5e92c590f2d584a94@msport.ee
+DTSTART:20250517T180000Z
+DTEND:20250518T180000Z
+SUMMARY:Supermoto EST+LAT MV 1. etapp 2025 KULBILOHU
+URL:https://msport.ee/events/supermoto-emv-1-etapp-2025-kulbilohu/
+CATEGORIES:Supermoto
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-735aea0c7dc6849952e02a82fdd79c4b@msport.ee
+DTSTART:20251024T180000Z
+DTEND:20251025T180000Z
+SUMMARY:Motokrossi Mitmevõistlus / Krossi finaal 2025 Potsepa
+URL:https://msport.ee/events/motokrossi-mitmevoistlus-krossi-finaal-2025-potsepa/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-a364c7018cb68a4529bee7937a9dadd4@msport.ee
+DTSTART:20251017T180000Z
+DTEND:20251018T180000Z
+SUMMARY:Kestvuskrossi EMV / EKV 5. etapp KOSE 2025
+URL:https://msport.ee/events/kestvuskrossi-emv-ekv-5-etapp-kose-2025/
+CATEGORIES:Kestvuskross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-8eedc69ebddb09f5d5ed42c56e5044ee@msport.ee
+DTSTART:20251004T180000Z
+DTEND:20251005T180000Z
+SUMMARY:Särtsukad Saku 2025
+URL:https://msport.ee/events/sartsukad-saku-2025/
+CATEGORIES:e-bike
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-ec4fba21d9c589a6158d9cd74915b41c@msport.ee
+DTSTART:20251003T180000Z
+DTEND:20251004T180000Z
+SUMMARY:Kestvuskrossi EMV / EKV 4. etapp PAIKUSE 2025
+URL:https://msport.ee/events/kestvuskrossi-emv-ekv-4-etapp-paikuse-2025/
+CATEGORIES:Kestvuskross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d6d0330251bbe6f64a5bb18ff3123fe8@msport.ee
+DTSTART:20250926T180000Z
+DTEND:20250927T180000Z
+SUMMARY:MX Liiga 7. etapp SAKU-TANKODROOM 2025
+URL:https://msport.ee/events/mx-liiga-8-etapp-soolod-tankodroom-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-eaddd2798a527ed8f3180f545da38aa2@msport.ee
+DTSTART:20250920T180000Z
+DTEND:20250921T180000Z
+SUMMARY:Supikross LINNAMÄE 2025 – JÄÄB ÄRA!
+URL:https://msport.ee/events/supikross-linnamae-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-65884ac01c9f3484e5795e6ecce44ca8@msport.ee
+DTSTART:20250920T180000Z
+DTEND:20250921T180000Z
+SUMMARY:Särtsukad Coop Rapla jooks 2025
+URL:https://msport.ee/events/sartsukad-coop-rapla-jooks-2025/
+CATEGORIES:e-bike
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-bea233873d6a9a51fe056bf02f55237d@msport.ee
+DTSTART:20250919T180000Z
+DTEND:20250920T180000Z
+SUMMARY:ENKV 8. etapp MAARDU 2025
+URL:https://msport.ee/events/enkv-8-etapp-maardu-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-aca4ca5738e7398c57b21512b2062338@msport.ee
+DTSTART:20250913T180000Z
+DTEND:20250914T180000Z
+SUMMARY:Kestvuskrossi EMV / EKV 3. etapp ILLUKA 2025
+URL:https://msport.ee/events/kestvuskrossi-emv-ekv-3-etapp-illuka-2025/
+CATEGORIES:Kestvuskross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-56ef66a8b4837975e1daf876e093e8e9@msport.ee
+DTSTART:20250906T180000Z
+DTEND:20250907T180000Z
+SUMMARY:Balti 3. etapp (85cc, 125cc, MX2, MX1) Mickūnai (Leedu)
+URL:https://msport.ee/events/balti-3-etapp-85cc-125cc-mx2-mx1-mickunai-leedu/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-72be649c1819f35a71eab2fcc7b995f6@msport.ee
+DTSTART:20250905T180000Z
+DTEND:20250907T180000Z
+SUMMARY:ARTIC SPORTS MX MASTERS EMV 5. etapp LANGE 2025
+URL:https://msport.ee/events/artic-sports-mx-masters-emv-5-etapp-lange-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-a60c4240089ccc4c056d8b6128d1b1ec@msport.ee
+DTSTART:20250829T180000Z
+DTEND:20250830T180000Z
+SUMMARY:ENKV 7. etapp LINNAMÄE 2025
+URL:https://msport.ee/events/enkv-7-etapp-linnamae-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-c42e09feedc7a7f8e234f0fb6c44cf47@msport.ee
+DTSTART:20250823T180000Z
+DTEND:20250824T180000Z
+SUMMARY:Balti 2. etapp (85cc, 125cc, MX2, MX1) Kandava
+URL:https://msport.ee/events/balti-2-etapp-85cc-125cc-mx2-mx1-kandava/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-7ed2b9c78930f9343e0265ecefc2d468@msport.ee
+DTSTART:20250823T180000Z
+DTEND:20250824T180000Z
+SUMMARY:ARTIC SPORTS MX MASTERS EMV 4. etapp PÄRNU 2025
+URL:https://msport.ee/events/artic-sports-mx-masters-emv-4-etapp-parnu-2025-2/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-0cc3b07491d293a3c67c6ebbb2afff74@msport.ee
+DTSTART:20250819T180000Z
+DTEND:20250820T180000Z
+SUMMARY:ARTIC SPORTS MX MASTERS EMV 4. etapp PÄRNU 2025 (soolod)
+URL:https://msport.ee/events/artic-sports-mx-masters-emv-4-etapp-parnu-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-f35a2867780cc8eb9647adb854ae8427@msport.ee
+DTSTART:20250816T180000Z
+DTEND:20250817T180000Z
+SUMMARY:Särtsukad Kohila Alesti 2025
+URL:https://msport.ee/events/sartsukad-kohila-alesti-2025/
+CATEGORIES:e-bike
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-35b978f2dba9bae1335f1a42d54d5324@msport.ee
+DTSTART:20250816T180000Z
+DTEND:20250817T180000Z
+SUMMARY:Mehaanikute Mitteametlikud Maailmameistrivõistlused TIHEMETSA 2025
+URL:https://msport.ee/events/mehaanikute-mitteametlikud-maailmameistrivoistlused-tihemetsa-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-4b76f3ca80a0dbf22a46e06f3d37c550@msport.ee
+DTSTART:20250815T180000Z
+DTEND:20250816T180000Z
+SUMMARY:MMM õhtune kestvussõit TIHEMETSA 2025
+URL:https://msport.ee/events/mmm-ohtune-kestvussoit-tihemetsa-2025/
+CATEGORIES:Kestvuskross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-a0d1d9c75227141922aba0ddcbac0e25@msport.ee
+DTSTART:20250815T180000Z
+DTEND:20250816T180000Z
+SUMMARY:ENKV 6. etapp TIHEMETSA 2025
+URL:https://msport.ee/events/enkv-6-etapp-tihemetsa-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-f335d3991290ba98863b62bb3aefe03c@msport.ee
+DTSTART:20250808T180000Z
+DTEND:20250809T180000Z
+SUMMARY:ENKV 5.etapp/ ISAD & POJAD RÄPINA 2025
+URL:https://msport.ee/events/enkv-5-etapp-isad-pojad-rapina-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-32dff57b274395084bb15e289be5392e@msport.ee
+DTSTART:20250801T180000Z
+DTEND:20250802T180000Z
+SUMMARY:Äksi CUP 3.etapp Äksi 2025
+URL:https://msport.ee/events/aksi-cup-3-etapp-aksi-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-01df1c6210fae6449768ada46f261e60@msport.ee
+DTSTART:20250726T180000Z
+DTEND:20250727T180000Z
+SUMMARY:MX Liiga 6. etapp (KV+Q) TOILA 2025
+URL:https://msport.ee/events/mx-liiga-6-etapp-kvq-toila-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-6a98c219f845e44024fe67e8ad8130ed@msport.ee
+DTSTART:20250725T180000Z
+DTEND:20250726T180000Z
+SUMMARY:ENKV 4.etapp TOILA 2025
+URL:https://msport.ee/events/enkv-4-etapp-toila-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-7e81c1f9e81708d175b4ce69f6f201f4@msport.ee
+DTSTART:20250718T180000Z
+DTEND:20250719T180000Z
+SUMMARY:Saarte karikas 3.etapp Kaarma 2025
+URL:https://msport.ee/events/saarte-karikas-3-etapp-kaarma-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-500ef2f0f4ecfe7330f2cb15da46a390@msport.ee
+DTSTART:20250718T180000Z
+DTEND:20250719T180000Z
+SUMMARY:Särtsukad WRC Rally Estonia 2025
+URL:https://msport.ee/events/sartsukad-wrc-rally-estonia-2025/
+CATEGORIES:e-bike
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-7741c7cce2860a9e0e9e1697f500a35b@msport.ee
+DTSTART:20250712T180000Z
+DTEND:20250713T180000Z
+SUMMARY:ENKV 3. ja Äksi Cup 2.etapp ÄKSI 2025
+URL:https://msport.ee/events/enkv-3-ja-aksi-cup-2-etapp-aksi-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-2d26f67d655dddc022def5a4172fa608@msport.ee
+DTSTART:20250711T180000Z
+DTEND:20250712T180000Z
+SUMMARY:MX Liiga 5. etapp (+KV) TÜRI 2025
+URL:https://msport.ee/events/mx-liiga-5-etapp-kv-turi-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-4b1884ff2485f6a56c2c6dc6831c6751@msport.ee
+DTSTART:20250627T180000Z
+DTEND:20250629T180000Z
+SUMMARY:ARCTIC SPORT MX MASTERS EMV 3. etapp TIHEMETSA 2025
+URL:https://msport.ee/events/artic-sports-mx-masters-emv-3-etapp-tihemetsa-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-557aedb58d88394af5bbd44fe45935e3@msport.ee
+DTSTART:20250621T180000Z
+DTEND:20250622T180000Z
+SUMMARY:Jaanikross HIIUMAA 2025
+URL:https://msport.ee/events/jaanikross-hiiumaa-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-06972ca0d44c8109c598dfecf6736dab@msport.ee
+DTSTART:20250620T180000Z
+DTEND:20250621T180000Z
+SUMMARY:MX Liiga 4. etapp (KV+Q) LINNAMÄE 2025
+URL:https://msport.ee/events/mx-liiga-4-etapp-kvq-linnamae-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-be25dd2f01c076e664fe8f9d979ef746@msport.ee
+DTSTART:20250613T180000Z
+DTEND:20250615T180000Z
+SUMMARY:EMX 65, 85cc, Naised EMX ja MX Hobi, MX Open PÄRNU 2025
+URL:https://msport.ee/events/65-85cc-naised-emx-ja-50cc-emv-parnu-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-b72d57b412752f5c72c014ff446c57c3@msport.ee
+DTSTART:20250614T180000Z
+DTEND:20250615T180000Z
+SUMMARY:Särtsukad Pärnu EMX 2025
+URL:https://msport.ee/events/sartsukad-parnu-emx-2025/
+CATEGORIES:e-bike
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-3a5f8049f548cd9cf6098cad521f57cc@msport.ee
+DTSTART:20250530T180000Z
+DTEND:20250601T180000Z
+SUMMARY:ARCTIC SPORT MX MASTERS MX / BALTI EMV 2. ja Balti 1. etapp KARKSI-NUIA 2025
+URL:https://msport.ee/events/mx-balti-emv-2-ja-balti-1-etapp-karksi-nuia-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-e592f67e3c0527f0400e22f09abfd8e0@msport.ee
+DTSTART:20250524T180000Z
+DTEND:20250525T180000Z
+SUMMARY:ENKV 2.etapp HAANJA 2025
+URL:https://msport.ee/events/enkv-2-etapp-haanja-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-368baba004ed7d3e2fff11933c94b1d0@msport.ee
+DTSTART:20250523T180000Z
+DTEND:20250524T180000Z
+SUMMARY:MX Liiga 3. etapp (KV+Q) VALGA 2025
+URL:https://msport.ee/events/mx-liiga-3-etapp-kvq-valga-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-b19ee115642dc1199099dd23e95e1233@msport.ee
+DTSTART:20250517T180000Z
+DTEND:20250518T180000Z
+SUMMARY:Saarte karikas 2.etapp NURSTE 2025
+URL:https://msport.ee/events/saarte-karikas-2-etapp-nurste-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-2365c932289caa7b4fc3763215127049@msport.ee
+DTSTART:20250516T180000Z
+DTEND:20250517T180000Z
+SUMMARY:Kestvuskrossi EMV / EKV 2. etapp MÕEDAKA 2025
+URL:https://msport.ee/events/kestvuskrossi-emv-ekv-2-etapp-moedaka-2025/
+CATEGORIES:Kestvuskross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-a508de2a3b8e29cf6d7929970a994c32@msport.ee
+DTSTART:20250510T180000Z
+DTEND:20250511T180000Z
+SUMMARY:Aruküla kross 2025
+URL:https://msport.ee/events/arukula-kross-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d76997c686e8700bbd0fcac7b8fc3c0b@msport.ee
+DTSTART:20250509T180000Z
+DTEND:20250510T180000Z
+SUMMARY:Särtsukad Saue 2025
+URL:https://msport.ee/events/sartsukad-saue-2025/
+CATEGORIES:e-bike
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-ea923b4a81b72350e5ca2050d040a963@msport.ee
+DTSTART:20250502T180000Z
+DTEND:20250504T180000Z
+SUMMARY:ARCTIC SPORTS MX MASTERS EMV 1. etapp KIVIÕLI 2025
+URL:https://msport.ee/events/emv-1-etapp-kivioli-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-cd4e698d40cac7b9675a6ea1dd8e793d@msport.ee
+DTSTART:20250430T180000Z
+DTEND:20250501T180000Z
+SUMMARY:Põlva Kevad MX Liiga 2. etapp (KV+Q) 2025
+URL:https://msport.ee/events/polva-kevad-mx-liiga-2-etapp-kvq-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-fd69eab1634eeea6368acebbe5d5cb0d@msport.ee
+DTSTART:20250426T180000Z
+DTEND:20250427T180000Z
+SUMMARY:Saarte Karikas 2025 1. etapp TUMALA
+URL:https://msport.ee/events/saarte-karikas-2025-1-etapp-tumala/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-8b644a6a1ee657dca36d868a7f331891@msport.ee
+DTSTART:20250426T180000Z
+DTEND:20250427T180000Z
+SUMMARY:Särtsukate 1. etapp 2025- Aravere
+URL:https://msport.ee/events/sartsukate-1-etapp-2025-aravere/
+CATEGORIES:e-bike
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-60c4f87fd53ddc56775c9a7bd7db5f14@msport.ee
+DTSTART:20250405T180000Z
+DTEND:20250406T180000Z
+SUMMARY:Motoringraja kohtunike koolitus
+URL:https://msport.ee/events/6-aprillil-toimub-motoringraja-kohtunike-koolitus/
+CATEGORIES:Koolitus
+LOCATION:Audru Ringrada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-b6470a2395d26f0bd33f3f4277fe2dfd@msport.ee
+DTSTART:20250425T180000Z
+DTEND:20250426T180000Z
+SUMMARY:MX Liiga 1. etapp (KV+Q) Maardu 2025
+URL:https://msport.ee/events/mx-liiga-1-etapp-kvq-maardu2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d852f02530b40d5450aa89944caaf0ba@msport.ee
+DTSTART:20250417T180000Z
+DTEND:20250418T180000Z
+SUMMARY:ENKV 1.etapp Äksi 2025
+URL:https://msport.ee/events/enkv-1-etapp-aksi/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-f29bbc33f73d86abe8c813cadc4242c9@msport.ee
+DTSTART:20250411T180000Z
+DTEND:20250412T180000Z
+SUMMARY:Kestvuskrossi EMV / EKV 1. etapp Vilaski 2025
+URL:https://msport.ee/events/kestvuskrossi-emv-ekv-1-etapp-vilaski-2/
+CATEGORIES:Kestvuskross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-1b6d5806945c629c43c991c20ffd58f6@msport.ee
+DTSTART:20251018T180000Z
+DTEND:20251019T180000Z
+SUMMARY:KTL klubisarja V etapp “Palivere kestvus”
+URL:https://msport.ee/events/ktl-klubisarja-v-etapp-palivere-kestvus/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-44a70a95bbccf7e0221a0096a3e6db06@msport.ee
+DTSTART:20250721T180000Z
+DTEND:20250722T180000Z
+SUMMARY:KTL klubisarja IV etapp Linnamäe
+URL:https://msport.ee/events/ktl-klubisarja-iv-etapp-linnamae/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-8affd0932bb3e23ab7bdc9e4ca387e64@msport.ee
+DTSTART:20250616T180000Z
+DTEND:20250617T180000Z
+SUMMARY:KTL klubisarja III etapp
+URL:https://msport.ee/events/ktl-klubisarja-iii-etapp-turi/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-b08a28097014ec6c1cfa29e1febf4219@msport.ee
+DTSTART:20250519T180000Z
+DTEND:20250520T180000Z
+SUMMARY:KTL klubisarja II etapp Palivere
+URL:https://msport.ee/events/ktl-klubisarja-ii-etapp-palivere/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-3866c16d8f1ca349e7937d7dc89e93c0@msport.ee
+DTSTART:20250412T180000Z
+DTEND:20250413T180000Z
+SUMMARY:KTL klubisarja I etapp Dubai
+URL:https://msport.ee/events/ktl-klubisarja-i-etapp-dubai/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-914491cdecdebfda81e0918339ab1b97@msport.ee
+DTSTART:20251212T200000Z
+DTEND:20251213T200000Z
+SUMMARY:KOHTLA-NÕMME 2025 HOOAJALÕPU KESTVUSSÕIT
+URL:https://msport.ee/events/kohtla-nomme-kestvusenduro-treening-2025/
+CATEGORIES:Enduro,Kestvuskross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-7c08e6daf1528015b8f745c46614f271@msport.ee
+DTSTART:20251031T200000Z
+DTEND:20251101T200000Z
+SUMMARY:Hard Enduro Estonia 2025
+URL:https://msport.ee/events/hard-enduro-estonia-2025/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-191c76cc43048885e7e6dc7361db191c@msport.ee
+DTSTART:20250912T180000Z
+DTEND:20250913T180000Z
+SUMMARY:Enduro Magnifico 2025
+URL:https://msport.ee/events/enduro-magnifico-2025/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-b8fa7a7278bba6c9d61b7d17f3a61cb5@msport.ee
+DTSTART:20250919T180000Z
+DTEND:20250921T180000Z
+SUMMARY:Balti MV/KV enduros 2025
+URL:https://msport.ee/events/balti-mv-kv-enduros-2025/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-f992a2ad0651d9805d2fc4c9a3433b97@msport.ee
+DTSTART:20250905T180000Z
+DTEND:20250906T180000Z
+SUMMARY:Vidriži enduro EMV/EKV 2025
+URL:https://msport.ee/events/vidrizi-kahe-paeva-enduro-2025/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-8e869bec41101ca72780688f65076038@msport.ee
+DTSTART:20250815T180000Z
+DTEND:20250817T180000Z
+SUMMARY:Kohtla-Nõmme enduro EMV/EKV 2025
+URL:https://msport.ee/events/kohtla-nomme-enduro-emv-ekv-2025/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-bd4e70bc0c3db9a72d3f86c65563536a@msport.ee
+DTSTART:20250801T180000Z
+DTEND:20250802T180000Z
+SUMMARY:Kaevanduse Hard enduro, Kohtla-Nõmme 2025
+URL:https://msport.ee/events/kaevanduse-hard-enduro-kohtla-nomme-2025/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-a79b09e0b0a01f6b060502f5032fabef@msport.ee
+DTSTART:20250704T180000Z
+DTEND:20250706T180000Z
+SUMMARY:Balti ja Eesti MV Enduros, Paikuse 2025
+URL:https://msport.ee/events/balti-ja-eesti-mv-enduros-paikuse-2025/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-e8b0ef9680e17e0f2c2e626c1c94c101@msport.ee
+DTSTART:20250502T180000Z
+DTEND:20250504T180000Z
+SUMMARY:Balti MV ja Eesti MV Enduros, Madona
+URL:https://msport.ee/events/balti-mv-ja-eesti-mv-enduros-madona/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-b37e78affa55692cedd32bdda6bd8efe@msport.ee
+DTSTART:20250418T180000Z
+DTEND:20250419T180000Z
+SUMMARY:Jaanikese 2025
+URL:https://msport.ee/events/jaanikese-2025/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-edfdb7a5789124837fb42cefb41b7b84@msport.ee
+DTSTART:20250404T180000Z
+DTEND:20250405T180000Z
+SUMMARY:Kestvusenduro Kohtla-Nõmme/Aidu
+URL:https://msport.ee/events/kestvusenduro-kohtla-nomme-aidu/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-98bcd0f661560856321286ec2071b199@msport.ee
+DTSTART:20250221T200000Z
+DTEND:20250222T200000Z
+SUMMARY:Motokrossi kohtunike koolitus 2025
+URL:https://msport.ee/events/motokrossi-kohtunike-koolitus/
+CATEGORIES:Koolitus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-648b6af465266648095febd4de209ae2@msport.ee
+DTSTART:20250301T200000Z
+DTEND:20250302T200000Z
+SUMMARY:Adrenalin Arena II etapp 2025
+URL:https://msport.ee/events/adrenalin-arena-ii-etapp-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-b47b9c20d0b9d145ba35867528adf624@msport.ee
+DTSTART:20250201T200000Z
+DTEND:20250202T200000Z
+SUMMARY:Adrenalin Arena cup I etapp 2025
+URL:https://msport.ee/events/adrenalin-arena-cup-i-etapp-2025/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-663cdc7665a0379828f2ee92d1a39efc@msport.ee
+DTSTART:20250124T200000Z
+DTEND:20250125T200000Z
+SUMMARY:Enduro kohtunike koolitus 2025
+URL:https://msport.ee/events/enduro-kohtunike-koolitus-2025/
+CATEGORIES:Koolitus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-440058a643058084b85162fad0922f8a@msport.ee
+DTSTART:20250117T200000Z
+DTEND:20250118T200000Z
+SUMMARY:PIMEnduro 2025 – LÜKKUB EDASI!
+URL:https://msport.ee/events/pimenduro-2025/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-5e95669d58a4e704e77411e2312c147e@msport.ee
+DTSTART:20250612T180000Z
+DTEND:20250615T180000Z
+SUMMARY:I Do Hard Enduro (Aidu) 2025
+URL:https://msport.ee/events/i-do-hard-enduro-aidu-2025/
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-3c4f494c5b515b956068883b83264a37@msport.ee
+DTSTART:20250111T130000Z
+DTEND:20250111T180000Z
+SUMMARY:Motospordi hooaja lõpupidu 2024
+URL:https://msport.ee/events/motospordi-hooaja-lopupidu-2024/
+CATEGORIES:EMF üritus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-8d0913ffe9ad36df437a9bea28bd978f@msport.ee
+DTSTART:20241116T143000Z
+DTEND:20241116T203000Z
+SUMMARY:Motoringraja hooaja lõpetamine 2024
+URL:https://msport.ee/events/motoringraja-hooaja-lopetamine-2024/
+CATEGORIES:Motoringrada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-87f0699992a2976a50779149ea6e4a54@msport.ee
+DTSTART:20240826T180000Z
+DTEND:20240827T180000Z
+SUMMARY:Motoringraja koolitus algajatele 2024
+URL:https://msport.ee/events/motoringraja-koolitus-algajatele-649/
+CATEGORIES:Motoringrada
+LOCATION:Rapla-Aranküla, Ridaküla, 79528 Rapla maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-65e996457511244941b80608a76b8f2c@msport.ee
+DTSTART:20240906T180000Z
+DTEND:20240908T180000Z
+SUMMARY:Motoringraja EMV ja Balti MV V etapp 2024 Porsche Ringil
+URL:https://msport.ee/events/motoringraja-emv-ja-balti-mv-v-etapp-2024-porsche-ringil/
+CATEGORIES:Motoringrada
+LOCATION:Audru ringrada, Papsaare küla, Audru vald, 88137
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-8ef344bc5f0cfff94812123ce12c9a96@msport.ee
+DTSTART:20241101T200000Z
+DTEND:20241102T200000Z
+SUMMARY:Äksi Kestvussõit
+URL:https://msport.ee/events/aksi-kestvussoit/
+CATEGORIES:Kestvuskross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-66d117416ab2b868adb77876b99f37ba@msport.ee
+DTSTART:20240819T180000Z
+DTEND:20240820T180000Z
+SUMMARY:KTL klubisarja etapp
+URL:https://msport.ee/events/ktl-klubisarja-etapp/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-4c8c6706775ebde65e5329cf1e5d6108@msport.ee
+DTSTART:20240806T180000Z
+DTEND:20240807T180000Z
+SUMMARY:Pärnu Kolmapäevakross
+URL:https://msport.ee/events/parnu-kolmapaevakross/
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-e9688d4548283e26d84eb7d8aa85cc54@msport.ee
+DTSTART:20240802T180000Z
+DTEND:20240803T180000Z
+SUMMARY:PÜHAJÕE OFFROAD JA ENDURO 2024
+URL:https://msport.ee/events/puhajoe-offroad-ja-enduro-2024/
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-39869d67002a3b299b32f2b7152d57b6@msport.ee
+DTSTART:20240620T180000Z
+DTEND:20240621T180000Z
+SUMMARY:Lehtse öösõit E-bike
+URL:https://msport.ee/events/lehtse-oosoit-e-bike/
+CATEGORIES:e-bike
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-568521cc485378e3067ef58b226d00fa@msport.ee
+DTSTART:20240719T180000Z
+DTEND:20240721T180000Z
+SUMMARY:Motoringraja EMV II ja Balti MV III etapp 2024 Porsche Ringil
+URL:https://msport.ee/events/motoringraja-emv-ii-ja-balti-mv-iii-etapp-2024-porsche-ringil/
+CATEGORIES:Motoringrada
+LOCATION:Audru ringrada, Papsaare küla, Audru vald, 88137
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-8521442ba4e392357482612d08318ac2@msport.ee
+DTSTART:20240705T180000Z
+DTEND:20240706T180000Z
+SUMMARY:Estonian Enduro Super Series 3. etapp
+URL:https://msport.ee/events/estonian-enduro-super-series-3-etapp/
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-36486e05f7a3d03c12bf19e7a64a6a54@msport.ee
+DTSTART:20240808T180000Z
+DTEND:20240810T180000Z
+SUMMARY:Motoringraja EMV IV etapp 2024 Porsche Ringil “Estonian GP”
+URL:https://msport.ee/events/motoringraja-emv-iv-etapp-2024-estonian-gp/
+CATEGORIES:Motoringrada
+LOCATION:Audru ringrada, Papsaare küla, Audru vald, 88137
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-0f7e891e3167bdf7a31a6592e44b06c4@msport.ee
+DTSTART:20240927T180000Z
+DTEND:20240928T180000Z
+SUMMARY:Lost in the woods Holstre-Polli
+URL:https://msport.ee/events/lost-in-the-woods-holstre-polli/
+CATEGORIES:e-bike
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-468e14d3464340b253263dedbbac4bcf@msport.ee
+DTSTART:20240921T180000Z
+DTEND:20240922T180000Z
+SUMMARY:Lost in the woods Kõrvemaa rattamaraton
+URL:https://msport.ee/events/lost-in-the-woods-korvemaa-rattamaraton/
+CATEGORIES:e-bike
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-f6525cfe574e224a8b23b6631a6eb8dd@msport.ee
+DTSTART:20240910T180000Z
+DTEND:20240911T180000Z
+SUMMARY:Lost in the woods Keila
+URL:https://msport.ee/events/lost-in-the-woods-keila/
+CATEGORIES:e-bike
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-99087845f40d8b9f064901bf8c7fc9d7@msport.ee
+DTSTART:20240802T180000Z
+DTEND:20240803T180000Z
+SUMMARY:Mototriali EMV ja KV III ja IV etapp Vasalemmas
+URL:https://msport.ee/events/mototriali-emv-ja-kv-iii-ja-iv-etapp-vasalemmas/
+CATEGORIES:Mototrial,Trial
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-39216915b483436585e031ca923e7302@msport.ee
+DTSTART:20240719T180000Z
+DTEND:20240720T180000Z
+SUMMARY:Lost in the woods Rakvere
+URL:https://msport.ee/events/lost-in-the-woods-rakvere/
+CATEGORIES:e-bike
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-595049d9ff13282684f3bc4995a8d0cc@msport.ee
+DTSTART:20240706T180000Z
+DTEND:20240707T180000Z
+SUMMARY:Motoringraja EMV I ja Balti MV I etapp 2024 Bikerniekis
+URL:https://msport.ee/events/motoringraja-emv-i-ja-balti-mv-i-etapp-2024-bikerniekis/
+CATEGORIES:Motoringrada
+LOCATION:Sergeja Eizenšteina iela 4, Vidzemes priekšpilsēta, Rīga, LV-1079, Latvia
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-6a4bf1dcca1e6e89601f810612901be5@msport.ee
+DTSTART:20240726T180000Z
+DTEND:20240728T180000Z
+SUMMARY:Motoringraja EMV III etapp 2024 Alastaros
+URL:https://msport.ee/events/motoringraja-emv-iii-etapp-2024-alastaros/
+CATEGORIES:Motoringrada
+LOCATION:Jarno Saarisentie, 32560 Virttaa, Finland
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-a41a28f40691585038c9a112d3a6177e@msport.ee
+DTSTART:20240713T180000Z
+DTEND:20240714T180000Z
+SUMMARY:FIM MiniGP ja Minimoto Balti 3. etapp 2024
+URL:https://msport.ee/events/fim-minigp-ja-minimoto-balti-3-etapp-2024-952/
+CATEGORIES:Motoringrada
+LOCATION:Kuningamäe, 48011 Jõgeva County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-82b668d6effe4cf8ebbbb28b2c1de1e1@msport.ee
+DTSTART:20240825T020000Z
+DTEND:20240825T120000Z
+SUMMARY:Aravete kardirada supermoto
+URL:https://msport.ee/events/aravete-kardirada-supermoto/
+CATEGORIES:Supermoto
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d3f9cea9e586a70d642a5240defbefa6@msport.ee
+DTSTART:20240629T180000Z
+DTEND:20240630T180000Z
+SUMMARY:Bikernieki Läti supermoto
+URL:https://msport.ee/events/bikernieki-lati-supermoto/
+CATEGORIES:Supermoto
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-6a4d95c4710a677805ea537062021d99@msport.ee
+DTSTART:20240601T180000Z
+DTEND:20240602T180000Z
+SUMMARY:Raassilla supermoto
+URL:https://msport.ee/events/raassilla-supermoto/
+CATEGORIES:Supermoto
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-79db6d2f0ca6ff12e949c394bb7220bd@msport.ee
+DTSTART:20240531T180000Z
+DTEND:20240602T180000Z
+SUMMARY:Motoringraja Eesti ja Balti MV I etapp 2024: võistlus jääb ära
+URL:https://msport.ee/events/motoringraja-eesti-ja-balti-mv-i-etapp-2024/
+CATEGORIES:Motoringrada
+LOCATION:Audru ringrada, Papsaare küla, Audru vald, 88137
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-667187baffdff967654a56a82abb990e@msport.ee
+DTSTART:20241018T180000Z
+DTEND:20241019T180000Z
+SUMMARY:Enduro Magnifico
+URL:https://msport.ee/events/enduro-magnifico/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-cc80dc152e29284736fb710b20e4154b@msport.ee
+DTSTART:20240614T180000Z
+DTEND:20240616T180000Z
+SUMMARY:I´DO Hard Enduro (Aidu)
+URL:https://msport.ee/events/ido-hard-enduro-aidu/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-0fbc9be307cce05cb1a8ffcb9aa39e88@msport.ee
+DTSTART:20240514T180000Z
+DTEND:20240515T180000Z
+SUMMARY:Kolmapäevakross
+URL:https://msport.ee/events/kolmapaevakross-2/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-257e4e46fedd2a5a8602e502195d2376@msport.ee
+DTSTART:20240507T180000Z
+DTEND:20240508T180000Z
+SUMMARY:Kolmapäevakross
+URL:https://msport.ee/events/kolmapaevakross/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-44068f1cc249dc4251b36c7f4c9de1e7@msport.ee
+DTSTART:20240525T180000Z
+DTEND:20240526T180000Z
+SUMMARY:FIM MiniGP ja Minimoto Balti 1. etapp 2024
+URL:https://msport.ee/events/fim-minigp-ja-minimoto-balti-1-etapp-2024/
+CATEGORIES:Motoringrada
+LOCATION:Kurisoo, 73514 Järva County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-f16b11b84c116e4622c0e86d45697254@msport.ee
+DTSTART:20240414T180000Z
+DTEND:20240415T180000Z
+SUMMARY:Redmoto lahtine klubivõistlus
+URL:https://msport.ee/events/redmoto-lahtine-klubivoistlus/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-e9b47751510f08811e5df77f86f61f58@msport.ee
+DTSTART:20241004T180000Z
+DTEND:20241005T180000Z
+SUMMARY:Saku Staadionikross 2024 EHKK
+URL:https://msport.ee/events/saku-staadionikross-2024-ehkk/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-dce6825da7ccb3d3da2490acfa992765@msport.ee
+DTSTART:20240913T180000Z
+DTEND:20240914T180000Z
+SUMMARY:Pikametsa MXPark EHKK
+URL:https://msport.ee/events/pikametsa-mxpark-ehkk/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-cf1dd466b8673b789248cafba62fa5d7@msport.ee
+DTSTART:20240809T180000Z
+DTEND:20240810T180000Z
+SUMMARY:Aravete krossirada EHKK – JÄÄB ÄRA!
+URL:https://msport.ee/events/aravete-krossirada-ehkk/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-60c24921c2f7bf027ad91e63824106e6@msport.ee
+DTSTART:20240705T180000Z
+DTEND:20240706T180000Z
+SUMMARY:Saku Motokeskus EHKK
+URL:https://msport.ee/events/saku-motokeskus-ehkk/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-e424d07e7134eb5637218809325c57cb@msport.ee
+DTSTART:20240607T180000Z
+DTEND:20240608T180000Z
+SUMMARY:Türi, Kihli krossirada EHKK
+URL:https://msport.ee/events/kihli-krossirada-ehkk/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-b78d29b9715aa5e9836602f2b53edf95@msport.ee
+DTSTART:20240503T180000Z
+DTEND:20240504T180000Z
+SUMMARY:Tihemetsa, Lauri Motokeskus EHKK
+URL:https://msport.ee/events/tihemetsa-lauri-motokeskus-ehkk/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-5865ea8bae2737018b5fedf8fa1ccfba@msport.ee
+DTSTART:20240405T180000Z
+DTEND:20240406T180000Z
+SUMMARY:Eesti Liivakuningas 2024 EHKK
+URL:https://msport.ee/events/eesti-liivakuningas-2024/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d25f8859d2fc45b641518b6a958240a2@msport.ee
+DTSTART:20240720T180000Z
+DTEND:20240721T180000Z
+SUMMARY:ENKV Hiiumaa 4. etapp
+URL:https://msport.ee/events/enkv-hiiumaa/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-8b4b0e6803dbd92acc414611783ff558@msport.ee
+DTSTART:20240718T180000Z
+DTEND:20240720T180000Z
+SUMMARY:MMM Tihemetsa
+URL:https://msport.ee/events/mmm-tihemetsa/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-1ed04516451cfb2d80a506f2c93eac18@msport.ee
+DTSTART:20241004T180000Z
+DTEND:20241005T180000Z
+SUMMARY:KTL klubisari
+URL:https://msport.ee/events/ktl-klubisari-5/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-dc9638f4bb2cc15fce0d51c9edfd1d6b@msport.ee
+DTSTART:20240722T180000Z
+DTEND:20240723T180000Z
+SUMMARY:KTL klubisari
+URL:https://msport.ee/events/ktl-klubisari-4/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-7fc94dba5f4da788a367886c10310db2@msport.ee
+DTSTART:20240603T180000Z
+DTEND:20240604T180000Z
+SUMMARY:KTL klubisari
+URL:https://msport.ee/events/ktl-klubisari-3/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-b25b9a815224bbc407f2daab1741b18e@msport.ee
+DTSTART:20240506T180000Z
+DTEND:20240507T180000Z
+SUMMARY:KTL klubisari
+URL:https://msport.ee/events/ktl-klubisari-2/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-27b24267f8e13df41dd70c7433cf20f5@msport.ee
+DTSTART:20240416T180000Z
+DTEND:20240417T180000Z
+SUMMARY:KTL klubisari
+URL:https://msport.ee/events/ktl-klubisari/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-cf9caa2cbb4b95ffb9d609d1b7214c40@msport.ee
+DTSTART:20240419T180000Z
+DTEND:20240420T180000Z
+SUMMARY:Jaanikese kestvusenduro
+URL:https://msport.ee/events/jaanikese-enduro/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-8423fd02f26dca64b4b0a5a5c8556b34@msport.ee
+DTSTART:20240316T200000Z
+DTEND:20240317T200000Z
+SUMMARY:Motokrossi Kohtunike koolitus 2024
+URL:https://msport.ee/events/kohtunike-koolitus-2024/
+CATEGORIES:Koolitus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-41a3a78caa9c180fcfa91cce5c4ed471@msport.ee
+DTSTART:20241004T180000Z
+DTEND:20241006T180000Z
+SUMMARY:Enduro Balti ja Eesti MV/KV – Madona
+URL:https://msport.ee/events/enduro-balti-ja-eesti-mv-kv-madona/
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-a52d754e8d63d4bb3ff0398b18e09634@msport.ee
+DTSTART:20240913T180000Z
+DTEND:20240915T180000Z
+SUMMARY:Enduro Balti MV/KV – Kupiški
+URL:https://msport.ee/events/enduro-balti-mv-kv-kupiski/
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-cd139b4d0202f714d081fe8961715aee@msport.ee
+DTSTART:20240823T180000Z
+DTEND:20240824T180000Z
+SUMMARY:Enduro Eesti MV/KV (Läti MV/KV) – Vidriži
+URL:https://msport.ee/events/enduro-eesti-mv-kv-lati-mv-kv-vidrizi/
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-00071bfd6e2e1b34a651e63302cce7c7@msport.ee
+DTSTART:20240712T180000Z
+DTEND:20240714T180000Z
+SUMMARY:Enduro Balti ja Eesti MV/KV – Paikuse
+URL:https://msport.ee/events/enduro-balti-ja-eesti-mv-kv-paikuse/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d14648fec67b853620798c57f0a833fe@msport.ee
+DTSTART:20241025T180000Z
+DTEND:20241026T180000Z
+SUMMARY:Maardu kestvussõit
+URL:https://msport.ee/events/maardu-kestvussoit/
+CATEGORIES:Kestvuskross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-1df94aca0f0f2a3cbc8bc3c42c32099a@msport.ee
+DTSTART:20241018T180000Z
+DTEND:20241019T180000Z
+SUMMARY:Kestvuskrossi EMV 5. / EKV 6. etapp KOSE
+URL:https://msport.ee/events/kestvuskrossi-emv-5-ekv-6-etapp-kose/
+CATEGORIES:Kestvuskross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-170c01d906f46edd26a7446a1cacd3f9@msport.ee
+DTSTART:20241011T180000Z
+DTEND:20241012T180000Z
+SUMMARY:Kestvuskrossi EMV 4. / EKV 5. etapp PAIKUSE
+URL:https://msport.ee/events/kestvuskrossi-emv-4-ekv-5-etapp-paikuse/
+CATEGORIES:Kestvuskross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-68d746dcbb2052e4400cdaa9038e26d8@msport.ee
+DTSTART:20240928T180000Z
+DTEND:20240929T180000Z
+SUMMARY:Kestvuskrossi EKV 4. etapp RANNU
+URL:https://msport.ee/events/kestvuskrossi-ekv-4-etapp-rannu/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d7575d898e018931a206003e336edc1b@msport.ee
+DTSTART:20240927T180000Z
+DTEND:20240928T180000Z
+SUMMARY:MX Liiga 8. etapp (Soolode päev) MAARDU
+URL:https://msport.ee/events/mx-liiga-8-etapp-soolode-paev-tankodroom/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-2bbb60b0ff5715698b769dbc33ff7fe7@msport.ee
+DTSTART:20240921T180000Z
+DTEND:20240922T180000Z
+SUMMARY:ENKV 8.etapp MAARDU
+URL:https://msport.ee/events/enkv-8-etapp-maardu/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-68df2fedfde1087ab45822ea9008feda@msport.ee
+DTSTART:20240920T180000Z
+DTEND:20240921T180000Z
+SUMMARY:Kestvuskrossi EMV / EKV 3. etapp ILLUKA
+URL:https://msport.ee/events/kestvuskrossi-emv-ekv-3-etapp-illuka/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-2bc8f4848ed974545461bbea73766bc6@msport.ee
+DTSTART:20240914T180000Z
+DTEND:20240915T180000Z
+SUMMARY:Supikross LINNAMÄE
+URL:https://msport.ee/events/supikross-linnamae/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-5d3971c7bce60cf52638c96fdca15875@msport.ee
+DTSTART:20240906T180000Z
+DTEND:20240908T180000Z
+SUMMARY:EMV 4. etapp TIHEMETSA
+URL:https://msport.ee/events/emv-4-etapp-tihemetsa/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-ef202d300b12314298aaf615a41bebd1@msport.ee
+DTSTART:20240830T180000Z
+DTEND:20240831T180000Z
+SUMMARY:Äksi CUP 3.etapp
+URL:https://msport.ee/events/aksi-cup-3-etapp/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-933ef4a2fc904757cc0865b490898f54@msport.ee
+DTSTART:20240823T180000Z
+DTEND:20240824T180000Z
+SUMMARY:ENKV 7.etapp/ ISAD & POJAD Räpina
+URL:https://msport.ee/events/enkv-7-etapp-isad-pojad-rapina/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-96fc1f8f77ee5e5f0bc00159430446fa@msport.ee
+DTSTART:20240816T180000Z
+DTEND:20240818T180000Z
+SUMMARY:EMV 3. etapp ja Baltic III etapp PÄRNU
+URL:https://msport.ee/events/emv-3-etapp-ja-baltic-iii-etapp-parnu/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-6dfb3e092ee32fddd81d37024e8a85fa@msport.ee
+DTSTART:20240810T180000Z
+DTEND:20240811T180000Z
+SUMMARY:ENKV 6. etapp LINNAMÄE
+URL:https://msport.ee/events/enkv-6-etapp-linnamae/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-af5f7e386683d8b6fcd40096b5d76861@msport.ee
+DTSTART:20240803T180000Z
+DTEND:20240804T180000Z
+SUMMARY:EMV KV + Quad 3. etapp ja MX Liiga 7. etapp TOILA
+URL:https://msport.ee/events/emv-kv-quad-3-etapp-ja-mx-liiga-7-etapp-toila/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-e970c2f1c998cb15e3aea1cdc9e0eeb9@msport.ee
+DTSTART:20240802T180000Z
+DTEND:20240803T180000Z
+SUMMARY:ENKV 5.etapp TOILA
+URL:https://msport.ee/events/enkv-5-etapp-toila/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-52eaa2796d2963e0762b0b8769add106@msport.ee
+DTSTART:20240726T180000Z
+DTEND:20240727T180000Z
+SUMMARY:MX Liiga 6. etapp (+ KV) TÜRI
+URL:https://msport.ee/events/mx-liiga-6-etapp-kv-turi/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-58b9f1a6f3a347f928e18cb48f661bdd@msport.ee
+DTSTART:20240713T180000Z
+DTEND:20240714T180000Z
+SUMMARY:ENKV 3. etapp ja Äksi CUP 2.etapp
+URL:https://msport.ee/events/enkv-4-etapp-ja-aksi-cup-2-etapp/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-f7152f31d9761db1dc68b6655ecfe721@msport.ee
+DTSTART:20240712T180000Z
+DTEND:20240713T180000Z
+SUMMARY:MX Liiga 5. etapp (KV+Q) TIHEMETSA
+URL:https://msport.ee/events/mx-liiga-5-etapp-kvq-tihemetsa/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-06dd1f4f0c980b73afcf206735ced04c@msport.ee
+DTSTART:20240706T180000Z
+DTEND:20240707T180000Z
+SUMMARY:Baltic II etapp. Dobele (85cc, 125cc, MX2, MX1) LÄTI
+URL:https://msport.ee/events/baltic-ii-etapp-dobele-85cc-125cc-mx2-mx1-lati/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-14c132418c1741efdea0d0b70823502d@msport.ee
+DTSTART:20240614T180000Z
+DTEND:20240616T180000Z
+SUMMARY:EMV 2. etapp LANGE
+URL:https://msport.ee/events/emv-2-etapp-lange/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-e6a192edd3d6dad74c86d676876d68e5@msport.ee
+DTSTART:20240622T180000Z
+DTEND:20240623T180000Z
+SUMMARY:Jaanikross
+URL:https://msport.ee/events/jaanikross/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-4fb9968ff6022b0705f710131bdb9f82@msport.ee
+DTSTART:20240629T180000Z
+DTEND:20240630T180000Z
+SUMMARY:MX Liiga 4.etapp (KV+Q) VALGA
+URL:https://msport.ee/events/mx-liiga-4-etapp-kvq-valga/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-2d81c8344a988e61dac5dcff3290b143@msport.ee
+DTSTART:20240601T180000Z
+DTEND:20240602T180000Z
+SUMMARY:Baltic I etapp. Mickunai MX park (85cc, 125cc, MX2, MX1) LEEDU
+URL:https://msport.ee/events/baltic-i-etapp-mickunai-mx-park-85cc-125cc-mx2-mx1-leedu/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-20ad52a813b634e6f0e0bf64d9f233c2@msport.ee
+DTSTART:20240531T180000Z
+DTEND:20240601T180000Z
+SUMMARY:Valga ENKV 2.etapp
+URL:https://msport.ee/events/valga-enkv-3-etapp/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-4e725abe74fb53df441c14418b334a42@msport.ee
+DTSTART:20240517T180000Z
+DTEND:20240519T180000Z
+SUMMARY:EMV 1. etapp Karksi-Nuia
+URL:https://msport.ee/events/emv-1-etapp-karksi-nuia/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-3db32fd9411d128327e17404e3b7d310@msport.ee
+DTSTART:20240511T180000Z
+DTEND:20240512T180000Z
+SUMMARY:Narva ENKV 1.etapp
+URL:https://msport.ee/events/narva-enkv-1-etapp/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-08dbf4fd0fc335b476fde244123eee59@msport.ee
+DTSTART:20240510T180000Z
+DTEND:20240511T180000Z
+SUMMARY:MX Liiga 3.etapp (KV+Q) Linnamäe
+URL:https://msport.ee/events/mx-liiga-3-etapp-kvq-linnamae/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-49e5fcfd4992db7307013a5a019b048c@msport.ee
+DTSTART:20240504T180000Z
+DTEND:20240505T180000Z
+SUMMARY:Aruküla motokross 2024
+URL:https://msport.ee/events/arukula-kross-2/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-0a10f19088037a45235603b82e4949fd@msport.ee
+DTSTART:20240430T180000Z
+DTEND:20240501T180000Z
+SUMMARY:Põlva Kevad MX Liiga 2. etapp (KV+Q)
+URL:https://msport.ee/events/polva-kevad-mx-liiga-2-etapp-kvq/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d7ce1aa1a6ab29855d3b379d98e57012@msport.ee
+DTSTART:20240427T180000Z
+DTEND:20240428T180000Z
+SUMMARY:Kestvuskrossi EMV / EKV 2. etapp Mõedakal
+URL:https://msport.ee/events/kestvuskrossi-emv-ekv-2-etapp-saku/
+CATEGORIES:Kestvuskross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-88a744dd5d51ac55e8c5d82c3d16b2e9@msport.ee
+DTSTART:20240426T180000Z
+DTEND:20240427T180000Z
+SUMMARY:Äksi CUP 1.etapp
+URL:https://msport.ee/events/aksi-cup-1-etapp/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-75c1da2e2afc3cd3fc464b2f50682883@msport.ee
+DTSTART:20240420T180000Z
+DTEND:20240421T180000Z
+SUMMARY:Kose Kestvuskross 2024
+URL:https://msport.ee/events/kose-kestvuskross/
+CATEGORIES:Kestvuskross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-723bdbc8653c3dfd6c836ee9270dfcb5@msport.ee
+DTSTART:20240419T180000Z
+DTEND:20240420T180000Z
+SUMMARY:MX Liiga 1. etapp (+ Quad) Maardu Tõnu Lille mälestusvõistlus
+URL:https://msport.ee/events/mx-liiga-1-etapp-quad-maardu/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-9a0819e2b2a165d044270e46e7183267@msport.ee
+DTSTART:20240412T180000Z
+DTEND:20240413T180000Z
+SUMMARY:Kestvuskrossi EMV / EKV 1. etapp Vilaski
+URL:https://msport.ee/events/kestvuskrossi-emv-ekv-1-etapp-vilaski/
+CATEGORIES:Kestvuskross,Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-adc4eb007e21e8ca736b9aff642806e1@msport.ee
+DTSTART:20240330T190000Z
+DTEND:20240331T180000Z
+SUMMARY:Saaremaa Motokross (Väikesed)
+URL:https://msport.ee/events/saaremaa-motokross-vaikesed/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-af9b189195accf3a67f3dc1d200399c5@msport.ee
+DTSTART:20240329T200000Z
+DTEND:20240330T200000Z
+SUMMARY:Saaremaa Motokross (Suured)
+URL:https://msport.ee/events/saaremaa-motokross-suured/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-de7dcd9c8b08e8b6748c68cfc8140822@msport.ee
+DTSTART:20240127T200000Z
+DTEND:20240128T200000Z
+SUMMARY:Valga jääraja EMV II etapp JÄÄB ÄRA!
+URL:https://msport.ee/events/valga-jaaraja-emv-ii-etapp/
+CATEGORIES:Jäärada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-bec5a7b03388385f2e5c148b2742b5d1@msport.ee
+DTSTART:20240119T200000Z
+DTEND:20240120T200000Z
+SUMMARY:Äksi Jäärada
+URL:https://msport.ee/events/aksi-jaarada/
+CATEGORIES:Jäärada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-a4ca865998020f805dc671eef7429c90@msport.ee
+DTSTART:20240524T180000Z
+DTEND:20240526T180000Z
+SUMMARY:North zone 65&85  ja MX Women Euroopa etapp
+URL:https://msport.ee/events/north-zone-6585-ja-mx-women-euroopa-etapp/
+CATEGORIES:Motokross
+LOCATION:Eametsa, 85001 Pärnu County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-eee27ba2d7edf0a36ff9d2abaae32f23@msport.ee
+DTSTART:20240301T200000Z
+DTEND:20240302T200000Z
+SUMMARY:Äksi Jääraja kestvussõit JÄÄB ÄRA!
+URL:https://msport.ee/events/aksi-jaaraja-kestvussoit/
+CATEGORIES:Jäärada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-3f7bae292a998f8cc6c127d488deb11e@msport.ee
+DTSTART:20240223T200000Z
+DTEND:20240224T200000Z
+SUMMARY:Pärnu jäärada EMV/EKV JÄÄB ÄRA!
+URL:https://msport.ee/events/parnu-jaarada-emv-ekv/
+CATEGORIES:Jäärada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-9130c2d5896d7756fca915327ab086fe@msport.ee
+DTSTART:20240217T200000Z
+DTEND:20240218T200000Z
+SUMMARY:Äksi jäärada EMV/EKV III.etapp JÄÄB ÄRA!
+URL:https://msport.ee/events/aksi-jaarada-emv-ekv-2/
+CATEGORIES:Jäärada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-e728100959b9978d884f4aea83e770b3@msport.ee
+DTSTART:20240209T200000Z
+DTEND:20240210T200000Z
+SUMMARY:Võrtsjärve jäärada EMV/EKV
+URL:https://msport.ee/events/tartu-jaarada-emv-ekv/
+CATEGORIES:Jäärada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-2bad964fb69ea4ec94392c64562d1079@msport.ee
+DTSTART:20240202T200000Z
+DTEND:20240203T200000Z
+SUMMARY:Valgeranna jäärada EMV/EKV JÄÄB ÄRA!
+URL:https://msport.ee/events/valgeranna-jaarada-emv-ekv/
+CATEGORIES:Jäärada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-33bb5d343d2102cd7a8ce55134028acf@msport.ee
+DTSTART:20240106T200000Z
+DTEND:20240107T200000Z
+SUMMARY:Äksi Jäärada EMV/EKV I etapp 2024 JÄÄB ÄRA!
+URL:https://msport.ee/events/aksi-jaarada-emv-ekv/
+CATEGORIES:Jäärada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-db0d3a6c4e40f838a2bc88ecfd308b98@msport.ee
+DTSTART:20240105T200000Z
+DTEND:20240106T200000Z
+SUMMARY:Võrtsjärve jäärada EMV/EKV – jääb ära
+URL:https://msport.ee/events/vortsjarve-jaarada-emv-ekv/
+CATEGORIES:Jäärada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d86fc3845965f147ba911e36098d3849@msport.ee
+DTSTART:20240309T200000Z
+DTEND:20240310T200000Z
+SUMMARY:Adrenalin Arena Kids Cup IV etapp 2024
+URL:https://msport.ee/events/adrenalin-arena-kids-cup-iv-etapp-2/
+CATEGORIES:Motokross
+LOCATION:Kooli, Sõmerpalu, 66604 Võru County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-b28e4c46af2ee6ef8b6e87ba243bec1b@msport.ee
+DTSTART:20240210T200000Z
+DTEND:20240211T200000Z
+SUMMARY:Adrenalin Arena Kids Cup III etapp 2024
+URL:https://msport.ee/events/adrenalin-arena-kids-cup-iii-etapp-2/
+CATEGORIES:Motokross
+LOCATION:Kooli, Sõmerpalu, 66604 Võru County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-38b15c55208ce920954d2c58a9799d52@msport.ee
+DTSTART:20240120T200000Z
+DTEND:20240121T200000Z
+SUMMARY:Adrenalin Arena Kids Cup II etapp
+URL:https://msport.ee/events/adrenalin-arena-kids-cup-ii-etapp/
+CATEGORIES:Motokross
+LOCATION:Kooli, Sõmerpalu, 66604 Võru County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-674eeaf3595e391da409e83decc37bd0@msport.ee
+DTSTART:20231027T180000Z
+DTEND:20231028T180000Z
+SUMMARY:TRIXS 2023
+URL:https://msport.ee/events/trixs-2023/
+CATEGORIES:Trial
+LOCATION:Tallinn
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-8c88ba3901c92c39fe90788dbcc7fb99@msport.ee
+DTSTART:20231209T200000Z
+DTEND:20231210T200000Z
+SUMMARY:Adrenalin Arena Kids Cup I etapp
+URL:https://msport.ee/events/adrenalin-arena-kids-cup-i-etapp/
+CATEGORIES:Motokross
+LOCATION:Kooli, Sõmerpalu, 66604 Võru County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-ef05c4d6fda214eeac7095a740045e4e@msport.ee
+DTSTART:20231021T180000Z
+DTEND:20231022T180000Z
+SUMMARY:Motokrossi Mitmevõistlus / Kolmapäevakrossi finaal Pärnus
+URL:https://msport.ee/events/motokrossi-mitmevoistlus-kolmapaevakrossi-finaal-parnus/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-0718a0e0a164fdc94c57cb7fbb285512@msport.ee
+DTSTART:20231006T180000Z
+DTEND:20231007T180000Z
+SUMMARY:Lost in Woods E-Bike Cup Holstre 2023
+URL:https://msport.ee/events/lost-in-woods-e-bike-cup-holstre-2023/
+CATEGORIES:e-bike
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-04902f35f5f3adbf7d577ac5d98e63ea@msport.ee
+DTSTART:20231103T200000Z
+DTEND:20231104T200000Z
+SUMMARY:Äksi39Team Fest 2023
+URL:https://msport.ee/events/aksi39team-fest-2023/
+CATEGORIES:Kestvuskross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-318f093c49c61db47aeebd39c7d9a591@msport.ee
+DTSTART:20230912T180000Z
+DTEND:20230913T180000Z
+SUMMARY:Kiilimoto-Redmoto noortesarja 2.etapp
+URL:https://msport.ee/events/kiilimoto-redmoto-noortesarja-2-etapp/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-f31c7f4f1e6135a500b111ca5b2d1a36@msport.ee
+DTSTART:20230922T180000Z
+DTEND:20230924T180000Z
+SUMMARY:Enduro Kupiški EMV III/EKV II etapp
+URL:https://msport.ee/events/enduro-kupiski/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-b880ed2ea4b2bb674d77f17d13253721@msport.ee
+DTSTART:20230916T180000Z
+DTEND:20230917T180000Z
+SUMMARY:Maardu ENKV 8. etapp
+URL:https://msport.ee/events/maardu-enkv-8-etapp/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-c67b480ba92da6b3cb2baab0dbb90f25@msport.ee
+DTSTART:20230915T180000Z
+DTEND:20230916T180000Z
+SUMMARY:Rannu vana tehnika mäkketõus
+URL:https://msport.ee/events/rannu-vana-tehnika-makketous/
+CATEGORIES:Mäkketõus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-5ddb4ef370d585354606f643070d8777@msport.ee
+DTSTART:20230804T180000Z
+DTEND:20230805T180000Z
+SUMMARY:Raasilla supermoto
+URL:https://msport.ee/events/raasilla-supermoto/
+CATEGORIES:Supermoto
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-56e2350c45c4fca2ad65c02f769e570f@msport.ee
+DTSTART:20231027T180000Z
+DTEND:20231028T180000Z
+SUMMARY:Enduro Magnifico 2023 – EMV/EKV 5. etapp Hard Enduros
+URL:https://msport.ee/events/hard-enduro-emv-ii-etapp-2022-enduro-magnifico-874/
+CATEGORIES:Enduro
+LOCATION:Valguse 2, Valga
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-afcc0f60131f04145f2cdba870dc8387@msport.ee
+DTSTART:20230922T180000Z
+DTEND:20230923T180000Z
+SUMMARY:Võrtsjärve Hard Enduro 2023 – EMV/EKV 4. etapp Hard Enduros
+URL:https://msport.ee/events/vortsjarve-hard-enduro-2023-emv-ekv-4-etapp-hard-enduros/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-695ae20b07042f0c14274cc55e4ff018@msport.ee
+DTSTART:20230811T180000Z
+DTEND:20230813T180000Z
+SUMMARY:Mototriali EMV &  EKV  I ja II etapp Vasalemmas
+URL:https://msport.ee/events/mototriali-emv-ekv-i-ja-ii-etapp-vasalemmas/
+CATEGORIES:Trial
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-e8a344d4e4bc6745f3973a6123ea266e@msport.ee
+DTSTART:20230707T180000Z
+DTEND:20230708T180000Z
+SUMMARY:Põltsamaa supermoto
+URL:https://msport.ee/events/poltsamaa-supermoto/
+CATEGORIES:Supermoto
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-382b1736df8e75f83f0c135c617dc88c@msport.ee
+DTSTART:20230720T180000Z
+DTEND:20230721T180000Z
+SUMMARY:TARTU ÖINE SUPERENDURO
+URL:https://msport.ee/events/tartu-oine-superenduro/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-ae4d453ddf6099953de6ccbbc4bf2212@msport.ee
+DTSTART:20230627T180000Z
+DTEND:20230628T180000Z
+SUMMARY:Kiilimoto-Redmoto 2023 noortesarja 2.etapp
+URL:https://msport.ee/events/kiilimoto-redmoto-2023-noortesarja-2-etapp/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-3cd73c7328755027a3267c0af964e16b@msport.ee
+DTSTART:20230804T180000Z
+DTEND:20230805T180000Z
+SUMMARY:E-Bike Cup II etapp Rakveres
+URL:https://msport.ee/events/e-bike-cup-ii-etapp-rakveres/
+CATEGORIES:e-bike
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-dcdb61dd994d5bfad4fd1721de672248@msport.ee
+DTSTART:20230630T020000Z
+DTEND:20230702T120000Z
+SUMMARY:AMEERIKA AUTO EDRA NATIONALS 2023
+URL:https://msport.ee/events/ameerika-auto-edra-nationals-2023/
+CATEGORIES:Kiirendus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-42300ae44713f0b238d84533c522ef8b@msport.ee
+DTSTART:20230819T020000Z
+DTEND:20230820T120000Z
+SUMMARY:WILDCARDS DRAG RACE
+URL:https://msport.ee/events/wildcards-drag-race/
+CATEGORIES:Kiirendus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-3ba5c16415b388d38ddbcf11ea6fa036@msport.ee
+DTSTART:20230728T180000Z
+DTEND:20230729T180000Z
+SUMMARY:SPEEDEST GLASSDRIVE RACING 2023
+URL:https://msport.ee/events/speedest-glassdrive-racing-2023/
+CATEGORIES:Kiirendus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-f068f8dbd79cc884f4917a98d7c2a9f7@msport.ee
+DTSTART:20230729T180000Z
+DTEND:20230730T180000Z
+SUMMARY:Toila MX Liiga (KV+Q)
+URL:https://msport.ee/events/toila-mx-liiga/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-1b5b82d070a005a1580a0b6eaf381f6d@msport.ee
+DTSTART:20231006T180000Z
+DTEND:20231007T180000Z
+SUMMARY:EHKK Saku Staadionikross 2023
+URL:https://msport.ee/events/ehkk-saku-staadionikross-2023/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-6b23cf6a0094d794aab7b4f96ce83dd9@msport.ee
+DTSTART:20230908T180000Z
+DTEND:20230909T180000Z
+SUMMARY:EHKK Pikametsa MX Park
+URL:https://msport.ee/events/ehkk-pikametsa-mx-park/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-120397e96f4aacd51fc5c3c67cede401@msport.ee
+DTSTART:20230805T180000Z
+DTEND:20230806T180000Z
+SUMMARY:EHKK Linnamäe Krossirada
+URL:https://msport.ee/events/ehkk-linnamae-krossirada/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-c50832749356915be53716e1135ac260@msport.ee
+DTSTART:20230708T180000Z
+DTEND:20230709T180000Z
+SUMMARY:EHKK Valga
+URL:https://msport.ee/events/ehkk-valga/
+CATEGORIES:Motokross
+LOCATION:Unnamed Road, Jaanikese, 68218 Valga maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-6b0127cbdc290b2e088f9b8136f40d3f@msport.ee
+DTSTART:20230602T180000Z
+DTEND:20230603T180000Z
+SUMMARY:EHKK Aravete Krossirada
+URL:https://msport.ee/events/ehkk-aravete-krossirada/
+CATEGORIES:Motokross
+LOCATION:Ambla, 73511 Järva County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-65e236f26eede386c37be7ea2d3108f4@msport.ee
+DTSTART:20230602T180000Z
+DTEND:20230603T180000Z
+SUMMARY:Kulbilohu Supermoto
+URL:https://msport.ee/events/klubilohu-supermoto/
+CATEGORIES:Supermoto
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-6006b3bae43f2112848262eb2ee2c437@msport.ee
+DTSTART:20230512T180000Z
+DTEND:20230514T180000Z
+SUMMARY:Balti MV ja EMV/EKV Mad Enduro Madonas
+URL:https://msport.ee/events/balti-mv-ja-emv-ekv-mad-enduro-madonas/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-9fbc3171dd32c33ab674295ce0226646@msport.ee
+DTSTART:20230515T180000Z
+DTEND:20230516T180000Z
+SUMMARY:Kiilimoto-Redmoto 2023 noortesarja 1.etapp
+URL:https://msport.ee/events/kiilimoto-redmoto-2023-noortesarja-1-etapp/
+CATEGORIES:Motokross
+LOCATION:Krossiraja, Lokuti, 75514 Harju maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-ec6aad3bb7b90473fc89448c899156d5@msport.ee
+DTSTART:20230825T180000Z
+DTEND:20230826T180000Z
+SUMMARY:HARDEST Enduro Sadala Weekend 2023 –  EMV/EKV 3. etapp Hard Enduros
+URL:https://msport.ee/events/hardest-enduro-sadala-weekend-2023/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-eaa8acd6f8bd7ef5cd4b26d31e30ea25@msport.ee
+DTSTART:20230714T180000Z
+DTEND:20230716T180000Z
+SUMMARY:Paikuse Enduro 2023
+URL:https://msport.ee/events/paikuse-enduro-2023/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-35c3d2dad360926ec4d5a8821035a2c9@msport.ee
+DTSTART:20230616T180000Z
+DTEND:20230618T180000Z
+SUMMARY:Hard Enduro: EMV/EKV II etapp AIDU
+URL:https://msport.ee/events/aidu-hard-enduro-2023/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-a3018107bb4c2ecf7c50e66cba633a55@msport.ee
+DTSTART:20230512T180000Z
+DTEND:20230513T180000Z
+SUMMARY:Kaevanduse Hard Enduro 2023
+URL:https://msport.ee/events/kaevanduse-hard-enduro-2023/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-c3b7ff66020a774a93e6045fea0a1923@msport.ee
+DTSTART:20230505T180000Z
+DTEND:20230506T180000Z
+SUMMARY:Leigo Enduro
+URL:https://msport.ee/events/leigo-enduro/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-b8965e101f2542f5f296fdccaf6752c1@msport.ee
+DTSTART:20230505T180000Z
+DTEND:20230506T180000Z
+SUMMARY:Karla Lost in Woods E-bike Cup 2023
+URL:https://msport.ee/events/karla-lost-in-woods-e-bike-cup-2023/
+CATEGORIES:e-bike
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-67717f44a75490246886c6c8b5512995@msport.ee
+DTSTART:20230507T180000Z
+DTEND:20230508T180000Z
+SUMMARY:Motoringraja koolitus algajatele
+URL:https://msport.ee/events/motoringraja-koolitus-algajatele/
+CATEGORIES:Motoringrada
+LOCATION:Rapla-Aranküla, Ridaküla, 79528 Rapla maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-3a815181b20456a18fc2075a1e7483e2@msport.ee
+DTSTART:20230421T180000Z
+DTEND:20230422T180000Z
+SUMMARY:Jaanikese kestvusenduro 2023
+URL:https://msport.ee/events/jaanikese-kestvusenduro-2023/
+CATEGORIES:Enduro
+LOCATION:Unnamed Road, Jaanikese, 68218 Valga maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-6c9927f845de05ba56f5ce60323895e2@msport.ee
+DTSTART:20230722T180000Z
+DTEND:20230723T180000Z
+SUMMARY:Äksi Cup 2.etapp
+URL:https://msport.ee/events/aksi-cup-2-etapp/
+CATEGORIES:Motokross
+LOCATION:Äksi alevik, Pärtli talu, 60543 Tartu maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-1e14f5c731dc93b1886b7dfd8e078ff2@msport.ee
+DTSTART:20230317T200000Z
+DTEND:20230318T200000Z
+SUMMARY:Tamsalu mootorkelgu SPRINT / ENDURO JÄÄB ÄRA!!
+URL:https://msport.ee/events/tamsalu-mootorkelgu-sprint-enduro/
+CATEGORIES:Mootorkelk
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-05dd614858ecce1a4f17e842af3ae1f3@msport.ee
+DTSTART:20230908T180000Z
+DTEND:20230909T180000Z
+SUMMARY:Rannu mäkketõus EMV.4. etapp
+URL:https://msport.ee/events/makketousu-emv-vi-etapp-marjamagi/
+CATEGORIES:Mäkketõus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-8a1146051c43fe2b984fd2c3f80e8fee@msport.ee
+DTSTART:20230901T180000Z
+DTEND:20230902T180000Z
+SUMMARY:Mäkketõusu EMV V etapp Maaritsas
+URL:https://msport.ee/events/makketousu-emv-v-etapp-maaritsas/
+CATEGORIES:Mäkketõus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-601b54d82359afbffde625225e4944fc@msport.ee
+DTSTART:20230804T180000Z
+DTEND:20230805T180000Z
+SUMMARY:Mäkketõusu EMV IV etapp Rannus
+URL:https://msport.ee/events/makketousu-emv-iv-etapp-rannus/
+CATEGORIES:Mäkketõus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d7881ec0f9d22b9f2fd9f36076f9e173@msport.ee
+DTSTART:20230707T180000Z
+DTEND:20230708T180000Z
+SUMMARY:Mäkketõusu EMV III etapp Sõrestes
+URL:https://msport.ee/events/makketousu-emv-iii-etapp-sorestes/
+CATEGORIES:Mäkketõus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-fcfb78aaa6ed6fcd4cbced23d352ffe1@msport.ee
+DTSTART:20230630T180000Z
+DTEND:20230701T180000Z
+SUMMARY:Mäkketõusu EMV II etapp Siimusti
+URL:https://msport.ee/events/makketousu-emv-ii-etapp-laatres/
+CATEGORIES:Mäkketõus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-e8472b2b38393d39fe757500e974b5df@msport.ee
+DTSTART:20230602T180000Z
+DTEND:20230603T180000Z
+SUMMARY:Mäkketõusu show Tihemetsas
+URL:https://msport.ee/events/makketousu-show-tihemetsas/
+CATEGORIES:Mäkketõus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-fbb0c99b0b4fb14dec3dd178ba383e63@msport.ee
+DTSTART:20230519T180000Z
+DTEND:20230520T180000Z
+SUMMARY:Mäkketõusu EMV I etapp 2023 Sõrestes
+URL:https://msport.ee/events/makketousu-emv-i-etapp-2023-sorestes/
+CATEGORIES:Mäkketõus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-47cac5a1c4a65aa7c6f216a6a913fb34@msport.ee
+DTSTART:20231109T200000Z
+DTEND:20231110T200000Z
+SUMMARY:Motoringraja hooaja lõpetamine 2023
+URL:https://msport.ee/events/motoringraja-hooaja-lopetamine-2023/
+CATEGORIES:Motoringrada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-c9e3daac86e8c4d0c971a9db34225880@msport.ee
+DTSTART:20230901T180000Z
+DTEND:20230903T180000Z
+SUMMARY:Motoringraja EMV IV ja Balti MV IV etapp
+URL:https://msport.ee/events/motoringraja-emv-v-ja-balti-mv-iv-etapp/
+CATEGORIES:Motoringrada
+LOCATION:Audru ringrada, Papsaare küla, Audru vald, 88137
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-a53cfebbe713b7dc778006c1602fc112@msport.ee
+DTSTART:20230810T180000Z
+DTEND:20230812T180000Z
+SUMMARY:Motoringraja EMV III etapp Porsche Ringil
+URL:https://msport.ee/events/motoringraja-emv-iv-etapp-porsche-ringil/
+CATEGORIES:Motoringrada
+LOCATION:Audru ringrada, Papsaare küla, Audru vald, 88137
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-7dfd109063ace2ed01bdbe3a40624466@msport.ee
+DTSTART:20230630T180000Z
+DTEND:20230702T180000Z
+SUMMARY:Motoringraja EMV II ja Balti MV II etapp Bikerniekis
+URL:https://msport.ee/events/motoringraja-emv-ii-ja-balti-mv-ii-etapp-bikerniekis-2/
+CATEGORIES:Motoringrada
+LOCATION:Sergeja Eizenšteina iela 4, Vidzemes priekšpilsēta, Rīga, LV-1079, Latvia
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-18aed4092220fbb226d0f40190832085@msport.ee
+DTSTART:20230519T180000Z
+DTEND:20230521T180000Z
+SUMMARY:Motoringraja EMV I ja Balti MV I etapp 2023 Porsche Ringil
+URL:https://msport.ee/events/motoringraja-emv-i-ja-balti-mv-i-etapp-2023-porsche-ringil/
+CATEGORIES:Motoringrada
+LOCATION:Audru ringrada, Papsaare küla, Audru vald, 88137
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-0913a85bc5fdb2fd298770c0b1653eb0@msport.ee
+DTSTART:20230421T180000Z
+DTEND:20230423T180000Z
+SUMMARY:Pärnu 65/85 EMX, 50cc /MX Naised EMV, MX Vet 40+/50+ EKV
+URL:https://msport.ee/events/parnu-65-85-emx-50cc-mxnaised-emv-mxveteran-ekv/
+CATEGORIES:Motokross
+LOCATION:Eametsa, 85001 Pärnu County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-ece1a89fd9187572e3c6774017fe0cd7@msport.ee
+DTSTART:20231027T180000Z
+DTEND:20231028T180000Z
+SUMMARY:Kestvuskrossi EKV V etapp Kosel JÄÄB ÄRA!
+URL:https://msport.ee/events/kestvuskrossi-ekv-v-etapp/
+CATEGORIES:Kestvuskross
+LOCATION:Kose
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-a23130a709edc2c1e8dbf5fb9da90fa9@msport.ee
+DTSTART:20231020T180000Z
+DTEND:20231021T180000Z
+SUMMARY:Kestvuskrossi EMV III / EKV IV etapp Illukal
+URL:https://msport.ee/events/kestvuskrossi-emv-iii-ekv-iv-etapp/
+CATEGORIES:Kestvuskross
+LOCATION:Illuka vald, Ida-Virumaa, Jõuga-Raudi maantee 9.km
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-8c6b615fcda22bbfe0901151b94a5409@msport.ee
+DTSTART:20231013T180000Z
+DTEND:20231014T180000Z
+SUMMARY:Aruküla kross JÄÄB ÄRA!
+URL:https://msport.ee/events/arukula-kross/
+CATEGORIES:Motokross
+LOCATION:Kurgla, 75206 Harju County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-fe4bdb46dc97ff56fa44114d881ca9c0@msport.ee
+DTSTART:20231013T180000Z
+DTEND:20231014T180000Z
+SUMMARY:Kestvuskrossi EMV II / EKV III etapp Paikusel
+URL:https://msport.ee/events/kestvuskrossi-emv-ii-ekv-iii-etapp-paikusel/
+CATEGORIES:Kestvuskross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-5532fb69c402bbdba07aaf7b43909e10@msport.ee
+DTSTART:20230930T180000Z
+DTEND:20231001T180000Z
+SUMMARY:Rannu Kestvuskross EKV II etapp
+URL:https://msport.ee/events/rannu-kestvuskrossi-ekv-ii-etapp/
+CATEGORIES:Kestvuskross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d4e68871bc6644fae0859baf51e5df41@msport.ee
+DTSTART:20231014T180000Z
+DTEND:20231015T180000Z
+SUMMARY:MX Liiga X etapp Saku-Tankodroomi (Soolod)
+URL:https://msport.ee/events/mx-liiga-x-etapp-saku-tankodroomi-soolod/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-755dc0604d4ec8b36d15fd3700230034@msport.ee
+DTSTART:20230923T180000Z
+DTEND:20230924T180000Z
+SUMMARY:Pikametsa ENKV 9.etapp
+URL:https://msport.ee/events/enkv-ix-etapp/
+CATEGORIES:Motokross
+LOCATION:Pikametsa krossirada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-94bfbdeec1474de20c3f68e6524fd1c6@msport.ee
+DTSTART:20230922T180000Z
+DTEND:20230923T180000Z
+SUMMARY:MX Liiga IX etapp (Soolod)”Tõnu Lille mälestusvõistlus” Maardu
+URL:https://msport.ee/events/mx-liiga-ix-etapp-soolod/
+CATEGORIES:Motokross
+LOCATION:Üleoru tn 2, Maardu 74114
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-48cf68eef41f926d2232dcc2206009ce@msport.ee
+DTSTART:20230915T180000Z
+DTEND:20230916T180000Z
+SUMMARY:Linnamäe Supikross
+URL:https://msport.ee/events/supikross/
+CATEGORIES:Kestvuskross
+LOCATION:Unnamed Road, Kurista, 48413, 48413 Jõgeva maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-e8431726f6b5a3c7535bf37ed806c301@msport.ee
+DTSTART:20230909T180000Z
+DTEND:20230910T180000Z
+SUMMARY:ENKV VII etapp & Äksi CUP III etapp
+URL:https://msport.ee/events/enkv-8-etapp-aksi-cup-iii-etapp/
+CATEGORIES:Motokross
+LOCATION:Äksi alevik, Pärtli talu, 60543 Tartu maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-28bcafeb2fef882aaf0d27b6ac565961@msport.ee
+DTSTART:20230901T180000Z
+DTEND:20230903T180000Z
+SUMMARY:EMV IV etapp Lange
+URL:https://msport.ee/events/emv-iv-etapp/
+CATEGORIES:Motokross
+LOCATION:Pärnavälja tee 1, Lange, 62115 Tartu maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d908110260a7256dd67b8cbc9dbaf847@msport.ee
+DTSTART:20230826T180000Z
+DTEND:20230827T180000Z
+SUMMARY:Linnamäe ENKV VI etapp
+URL:https://msport.ee/events/enkv-vii-etapp/
+CATEGORIES:Motokross
+LOCATION:Unnamed Road, Kurista, 48413, 48413 Jõgeva maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-40da6439d77c49f95601daec2016b9cc@msport.ee
+DTSTART:20230825T180000Z
+DTEND:20230826T180000Z
+SUMMARY:MX Liiga VIII etapp (KV +Q) Karksi-Nuia
+URL:https://msport.ee/events/mx-liiga-viii-etapp-kv-q-karksi-nuia/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-2270d3c1ab63b710a4ba6f23359eb5a3@msport.ee
+DTSTART:20230818T180000Z
+DTEND:20230820T180000Z
+SUMMARY:EMV III etapp Tihemetsa
+URL:https://msport.ee/events/emv-iii-etapp/
+CATEGORIES:Motokross
+LOCATION:Tihemetsa krossirada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-e6641bd773287927da18d7df2886e734@msport.ee
+DTSTART:20230811T180000Z
+DTEND:20230812T180000Z
+SUMMARY:Räpina ENKV V etapp/ ISAD & POJAD
+URL:https://msport.ee/events/enkv-vi-etapp-isad-pojad/
+LOCATION:Räpina
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-ceab0e21f29fc32b90ff015945869af1@msport.ee
+DTSTART:20230804T180000Z
+DTEND:20230805T180000Z
+SUMMARY:ENKV IV etapp Hiiumaa
+URL:https://msport.ee/events/enkv-v-etapp-hiiumaa/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-f2e23ed5cc93eb8e8ed603eeded1ef88@msport.ee
+DTSTART:20230728T180000Z
+DTEND:20230729T180000Z
+SUMMARY:ENKV III etapp & Ida-Viru CUP II etapp + Pühajõe Offroad ja Enduro Toilas
+URL:https://msport.ee/events/enkv-iv-etapp-ida-viru-cup-ii-etapp-toilas/
+CATEGORIES:Enduro,Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-eafb1029fa65a5caaf56876c3e76d293@msport.ee
+DTSTART:20230721T180000Z
+DTEND:20230722T180000Z
+SUMMARY:MX Liiga VI etapp (KV +Q) Tihemetsa
+URL:https://msport.ee/events/mx-liiga-vi-etapp-soolod/
+CATEGORIES:Motokross
+LOCATION:Tihemetsa krossirada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-34420611de4c9c7593cf5e5fe12de6df@msport.ee
+DTSTART:20230715T180000Z
+DTEND:20230716T180000Z
+SUMMARY:MX Liiga V etapp (soolod) Türi
+URL:https://msport.ee/events/mx-liiga-v-etapp-soolod/
+CATEGORIES:Motokross
+LOCATION:Türi krossirada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-5186e488e75d4067c2330c11e15424f7@msport.ee
+DTSTART:20230630T180000Z
+DTEND:20230702T180000Z
+SUMMARY:EMV II etapp Pärnu
+URL:https://msport.ee/events/emv-ii-etapp/
+CATEGORIES:Motokross
+LOCATION:Eametsa, 85001 Pärnu County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-1162898bb6d412b65249eadf5477c1ab@msport.ee
+DTSTART:20230623T180000Z
+DTEND:20230624T180000Z
+SUMMARY:Hiiumaa Jaanikross
+URL:https://msport.ee/events/hiiumaa-jaanikross/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-7f14afdad84abc083219ed4e4c1c8547@msport.ee
+DTSTART:20230617T180000Z
+DTEND:20230618T180000Z
+SUMMARY:MX Liiga 4.etapp (soolod) Haanja
+URL:https://msport.ee/events/mx-liiga-4-etapp-soolod/
+CATEGORIES:Motokross
+LOCATION:Abiraja, Trolla, 65143 Võru maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-91b06c888855687679e664877aa7d03c@msport.ee
+DTSTART:20230616T180000Z
+DTEND:20230617T180000Z
+SUMMARY:Haanja ENKV II etapp
+URL:https://msport.ee/events/enkv-iii-etapp/
+CATEGORIES:Motokross
+LOCATION:Abiraja, Trolla, 65143 Võru maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-4b53f93d03333dbb0b7282a468402642@msport.ee
+DTSTART:20230527T180000Z
+DTEND:20230528T180000Z
+SUMMARY:Äksi CUP I etapp
+URL:https://msport.ee/events/aksi-cup-i-etapp/
+CATEGORIES:Motokross
+LOCATION:Äksi alevik, Pärtli talu, 60543 Tartu maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-910db656ed939dbb0b017843db25e2b5@msport.ee
+DTSTART:20230526T180000Z
+DTEND:20230527T180000Z
+SUMMARY:MX Liiga II etapp (KV+Q) Valga
+URL:https://msport.ee/events/mx-liiga-ii-etapp-kvq-2/
+CATEGORIES:Motokross
+LOCATION:Valga
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-1d81871632b62c6db80dbd32d0002003@msport.ee
+DTSTART:20230520T180000Z
+DTEND:20230521T180000Z
+SUMMARY:Tihemetsa ENKV II etapp
+URL:https://msport.ee/events/enkv-ii-etapp/
+LOCATION:Tihemetsa krossirada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-bf73979cf998052e8369404536136f74@msport.ee
+DTSTART:20230519T180000Z
+DTEND:20230520T180000Z
+SUMMARY:MX Liiga II etapp (KV+Q) Linnamäel
+URL:https://msport.ee/events/mx-liiga-ii-etapp-kvq/
+CATEGORIES:Motokross
+LOCATION:Unnamed Road, Kurista, 48413, 48413 Jõgeva maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d39cab5154e8650c36785e2038ee9515@msport.ee
+DTSTART:20230513T180000Z
+DTEND:20230514T180000Z
+SUMMARY:Narva Motokross + Ida-Viru CUP I etapp
+URL:https://msport.ee/events/narva-motokross-ida-viru-cup-i-etapp/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d4ae911f37aa99d68312e4e29e42de16@msport.ee
+DTSTART:20230505T180000Z
+DTEND:20230507T180000Z
+SUMMARY:EMV I etapp Karksi-Nuia
+URL:https://msport.ee/events/emv-i-etapp-karksi-nuia/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-8923261b9215adff0880a3e6d25b0e35@msport.ee
+DTSTART:20230430T180000Z
+DTEND:20230501T180000Z
+SUMMARY:Põlva Kevad MX Liiga I etapp (KV+Q)
+URL:https://msport.ee/events/polva-kevad-mx-liiga-1-etapp-kvq/
+CATEGORIES:Motokross
+LOCATION:Põlva
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-2022b2fa25e447581d049c250452e890@msport.ee
+DTSTART:20230428T180000Z
+DTEND:20230429T180000Z
+SUMMARY:Kose kestvuskross
+URL:https://msport.ee/events/kestvuskross/
+CATEGORIES:Kestvuskross
+LOCATION:Kose
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-1cd45c0e6d05c071879bab213f520b4d@msport.ee
+DTSTART:20230414T180000Z
+DTEND:20230415T180000Z
+SUMMARY:Vilaski Kestvuskross
+URL:https://msport.ee/events/kestvuskrossi-emv-ekv-i-etapp/
+CATEGORIES:Kestvuskross
+LOCATION:Vilaski
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-bde05285683f29807f7107f04bff0675@msport.ee
+DTSTART:20230310T200000Z
+DTEND:20230311T200000Z
+SUMMARY:Kohtunike koolitus 2023
+URL:https://msport.ee/events/kohtunike-koolitus-2023/
+CATEGORIES:Koolitus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-cfda86bebce3f1a97f9b412f66c8fbb5@msport.ee
+DTSTART:20230310T200000Z
+DTEND:20230311T200000Z
+SUMMARY:EESS talvine kestvusenduro I etapp
+URL:https://msport.ee/events/eess-talvine-kestvusenduro-i-etapp/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-05c754b7a24999e5a2426d55f30ac5c3@msport.ee
+DTSTART:20230311T200000Z
+DTEND:20230312T200000Z
+SUMMARY:Adrenalin Arena Kids Cup IV etapp
+URL:https://msport.ee/events/adrenalin-arena-kids-cup-iv-etapp/
+LOCATION:Kooli, Sõmerpalu, 66604 Võru County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-6fd3c1a1292112ffdcb7114567e9acba@msport.ee
+DTSTART:20230223T200000Z
+DTEND:20230224T200000Z
+SUMMARY:Äksi Jäärada V etapp
+URL:https://msport.ee/events/aksi-jaarada-v-etapp/
+CATEGORIES:Jäärada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d6969bf0df48c5b2264d46b01dbce1fd@msport.ee
+DTSTART:20230217T200000Z
+DTEND:20230218T200000Z
+SUMMARY:Võrtsjärve Jäärada IV etapp JÄÄB ÄRA!
+URL:https://msport.ee/events/tartu-jaarada/
+CATEGORIES:Jäärada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d7b3647f39c885557b4dfba3af25d0df@msport.ee
+DTSTART:20230210T200000Z
+DTEND:20230211T200000Z
+SUMMARY:Valga/Valka Jäärada
+URL:https://msport.ee/events/valga-valka-jaarada/
+CATEGORIES:Jäärada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-0b251ce22ac82e66c11bf8bc9b6db0fb@msport.ee
+DTSTART:20230203T200000Z
+DTEND:20230204T200000Z
+SUMMARY:Ermistu Jäärada- JÄÄB ÄRA!
+URL:https://msport.ee/events/ermistu-jaarada/
+CATEGORIES:Jäärada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-1b5e58b72d2ae43cd9e180fe8371f9af@msport.ee
+DTSTART:20230211T200000Z
+DTEND:20230212T200000Z
+SUMMARY:Adrenalin Arena Kids Cup III etapp
+URL:https://msport.ee/events/adrenalin-arena-kids-cup-iii-etapp/
+CATEGORIES:Motokross
+LOCATION:Kooli, Sõmerpalu, 66604 Võru County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-7390ab2b273e8a602155b0d876211b05@msport.ee
+DTSTART:20230127T200000Z
+DTEND:20230128T200000Z
+SUMMARY:Võrtsjärve Jäärada II etapp JÄÄB ÄRA!
+URL:https://msport.ee/events/vortsjarve-jaarada-ii-etapp/
+CATEGORIES:Jäärada
+LOCATION:Asukoha nimetus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-af712d6777082878de38de9faa76af8d@msport.ee
+DTSTART:20230128T200000Z
+DTEND:20230129T200000Z
+SUMMARY:Äksi Jäärada III etapp 2023
+URL:https://msport.ee/events/kuremaa-jaarada/
+CATEGORIES:Jäärada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-b924211a4f19ef381101d73e00c2e48b@msport.ee
+DTSTART:20230121T200000Z
+DTEND:20230122T200000Z
+SUMMARY:Adrenalin Arena II etapp 2023
+URL:https://msport.ee/events/adrenalin-arena-ii-etapp/
+CATEGORIES:Motokross
+LOCATION:Kooli, Sõmerpalu, 66604 Võru County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-5ad3a5ffec66a37a4da66fc7d22ceffb@msport.ee
+DTSTART:20230120T200000Z
+DTEND:20230121T200000Z
+SUMMARY:Äksi Jäärada II etapp 2023 JÄÄB ÄRA!!
+URL:https://msport.ee/events/vortsjarve-jaarada-2/
+CATEGORIES:Jäärada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-acaab6b8963aeed03d5f904d7f379a9a@msport.ee
+DTSTART:20230106T200000Z
+DTEND:20230107T200000Z
+SUMMARY:Võrtsjärve Jäärada 2023
+URL:https://msport.ee/events/vortsjarve-jaarada/
+CATEGORIES:Jäärada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-e662a955dd87095ef622ff7b0dc57d4f@msport.ee
+DTSTART:20221217T200000Z
+DTEND:20221218T200000Z
+SUMMARY:Adrenalin Arena Cup I etapp 2022
+URL:https://msport.ee/events/adrenalin-arena-i-etapp/
+CATEGORIES:Motokross
+LOCATION:Kooli, Sõmerpalu, 66604 Võru County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-89dab21508cc89dbefa23d1cf1079462@msport.ee
+DTSTART:20230609T180000Z
+DTEND:20230611T180000Z
+SUMMARY:Külgkorvide MM & Quadide EM etapp
+URL:https://msport.ee/events/kulgkorvide-mm-quadide-em-etapp/
+CATEGORIES:Motokross
+LOCATION:Pärnavälja tee 1, Lange, 62115 Tartu maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-87b9793186e8e0a119b1d137547f4e26@msport.ee
+DTSTART:20230318T050000Z
+DTEND:20230318T123000Z
+SUMMARY:Motosporditreenerite EKR 3 erialane tasemekoolitus
+URL:https://msport.ee/events/motosporditreenerite-ekr-3-erialane-tasemekoolitus/
+CATEGORIES:Koolitus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-5bb4c4600bb33208c4b160d69e4ac30c@msport.ee
+DTSTART:20221105T160000Z
+DTEND:20221105T220000Z
+SUMMARY:Motoringraja hooaja lõpetamine “Villaare ringrajapidu” 2022
+URL:https://msport.ee/events/motoringraja-hooaja-lopetamine-villaare-ringraja-pidu-2022/
+CATEGORIES:Hooaja lõpetamine,Motoringrada
+LOCATION:Teras Beach Tallinn Indoor Beach, Lõuka, Tallinn, Eesti
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-b5556e5ae70a58d1de0ae0d2bbde6b3c@msport.ee
+DTSTART:20221014T180000Z
+DTEND:20221015T180000Z
+SUMMARY:Hard Enduro EMV II etapp 2022 Enduro Magnifico
+URL:https://msport.ee/events/hard-enduro-emv-ii-etapp-2022-enduro-magnifico/
+CATEGORIES:Enduro
+LOCATION:Valguse 2, Valga
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-24385b1db29411140666c9ac329e269f@msport.ee
+DTSTART:20230106T200000Z
+DTEND:20230107T200000Z
+SUMMARY:E-Bike Cup 2022/23 III etapp Lehtse talikross
+URL:https://msport.ee/events/e-bike-cup-2022-23-iii-etapp-lehtse-talikross/
+CATEGORIES:e-bike
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-476f7ac25e537b470501bdcc0fca7a5e@msport.ee
+DTSTART:20221025T180000Z
+DTEND:20221026T180000Z
+SUMMARY:E-Bike Cup 2022/23 II etapp Karla Lost in Woods e-bike
+URL:https://msport.ee/events/e-bike-cup-2022-23-ii-etapp-karla-lost-in-woods-e-bike/
+CATEGORIES:e-bike
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-b7a3ac6932d95a47716214debde295e6@msport.ee
+DTSTART:20221008T180000Z
+DTEND:20221009T180000Z
+SUMMARY:E-Bike Cup 2022/23 I etapp Kose 7 järve kross
+URL:https://msport.ee/events/e-bike-cup-2022-23-i-etapp-kose-7-jarve-kross/
+CATEGORIES:e-bike
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-af345177c528a02c461f61ed0626139a@msport.ee
+DTSTART:20221216T200000Z
+DTEND:20221217T200000Z
+SUMMARY:EMV/EKV I etapp talvises endurokrossis – GASGAS Mehka Piksepini Karikas  2022-2023 IV-etapp “Lepassaare Talv 1”
+URL:https://msport.ee/events/gasgas-mehka-piksepini-karikas-2022-2023-iv-etapp/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-de6d3025fe2a8ccbf25185d8cf80f60e@msport.ee
+DTSTART:20221111T200000Z
+DTEND:20221112T200000Z
+SUMMARY:GasGas Mehka Piksepini Karikas 2022-2023 III etapp
+URL:https://msport.ee/events/gasgas-mehka-piksepini-karikas-2022-2023-iii-etapp/
+CATEGORIES:Enduro
+LOCATION:Unnamed Road, Jaanikese, 68218 Valga maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-32b091dce6e739773e87245458824acf@msport.ee
+DTSTART:20221028T180000Z
+DTEND:20221029T180000Z
+SUMMARY:GasGas Mehka Piksepini Karikas 2022-2023 II etapp
+URL:https://msport.ee/events/gasgas-mehka-piksepini-karikas-2022-2023-ii-etapp/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-c84e7bda307ba13eb676d4d460b5a266@msport.ee
+DTSTART:20220924T180000Z
+DTEND:20220925T180000Z
+SUMMARY:GasGas Mehka Piksepini Karikas 2022-2023 I etapp
+URL:https://msport.ee/events/gasgas-mehka-piksepini-karikas-2022-2023-i-etapp/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-86ca4e6d739079d6130b192859227e0b@msport.ee
+DTSTART:20220916T180000Z
+DTEND:20220917T180000Z
+SUMMARY:Võrtsjärve Enduro Hard Enduro EESS VII etapp 2022
+URL:https://msport.ee/events/vortsjarve-enduro-2022/
+CATEGORIES:Enduro
+LOCATION:Suure-Rakke
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-eec33a05990b9340690a6bc1dac08676@msport.ee
+DTSTART:20221008T180000Z
+DTEND:20221009T180000Z
+SUMMARY:Aruküla kross 2022
+URL:https://msport.ee/events/arukula-kross-2022/
+CATEGORIES:Motokross
+LOCATION:Kurgla, 75206 Harju County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-9b320f6e7f76aeea1389af9308ef4107@msport.ee
+DTSTART:20220722T180000Z
+DTEND:20220723T180000Z
+SUMMARY:Speedest Glassdrive Racing 2022
+URL:https://msport.ee/events/speedest-glassdrive-racing-2022/
+CATEGORIES:Kiirendus
+LOCATION:Lennu 44, 61715
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-e30c458d38ef6335aaf705cd69da0f4c@msport.ee
+DTSTART:20220708T180000Z
+DTEND:20220709T180000Z
+SUMMARY:KQK IV etapp 2022
+URL:https://msport.ee/events/kqk-iv-etapp-2022/
+CATEGORIES:Motokross
+LOCATION:Unnamed Road, Jaanikese, 68218 Valga maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-0c8071c42bcc132bbc1465f8832112de@msport.ee
+DTSTART:20220715T130000Z
+DTEND:20220715T170000Z
+SUMMARY:Tartu superenduro 2022
+URL:https://msport.ee/events/tartu-superenduro-2022-2/
+CATEGORIES:Enduro
+LOCATION:Tartu Raekoja plats
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-503baa9b42108135704d9864141b7116@msport.ee
+DTSTART:20220924T180000Z
+DTEND:20220925T180000Z
+SUMMARY:ENKV VIII etapp 2022 Pikametsas
+URL:https://msport.ee/events/enkv-viii-etapp-2022-pikametsas/
+CATEGORIES:Motokross
+LOCATION:Pikametsa krossirada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-58a8cbdcf0c8870f46fecc1da958049e@msport.ee
+DTSTART:20220812T180000Z
+DTEND:20220813T180000Z
+SUMMARY:ENKV V etapp ja Pitbike EMV III etapp 2022 Pühajõel
+URL:https://msport.ee/events/enkv-v-etapp-ja-pitbike-emv-iii-etapp-2022-puhajoel/
+CATEGORIES:Motokross
+LOCATION:Pühajõe, 41726 Ida-Viru County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-323402f743a8ebec2cea9bfe9f042b24@msport.ee
+DTSTART:20220622T180000Z
+DTEND:20220623T180000Z
+SUMMARY:Hiiumaa jaanikross 2022
+URL:https://msport.ee/events/hiiumaa-jaanikross-2022/
+CATEGORIES:Motokross
+LOCATION:58.78466
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-0d67c3afa7ddcdcc5a6da300ae746aa4@msport.ee
+DTSTART:20220819T180000Z
+DTEND:20220820T180000Z
+SUMMARY:Külgkorvide ja Quadide karikasari V etapp 2022
+URL:https://msport.ee/events/kulgkorvide-ja-quadide-karikasari-v-etapp-2022/
+CATEGORIES:Motokross
+LOCATION:63123, Põlgaste
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-3c949a4e23bdd8dbbce86b4522e5a3e7@msport.ee
+DTSTART:20220610T180000Z
+DTEND:20220611T180000Z
+SUMMARY:Külgkorvide ja Quadide karikasari III etapp 2022 Narvas
+URL:https://msport.ee/events/kulgkorvide-ja-quadide-karikasari-iii-etapp-2022-narvas/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-c26d879d2bf68c783ed4831ba35881de@msport.ee
+DTSTART:20220930T180000Z
+DTEND:20221001T180000Z
+SUMMARY:EHKK VI etapp 2022 Saku staadionikross
+URL:https://msport.ee/events/ehkk-vi-etapp-2022-saku-staadionikross/
+CATEGORIES:Motokross
+LOCATION:Saku-Männiku krossirada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-b6c3ec5e1ac4be51ead1ac43fc95cf52@msport.ee
+DTSTART:20220909T180000Z
+DTEND:20220910T180000Z
+SUMMARY:EHKK V etapp 2022
+URL:https://msport.ee/events/ehkk-v-etapp-2022/
+CATEGORIES:Motokross
+LOCATION:Pikametsa krossirada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-cd6366b51617ed74a45eea4725397dd7@msport.ee
+DTSTART:20220805T180000Z
+DTEND:20220806T180000Z
+SUMMARY:EHKK IV etapp 2022
+URL:https://msport.ee/events/ehkk-iv-etapp-2022/
+CATEGORIES:Motokross
+LOCATION:Ambla, 73511 Järva County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-61274db514fe47189ddb9d11d3dfd24b@msport.ee
+DTSTART:20220709T180000Z
+DTEND:20220710T180000Z
+SUMMARY:EHKK III etapp 2022
+URL:https://msport.ee/events/ehkk-iii-etapp-2022/
+CATEGORIES:Motokross
+LOCATION:Unnamed Road, Jaanikese, 68218 Valga maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-202622230cabbc1f9801698ba84e401a@msport.ee
+DTSTART:20220603T180000Z
+DTEND:20220604T180000Z
+SUMMARY:EHKK II etapp 2022
+URL:https://msport.ee/events/ehkk-ii-etapp-2022/
+CATEGORIES:Motokross
+LOCATION:63123, Põlgaste
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d1af882710e0c6f198d1a0495292769e@msport.ee
+DTSTART:20220517T180000Z
+DTEND:20220518T180000Z
+SUMMARY:Kiilimoto-Redmoto noortesarja I etapp 2022
+URL:https://msport.ee/events/kiilimoto-redmoto-noortesarja-i-etapp-2022/
+CATEGORIES:Motokross
+LOCATION:Krossiraja, Lokuti, 75514 Harju maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-6509060fec7b95ebc5bee20876a89e56@msport.ee
+DTSTART:20220813T180000Z
+DTEND:20220814T180000Z
+SUMMARY:Supermoto EMV IV etapp 2022
+URL:https://msport.ee/events/supermoto-emv-iv-etapp-2022/
+CATEGORIES:Supermoto
+LOCATION:Kurisoo, 73514 Järva County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-6a64b2b93f793003eb60c96031c9b53e@msport.ee
+DTSTART:20220715T180000Z
+DTEND:20220716T180000Z
+SUMMARY:Supermoto EMV III etapp 2022
+URL:https://msport.ee/events/supermoto-emv-iii-etapp-2022/
+CATEGORIES:Supermoto
+LOCATION:Kuningamäe, 48011 Jõgeva County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d62d34fe76644782f05485cb618e8afb@msport.ee
+DTSTART:20220603T180000Z
+DTEND:20220604T180000Z
+SUMMARY:Supermoto EMV II ja Balti MV II etapp 2022
+URL:https://msport.ee/events/supermoto-emv-ii-ja-balti-mv-ii-etapp-2022/
+CATEGORIES:Supermoto
+LOCATION:Unnamed Rd,, 61216 Tartu maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d7343c3793cf62e1c47464a5b576d97c@msport.ee
+DTSTART:20220513T180000Z
+DTEND:20220514T180000Z
+SUMMARY:Supermoto EMV I ja Balti MV I etapp 2022
+URL:https://msport.ee/events/supermoto-emv-i-ja-balti-mv-i-etapp-2022/
+CATEGORIES:Supermoto
+LOCATION:Gaujas iela 41, Madona, Madonas pilsēta, LV-4801, Latvia
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-04dafabf55b900dc007952009afed8c8@msport.ee
+DTSTART:20220812T180000Z
+DTEND:20220814T180000Z
+SUMMARY:Triali EMV III-IV etapp 2022
+URL:https://msport.ee/events/triali-emv-iii-iv-etapp-2022/
+CATEGORIES:Trial
+LOCATION:Vasalemma, 76101 Harju County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-e0bf0a311a1fafa769bcb265df9320ed@msport.ee
+DTSTART:20220722T180000Z
+DTEND:20220723T180000Z
+SUMMARY:Vasalemma klassik trial 2022
+URL:https://msport.ee/events/vasalemma-klassik-trial-2022/
+CATEGORIES:Trial
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-a66b104f0a762ecf8d2c88f9c0a60ec0@msport.ee
+DTSTART:20220603T180000Z
+DTEND:20220605T180000Z
+SUMMARY:Klubivõistlus Valgjärve trial 2022
+URL:https://msport.ee/events/klubivoistlus-valgjarve-trial-2022/
+CATEGORIES:Trial
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-32d8c5a6be984ba6937650cbdd4fb7de@msport.ee
+DTSTART:20220521T180000Z
+DTEND:20220522T180000Z
+SUMMARY:Triali EMV II etapp 2022 Tapal
+URL:https://msport.ee/events/triali-emv-ii-etapp-2022-tapal/
+CATEGORIES:Trial
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-ea5f82e168a57cacba33eb6fd7d5d64c@msport.ee
+DTSTART:20220520T180000Z
+DTEND:20220521T180000Z
+SUMMARY:Triali EMV I etapp 2022 Tapal
+URL:https://msport.ee/events/triali-emv-i-etapp-2022-tapal/
+CATEGORIES:Trial
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-c9766ac78bd8a7e87064b733b91d71df@msport.ee
+DTSTART:20220910T180000Z
+DTEND:20220911T180000Z
+SUMMARY:MX Liiga VII etapp “Tõnu Lille mälestusvõistlus” 2022 Maardus
+URL:https://msport.ee/events/mx-liiga-vii-etapp-2022-tankodroomil/
+CATEGORIES:Motokross
+LOCATION:Üleoru tn 2, Maardu 74114
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-fa349e08146a882a4a229da2babf47bc@msport.ee
+DTSTART:20221021T180000Z
+DTEND:20221022T180000Z
+SUMMARY:Supikross 2022
+URL:https://msport.ee/events/supikross-2022/
+CATEGORIES:Motokross
+LOCATION:Unnamed Road, Kurista, 48413, 48413 Jõgeva maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-9d9decf433d23f3769c9dd1e9aee1858@msport.ee
+DTSTART:20221014T180000Z
+DTEND:20221015T180000Z
+SUMMARY:Kestvuskrossi EMV III etapp 2022 Illukal
+URL:https://msport.ee/events/kestvuskrossi-emv-iii-etapp-2022-illukal/
+CATEGORIES:Kestvuskross
+LOCATION:Illuka vald, Ida-Virumaa, Jõuga-Raudi maantee 9.km
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-acafcd615e8b7ed4fc4c78cef246f827@msport.ee
+DTSTART:20221007T180000Z
+DTEND:20221008T180000Z
+SUMMARY:Kestvuskrossi EMV II etapp 2022 Paikusel
+URL:https://msport.ee/events/kestvuskrossi-emv-ii-etapp-2022-paikusel/
+CATEGORIES:Kestvuskross
+LOCATION:Puraviku, Seljametsa, 86601 Pärnu maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-817a685264850417eb2b34cbab2ab6c6@msport.ee
+DTSTART:20220915T180000Z
+DTEND:20220917T180000Z
+SUMMARY:Mehaanikute Mitteametlikud Maailmameistrivõistlused 2022
+URL:https://msport.ee/events/mmm-2022/
+CATEGORIES:Motokross
+LOCATION:Lolu, 69617 Viljandi County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-41e506bbb9fd9d21238864243a823bb1@msport.ee
+DTSTART:20220909T180000Z
+DTEND:20220910T180000Z
+SUMMARY:ENKV VII, Pitbike EKV IV ja Äksi Cup III etapp 2022
+URL:https://msport.ee/events/enkv-vii-etapp-ja-aksi-cup-iii-etapp-2022/
+CATEGORIES:Motokross
+LOCATION:Äksi alevik, Pärtli talu, 60543 Tartu maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-a73eb3243527e87baab229242740c6ee@msport.ee
+DTSTART:20220902T180000Z
+DTEND:20220903T180000Z
+SUMMARY:ENKV VI etapp ja Pitbike EMV IV etapp 2022 Linnamäel
+URL:https://msport.ee/events/enkv-vi-etapp-ja-pitbike-emv-iv-etapp-2022-linnamael/
+CATEGORIES:Motokross
+LOCATION:Unnamed Road, Kurista, 48413, 48413 Jõgeva maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-23d49a180a3eb93ca0a3eb2cf89c991f@msport.ee
+DTSTART:20221001T180000Z
+DTEND:20221002T180000Z
+SUMMARY:Rannu kestvuskross 2022
+URL:https://msport.ee/events/rannu-kestvuskross-2022/
+CATEGORIES:Kestvuskross
+LOCATION:Ervu küla, 61102 Tartu maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-c9cc6effdcf0b73b83c33fa3dc24d3eb@msport.ee
+DTSTART:20220827T180000Z
+DTEND:20220828T180000Z
+SUMMARY:Äksi Cup II etapp 2022
+URL:https://msport.ee/events/aksi-cup-ii-etapp-2022/
+CATEGORIES:Motokross
+LOCATION:Äksi alevik, Pärtli talu, 60543 Tartu maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-9e02227f0d976dc79b13193a99a13600@msport.ee
+DTSTART:20220819T180000Z
+DTEND:20220821T180000Z
+SUMMARY:Castrol motokrossi EMV IV etapp 2022 Tihemetsas
+URL:https://msport.ee/events/castrol-motokrossi-emv-iv-etapp-2022-tihemetsas/
+CATEGORIES:Motokross
+LOCATION:Tartu–Viljandi–Kilingi-Nõmme, Väljaküla, 86211 Pärnu maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-014108811b4397cc08a752a4a97654cc@msport.ee
+DTSTART:20220813T180000Z
+DTEND:20220814T180000Z
+SUMMARY:MX Liiga VI etapp 2022 KV+Quad Pühajõel
+URL:https://msport.ee/events/mx-liiga-vi-etapp-2022-kvquad-puhajoel/
+CATEGORIES:Motokross
+LOCATION:Pühajõe, 41726 Ida-Viru County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-6b0d2699cb6518a3c4bec8e734255342@msport.ee
+DTSTART:20220806T180000Z
+DTEND:20220807T180000Z
+SUMMARY:ENKV IV ja Pitbike EKV II etapp 2022 Hiiumaal
+URL:https://msport.ee/events/enkv-iv-etapp-2022-hiiumaal/
+CATEGORIES:Motokross
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-89e677230bebac19261a3fa3231b89aa@msport.ee
+DTSTART:20220729T180000Z
+DTEND:20220730T180000Z
+SUMMARY:MX Liiga V etapp 2022 Tihemetsas
+URL:https://msport.ee/events/mx-liiga-v-etapp-2022-tihemetsas/
+CATEGORIES:Motokross
+LOCATION:Tartu–Viljandi–Kilingi-Nõmme, Väljaküla, 86211 Pärnu maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-a81ca6589c8fe1c377d77e29f5ad61ef@msport.ee
+DTSTART:20220723T180000Z
+DTEND:20220724T180000Z
+SUMMARY:Äksi Cup I etapp 2022
+URL:https://msport.ee/events/aksi-cup-i-etapp-2022/
+CATEGORIES:Motokross
+LOCATION:Äksi alevik, Pärtli talu, 60543 Tartu maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-248e35b345c185e95aaaf74c91268a44@msport.ee
+DTSTART:20220722T180000Z
+DTEND:20220723T180000Z
+SUMMARY:ENKV III etapp ja Pitbike EMV II etapp 2022 Räpinas + Isad + Open + Hobi + Veteran
+URL:https://msport.ee/events/enkv-iii-etapp-ja-pitbike-emv-ii-etapp-2022-rapinas/
+CATEGORIES:Motokross
+LOCATION:Linte, 64402 Põlva maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-59f1da84efd61c8c31d09da310d5eaf8@msport.ee
+DTSTART:20220715T180000Z
+DTEND:20220716T180000Z
+SUMMARY:MX Liiga IV etapp 2022 KV+Quad Türil
+URL:https://msport.ee/events/mx-liiga-iv-etapp-2022-kvquad-turil/
+CATEGORIES:Motokross
+LOCATION:Lokuta, 72240 Järva maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-5a21d5ffba6c455defab2bd1865f605b@msport.ee
+DTSTART:20220708T180000Z
+DTEND:20220710T180000Z
+SUMMARY:Castrol motokrossi EMV III ja Balti MV II etapp 2022 Pärnu Kuningas
+URL:https://msport.ee/events/motokrossi-emv-iii-etapp-2022-parnu-kuningas/
+CATEGORIES:Motokross
+LOCATION:Eametsa, 85001 Pärnu County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-c635c43369288ac8f47de321fcfd06aa@msport.ee
+DTSTART:20220701T180000Z
+DTEND:20220703T180000Z
+SUMMARY:Külgkorvide MM ja Quadide EM IV etapp 2022 Langel
+URL:https://msport.ee/events/kulgkorvide-mm-ja-quadide-em-iv-etapp-2022-langel/
+CATEGORIES:Motokross
+LOCATION:Pärnavälja tee 1, Lange, 62115 Tartu maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-2b99c57822f340137f3f766cea35496f@msport.ee
+DTSTART:20220909T180000Z
+DTEND:20220910T180000Z
+SUMMARY:Mäkketõusu EMV VI etapp 2022 Marjamäel
+URL:https://msport.ee/events/makketousu-emv-vi-etapp-2022-marjamael/
+CATEGORIES:Mäkketõus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-fd94fb07124395c7641614504c41bdde@msport.ee
+DTSTART:20220812T180000Z
+DTEND:20220813T180000Z
+SUMMARY:Mäkketõusu EMV V etapp 2022 Sõrestes
+URL:https://msport.ee/events/makketousu-emv-v-etapp-2022-sorestes/
+CATEGORIES:Mäkketõus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-24142051e779b32d3da868fd46a1f1e7@msport.ee
+DTSTART:20220805T180000Z
+DTEND:20220806T180000Z
+SUMMARY:Mäkketõusu EMV IV etapp 2022 Rannus
+URL:https://msport.ee/events/makketousu-emv-iv-etapp-2022-rannus/
+CATEGORIES:Mäkketõus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-15dd39a25b10d66bacc8b3ede3d83209@msport.ee
+DTSTART:20220701T180000Z
+DTEND:20220702T180000Z
+SUMMARY:Mäkketõusu EMV III etapp 2022 Kuningamäel
+URL:https://msport.ee/events/makketousu-emv-iii-etapp-2022-kuningamael/
+CATEGORIES:Mäkketõus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-e765e6d3e93ad0d46bac70d0f44c353b@msport.ee
+DTSTART:20220611T180000Z
+DTEND:20220612T180000Z
+SUMMARY:Mäkketõusu EMV II etapp 2022 Laatres
+URL:https://msport.ee/events/makketousu-emv-ii-etapp-2022-laatres/
+CATEGORIES:Mäkketõus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-fc17dd578993f5b14c933debea892220@msport.ee
+DTSTART:20220527T180000Z
+DTEND:20220528T180000Z
+SUMMARY:Vene tehnika mäkketõus 2022 Tartumaal
+URL:https://msport.ee/events/vene-tehnika-makketous-2022-tartumaal/
+CATEGORIES:Mäkketõus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-3ebdfdc989ed7208a026cdb41e093fb9@msport.ee
+DTSTART:20220520T180000Z
+DTEND:20220521T180000Z
+SUMMARY:Mäkketõusu EMV I etapp 2022 Sõrestes
+URL:https://msport.ee/events/makketousu-emv-i-etapp-2022-sorestes/
+CATEGORIES:Mäkketõus
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-a42852e8b1040ae78c1cac590a9a56ce@msport.ee
+DTSTART:20220902T180000Z
+DTEND:20220904T180000Z
+SUMMARY:Motoringraja EMV V etapp 2022 Porsche Ringil
+URL:https://msport.ee/events/motoringraja-emv-v-etapp-2022-porsche-ringil/
+CATEGORIES:Motoringrada
+LOCATION:Audru ringrada, Papsaare küla, Audru vald, 88137
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-d3fc452fc53211c9627082d912d1ed9e@msport.ee
+DTSTART:20220729T180000Z
+DTEND:20220731T180000Z
+SUMMARY:Motoringraja EMV IV etapp 2022 Alastaros
+URL:https://msport.ee/events/motoringraja-emv-iv-etapp-2022-alastaros/
+CATEGORIES:Motoringrada
+LOCATION:Jarno Saarisentie, 32560 Virttaa, Finland
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-045e253202dbde70c8c7bcf8a2be2439@msport.ee
+DTSTART:20220701T180000Z
+DTEND:20220703T180000Z
+SUMMARY:Motoringraja EMV III ja Balti MV II etapp Bikerniekis
+URL:https://msport.ee/events/motoringraja-emv-iii-ja-balti-mv-ii-etapp-bikerniekis/
+CATEGORIES:Motoringrada
+LOCATION:Sergeja Eizenšteina iela 4, Vidzemes priekšpilsēta, Rīga, LV-1079, Latvia
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-800861613d0fc2f7cd0c17a81fe58ed4@msport.ee
+DTSTART:20220617T180000Z
+DTEND:20220619T180000Z
+SUMMARY:Motoringraja EMV II etapp Suur Võidusõit
+URL:https://msport.ee/events/motoringraja-emv-ii-etapp-suur-voidusoit/
+CATEGORIES:Motoringrada
+LOCATION:Audru ringrada, Papsaare küla, Audru vald, 88137
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-f1e872ea2432eb2cf453b8ddfde7e733@msport.ee
+DTSTART:20220520T180000Z
+DTEND:20220522T180000Z
+SUMMARY:Motoringraja EMV I ja Balti MV I etapp 2022 Porsche Ringil
+URL:https://msport.ee/events/motoringraja-emv-i-ja-balti-mv-i-etapp-2022-porsche-ringil/
+CATEGORIES:Motoringrada
+LOCATION:Audru ringrada, Papsaare küla, Audru vald, 88137
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-33f6d73833b9a8194ca13564eb16eec5@msport.ee
+DTSTART:20220908T180000Z
+DTEND:20220909T180000Z
+SUMMARY:Öösorr Leigo 2022
+URL:https://msport.ee/events/oosorr-leigo-2022/
+CATEGORIES:Kestvuskross
+LOCATION:Leigo talu, Lutike küla, 67504 Valga maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-6526f71766bd65ed27fbab3cacc214d7@msport.ee
+DTSTART:20220902T180000Z
+DTEND:20220904T180000Z
+SUMMARY:HardEST enduro II etapp 2022 Sadala Weekend
+URL:https://msport.ee/events/hardest-enduro-ii-etapp-2022-sadala-weekend/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-c819bb3adddea3536fbf2f604cf99379@msport.ee
+DTSTART:20220923T180000Z
+DTEND:20220925T180000Z
+SUMMARY:Enduro EMV V etapp ja Balti MV III etapp 2022 Kupiškis
+URL:https://msport.ee/events/enduro-emv-v-etapp-ja-balti-mv-iii-etapp-2022-kupiskis/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-2a37e9f8a5108027989f4c4eb29bab3c@msport.ee
+DTSTART:20220708T180000Z
+DTEND:20220710T180000Z
+SUMMARY:Enduro EMV III etapp ja Balti MV II etapp 2022 Paikusel
+URL:https://msport.ee/events/enduro-emv-iii-etapp-ja-balti-mv-ii-etapp-2022-paikusel/
+CATEGORIES:Enduro
+LOCATION:Paide mnt 19, Paikuse, 86602 Pärnu maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-32f73e457055e06dc59cd2062082526b@msport.ee
+DTSTART:20220603T180000Z
+DTEND:20220605T180000Z
+SUMMARY:Enduro EMV II etapp ja Balti MV I etapp Madonas
+URL:https://msport.ee/events/enduro-emv-ii-etapp-ja-balti-mv-i-etapp-madonas/
+CATEGORIES:Enduro
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-1f08ec60f4404cc1407a7a5a70b98063@msport.ee
+DTSTART:20220513T180000Z
+DTEND:20220514T180000Z
+SUMMARY:Enduro EMV I ja EESS III etapp 2022 Leigol
+URL:https://msport.ee/events/enduro-emv-i-etapp-2022-leigol/
+CATEGORIES:Enduro
+LOCATION:Leigo talu, Lutike küla, 67504 Valga maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-5881a695de8b28f52c1d50944a056cf8@msport.ee
+DTSTART:20220430T180000Z
+DTEND:20220501T180000Z
+SUMMARY:Aidu hard enduro ja EESS II etapp 2022
+URL:https://msport.ee/events/hardest-enduro-i-etapp-2022-aidus/
+CATEGORIES:Enduro
+LOCATION:Aidu-Liiva, 42303 Ida-Viru County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-c61ea5ef94f62077223a3589d1c508d4@msport.ee
+DTSTART:20220422T180000Z
+DTEND:20220423T180000Z
+SUMMARY:Jaanikese kestvusenduro 2022
+URL:https://msport.ee/events/jaanikese-kestvusenduro-2022/
+CATEGORIES:Enduro
+LOCATION:Unnamed Road, Jaanikese, 68218 Valga maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-803e7d6d75c2b5208b9a2fafb18b9174@msport.ee
+DTSTART:20220618T180000Z
+DTEND:20220619T180000Z
+SUMMARY:MX Liiga III etapp 2022 Haanjas
+URL:https://msport.ee/events/mx-liiga-iii-etapp-2022-haanjas/
+CATEGORIES:Motokross
+LOCATION:Abiraja, Trolla, 65143 Võru maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-5e71d510e4f9f03bc9ae9f20d1da23dc@msport.ee
+DTSTART:20220617T180000Z
+DTEND:20220618T180000Z
+SUMMARY:ENKV II ja Pitbike EKV I etapp 2022 Haanjas
+URL:https://msport.ee/events/enkv-iv-etapp-2022-haanjas/
+CATEGORIES:Motokross
+LOCATION:Abiraja, Trolla, 65143 Võru maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-c60f800a9ca45e2ff0c121dcdc4fee4b@msport.ee
+DTSTART:20220610T180000Z
+DTEND:20220612T180000Z
+SUMMARY:EMX65, EMX85 ja EMX Women Euroopa meistrivõistluste etapp 2022
+URL:https://msport.ee/events/emx65-emx85-ja-emx-women-euroopa-meistrivoistluste-etapp-2022/
+CATEGORIES:Motokross
+LOCATION:Eametsa, 85001 Pärnu County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-326eb1424f16bc2e87e292b797759a07@msport.ee
+DTSTART:20220527T180000Z
+DTEND:20220529T180000Z
+SUMMARY:Castrol motokrossi EMV II etapp 2022 Langel
+URL:https://msport.ee/events/motokrossi-emv-ii-etapp-2022-langel/
+CATEGORIES:Motokross
+LOCATION:Pärnavälja tee 1, Lange, 62115 Tartu maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-780a4388052c5088fd7a6e63f285fe5a@msport.ee
+DTSTART:20220521T180000Z
+DTEND:20220522T180000Z
+SUMMARY:ENKV I etapp ja Pitbike EMV I etapp 2022 Tihemetsas
+URL:https://msport.ee/events/enkv-ii-etapp-ja-pitbike-emv-i-etapp-2022-tihemetsas/
+CATEGORIES:Motokross
+LOCATION:Tartu–Viljandi–Kilingi-Nõmme, Väljaküla, 86211 Pärnu maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-8627dc6ac17821ae3c1b78f6957cb903@msport.ee
+DTSTART:20220520T180000Z
+DTEND:20220521T180000Z
+SUMMARY:MX Liiga II etapp KV+Quad 2022 Linnamäel
+URL:https://msport.ee/events/mx-liiga-ii-etapp-2022-linnamael/
+CATEGORIES:Motokross
+LOCATION:Unnamed Road, Kurista, 48413, 48413 Jõgeva maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-a6f04ca29d128074674b56d2b0728362@msport.ee
+DTSTART:20220506T180000Z
+DTEND:20220508T180000Z
+SUMMARY:Castrol motokrossi EMV I etapp 2022 Nuia Suursõit
+URL:https://msport.ee/events/motokrossi-emv-i-etapp-2022-nuia-suursoit/
+CATEGORIES:Motokross
+LOCATION:Ainja, 69105 Viljandi County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-442762076558d1a90215b75eabd3f08e@msport.ee
+DTSTART:20220430T180000Z
+DTEND:20220501T180000Z
+SUMMARY:MX Liiga I etapp 2022 Põlva Kevad
+URL:https://msport.ee/events/mx-liiga-i-etapp-2022-polva-kevad/
+CATEGORIES:Motokross
+LOCATION:Võru-Põlva, Rosma, 63221 Põlva maakond
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-204c45f4fa76edd21b1b986d4e360c70@msport.ee
+DTSTART:20220429T180000Z
+DTEND:20220430T180000Z
+SUMMARY:Kestvuskrossi EMV I etapp 2022 Sakus
+URL:https://msport.ee/events/kestvuskrossi-emv-i-etapp-2022-sakus/
+CATEGORIES:Kestvuskross
+LOCATION:Saku-Männiku krossirada
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-7fde864890a9f13d4685639621d80680@msport.ee
+DTSTART:20221022T180000Z
+DTEND:20221023T180000Z
+SUMMARY:Saku Tankodroomi kross 2022
+URL:https://msport.ee/events/mx-liiga-i-etapp-2022-tonu-lille-malestusvoistlus-maardus/
+CATEGORIES:Motokross
+LOCATION:Männiku, Harju County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-c918f90cec599ebd8c379ebcfddb25ec@msport.ee
+DTSTART:20220410T020000Z
+DTEND:20220410T120000Z
+SUMMARY:Kestvuskrossi EKV I etapp 2022 Vilaskis
+URL:https://msport.ee/events/kestvuskrossi-emv-i-etapp-2022-vilaskis/
+CATEGORIES:Kestvuskross
+LOCATION:Vilaski
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-bff113618e3a45a9cef5f8a4287946b9@msport.ee
+DTSTART:20220416T180000Z
+DTEND:20220417T180000Z
+SUMMARY:Superkrossi Euroopa meistrivõistluste III etapp
+URL:https://msport.ee/events/superkrossi-euroopa-meistrivoistluste-i-etapp-692-854/
+CATEGORIES:Motokross
+LOCATION:Kooli, Sõmerpalu, 66604 Võru County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-9736797e1b28749e59f4dad4fc593fbd@msport.ee
+DTSTART:20220415T180000Z
+DTEND:20220416T180000Z
+SUMMARY:Superkrossi Euroopa meistrivõistluste II etapp
+URL:https://msport.ee/events/superkrossi-euroopa-meistrivoistluste-i-etapp-692/
+CATEGORIES:Motokross
+LOCATION:Kooli, Sõmerpalu, 66604 Võru County
+END:VEVENT
+BEGIN:VEVENT
+UID:MEC-f8c919a4bb8a780bff6df561908803f9@msport.ee
+DTSTART:20220414T180000Z
+DTEND:20220415T180000Z
+SUMMARY:Superkrossi Euroopa meistrivõistluste I etapp
+URL:https://msport.ee/events/superkrossi-euroopa-meistrivoistluste-i-etapp/
+CATEGORIES:Motokross
+LOCATION:Kooli, Sõmerpalu, 66604 Võru County
+END:VEVENT
+END:VCALENDAR

@@ -20,7 +20,7 @@ aliases = ["Lilleküla kunstmuruväljak"]
 [[venue]]
 name = "Kadrioru staadion"
 city = "Tallinn"
-aliases = ["Kadriorg Stadium"]
+aliases = ["Kadriorg Stadium", "Tallinn, Kadrioru Staadion"]
 
 [[venue]]
 name = "Hiiu staadion"
@@ -287,6 +287,7 @@ city = "Kambja vald"
 [[venue]]
 name = "Sillamäe Kalevi staadion"
 city = "Sillamäe"
+aliases = ["Sillamäe staadion"]
 
 [[venue]]
 name = "Põlva Lootospark"
@@ -304,7 +305,7 @@ aliases = ["Raeküla Kool"]
 [[venue]]
 name = "Türi spordihoone"
 city = "Türi"
-aliases = ["Konesko Türi SH"]
+aliases = ["Konesko Türi SH", "Konesko Türi Spordihoone"]
 
 [[venue]]
 name = "Põltsamaa Felixhall"
@@ -460,6 +461,7 @@ city = "Kuressaare"
 [[venue]]
 name = "Tartu Tamme staadion"
 city = "Tartu"
+aliases = ["Tamme staadion"]
 
 [[venue]]
 name = "Tartu Coop staadioni kunstmuruväljak"
@@ -534,7 +536,7 @@ city = "Riia"
 [[venue]]
 name = "Tartu Ülikooli spordihoone"
 city = "Tartu"
-aliases = ["Tartu Ülikooli SH Ilmar Kullami nimeline peaväljak", "TÜ sph"]
+aliases = ["Tartu Ülikooli SH Ilmar Kullami nimeline peaväljak", "TÜ sph", "Ujula 4", "Tartu Ülikooli Akadeemiline Spordiklubi"]
 
 [[venue]]
 name = "Võru Spordikeskus"
@@ -774,6 +776,7 @@ city = "Tallinn"
 [[venue]]
 name = "Türi linnastaadion"
 city = "Türi"
+aliases = ["Türi linna staadion"]
 
 [[venue]]
 name = "Vaimastvere Arena"
@@ -902,3 +905,258 @@ city = "Rakvere"
 [[venue]]
 name = "Rakvere Spordikeskus"
 city = "Rakvere"
+
+
+# --- Kergejõustik (ekjl.ee kalender) ---
+
+[[venue]]
+name = "Lasnamäe Kergejõustikuhall"
+city = "Tallinn"
+
+[[venue]]
+name = "Tallinna Kergejõustikuhall"
+city = "Tallinn"
+
+[[venue]]
+name = "Tallinna Lauluväljak"
+city = "Tallinn"
+
+[[venue]]
+name = "Vabaduse väljak"
+city = "Tallinn"
+
+[[venue]]
+name = "Sütiste park-mets"
+city = "Tallinn"
+aliases = ["J.Sütiste park-metsa plats"]
+
+[[venue]]
+name = "Vabaõhumuuseumi tee 8"
+city = "Tallinn"
+
+[[venue]]
+name = "Ahtme spordihall"
+city = "Kohtla-Järve"
+aliases = ["Ahtme Spordihall"]
+
+[[venue]]
+name = "Haapsalu spordikeskus"
+city = "Haapsalu"
+aliases = ["Haapsalu Spordikeskus"]
+
+[[venue]]
+name = "Järvakandi terviserajad"
+city = "Järvakandi"
+
+[[venue]]
+name = "Jõhvi Kesklinna Kooli staadion"
+city = "Jõhvi"
+
+[[venue]]
+name = "Jõulumäe tervisespordikeskus"
+city = "Jõulumäe"
+aliases = ["Jõulumäe Tervisespordikeskus"]
+
+[[venue]]
+name = "Kernu staadion"
+city = "Saue vald"
+
+[[venue]]
+name = "Kohtla-Nõmme Kooli staadion"
+city = "Kohtla-Nõmme"
+
+[[venue]]
+name = "Kuusalu staadion"
+city = "Kuusalu"
+
+[[venue]]
+name = "Kääriku spordikeskus"
+city = "Otepää"
+aliases = ["Kääriku Spordikeskus"]
+
+[[venue]]
+name = "Loksa staadion"
+city = "Loksa"
+
+[[venue]]
+name = "Niidupargi staadion"
+city = "Pärnu"
+
+[[venue]]
+name = "Pärnu kergejõustikuhall"
+city = "Pärnu"
+
+[[venue]]
+name = "Paalalinna viilhall"
+city = "Viljandi"
+
+[[venue]]
+name = "Viljandi Jakobsoni Kool"
+city = "Viljandi"
+
+[[venue]]
+name = "Rakvere staadion"
+city = "Rakvere"
+aliases = ["Rakvere staadioni staadionihoone"]
+
+[[venue]]
+name = "Sillamäe terviserada"
+city = "Sillamäe"
+aliases = ["Sillamäe terviserada ja jõulinnakud"]
+
+[[venue]]
+name = "Valga Keskstaadion"
+city = "Valga"
+
+[[venue]]
+name = "Võru staadion"
+city = "Võru"
+
+# --- Linn või asula ilma täpsema kohata (ürituste kalendrid: jooksud, motospordi etapid) ---
+
+[[venue]]
+name = "Tallinn"
+city = "Tallinn"
+
+[[venue]]
+name = "Tartu"
+city = "Tartu"
+
+[[venue]]
+name = "Pärnu"
+city = "Pärnu"
+
+[[venue]]
+name = "Kuressaare"
+city = "Kuressaare"
+
+[[venue]]
+name = "Narva"
+city = "Narva"
+
+[[venue]]
+name = "Valga"
+city = "Valga"
+
+[[venue]]
+name = "Põlva"
+city = "Põlva"
+
+[[venue]]
+name = "Keila"
+city = "Keila"
+
+[[venue]]
+name = "Maardu"
+city = "Maardu"
+
+[[venue]]
+name = "Kose"
+city = "Kose"
+
+[[venue]]
+name = "Aruküla"
+city = "Aruküla"
+
+# --- Motosport (msport.ee; koht tuleb ürituse nimest, vt config.toml venue_hints) ---
+
+[[venue]]
+name = "Adrenalin Arena"
+city = "Sõmerpalu"
+
+[[venue]]
+name = "Porsche Ring"
+city = "Audru"
+aliases = ["Audru ringrada"]
+
+[[venue]]
+name = "Kiltsi lennuväli"
+city = "Kiltsi"
+
+[[venue]]
+name = "Ülenurme lennuväli"
+city = "Ülenurme"
+
+[[venue]]
+name = "Saku Tankodroom"
+city = "Saku"
+
+[[venue]]
+name = "Tehvandi"
+city = "Otepää"
+
+[[venue]]
+name = "Aravete"
+city = "Aravete"
+
+[[venue]]
+name = "Karksi-Nuia"
+city = "Karksi-Nuia"
+
+[[venue]]
+name = "Tihemetsa"
+city = "Tihemetsa"
+
+[[venue]]
+name = "Pühajõe"
+city = "Pühajõe"
+
+[[venue]]
+name = "Kaarma"
+city = "Kaarma"
+
+[[venue]]
+name = "Viieristi"
+city = "Viieristi"
+
+[[venue]]
+name = "Äksi"
+city = "Äksi"
+
+[[venue]]
+name = "Lange"
+city = "Lange"
+
+[[venue]]
+name = "Palivere"
+city = "Palivere"
+
+[[venue]]
+name = "Räpina"
+city = "Räpina"
+
+[[venue]]
+name = "Kohtla-Nõmme"
+city = "Kohtla-Nõmme"
+
+[[venue]]
+name = "Paikuse"
+city = "Paikuse"
+
+[[venue]]
+name = "Aidu"
+city = "Aidu"
+
+[[venue]]
+name = "Illuka"
+city = "Illuka"
+
+[[venue]]
+name = "Väike-Maarja"
+city = "Väike-Maarja"
+
+[[venue]]
+name = "Tamsalu"
+city = "Tamsalu"
+
+[[venue]]
+name = "Kaagjärve"
+city = "Kaagjärve"
+
+[[venue]]
+name = "Saadjärve"
+city = "Saadjärve"
+
+[[venue]]
+name = "Rapla"
+city = "Rapla"

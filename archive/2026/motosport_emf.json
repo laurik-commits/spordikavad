@@ -1,0 +1,174 @@
+{
+ "1b918cb6dc53": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Valga",
+   "home": "VALGA ENDURO – MAGNIFICO 2026",
+   "id": "1b918cb6dc53",
+   "league": "Enduro",
+   "level": 1,
+   "result": "",
+   "source": "motosport_emf",
+   "sport": "motosport",
+   "start": "2026-10-31T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://msport.ee/events/valga-enduro-magnifico-2026/",
+   "venue": "Valga"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "299392969e6a": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Maardu",
+   "home": "PMC Maardu Särtsukad VI etapp",
+   "id": "299392969e6a",
+   "league": "e-bike",
+   "level": 4,
+   "result": "",
+   "source": "motosport_emf",
+   "sport": "motosport",
+   "start": "2026-09-27T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://msport.ee/events/pmc-maardu-sartsukad-vi-etapp/",
+   "venue": "Maardu"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "644661f611b8": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kose",
+   "home": "Kose kestvuskross 5. etapp EMV/EKV 2026",
+   "id": "644661f611b8",
+   "league": "Kestvuskross",
+   "level": 1,
+   "result": "",
+   "source": "motosport_emf",
+   "sport": "motosport",
+   "start": "2026-10-24T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://msport.ee/events/kose-kestvuskross-5-etapp-emv-6-etapp-ekv-2026/",
+   "venue": "Kose"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "6abbd9fb82ae": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Paikuse",
+   "home": "Paikuse kestvuskross 4. etapp EMV / EKV 2026",
+   "id": "6abbd9fb82ae",
+   "league": "Kestvuskross",
+   "level": 1,
+   "result": "",
+   "source": "motosport_emf",
+   "sport": "motosport",
+   "start": "2026-10-11T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://msport.ee/events/paikuse-kestvuskross-4-etapp-emv-5-etapp-ekv-2026/",
+   "venue": "Paikuse"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "6d4e0562ed94": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Sõmerpalu",
+   "home": "Adrenalin Arena Cup I etapp 26/27",
+   "id": "6d4e0562ed94",
+   "league": "Motokross",
+   "level": 1,
+   "result": "",
+   "source": "motosport_emf",
+   "sport": "motosport",
+   "start": "2026-12-06T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://msport.ee/events/adrenalin-arena-cup-i-etapp-26-27/",
+   "venue": "Adrenalin Arena"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "7dec2d2e5e5f": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Saku",
+   "home": "Saku Tankodroomi Motokross 2026",
+   "id": "7dec2d2e5e5f",
+   "league": "Motokross",
+   "level": 1,
+   "result": "",
+   "source": "motosport_emf",
+   "sport": "motosport",
+   "start": "2026-09-26T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://msport.ee/events/tanko-mx-liiga-6-etapp-65-85cc-2026/",
+   "venue": "Saku Tankodroom"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "a45df3063a59": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Väike-Maarja",
+   "home": "Väike-Maarja Müüriku Sügiskross 2026",
+   "id": "a45df3063a59",
+   "league": "Motokross",
+   "level": 1,
+   "result": "",
+   "source": "motosport_emf",
+   "sport": "motosport",
+   "start": "2026-10-17T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://msport.ee/events/vaike-maarja-muuriku-sugiskross-2026/",
+   "venue": "Väike-Maarja"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "be19199f0889": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Pärnu",
+   "home": "Kolmapäevakrossi finaal 2026 Pärnu",
+   "id": "be19199f0889",
+   "league": "Motokross",
+   "level": 1,
+   "result": "",
+   "source": "motosport_emf",
+   "sport": "motosport",
+   "start": "2026-10-25T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://msport.ee/events/motokrossi-mitmevoistlus-2026-parnu/",
+   "venue": "Pärnu"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "e1f710490778": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2026-11-14",
+   "home": "SuperCross Tallinn 2026",
+   "id": "e1f710490778",
+   "league": "Motokross",
+   "level": 1,
+   "result": "",
+   "source": "motosport_emf",
+   "sport": "motosport",
+   "start": "2026-11-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://msport.ee/events/supercross-tallinn-2026-2/",
+   "venue": "Saku Suurhall"
+  },
+  "first_seen": "2026-11-23"
+ }
+}

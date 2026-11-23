@@ -1,0 +1,59 @@
+{
+ "0a0712de1781": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Sõmerpalu",
+   "home": "Adrenalin Arena Cup III etapp 26/27",
+   "id": "0a0712de1781",
+   "league": "Motokross",
+   "level": 1,
+   "result": "",
+   "source": "motosport_emf",
+   "sport": "motosport",
+   "start": "2027-02-14T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://msport.ee/events/adrenalin-arena-cup-iii-etapp-26-27/",
+   "venue": "Adrenalin Arena"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "767367d98f34": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Sõmerpalu",
+   "home": "Adrenalin Arena Cup II etapp 26/27",
+   "id": "767367d98f34",
+   "league": "Motokross",
+   "level": 1,
+   "result": "",
+   "source": "motosport_emf",
+   "sport": "motosport",
+   "start": "2027-01-17T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://msport.ee/events/adrenalin-arena-cup-ii-etapp-26-27/",
+   "venue": "Adrenalin Arena"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "b3d6642ecc6f": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Sõmerpalu",
+   "home": "Adrenalin Arena Cup IV etapp 26/27",
+   "id": "b3d6642ecc6f",
+   "league": "Motokross",
+   "level": 1,
+   "result": "",
+   "source": "motosport_emf",
+   "sport": "motosport",
+   "start": "2027-03-14T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://msport.ee/events/adrenalin-arena-cup-iv-etapp-26-27/",
+   "venue": "Adrenalin Arena"
+  },
+  "first_seen": "2026-11-23"
+ }
+}

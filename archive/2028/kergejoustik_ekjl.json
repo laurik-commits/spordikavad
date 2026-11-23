@@ -1,0 +1,22 @@
+{
+ "e0d0d8804e54": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2028-08-06",
+   "home": "Euroopa U18 Meistrivõistlused 2028",
+   "id": "e0d0d8804e54",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2028-08-03T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Kadrioru staadion"
+  },
+  "first_seen": "2026-11-23"
+ }
+}

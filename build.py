@@ -25,7 +25,7 @@ import archive
 from scrapers import config as cfgmod
 from scrapers.geo import Geo, Region
 from scrapers.http import Fetcher
-from scrapers.model import DEFAULT_LEVEL, LEVELS, SPORTS, TALLINN, Event, levels_for
+from scrapers.model import DEFAULT_LEVEL, EVENT_SPORTS, LEVELS, SPORTS, TALLINN, Event, levels_for
 from scrapers.venues import Venues
 
 ROOT = Path(__file__).resolve().parent
@@ -42,7 +42,8 @@ MONTHS_IN = ["jaanuaris", "veebruaris", "märtsis", "aprillis", "mais", "juunis"
              "augustis", "septembris", "oktoobris", "novembris", "detsembris"]
 # ala omastav ("Tallinnas pole … jalgpalli mänge")
 SPORT_GEN = {"jalgpall": "jalgpalli", "korvpall": "korvpalli", "jaahoki": "jäähoki", "vorkpall": "võrkpalli",
-             "kasipall": "käsipalli", "saalihoki": "saalihoki", "saalijalgpall": "saalijalgpalli"}
+             "kasipall": "käsipalli", "saalihoki": "saalihoki", "saalijalgpall": "saalijalgpalli",
+             "motosport": "motospordi", "kergejoustik": "kergejõustiku"}
 MONTHS = ["jaanuar", "veebruar", "märts", "aprill", "mai", "juuni", "juuli",
           "august", "september", "oktoober", "november", "detsember"]
 
@@ -85,7 +86,7 @@ def missing_upcoming(src: dict, fetched: list[Event], today: date) -> list[str]:
     Möödunud mänge ei arvestata: kui uuel hooajal liiga ID muutub, näitab vana leht ikka eelmise hooaja
     mänge ja ilma selle kontrollita kaoks liiga vaikselt. Võistlus `check = false` (karikad, playoffid) jäetakse välja.
     """
-    if src.get("manual") or not cfgmod.in_season(src, today):
+    if src.get("manual") or not src.get("check", True) or not cfgmod.in_season(src, today):
         return []  # käsitsi lisatud üritusi võib vahepeal mitte olla
     horizon = today + timedelta(days=UPCOMING_DAYS)
 
@@ -108,6 +109,8 @@ def only_estonia(events: list[Event], venues: Venues, geo: Geo, today: date | No
     out = []
     window_end = today + timedelta(days=15) if today else None
     for e in events:
+        if e.venue.strip() in geo.foreign:
+            continue  # üritusekalendrites on välismaa võistlusel koha asemel ainult linn ("Kaunas")
         if not e.venue.strip():
             if entry is not None and today and today <= e.start.date() <= window_end:
                 entry.setdefault("no_venue", []).append(f"{e.start:%d.%m %H:%M} {matchup(e)} ({e.league})")
@@ -187,15 +190,34 @@ def et_date(d: date) -> str:
 
 
 def when_where(e: Event) -> str:
-    """Jagamise ja eelvaate tekst: "laupäev, 21. november kell 19:00, Kalevi spordihall, Tallinn"."""
-    when = et_date(e.start.date()) + ("" if e.time_tbc else f" kell {e.start:%H:%M}")
-    place = ", ".join(x for x in (e.venue, e.city) if x)
+    """Jagamise ja eelvaate tekst: "laupäev, 21. november kell 19:00, Kalevi spordihall, Tallinn".
+    Mitmepäevane üritus: "reede, 13. november – laupäev, 14. november, Unibet Arena, Tallinn"."""
+    if e.end:
+        when = f"{et_date(e.start.date())} – {et_date(e.last_day)}"
+    else:
+        when = et_date(e.start.date()) + ("" if e.time_tbc else f" kell {e.start:%H:%M}")
+    place = ", ".join(dict.fromkeys(x for x in (e.venue, e.city) if x))  # "Pärnu, Pärnu" → "Pärnu"
     return f"{when}, {place}" if place else when
 
 
 def matchup(e: Event) -> str:
     """ "Kalev – Valmiera"; turniiril või eriüritusel (külalisi pole, käsitsi lisatud) ainult ürituse nimi."""
     return f"{e.home} – {e.away}" if e.away else e.home
+
+
+def event_day(e: Event, d: date) -> str:
+    """Mitmepäevase ürituse kellaplokk alates teisest päevast: "2./3. päev". Muidu tühi (näidatakse kellaaega)."""
+    if not e.end or d <= e.start.date():
+        return ""
+    return f"{(d - e.start.date()).days + 1}./{(e.last_day - e.start.date()).days + 1}. päev"
+
+
+def date_span(e: Event) -> str:
+    """Mitmepäevase ürituse kuupäevad real: "13.–14.11" või "30.11–2.12". Ühepäevasel tühi."""
+    if not e.end:
+        return ""
+    a, b = e.start.date(), e.last_day
+    return f"{a.day}.–{b.day}.{b.month:02d}" if a.month == b.month else f"{a.day}.{a.month:02d}–{b.day}.{b.month:02d}"
 
 
 def share_text(e: Event) -> str:
@@ -296,6 +318,8 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
     env.filters["share_text"] = share_text
     env.filters["matchup"] = matchup
     env.filters["when_where"] = when_where
+    env.filters["event_day"] = event_day
+    env.filters["date_span"] = date_span
     tpl = env.get_template("day.html")
 
     if out.exists():
@@ -305,18 +329,27 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
         shutil.copy(SITE / asset, out / asset)
 
     # mängud päeva kaupa (14 päeva aken)
+    # mitmepäevane üritus on igal oma päeval
     window = {d: [] for d in days}
     for e in events:
-        if e.start.date() in window:
-            window[e.start.date()].append(e)
+        d = e.start.date()
+        while d <= e.last_day:
+            if d in window:
+                window[d].append(e)
+            d += timedelta(days=1)
+
+    def order(e: Event, d: date) -> tuple:
+        # kellaajaga read kellaaja järgi; kellaajata ja mitmepäevase ürituse järgmised päevad lõpus
+        later = e.start.date() < d
+        return (e.time_tbc or later, e.start.time() if not later else datetime.min.time(), e.sport, e.home)
 
     def by_day_for(level: int, r: Region) -> dict[date, list[Event]]:
         return {d: sorted((e for e in window[d] if on_level(e, level) and in_region(e, r)),
-                          key=lambda e: (e.time_tbc, e.start, e.sport, e.home)) for d in days}
+                          key=lambda e, d=d: order(e, d)) for d in days}
 
     now = datetime.now(TALLINN)
     common = dict(
-        sports=SPORTS, links=links, sport_notes=sport_notes, today=today, default_slug=Geo.default_slug, default_level=default_level,
+        sports=SPORTS, event_sports=EVENT_SPORTS, links=links, sport_notes=sport_notes, today=today, default_slug=Geo.default_slug, default_level=default_level,
         level_prefixes=json.dumps({str(k): v["prefix"] for k, v in levels.items()}),
         updated=f"{now.day}.{now.month:02d} kell {now:%H:%M}", built=today.isoformat(),
         analytics_enabled=site_cfg.get("analytics_enabled", False),
@@ -347,7 +380,10 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
                     filters.append({"key": s, "label": SPORTS[s], "none": False, "msg": "", "count": present[s]})
                 else:
                     # "saalihokimänge" (kõik liigad) või "saalihoki kõrgliigamänge"
-                    games = f"{SPORT_GEN[s]}mänge" if lv.get("all") else f"{SPORT_GEN[s]} {lv['many']}"
+                    if s in EVENT_SPORTS:  # "motospordivõistlusi" (üritustel pole liigasid)
+                        games = f"{SPORT_GEN[s]}võistlusi"
+                    else:
+                        games = f"{SPORT_GEN[s]}mänge" if lv.get("all") else f"{SPORT_GEN[s]} {lv['many']}"
                     msg = offseason_note(s) or f"Järgmise kahe nädala jooksul ei ole {r.in_form} {games}."
                     filters.append({"key": s, "label": SPORTS[s], "none": True, "msg": msg, "count": 0})
             day_list = [{"date": d, "label": et_date(d), "short": SHORT_WEEKDAYS[d.weekday()],
@@ -396,13 +432,14 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
             if e.id in seen:
                 continue
             seen.add(e.id)
+            gd = max(e.start.date(), days[0])  # mitmepäevane: alguspäev (või esimene päev aknas)
             glv = levels[e.level]
             gdir = out / "m" / e.id
             gdir.mkdir(parents=True)
             (gdir / "index.html").write_text(
-                game_tpl.render(common, e=e, root="../../", canonical=f"{base_url}m/{e.id}/", past=d < today,
-                                level_info=glv, day=d,
-                                day_href=f"../../{glv['prefix']}{geo.all.prefix}{d.isoformat()}/"),
+                game_tpl.render(common, e=e, root="../../", canonical=f"{base_url}m/{e.id}/", past=e.last_day < today,
+                                level_info=glv, day=gd,
+                                day_href=f"../../{glv['prefix']}{geo.all.prefix}{gd.isoformat()}/"),
                 encoding="utf-8")
 
     upcoming = sorted((e for e in events if e.start.date() >= today), key=lambda e: (e.start, e.id))
@@ -446,6 +483,8 @@ SOURCE_SITES = {
                  ("Tartu Ülikool Maks & Moorits", "https://basket.ut.ee/kalender-26-27/")],
     "kasipall": [("Eesti Käsipalliliit ja Balti Käsipalliliiga", "https://kasipall.ee/")],
     "saalihoki": [("Eesti Saalihoki Liit", "https://www.saalihoki.ee/Events/Uritused.aspx")],
+    "motosport": [("Eesti Mootorrattaspordi Föderatsioon", "https://msport.ee/kalender/")],
+    "kergejoustik": [("Eesti Kergejõustikuliit", "https://www.ekjl.ee/kalender/")],
 }
 
 

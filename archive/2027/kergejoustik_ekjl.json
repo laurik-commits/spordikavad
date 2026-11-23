@@ -1,0 +1,1575 @@
+{
+ "0bd3159357e3": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "TV 10 Olümpiastarti 56. hooaja IV etapp",
+   "id": "0bd3159357e3",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-05-22T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tartu Tamme staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "0d48e53c9637": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Saue vald",
+   "home": "Saue valla meistrivõistlused kergejõustikus 2027",
+   "id": "0d48e53c9637",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-05-15T11:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Kernu staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "1148349cc369": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Loksa",
+   "home": "Harjumaa TV 10 56. hooaja III etapp",
+   "id": "1148349cc369",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-05-12T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Loksa staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "1252dadf891c": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kohtla-Järve",
+   "home": "Ida-Virumaa võistkondlikud karikavõistlused",
+   "id": "1252dadf891c",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-04-17T11:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Ahtme spordihall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "135e9d7d2cdf": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Järvakandi",
+   "home": "Eesti murdmaajooksu meistrivõistlused 2027",
+   "id": "135e9d7d2cdf",
+   "league": "Täiskasvanute võistlused",
+   "level": 1,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-04-24T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Järvakandi terviserajad"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "13fd58b6312f": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Harjumaa koolinoorte sisemeistrivõistlused kergejõustikus",
+   "id": "13fd58b6312f",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-03-24T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Lasnamäe Kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "153bd6c92919": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "KEVEK ja Tartu KALEV 2027.a. STAADIONIJOOKSU VI etapp",
+   "id": "153bd6c92919",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-07-28T18:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tartu Tamme staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "171d2644ce2d": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Rakvere",
+   "end": "2027-06-28",
+   "home": "Eesti meistrivõistlused(U18, U20, U23) 2027",
+   "id": "171d2644ce2d",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-06-27T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Rakvere staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "1dcf49f0a609": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Võru",
+   "home": "TV 10 Olümpiastarti 57. hooaja I etapp",
+   "id": "1dcf49f0a609",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-12-04T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Võru Spordikeskus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "1ec7db1aa4d8": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Türi",
+   "home": "Järvamaa TV 10 OS II etapp",
+   "id": "1ec7db1aa4d8",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-03-04T15:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Türi spordihoone"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "29e31f72ff73": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Türi",
+   "home": "Järvamaa talvised kergejõustiku mitmevõistlused",
+   "id": "29e31f72ff73",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-03-16T17:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Türi spordihoone"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "2f76d16d4055": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kuusalu",
+   "home": "Harjumaa TV 10 56. hooaja finaaletapp",
+   "id": "2f76d16d4055",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-05-26T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Kuusalu staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "383835229cc2": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Pärnu",
+   "home": "Eesti meistrivõistlused 10km maanteejooksus 2027",
+   "id": "383835229cc2",
+   "league": "Täiskasvanute võistlused",
+   "level": 1,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-09-05T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Pärnu"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "3f945e149104": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kohtla-Järve",
+   "home": "Ida-Virumaa TV 10 OLÜMPIASTARTI III etapp",
+   "id": "3f945e149104",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-04-01T11:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Ahtme spordihall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "3facb8dcc701": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Eesti karikavõistlused 2027",
+   "id": "3facb8dcc701",
+   "league": "Täiskasvanute võistlused",
+   "level": 1,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-05-23T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tartu Tamme staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "41b81b9a128a": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Talvine Heitjate Seeriavõistluse III etapp",
+   "id": "41b81b9a128a",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-01-20T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tallinna Kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "44b453f0fd2f": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Türi",
+   "home": "Järvamaa talvised kergejõustiku võistlused",
+   "id": "44b453f0fd2f",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-02-02T17:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Türi spordihoone"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "4595256f2743": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kohtla-Järve",
+   "home": "Kohtla-Järve linna meistrivõistlused",
+   "id": "4595256f2743",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-03-20T11:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Ahtme spordihall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "509abdcf2e46": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "LHV Maijooks: 3×7 km teatejooks",
+   "id": "509abdcf2e46",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-05-16T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tallinna Lauluväljak"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "529499360384": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Jõhvi",
+   "home": "JÕHVI 2027 – Heino Lipu mälestusvõistlused",
+   "id": "529499360384",
+   "league": "Täiskasvanute võistlused",
+   "level": 1,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-06-22T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Heino Lipu staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "530e6786e330": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-01-10",
+   "home": "Eesti talvised mitmevõistluse meistrivõistlused 2027",
+   "id": "530e6786e330",
+   "league": "Täiskasvanute võistlused",
+   "level": 1,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-01-09T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Lasnamäe Kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "589bc3345ae5": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Rakvere",
+   "end": "2027-07-14",
+   "home": "Eesti mitmevõistluse meistrivõistlused 2027",
+   "id": "589bc3345ae5",
+   "league": "Täiskasvanute võistlused",
+   "level": 1,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-07-13T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Rakvere staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "592f95d10502": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kohtla-Nõmme",
+   "end": "2027-06-27",
+   "home": "7. Ida-Virumaa staadioniultra, Eesti meistrivõistlused 24 tunni jooksus",
+   "id": "592f95d10502",
+   "league": "Täiskasvanute võistlused",
+   "level": 1,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-06-26T12:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Kohtla-Nõmme Kooli staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "5a294b342d9c": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "10000m Eesti meistrivõistlused 2027",
+   "id": "5a294b342d9c",
+   "league": "Täiskasvanute võistlused",
+   "level": 1,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-08-04T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tartu Tamme staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "5c3916b7044d": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "KEVEK ja Tartu KALEV 2027.a. STAADIONIJOOKSU II etapp",
+   "id": "5c3916b7044d",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-05-19T18:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tartu Tamme staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "65001709b960": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Swedbanki Tallinna Maraton: poolmaraton 21,1 km",
+   "id": "65001709b960",
+   "league": "Täiskasvanute võistlused",
+   "level": 1,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-09-11T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Vabaduse väljak"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "663a449d1ddb": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Tallinna Sügisjooks 10 km",
+   "id": "663a449d1ddb",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-09-11T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Vabaduse väljak"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "6713f9a8fb90": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Türi",
+   "home": "Järvamaa TV 10 Olümpiastarti I etapp",
+   "id": "6713f9a8fb90",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-11-25T15:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Türi spordihoone"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "689efd04ae46": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "KEVEK ja Tartu KALEV 2027.a. STAADIONIJOOKSU IV etapp",
+   "id": "689efd04ae46",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-07-01T17:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tartu Tamme staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "6d0426ecd346": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kuusalu",
+   "home": "Harjumaa MV ja noorte MV kergejõustikus",
+   "id": "6d0426ecd346",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-06-03T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Kuusalu staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "6d748a644ec9": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Sillamäe",
+   "home": "Sillamäe ultra 2027: Eesti meistrivõistlused 100 km jooksus",
+   "id": "6d748a644ec9",
+   "league": "Täiskasvanute võistlused",
+   "level": 1,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-08-28T10:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Sillamäe terviserada"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "6ffabe5fc6b8": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Võru",
+   "end": "2027-06-06",
+   "home": "Balti võistkondlikud meistrivõistlused mitmevõistluses(U16, U18, U20) 2027",
+   "id": "6ffabe5fc6b8",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-06-05T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Võru staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "73d3f62304c9": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Talvine heitjate seeriavõistlus II etapp",
+   "id": "73d3f62304c9",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-01-02T12:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tallinna Kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "77213046fb42": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Valga",
+   "home": "Balti võistkondlikud meistrivõistlused (U16) 2027",
+   "id": "77213046fb42",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-07-22T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Valga Keskstaadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "77a3f7b8486c": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Pärnu",
+   "end": "2027-08-01",
+   "home": "Eesti meistrivõistlused 2027",
+   "id": "77a3f7b8486c",
+   "league": "Täiskasvanute võistlused",
+   "level": 1,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-07-31T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Pärnu Rannastaadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "794b30d8f039": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Sillamäe",
+   "home": "Eesti käimise karikavõistlused 2027",
+   "id": "794b30d8f039",
+   "league": "Täiskasvanute võistlused",
+   "level": 1,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-05-02T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Sillamäe terviserada"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "7961c6f051e7": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "TV 10 OS Tartu ja Tartumaa II etapp",
+   "id": "7961c6f051e7",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-03-04T16:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "7d32034c3ed7": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "LHV Maijooks: poolmaraton 21,1 km",
+   "id": "7d32034c3ed7",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-05-16T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tallinna Lauluväljak"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "7e60099a7825": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Harjumaa noorte talvised sisemeistrivõistlused kergejõustikus",
+   "id": "7e60099a7825",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-01-27T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Lasnamäe Kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "81232341cd2d": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Eesti meistrivõistlused maratonis 2027",
+   "id": "81232341cd2d",
+   "league": "Täiskasvanute võistlused",
+   "level": 1,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-09-12T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tallinn"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "8338fff3ac07": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "LHV Maijooks – 7 km",
+   "id": "8338fff3ac07",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-05-15T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tallinna Lauluväljak"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "83492823e073": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Swedbanki Tallinna Maraton – Teatemaraton 42,195 km",
+   "id": "83492823e073",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-09-12T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Vabaduse väljak"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "887b80ac30d2": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Pärnu",
+   "home": "Eesti talvised vasaraheite karikavõistlused 2027",
+   "id": "887b80ac30d2",
+   "league": "Täiskasvanute võistlused",
+   "level": 1,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-03-07T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Niidupargi staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "8aafe01d46f8": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Türi",
+   "home": "KJK Järvala aastapäeva võistlus",
+   "id": "8aafe01d46f8",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-06-17T18:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Türi linnastaadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "8fbb96e4260e": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Sillamäe",
+   "home": "Eesti meistrivõistlused teatejooksudes 2027",
+   "id": "8fbb96e4260e",
+   "league": "Täiskasvanute võistlused",
+   "level": 1,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-05-29T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Sillamäe Kalevi staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "905b5ef1f2fa": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kose",
+   "home": "Harjumaa koolinoorte MV murdmaateatejooksus",
+   "id": "905b5ef1f2fa",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-04-29T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Kose"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "90d12af7fb14": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Türi",
+   "home": "Türi heitjate kevadvõistlus",
+   "id": "90d12af7fb14",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-04-27T17:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Türi linnastaadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "91a7283188fe": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Harjumaa TV 10 56. hooaja II etapp",
+   "id": "91a7283188fe",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-03-02T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Lasnamäe Kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "922f37d561f8": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "KEVEK ja Tartu KALEV 2027.a. STAADIONIJOOKSU V etapp",
+   "id": "922f37d561f8",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-07-07T18:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tartu Tamme staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "928dcabd1e67": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Jõhvi",
+   "home": "Ida-Virumaa TV 10 OLÜMPIASTARTI IV etapp",
+   "id": "928dcabd1e67",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-05-12T11:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Jõhvi Kesklinna Kooli staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "97ad4a48451d": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "TV 10 Olümpiastarti 56. hooaja III etapp",
+   "id": "97ad4a48451d",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-04-09T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "a269bde140e1": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-01-31",
+   "home": "Eesti talvised meistrivõistlused(U18, U20, U23) 2027",
+   "id": "a269bde140e1",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-01-30T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Lasnamäe Kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "a34b7c77f815": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Eesti talvised karikavõistlused 2027",
+   "id": "a34b7c77f815",
+   "league": "Täiskasvanute võistlused",
+   "level": 1,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-01-23T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Lasnamäe Kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "a3bebcfc9fa4": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Eesti lahtised veteranide sisemeistrivõistlused 2027",
+   "id": "a3bebcfc9fa4",
+   "league": "Täiskasvanute võistlused",
+   "level": 1,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-02-27T11:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Lasnamäe Kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "a6d5e9fd1ccd": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kohtla-Järve",
+   "home": "Ida-Virumaa noorte sisekergejõustiku meistrivõistlused",
+   "id": "a6d5e9fd1ccd",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-01-16T11:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Ahtme spordihall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "aadc0e815c2e": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "TV 10 Olümpiastarti 56. hooaja II etapp",
+   "id": "aadc0e815c2e",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-03-12T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Lasnamäe Kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "aaf7ea64a557": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "KEVEK ja Tartu KALEV 2027.a. STAADIONIJOOKSU III etapp",
+   "id": "aaf7ea64a557",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-06-16T18:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tartu Tamme staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "af91920b267f": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Viljandi",
+   "end": "2027-07-18",
+   "home": "Eesti lahtised veteranide Meistrivõistlused",
+   "id": "af91920b267f",
+   "league": "Täiskasvanute võistlused",
+   "level": 1,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-07-17T11:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Viljandi linnastaadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "b41dcb2cc4e3": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Jõulumäe",
+   "home": "Eesti murdmaajooksu karikavõistlused 2027",
+   "id": "b41dcb2cc4e3",
+   "league": "Täiskasvanute võistlused",
+   "level": 1,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-10-09T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Jõulumäe tervisespordikeskus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "b8317479c366": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-02-14",
+   "home": "Eesti talvised U14 ja U16 meistrivõistlused 2027",
+   "id": "b8317479c366",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-02-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Lasnamäe Kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "bababbb2e09a": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kohtla-Järve",
+   "home": "Ida-Virumaa TV 10 OLÜMPIASTARTI II etapp",
+   "id": "bababbb2e09a",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-03-02T11:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Ahtme spordihall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "bcc2a3f2e331": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Pärnu",
+   "end": "2027-06-10",
+   "home": "TV 10 Olümpiastarti 56. hooaja Finaaletapp",
+   "id": "bcc2a3f2e331",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-06-09T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Pärnu Rannastaadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "c03156ca0105": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Rakvere",
+   "end": "2027-06-30",
+   "home": "Eesti meistrivõistlused(U14, U16) 2027",
+   "id": "c03156ca0105",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-06-29T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Rakvere staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "c1296a8382b4": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Eesti meistrivõistlused poolmaratonis 2027",
+   "id": "c1296a8382b4",
+   "league": "Täiskasvanute võistlused",
+   "level": 1,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-10-02T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tartu"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "c3c112386099": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "A. Tšikini Auhinnavõistlus 2027",
+   "id": "c3c112386099",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-01-02T12:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tallinna Kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "d360e46fd293": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Türi",
+   "home": "Leonhard Soomi mälestusvõistlus",
+   "id": "d360e46fd293",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-08-20T12:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Türi linnastaadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "d7ed13de517d": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-02-21",
+   "home": "Eesti talvised meistrivõistlused 2027",
+   "id": "d7ed13de517d",
+   "league": "Täiskasvanute võistlused",
+   "level": 1,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-02-20T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Lasnamäe Kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "db0442b6f41b": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Teivashüppe GP Tallinna Etapp",
+   "id": "db0442b6f41b",
+   "league": "Täiskasvanute võistlused",
+   "level": 1,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-01-03T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Lasnamäe Kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "db7268e0b1d0": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "15. Martin Kutmani mälestusvõistlus",
+   "id": "db7268e0b1d0",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-01-17T12:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "dc843bf853e7": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Sillamäe",
+   "end": "2027-07-22",
+   "home": "13. Ida-Virumaa staadionimaraton",
+   "id": "dc843bf853e7",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-07-21T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Sillamäe Kalevi staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "dcfecb33f94a": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "KEVEK ja Tartu KALEV 2027a. STAADIONIJOOKSU I etapp",
+   "id": "dcfecb33f94a",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-05-05T18:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tartu Tamme staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "df097c5906bc": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "KEVEK ja Tartu KALEV 2027.a. STAADIONIJOOKSU VII etapp",
+   "id": "df097c5906bc",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-08-04T17:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tartu Tamme staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "e408ce43ddb2": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-02-07",
+   "home": "Rahvusvaheline mitmevõistlus Tallinn 2027",
+   "id": "e408ce43ddb2",
+   "league": "Täiskasvanute võistlused",
+   "level": 1,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-02-06T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tallinna Kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "eaec212e3fc9": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Jõhvi",
+   "home": "Eesti noorte karikavõistlused 2027 (U18)",
+   "id": "eaec212e3fc9",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-06-12T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Heino Lipu staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "ed21afa9ae1e": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "KEVEK ja Tartu KALEV 2027.a. STAADIONIJOOKSU VIII etapp",
+   "id": "ed21afa9ae1e",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-08-25T18:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tartu Tamme staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "ef8fd31873f3": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Türi",
+   "home": "Türi heitjate 4-võistlus",
+   "id": "ef8fd31873f3",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-10-01T16:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Türi linnastaadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "f07cb4130f5b": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "TARTU KEVEK OPEN 2027 rahvusvahelised sisevõistlused veteranidele",
+   "id": "f07cb4130f5b",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-01-16T10:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "f24bd9ea5586": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Jõhvi",
+   "home": "Kohtla-Järve linna meistrivõistlused",
+   "id": "f24bd9ea5586",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-05-15T11:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Heino Lipu staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "f4f0d3d7602c": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Nike Noortejooks",
+   "id": "f4f0d3d7602c",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-09-11T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Vabaduse väljak"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "f6fee79ce5dd": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Swedbanki Tallinna Maraton – 42,195 km",
+   "id": "f6fee79ce5dd",
+   "league": "Täiskasvanute võistlused",
+   "level": 1,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-09-12T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Vabaduse väljak"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "f851f5f065d9": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Otepää",
+   "end": "2027-05-16",
+   "home": "Eesti Kergejõustikuliidu noortekoondiste kandidaatide kevadlaager",
+   "id": "f851f5f065d9",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-05-14T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Kääriku spordikeskus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "faf3da75aa9f": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Türi",
+   "home": "Järvamaa TV 10 OS mitmevõistlus",
+   "id": "faf3da75aa9f",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-06-01T10:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Türi linnastaadion"
+  },
+  "first_seen": "2026-11-23"
+ }
+}

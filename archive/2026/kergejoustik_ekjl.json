@@ -1,0 +1,669 @@
+{
+ "077739f6f3ea": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "TV 10 Olümpiastarti Tallinna I etapp",
+   "id": "077739f6f3ea",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-11-26T16:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Lasnamäe Kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "0971effdf21d": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "TÜASK heategevuslik jõuluvõistlus",
+   "id": "0971effdf21d",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-12-12T11:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "0e56b5d1d1a6": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "SK Fortis jõuluvõistlus",
+   "id": "0e56b5d1d1a6",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-12-12T10:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Lasnamäe Kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "10d85293353c": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "SK Fortis talvine vasaraheitevõistlus",
+   "id": "10d85293353c",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-12-19T10:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Sütiste park-mets"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "18907ab4a6e9": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Viljandi",
+   "home": "TV 10 OS Viljandimaa I etapp",
+   "id": "18907ab4a6e9",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-11-26T15:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Paalalinna viilhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "1dab57ab370a": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Harjumaa TV 10 56. hooaja I etapp",
+   "id": "1dab57ab370a",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-11-25T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Lasnamäe Kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "356f50a8b4fc": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Pärnu",
+   "home": "TV 10 Olümpiastarti Pärnumaa I etapp",
+   "id": "356f50a8b4fc",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-11-26T15:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Pärnu kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "35fad921fe9b": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "DETSEMBRI TEIVASHÜPPEVÕISTLUS",
+   "id": "35fad921fe9b",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-12-20T13:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "3b6993f88999": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Rakvere",
+   "end": "2026-12-10",
+   "home": "Lääne-Virumaa noorte jõuluvõistlused",
+   "id": "3b6993f88999",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-12-08T14:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Rakvere staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "44502a273e78": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Erki Noole Kergejõustikukooli 29. sünnipäevavõistlus",
+   "id": "44502a273e78",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-11-29T15:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tallinna Kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "477413960733": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "TARTU KOOLIDE KARIKAVÕISTLUS KERGEJÕUSTIKUS",
+   "id": "477413960733",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-12-10T15:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "4d8bc784dda7": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Tallinna KJK Kalev Jõuluvõistlus 2026",
+   "id": "4d8bc784dda7",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-12-11T15:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tallinna Kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "6484917acc12": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "TV 10 OS Tartu ja Tartumaa I etapp",
+   "id": "6484917acc12",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-11-26T16:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "6a9a83f9a9b7": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kohtla-Järve",
+   "home": "KJK Atleetika jõuluvõistlus",
+   "id": "6a9a83f9a9b7",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-12-17T15:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Ahtme spordihall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "7db59723b48d": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Daikin CUP I etapp",
+   "id": "7db59723b48d",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-12-21T14:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tallinna Kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "86e8714cbcb0": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Rakvere",
+   "home": "Lääne-Virumaa TV 10 Olümpiastarti I etapp",
+   "id": "86e8714cbcb0",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-11-26T15:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Rakvere staadion"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "8ca3586002a8": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Talvine Heitjate Seeriavõistluse I etapp",
+   "id": "8ca3586002a8",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-12-16T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Audentese spordihall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "944cca71013d": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Daikin CUP I etapp (U14)",
+   "id": "944cca71013d",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-12-18T15:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tallinna Kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "9500f3ff405d": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Türi",
+   "home": "Järvamaa TV 10 Olümpiastarti I etapp",
+   "id": "9500f3ff405d",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-11-26T15:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Türi spordihoone"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "9d5fe32a6d25": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Jaak Uudmäe auhinnavõistlus kolmikhüppes",
+   "id": "9d5fe32a6d25",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-12-19T11:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "aa2f96719f0d": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Audentese SK Jõuluvõistlus",
+   "id": "aa2f96719f0d",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-12-16T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Audentese spordihall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "adf75885a194": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "2026 Audi Vana-aasta jooksupäev",
+   "id": "adf75885a194",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-12-19T09:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Vabaõhumuuseumi tee 8"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "b75aeb5e1386": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kohtla-Järve",
+   "home": "XXXX JÕHVI HÜPPAJATE PÄEV",
+   "id": "b75aeb5e1386",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-12-12T11:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Ahtme spordihall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "ba025d36743d": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Jõgeva",
+   "home": "TV 10 Olümpiastarti Jõgevamaa I etapp",
+   "id": "ba025d36743d",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-11-26T14:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Jõgeva spordihoone"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "be4690bfbded": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Viljandi",
+   "home": "Staieri Jõulujooks 9,8km",
+   "id": "be4690bfbded",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-12-19T12:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Viljandi Jakobsoni Kool"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "c36744cc15ad": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Võru",
+   "home": "TV 10 Olümpiastarti 56. hooaja I etapp",
+   "id": "c36744cc15ad",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-12-05T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Võru Spordikeskus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "d35e2fe7cee4": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kuressaare",
+   "home": "Pööripäevajooks Jooks talve",
+   "id": "d35e2fe7cee4",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-12-24T12:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Kuressaare"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "dd2772de600b": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Haapsalu",
+   "end": "2026-12-02",
+   "home": "Läänemaa järelkasvuvõistlused",
+   "id": "dd2772de600b",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-12-01T15:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Haapsalu spordikeskus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "df6cc1f1c0d3": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kohtla-Järve",
+   "home": "Ida-Virumaa kergejõustiku võistlused",
+   "id": "df6cc1f1c0d3",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-11-28T11:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Ahtme spordihall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "e64c0f15b06d": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Pärnu",
+   "home": "18. Karel Leetsari mälestusvõistlus",
+   "id": "e64c0f15b06d",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-12-21T13:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Pärnu kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "ea7ce7c8374a": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kohtla-Järve",
+   "home": "Ida-Virumaa TV 10 OLÜMPIASTARTI I etapp",
+   "id": "ea7ce7c8374a",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-11-25T11:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Ahtme spordihall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "ec25a619e57a": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "TARTU KALEV LASTEVÕISTLUS U-10 ja U-12",
+   "id": "ec25a619e57a",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-11-26T15:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "f32986177790": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Omega kiirus",
+   "id": "f32986177790",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-12-06T11:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Lasnamäe Kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "f5c2badcd1bf": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Nõmme KJK jõuluvõistlus",
+   "id": "f5c2badcd1bf",
+   "league": "Kohalikud võistlused",
+   "level": 3,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-12-06T15:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Tallinna Kergejõustikuhall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "f8c32b150a6d": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Valga",
+   "home": "TV 10 Olümpiastarti Valgamaa I etapp",
+   "id": "f8c32b150a6d",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-11-27T13:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Valga Spordihoone"
+  },
+  "first_seen": "2026-11-23"
+ }
+}

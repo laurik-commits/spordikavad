@@ -21,9 +21,9 @@ from .model import LEVELS, SPORTS, TALLINN, Event, new_event, parse_score
 NAME = "kasitsi"
 DEFAULT_PATH = Path(__file__).resolve().parent.parent / "kasitsi.toml"
 
-KINDS = ("mäng", "sõprusmäng", "turniir", "eriüritus")
+KINDS = ("mäng", "sõprusmäng", "turniir", "eriüritus", "võistlus")
 REQUIRED = ("sport", "league", "level", "start", "home", "venue", "url", "added", "kind")
-OPTIONAL = ("away", "time_tbc", "result", "note")
+OPTIONAL = ("away", "time_tbc", "result", "note", "end")
 # tasemed, mida saab lisada: valikus nähtavad päris tasemed (mitte 0 = "kõik" ega peidetud 3)
 ALLOWED_LEVELS = tuple(k for k, v in LEVELS.items() if not v.get("all") and not v.get("hidden"))
 # sotsiaalmeedia ei ole lubatud allikas (VISION.md)
@@ -59,6 +59,13 @@ def _check(item: dict) -> list[str]:
         errors.append("added peab olema kuupäev (2026-11-22)")
     if "time_tbc" in item and not isinstance(item["time_tbc"], bool):
         errors.append("time_tbc peab olema true või false")
+    if "end" in item:
+        start = item.get("start")
+        start_day = start.date() if isinstance(start, datetime) else start
+        if isinstance(item["end"], datetime) or not isinstance(item["end"], date):
+            errors.append("end peab olema kuupäev (2026-12-06), mitmepäevase ürituse viimane päev")
+        elif isinstance(start_day, date) and item["end"] <= start_day:
+            errors.append("end peab olema hilisem kui start (ühepäevasel jäta end ära)")
     if item.get("result") and not parse_score(str(item["result"])):
         errors.append("result peab olema kujul \"3-1\"")
     return errors
@@ -84,6 +91,7 @@ def parse(text: str) -> list[Event]:
             source=NAME, sport=item["sport"], league=item["league"].strip(), start=start,
             home=item["home"], away=item.get("away", ""), venue=item["venue"].strip(), city="",
             url=item["url"], time_tbc=tbc, level=item["level"], result=parse_score(str(item.get("result", ""))),
+            end=item.get("end"),
         ))
     if problems:
         raise ValueError("kasitsi.toml: " + " | ".join(problems))

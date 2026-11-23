@@ -38,7 +38,9 @@ foreign = ["Cēsis", "Daugavpils", "Elektrėnai", "Jelgava", "Jēkabpils", "Kaun
            "Riia", "Talsi", "Ulbroka", "Vilnius", "Ādaži", "Šiauliai",
            "Dobele", "Molėtai", "Ogre", "Pasvalys", "Ludza", "Salaspils",
            "Valmiera", "Kosovo", "Türgi", "Ķekava", "Spuņciems", "Aizkraukle",
-           "Manchester", "Poola", "Prantsusmaa"]
+           "Manchester", "Poola", "Prantsusmaa",
+           # ürituste kalendrite (kergejõustik) välismaa võistluspaigad: koha asemel ainult linn või riik
+           "Belgrad", "Bydgoszcz", "Leedu", "Lignano Sabbiadoro", "Mannheim", "Nikosia", "Valencia", "İstanbul"]
 
 [[geo.city]]
 slug = "tallinn"
@@ -145,6 +147,31 @@ county = "Põlvamaa"
 "Võru vald" = "Võrumaa"
 "Vändra" = "Pärnumaa"
 "Mulgi vald" = "Viljandimaa"
+"Järvakandi" = "Raplamaa"
+"Kohtla-Nõmme" = "Ida-Virumaa"
+"Loksa" = "Harjumaa"
+"Jõulumäe" = "Pärnumaa"
+"Sõmerpalu" = "Võrumaa"
+"Kiltsi" = "Lääne-Virumaa"
+"Ülenurme" = "Tartumaa"
+"Audru" = "Pärnumaa"
+"Aravete" = "Järvamaa"
+"Karksi-Nuia" = "Viljandimaa"
+"Tihemetsa" = "Pärnumaa"
+"Pühajõe" = "Ida-Virumaa"
+"Kaarma" = "Saaremaa"
+"Viieristi" = "Saaremaa"
+"Äksi" = "Tartumaa"
+"Lange" = "Tartumaa"
+"Palivere" = "Läänemaa"
+"Räpina" = "Põlvamaa"
+"Paikuse" = "Pärnumaa"
+"Aidu" = "Ida-Virumaa"
+"Illuka" = "Ida-Virumaa"
+"Väike-Maarja" = "Lääne-Virumaa"
+"Tamsalu" = "Lääne-Virumaa"
+"Kaagjärve" = "Valgamaa"
+"Saadjärve" = "Tartumaa"
 
 # Maakonnad (slug ja pealkirja vorm)
 [geo.county]
@@ -386,6 +413,82 @@ seasons = [["10-15", "03-31"]]
 # Käsitsi lisatud mängud ja üritused (kasitsi.toml): sõprusmängud, turniirid, eriüritused, puuduvad mängud.
 # Mitu ala, tase igal kirjel eraldi. Otsingu agent lisab need pull request'iga, mille merge'ib automaatne
 # kontroll (scripts/automerge_check.py). Kui see ei läbi, vaatab omanik PR-i üle.
+# --- Ürituste alad (real on võistlus, mitte kahe võistkonna mäng; vt docs/uued-alad.md) ---
+# check = false: üritusi on ebaühtlaselt (pikad vahed on normaalsed), „42 päeva 0 mängu“ kontrolli ei tehta.
+# competitions on siin ainult „Mis siin on?“ tabeli jaoks (tase → mis seal on); tase tuleb adapterist.
+
+[[source]]
+name = "kergejoustik_ekjl"
+sport = "kergejoustik"
+league = "Kergejõustik (EKJL)"
+enabled = true
+check = false
+year_round = true
+seasons = [["01-01", "12-31"]]
+# ekjl.ee/kalender/ (robots.txt lubab). Täiskasvanute tippvõistlused (WA kategooria A–E, Eesti MV ja KV) → tase 1,
+# noorte võistlused → 4, klubide ja maakondade võistlused → 3 (peidetud). Koolitused ja koosolekud jäävad välja.
+competitions = [
+  { league = "Täiskasvanute võistlused", check = false },
+  { league = "Noorte võistlused", level = 4, check = false },
+  { league = "Kohalikud võistlused", level = 3, check = false },
+]
+
+[[source]]
+name = "motosport_emf"
+sport = "motosport"
+league = "Motosport (EMF)"
+enabled = true
+check = false
+year_round = true
+seasons = [["01-01", "12-31"]]
+# msport.ee iCal-voog (robots.txt lubab). Koht tuleb ürituse nimest: märksõna → koht venues.toml-ist.
+# Uus rada: lisa siia märksõna ja venues.toml-i koht (asula peab olema [geo.place] all).
+competitions = [
+  { league = "Motokross, enduro, ringrada, kiirendus jt", check = false },
+  { league = "Noorte karikasari (ENKV), Särtsukad", level = 4, check = false },
+]
+foreign_words = ['\(LV\)', '\bLV\b', '\bLT\b', '\bFIN\b', 'Läti', 'Leedu', 'Soome', 'Riga', 'Rīga', 'Madona',
+                 'Vidriži', 'Kymiring', 'Bikernieki', 'Alastaro', 'Latvia', 'Lithuania', 'Finland', 'Sweden']
+[source.venue_hints]
+"Adrenalin Arena" = "Adrenalin Arena"
+"SuperCross Tallinn" = "Saku Suurhall"
+"Porche Ring" = "Porsche Ring"
+"Porsche Ring" = "Porsche Ring"
+"Audru" = "Porsche Ring"
+"Kiltsi" = "Kiltsi lennuväli"
+"Ülenurme" = "Ülenurme lennuväli"
+"Tallinna Lauluväljak" = "Tallinna Lauluväljak"
+"Saku Tankodroom" = "Saku Tankodroom"
+"Tehvandi" = "Tehvandi"
+"Aravete" = "Aravete"
+"Karksi-Nuia" = "Karksi-Nuia"
+"Tihemetsa" = "Tihemetsa"
+"Pühajõe" = "Pühajõe"
+"Kaarma" = "Kaarma"
+"Viieristi" = "Viieristi"
+"Äksi" = "Äksi"
+"Lange" = "Lange"
+"Palivere" = "Palivere"
+"Räpina" = "Räpina"
+"Kohtla-Nõmme" = "Kohtla-Nõmme"
+"Paikuse" = "Paikuse"
+"Aidu" = "Aidu"
+"Illuka" = "Illuka"
+"Väike-Maarja" = "Väike-Maarja"
+"Tamsalu" = "Tamsalu"
+"Kaagjärve" = "Kaagjärve"
+"Saadjärve" = "Saadjärve"
+"Narva" = "Narva"
+"Valga" = "Valga"
+"Põlva" = "Põlva"
+"Pärnu" = "Pärnu"
+"Maardu" = "Maardu"
+"Kose" = "Kose"
+"Aruküla" = "Aruküla"
+"Keila" = "Keila"
+"Tartu" = "Tartu"
+"Rapla" = "Rapla"
+
 # Viimasena, et kui sama mäng tuleb ka automaatsest allikast, jääb alles automaatse allika oma (dedupe).
 # manual = true: 0 tulevast mängu pole viga ja allikat ei näidata „Mis siin on?“ ala tabelis.
 [[source]]

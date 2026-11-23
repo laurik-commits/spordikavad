@@ -5,7 +5,7 @@ from __future__ import annotations
 import hashlib
 import re
 from dataclasses import asdict, dataclass
-from datetime import datetime
+from datetime import date, datetime
 from zoneinfo import ZoneInfo
 
 TALLINN = ZoneInfo("Europe/Tallinn")
@@ -49,7 +49,12 @@ SPORTS = {
     "kasipall": "Käsipall",
     "saalihoki": "Saalihoki",
     "saalijalgpall": "Saalijalgpall",
+    "motosport": "Motosport",
+    "kergejoustik": "Kergejõustik",
 }
+
+# alad, kus real on üritus (võistlus, etapp), mitte kahe võistkonna mäng: home = ürituse nimi, away tühi
+EVENT_SPORTS = {"motosport", "kergejoustik"}
 
 
 @dataclass(frozen=True)
@@ -66,17 +71,27 @@ class Event:
     source: str  # adapteri nimi
     time_tbc: bool = False  # True, kui kellaaeg pole veel kinnitatud
     result: str = ""  # lõppseis "kodu-võõras" (nt "3-0"; jäähokis võib lõpus olla "OT" või "SO"), tühi kuni mäng on mängitud või kui allikas seda ei anna
-    level: int = 1 # 1 = kõrgliiga, 2 = esiliiga, 3 = madalamad liigad, 4 = noored, 5 = koondised (igaühel eraldi kalender)
+    level: int = 1  # 1 = kõrgliiga, 2 = esiliiga, 3 = madalamad liigad, 4 = noored, 5 = koondised (igaühel eraldi kalender)
+    end: str = ""  # mitmepäevase ürituse viimane päev "YYYY-MM-DD"; tühi = ühepäevane
 
     def __post_init__(self) -> None:
         if self.sport not in SPORTS:
             raise ValueError(f"Tundmatu ala: {self.sport!r}")
         if self.start.tzinfo is None:
             raise ValueError("start peab olema ajavööndiga")
+        if self.end and date.fromisoformat(self.end) <= self.start.date():
+            raise ValueError("end peab olema hilisem kui alguspäev (ühepäevasel jäta tühjaks)")
+
+    @property
+    def last_day(self) -> date:
+        """Viimane päev: ühepäevasel alguspäev, mitmepäevasel `end`."""
+        return date.fromisoformat(self.end) if self.end else self.start.date()
 
     def to_dict(self) -> dict:
         d = asdict(self)
         d["start"] = self.start.astimezone(TALLINN).isoformat()
+        if not d["end"]:
+            del d["end"]  # ühepäevastel (enamik) välja ei kirjutata: olemasolevad andmefailid ei muutu
         return d
 
     @classmethod
@@ -106,6 +121,7 @@ def new_event(
     time_tbc: bool = False,
     level: int = 1,
     result: str = "",
+    end: date | None = None,
 ) -> Event:
     """Mugav konstruktor adapteritele: arvutab ID ja viib aja Tallinna ajavööndisse."""
     if start.tzinfo is None:
@@ -126,6 +142,7 @@ def new_event(
         time_tbc=time_tbc,
         level=level,
         result=result,
+        end=end.isoformat() if end and end > start.date() else "",
     )
 
 

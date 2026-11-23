@@ -412,3 +412,49 @@ class ProductionLayoutTest(unittest.TestCase):
         self.assertIn('href="../korgliigad/2026-11-21/" data-level="1"', root)
         self.assertIn('data-default-level="0"', root)
         self.assertIn("&#34;1&#34;: &#34;korgliigad/&#34;", root)   # tasemete kaustad JS-i suunamise jaoks
+
+
+class EventSportTest(unittest.TestCase):
+    """Ürituste alad (motosport, kergejõustik): mitmepäevane üritus, ürituse rida, "võistlusi" sõnastus."""
+
+    def setUp(self):
+        self.tmp = Path(tempfile.mkdtemp())
+        cfg = {"site": {"days_ahead": 4, "days_back": 1, "base_url": "https://example.org/"},
+               "geo": config.load()["geo"], "source": config.load()["source"]}
+        self.multi = new_event(source="t", sport="motosport", league="Motokross", start=datetime(2026, 11, 21),
+                               home="SuperCross Tallinn", away="", venue="Saku Suurhall", city="Tallinn",
+                               url="https://example.org/sx", time_tbc=True, end=date(2026, 11, 23))
+        game = ev(22, 12, "Pallurid", sport="vorkpall")
+        build.render([self.multi, game], cfg, date(2026, 11, 21), self.tmp)
+
+    def read(self, rel):
+        return (self.tmp / rel).read_text(encoding="utf-8")
+
+    def test_multi_day_event_on_each_day(self):
+        first, second, third = (self.read(f"2026-11-{d}/index.html") for d in (21, 22, 23))
+        for html in (first, second, third):
+            self.assertIn("SuperCross Tallinn", html)
+            self.assertIn("21.–23.11 · Motokross · Saku Suurhall", html)
+        self.assertNotIn("SuperCross Tallinn", self.read("2026-11-24/index.html"))
+        self.assertIn('<b>—:—</b>', first)
+        self.assertIn('<b class="dayno">2./3. päev</b>', second)
+        self.assertIn('<b class="dayno">3./3. päev</b>', third)
+        self.assertNotIn("kellaaeg täpsustamisel", first)
+        # kellaajaga mäng enne mitmepäevase ürituse järgmist päeva
+        self.assertLess(second.index("Pallurid"), second.index("SuperCross Tallinn"))
+
+    def test_game_page_and_share_text(self):
+        html = self.read(f"m/{self.multi.id}/index.html")
+        self.assertIn("laupäev, 21. november – esmaspäev, 23. november", html)
+        self.assertIn("Võistluse info allika saidil", html)
+        self.assertEqual(build.share_text(self.multi),
+                         "SuperCross Tallinn: laupäev, 21. november – esmaspäev, 23. november, Saku Suurhall, Tallinn")
+
+    def test_event_sport_wording_when_empty(self):
+        html = self.read("index.html")
+        self.assertIn("Järgmise kahe nädala jooksul ei ole Eestis kergejõustikuvõistlusi.", html)
+
+    def test_saved_data_unchanged_for_single_day(self):
+        self.assertNotIn("end", ev(22, 12, "X").to_dict())
+        self.assertEqual(self.multi.to_dict()["end"], "2026-11-23")
+        self.assertEqual(type(self.multi).from_dict(self.multi.to_dict()), self.multi)

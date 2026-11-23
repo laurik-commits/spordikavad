@@ -15,10 +15,10 @@
 #   läbivad (url-i lehel peab olema kuupäev ja võistkonna/ürituse nimi, olemasolevaid kirjeid ei muudeta).
 #
 # Väljad:
-#   sport     jalgpall | korvpall | jaahoki | vorkpall | kasipall | saalihoki | saalijalgpall
+#   sport     jalgpall | korvpall | jaahoki | vorkpall | kasipall | saalihoki | saalijalgpall | motosport | kergejoustik
 #   league    liiga või ürituse nimi, nt "Sõprusmäng", "EEVZA U16 neidude turniir"
 #   level     1 kõrgliigad, 2 esiliigad, 4 noored, 5 koondised (määrab, millises kalendris mäng on)
-#   kind      mäng | sõprusmäng | turniir | eriüritus
+#   kind      mäng | sõprusmäng | turniir | eriüritus | võistlus
 #   start     Tallinna aeg 2026-12-05T18:00:00; kui kellaaeg pole teada, ainult kuupäev 2026-12-05
 #   home      kodumeeskond või ürituse nimi (turniiril: "EEVZA U16 neidude turniir")
 #   away      külalismeeskond (valikuline; turniiril või eriüritusel jäta ära, siis näidatakse ainult home)
@@ -26,6 +26,7 @@
 #   url       ametlik allikas, kus mäng või üritus on kirjas
 #   added     lisamise kuupäev, nt 2026-11-22
 #   note      valikuline märkus ülevaatajale (lehel ei näidata), nt kui kindel on allikas
+#   end       valikuline, mitmepäevase ürituse viimane päev, nt 2026-12-06 (üritus on lehel igal päeval)
 #   time_tbc  valikuline, true kui kellaaeg pole kinnitatud
 #   result    valikuline lõppseis "3-1"
 #

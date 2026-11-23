@@ -325,3 +325,14 @@ Iga allika kohta üks mäng lehel olevatest andmetest, võrreldud allika enda m�
 - Korvpall: kui liit kunagi avaldab avaliku voo või robots.txt muutub, vaatame uuesti. Viimsi kalender on tühi (vt Korvpall), Pärnu ja Tartu klubilehed on kontrollimata.
 - Võrkpall: Eesti meistriliiga playoffid (`evf-web.dataproject.com`).
 - Esiliigad ja naiste liigad: jalgpall.ee, kasipall.ee ja saalihoki.ee kasutavad kõigi liigade jaoks sama süsteemi, seega piisab uuest liiga ID-st.
+
+## Kergejõustik: Eesti Kergejõustikuliidu kalender ✅ (lisatud 2026-11-23)
+- Allikas: https://www.ekjl.ee/kalender/ (robots.txt lubab, keelab ainult ühe pluginafaili). Adapter `kergejoustik_ekjl`.
+- Kogu hooaeg ühel serveris renderdatud lehel: nimi, kuupäev(ad), valikuline kellaaeg, koht, kategooria (World Athletics A–F, GL/GW/OW, Muu, Koolitus). Kontaktisikute modaalaknaid ei loeta.
+- Tase: noored → 4, A–E ja Eesti MV/KV → 1, ülejäänud kohalikud → 3 (peidetud). Välismaa võistlustel on koha asemel linn, need jäävad välja `geo.foreign` kaudu.
+
+## Motosport: Eesti Mootorrattaspordi Föderatsiooni kalender ✅ (lisatud 2026-11-23)
+- Allikas: https://msport.ee/?mec-ical-feed=1 (iCal, robots.txt lubab). Adapter `motosport_emf`.
+- Pluginal on ajavööndi viga: terve päeva üritus on kujul `T200000Z` eelmisel päeval (vt adapteri kirjeldus).
+- Koht on iCal-is harva, aga ürituse nimes ("Kiltsi lennuväli", "Karksi-Nuia"): `config.toml` → `venue_hints`. Ilma kohata üritus ilmub lähipäevadel aruandesse („Mängud ilma toimumiskohata“).
+- Autosport (autosport.ee) on sama kalendripluginaga, aga iCal pole seal sisse lülitatud ja kalender laeb JavaScriptiga, nii et see ei ole veel lisatud.
