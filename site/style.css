@@ -11,6 +11,7 @@
   --chip: #fff;
   --empty: #a3a9b3;
   --past: #e4e6ea;
+  --shade: rgba(16,18,22,.45);
   /* alade värvid: valge tekst vähemalt 4.5:1 */
   --jalgpall: #2e7d32;
   --korvpall: #6b7280;
@@ -39,6 +40,7 @@
     --chip: #191c22;
     --empty: #5b616b;
     --past: #2a2e36;
+    --shade: rgba(0,0,0,.6);
   }
 }
 * { box-sizing: border-box; }
@@ -92,9 +94,96 @@ a { color: var(--link); text-decoration: none; }
 .info li { margin: .3rem 0; }
 .daynav { display: flex; align-items: center; gap: .5rem; margin-top: .2rem; }
 .daynav h1 { margin: 0; font-size: 1.15rem; font-weight: 600; }
-.daynav h1::first-letter { text-transform: uppercase; }
-.daynav a, .daynav .off { color: var(--bar-fg); font-size: .85rem; padding: .35rem .3rem; line-height: 1; }
+.daynav a, .daynav .off, .daynav button.step { color: var(--bar-fg); font-size: .85rem; padding: .35rem .3rem; line-height: 1; }
 .daynav .off { opacity: .3; }
+.daynav button.step { border: 0; background: none; cursor: pointer; font-family: inherit; padding: .45rem .5rem; }
+
+/* kuupäev pealkirjas: ilma JS-ita tavaline tekst, JS-iga nupp, mis avab kalendri (site/kalender.js) */
+.datebtn {
+  font: inherit; color: inherit; background: none; border: 0; padding: 0; margin: 0;
+  display: inline-flex; align-items: center; gap: .45rem; text-align: left;
+}
+.datelabel { display: inline-block; }
+.datelabel::first-letter { text-transform: uppercase; }
+.datebtn .calicon { display: none; flex: none; opacity: .9; }
+.js .datebtn { cursor: pointer; background: rgba(255,255,255,.13); border-radius: .45rem; padding: .25rem .55rem; }
+.js .datebtn:hover { background: rgba(255,255,255,.24); }
+.js .datebtn .calicon { display: inline; }
+
+/* vaate valik Päev / Nädal / Kuu (ainult JS-iga) */
+.views { display: inline-flex; background: rgba(255,255,255,.12); border-radius: 999px; padding: .15rem; margin-top: .3rem; }
+.views[hidden] { display: none; }
+.views button {
+  border: 0; background: none; color: var(--bar-fg); padding: .3rem .85rem; border-radius: 999px;
+  cursor: pointer; font: inherit; font-size: .92rem; opacity: .85;
+}
+.views button[aria-pressed="true"] { background: var(--bar-fg); color: var(--bar); opacity: 1; font-weight: 600; }
+
+/* nädala ja kuu vaade: päevad pealkirjadega */
+.summary { margin: .6rem 0 .7rem; font-size: .9rem; color: var(--muted); }
+.farnote { margin: 0 0 .8rem; font-size: .82rem; color: var(--muted); border-left: 3px solid var(--line); padding-left: .6rem; }
+.dayblock { margin-bottom: 1rem; }
+.dayhead { display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; margin: 0 0 .35rem; font-size: .95rem; font-weight: 650; }
+.dayhead .cnt { font-size: .8rem; font-weight: 400; color: var(--muted); white-space: nowrap; }
+.noday { margin: 0 0 .9rem; font-size: .85rem; color: var(--empty); }
+.none button.go { border: 0; background: none; color: var(--link); padding: 0; cursor: pointer; font: inherit; }
+.dayblock.past .games li, .dayblock.past .games a { background: var(--past); }
+.dayblock.past .games time { filter: grayscale(.9) brightness(1.05); }
+.dayblock.past .match { color: var(--muted); }
+/* pühkimisel libiseb uus päev sisse (ainult kui liikumine on lubatud) */
+@media (prefers-reduced-motion: no-preference) {
+  #list.swipe-next { animation: swipe-next .2s ease-out; }
+  #list.swipe-prev { animation: swipe-prev .2s ease-out; }
+  @keyframes swipe-next { from { transform: translateX(2rem); opacity: .3; } }
+  @keyframes swipe-prev { from { transform: translateX(-2rem); opacity: .3; } }
+}
+
+/* kalendri leht: telefonis alt üles, laial ekraanil keskel */
+.sheet { position: fixed; inset: 0; z-index: 50; background: var(--shade); display: flex; align-items: flex-end; justify-content: center; }
+.sheet[hidden] { display: none; }
+.panel {
+  width: 100%; max-width: 30rem; max-height: 92vh; overflow-y: auto; background: var(--row); color: var(--fg);
+  border-radius: 1rem 1rem 0 0; padding: .9rem 1rem calc(1rem + env(safe-area-inset-bottom, 0px));
+}
+@media (min-width: 40rem) { .sheet { align-items: center; } .panel { border-radius: 1rem; } }
+@media (prefers-reduced-motion: no-preference) { .panel { animation: sheet-up .18s ease-out; } @keyframes sheet-up { from { transform: translateY(1.5rem); } } }
+.panel-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: .6rem; }
+.panel-head b { font-size: 1.05rem; }
+.panel .close { border: 0; background: var(--bg); color: var(--fg); border-radius: 999px; padding: .35rem .8rem; cursor: pointer; font: inherit; }
+.quick { display: flex; gap: .4rem; flex-wrap: wrap; margin-bottom: .8rem; }
+.quick button, .wholemonth {
+  border: 1px solid var(--line); background: var(--row); color: var(--fg); border-radius: 999px;
+  padding: .4rem .8rem; cursor: pointer; font: inherit; font-size: .9rem;
+}
+.quick button:hover, .wholemonth:hover { background: var(--bg); }
+.panel .label { font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; margin: 0 0 .35rem; }
+.months { display: grid; grid-template-columns: repeat(4, 1fr); gap: .35rem; margin-bottom: .9rem; }
+.months button {
+  border: 1px solid var(--line); background: var(--row); color: var(--fg); border-radius: .5rem;
+  padding: .35rem .2rem; cursor: pointer; line-height: 1.2; font: inherit;
+}
+.months .m { display: block; font-weight: 600; font-size: .92rem; }
+.months .y { display: block; font-size: .7rem; color: var(--muted); }
+.months .c { display: block; font-size: .72rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.months button.zero .m { color: var(--empty); font-weight: 400; }
+.months button[aria-pressed="true"] { background: var(--bar); border-color: var(--bar); color: var(--bar-fg); }
+.months button[aria-pressed="true"] .y, .months button[aria-pressed="true"] .c { color: var(--bar-fg); }
+.cal { display: grid; grid-template-columns: repeat(7, 1fr); gap: .2rem; margin-bottom: .8rem; }
+.cal .h { text-align: center; font-size: .72rem; color: var(--muted); padding-bottom: .2rem; }
+.cal button {
+  aspect-ratio: 1 / 1; max-width: 100%; border: 0; border-radius: .45rem; background: var(--bg); color: var(--fg);
+  cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .15rem;
+  padding: 0; font: inherit; font-variant-numeric: tabular-nums;
+}
+.cal .num { font-size: .95rem; font-weight: 600; line-height: 1; }
+.cal .dots { display: flex; gap: 2px; height: 5px; }
+.cal .dots i { width: 5px; height: 5px; border-radius: 50%; }
+.cal button.empty { background: none; color: var(--empty); }
+.cal button.empty .num { font-weight: 400; }
+.cal button.past { opacity: .55; }
+.cal button.today { box-shadow: inset 0 0 0 2px var(--link); }
+.cal button[aria-current] { background: var(--bar); color: var(--bar-fg); opacity: 1; }
+.calfoot { display: flex; justify-content: space-between; align-items: center; gap: .5rem; flex-wrap: wrap; font-size: .82rem; color: var(--muted); }
 
 /* päevade riba */
 .days { background: var(--row); border-bottom: 1px solid var(--line); }

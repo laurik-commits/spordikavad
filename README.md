@@ -105,6 +105,10 @@ Kolm sammu: adapter, konfiguratsioonirida ja test.
   2. ✅ Delfi TV ülekannete kava: tulevastele mängudele „Otse: Delfi TV“ (`scrapers/kava_delfi.py`, seosed `data/ulekanded.json`).
   3. ✅ ERR telekava (ETV, ETV2, 8 päeva; `scrapers/kava_err.py`), ka ürituste alad (suusatamine, ralli …).
   4. ✅ Otsinguagent kontrollib kanaleid, kelle kava automaatselt ei loe (nt Postimees), lisab ülekanded (`[[mang]]`) ja liigadele uusi kanaleid (`[[liiga]]`); automaatne merge kontrollib (uue kanali lisab omanik).
+- **Kasutajate tagasiside 2026-11-23** (omanikuga kokku lepitud järjekord):
+  1. ✅ Kalender: vaade Päev / Nädal / Kuu, kuupäeva valik kuni 12 kuud ette, pühkimine vasakule-paremale (`site/kalender.js`, andmed `kalender.json` = `build.calendar_data`). Päevalehed jäävad staatiliseks (töötavad ilma JS-ita); nädala, kuu ja 14 päevast kaugemad päevad joonistab JS (aadressis `#kuupäev`).
+  2. Alade rühmad menüüs (Pallimängud, Talialad, Motosport, Võitlusspordid …), hiljem alaliigid (nt autospordis WRC, kardid, ringrada).
+  3. Uued alad järk-järgult (vaatamist väärt võistlused, nt tennis, ujumine, jalgrattasport, fitnessi ja kulturismi võistlused); osalemisüritused eraldi „võtan osa“ ideena.
 - **Piletid** (omanikuga kokku lepitud 2026-11-20): püsiinfo seadistusfailis (klubi → piletimüüja link), mängu real „Piletid ↗“. Kui allika mängulehel on piletilink juba olemas, võtta see kaasa. Mängupõhist kogumist piletimüüjatelt ei tee (hooldus, tingimused).
 - Päevade ribale kuu nimi, kui riba ulatub üle kuu vahetuse.
 - **Jalgpalli karikad** (omanikuga kokku lepitud „millalgi tulevikus“): Tipneri karikas, naiste karikas, superkarikas. Vaja on iCal-lugejat (vt SOURCES.md „Täiendavate võistluste ülevaade“).

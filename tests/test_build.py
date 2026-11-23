@@ -311,6 +311,26 @@ class RenderTest(unittest.TestCase):
         self.assertNotIn("2026-11-14", (out / "sitemap.xml").read_text(encoding="utf-8"))
         self.assertIn('<span class="n">–</span>', (out / "index.html").read_text(encoding="utf-8"))
 
+    def test_calendar_data_and_controls(self):
+        import json
+        cal = json.loads(self.read("kalender.json"))
+        self.assertEqual((cal["today"], cal["first"], cal["last"]), ("2026-11-20", "2026-11-06", "2026-11-23"))
+        self.assertEqual(cal["hidden"], [3])
+        far = next(e for e in cal["events"] if e["h"] == "Kaugel")   # 30.11: väljaspool päevalehti, kalendris olemas
+        self.assertEqual((far["t"], far["s"], far["rg"], far["lv"]), ("2026-11-30T12:00", "jaahoki", "tallinn", 1))
+        self.assertTrue(far["sh"].startswith("Kaugel – Külalised: esmaspäev, 30. november kell 12:00"))
+        tartu = next(e for e in cal["events"] if e["h"] == "Tartlased")
+        self.assertEqual(tartu["rg"], "tartu")
+        self.assertNotIn("tbc", tartu)
+        self.assertTrue((self.tmp / "kalender.js").exists())
+        html = self.read("2026-11-22/index.html")
+        self.assertIn('<div class="views" role="group" aria-label="Vaade" hidden>', html)
+        self.assertIn('<div id="list">', html)
+        self.assertIn('data-day="2026-11-22" data-region-kind="city" data-in="Tallinnas"', html)
+        self.assertIn('class="datebtn"', html)
+        self.assertIn('kalender.js" defer></script>', html)
+        self.assertIn('rel="prev"', html)   # ilma JS-ita töötavad päevalehed nagu enne
+
     def test_long_sport_name_breaks_in_time_block(self):
         # kitsal ekraanil "Saali-" / "jalgpall": pehme sidekriips kellaplokis, mujal (valik, filter) tavaline nimi
         html = self.read("noored/2026-11-21/index.html") if (self.tmp / "noored").exists() \
