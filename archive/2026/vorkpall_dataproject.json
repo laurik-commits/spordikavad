@@ -769,7 +769,8 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3673&ID=99&PID=149",
    "venue": "TalTechi spordihall"
   },
-  "first_seen": "2026-11-23"
+  "first_seen": "2026-11-23",
+  "missing_since": "2026-11-23"
  },
  "290414f50070": {
   "changes": [
@@ -1934,6 +1935,25 @@
    "venue": "Kiili SH"
   },
   "first_seen": "2026-11-22"
+ },
+ "67ff8ee77c5c": {
+  "changes": [],
+  "event": {
+   "away": "TalTech/Nordaid",
+   "city": "Tartu",
+   "home": "TÜ/Bigbank",
+   "id": "67ff8ee77c5c",
+   "league": "Eesti karikas (naised)",
+   "level": 1,
+   "result": "",
+   "source": "vorkpall_dataproject",
+   "sport": "vorkpall",
+   "start": "2026-12-04T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3673&ID=99&PID=149",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-23"
  },
  "698fe249cfe8": {
   "changes": [],
@@ -3257,6 +3277,12 @@
     "from": "",
     "on": "2026-11-23",
     "to": "0-1"
+   },
+   {
+    "field": "result",
+    "from": "0-1",
+    "on": "2026-11-23",
+    "to": "0-2"
    }
   ],
   "event": {
@@ -3266,7 +3292,7 @@
    "id": "b60d26619a36",
    "league": "Esiliiga (naised)",
    "level": 2,
-   "result": "0-1",
+   "result": "0-2",
    "source": "vorkpall_dataproject",
    "sport": "vorkpall",
    "start": "2026-11-14T12:00:00+02:00",

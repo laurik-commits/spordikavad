@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T20:47:46+02:00",
+ "updated": "2026-11-23T21:09:09+02:00",
  "events": [
   {
    "id": "899216e6d23a",
@@ -1918,7 +1918,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3623&ID=106&PID=164",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
-   "result": "0-1",
+   "result": "0-2",
    "level": 2
   },
   {
@@ -2537,14 +2537,14 @@
    "level": 1
   },
   {
-   "id": "28a969125d13",
+   "id": "67ff8ee77c5c",
    "sport": "vorkpall",
    "league": "Eesti karikas (naised)",
    "start": "2026-12-04T19:00:00+02:00",
-   "home": "TalTech/Nordaid",
-   "away": "TÜ/Bigbank",
-   "venue": "TalTechi spordihall",
-   "city": "Tallinn",
+   "home": "TÜ/Bigbank",
+   "away": "TalTech/Nordaid",
+   "venue": "Tartu Ülikooli spordihoone",
+   "city": "Tartu",
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3673&ID=99&PID=149",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
