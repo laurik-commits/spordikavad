@@ -5,7 +5,8 @@ from pathlib import Path
 
 import build
 import ulekanded
-from scrapers import config, jalgpall_ejl, jalgpall_koondis, kasipall_liigad, kava_delfi
+from scrapers import config, jalgpall_ejl, jalgpall_koondis, kasipall_liigad, kava_delfi, kava_err
+from scrapers.http import FetchError
 from scrapers.model import TALLINN, Event, new_event
 
 FIX = Path(__file__).parent / "fixtures"
@@ -243,6 +244,66 @@ class DelfiKavaTest(unittest.TestCase):
         self.assertEqual(ulekanded.match([game(1, 18, 0, "Viimsi Basket", "BC Kalev", sport="korvpall")], [row]), {})
 
 
+class ErrKavaTest(unittest.TestCase):
+    TEXT = (FIX / "kava_err_etv2.json").read_text(encoding="utf-8")
+
+    def test_parse_sport_rows(self):
+        rows = kava_err.parse(self.TEXT)
+        self.assertEqual([(r["sport"], r["home"], r["away"]) for r in rows], [
+            ("suusatamine", "Laskesuusatamise MK-etapp Kontiolahtis. Naiste 15 km", ""),
+            ("korvpall", "Eesti", "Prantsusmaa")])
+        ball = rows[1]
+        self.assertEqual(ball["start"].strftime("%d.%m.%Y %H:%M %z"), "27.11.2026 18:45 +0200")
+        self.assertEqual((ball["url"], ball["by"]), ("https://jupiter.err.ee/1610194190/korvpalli-mm-valikmang", "ERR"))
+
+    def test_sport_names_repeats_and_non_games(self):
+        self.assertEqual(kava_err.sport_of("Saalijalgpalli meistriliiga. A - B"), "saalijalgpall")
+        self.assertEqual(kava_err.sport_of("Jalgpalli Premium liiga. A - B"), "jalgpall")
+        self.assertEqual(kava_err.sport_of("WRC Rally Estonia. Kiiruskatse"), "autosport")
+        self.assertEqual(kava_err.sport_of("Aktuaalne kaamera"), "")
+        text = ('[{"name": "Korvpalli MM-valikmäng. Eesti - Prantsusmaa*", "startTime": 1795797900},'
+                ' {"name": "Jalgpalli EM-valiksarja loosimine", "startTime": 1795797900},'
+                ' {"name": "Võrkpalli Balti liiga. Tartu - Pärnu (otse)", "startTime": 1795797900, "url": "x"}]')
+        rows = kava_err.parse(text)
+        self.assertEqual([(r["home"], r["away"], r["url"]) for r in rows], [("Tartu", "Pärnu", kava_err.PAGE)])
+
+    def test_fetch_all_days_and_channels(self):
+        class Fake:
+            def __init__(self, fail=lambda url: False):
+                self.urls, self.fail = [], fail
+
+            def get(self, url):
+                self.urls.append(url)
+                if self.fail(url):
+                    raise FetchError(url)
+                return ErrKavaTest.TEXT
+
+        f = Fake()
+        rows = kava_err.fetch(f, today=date(2026, 11, 27))
+        self.assertEqual(len(f.urls), kava_err.DAYS * len(kava_err.CHANNELS))
+        self.assertIn("day=4&month=12&year=2026&channel=etv2", f.urls[-1])
+        self.assertEqual(len(rows), 2 * len(f.urls))
+        self.assertTrue(kava_err.fetch(Fake(lambda u: "channel=etv2" in u), today=date(2026, 11, 27)))
+        with self.assertRaises(FetchError):
+            kava_err.fetch(Fake(lambda u: True), today=date(2026, 11, 27))
+
+    def test_match_national_game_and_events(self):
+        rows = kava_err.parse(self.TEXT)
+        national = new_event(source="kasitsi", sport="korvpall", league="Koondis", start=datetime(2026, 11, 27, 19),
+                             home="Eesti", away="Prantsusmaa", venue="Saku Suurhall", city="Tallinn", url="https://x/")
+        self.assertEqual(set(ulekanded.match([national], rows)), {national.id})
+        mm = new_event(source="kasitsi", sport="suusatamine", league="Laskesuusatamine", start=datetime(2027, 2, 10, 12),
+                       home="Laskesuusatamise MM Otepää", away="", venue="Tehvandi", city="Otepää", url="https://x/",
+                       end=date(2027, 2, 21))
+        stream = {"start": datetime(2027, 2, 12, 15, 0, tzinfo=TALLINN), "sport": "suusatamine",
+                  "home": "Laskesuusatamise MM-võistlused Otepääl. Naiste sprint", "away": "", "url": "https://j/1", "by": "ERR"}
+        other = dict(stream, home="Laskesuusatamise MK-etapp Kontiolahtis. Naiste sprint")
+        late = dict(stream, start=datetime(2027, 2, 25, 15, 0, tzinfo=TALLINN))
+        self.assertEqual(set(ulekanded.match([mm], [stream])), {mm.id})
+        self.assertEqual(ulekanded.match([mm], [other]), {})   # teine etapp: ainult 1 ühine sõna
+        self.assertEqual(ulekanded.match([mm], [late]), {})    # pärast ürituse lõppu
+
+
 class LinksStoreTest(unittest.TestCase):
     def link(self, day, by="Delfi TV"):
         return {"video": "https://tv/", "video_by": by, "start": f"2026-{month_of(day):02d}-{day:02d}T19:00:00+02:00",
@@ -289,9 +350,9 @@ class LinksStoreTest(unittest.TestCase):
         self.assertEqual((len(rows), report[0]["status"], report[0]["fetched"]), (15, "ok", 15))
         self.assertEqual(len(report), 1)   # kavata kanalit ei loeta
 
-    def test_repo_delfi_channel_has_reader(self):
-        delfi = next(k for k in ulekanded.load()["kanal"] if k["nimi"] == "Delfi TV")
-        self.assertEqual(delfi.get("kava"), "delfi")
+    def test_repo_channels_have_readers(self):
+        kavas = {k["nimi"]: k.get("kava") for k in ulekanded.load()["kanal"]}
+        self.assertEqual((kavas["Delfi TV"], kavas["ERR"]), ("delfi", "err"))
 
 
 if __name__ == "__main__":

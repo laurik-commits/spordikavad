@@ -139,12 +139,20 @@ def _tokens(name: str) -> set[str]:
     return {w for w in re.split(r"[^a-z0-9]+", plain) if len(w) >= 3 and w not in _GENERIC}
 
 
+def _stem_hits(a: set[str], b: set[str]) -> int:
+    """Mitu sõna hulgast `a` on hulgas `b` sama tüvega (üks algab teisega, vähemalt 4 tähte): käänded
+    nagu "Otepää" / "Otepääl" loetakse samaks."""
+    return sum(1 for x in a if len(x) >= 4 and any(len(y) >= 4 and (x.startswith(y) or y.startswith(x)) for y in b))
+
+
 def match(events: Iterable[Event], streams: Iterable[dict]) -> dict[str, dict]:
     """Kava read → mängud. Tagastab {mängu id: {"video", "video_by", "start", "sport", "league"}}.
 
-    Sama mäng = sama ala, kellaaeg ±MATCH_MINUTES (kellaajata mängul sama päev) ning mõlema võistkonna
-    nimes on kava reaga ühine eristav sõna (kodu/võõras võivad olla vahetuses). Kui kaks mängu sobivad
-    võrdselt hästi, jäetakse rida vahele (parem ilma lingita kui vale link)."""
+    Pallimäng: sama ala, kellaaeg ±MATCH_MINUTES (kellaajata mängul sama päev) ning mõlema võistkonna
+    nimes on kava reaga ühine eristav sõna (kodu/võõras võivad olla vahetuses).
+    Üritus (kava real võistkondi pole, away tühi): sama ala, ülekande päev on ürituse päevade sees ja
+    ürituse nimes on vähemalt 2 sõna, mis on ka kava rea nimes (käänded lubatud).
+    Kui kaks mängu sobivad võrdselt hästi, jäetakse rida vahele (parem ilma lingita kui vale link)."""
     events = list(events)
     out: dict[str, dict] = {}
     for s in streams:
@@ -152,6 +160,13 @@ def match(events: Iterable[Event], streams: Iterable[dict]) -> dict[str, dict]:
         cands = []
         for e in events:
             if e.sport != s["sport"]:
+                continue
+            if not s["away"]:  # üritus
+                if not (e.start.date() <= s["start"].date() <= e.last_day):
+                    continue
+                score = _stem_hits(_tokens(f"{e.home} {e.away}"), sh)
+                if score >= 2:
+                    cands.append((score, 0, e))
                 continue
             minutes = abs((e.start - s["start"]).total_seconds()) / 60
             if not (minutes <= MATCH_MINUTES or (e.time_tbc and e.start.date() == s["start"].date())):
