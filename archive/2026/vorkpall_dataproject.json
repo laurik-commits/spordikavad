@@ -121,6 +121,25 @@
   },
   "first_seen": "2026-11-22"
  },
+ "08ae695bc657": {
+  "changes": [],
+  "event": {
+   "away": "Barrus Võru VK",
+   "city": "Tartu",
+   "home": "BIGBANK Tartu",
+   "id": "08ae695bc657",
+   "league": "Eesti karikas (mehed)",
+   "level": 1,
+   "result": "2-3",
+   "source": "vorkpall_dataproject",
+   "sport": "vorkpall",
+   "start": "2026-12-03T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3670&ID=100&PID=150",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-23"
+ },
  "08c9e5e6e8d0": {
   "changes": [
    {
@@ -1874,6 +1893,12 @@
     "from": "",
     "on": "2026-11-22",
     "to": "2-3"
+   },
+   {
+    "field": "result",
+    "from": "2-3",
+    "on": "2026-11-23",
+    "to": ""
    }
   ],
   "event": {
@@ -1883,7 +1908,7 @@
    "id": "6bb24a8cbb91",
    "league": "Eesti karikas (mehed)",
    "level": 1,
-   "result": "2-3",
+   "result": "",
    "source": "vorkpall_dataproject",
    "sport": "vorkpall",
    "start": "2026-11-26T19:00:00+02:00",
