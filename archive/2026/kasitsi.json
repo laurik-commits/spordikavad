@@ -18,6 +18,25 @@
   },
   "first_seen": "2026-11-22"
  },
+ "31e6c7385727": {
+  "changes": [],
+  "event": {
+   "away": "Leedu",
+   "city": "Paide",
+   "home": "Läti",
+   "id": "31e6c7385727",
+   "league": "Naiste koondis: Balti turniir 2026 (poolfinaal)",
+   "level": 5,
+   "result": "",
+   "source": "kasitsi",
+   "sport": "jalgpall",
+   "start": "2026-11-28T13:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/koondis/7/uudised/sevoldajeva-teatas-koondise-koosseisu-balti-turniiri-mangudeks-n26645",
+   "venue": "Paide jalgpallihall"
+  },
+  "first_seen": "2026-11-23"
+ },
  "3709f689ea15": {
   "changes": [],
   "event": {
@@ -36,6 +55,25 @@
    "venue": "Saku Suurhall"
   },
   "first_seen": "2026-11-22"
+ },
+ "680dfea0764c": {
+  "changes": [],
+  "event": {
+   "away": "Eesti",
+   "city": "Paide",
+   "home": "Fääri saared",
+   "id": "680dfea0764c",
+   "league": "Naiste koondis: Balti turniir 2026 (poolfinaal)",
+   "level": 5,
+   "result": "",
+   "source": "kasitsi",
+   "sport": "jalgpall",
+   "start": "2026-11-28T18:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/koondis/7/uudised/sevoldajeva-teatas-koondise-koosseisu-balti-turniiri-mangudeks-n26645",
+   "venue": "Paide jalgpallihall"
+  },
+  "first_seen": "2026-11-23"
  },
  "ba3981f3e87f": {
   "changes": [],
