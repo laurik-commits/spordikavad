@@ -3251,7 +3251,14 @@
   "first_seen": "2026-11-22"
  },
  "b60d26619a36": {
-  "changes": [],
+  "changes": [
+   {
+    "field": "result",
+    "from": "",
+    "on": "2026-11-23",
+    "to": "0-1"
+   }
+  ],
   "event": {
    "away": "EstNor/Kiili",
    "city": "Tartu",
@@ -3259,7 +3266,7 @@
    "id": "b60d26619a36",
    "league": "Esiliiga (naised)",
    "level": 2,
-   "result": "",
+   "result": "0-1",
    "source": "vorkpall_dataproject",
    "sport": "vorkpall",
    "start": "2026-11-14T12:00:00+02:00",
