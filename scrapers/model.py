@@ -54,10 +54,12 @@ SPORTS = {
     "saalijalgpall": "Saalijalgpall",
     "motosport": "Motosport",
     "kergejoustik": "Kergejõustik",
+    "suusatamine": "Suusatamine",
+    "ratsasport": "Ratsasport",
 }
 
 # alad, kus real on üritus (võistlus, etapp), mitte kahe võistkonna mäng: home = ürituse nimi, away tühi
-EVENT_SPORTS = {"motosport", "kergejoustik"}
+EVENT_SPORTS = {"motosport", "kergejoustik", "suusatamine", "ratsasport"}
 
 
 @dataclass(frozen=True)

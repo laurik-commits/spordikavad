@@ -43,11 +43,13 @@ MONTHS_IN = ["jaanuaris", "veebruaris", "märtsis", "aprillis", "mais", "juunis"
 # ala omastav ("Tallinnas pole … jalgpalli mänge")
 SPORT_GEN = {"jalgpall": "jalgpalli", "korvpall": "korvpalli", "jaahoki": "jäähoki", "vorkpall": "võrkpalli",
              "kasipall": "käsipalli", "saalihoki": "saalihoki", "saalijalgpall": "saalijalgpalli",
-             "motosport": "motospordi", "kergejoustik": "kergejõustiku"}
+             "motosport": "motospordi", "kergejoustik": "kergejõustiku",
+             "suusatamine": "suusa", "ratsasport": "ratsa"}
 # ala seesütlevas käändes päise lauses: "Ela kaasa koondistele jalgpallis Tallinnas"
 SPORT_IN = {"jalgpall": "jalgpallis", "korvpall": "korvpallis", "jaahoki": "jäähokis", "vorkpall": "võrkpallis",
             "kasipall": "käsipallis", "saalihoki": "saalihokis", "saalijalgpall": "saalijalgpallis",
-            "motosport": "motospordis", "kergejoustik": "kergejõustikus"}
+            "motosport": "motospordis", "kergejoustik": "kergejõustikus",
+            "suusatamine": "suusatamises", "ratsasport": "ratsaspordis"}
 MONTHS = ["jaanuar", "veebruar", "märts", "aprill", "mai", "juuni", "juuli",
           "august", "september", "oktoober", "november", "detsember"]
 
@@ -489,6 +491,8 @@ SOURCE_SITES = {
     "saalihoki": [("Eesti Saalihoki Liit", "https://www.saalihoki.ee/Events/Uritused.aspx")],
     "motosport": [("Eesti Mootorrattaspordi Föderatsioon", "https://msport.ee/kalender/")],
     "kergejoustik": [("Eesti Kergejõustikuliit", "https://www.ekjl.ee/kalender/")],
+    "suusatamine": [("Eesti Suusaliit", "https://www.suusaliit.ee/et/voistlused")],
+    "ratsasport": [("Eesti Ratsaspordi Liit", "https://ratsanet.ee/events")],
 }
 
 

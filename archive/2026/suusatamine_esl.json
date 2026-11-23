@@ -1,0 +1,60 @@
+{
+ "2610bd9df1df": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Põlva",
+   "home": "Eesti Meistrivõistlused murdmaasuusatamises",
+   "id": "2610bd9df1df",
+   "league": "Murdmaasuusatamine",
+   "level": 1,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2026-12-27T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1340",
+   "venue": "Mammaste"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "97508d04d660": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Põlva",
+   "home": "Nõo Snacker Noorte MK - Sprint V",
+   "id": "97508d04d660",
+   "league": "Murdmaasuusatamine",
+   "level": 4,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2026-12-26T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1383",
+   "venue": "Mammaste"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "e8c3f4dbf996": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Pannjärve",
+   "end": "2026-12-13",
+   "home": "Vello Liliumi karikavõistlus 2026",
+   "id": "e8c3f4dbf996",
+   "league": "Murdmaasuusatamine",
+   "level": 1,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2026-12-12T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1381",
+   "venue": "Alutaguse Tervisespordikeskus"
+  },
+  "first_seen": "2026-11-23"
+ }
+}

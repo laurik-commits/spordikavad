@@ -1,0 +1,552 @@
+{
+ "249a04d90510": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Otepää",
+   "end": "2027-01-17",
+   "home": "FIS Kahevõistluse MK etapp 2027 Otepääl",
+   "id": "249a04d90510",
+   "league": "Kahevõistlus",
+   "level": 1,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-01-15T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1374",
+   "venue": "Tehvandi Spordikeskus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "262032720a97": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Otepää",
+   "home": "FIS Estonian Open / EMV",
+   "id": "262032720a97",
+   "league": "Lumelaud, Freestyle suusatamine",
+   "level": 1,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-03-14T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1356",
+   "venue": "Munakas"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "29a78e44bbc1": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Pannjärve",
+   "end": "2027-02-07",
+   "home": "49. Alutaguse Maraton",
+   "id": "29a78e44bbc1",
+   "league": "Murdmaasuusatamine",
+   "level": 1,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-02-06T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1371",
+   "venue": "Alutaguse Tervisespordikeskus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "2d30c56c83a1": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Holstre",
+   "end": "2027-03-14",
+   "home": "Eesti Meistrivõistlused murdmaasuusatamises",
+   "id": "2d30c56c83a1",
+   "league": "Murdmaasuusatamine",
+   "level": 1,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-03-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1342",
+   "venue": "Holstre-Polli Tervisespordikeskus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "2ff27488fb6d": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kadrina",
+   "home": "27. Neeruti Maraton",
+   "id": "2ff27488fb6d",
+   "league": "Murdmaasuusatamine",
+   "level": 1,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-01-30T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1370",
+   "venue": "Pariisi Puhkeküla"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "300b8cf471b1": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Otepää",
+   "end": "2027-01-10",
+   "home": "Eesti Meistrivõistlused murdmaasuusatamises",
+   "id": "300b8cf471b1",
+   "league": "Murdmaasuusatamine",
+   "level": 1,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-01-09T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1341",
+   "venue": "Tehvandi Spordikeskus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "31467dfec137": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Valgehobusemäe",
+   "home": "Noortesarja 3. etapp - Valgehobusemäe pargisõit",
+   "id": "31467dfec137",
+   "league": "Freestyle suusatamine, Lumelaud",
+   "level": 4,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-03-07T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1360",
+   "venue": "Valgehobusemäe suusa- ja puhkekeskus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "3c4cb29a429c": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Võru",
+   "home": "Noorte karikasari, Võru 2026/2027 IV etapp",
+   "id": "3c4cb29a429c",
+   "league": "Eesti muud võistlused",
+   "level": 4,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-02-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1380",
+   "venue": "Andsumäe"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "3d1636981472": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Valgehobusemäe",
+   "home": "Jaak Mae KV",
+   "id": "3d1636981472",
+   "league": "Murdmaasuusatamine",
+   "level": 1,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-02-07T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1391",
+   "venue": "Valgehobusemäe suusa- ja puhkekeskus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "4bb52bdd9c69": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Holstre",
+   "home": "Nõo Snacker Noorte MK - Ühisstart KL",
+   "id": "4bb52bdd9c69",
+   "league": "Murdmaasuusatamine",
+   "level": 4,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-03-14T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1390",
+   "venue": "Holstre-Polli Tervisespordikeskus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "52a34f811827": {
+  "changes": [
+   {
+    "field": "league",
+    "from": "Murdmaasuusatamine",
+    "on": "2026-11-23",
+    "to": "Kahevõistlus"
+   },
+   {
+    "field": "url",
+    "from": "https://www.suusaliit.ee/et/voistlused?competition_id=1375",
+    "on": "2026-11-23",
+    "to": "https://www.suusaliit.ee/et/voistlused?competition_id=1376"
+   },
+   {
+    "field": "league",
+    "from": "Kahevõistlus",
+    "on": "2026-11-23",
+    "to": "Suusahüpped"
+   },
+   {
+    "field": "url",
+    "from": "https://www.suusaliit.ee/et/voistlused?competition_id=1376",
+    "on": "2026-11-23",
+    "to": "https://www.suusaliit.ee/et/voistlused?competition_id=1377"
+   }
+  ],
+  "event": {
+   "away": "",
+   "city": "Otepää",
+   "end": "2027-01-24",
+   "home": "Põhja suusaalade juunioride ja U23 maailmameistrivõistlused",
+   "id": "52a34f811827",
+   "league": "Suusahüpped",
+   "level": 1,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-01-18T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1377",
+   "venue": "Tehvandi Spordikeskus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "66b453544f5c": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Valgehobusemäe",
+   "home": "Nõo Snacker Noorte MK - 100m Sprint V",
+   "id": "66b453544f5c",
+   "league": "Murdmaasuusatamine",
+   "level": 4,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-02-05T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1387",
+   "venue": "Valgehobusemäe suusa- ja puhkekeskus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "6734775fd032": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Noortesarja 1. etapp - Tartu raili võistlus",
+   "id": "6734775fd032",
+   "league": "Freestyle suusatamine, Lumelaud",
+   "level": 4,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-01-16T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1358",
+   "venue": "Tartu Lumepark"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "68e47bf1f9b9": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Otepää",
+   "home": "FIS Estonian Open/EMV",
+   "id": "68e47bf1f9b9",
+   "league": "Lumelaud, Freestyle suusatamine",
+   "level": 1,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-03-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1355",
+   "venue": "Tehvandi Spordikeskus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "6ef8bd25b9d3": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Otepää",
+   "end": "2027-02-28",
+   "home": "53. Tartu Maraton",
+   "id": "6ef8bd25b9d3",
+   "league": "Murdmaasuusatamine",
+   "level": 1,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-02-27T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1365",
+   "venue": "Tartu Maratoni rada (Otepää–Elva)"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "72c77b84f1a2": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Holstre",
+   "home": "Nõo Snacker Noorte MK - Sprinditeade V",
+   "id": "72c77b84f1a2",
+   "league": "Murdmaasuusatamine",
+   "level": 4,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-03-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1389",
+   "venue": "Holstre-Polli Tervisespordikeskus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "83acc5f6af50": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kõrvemaa",
+   "end": "2027-02-20",
+   "home": "29. Tallinna Suusamaraton",
+   "id": "83acc5f6af50",
+   "league": "Murdmaasuusatamine",
+   "level": 1,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-02-19T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1373",
+   "venue": "Kõrvemaa Matka- ja Suusakeskus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "969d10097cd6": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Pannjärve",
+   "end": "2027-03-21",
+   "home": "Eesti Meistrivõistlused murdmaasuusatamises",
+   "id": "969d10097cd6",
+   "league": "Murdmaasuusatamine",
+   "level": 1,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-03-20T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1343",
+   "venue": "Alutaguse Tervisespordikeskus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "a2ff5761f11f": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kiviõli",
+   "end": "2027-01-24",
+   "home": "1.etapp - Noortesari",
+   "id": "a2ff5761f11f",
+   "league": "Mäesuusatamine",
+   "level": 4,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-01-23T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1366",
+   "venue": "Kiviõli Seikluskeskus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "a4d71bf4422f": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Haanja",
+   "home": "Nõo Snacker Noorte MK - Eraldistart KL",
+   "id": "a4d71bf4422f",
+   "league": "Murdmaasuusatamine",
+   "level": 4,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-01-30T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1385",
+   "venue": "Haanja Puhke- ja Suusakeskus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "a72dc66c5093": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kütiorg",
+   "end": "2027-02-14",
+   "home": "2.etapp - Noortesari",
+   "id": "a72dc66c5093",
+   "league": "Mäesuusatamine",
+   "level": 4,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-02-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1367",
+   "venue": "Kütioru suusakeskus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "c2f0e93c759c": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Sindi",
+   "home": "Sindi Sprint",
+   "id": "c2f0e93c759c",
+   "league": "Murdmaasuusatamine",
+   "level": 1,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-02-24T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1392",
+   "venue": "Sindi"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "c69e80ddbb9a": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Haanja",
+   "home": "Nõo Snacker Noorte MK - Jälitussõit V",
+   "id": "c69e80ddbb9a",
+   "league": "Murdmaasuusatamine",
+   "level": 4,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-01-31T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1386",
+   "venue": "Haanja Puhke- ja Suusakeskus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "c8a5183d6f51": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Valgehobusemäe",
+   "home": "Nõo Snacker Noorte MK - Suusakross",
+   "id": "c8a5183d6f51",
+   "league": "Murdmaasuusatamine",
+   "level": 4,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-02-06T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1388",
+   "venue": "Valgehobusemäe suusa- ja puhkekeskus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "e01f0c3112d8": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Haanja",
+   "end": "2027-02-14",
+   "home": "49. Haanja Maraton",
+   "id": "e01f0c3112d8",
+   "league": "Murdmaasuusatamine",
+   "level": 1,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-02-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1372",
+   "venue": "Haanja Puhke- ja Suusakeskus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "e0e66ca4212a": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kuutsemäe",
+   "end": "2027-03-07",
+   "home": "3.etapp - Noortesari",
+   "id": "e0e66ca4212a",
+   "league": "Mäesuusatamine",
+   "level": 4,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-03-06T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1369",
+   "venue": "Kuutsemäe puhkekeskus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "ff83bb3ce64b": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Noortesarja 2. etapp - Nõmme raili võistlus",
+   "id": "ff83bb3ce64b",
+   "league": "Freestyle suusatamine, Lumelaud",
+   "level": 4,
+   "result": "",
+   "source": "suusatamine_esl",
+   "sport": "suusatamine",
+   "start": "2027-01-31T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.suusaliit.ee/et/voistlused?competition_id=1359",
+   "venue": "Nõmme Lumepark"
+  },
+  "first_seen": "2026-11-23"
+ }
+}

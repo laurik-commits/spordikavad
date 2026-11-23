@@ -21,6 +21,8 @@
   --saalijalgpall: #8a5a00;
   --motosport: #b91c1c;
   --kergejoustik: #be185d;
+  --suusatamine: #4338ca;
+  --ratsasport: #78350f;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -153,6 +155,8 @@ a { color: var(--link); text-decoration: none; }
 .s-border-saalijalgpall { border-left-color: var(--saalijalgpall); }
 .s-border-motosport { border-left-color: var(--motosport); }
 .s-border-kergejoustik { border-left-color: var(--kergejoustik); }
+.s-border-suusatamine { border-left-color: var(--suusatamine); }
+.s-border-ratsasport { border-left-color: var(--ratsasport); }
 .js .extnote { display: none; }       /* JS-iga näidatakse alles nupu vajutamisel */
 .js .extnote.show { display: block; }
 .dot { width: .6rem; height: .6rem; border-radius: 50%; display: inline-block; }
@@ -238,6 +242,8 @@ a { color: var(--link); text-decoration: none; }
 .s-saalijalgpall { background: var(--saalijalgpall); }
 .s-motosport { background: var(--motosport); }
 .s-kergejoustik { background: var(--kergejoustik); }
+.s-suusatamine { background: var(--suusatamine); }
+.s-ratsasport { background: var(--ratsasport); }
 
 .none, .empty-filter { padding: 1.5rem .25rem; color: var(--muted); }
 .none p { margin: .3rem 0; }

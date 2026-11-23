@@ -92,7 +92,7 @@ Kolm sammu: adapter, konfiguratsioonirida ja test.
 
 ## Tulevikuideed
 
-- **Uued alad**: kergejõustik ja motosport on lisatud (üritused, mitte mängud). Järgmised kandidaadid (talialad, ratsasport, võitlusspordid, tantsusport) koos allikatega on failis [docs/uued-alad.md](docs/uued-alad.md). Omanik otsustab, millal ja millest jätkata.
+- **Uued alad**: kergejõustik, motosport, suusatamine ja ratsasport on lisatud (üritused, mitte mängud). Järgmised kandidaadid (laskesuusatamine, võitlusspordid, tantsusport, iluuisutamine) koos allikatega on failis [docs/uued-alad.md](docs/uued-alad.md). Omanik otsustab, millal ja millest jätkata.
 
 - **Loapalved liitudele** (omaniku plaan 2026-11-20): kui leht on mõnda aega stabiilselt töötanud, kirjutab omanik ja küsib luba ajakava kasutamiseks või avalikku andmevoogu. Claude koostab siis kirjade mustandid.
   - **Eesti Korvpalliliit** (basket.ee, estlatbl.com): robots.txt keelab automaatse kogumise, seetõttu on lehel praegu ainult Bigbank/Kalevi mängud (klubi lehelt, adapter `korvpall_kalev`) ja Tartu Ülikool Maks & Moorits kodumängud (klubi lehelt, adapter `korvpall_ut`). Loa korral: liiga adapter (`scrapers/korvpall_...py`), `config.toml` rida ja test; korvpalli märkuse (`sport_note`) saab siis eemaldada. Taust: SOURCES.md → Korvpall.

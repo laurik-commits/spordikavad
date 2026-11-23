@@ -1,0 +1,99 @@
+{
+ "27fe55727089": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tori",
+   "home": "THK Sügiskarikas 2026",
+   "id": "27fe55727089",
+   "league": "Takistussõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2026-11-07T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4442",
+   "venue": "Tori Hobusekasvandus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "403943d970f2": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Perila",
+   "home": "Perila Sügis & Poniratsanike SMV",
+   "id": "403943d970f2",
+   "league": "Takistussõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2026-11-14T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4363",
+   "venue": "Perila"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "7fa9ff81dfa8": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kukulinna",
+   "end": "2026-11-22",
+   "home": "Kukulinna Sügis II",
+   "id": "7fa9ff81dfa8",
+   "league": "Takistussõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2026-11-21T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4576",
+   "venue": "Kukulinna tall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "ae23b687e77f": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Lilli",
+   "end": "2026-11-29",
+   "home": "Jõuluootus Toomingal",
+   "id": "ae23b687e77f",
+   "league": "Koolisõit, Parakoolisõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2026-11-28T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4642",
+   "venue": "Toominga tall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "e2df27335a80": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tori",
+   "home": "THK Talvekarikas 2026",
+   "id": "e2df27335a80",
+   "league": "Takistussõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2026-12-05T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4443",
+   "venue": "Tori Hobusekasvandus"
+  },
+  "first_seen": "2026-11-23"
+ }
+}

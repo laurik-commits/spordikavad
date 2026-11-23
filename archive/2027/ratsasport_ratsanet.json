@@ -1,0 +1,1035 @@
+{
+ "0a8c3853bd2f": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Veskimetsa Kevad",
+   "id": "0a8c3853bd2f",
+   "league": "Takistussõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-03-20T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4667",
+   "venue": "Veskimetsa Ratsakool"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "112f65e0c817": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tori",
+   "home": "THK Suveootuse Karikas",
+   "id": "112f65e0c817",
+   "league": "Takistussõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-05-15T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4698",
+   "venue": "Tori Hobusekasvandus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "12b83b0c0896": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tori",
+   "home": "THK Kevadkarikas II",
+   "id": "12b83b0c0896",
+   "league": "Takistussõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-04-03T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4696",
+   "venue": "Tori Hobusekasvandus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "146561ff3289": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kõpu",
+   "end": "2027-05-16",
+   "home": "CHI Pärnu koolisõit (CDI projekt)",
+   "id": "146561ff3289",
+   "league": "Koolisõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-05-14T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4715",
+   "venue": "Maria talu"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "19fa1e67ce96": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Ihaste suvi - takistussõit",
+   "id": "19fa1e67ce96",
+   "league": "Takistussõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-06-06T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4731",
+   "venue": "Ihaste Ratsakool"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "1a409fe9b41f": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Ihaste kevadine koolisõit / Tartu linna SMV",
+   "id": "1a409fe9b41f",
+   "league": "Koolisõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-04-03T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4728",
+   "venue": "Ihaste Ratsakool"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "1ccb6ee7e051": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Särevere",
+   "home": "Järvamaa RK Kevadkarikas",
+   "id": "1ccb6ee7e051",
+   "league": "Koolisõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-05-22T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4586",
+   "venue": "Särevere"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "2424e20efdc1": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kukulinna",
+   "end": "2027-07-04",
+   "home": "Kukulinna Suvi",
+   "id": "2424e20efdc1",
+   "league": "Takistussõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-07-02T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4743",
+   "venue": "Kukulinna tall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "243b5c84f270": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "end": "2027-03-14",
+   "home": "Ihaste sisekolmevõistlus / Juunioride ja seenioride SMV / Tartu linna SMV",
+   "id": "243b5c84f270",
+   "league": "Kolmevõistlus",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-03-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4726",
+   "venue": "Ihaste Ratsakool"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "29e395762969": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kõpu",
+   "end": "2027-05-30",
+   "home": "Maria Kevadkarikas 2027",
+   "id": "29e395762969",
+   "league": "Rakendisport",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-05-28T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4637",
+   "venue": "Maria talu"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "2bbb0a29dd3c": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Perila",
+   "end": "2027-06-13",
+   "home": "Perila Suvi (kuldliiga?)",
+   "id": "2bbb0a29dd3c",
+   "league": "Takistussõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-06-11T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4679",
+   "venue": "Perila"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "2f9330b16db3": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Koordi",
+   "end": "2027-05-09",
+   "home": "Koordi kolmevõistlus",
+   "id": "2f9330b16db3",
+   "league": "Kolmevõistlus",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-05-08T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4761",
+   "venue": "Koordi tallid"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "34df5aea6abd": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kõpu",
+   "end": "2027-05-29",
+   "home": "CHI Pärnu takistussõit 2 (CSI2-W projekt)",
+   "id": "34df5aea6abd",
+   "league": "Takistussõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-05-26T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4717",
+   "venue": "Maria talu"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "354b371d3ef1": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tori",
+   "home": "THK Talvekarikas I",
+   "id": "354b371d3ef1",
+   "league": "Takistussõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-01-23T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4693",
+   "venue": "Tori Hobusekasvandus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "3ac0d60b2cdf": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Perila",
+   "end": "2027-03-14",
+   "home": "Perila Talv III",
+   "id": "3ac0d60b2cdf",
+   "league": "Takistussõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-03-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4677",
+   "venue": "Perila"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "3bef766b9cb1": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Ihaste suvi - koolisõit",
+   "id": "3bef766b9cb1",
+   "league": "Koolisõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-06-05T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4730",
+   "venue": "Ihaste Ratsakool"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "43ff421bd2cd": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Padise",
+   "end": "2027-07-04",
+   "home": "CEI3*/CEI2*/CEI1*/CEIYJ2*/CEIYJ1*",
+   "id": "43ff421bd2cd",
+   "league": "Kestvusratsutamine",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-06-29T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4720",
+   "venue": "Padise"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "4420ef0bbe35": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Lilli",
+   "end": "2027-03-14",
+   "home": "Toominga Talvetuur 2027 2. etapp",
+   "id": "4420ef0bbe35",
+   "league": "Koolisõit, Parakoolisõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-03-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4651",
+   "venue": "Toominga tall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "4444445ce572": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Tartu linna MV kooli- ja parakoolisõidus",
+   "id": "4444445ce572",
+   "league": "Parakoolisõit, Koolisõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-06-12T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4683",
+   "venue": "Tartu Ratsakool"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "4d7cfbe43af2": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Järiste",
+   "home": "Ecu Spring Dressage",
+   "id": "4d7cfbe43af2",
+   "league": "Koolisõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-04-10T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4750",
+   "venue": "Ecu tallid"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "5161ab914b5a": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Lilli",
+   "end": "2027-02-14",
+   "home": "Toominga Talvetuur 2027 1. etapp",
+   "id": "5161ab914b5a",
+   "league": "Koolisõit, Parakoolisõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-02-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4650",
+   "venue": "Toominga tall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "529a344a232b": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Valgeranna",
+   "end": "2027-05-16",
+   "home": "Valgeranna",
+   "id": "529a344a232b",
+   "league": "Takistussõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-05-14T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4764",
+   "venue": "Valgeranna Tall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "5be7afd6dbbd": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Ruila",
+   "end": "2027-06-27",
+   "home": "Ruila Suvi 1.0",
+   "id": "5be7afd6dbbd",
+   "league": "Takistussõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-06-25T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4748",
+   "venue": "Ruila"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "5c3a173904e8": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "end": "2027-03-28",
+   "home": "Ihaste sisekolmevõistlus / Poniratsanike, noorte ja harrastajate SMV / Tartu linna SMV",
+   "id": "5c3a173904e8",
+   "league": "Kolmevõistlus",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-03-27T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4727",
+   "venue": "Ihaste Ratsakool"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "6b4e704aec93": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Perila",
+   "home": "Perila Talv II",
+   "id": "6b4e704aec93",
+   "league": "Takistussõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-02-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4675",
+   "venue": "Perila"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "6e0b1c0c3e61": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kose",
+   "end": "2027-04-25",
+   "home": "Kose Kevad 2027",
+   "id": "6e0b1c0c3e61",
+   "league": "Kolmevõistlus",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-04-24T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4758",
+   "venue": "Kose"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "758ccae72f84": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Perila",
+   "home": "Perila Talv",
+   "id": "758ccae72f84",
+   "league": "Takistussõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-01-23T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4674",
+   "venue": "Perila"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "82e9b3a7d1a5": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Ihaste takistussõit / Tartu linna SMV",
+   "id": "82e9b3a7d1a5",
+   "league": "Takistussõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-02-20T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4725",
+   "venue": "Ihaste Ratsakool"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "8a4ba1c58a3a": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Perila",
+   "end": "2027-05-02",
+   "home": "Perila Kevad",
+   "id": "8a4ba1c58a3a",
+   "league": "Takistussõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-04-30T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4676",
+   "venue": "Perila"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "8ca3c36f0494": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tori",
+   "home": "THK Kevadkarikas III",
+   "id": "8ca3c36f0494",
+   "league": "Takistussõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-04-24T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4697",
+   "venue": "Tori Hobusekasvandus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "8da279dbbc84": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Valgeranna",
+   "end": "2027-06-06",
+   "home": "Valgeranna II",
+   "id": "8da279dbbc84",
+   "league": "Takistussõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-06-04T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4765",
+   "venue": "Valgeranna Tall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "9d46d0b51877": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Lilli",
+   "end": "2027-03-27",
+   "home": "Toominga Talvetuur 2027 3. etapp",
+   "id": "9d46d0b51877",
+   "league": "Koolisõit, Parakoolisõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-03-26T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4652",
+   "venue": "Toominga tall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "9f7b0629c5b7": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Lilli",
+   "end": "2027-04-18",
+   "home": "Toominga Koolisõit SMV",
+   "id": "9f7b0629c5b7",
+   "league": "Koolisõit, Parakoolisõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-04-17T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4653",
+   "venue": "Toominga tall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "a222b394bab9": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kukulinna",
+   "end": "2027-04-18",
+   "home": "Kukulinna Talvekarika finaal / Seenioride, noorte, juunioride ja laste SMV",
+   "id": "a222b394bab9",
+   "league": "Takistussõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-04-17T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4739",
+   "venue": "Kukulinna tall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "ac60935f090c": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kukulinna",
+   "home": "Kukulinna talvekarika II etapp",
+   "id": "ac60935f090c",
+   "league": "Takistussõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-02-06T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4740",
+   "venue": "Kukulinna tall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "b91833374b45": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kõpu",
+   "end": "2027-05-22",
+   "home": "Maria Kevadkarikas 2027",
+   "id": "b91833374b45",
+   "league": "Kolmevõistlus",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-05-21T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4638",
+   "venue": "Maria talu"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "b97280989d8f": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Veskimetsa Talv",
+   "id": "b97280989d8f",
+   "league": "Takistussõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-01-16T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4665",
+   "venue": "Veskimetsa Ratsakool"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "ba730220b8c9": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Padise",
+   "end": "2027-06-06",
+   "home": "CEI3*/CEI2*/CEI1*/CEIYJ2*/CEIYJ1*",
+   "id": "ba730220b8c9",
+   "league": "Kestvusratsutamine",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-06-01T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4719",
+   "venue": "Padise"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "bf3c78a73ecb": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "end": "2027-06-13",
+   "home": "Ihaste kolmevõistlus/ Tartu linna MV",
+   "id": "bf3c78a73ecb",
+   "league": "Kolmevõistlus",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-06-12T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4732",
+   "venue": "Ihaste Ratsakool"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "c02b1f4bad97": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Veskimetsa Talvekarikas 2027",
+   "id": "c02b1f4bad97",
+   "league": "Takistussõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-02-20T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4666",
+   "venue": "Veskimetsa Ratsakool"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "c077fa98de5a": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Särevere",
+   "home": "Järvamaa RK Kevadkarikas",
+   "id": "c077fa98de5a",
+   "league": "Takistussõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-05-23T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4587",
+   "venue": "Särevere"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "cb8e46d45748": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Lilli",
+   "end": "2027-07-04",
+   "home": "Toominga suvi",
+   "id": "cb8e46d45748",
+   "league": "Koolisõit, Parakoolisõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-07-03T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4654",
+   "venue": "Toominga tall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "cd21c5b842dd": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tori",
+   "home": "THK Suvekarikas",
+   "id": "cd21c5b842dd",
+   "league": "Takistussõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-07-03T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4699",
+   "venue": "Tori Hobusekasvandus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "cf6ed76a2a60": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Veska koolisõit",
+   "id": "cf6ed76a2a60",
+   "league": "Koolisõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-04-10T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4692",
+   "venue": "Veskimetsa Ratsakool"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "d35fed139a0e": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kukulinna",
+   "home": "Kukulinna talvekarika III etapp",
+   "id": "d35fed139a0e",
+   "league": "Takistussõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-03-20T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4738",
+   "venue": "Kukulinna tall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "dca7e3bccb86": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kukulinna",
+   "home": "Kukulinna talvekarika I etapp",
+   "id": "dca7e3bccb86",
+   "league": "Takistussõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-01-16T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4737",
+   "venue": "Kukulinna tall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "e55f947438fb": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kukulinna",
+   "home": "Kukulinna Suvealgus",
+   "id": "e55f947438fb",
+   "league": "Takistussõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-06-05T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4742",
+   "venue": "Kukulinna tall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "eebe23a0ec5b": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tori",
+   "home": "THK Talvekarikas II",
+   "id": "eebe23a0ec5b",
+   "league": "Takistussõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-02-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4694",
+   "venue": "Tori Hobusekasvandus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "f5b13026de93": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tori",
+   "home": "THK Kevadkarikas I",
+   "id": "f5b13026de93",
+   "league": "Takistussõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-03-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4695",
+   "venue": "Tori Hobusekasvandus"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "f7bfcdac4182": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Järiste",
+   "home": "Ecu takistussõit ja Derby",
+   "id": "f7bfcdac4182",
+   "league": "Takistussõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-05-29T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4751",
+   "venue": "Ecu tallid"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "fbda53bd9e3c": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kõpu",
+   "end": "2027-05-23",
+   "home": "CHI Pärnu takistussõit 1 (CSI2 projekt)",
+   "id": "fbda53bd9e3c",
+   "league": "Takistussõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-05-20T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4716",
+   "venue": "Maria talu"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "fe0c6890b7e4": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Perila",
+   "home": "Perila Kevadine Koolisõit",
+   "id": "fe0c6890b7e4",
+   "league": "Koolisõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-05-29T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4678",
+   "venue": "Perila"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "ff5c021f50da": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kukulinna",
+   "end": "2027-05-16",
+   "home": "Kukulinna Kevad",
+   "id": "ff5c021f50da",
+   "league": "Takistussõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-05-15T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4741",
+   "venue": "Kukulinna tall"
+  },
+  "first_seen": "2026-11-23"
+ }
+}

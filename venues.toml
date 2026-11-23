@@ -1082,8 +1082,9 @@ name = "Saku Tankodroom"
 city = "Saku"
 
 [[venue]]
-name = "Tehvandi"
+name = "Tehvandi Spordikeskus"
 city = "Otepää"
+aliases = ["Tehvandi", "Tehvandi, Otepää", "Tehvandi Snowpark"]
 
 [[venue]]
 name = "Aravete"
@@ -1160,3 +1161,142 @@ city = "Saadjärve"
 [[venue]]
 name = "Rapla"
 city = "Rapla"
+
+# --- Suusatamine (suusaliit.ee; koht on kalendris kujul "keskus, küla") ---
+
+[[venue]]
+name = "Alutaguse Tervisespordikeskus"
+city = "Pannjärve"
+aliases = ["Alutaguse Tervisespordikeskus, Pannjärve", "Alutaguse"]
+
+[[venue]]
+name = "Mammaste"
+city = "Põlva"
+
+[[venue]]
+name = "Tartu Lumepark"
+city = "Tartu"
+
+[[venue]]
+name = "Nõmme Lumepark"
+city = "Tallinn"
+
+[[venue]]
+name = "Kiviõli Seikluskeskus"
+city = "Kiviõli"
+aliases = ["Kiviõli"]
+
+[[venue]]
+name = "Pariisi Puhkeküla"
+city = "Kadrina"
+aliases = ["Pariisi Puhkeküla suusarada"]
+
+[[venue]]
+name = "Haanja Puhke- ja Suusakeskus"
+city = "Haanja"
+aliases = ["Haanja"]
+
+[[venue]]
+name = "Valgehobusemäe suusa- ja puhkekeskus"
+city = "Valgehobusemäe"
+aliases = ["Valgehobusemäe"]
+
+[[venue]]
+name = "Kütioru suusakeskus"
+city = "Kütiorg"
+aliases = ["Kütioru"]
+
+[[venue]]
+name = "Andsumäe"
+city = "Võru"
+aliases = ["Andsumäe, Võru"]
+
+[[venue]]
+name = "Kõrvemaa Matka- ja Suusakeskus"
+city = "Kõrvemaa"
+
+[[venue]]
+name = "Sindi"
+city = "Sindi"
+
+[[venue]]
+name = "Tartu Maratoni rada (Otepää–Elva)"
+city = "Otepää"
+aliases = ["Otepää-Elva"]
+
+[[venue]]
+name = "Kuutsemäe puhkekeskus"
+city = "Kuutsemäe"
+aliases = ["Kuutsemäe puhkekeskus ja Tehvandi Snowpark"]
+
+[[venue]]
+name = "Holstre-Polli Tervisespordikeskus"
+city = "Holstre"
+aliases = ["Holstre-Polli"]
+
+[[venue]]
+name = "Munakas"
+city = "Otepää"
+
+# --- Ratsasport (ratsanet.ee) ---
+# Asukohta kindlalt ei leitud (jäävad tundmatute kohtade raportisse): Gramina Stud, Pallase tallid, Massu küla.
+
+[[venue]]
+name = "Tori Hobusekasvandus"
+city = "Tori"
+aliases = ["Tori HK"]
+
+[[venue]]
+name = "Perila"
+city = "Perila"
+
+[[venue]]
+name = "Kukulinna tall"
+city = "Kukulinna"
+
+[[venue]]
+name = "Toominga tall"
+city = "Lilli"
+
+[[venue]]
+name = "Veskimetsa Ratsakool"
+city = "Tallinn"
+aliases = ["Veskimetsa RK"]
+
+[[venue]]
+name = "Ihaste Ratsakool"
+city = "Tartu"
+aliases = ["Ihaste RK"]
+
+[[venue]]
+name = "Tartu Ratsakool"
+city = "Tartu"
+
+[[venue]]
+name = "Ecu tallid"
+city = "Järiste"
+
+[[venue]]
+name = "Koordi tallid"
+city = "Koordi"
+
+[[venue]]
+name = "Maria talu"
+city = "Kõpu"
+aliases = ["Maria Ratsakeskus"]
+
+[[venue]]
+name = "Valgeranna Tall"
+city = "Valgeranna"
+
+[[venue]]
+name = "Särevere"
+city = "Särevere"
+
+[[venue]]
+name = "Padise"
+city = "Padise"
+
+[[venue]]
+name = "Ruila"
+city = "Ruila"

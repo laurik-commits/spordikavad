@@ -2,7 +2,9 @@
 
 Analüüs 23.11.2026.
 
-**Tehtud 23.11.2026:** ürituse kuju (`end` = viimane päev, mitmepäevane üritus on igal oma päeval, kellaplokis „2./3. päev“) ning kaks ala: **kergejõustik** (`kergejoustik_ekjl`, ekjl.ee) ja **motosport** (`motosport_emf`, msport.ee iCal). Motospordi koht tuleb ürituse nimest (`config.toml` → `venue_hints`). Käsitsi lisatud kirjetel (`kasitsi.toml`) on samuti `end` väli ja liik „võistlus“. Järgmised kandidaadid on all. Ala valik on juba päises rippmenüü („Kõik alad ▾“), nii et alasid saab juurde panna ilma, et leht läheks segaseks.
+**Tehtud 23.11.2026:** ürituse kuju (`end` = viimane päev, mitmepäevane üritus on igal oma päeval, kellaplokis „2./3. päev“) ning kaks ala: **kergejõustik** (`kergejoustik_ekjl`, ekjl.ee) ja **motosport** (`motosport_emf`, msport.ee iCal). Motospordi koht tuleb ürituse nimest (`config.toml` → `venue_hints`). Käsitsi lisatud kirjetel (`kasitsi.toml`) on samuti `end` väli ja liik „võistlus“. Järgmised kandidaadid on all.
+
+**Tehtud 23.11.2026 (teine samm):** **suusatamine** (`suusatamine_esl`, suusaliit.ee: murdmaa- ja mäesuusatamine, kahevõistlus, hüpped, freestyle, lumelaud) ja **ratsasport** (`ratsasport_ratsanet`, ratsanet.ee). Ratsaspordis on tasemel 1 rahvusvahelised, Eesti (sise)meistrivõistlused ja takistussõit ≥ 130 cm; klubide võistlused on peidetud tasemel 3. Ala valik on juba päises rippmenüü („Kõik alad ▾“), nii et alasid saab juurde panna ilma, et leht läheks segaseks.
 
 Iga allika robots.txt on kontrollitud. Kõik allpool nimetatud lehed lubavad lugemist. Erand on sport.ee (EOK), mis keelab ClaudeBoti, nii et otsinguagent seda lehte ei kasuta.
 

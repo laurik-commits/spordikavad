@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T11:07:06+02:00",
+ "updated": "2026-11-23T15:03:32+02:00",
  "events": [
   {
    "id": "1dab57ab370a",
@@ -574,6 +574,21 @@
    "level": 1
   },
   {
+   "id": "dbe1af0d3eb3",
+   "sport": "kergejoustik",
+   "league": "Kohalikud võistlused",
+   "start": "2027-01-03T12:00:00+02:00",
+   "home": "Sprindi mitmevõistlus",
+   "away": "",
+   "venue": "Tartu Ülikooli spordihoone",
+   "city": "Tartu",
+   "url": "https://www.ekjl.ee/kalender/",
+   "source": "kergejoustik_ekjl",
+   "time_tbc": false,
+   "result": "",
+   "level": 3
+  },
+  {
    "id": "530e6786e330",
    "sport": "kergejoustik",
    "league": "Täiskasvanute võistlused",
@@ -633,6 +648,21 @@
    "time_tbc": false,
    "result": "",
    "level": 3
+  },
+  {
+   "id": "586aa153f2a6",
+   "sport": "kergejoustik",
+   "league": "Noorte võistlused",
+   "start": "2027-01-19T15:00:00+02:00",
+   "home": "Lääne-Virumaa talvised meistrivõistlused U18 ja U20 vanuseklassidele",
+   "away": "",
+   "venue": "Rakvere Spordikeskus",
+   "city": "Rakvere",
+   "url": "https://www.ekjl.ee/kalender/",
+   "source": "kergejoustik_ekjl",
+   "time_tbc": false,
+   "result": "",
+   "level": 4
   },
   {
    "id": "41b81b9a128a",
@@ -727,6 +757,36 @@
    "end": "2027-02-07"
   },
   {
+   "id": "ddeb993f9e1d",
+   "sport": "kergejoustik",
+   "league": "Noorte võistlused",
+   "start": "2027-02-09T15:00:00+02:00",
+   "home": "Lääne-Virumaa talvised meistrivõistlused U14 ja U16 vanuseklassidele",
+   "away": "",
+   "venue": "Rakvere Spordikeskus",
+   "city": "Rakvere",
+   "url": "https://www.ekjl.ee/kalender/",
+   "source": "kergejoustik_ekjl",
+   "time_tbc": false,
+   "result": "",
+   "level": 4
+  },
+  {
+   "id": "011e2f70ffba",
+   "sport": "kergejoustik",
+   "league": "Noorte võistlused",
+   "start": "2027-02-11T15:00:00+02:00",
+   "home": "Lääne-Virumaa U12 talvised meistrivõistlused",
+   "away": "",
+   "venue": "Rakvere Spordikeskus",
+   "city": "Rakvere",
+   "url": "https://www.ekjl.ee/kalender/",
+   "source": "kergejoustik_ekjl",
+   "time_tbc": false,
+   "result": "",
+   "level": 4
+  },
+  {
    "id": "b8317479c366",
    "sport": "kergejoustik",
    "league": "Noorte võistlused",
@@ -741,6 +801,21 @@
    "result": "",
    "level": 4,
    "end": "2027-02-14"
+  },
+  {
+   "id": "3e839e683199",
+   "sport": "kergejoustik",
+   "league": "Noorte võistlused",
+   "start": "2027-02-18T15:00:00+02:00",
+   "home": "Lääne-Virumaa talvised U10 meistrivõistlused",
+   "away": "",
+   "venue": "Rakvere Spordikeskus",
+   "city": "Rakvere",
+   "url": "https://www.ekjl.ee/kalender/",
+   "source": "kergejoustik_ekjl",
+   "time_tbc": false,
+   "result": "",
+   "level": 4
   },
   {
    "id": "d7ed13de517d",
@@ -774,6 +849,22 @@
    "level": 1
   },
   {
+   "id": "889de453d0d6",
+   "sport": "kergejoustik",
+   "league": "Kohalikud võistlused",
+   "start": "2027-03-01T15:30:00+02:00",
+   "home": "Lääne-Virumaa talvised mitmevõistluse meistrivõistlused",
+   "away": "",
+   "venue": "Rakvere Spordikeskus",
+   "city": "Rakvere",
+   "url": "https://www.ekjl.ee/kalender/",
+   "source": "kergejoustik_ekjl",
+   "time_tbc": false,
+   "result": "",
+   "level": 3,
+   "end": "2027-03-02"
+  },
+  {
    "id": "91a7283188fe",
    "sport": "kergejoustik",
    "league": "Noorte võistlused",
@@ -797,6 +888,21 @@
    "away": "",
    "venue": "Ahtme spordihall",
    "city": "Kohtla-Järve",
+   "url": "https://www.ekjl.ee/kalender/",
+   "source": "kergejoustik_ekjl",
+   "time_tbc": false,
+   "result": "",
+   "level": 4
+  },
+  {
+   "id": "40a7c0cd16ec",
+   "sport": "kergejoustik",
+   "league": "Noorte võistlused",
+   "start": "2027-03-03T15:00:00+02:00",
+   "home": "Lääne-Virumaa talvised U10 ja U12 mitmevõistluse võistlused",
+   "away": "",
+   "venue": "Rakvere Spordikeskus",
+   "city": "Rakvere",
    "url": "https://www.ekjl.ee/kalender/",
    "source": "kergejoustik_ekjl",
    "time_tbc": false,
@@ -847,6 +953,21 @@
    "time_tbc": true,
    "result": "",
    "level": 1
+  },
+  {
+   "id": "15b3c6743003",
+   "sport": "kergejoustik",
+   "league": "Noorte võistlused",
+   "start": "2027-03-09T15:30:00+02:00",
+   "home": "TV 10 Olümpiastarti 56. hooaja Lääne-Virumaa II etapp",
+   "away": "",
+   "venue": "Rakvere Spordikeskus",
+   "city": "Rakvere",
+   "url": "https://www.ekjl.ee/kalender/",
+   "source": "kergejoustik_ekjl",
+   "time_tbc": false,
+   "result": "",
+   "level": 4
   },
   {
    "id": "aadc0e815c2e",
@@ -917,6 +1038,21 @@
    "away": "",
    "venue": "Ahtme spordihall",
    "city": "Kohtla-Järve",
+   "url": "https://www.ekjl.ee/kalender/",
+   "source": "kergejoustik_ekjl",
+   "time_tbc": false,
+   "result": "",
+   "level": 4
+  },
+  {
+   "id": "3e37d0d5a55d",
+   "sport": "kergejoustik",
+   "league": "Noorte võistlused",
+   "start": "2027-04-06T15:30:00+03:00",
+   "home": "TV 10 Olümpiastarti 56. hooaja Lääne-Virumaa III etapp",
+   "away": "",
+   "venue": "Rakvere Spordikeskus",
+   "city": "Rakvere",
    "url": "https://www.ekjl.ee/kalender/",
    "source": "kergejoustik_ekjl",
    "time_tbc": false,
