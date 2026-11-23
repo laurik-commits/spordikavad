@@ -8,18 +8,17 @@
   var none = document.querySelector(".none");
   var notes = document.querySelectorAll(".extnote");
 
-  // linna- ja tasemevalik: jäta valik meelde; avalehel (Tallinn, kõrgliigad, täna) suuna meelde jäetud valikule
+  // linna- ja tasemevalik: jäta valik meelde; avalehel (Kogu Eesti, kõik liigad, täna) suuna meelde jäetud valikule
   var CITY = "spordikavad-linn", LEVEL = "spordikavad-tase";
   var body = document.body;
   function get(k) { try { return localStorage.getItem(k) || ""; } catch (e) { return ""; } }
   function set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
-  if (body.dataset.index && body.dataset.region === body.dataset.default && body.dataset.level === "1") {
+  if (body.dataset.index && body.dataset.region === body.dataset.default &&
+      body.dataset.level === body.dataset.defaultLevel) {
     var city = get(CITY), level = get(LEVEL);
-    var path = "";
-    if (level === "0") path += "koik/";
-    if (level === "2") path += "esiliigad/";
-    if (level === "4") path += "noored/";
-    if (level === "5") path += "koondised/";
+    var prefixes = {};
+    try { prefixes = JSON.parse(body.dataset.levels || "{}"); } catch (e) {}
+    var path = (level && level in prefixes) ? prefixes[level] : "";
     if (city && city !== body.dataset.default && document.querySelector('.city a[data-region="' + city + '"]')) {
       path += city + "/";
     }

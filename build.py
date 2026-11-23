@@ -25,7 +25,7 @@ import archive
 from scrapers import config as cfgmod
 from scrapers.geo import Geo, Region
 from scrapers.http import Fetcher
-from scrapers.model import LEVELS, SPORTS, TALLINN, Event
+from scrapers.model import DEFAULT_LEVEL, LEVELS, SPORTS, TALLINN, Event, levels_for
 from scrapers.venues import Venues
 
 ROOT = Path(__file__).resolve().parent
@@ -227,22 +227,24 @@ def dedupe(events: list[Event]) -> tuple[list[Event], int]:
 
 
 def regions_for(events: list[Event], geo: Geo) -> list[Region]:
-    """Valiku järjekord: Kogu Eesti, vaikelinn, teised linnad mängude arvu järgi, siis maakonnad.
-    Linn või maakond on valikus, kui selle kohta on hooaja andmetes vähemalt üks mäng (vaikelinn alati)."""
+    """Valiku järjekord: Kogu Eesti, Tallinn, teised linnad mängude arvu järgi, siis maakonnad.
+    Linn või maakond on valikus, kui selle kohta on hooaja andmetes vähemalt üks mäng (Tallinn alati)."""
     counts: dict[str, int] = {}
     for e in events:
         r = geo.region_of(e.city)
         if r:
             counts[r.slug] = counts.get(r.slug, 0) + 1
-    default = next(r for r in geo.city_regions.values() if r.slug == Geo.default_slug)
-    cities = sorted((r for r in geo.city_regions.values() if r.slug != default.slug and counts.get(r.slug)),
+    pinned = [r for r in geo.city_regions.values() if r.slug == "tallinn"]
+    cities = sorted((r for r in geo.city_regions.values() if r not in pinned and counts.get(r.slug)),
                     key=lambda r: (-counts[r.slug], r.name))
     counties = sorted((r for r in geo.county_regions.values() if counts.get(r.slug)), key=lambda r: r.name)
-    return [geo.all, default, *cities, *counties]
+    return [geo.all, *pinned, *cities, *counties]
 
 
 def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int:
     site_cfg = cfg.get("site", {})
+    default_level = int(site_cfg.get("default_level", DEFAULT_LEVEL))
+    levels = levels_for(default_level)
     days_ahead = int(site_cfg.get("days_ahead", 14))
     base_url = site_cfg.get("base_url", "").rstrip("/") + "/"
     days_back = int(site_cfg.get("days_back", 14))  # möödunud päevad jäävad nähtavale (mängud arhiivist)
@@ -314,7 +316,8 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
 
     now = datetime.now(TALLINN)
     common = dict(
-        sports=SPORTS, links=links, sport_notes=sport_notes, today=today, default_slug=Geo.default_slug,
+        sports=SPORTS, links=links, sport_notes=sport_notes, today=today, default_slug=Geo.default_slug, default_level=default_level,
+        level_prefixes=json.dumps({str(k): v["prefix"] for k, v in levels.items()}),
         updated=f"{now.day}.{now.month:02d} kell {now:%H:%M}", built=today.isoformat(),
         analytics_enabled=site_cfg.get("analytics_enabled", False),
         analytics_token=site_cfg.get("analytics_token", ""), base_url=base_url,
@@ -322,7 +325,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
     )
 
     urls: list[str] = []
-    for level, lv in LEVELS.items():
+    for level, lv in levels.items():
         # samad piirkonnad mõlemal tasemel, et linna/taseme vahetus ei viiks olematule lehele
         region_days = {r.slug: by_day_for(level, r) for r in regions}
         # valikute numbrid: tulevased mängud (täna + 14 päeva), möödunud päevi ei loeta
@@ -330,7 +333,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
                         "count": sum(len(v) for d, v in region_days[r.slug].items() if d >= today)} for r in regions]
         level_list = [{"level": k, "name": v["name"], "prefix": v["prefix"], "current": k == level,
                        "count": sum(1 for d in days if d >= today for e in window[d] if on_level(e, k))}
-                      for k, v in LEVELS.items() if not v.get("hidden") or k == level]
+                      for k, v in levels.items() if not v.get("hidden") or k == level]
         for r in regions:
             by_day = region_days[r.slug]
             present = {e.sport for d, lst in by_day.items() if d >= today for e in lst}
@@ -389,7 +392,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
             if e.id in seen:
                 continue
             seen.add(e.id)
-            glv = LEVELS[e.level]
+            glv = levels[e.level]
             gdir = out / "m" / e.id
             gdir.mkdir(parents=True)
             (gdir / "index.html").write_text(

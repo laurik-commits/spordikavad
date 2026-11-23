@@ -26,7 +26,7 @@
 <link rel="stylesheet" href="{{ root }}style.css">
 <script>document.documentElement.classList.add("js")</script>
 </head>
-<body data-built="{{ built }}" data-region="{{ region.slug }}" data-level="{{ level }}" data-default="{{ default_slug }}" data-root="{{ root }}"{% if is_index %} data-index="1"{% endif %}>
+<body data-built="{{ built }}" data-region="{{ region.slug }}" data-level="{{ level }}" data-default="{{ default_slug }}" data-default-level="{{ default_level }}" data-levels='{{ level_prefixes }}' data-root="{{ root }}"{% if is_index %} data-index="1"{% endif %}>
 <header class="bar">
   <div class="wrap">
     <div class="top">

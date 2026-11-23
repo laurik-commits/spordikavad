@@ -4,10 +4,15 @@ from datetime import date, datetime
 from pathlib import Path
 
 import build
+
 from scrapers import config
 from scrapers.geo import Geo
 from scrapers.model import new_event
 from scrapers.venues import Venues
+
+# Need testid kasutavad vana paigutust (juurkaustas Tallinn + kõrgliigad), et kontrollida üldist loogikat.
+# Päris seadistust (Kogu Eesti + kõik liigad juurkaustas) kontrollib ProductionLayoutTest.
+OLD_GEO = dict(config.load()["geo"], default="tallinn")
 
 
 def ev(day, hour, home, sport="jaahoki", venue="Haabersti jäähall", city="Tallinn", level=1):
@@ -19,8 +24,8 @@ def ev(day, hour, home, sport="jaahoki", venue="Haabersti jäähall", city="Tall
 class RenderTest(unittest.TestCase):
     def setUp(self):
         self.tmp = Path(tempfile.mkdtemp())
-        cfg = {"site": {"days_ahead": 3, "base_url": "https://example.org/sk/"},
-               "geo": config.load()["geo"], "source": config.load()["source"],
+        cfg = {"site": {"days_ahead": 3, "base_url": "https://example.org/sk/", "default_level": 1},
+               "geo": OLD_GEO, "source": config.load()["source"],
                "external_link": [{"sport": "korvpall", "url": "https://basket.example/",
                                   "note": "Korvpalli andmeid ei koguta.", "link_text": "Ajakava"}],
                "sport_note": [{"sport": "jaahoki", "note": "Eesti hokiliigasid pole.", "url": "https://hoki.example/"}]}
@@ -254,7 +259,9 @@ class RenderTest(unittest.TestCase):
     def test_404_redirects_old_dates_within_site(self):
         page = self.read("404.html")
         self.assertIn('href="/sk/style.css"', page)
-        self.assertIn('indexOf("/sk/")', page)
+        self.assertIn('var base = "/sk/"', page)
+        self.assertIn('base + "eesti/"', page)   # vanad Kogu Eesti / kõik liigad aadressid suunatakse ümber
+        self.assertIn('base + "koik/"', page)
         self.assertIn("noindex", page)
 
     def test_old_days_are_kept_for_two_weeks(self):
@@ -271,7 +278,7 @@ class RenderTest(unittest.TestCase):
                             home="Teine", away="Kolmas", venue="Haabersti jäähall", city="Tallinn",
                             url="https://example.org/mang2")]
         out = Path(tempfile.mkdtemp())
-        cfg = {"site": {"days_ahead": 3, "base_url": "https://example.org/sk/"}, "geo": config.load()["geo"],
+        cfg = {"site": {"days_ahead": 3, "base_url": "https://example.org/sk/", "default_level": 1}, "geo": OLD_GEO,
                "source": config.load()["source"]}
         build.render(events, cfg, date(2026, 11, 20), out)
         page = (out / "2026-11-14" / "index.html").read_text(encoding="utf-8")
@@ -308,8 +315,8 @@ class AnalyticsTest(unittest.TestCase):
 
     def render(self, **site):
         tmp = Path(tempfile.mkdtemp())
-        cfg = {"site": {"days_ahead": 2, "base_url": "https://example.org/", **site},
-               "geo": config.load()["geo"], "source": config.load()["source"]}
+        cfg = {"site": {"days_ahead": 2, "base_url": "https://example.org/", "default_level": 1, **site},
+               "geo": OLD_GEO, "source": config.load()["source"]}
         events = [ev(21, 19, "A")]
         build.render(events, cfg, date(2026, 11, 20), tmp)
         pages = ["index.html", "2026-11-21/index.html", "info/index.html", "404.html",
@@ -354,3 +361,45 @@ class GeoTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ProductionLayoutTest(unittest.TestCase):
+    """Päris seadistus: avaleht (juurkaust) = Kogu Eesti + kõik liigad; linnad ja tasemed oma kaustas."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.tmp = Path(tempfile.mkdtemp())
+        real = config.load()
+        cfg = {"site": {"days_ahead": 2, "base_url": "https://example.org/"},  # default_level puudub → 0
+               "geo": real["geo"], "source": real["source"]}
+        events = [ev(21, 18, "Tallinlased", sport="kasipall", venue="Kalevi spordihall"),
+                  ev(21, 19, "Tartlased", sport="kasipall", venue="Tartu Ülikooli spordihoone", city="Tartu"),
+                  ev(21, 20, "Esiliigalased", sport="jalgpall", venue="Wismari jalgpallistaadion", level=2)]
+        build.render(events, cfg, date(2026, 11, 20), cls.tmp)
+
+    def read(self, rel):
+        return (self.tmp / rel).read_text(encoding="utf-8")
+
+    def test_root_is_all_estonia_all_levels(self):
+        root = self.read("2026-11-21/index.html")
+        for name in ("Tallinlased", "Tartlased", "Esiliigalased"):
+            self.assertIn(name, root)
+        self.assertIn('data-region="eesti" data-level="0"', root)
+        self.assertIn("Kogu Eesti", root)
+        self.assertIn('data-index="1"', self.read("index.html"))
+
+    def test_cities_and_levels_in_own_folders(self):
+        for rel in ("tallinn/2026-11-21/index.html", "korgliigad/2026-11-21/index.html",
+                    "korgliigad/tallinn/2026-11-21/index.html", "esiliigad/tartu/2026-11-21/index.html"):
+            self.assertTrue((self.tmp / rel).exists(), rel)
+        for old in ("eesti", "koik"):
+            self.assertFalse((self.tmp / old).exists(), old)
+        self.assertNotIn("Tartlased", self.read("tallinn/2026-11-21/index.html"))
+        self.assertNotIn("Esiliigalased", self.read("korgliigad/2026-11-21/index.html"))
+
+    def test_picker_links_from_root(self):
+        root = self.read("2026-11-21/index.html")
+        self.assertIn('href="../tallinn/2026-11-21/" data-region="tallinn"', root)
+        self.assertIn('href="../korgliigad/2026-11-21/" data-level="1"', root)
+        self.assertIn('data-default-level="0"', root)
+        self.assertIn("&#34;1&#34;: &#34;korgliigad/&#34;", root)   # tasemete kaustad JS-i suunamise jaoks

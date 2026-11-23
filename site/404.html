@@ -10,8 +10,12 @@
 <script>
 // Vana kuupäevaleht (nt /tartu/2026-11-19/) → sama piirkonna tänane leht (/tartu/)
 (function () {
-  var m = location.pathname.match(/^(.*\/)\d{4}-\d{2}-\d{2}\/?(index\.html)?$/);
-  if (m && m[1].indexOf("{{ base_path }}") === 0) location.replace(m[1]);
+  var base = "{{ base_path }}", p = location.pathname;
+  // vanad aadressid (kuni 2026-11-23): Kogu Eesti oli /eesti/…, kõik liigad /koik/… → nüüd lehe juurkaustas
+  var moved = p.replace(new RegExp("^" + base + "koik/"), base).replace(new RegExp("^" + base + "eesti/"), base);
+  if (moved !== p) { location.replace(moved); return; }
+  var m = p.match(/^(.*\/)\d{4}-\d{2}-\d{2}\/?(index\.html)?$/);
+  if (m && m[1].indexOf(base) === 0) location.replace(m[1]);
   // vana jagatud mängu link (/m/<id>/, mäng on kalendrist juba väljas) → tänased mängud
   if (/\/m\/[0-9a-f]{12}\/?(index\.html)?$/.test(location.pathname)) location.replace("{{ base_path }}");
 })();

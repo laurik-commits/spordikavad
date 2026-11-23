@@ -14,22 +14,32 @@ TALLINN = ZoneInfo("Europe/Tallinn")
 #   games: "kõrgliigade mängud" (sissejuhatus, kirjeldus, "Selle päeva … →")
 #   one:   "Täna ei ole Tallinnas ühtegi kõrgliigamängu."
 #   many:  "Järgmise kahe nädala jooksul ei ole Tallinnas saalihoki kõrgliigamänge."
+DEFAULT_LEVEL = 0  # avaleht: kõik liigad (lehe juurkaust); muudetav config.toml [site] default_level
 LEVELS = {
     # 0 = kõik valikus näidatavad tasemed ühes nimekirjas (peidetud taset ei loeta)
-    0: {"name": "Kõik liigad", "prefix": "koik/", "title": "Kõik spordimängud",
+    0: {"name": "Kõik liigad", "slug": "koik", "title": "Kõik spordimängud",
         "games": "kõik mängud", "one": "mängu", "many": "mänge", "all": True},
-    1: {"name": "Kõrgliigad", "prefix": "", "title": "Spordimängud",
+    1: {"name": "Kõrgliigad", "slug": "korgliigad", "title": "Spordimängud",
         "games": "kõrgliigade mängud", "one": "kõrgliigamängu", "many": "kõrgliigamänge"},
-    2: {"name": "Esiliigad", "prefix": "esiliigad/", "title": "Esiliigade mängud",
+    2: {"name": "Esiliigad", "slug": "esiliigad", "title": "Esiliigade mängud",
         "games": "esiliigade mängud", "one": "esiliigamängu", "many": "esiliigamänge"},
-    3: {"name": "Madalamad liigad", "prefix": "madalamad/", "title": "Madalamate liigade mängud",
+    3: {"name": "Madalamad liigad", "slug": "madalamad", "title": "Madalamate liigade mängud",
         "games": "madalamate liigade mängud", "one": "madalama liiga mängu", "many": "madalamate liigade mänge",
         "hidden": True},  # ajutiselt peidus valikust; lehed ehitatakse edasi
-    4: {"name": "Noored", "prefix": "noored/", "title": "Noorte mängud",
+    4: {"name": "Noored", "slug": "noored", "title": "Noorte mängud",
         "games": "noorte mängud", "one": "noortemängu", "many": "noortemänge"},
-    5: {"name": "Koondised", "prefix": "koondised/", "title": "Koondiste mängud",
+    5: {"name": "Koondised", "slug": "koondised", "title": "Koondiste mängud",
         "games": "koondiste mängud", "one": "koondisemängu", "many": "koondisemänge"},
 }
+
+
+def levels_for(default_level: int = DEFAULT_LEVEL) -> dict[int, dict]:
+    """LEVELS koos kaustaga: vaiketase on lehe juurkaustas, teised oma kaustas (nt "esiliigad/")."""
+    return {k: dict(v, prefix="" if k == default_level else f"{v['slug']}/") for k, v in LEVELS.items()}
+
+
+for _k, _v in levels_for().items():  # tagasiühilduvus: LEVELS[k]["prefix"] vaikeseadega
+    LEVELS[_k]["prefix"] = _v["prefix"]
 
 SPORTS = {
     "jalgpall": "Jalgpall",

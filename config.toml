@@ -33,7 +33,7 @@ retries = 3
 # `in` = pealkirja vorm ("Spordimängud Tartus").
 
 [geo]
-default = "tallinn"
+default = "eesti"   # avaleht: Kogu Eesti (lehe juurkaust); linnad oma kaustas, nt /tallinn/
 foreign = ["Cēsis", "Daugavpils", "Elektrėnai", "Jelgava", "Jēkabpils", "Kaunas", "Kocēni", "Liepāja",
            "Riia", "Talsi", "Ulbroka", "Vilnius", "Ādaži", "Šiauliai",
            "Dobele", "Molėtai", "Ogre", "Pasvalys", "Ludza", "Salaspils",
