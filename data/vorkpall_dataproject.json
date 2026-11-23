@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T16:46:53+02:00",
+ "updated": "2026-11-23T20:02:43+02:00",
  "events": [
   {
    "id": "899216e6d23a",
@@ -2777,6 +2777,21 @@
    "level": 1
   },
   {
+   "id": "b6c2e828016b",
+   "sport": "vorkpall",
+   "league": "Esiliiga (naised)",
+   "start": "2026-12-13T13:00:00+02:00",
+   "home": "EstNor/Kiili",
+   "away": "Gerardo`s Toys/Neemeco",
+   "venue": "Kiili SH",
+   "city": "Kiili",
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3657&ID=106&PID=164",
+   "source": "vorkpall_dataproject",
+   "time_tbc": false,
+   "result": "",
+   "level": 2
+  },
+  {
    "id": "c200b35657e1",
    "sport": "vorkpall",
    "league": "Esiliiga (mehed)",
@@ -2820,21 +2835,6 @@
    "time_tbc": false,
    "result": "",
    "level": 1
-  },
-  {
-   "id": "6a2ee8d597da",
-   "sport": "vorkpall",
-   "league": "Esiliiga (naised)",
-   "start": "2026-12-19T13:00:00+02:00",
-   "home": "EstNor/Kiili",
-   "away": "Gerardo`s Toys/Neemeco",
-   "venue": "Kiili SH",
-   "city": "Kiili",
-   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3657&ID=106&PID=164",
-   "source": "vorkpall_dataproject",
-   "time_tbc": false,
-   "result": "",
-   "level": 2
   },
   {
    "id": "a1abe7b630d2",
@@ -2895,6 +2895,21 @@
    "time_tbc": false,
    "result": "",
    "level": 1
+  },
+  {
+   "id": "b9e018ebf479",
+   "sport": "vorkpall",
+   "league": "Esiliiga (naised)",
+   "start": "2027-01-07T18:30:00+02:00",
+   "home": "Rae Spordikool",
+   "away": "TBD Pharmatech",
+   "venue": "Tuule spordihoone",
+   "city": "Rae vald",
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3674&ID=106&PID=164",
+   "source": "vorkpall_dataproject",
+   "time_tbc": false,
+   "result": "",
+   "level": 2
   },
   {
    "id": "86b59932d861",

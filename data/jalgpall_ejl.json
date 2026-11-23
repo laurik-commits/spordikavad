@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T00:08:42+02:00",
+ "updated": "2026-11-23T20:01:50+02:00",
  "events": [
   {
    "id": "56eb5a2aafe8",
@@ -14,7 +14,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186461&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "7bac6b279eb7",
@@ -29,7 +31,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186464&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "e1db4aeda3ea",
@@ -44,7 +48,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186106&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "7b83e84200fa",
@@ -59,7 +65,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186107&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "308845345fac",
@@ -89,7 +97,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186463&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "c2207891c88d",
@@ -119,7 +129,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186108&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "a5a48dfb6572",
@@ -134,7 +146,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186462&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "84440c7f3d82",
@@ -149,7 +163,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186109&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "4f66773c493a",
@@ -164,7 +180,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186110&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "55ac6eba229b",
@@ -179,7 +197,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186465&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "e3cfe0b65630",
@@ -224,7 +244,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186466&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "5e543d7d6334",
@@ -239,7 +261,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "7-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186111&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "39b03aa8860a",
@@ -254,7 +278,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186112&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "456797497284",
@@ -269,7 +295,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186467&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "96e743c291ae",
@@ -284,7 +312,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186732&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "bbea626630c0",
@@ -299,7 +329,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-6",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186468&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "c18bb0664111",
@@ -329,7 +361,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186113&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "326a1c78b12d",
@@ -344,7 +378,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186114&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "82d149d73d97",
@@ -359,7 +395,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-3",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186115&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "30f8ea6020b4",
@@ -419,7 +457,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "5-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186469&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "04010d67e235",
@@ -434,7 +474,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186470&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "21cd37685aeb",
@@ -449,7 +491,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186475&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "265bca7d67be",
@@ -464,7 +508,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186471&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "d7ae850371b2",
@@ -479,7 +525,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186987&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "2073aa0730a6",
@@ -509,7 +557,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-3",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186118&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "63d4da35eb57",
@@ -524,7 +574,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186116&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "c9cc95ecc3bf",
@@ -539,7 +591,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186472&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "3cf31c8c99fa",
@@ -584,7 +638,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186117&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "bd0703dfdb9a",
@@ -644,7 +700,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "5-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186473&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "e0db39961096",
@@ -704,7 +762,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186119&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "44ec362cd63d",
@@ -719,7 +779,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186120&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "6f85dc493add",
@@ -779,7 +841,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "6-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186739&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "1c2dfd86adcb",
@@ -824,7 +888,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186474&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "d0b52a1b41e0",
@@ -869,7 +935,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186729&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "36698bc4bcaf",
@@ -1004,7 +1072,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186478&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "bc247229cc20",
@@ -1019,7 +1089,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186477&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "dd1b1c5ad4b1",
@@ -1049,7 +1121,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186122&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "27e9d8683377",
@@ -1064,7 +1138,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186121&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "8c1d727652d1",
@@ -1079,7 +1155,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186123&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "077de892dab9",
@@ -1094,7 +1172,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186744&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "093d255a1a1b",
@@ -1124,7 +1204,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186479&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "1ac11928f16d",
@@ -1199,7 +1281,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "6-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186480&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "20055c810060",
@@ -1304,7 +1388,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186124&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "70de9d80804d",
@@ -1349,7 +1435,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186125&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "568a883ce15f",
@@ -1379,7 +1467,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-4",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186990&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "7cec5b11a654",
@@ -1394,7 +1484,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186476&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "c96039e5ecc3",
@@ -1574,7 +1666,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186127&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "a96c3f76fde2",
@@ -1589,7 +1683,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186126&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "26783667590c",
@@ -1604,7 +1700,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186128&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "ce2781cae6a6",
@@ -1619,7 +1717,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186129&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "d9e2106dc020",
@@ -1634,7 +1734,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186130&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "5763eab7475b",
@@ -1664,7 +1766,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186481&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "d970bcf82e99",
@@ -1754,7 +1858,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "5-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186482&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "88b343ed8477",
@@ -1859,7 +1965,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186484&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "69cc24307d1f",
@@ -1889,7 +1997,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-5",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186483&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "a2e6a8f8df10",
@@ -1934,7 +2044,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186131&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "05f6969ef525",
@@ -1964,7 +2076,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "5-4",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186749&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "68f9feb1a8ec",
@@ -2084,7 +2198,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "5-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186132&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "362445bca878",
@@ -2249,7 +2365,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186485&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "f94ed28c69db",
@@ -2369,7 +2487,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-4",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186134&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "0bfb5bfd06e4",
@@ -2384,7 +2504,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186133&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "5868bc627137",
@@ -2504,7 +2626,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186135&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "6bfa50ad3086",
@@ -2669,7 +2793,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-4",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186488&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "bff5527ad7d0",
@@ -2684,7 +2810,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "5-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186486&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "dcbd03e961ac",
@@ -2834,7 +2962,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186487&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "bae2d149f178",
@@ -2999,7 +3129,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186489&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "1e125a0015ab",
@@ -3104,7 +3236,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186136&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "c64c3fd2a0d0",
@@ -3194,7 +3328,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186138&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "84abeed3fb49",
@@ -3269,7 +3405,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186753&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "a2aefaa6017d",
@@ -3299,7 +3437,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186137&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "3d6f32d63644",
@@ -3374,7 +3514,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186490&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "85b82a4d30cf",
@@ -3464,7 +3606,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186139&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "7a1273ab6dc8",
@@ -3554,7 +3698,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186140&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "380e901aec48",
@@ -3824,7 +3970,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186141&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "90ec45e5c9ac",
@@ -3869,7 +4017,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "7-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186142&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "08c0844e1d0e",
@@ -3884,7 +4034,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "6-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186144&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "17a3f19de7ea",
@@ -3899,7 +4051,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186145&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "36da2c322de5",
@@ -3914,7 +4068,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186143&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "003580987989",
@@ -3929,7 +4085,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186491&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "11085478fdfe",
@@ -3959,7 +4117,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186492&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "11dc69b960d7",
@@ -3974,7 +4134,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186493&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "28ca9830bfce",
@@ -4004,7 +4166,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186494&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "d5fb68493742",
@@ -4064,7 +4228,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186761&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "73ad8beac6f1",
@@ -4079,7 +4245,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-4",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186994&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "7fce341414a1",
@@ -4109,7 +4277,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186495&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "a7919d24af59",
@@ -4409,7 +4579,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186146&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "7793c4302f4e",
@@ -4559,7 +4731,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186147&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "adf81ecdc49c",
@@ -4874,7 +5048,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186149&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "bf1d9d964073",
@@ -4889,7 +5065,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186148&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "ce67857d1826",
@@ -5039,7 +5217,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "7-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186150&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "6cac3c94f849",
@@ -5129,7 +5309,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186500&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "ecbf1b55ff48",
@@ -5204,7 +5386,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186496&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "602aa4d8af73",
@@ -5219,7 +5403,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-4",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186498&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "88e3fb8a9972",
@@ -5234,7 +5420,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186499&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "dd56ef450b80",
@@ -5414,7 +5602,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "5-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186151&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "1a7addb887d1",
@@ -5504,7 +5694,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186501&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "be2feb93cfe1",
@@ -5519,7 +5711,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-4",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186502&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "c86b1df1f18f",
@@ -5534,7 +5728,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186504&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "92b99e678c79",
@@ -5549,7 +5745,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186996&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "df3650928767",
@@ -5579,7 +5777,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-3",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186152&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "f04bdd16431d",
@@ -5624,7 +5824,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186153&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "af9f60d55032",
@@ -5654,7 +5856,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "5-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186503&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "86204ea317a2",
@@ -5684,7 +5888,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186767&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "2d435cea8fd4",
@@ -5804,7 +6010,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-4",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186505&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "5b52cdf0b4b7",
@@ -5939,7 +6147,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186154&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "a9b0dbdb98ec",
@@ -6059,7 +6269,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-3",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186155&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "1a74ae6a3b8b",
@@ -6809,7 +7021,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186506&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "0ef25f202995",
@@ -6899,7 +7113,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186156&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "6ff89b405faa",
@@ -7034,7 +7250,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186508&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "70fdaccad626",
@@ -7079,7 +7297,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-4",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186507&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "25cb5ba0a70a",
@@ -7169,7 +7389,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186157&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "436d7042e98a",
@@ -7274,7 +7496,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186158&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "bb9cb94ae8eb",
@@ -7304,7 +7528,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186509&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "48a2d12bb88b",
@@ -7364,7 +7590,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186773&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "1a0edceae028",
@@ -7379,7 +7607,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-4",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=187001&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "8de88ba7ea73",
@@ -7649,7 +7879,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186159&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "2d928bd3a963",
@@ -7784,7 +8016,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-3",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186160&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "a60759dfc07d",
@@ -7934,7 +8168,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186510&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "14ae6d5bde13",
@@ -8069,7 +8305,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186525&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "47bdddf1f6f3",
@@ -8129,7 +8367,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186511&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "c7d1e768b827",
@@ -8279,7 +8519,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186161&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "ee506dc69e39",
@@ -8489,7 +8731,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-3",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186162&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "dd1a124a8810",
@@ -8609,7 +8853,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186165&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "00ff2451e083",
@@ -8669,7 +8915,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186514&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "5bb2a2f4ecd0",
@@ -8699,7 +8947,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=187004&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "c919f5e34384",
@@ -8714,7 +8964,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186512&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "efe4c526680e",
@@ -8729,7 +8981,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186513&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "6027693107a6",
@@ -8909,7 +9163,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-3",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186164&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "31177d95e6ec",
@@ -9029,7 +9285,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186163&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "2b26720c48cf",
@@ -9224,7 +9482,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186515&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "d2d90fe2f748",
@@ -9419,7 +9679,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186168&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "4a0a70799282",
@@ -9449,7 +9711,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186170&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "bd666ed7018b",
@@ -9479,7 +9743,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "5-2",
-   "level": 4
+   "level": 4,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=193891&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "da87dc40a385",
@@ -9494,7 +9760,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186167&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "c8b45ec68aea",
@@ -10229,7 +10497,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186517&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "576744607107",
@@ -10274,7 +10544,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186518&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "8f1c7ecde09d",
@@ -10289,7 +10561,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186516&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "dc38532a34be",
@@ -10409,7 +10683,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-6",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186169&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "13a780f8f544",
@@ -10544,7 +10820,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186520&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "dd1b8ef0c29b",
@@ -10559,7 +10837,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186786&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "2805d946273b",
@@ -10694,7 +10974,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186521&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "a40fde3637f4",
@@ -10724,7 +11006,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186788&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "304234c3fc5c",
@@ -10754,7 +11038,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186523&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "94bcf11bf820",
@@ -10784,7 +11070,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186522&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "cbc79cad0d96",
@@ -10829,7 +11117,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186524&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "aa78f36959f4",
@@ -10874,7 +11164,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-4",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186171&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "5e7baab705d9",
@@ -10889,7 +11181,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186791&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "5ffb90874a19",
@@ -11054,7 +11348,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-5",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=187006&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "66ddd7f8bf20",
@@ -11174,7 +11470,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186174&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "f727f3709bc8",
@@ -11189,7 +11487,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186172&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "5ba4760e385c",
@@ -11354,7 +11654,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186173&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "52629a05d0ef",
@@ -11759,7 +12061,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186528&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "aea24b0c8160",
@@ -11804,7 +12108,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186175&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "d99a49f3c4e5",
@@ -11939,7 +12245,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186529&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "4f4e0b38168d",
@@ -11969,7 +12277,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186530&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "62a0e176c691",
@@ -12389,7 +12699,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186793&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "1afb55253437",
@@ -13304,7 +13616,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186531&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "c9768c284fbe",
@@ -13649,7 +13963,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-3",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186176&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "38050dfc078c",
@@ -13754,7 +14070,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186180&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "90540b86a81d",
@@ -13844,7 +14162,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186178&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "e198034d2e28",
@@ -13889,7 +14209,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=187010&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "e642e0f3b31a",
@@ -13904,7 +14226,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-3",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186177&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "f8834c6b2068",
@@ -13949,7 +14273,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186533&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "2d80bcf62ccd",
@@ -13979,7 +14305,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-4",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186800&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "c4f7f5c53503",
@@ -13994,7 +14322,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186534&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "7e065ed3bd36",
@@ -14084,7 +14414,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186179&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "9465944ee0c8",
@@ -14369,7 +14701,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186535&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "224ebb35f523",
@@ -14444,7 +14778,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186532&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "daa2ce416a53",
@@ -14534,7 +14870,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186182&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "e948b3ebedf7",
@@ -14549,7 +14887,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186181&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "03c1e44bfce2",
@@ -14609,7 +14949,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186184&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "667e698f1d2a",
@@ -14624,7 +14966,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186183&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "6b3572e0cae5",
@@ -14654,7 +14998,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186185&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "acad60cacf3a",
@@ -14669,7 +15015,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186536&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "c67d514eabc0",
@@ -14699,7 +15047,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186537&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "f17924ba5ade",
@@ -14744,7 +15094,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "6-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186803&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "512f0da3d1d5",
@@ -14774,7 +15126,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186538&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "c8c9084bd9cf",
@@ -14789,7 +15143,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186539&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "d7238fa62bbf",
@@ -14849,7 +15205,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186540&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "457afffcdd6f",
@@ -15239,7 +15597,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-3",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186186&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "8c03a40e7143",
@@ -15284,7 +15644,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186187&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "791e4bbbcda0",
@@ -15359,7 +15721,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-3",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=187011&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "25bccacb9754",
@@ -15464,7 +15828,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186542&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "1c58827d574b",
@@ -15479,7 +15845,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "5-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186541&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "424200cac53f",
@@ -15599,7 +15967,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186188&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "4f81f013e65e",
@@ -15689,7 +16059,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186189&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "4a7d77257e5f",
@@ -15779,7 +16151,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "5-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186543&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "e6f7a51e76ff",
@@ -15839,7 +16213,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186545&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "8c1106a8ae2a",
@@ -15869,7 +16245,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186544&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "543f701da316",
@@ -15899,7 +16277,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186190&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "2c98b577ba7f",
@@ -15944,7 +16324,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186196&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "e10d1e2f27fc",
@@ -15989,7 +16371,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186197&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "d7de2d673855",
@@ -16004,7 +16388,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186497&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "330d4a2740de",
@@ -16034,7 +16420,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186546&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "65e48f5c41b1",
@@ -16049,7 +16437,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-3",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186191&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "23af700a0bb1",
@@ -16079,7 +16469,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-3",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186192&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "66b7c0ab43d9",
@@ -16094,7 +16486,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186547&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "285bdc0379f2",
@@ -16109,7 +16503,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186549&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "2acc8c4dfe17",
@@ -16139,7 +16535,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186812&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "0cb30120918c",
@@ -16154,7 +16552,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186194&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "8e748610a023",
@@ -16169,7 +16569,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-3",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186193&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "1e363f6cc53d",
@@ -16184,7 +16586,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186548&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "6ed578fb12a6",
@@ -16199,7 +16603,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-4",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186550&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "eae67ffa67fd",
@@ -16259,7 +16665,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186195&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "154b4eb101ef",
@@ -16274,7 +16682,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186526&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "815a4d5c28e0",
@@ -16289,7 +16699,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186198&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "0b5d7a0bfe28",
@@ -16304,7 +16716,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "5-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186200&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "5b8d006fe729",
@@ -16319,7 +16733,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186199&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "3110d6715568",
@@ -16334,7 +16750,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186551&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "53eb59f4245c",
@@ -16364,7 +16782,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186553&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "d0a9ed307b92",
@@ -16379,7 +16799,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186552&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "b050a15f92ea",
@@ -16409,7 +16831,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186820&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "fb35fe304ece",
@@ -16454,7 +16878,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186554&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "445706a48251",
@@ -16469,7 +16895,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-8",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186555&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "af3c9b03426d",
@@ -16514,7 +16942,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186556&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "d1438ef842e5",
@@ -16544,7 +16974,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186201&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "f0808603c5c7",
@@ -16619,7 +17051,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186202&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "32c4f9a7069e",
@@ -16634,7 +17068,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186560&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "5da11965c081",
@@ -16664,7 +17100,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186559&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "801b808f7821",
@@ -16679,7 +17117,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186557&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "846e9383f76f",
@@ -16694,7 +17134,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186558&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "738a36986093",
@@ -16769,7 +17211,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186204&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "23270ae92df8",
@@ -16784,7 +17228,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "5-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186205&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "dcbd2eaf1a1a",
@@ -17114,7 +17560,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-5",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186519&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "d697a6131b00",
@@ -17384,7 +17832,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=187018&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "63379a25be9a",
@@ -17429,7 +17879,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186527&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "7ae7e0ff3c1f",
@@ -17669,7 +18121,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186206&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "45dc366cfcc8",
@@ -18104,7 +18558,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=187021&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "431825e06419",
@@ -18164,7 +18620,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-4",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186561&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "589f33caa894",
@@ -18179,7 +18637,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186563&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "60aa627d9bc0",
@@ -18209,7 +18669,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186562&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "d6fdedbb9080",
@@ -18239,7 +18701,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186564&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "0e6d0cb2b250",
@@ -18404,7 +18868,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "5-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186207&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "423f6e027f61",
@@ -18464,7 +18930,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186208&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "e1a44dde8040",
@@ -18599,7 +19067,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186209&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "7b766a91e776",
@@ -18614,7 +19084,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186210&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "1756a8eb09ad",
@@ -18674,7 +19146,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186565&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "1eab197911e2",
@@ -18809,7 +19283,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=187016&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "6aa4c246808e",
@@ -19034,7 +19510,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186211&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "c46836c7ab23",
@@ -19274,7 +19752,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186567&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "38f9abc2d12b",
@@ -19319,7 +19799,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186566&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "e6b269ced82b",
@@ -19334,7 +19816,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186569&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "21841e296fa5",
@@ -19409,7 +19893,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186213&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "6f4e02c3e239",
@@ -19439,7 +19925,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186568&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "b84b8c82e8e1",
@@ -19709,7 +20197,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186833&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "6ebfb82579dd",
@@ -19934,7 +20424,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "5-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186215&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "3aeb15a5842f",
@@ -19994,7 +20486,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186570&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "b184826b9776",
@@ -20219,7 +20713,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=187026&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "e620768c746d",
@@ -20369,7 +20865,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186216&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "32da01e6381a",
@@ -20834,7 +21332,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186571&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "e1ef8dadcb3c",
@@ -20909,7 +21409,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186572&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "52c4bc602cfe",
@@ -20924,7 +21426,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186574&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "b1eddf8d4e7a",
@@ -20954,7 +21458,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "5-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186573&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "ed92e5cb35ba",
@@ -21299,7 +21805,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186217&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "f80b56467813",
@@ -21314,7 +21822,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186218&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "0755269e0487",
@@ -21374,7 +21884,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-3",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186220&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "ca1979813761",
@@ -21389,7 +21901,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186219&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "86987cf3795b",
@@ -21434,7 +21948,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186575&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "7a7a55e71acd",
@@ -21659,7 +22175,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186576&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "2cde2f3e97f4",
@@ -21674,7 +22192,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=187028&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "596354cf7f57",
@@ -21704,7 +22224,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186578&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "901fdd03dd8b",
@@ -21734,7 +22256,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186579&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "d422a0b5ef6c",
@@ -21749,7 +22273,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186577&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "ed32d17280dc",
@@ -21884,7 +22410,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186580&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "535236c97be3",
@@ -21914,7 +22442,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186221&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "a8154a6051ea",
@@ -22259,7 +22789,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186223&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "010741eab103",
@@ -22304,7 +22836,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186222&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "c64ca70a60f5",
@@ -22319,7 +22853,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=187213&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "0f396846f263",
@@ -22439,7 +22975,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186582&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "481741ed051e",
@@ -22589,7 +23127,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-4",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186581&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "fb8c0d4625a2",
@@ -22604,7 +23144,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186847&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "9c01c71c6bc0",
@@ -22709,7 +23251,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186224&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "93aacdbaa3eb",
@@ -22844,7 +23388,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186225&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "ddd0526cca0b",
@@ -22889,7 +23435,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186585&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "0f10e6d23aee",
@@ -22919,7 +23467,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186583&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "1c3a86944fdf",
@@ -22964,7 +23514,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186584&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "68b89d3c081c",
@@ -23144,7 +23696,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186166&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "02dec52765aa",
@@ -23474,7 +24028,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186588&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "1ae7de96f50c",
@@ -23489,7 +24045,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186587&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "8a11145ade7f",
@@ -23504,7 +24062,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=187032&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "cf8bc0d88186",
@@ -23519,7 +24079,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "5-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186586&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "62be44bab05e",
@@ -23594,7 +24156,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186227&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "231822b9784b",
@@ -23639,7 +24203,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186852&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "962879db5519",
@@ -23729,7 +24295,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186228&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "545218b6fee0",
@@ -23879,7 +24447,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186589&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "3b409713f143",
@@ -24104,7 +24674,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-3",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186229&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "346855d9c87e",
@@ -24224,7 +24796,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186230&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "94dc3dc25d8f",
@@ -24344,7 +24918,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186226&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "4da2a4acb164",
@@ -24524,7 +25100,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186214&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "f21e48d9c52a",
@@ -24599,7 +25177,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186591&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "5e0ec876b8e1",
@@ -24644,7 +25224,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "6-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186593&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "fbb5c544a350",
@@ -25064,7 +25646,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186232&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "4b8478d4f296",
@@ -25079,7 +25663,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186594&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "99dd5a9ee061",
@@ -25199,7 +25785,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186233&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "75612f4beb50",
@@ -25259,7 +25847,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186231&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "15a5179119a4",
@@ -25379,7 +25969,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186595&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "bb3e1026f460",
@@ -25394,7 +25986,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "6-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186861&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "d1a6e9eb211a",
@@ -25469,7 +26063,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186234&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "a4a5638d92ad",
@@ -25589,7 +26185,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186235&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "2b047c57fa2e",
@@ -25634,7 +26232,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186592&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "69c999854ef2",
@@ -25754,7 +26354,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-3",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=187037&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "c26f984d58cf",
@@ -25784,7 +26386,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186237&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "76a2d2d4e269",
@@ -25844,7 +26448,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186236&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "ca8b092f0e38",
@@ -25964,7 +26570,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186240&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "16da2aa233b3",
@@ -25979,7 +26587,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186239&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "dd0512cd0873",
@@ -25994,7 +26604,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186238&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "db84768d32b1",
@@ -26069,7 +26681,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-5",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186596&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "af5ff0f2f41f",
@@ -26084,7 +26698,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186597&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "6408ad0ab080",
@@ -26114,7 +26730,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186863&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "072b4ff62a85",
@@ -26144,7 +26762,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "5-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186599&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "de5407af7bee",
@@ -26159,7 +26779,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186600&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "0db140e87b3e",
@@ -26549,7 +27171,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-4",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=187040&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "510901ca53ab",
@@ -26594,7 +27218,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186242&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "74a4b9537b6f",
@@ -26609,7 +27235,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186241&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "7dab8a041f10",
@@ -26699,7 +27327,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-3",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186243&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "4beb971c2a77",
@@ -26924,7 +27554,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186601&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "763b794e550c",
@@ -26939,7 +27571,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-5",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186602&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "957be0b95a11",
@@ -26969,7 +27603,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186604&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "21cfedcd5275",
@@ -27074,7 +27710,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186244&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "48b25f2fd553",
@@ -27164,7 +27802,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-3",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186245&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "5eada2c3a73b",
@@ -27314,7 +27954,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186868&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "5175847917ae",
@@ -27344,7 +27986,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186605&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "868354c08226",
@@ -27464,7 +28108,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186212&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "a7e00a89f6f7",
@@ -27539,7 +28185,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "6-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186203&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "8c2020e90d66",
@@ -27554,7 +28202,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186606&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "1318c0472d32",
@@ -27584,7 +28234,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186609&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "13d095f6fc60",
@@ -27674,7 +28326,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186246&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "f35931cd196a",
@@ -27824,7 +28478,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "9-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=187042&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "143eac5a2d06",
@@ -28094,7 +28750,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186607&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "0559e967c5f8",
@@ -28169,7 +28827,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-3",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186248&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "f3c41b726eeb",
@@ -28214,7 +28874,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186873&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "9a6cdf362fb1",
@@ -28409,7 +29071,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-3",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186249&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "255af5b67010",
@@ -28514,7 +29178,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186250&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "adf9380a8f3b",
@@ -28709,7 +29375,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186247&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "16489a4f0e8b",
@@ -28739,7 +29407,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186610&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "915c7419d94a",
@@ -29189,7 +29859,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-5",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=187046&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "c8aea09700f6",
@@ -31379,7 +32051,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186615&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "6b37dada6eb1",
@@ -31439,7 +32113,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186611&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "6802b1ed1d6e",
@@ -31559,7 +32235,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186612&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "1427546df2ec",
@@ -31709,7 +32387,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186252&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "5b96ebdd6937",
@@ -31724,7 +32404,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186251&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "79ba826a7f72",
@@ -31739,7 +32421,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186613&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "91d38907eac1",
@@ -31829,7 +32513,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186253&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "6ac358764f68",
@@ -32084,7 +32770,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186254&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "4defc2c1168f",
@@ -32129,7 +32817,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186255&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "365886b37716",
@@ -32354,7 +33044,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186256&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "2738b262fe61",
@@ -32369,7 +33061,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186257&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "8b779cf1b569",
@@ -32399,7 +33093,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186259&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "09dbefc4e745",
@@ -32459,7 +33155,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186617&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "929709a55346",
@@ -32474,7 +33172,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186258&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "7022e8408697",
@@ -32489,7 +33189,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186885&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "0293b7f22c61",
@@ -32504,7 +33206,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-7",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186620&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "1c28d6eeaeaa",
@@ -32519,7 +33223,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-3",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186260&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "a41bb5e9bf9a",
@@ -32579,7 +33285,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=187050&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "15e8f5e20db4",
@@ -32654,7 +33362,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186261&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "505547c7220d",
@@ -33044,7 +33754,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186889&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "7fbbae04c506",
@@ -33059,7 +33771,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186623&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "a355a3358eff",
@@ -33074,7 +33788,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-3",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186622&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "af5c88f9970f",
@@ -33089,7 +33805,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186264&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "19a908dcf978",
@@ -33104,7 +33822,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186262&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "0118c04d57ca",
@@ -33179,7 +33899,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186265&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "e4ed4f17ac6a",
@@ -33209,7 +33931,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186263&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "516537a7527d",
@@ -33254,7 +33978,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186621&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "bd5d1dab113f",
@@ -33374,7 +34100,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186273&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "6587bbca1e94",
@@ -33419,7 +34147,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186616&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "6ad3e26c7362",
@@ -33449,7 +34179,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186266&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "4d6f2f20de23",
@@ -33464,7 +34196,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "5-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186267&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "8af75fe7fd32",
@@ -33479,7 +34213,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186626&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "dd3dd8904f66",
@@ -33689,7 +34425,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186627&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "8667b9d2a142",
@@ -33704,7 +34442,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-4",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186893&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "e64e7a8eee40",
@@ -33749,7 +34489,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186270&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "ab8c25abfbe5",
@@ -33824,7 +34566,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186268&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "0b3f695991b4",
@@ -33989,7 +34733,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=187053&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "04b419900747",
@@ -34034,7 +34780,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186269&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "77ade4d3d9d3",
@@ -34229,7 +34977,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186628&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "7ef70649661e",
@@ -34259,7 +35009,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186272&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "b81e50c2a440",
@@ -34274,7 +35026,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186271&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "8001a0ed46c4",
@@ -34304,7 +35058,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186274&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "37840385b18e",
@@ -34319,7 +35075,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186275&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "a628022c7b44",
@@ -34349,7 +35107,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186632&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "ee36fa89a347",
@@ -34364,7 +35124,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=187056&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "7b40a41ef193",
@@ -34484,7 +35246,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186278&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "a2982b0fb8a3",
@@ -34499,7 +35263,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186277&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "3c49acd20652",
@@ -34514,7 +35280,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-4",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186276&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "6b15edc00331",
@@ -34544,7 +35312,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "6-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186897&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "b1ad7fc2e67e",
@@ -34619,7 +35389,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186633&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "b8a8bb62e1d6",
@@ -34649,7 +35421,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186279&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "05a822bded62",
@@ -34694,7 +35468,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186618&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "0a787570cb50",
@@ -34784,7 +35560,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-0",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186280&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "1d8ccd7bee45",
@@ -34814,7 +35592,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186634&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "9e746120c81a",
@@ -34874,7 +35654,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186635&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "9147c8ab630a",
@@ -35084,7 +35866,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186282&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "0f4923122759",
@@ -35099,7 +35883,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186283&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "13c95cda4c66",
@@ -35114,7 +35900,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186285&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "5931698bff4e",
@@ -35129,7 +35917,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-2",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186281&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "b0d2da953338",
@@ -35159,7 +35949,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-5",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186284&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "264ea0253acb",
@@ -35339,7 +36131,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "4-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186903&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "4749745d6e49",
@@ -35369,7 +36163,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "0-2",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186638&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "5d3d6fc3557d",
@@ -35399,7 +36195,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "10-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186639&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "760827a6917f",
@@ -35429,7 +36227,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "1-0",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186640&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "e2d6b3809a8f",
@@ -35459,7 +36259,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "2-1",
-   "level": 2
+   "level": 2,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=186637&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "2063b617f917",
@@ -35519,7 +36321,9 @@
    "source": "jalgpall_ejl",
    "time_tbc": false,
    "result": "3-1",
-   "level": 1
+   "level": 1,
+   "video": "https://www.jalgpall.ee/log/link_counter.php/?id=187061&type=3",
+   "video_by": "YouTube"
   },
   {
    "id": "fedb704ac50f",

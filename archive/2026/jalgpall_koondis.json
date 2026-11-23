@@ -14,7 +14,9 @@
    "start": "2026-05-25T20:00:00+03:00",
    "time_tbc": false,
    "url": "https://jalgpall.ee/koondis/4/matchinfo/match/3947",
-   "venue": "A. Le Coq Arena"
+   "venue": "A. Le Coq Arena",
+   "video": "https://www.youtube.com/watch?v=rB8BZBVi9D4",
+   "video_by": "YouTube"
   },
   "first_seen": "2026-11-22"
  },
@@ -52,7 +54,9 @@
    "start": "2026-10-09T19:00:00+03:00",
    "time_tbc": false,
    "url": "https://jalgpall.ee/koondis/7/matchinfo/match/4051",
-   "venue": "A. Le Coq Arena"
+   "venue": "A. Le Coq Arena",
+   "video": "https://www.youtube.com/watch?v=VBBx1falzcw",
+   "video_by": "YouTube"
   },
   "first_seen": "2026-11-22"
  },
@@ -128,7 +132,9 @@
    "start": "2026-10-12T14:00:00+03:00",
    "time_tbc": false,
    "url": "https://jalgpall.ee/koondis/8/matchinfo/match/4058",
-   "venue": "Tehvandi staadion"
+   "venue": "Tehvandi staadion",
+   "video": "https://www.youtube.com/watch?v=E9DB6xKi1Bc",
+   "video_by": "YouTube"
   },
   "first_seen": "2026-11-22"
  },
@@ -166,7 +172,9 @@
    "start": "2026-10-10T14:00:00+03:00",
    "time_tbc": false,
    "url": "https://jalgpall.ee/koondis/8/matchinfo/match/4057",
-   "venue": "Tehvandi staadion"
+   "venue": "Tehvandi staadion",
+   "video": "https://www.youtube.com/watch?v=SP1uIe0XP7Y",
+   "video_by": "YouTube"
   },
   "first_seen": "2026-11-22"
  },
@@ -185,7 +193,9 @@
    "start": "2026-05-28T19:00:00+03:00",
    "time_tbc": false,
    "url": "https://jalgpall.ee/koondis/4/matchinfo/match/3949",
-   "venue": "A. Le Coq Arena"
+   "venue": "A. Le Coq Arena",
+   "video": "https://www.youtube.com/watch?v=qrAaLmxlIOc",
+   "video_by": "YouTube"
   },
   "first_seen": "2026-11-22"
  },
@@ -242,7 +252,9 @@
    "start": "2026-06-09T20:00:00+03:00",
    "time_tbc": false,
    "url": "https://jalgpall.ee/koondis/7/matchinfo/match/3901",
-   "venue": "Pärnu Rannastaadion"
+   "venue": "Pärnu Rannastaadion",
+   "video": "https://www.youtube.com/watch?v=rzz2YW9QI2Y",
+   "video_by": "YouTube"
   },
   "first_seen": "2026-11-22"
  }

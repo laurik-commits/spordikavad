@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T00:12:07+02:00",
+ "updated": "2026-11-23T20:05:19+02:00",
  "events": [
   {
    "id": "3c812e967ebc",
@@ -14,7 +14,9 @@
    "source": "jalgpall_koondis",
    "time_tbc": false,
    "result": "1-4",
-   "level": 5
+   "level": 5,
+   "video": "https://www.youtube.com/watch?v=rB8BZBVi9D4",
+   "video_by": "YouTube"
   },
   {
    "id": "e8bd903dfbef",
@@ -29,7 +31,9 @@
    "source": "jalgpall_koondis",
    "time_tbc": false,
    "result": "1-3",
-   "level": 5
+   "level": 5,
+   "video": "https://www.youtube.com/watch?v=qrAaLmxlIOc",
+   "video_by": "YouTube"
   },
   {
    "id": "f9a862a886d9",
@@ -44,7 +48,9 @@
    "source": "jalgpall_koondis",
    "time_tbc": false,
    "result": "1-1",
-   "level": 5
+   "level": 5,
+   "video": "https://www.youtube.com/watch?v=rzz2YW9QI2Y",
+   "video_by": "YouTube"
   },
   {
    "id": "f0032649819d",
@@ -134,7 +140,9 @@
    "source": "jalgpall_koondis",
    "time_tbc": false,
    "result": "2-1",
-   "level": 5
+   "level": 5,
+   "video": "https://www.youtube.com/watch?v=VBBx1falzcw",
+   "video_by": "YouTube"
   },
   {
    "id": "ddd41d991faa",
@@ -149,7 +157,9 @@
    "source": "jalgpall_koondis",
    "time_tbc": false,
    "result": "1-1",
-   "level": 5
+   "level": 5,
+   "video": "https://www.youtube.com/watch?v=SP1uIe0XP7Y",
+   "video_by": "YouTube"
   },
   {
    "id": "9b60f11c6621",
@@ -164,7 +174,9 @@
    "source": "jalgpall_koondis",
    "time_tbc": false,
    "result": "1-2",
-   "level": 5
+   "level": 5,
+   "video": "https://www.youtube.com/watch?v=E9DB6xKi1Bc",
+   "video_by": "YouTube"
   },
   {
    "id": "f7aa9da2fe48",

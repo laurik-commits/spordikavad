@@ -1971,7 +1971,8 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3657&ID=106&PID=164",
    "venue": "Kiili SH"
   },
-  "first_seen": "2026-11-22"
+  "first_seen": "2026-11-22",
+  "missing_since": "2026-11-23"
  },
  "6bb24a8cbb91": {
   "changes": [
@@ -3312,6 +3313,25 @@
    "venue": "Võru Spordikeskus"
   },
   "first_seen": "2026-11-22"
+ },
+ "b6c2e828016b": {
+  "changes": [],
+  "event": {
+   "away": "Gerardo`s Toys/Neemeco",
+   "city": "Kiili",
+   "home": "EstNor/Kiili",
+   "id": "b6c2e828016b",
+   "league": "Esiliiga (naised)",
+   "level": 2,
+   "result": "",
+   "source": "vorkpall_dataproject",
+   "sport": "vorkpall",
+   "start": "2026-12-13T13:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3657&ID=106&PID=164",
+   "venue": "Kiili SH"
+  },
+  "first_seen": "2026-11-23"
  },
  "ba71582abc94": {
   "changes": [

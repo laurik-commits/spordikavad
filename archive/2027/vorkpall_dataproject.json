@@ -94,6 +94,25 @@
   },
   "first_seen": "2026-11-22"
  },
+ "b9e018ebf479": {
+  "changes": [],
+  "event": {
+   "away": "TBD Pharmatech",
+   "city": "Rae vald",
+   "home": "Rae Spordikool",
+   "id": "b9e018ebf479",
+   "league": "Esiliiga (naised)",
+   "level": 2,
+   "result": "",
+   "source": "vorkpall_dataproject",
+   "sport": "vorkpall",
+   "start": "2027-01-07T18:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3674&ID=106&PID=164",
+   "venue": "Tuule spordihoone"
+  },
+  "first_seen": "2026-11-23"
+ },
  "e5545e8d9f47": {
   "changes": [],
   "event": {
