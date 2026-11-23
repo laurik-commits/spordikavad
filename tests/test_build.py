@@ -78,6 +78,15 @@ class RenderTest(unittest.TestCase):
         # esiliigades jäähokit pole üldse → nuppu pole
         self.assertNotIn('data-filter="jaahoki"', self.read("esiliigad/2026-11-21/index.html"))
 
+    def test_sport_picker_is_header_menu_with_counts(self):
+        html = self.read("2026-11-22/index.html")
+        header = html[html.index('<header'):html.index('</header>')]
+        self.assertIn('<details class="sport pick-menu">', header)
+        self.assertIn('<span class="cur">Kõik alad</span>', header)
+        # hall (mängudeta) ala: arvu asemel kriips
+        i = header.index('data-filter="saalihoki"')
+        self.assertIn('<span class="n">–</span>', header[i:i + 400])
+
     def test_sport_note_only_where_sport_is_listed(self):
         self.assertIn('data-note="jaahoki">Eesti hokiliigasid pole.', self.read("2026-11-22/index.html"))
         self.assertIn("Eesti hokiliigasid pole", self.read("tartu/2026-11-21/index.html"))  # hoki nupp on alati

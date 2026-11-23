@@ -53,6 +53,21 @@
         {% endfor %}
         </ul>
       </details>
+      {% if filters or links %}
+      <details class="sport pick-menu">
+        <summary><span class="cur">Kõik alad</span> <span aria-hidden="true">▾</span></summary>
+        <ul class="filters" role="group" aria-label="Ala">
+          <li class="cap">Mänge kahe nädala jooksul</li>
+          <li><button type="button" data-filter="" aria-pressed="true" data-label="Kõik alad"><span>Kõik alad</span><span class="n">{{ filters | sum(attribute='count') }}</span></button></li>
+        {% for f in filters %}
+          <li><button type="button" data-filter="{{ f.key }}" aria-pressed="false"{% if f.none %} class="nogames" data-none="1" title="{{ f.msg }}"{% endif %} data-label="{{ f.label }}"><span><i class="dot s-{{ f.key }}"></i>{{ f.label }}</span><span class="n">{{ f.count or '–' }}</span></button></li>
+        {% endfor %}
+        {% for l in links %}
+          <li><button type="button" class="ext" data-filter="{{ l.sport }}" data-ext="1" aria-pressed="false" data-label="{{ l.label }}"><span><i class="dot s-{{ l.sport }}"></i>{{ l.label }}</span><span class="n">↗</span></button></li>
+        {% endfor %}
+        </ul>
+      </details>
+      {% endif %}
     </div>
     <nav class="daynav" aria-label="Päev">
       {% if prev_day %}<a href="{{ here }}{{ prev_day.isoformat() }}/" rel="prev" aria-label="Eelmine päev">◀</a>{% else %}<span class="off" aria-hidden="true">◀</span>{% endif %}
@@ -79,13 +94,6 @@
   {% endif %}
   {% if is_index %}
   <p class="intro">{{ games | capitalize }}, mida saab kohapeal vaatama minna. <a href="{{ root }}info/">Mis siin on?</a></p>
-  {% endif %}
-  {% if filters or links %}
-  <div class="filters" role="group" aria-label="Ala">
-    <button type="button" data-filter="" aria-pressed="true">Kõik</button>
-    {% for f in filters %}<button type="button" data-filter="{{ f.key }}" aria-pressed="false"{% if f.none %} class="nogames" data-none="1" title="{{ f.msg }}"{% endif %}><i class="dot s-{{ f.key }}"></i>{{ f.label }}</button>{% endfor %}
-    {% for l in links %}<button type="button" class="ext" data-filter="{{ l.sport }}" data-ext="1" aria-pressed="false"><i class="dot s-{{ l.sport }}"></i>{{ l.label }}</button>{% endfor %}
-  </div>
   {% endif %}
   {% for l in links %}
   <p class="extnote" data-note="{{ l.sport }}">{{ l.note }} <a href="{{ l.url }}" rel="noopener">{{ l.link_text or l.label }} ↗</a></p>

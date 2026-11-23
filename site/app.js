@@ -1,4 +1,4 @@
-// Alafilter: peidab teiste alade read. Valik jäetakse meelde ka järgmistel päevadel.
+// Alavalik (päise rippmenüü): peidab teiste alade read. Valik jäetakse meelde ka järgmistel päevadel.
 // Välise lingiga ala (korvpall) nupp näitab mängude asemel selgitust ja linki.
 (function () {
   var KEY = "spordikavad-ala";
@@ -74,6 +74,16 @@
     var ext = !!(btn && btn.dataset.ext);
     var shown = 0;
     buttons.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.filter === sport)); });
+    // päise valikus näita valitud ala nime (ja värvitäppi)
+    var cur = document.querySelector(".sport summary .cur");
+    if (cur && btn) {
+      cur.textContent = btn.dataset.label;
+      if (sport) {
+        var dot = document.createElement("i");
+        dot.className = "dot s-" + sport;
+        cur.insertBefore(dot, cur.firstChild);
+      }
+    }
     // välise lingi ala (korvpall): märkus mängude asemel; tavalise ala märkus (nt hoki): märkus mängude kohal
     notes.forEach(function (n) { n.classList.toggle("show", sport !== "" && n.dataset.note === sport); });
     rows.forEach(function (r) {
@@ -105,6 +115,8 @@
   buttons.forEach(function (b) {
     b.addEventListener("click", function () {
       apply(b.dataset.filter);
+      var menu = b.closest("details");
+      if (menu) menu.removeAttribute("open");
       if (!b.dataset.ext) {
         try { localStorage.setItem(KEY, b.dataset.filter); } catch (e) {}
       }

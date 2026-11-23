@@ -47,8 +47,10 @@ a { color: var(--link); text-decoration: none; }
 
 /* päis */
 .bar { background: var(--bar); color: var(--bar-fg); padding: .6rem 0 .5rem; }
-.top { display: flex; align-items: baseline; gap: .5rem; position: relative; }
+.top { display: flex; flex-wrap: wrap; align-items: baseline; gap: .4rem .5rem; position: relative; }
 .brand { color: var(--bar-fg); font-weight: 700; font-size: 1.05rem; }
+/* kitsal ekraanil: nimi omal real, kolm valikut (koht, tase, ala) koos järgmisel */
+@media (max-width: 32rem) { .js .brand { flex-basis: 100%; } }
 
 /* linna- ja tasemevalik */
 .pick-menu summary {
@@ -58,7 +60,7 @@ a { color: var(--link); text-decoration: none; }
 .pick-menu summary::-webkit-details-marker { display: none; }
 .pick-menu[open] summary { background: rgba(255,255,255,.15); }
 .pick-menu ul {
-  position: absolute; left: 0; right: 0; top: 2rem; z-index: 10; list-style: none; margin: 0; padding: .3rem;
+  position: absolute; left: 0; right: 0; top: calc(100% + .35rem); z-index: 10; list-style: none; margin: 0; padding: .3rem;
   background: var(--row); border: 1px solid var(--line); border-radius: .6rem; box-shadow: 0 8px 24px rgba(0,0,0,.18);
   max-width: 22rem; max-height: 70vh; overflow-y: auto;
 }
@@ -107,19 +109,22 @@ a { color: var(--link); text-decoration: none; }
 .days a[aria-current] { background: var(--bar); }
 .days a[aria-current] .wd, .days a[aria-current] .dn { color: var(--bar-fg); }
 
-/* alafilter */
-.filters { display: none; gap: .35rem; flex-wrap: wrap; padding: .6rem 0; }
-.js .filters { display: flex; }
-.filters button, .filters .ext {
-  font: inherit; font-size: .85rem; padding: .3rem .7rem; border-radius: 999px;
-  border: 1px solid var(--line); background: var(--chip); color: var(--fg); cursor: pointer;
-  display: inline-flex; align-items: center; gap: .35rem;
+/* alavalik (päises, töötab ainult JS-iga: filtreerib lehe sees) */
+.sport { display: none; }
+.js .sport { display: block; }
+.filters button {
+  font: inherit; width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  padding: .45rem .6rem; border: 0; border-radius: .4rem; background: none; color: var(--fg); cursor: pointer; text-align: left;
 }
-.filters button[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.filters button > span:first-child { display: inline-flex; align-items: center; gap: .45rem; }
+.filters button:hover { background: var(--bg); }
+.filters button[aria-pressed="true"] { background: var(--bar); color: var(--bar-fg); }
+.filters button[aria-pressed="true"] .n { color: var(--bar-fg); }
 .filters .ext[aria-pressed="false"], .filters .nogames[aria-pressed="false"] { color: var(--empty); }
 .filters .nogames[aria-pressed="false"] .dot { opacity: .35; }
+.sport summary .dot { margin-right: .3rem; }
 .extnote {
-  margin: 0 0 .8rem; padding: .7rem .8rem; font-size: .88rem; color: var(--fg);
+  margin: .8rem 0; padding: .7rem .8rem; font-size: .88rem; color: var(--fg);
   background: var(--row); border: 1px solid var(--line); border-left: 4px solid var(--korvpall); border-radius: 0;
 }
 .extnote a { display: inline-block; margin-top: .3rem; font-weight: 600; }

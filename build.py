@@ -336,16 +336,20 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
                       for k, v in levels.items() if not v.get("hidden") or k == level]
         for r in regions:
             by_day = region_days[r.slug]
-            present = {e.sport for d, lst in by_day.items() if d >= today for e in lst}
+            present: dict[str, int] = {}  # ala → tulevaste mängude arv (täna + 14 päeva)
+            for d, lst in by_day.items():
+                if d >= today:
+                    for e in lst:
+                        present[e.sport] = present.get(e.sport, 0) + 1
             filters = []
             for s in sports_at[level]:
                 if s in present:
-                    filters.append({"key": s, "label": SPORTS[s], "none": False, "msg": ""})
+                    filters.append({"key": s, "label": SPORTS[s], "none": False, "msg": "", "count": present[s]})
                 else:
                     # "saalihokimänge" (kõik liigad) või "saalihoki kõrgliigamänge"
                     games = f"{SPORT_GEN[s]}mänge" if lv.get("all") else f"{SPORT_GEN[s]} {lv['many']}"
                     msg = offseason_note(s) or f"Järgmise kahe nädala jooksul ei ole {r.in_form} {games}."
-                    filters.append({"key": s, "label": SPORTS[s], "none": True, "msg": msg})
+                    filters.append({"key": s, "label": SPORTS[s], "none": True, "msg": msg, "count": 0})
             day_list = [{"date": d, "label": et_date(d), "short": SHORT_WEEKDAYS[d.weekday()],
                          "past": d < today, "count": len(by_day[d]),
                          "sports": sorted({e.sport for e in by_day[d]})} for d in days]
