@@ -91,3 +91,29 @@ venue = "Tondiraba jäähall"
 url = "https://hcvipers.ee/"
 added = 2026-11-22
 note = "HC Vipersi klubi ametlik leht (lähimad mängud, kuupäev 28.11, 16:35, Tondiraba Jäähall). Liiga ajakava ise on JS-is (hockeydata), seetõttu klubi leht."
+
+[[event]]
+sport = "jalgpall"
+league = "Naiste koondis: Balti turniir 2026 (poolfinaal)"
+level = 5
+kind = "mäng"
+start = 2026-11-28T18:30:00
+home = "Fääri saared"
+away = "Eesti"
+venue = "Paide jalgpallihall"
+url = "https://jalgpall.ee/koondis/7/uudised/sevoldajeva-teatas-koondise-koosseisu-balti-turniiri-mangudeks-n26645"
+added = 2026-11-23
+note = "Eesti Jalgpalli Liidu uudis: ajakava 28.11 18:30 Fääri saared – Eesti, Paide jalgpallihall. Automaatallikas näitab ainult 1.12 mängu."
+
+[[event]]
+sport = "jalgpall"
+league = "Naiste koondis: Balti turniir 2026 (poolfinaal)"
+level = 5
+kind = "mäng"
+start = 2026-11-28T13:00:00
+home = "Läti"
+away = "Leedu"
+venue = "Paide jalgpallihall"
+url = "https://jalgpall.ee/koondis/7/uudised/sevoldajeva-teatas-koondise-koosseisu-balti-turniiri-mangudeks-n26645"
+added = 2026-11-23
+note = "Eesti Jalgpalli Liidu uudis: 28.11 13.00 Läti – Leedu (Paide jalgpallihall; turniir peetakse Paides)."
