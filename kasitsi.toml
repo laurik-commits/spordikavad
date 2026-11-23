@@ -16,6 +16,7 @@
 #
 # Väljad:
 #   sport     jalgpall | korvpall | jaahoki | vorkpall | kasipall | saalihoki | saalijalgpall | motosport | kergejoustik
+#             | suusatamine (ka laskesuusatamine) | ratsasport
 #   league    liiga või ürituse nimi, nt "Sõprusmäng", "EEVZA U16 neidude turniir"
 #   level     1 tippvõistlused (kõrgliigad, MV), 2 esiliigad, 4 noored, 5 koondised (määrab, millises kalendris mäng on)
 #   kind      mäng | sõprusmäng | turniir | eriüritus | võistlus
@@ -118,3 +119,17 @@ venue = "Paide jalgpallihall"
 url = "https://jalgpall.ee/koondis/7/uudised/sevoldajeva-teatas-koondise-koosseisu-balti-turniiri-mangudeks-n26645"
 added = 2026-11-23
 note = "Eesti Jalgpalli Liidu uudis: 28.11 13.00 Läti – Leedu (Paide jalgpallihall; turniir peetakse Paides)."
+
+[[event]]
+sport = "suusatamine"
+league = "Laskesuusatamine"
+level = 1
+kind = "võistlus"
+start = 2027-02-09
+end = 2027-02-21
+time_tbc = true
+home = "IBU laskesuusatamise maailmameistrivõistlused"
+venue = "Tehvandi Spordikeskus"
+url = "https://www.biathlonotepaa.com/"
+added = 2026-11-23
+note = "Eesti Laskesuusatamise Föderatsiooni kalender (biathlon.ee/kalender/): 09.02.2027–21.02.2027, Otepää. Korraldaja ametlik leht."

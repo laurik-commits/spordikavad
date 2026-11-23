@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T08:16:05+02:00",
+ "updated": "2026-11-23T16:00:54+02:00",
  "events": [
   {
    "id": "3709f689ea15",
@@ -75,6 +75,22 @@
    "time_tbc": false,
    "result": "",
    "level": 1
+  },
+  {
+   "id": "eb5c9fd785ed",
+   "sport": "suusatamine",
+   "league": "Laskesuusatamine",
+   "start": "2027-02-09T12:00:00+02:00",
+   "home": "IBU laskesuusatamise maailmameistrivõistlused",
+   "away": "",
+   "venue": "Tehvandi Spordikeskus",
+   "city": "Otepää",
+   "url": "https://www.biathlonotepaa.com/",
+   "source": "kasitsi",
+   "time_tbc": true,
+   "result": "",
+   "level": 1,
+   "end": "2027-02-21"
   }
  ]
 }

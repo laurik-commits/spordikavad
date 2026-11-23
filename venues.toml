@@ -1239,7 +1239,19 @@ name = "Munakas"
 city = "Otepää"
 
 # --- Ratsasport (ratsanet.ee) ---
-# Asukohta kindlalt ei leitud (jäävad tundmatute kohtade raportisse): Gramina Stud, Pallase tallid, Massu küla.
+
+[[venue]]
+name = "Gramina Stud"
+city = "Külitse"
+
+[[venue]]
+name = "Pallase tallid"
+city = "Kadrina"
+
+[[venue]]
+name = "Massu"
+city = "Massu"
+aliases = ["Massu küla"]
 
 [[venue]]
 name = "Tori Hobusekasvandus"

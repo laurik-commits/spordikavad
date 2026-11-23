@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T15:03:40+02:00",
+ "updated": "2026-11-23T16:00:53+02:00",
  "events": [
   {
    "id": "e8c3f4dbf996",
@@ -14,7 +14,7 @@
    "source": "suusatamine_esl",
    "time_tbc": true,
    "result": "",
-   "level": 1,
+   "level": 3,
    "end": "2026-12-13"
   },
   {
@@ -30,7 +30,7 @@
    "source": "suusatamine_esl",
    "time_tbc": true,
    "result": "",
-   "level": 4
+   "level": 3
   },
   {
    "id": "2610bd9df1df",
@@ -45,7 +45,7 @@
    "source": "suusatamine_esl",
    "time_tbc": true,
    "result": "",
-   "level": 1
+   "level": 3
   },
   {
    "id": "300b8cf471b1",
@@ -60,7 +60,7 @@
    "source": "suusatamine_esl",
    "time_tbc": true,
    "result": "",
-   "level": 1,
+   "level": 3,
    "end": "2027-01-10"
   },
   {
@@ -155,7 +155,7 @@
    "source": "suusatamine_esl",
    "time_tbc": true,
    "result": "",
-   "level": 4,
+   "level": 3,
    "end": "2027-01-24"
   },
   {
@@ -171,7 +171,7 @@
    "source": "suusatamine_esl",
    "time_tbc": true,
    "result": "",
-   "level": 1
+   "level": 3
   },
   {
    "id": "a4d71bf4422f",
@@ -186,7 +186,7 @@
    "source": "suusatamine_esl",
    "time_tbc": true,
    "result": "",
-   "level": 4
+   "level": 3
   },
   {
    "id": "c69e80ddbb9a",
@@ -201,7 +201,7 @@
    "source": "suusatamine_esl",
    "time_tbc": true,
    "result": "",
-   "level": 4
+   "level": 3
   },
   {
    "id": "ff83bb3ce64b",
@@ -231,7 +231,7 @@
    "source": "suusatamine_esl",
    "time_tbc": true,
    "result": "",
-   "level": 4
+   "level": 3
   },
   {
    "id": "29a78e44bbc1",
@@ -246,7 +246,7 @@
    "source": "suusatamine_esl",
    "time_tbc": true,
    "result": "",
-   "level": 1,
+   "level": 3,
    "end": "2027-02-07"
   },
   {
@@ -262,7 +262,7 @@
    "source": "suusatamine_esl",
    "time_tbc": true,
    "result": "",
-   "level": 4
+   "level": 3
   },
   {
    "id": "3d1636981472",
@@ -277,7 +277,7 @@
    "source": "suusatamine_esl",
    "time_tbc": true,
    "result": "",
-   "level": 1
+   "level": 3
   },
   {
    "id": "3c4cb29a429c",
@@ -292,7 +292,7 @@
    "source": "suusatamine_esl",
    "time_tbc": true,
    "result": "",
-   "level": 4
+   "level": 3
   },
   {
    "id": "a72dc66c5093",
@@ -307,7 +307,7 @@
    "source": "suusatamine_esl",
    "time_tbc": true,
    "result": "",
-   "level": 4,
+   "level": 3,
    "end": "2027-02-14"
   },
   {
@@ -323,7 +323,7 @@
    "source": "suusatamine_esl",
    "time_tbc": true,
    "result": "",
-   "level": 1,
+   "level": 3,
    "end": "2027-02-14"
   },
   {
@@ -339,7 +339,7 @@
    "source": "suusatamine_esl",
    "time_tbc": true,
    "result": "",
-   "level": 1,
+   "level": 3,
    "end": "2027-02-20"
   },
   {
@@ -355,7 +355,7 @@
    "source": "suusatamine_esl",
    "time_tbc": true,
    "result": "",
-   "level": 1
+   "level": 3
   },
   {
    "id": "6ef8bd25b9d3",
@@ -386,7 +386,7 @@
    "source": "suusatamine_esl",
    "time_tbc": true,
    "result": "",
-   "level": 4,
+   "level": 3,
    "end": "2027-03-07"
   },
   {
@@ -417,7 +417,7 @@
    "source": "suusatamine_esl",
    "time_tbc": true,
    "result": "",
-   "level": 1,
+   "level": 3,
    "end": "2027-03-14"
   },
   {
@@ -448,7 +448,7 @@
    "source": "suusatamine_esl",
    "time_tbc": true,
    "result": "",
-   "level": 4
+   "level": 3
   },
   {
    "id": "262032720a97",
@@ -478,7 +478,7 @@
    "source": "suusatamine_esl",
    "time_tbc": true,
    "result": "",
-   "level": 4
+   "level": 3
   },
   {
    "id": "969d10097cd6",
@@ -493,7 +493,7 @@
    "source": "suusatamine_esl",
    "time_tbc": true,
    "result": "",
-   "level": 1,
+   "level": 3,
    "end": "2027-03-21"
   }
  ]

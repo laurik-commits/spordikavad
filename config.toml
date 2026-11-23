@@ -191,6 +191,8 @@ county = "Põlvamaa"
 "Särevere" = "Järvamaa"
 "Padise" = "Harjumaa"
 "Ruila" = "Harjumaa"
+"Külitse" = "Tartumaa"
+"Massu" = "Pärnumaa"
 
 # Maakonnad (slug ja pealkirja vorm)
 [geo.county]
@@ -519,11 +521,13 @@ check = false
 year_round = true
 seasons = [["01-01", "12-31"]]
 # suusaliit.ee/et/voistlused (robots.txt lubab, Crawl-delay 15; meil üks päring päevas). Murdmaa- ja mäesuusatamine,
-# kahevõistlus, suusahüpped, freestyle ja lumelaud. MK, MM, EMV, maratonid → 1; noortesarjad → 4.
+# kahevõistlus, suusahüpped, freestyle ja lumelaud. Ainult vaatamist väärt: MK, MM, Tartu Maraton ja showalad → 1,
+# showalade noortesari → 4, ülejäänud (murdmaa EMV, maratonid, karikad, noortesarjad) → 3 (peidetud).
 # Välismaa võistlused (riik kohas) ja laagrid jäävad välja. Uus koht: venues.toml + [geo.place].
 competitions = [
-  { league = "Murdmaasuusatamine", check = false },
-  { league = "Mäesuusatamine, kahevõistlus, hüpped, freestyle, lumelaud", check = false },
+  { league = "MK, MM, Tartu Maraton; hüpped, kahevõistlus, freestyle, lumelaud", check = false },
+  { league = "Freestyle'i ja lumelaua noortesari", level = 4, check = false },
+  { league = "Murdmaa EMV, maratonid, karikavõistlused, noortesarjad", level = 3, check = false },
 ]
 
 [[source]]

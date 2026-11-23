@@ -41,11 +41,19 @@ class SuusatamineEslTest(unittest.TestCase):
         self.assertEqual(self.find("Vello Liliumi karikavõistlus 2026").start.date(), date(2026, 12, 12))
 
     def test_levels(self):
+        # nähtav: rahvusvahelised, Tartu Maraton, showalad
         self.assertEqual(self.find("FIS Kahevõistluse MK etapp 2027 Otepääl").level, 1)
-        self.assertEqual(self.find("Eesti Meistrivõistlused murdmaasuusatamises", "Mammaste").level, 1)
-        self.assertEqual(self.find("Nõo Snacker Noorte MK - Sprint V").level, 4)
-        self.assertEqual(self.find("Noorte karikasari, Võru 2026/2027 IV etapp").level, 4)
-        self.assertEqual(self.find("29. Tallinna Suusamaraton").level, 1)
+        self.assertEqual(self.find("Põhja suusaalade juunioride ja U23 maailmameistrivõistlused",
+                                   "Tehvandi Spordikeskus").level, 1)
+        self.assertEqual(self.find("53. Tartu Maraton").level, 1)
+        self.assertEqual(self.find("FIS Estonian Open / EMV").level, 1)                       # big air
+        self.assertEqual(self.find("Noortesarja 1. etapp - Tartu raili võistlus").level, 4)   # showala noored
+        # peidetud: murdmaa EMV, teised maratonid, karikad, noortesarjad
+        self.assertEqual(self.find("Eesti Meistrivõistlused murdmaasuusatamises", "Mammaste").level, 3)
+        self.assertEqual(self.find("29. Tallinna Suusamaraton").level, 3)
+        self.assertEqual(self.find("Vello Liliumi karikavõistlus 2026").level, 3)
+        self.assertEqual(self.find("Nõo Snacker Noorte MK - Sprint V").level, 3)
+        self.assertEqual(self.find("1.etapp - Noortesari").level, 3)
 
     def test_all_venues_known(self):
         venues = Venues.load()

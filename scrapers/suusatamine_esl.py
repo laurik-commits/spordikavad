@@ -10,10 +10,11 @@ vaikimisi tänasest hooaja lõpuni:
 Aastat kuupäevas pole: aasta tuletatakse tänasest (hooaeg ületab aastavahetuse).
 
 Alad: murdmaa- ja mäesuusatamine, kahevõistlus, suusahüpped, freestyle ja lumelaud (kõik Suusaliidu all).
-Tase lehel:
-  - MK, MM, FIS ja Eesti meistrivõistlused (EMV) → 1 (ka juunioride MM Otepääl: rahvusvaheline tippvõistlus)
-  - noortesarjad (NoSu, NS) ja noorte võistlused → 4 „Noored“
-  - maratonid (Tartu, Tallinna, Haanja …) ja muud täiskasvanute võistlused (EMS) → 1
+Leht on kohapeal vaatamiseks: tavalist murdmaasõitu vaatama ei minda. Tase lehel:
+  - rahvusvahelised võistlused Eestis (MK, MM; ka juunioride MM Otepääl) ja Tartu Maraton → 1
+  - showalad (suusahüpped, kahevõistlus, freestyle, lumelaud, big air) → 1, nende noortesari → 4 „Noored“
+  - ülejäänud (murdmaa Eesti MV, teised maratonid, karikavõistlused, noortesarjad) → 3 (peidetud)
+Peidetud võistlused sobiksid tulevasse „võtan osa“ valikusse (vt docs/uued-alad.md).
 Välja jäävad laagrid ja „Muu“ (OTHER) ning välismaa võistlused: riigi nimi on kohas („Trysil, Norra“).
 """
 
@@ -37,8 +38,10 @@ _COUNTRY = re.compile(r'<option label="([^"]+)" value="\d+">')
 _WHEN = re.compile(r"(\d{1,2})\.(\d{1,2})(?:\s*-\s*(\d{1,2})\.(\d{1,2}))?")
 _TAGS = re.compile(r"<[^>]+>")
 
-TOP_CATEGORIES = {"MK", "MM", "EM", "FIS", "EMV"}
+TOP_CATEGORIES = {"MK", "MM", "EM"}
 YOUTH_CATEGORIES = {"NoSu", "NS"}
+SHOW = re.compile(r"hüpped|kahevõistlus|freestyle|lumelaud|big air", re.I)
+HIGHLIGHT = re.compile(r"tartu maraton", re.I)
 SKIP_CATEGORIES = {"OTHER"}
 SKIP = re.compile(r"laager|koolitus|seminar", re.I)
 YOUTH_WORDS = re.compile(r"noor|\bU-?\d{2}\b|laste|juunior", re.I)
@@ -48,12 +51,12 @@ def _text(fragment: str) -> str:
     return " ".join(html.unescape(_TAGS.sub(" ", fragment)).split())
 
 
-def level_of(title: str, category: str) -> int:
-    if category in TOP_CATEGORIES:
+def level_of(title: str, category: str, discipline: str = "") -> int:
+    if category in TOP_CATEGORIES or HIGHLIGHT.search(title):
         return 1
-    if category in YOUTH_CATEGORIES or YOUTH_WORDS.search(title):
-        return 4
-    return 1  # maratonid ja muud täiskasvanute võistlused
+    if SHOW.search(discipline) or SHOW.search(title):
+        return 4 if category in YOUTH_CATEGORIES or YOUTH_WORDS.search(title) else 1
+    return 3  # murdmaa EMV, maratonid, karikavõistlused, noortesarjad: osalemiseks, mitte vaatamiseks
 
 
 def _year_for(month: int, day: int, today: date) -> int:
@@ -101,7 +104,7 @@ def parse(page: str, today: date | None = None) -> list[Event]:
             end = date(y1, int(m2), int(d2))
             if end < start.date():
                 end = date(y1 + 1, int(m2), int(d2))  # üle aastavahetuse
-        level = level_of(title, category)
+        level = level_of(title, category, _text(discipline))
         events.append(new_event(
             source=NAME, sport=SPORT, league=_text(discipline) or category_name, start=start,
             home=title, away="", venue=place, city="", url=html.unescape(link.group(1)),

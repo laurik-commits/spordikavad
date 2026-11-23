@@ -57,6 +57,25 @@
   },
   "first_seen": "2026-11-23"
  },
+ "a0ec3394daaf": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Külitse",
+   "home": "Gramina Jõulud",
+   "id": "a0ec3394daaf",
+   "league": "Takistussõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2026-12-19T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4448",
+   "venue": "Gramina Stud"
+  },
+  "first_seen": "2026-11-23"
+ },
  "ae23b687e77f": {
   "changes": [],
   "event": {

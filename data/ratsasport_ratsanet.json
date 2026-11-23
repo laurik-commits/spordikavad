@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T15:03:41+02:00",
+ "updated": "2026-11-23T16:00:54+02:00",
  "events": [
   {
    "id": "27fe55727089",
@@ -77,6 +77,21 @@
    "time_tbc": true,
    "result": "",
    "level": 3
+  },
+  {
+   "id": "a0ec3394daaf",
+   "sport": "ratsasport",
+   "league": "Takistussõit",
+   "start": "2026-12-19T00:00:00+02:00",
+   "home": "Gramina Jõulud",
+   "away": "",
+   "venue": "Gramina Stud",
+   "city": "Külitse",
+   "url": "https://ratsanet.ee/events/4448",
+   "source": "ratsasport_ratsanet",
+   "time_tbc": true,
+   "result": "",
+   "level": 1
   },
   {
    "id": "b97280989d8f",
@@ -494,6 +509,22 @@
    "end": "2027-05-02"
   },
   {
+   "id": "cf2999402f55",
+   "sport": "ratsasport",
+   "league": "Takistussõit",
+   "start": "2027-05-07T00:00:00+03:00",
+   "home": "Gramina Kevad",
+   "away": "",
+   "venue": "Gramina Stud",
+   "city": "Külitse",
+   "url": "https://ratsanet.ee/events/4704",
+   "source": "ratsasport_ratsanet",
+   "time_tbc": true,
+   "result": "",
+   "level": 1,
+   "end": "2027-05-09"
+  },
+  {
    "id": "2f9330b16db3",
    "sport": "ratsasport",
    "league": "Kolmevõistlus",
@@ -508,6 +539,36 @@
    "result": "",
    "level": 3,
    "end": "2027-05-09"
+  },
+  {
+   "id": "57dab3ff10b5",
+   "sport": "ratsasport",
+   "league": "Takistussõit",
+   "start": "2027-05-08T00:00:00+03:00",
+   "home": "Massu Kevad 2027",
+   "away": "",
+   "venue": "Massu",
+   "city": "Massu",
+   "url": "https://ratsanet.ee/events/4617",
+   "source": "ratsasport_ratsanet",
+   "time_tbc": true,
+   "result": "",
+   "level": 3
+  },
+  {
+   "id": "a1a1588eb702",
+   "sport": "ratsasport",
+   "league": "Koolisõit",
+   "start": "2027-05-09T00:00:00+03:00",
+   "home": "Massu Kevad 2027",
+   "away": "",
+   "venue": "Massu",
+   "city": "Massu",
+   "url": "https://ratsanet.ee/events/4618",
+   "source": "ratsasport_ratsanet",
+   "time_tbc": true,
+   "result": "",
+   "level": 3
   },
   {
    "id": "146561ff3289",
@@ -551,6 +612,21 @@
    "venue": "Tori Hobusekasvandus",
    "city": "Tori",
    "url": "https://ratsanet.ee/events/4698",
+   "source": "ratsasport_ratsanet",
+   "time_tbc": true,
+   "result": "",
+   "level": 3
+  },
+  {
+   "id": "9faf055fcf0e",
+   "sport": "ratsasport",
+   "league": "Koolisõit, Parakoolisõit",
+   "start": "2027-05-15T00:00:00+03:00",
+   "home": "Pallase Kevad",
+   "away": "",
+   "venue": "Pallase tallid",
+   "city": "Kadrina",
+   "url": "https://ratsanet.ee/events/4687",
    "source": "ratsasport_ratsanet",
    "time_tbc": true,
    "result": "",
@@ -819,6 +895,37 @@
    "result": "",
    "level": 3,
    "end": "2027-06-13"
+  },
+  {
+   "id": "eccdf77d25a6",
+   "sport": "ratsasport",
+   "league": "Koolisõit, Parakoolisõit",
+   "start": "2027-06-13T00:00:00+03:00",
+   "home": "Pallase Suve Algus",
+   "away": "",
+   "venue": "Pallase tallid",
+   "city": "Kadrina",
+   "url": "https://ratsanet.ee/events/4688",
+   "source": "ratsasport_ratsanet",
+   "time_tbc": true,
+   "result": "",
+   "level": 3
+  },
+  {
+   "id": "889bc3d06dc0",
+   "sport": "ratsasport",
+   "league": "Takistussõit",
+   "start": "2027-06-18T00:00:00+03:00",
+   "home": "Gramina Suvi",
+   "away": "",
+   "venue": "Gramina Stud",
+   "city": "Külitse",
+   "url": "https://ratsanet.ee/events/4705",
+   "source": "ratsasport_ratsanet",
+   "time_tbc": true,
+   "result": "",
+   "level": 1,
+   "end": "2027-06-20"
   },
   {
    "id": "5be7afd6dbbd",

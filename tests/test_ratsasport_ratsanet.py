@@ -50,8 +50,8 @@ class RatsasportRatsanetTest(unittest.TestCase):
     def test_venues(self):
         venues = Venues.load()
         kept = build.only_estonia(self.events, venues, Geo(config.load()))
-        # asukoht teadmata: Gramina Stud, Pallase tallid, Massu küla; Varssav on välismaa (geo.foreign)
-        self.assertEqual(venues.unknown, {"Gramina Stud", "Pallase tallid", "Massu küla"})
+        # Varssav on välismaa (geo.foreign), kõik Eesti kohad on teada
+        self.assertEqual(venues.unknown, set())
         self.assertNotIn("Varssav", {e.venue for e in kept})
         self.assertEqual({e.city for e in kept if e.venue == "Tori Hobusekasvandus"}, {"Tori"})
 

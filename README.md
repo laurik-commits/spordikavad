@@ -92,7 +92,9 @@ Kolm sammu: adapter, konfiguratsioonirida ja test.
 
 ## Tulevikuideed
 
-- **Uued alad**: kergejõustik, motosport, suusatamine ja ratsasport on lisatud (üritused, mitte mängud). Järgmised kandidaadid (laskesuusatamine, võitlusspordid, tantsusport, iluuisutamine) koos allikatega on failis [docs/uued-alad.md](docs/uued-alad.md). Omanik otsustab, millal ja millest jätkata.
+- **Uued alad**: kergejõustik, motosport, suusatamine ja ratsasport on lisatud (üritused, mitte mängud). Laskesuusatamise suured võistlused (Otepää MM 2027) on `kasitsi.toml` failis suusatamise all. Järgmised kandidaadid (võitlusspordid, tantsusport, iluuisutamine) koos allikatega on failis [docs/uued-alad.md](docs/uued-alad.md). Omanik otsustab, millal ja millest jätkata.
+
+- **„Võtan osa“** (omaniku mõte 2026-11-23, suurarendus): päise lause esimese valiku „Ela kaasa“ kõrvale teine valik „Võtan osa“. Sinna sobivad võistlused, kuhu minnakse osalema, mitte vaatama: murdmaasuusatamise EMV ja maratonid, rahvajooksud, klubide ratsavõistlused, kohalikud kergejõustikuvõistlused. Andmed on juba olemas peidetud tasemel 3 (suusatamine, ratsasport, kergejõustik), nii et alustada saab nendest.
 
 - **Loapalved liitudele** (omaniku plaan 2026-11-20): kui leht on mõnda aega stabiilselt töötanud, kirjutab omanik ja küsib luba ajakava kasutamiseks või avalikku andmevoogu. Claude koostab siis kirjade mustandid.
   - **Eesti Korvpalliliit** (basket.ee, estlatbl.com): robots.txt keelab automaatse kogumise, seetõttu on lehel praegu ainult Bigbank/Kalevi mängud (klubi lehelt, adapter `korvpall_kalev`) ja Tartu Ülikool Maks & Moorits kodumängud (klubi lehelt, adapter `korvpall_ut`). Loa korral: liiga adapter (`scrapers/korvpall_...py`), `config.toml` rida ja test; korvpalli märkuse (`sport_note`) saab siis eemaldada. Taust: SOURCES.md → Korvpall.

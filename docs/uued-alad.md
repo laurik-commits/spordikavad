@@ -4,7 +4,7 @@ Analüüs 23.11.2026.
 
 **Tehtud 23.11.2026:** ürituse kuju (`end` = viimane päev, mitmepäevane üritus on igal oma päeval, kellaplokis „2./3. päev“) ning kaks ala: **kergejõustik** (`kergejoustik_ekjl`, ekjl.ee) ja **motosport** (`motosport_emf`, msport.ee iCal). Motospordi koht tuleb ürituse nimest (`config.toml` → `venue_hints`). Käsitsi lisatud kirjetel (`kasitsi.toml`) on samuti `end` väli ja liik „võistlus“. Järgmised kandidaadid on all.
 
-**Tehtud 23.11.2026 (teine samm):** **suusatamine** (`suusatamine_esl`, suusaliit.ee: murdmaa- ja mäesuusatamine, kahevõistlus, hüpped, freestyle, lumelaud) ja **ratsasport** (`ratsasport_ratsanet`, ratsanet.ee). Ratsaspordis on tasemel 1 rahvusvahelised, Eesti (sise)meistrivõistlused ja takistussõit ≥ 130 cm; klubide võistlused on peidetud tasemel 3. Ala valik on juba päises rippmenüü („Kõik alad ▾“), nii et alasid saab juurde panna ilma, et leht läheks segaseks.
+**Tehtud 23.11.2026 (teine samm):** **suusatamine** (`suusatamine_esl`, suusaliit.ee: murdmaa- ja mäesuusatamine, kahevõistlus, hüpped, freestyle, lumelaud) ja **ratsasport** (`ratsasport_ratsanet`, ratsanet.ee). Ratsaspordis on tasemel 1 rahvusvahelised, Eesti (sise)meistrivõistlused ja takistussõit ≥ 130 cm; klubide võistlused on peidetud tasemel 3. Suusatamises on nähtavad ainult rahvusvahelised võistlused, Tartu Maraton ja showalad (hüpped, kahevõistlus, freestyle, lumelaud). Murdmaa EMV, maratonid ja karikad on peidetud: neid vaatama ei minda, need sobiksid tulevasse „võtan osa“ valikusse (vt README). Ala valik on juba päises rippmenüü („Kõik alad ▾“), nii et alasid saab juurde panna ilma, et leht läheks segaseks.
 
 Iga allika robots.txt on kontrollitud. Kõik allpool nimetatud lehed lubavad lugemist. Erand on sport.ee (EOK), mis keelab ClaudeBoti, nii et otsinguagent seda lehte ei kasuta.
 
@@ -61,7 +61,7 @@ Hinnang: ✅ allikas on masinloetav ja korralik, 🟡 allikat saab lugeda, aga v
 
 ### 5. Talialad
 - **Suusatamine ja kahevõistlus** ✅ suusaliit.ee/et/voistlused. Tabelis on kuupäev, ala, nimi, koht ja kategooria (näiteks „12.12–13.12 · Murdmaasuusatamine · Vello Liliumi karikavõistlus · Alutaguse, Pannjärve · EMS“). Seal on ka välismaa võistlused, mis jäävad välja. robots.txt nõuab Crawl-delay 15, mis on meie kord päevas päringute juures lihtne täita.
-- **Laskesuusatamine** 🟡 biathlon.ee (robots lubab), kalender kontrollimata. Otepää MK etapp sobib `kasitsi.toml` faili.
+- **Laskesuusatamine** ✅ biathlon.ee/kalender (robots lubab). Vaatamist väärt on aastas 1–2 võistlust Eestis, need lähevad `kasitsi.toml` faili suusatamise alla (lisatud: IBU MM Otepääl 9.–21.02.2027). Ülejäänud on noortesarjad ja välismaa etapid.
 - **Tartu Maraton, Otepää MK** on suured üksikud üritused, mis sobivad `kasitsi.toml` faili.
 
 ### 6. Vesi ja ratsasport

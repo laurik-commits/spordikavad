@@ -340,11 +340,10 @@ Iga allika kohta üks mäng lehel olevatest andmetest, võrreldud allika enda m�
 ## Suusatamine: Eesti Suusaliidu kalender ✅ (lisatud 2026-11-23)
 - Allikas: https://www.suusaliit.ee/et/voistlused (robots.txt lubab, Crawl-delay 15; meil üks päring päevas). Adapter `suusatamine_esl`.
 - Serveris renderdatud tabel tänasest hooaja lõpuni: kuupäev(ad) ilma aastata (aasta tuletatakse), ala, nimi, koht ja riik, kategooria (MK, MM, FIS, EMV, EMS, MA, NoSu, NS, OTHER).
-- Tase: MK, MM, FIS, EMV, maratonid ja muud täiskasvanute võistlused → 1, noortesarjad → 4. „Muu“ (laagrid jms) ja välismaa võistlused jäävad välja. Riik võib olla kohas ka tavalise tekstina („Tromsö, Norra, Eesti“).
+- Tase (ainult vaatamist väärt): MK, MM, Tartu Maraton ja showalad (hüpped, kahevõistlus, freestyle, lumelaud) → 1, showalade noortesari → 4, ülejäänud (murdmaa EMV, maratonid, karikad, noortesarjad) → 3 (peidetud). „Muu“ (laagrid jms) ja välismaa võistlused jäävad välja. Riik võib olla kohas ka tavalise tekstina („Tromsö, Norra, Eesti“).
 
 ## Ratsasport: Eesti Ratsaspordi Liidu kalender ✅ (lisatud 2026-11-23)
 - Allikas: https://ratsanet.ee/events (robots.txt lubab /events; keelab hobuste, isikute jms lehed). Adapter `ratsasport_ratsanet`.
 - Serveris renderdatud tabel: kuupäevad, ala lühend (TS, KS, PKS, 3V, KR, RS, V), nimi, koht, riik (EST jt), tase (takistuste kõrgus või koolisõidu klass), staatus.
 - Tase: rahvusvahelised (RV, CSI/CDI/CHI/CEI), Eesti (sise)meistrivõistlused ja takistussõit ≥ 130 cm → 1; ülejäänud klubide võistlused → 3 (peidetud). Välismaa ja tühistatud jäävad välja.
-- Asukohta ei leitud (tundmatute kohtade raportis): Gramina Stud, Pallase tallid, Massu küla. Kui need selguvad, lisa `venues.toml` ja `[geo.place]` alla.
 
