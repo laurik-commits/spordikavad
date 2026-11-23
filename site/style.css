@@ -178,7 +178,11 @@ a { color: var(--link); text-decoration: none; }
 }
 .games time b { font-size: 1.3rem; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1.1; }
 .games time b.dayno { font-size: .95rem; }   /* mitmepäevane üritus: "2./3. päev" */
-.games time small { font-size: .62rem; text-transform: uppercase; letter-spacing: .03em; }
+.games time small, .game .card time small {
+  text-transform: uppercase; letter-spacing: .03em; text-align: center; line-height: 1.15;
+  max-width: 100%; padding: 0 .2rem; hyphens: manual;   /* pikk ala murdub pehme sidekriipsu kohalt */
+}
+.games time small { font-size: .62rem; }
 .info { flex: 1; min-width: 0; padding: .45rem .7rem; display: flex; flex-direction: column; justify-content: center; }
 .match { font-weight: 650; line-height: 1.25; }
 .meta { font-size: .78rem; color: var(--muted); margin-top: .1rem; }
@@ -236,7 +240,7 @@ a { color: var(--link); text-decoration: none; }
   flex: 0 0 5.4rem; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff;
 }
 .game .card time b { font-size: 1.5rem; font-weight: 700; font-variant-numeric: tabular-nums; }
-.game .card time small { font-size: .65rem; text-transform: uppercase; letter-spacing: .03em; }
+.game .card time small { font-size: .65rem; }
 .game .card .info { padding: .7rem .9rem; }
 .game h1.match { font-size: 1.2rem; margin: 0 0 .25rem; }
 .game .meta { font-size: .9rem; margin: .1rem 0; }

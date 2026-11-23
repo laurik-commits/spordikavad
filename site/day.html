@@ -124,7 +124,7 @@
         <time class="s-{{ e.sport }}" datetime="{{ e.start.isoformat() }}">
           {% set dn = e | event_day(day) %}
           <b{% if dn %} class="dayno"{% endif %}>{{ dn or ('—:—' if e.time_tbc else e.start.strftime('%H:%M')) }}</b>
-          <small>{{ sports[e.sport] }}</small>
+          <small>{{ sport_block[e.sport] }}</small>
         </time>
         <span class="info">
           <span class="match">{{ e | matchup }}{% if e.result %} <b class="score" title="Tulemus">{{ e.result | replace('-', ':') }}</b>{% endif %}</span>
