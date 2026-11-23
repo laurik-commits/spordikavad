@@ -22,6 +22,7 @@ from pathlib import Path
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 import archive
+import ulekanded
 from scrapers import config as cfgmod
 from scrapers.geo import Geo, Region
 from scrapers.http import Fetcher
@@ -242,16 +243,20 @@ def dedupe(events: list[Event]) -> tuple[list[Event], int]:
 
     Sama mäng = sama ala ja algusaeg ning kas samad võistkonnad VÕI sama saal (allikad kirjutavad
     võistkondi eri moodi, nt "KPK Mella" / "Käsipalliklubi Mella", aga ühes saalis ei saa samal ajal
-    kaht mängu olla). Alles jääb esimene (config.toml allikate järjekord)."""
-    seen: set[tuple] = set()
+    kaht mängu olla). Alles jääb esimene (config.toml allikate järjekord). Kui alles jäänul pole
+    ülekande linki, aga eemaldatul on, võetakse link eemaldatult."""
+    seen: dict[tuple, int] = {}  # võti → koht `out` loendis
     out: list[Event] = []
     for e in events:
         keys = [("teams", e.sport, e.start, _norm_team(e.home), _norm_team(e.away))]
         if e.venue:
             keys.append(("venue", e.sport, e.start, e.venue))
-        if any(k in seen for k in keys):
+        hit = next((seen[k] for k in keys if k in seen), None)
+        if hit is not None:
+            if e.video and not out[hit].video:
+                out[hit] = replace(out[hit], video=e.video, video_by=e.video_by)
             continue
-        seen.update(keys)
+        seen.update((k, len(out)) for k in keys)
         out.append(e)
     return out, len(events) - len(out)
 
@@ -271,7 +276,10 @@ def regions_for(events: list[Event], geo: Geo) -> list[Region]:
     return [geo.all, *pinned, *cities, *counties]
 
 
-def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int:
+def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
+           watch: dict[tuple[str, str], list[dict]] | None = None) -> int:
+    """watch: (ala, liiga) → ülekandjad (ulekanded.league_channels); mängu lehel „Selle liiga mänge on näidanud“."""
+    watch = watch or {}
     site_cfg = cfg.get("site", {})
     default_level = int(site_cfg.get("default_level", DEFAULT_LEVEL))
     levels = levels_for(default_level)
@@ -328,6 +336,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
     env.filters["when_where"] = when_where
     env.filters["event_day"] = event_day
     env.filters["date_span"] = date_span
+    env.filters["watch"] = lambda e: watch.get((e.sport, e.league), [])
     tpl = env.get_template("day.html")
 
     if out.exists():
@@ -466,7 +475,8 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
     info_dir.mkdir()
     (info_dir / "index.html").write_text(
         env.get_template("info.html").render(common, root="../", canonical=f"{base_url}info/",
-                                             coverage=coverage(cfg), show_minor=not LEVELS[3].get("hidden")),
+                                             coverage=coverage(cfg), show_minor=not LEVELS[3].get("hidden"),
+                                             watch_rows=ulekanded.rows(watch)),
         encoding="utf-8")
     urls.append(f"{base_url}info/")
 
@@ -566,7 +576,14 @@ def main(argv: list[str] | None = None) -> int:
     events, dupes = dedupe(events)
     if dupes:
         log.info("Eemaldasin %d topelt mängu (sama mäng mitmest allikast)", dupes)
-    pages = render(events, cfg, today)
+    watch: dict = {}
+    try:
+        # kes mida näitab: käsitsi teadaolev (ulekanded.toml) + mängudest õpitu (arhiiv + praegused andmed)
+        watch = ulekanded.league_channels(ulekanded.load(),
+                                          archive.past_events(today, ulekanded.LEARN_DAYS) + events)
+    except Exception:  # noqa: BLE001 - ülekannete info viga ei tohi lehe ehitust takistada
+        log.exception("ülekannete info koostamine ebaõnnestus")
+    pages = render(events, cfg, today, watch=watch)
     REPORT.write_text(json.dumps({"date": today.isoformat(), "sources": report,
                                   "unknown_venues": sorted(venues.unknown)}, ensure_ascii=False, indent=1),
                       encoding="utf-8")

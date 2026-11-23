@@ -100,10 +100,11 @@ Kolm sammu: adapter, konfiguratsioonirida ja test.
   - **Eesti Korvpalliliit** (basket.ee, estlatbl.com): robots.txt keelab automaatse kogumise, seetõttu on lehel praegu ainult Bigbank/Kalevi mängud (klubi lehelt, adapter `korvpall_kalev`) ja Tartu Ülikool Maks & Moorits kodumängud (klubi lehelt, adapter `korvpall_ut`). Loa korral: liiga adapter (`scrapers/korvpall_...py`), `config.toml` rida ja test; korvpalli märkuse (`sport_note`) saab siis eemaldada. Taust: SOURCES.md → Korvpall.
   - **Eesti Jäähokiliit** (Unibet Hokiliiga, naiste hokiliiga): ajakava on ehs.eestihoki.ee lehel, aga brauser laadib selle hockeydata.net kommertsteenusest liidu API-võtmega. Praegu on lehel HC Vipersi kodumängud ja HC Everesti mängud (klubide lehtedelt, adapterid `jaahoki_vipers` ja `jaahoki_everest`). Küsida luba (või avalikku voogu / iCal-i), et tohiks seda kasutada. Loa korral: adapter (`scrapers/jaahoki_ehl.py`), `config.toml` rida ja test; `sport_note` jäähoki märkuse saab siis eemaldada. Taust: SOURCES.md → Täiendavate võistluste ülevaade.
 
-- **Piletid ja ülekanded** (omanikuga kokku lepitud 2026-11-20, teha pärast MVP-d):
-  - Püsiinfo seadistusfailis: klubi → piletimüüja link, liiga → ülekandekanal. Mängu real „Piletid ↗“ ja „📺 kanal“. Üle vaadata kord hooajas.
-  - Kui allika mängulehel on piletilink või ülekande info juba olemas, võtta see kaasa.
-  - Mängupõhist kogumist piletimüüjatelt ega telekanalitelt ei tee (hooldus, tingimused).
+- **Ülekanded** (2026-11-23 omaniku soovil, kolmes osas; taust SOURCES.md → Ülekanded):
+  1. ✅ Järelvaatamise lingid allikatest (kasipall.ee, jalgpall.ee) ja liiga kaupa „Selle liiga mänge on näidanud“ (`ulekanded.toml` + mängudest õpitu).
+  2. Delfi TV ülekannete kava: tulevastele mängudele „Otse: Delfi TV“.
+  3. ERR ja Postimees mängupäeva uudistest; otsinguagent kontrollib teadaolevaid kanaleid ja lisab uusi.
+- **Piletid** (omanikuga kokku lepitud 2026-11-20): püsiinfo seadistusfailis (klubi → piletimüüja link), mängu real „Piletid ↗“. Kui allika mängulehel on piletilink juba olemas, võtta see kaasa. Mängupõhist kogumist piletimüüjatelt ei tee (hooldus, tingimused).
 - Päevade ribale kuu nimi, kui riba ulatub üle kuu vahetuse.
 - **Jalgpalli karikad** (omanikuga kokku lepitud „millalgi tulevikus“): Tipneri karikas, naiste karikas, superkarikas. Vaja on iCal-lugejat (vt SOURCES.md „Täiendavate võistluste ülevaade“).
 - Eesti jäähoki liigad (Narva PSK, Tartu Välk 494, Viru Sputnik, naiste liiga teised mängud): vaata uuesti, kas ehis.eestihoki.ee-l on 2026/27 hooaeg. Viru Sputniku ja Välk 494 lehed on JavaScriptis. Narva PSK kodumängud on kuu kaupa PDF-is, neid lisab otsingu agent käsitsi.

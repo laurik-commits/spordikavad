@@ -1,0 +1,52 @@
+# Ülekanded: kes mänge näitab (vt ulekanded.py ja SOURCES.md → Ülekanded).
+#
+# [[kanal]]: ülekandja nimi ja leht, kuhu mängu lehe „Selle liiga mänge on näidanud“ link viib.
+#   Nimi peab olema täpselt sama, mis adapteris (`video_by`), nt "YouTube", "Postimees", "Delfi TV".
+#   Ilma url-ita kanal on lehel nimena, lingita (nt YouTube: igal liigal oma kanal).
+# [[liiga]]: KÄSITSI teadaolev info liiga kaupa. Siia ainult kontrollitud fakt (kava, uudis, liidu teade).
+#   Süsteem õpib ise juurde: iga mäng, millel on ülekande link, lisab selle kanali oma liigale.
+#   liigad = täpsed liiganimed (nagu config.toml-is), liiga_algus = nimi algab nii (koondiste turniirid).
+# Ainult ametlikud ülekanded (liit, klubi, meediamaja). Piraatülekandeid ega sotsiaalmeediat ei lisa.
+
+[[kanal]]
+nimi = "Delfi TV"
+url = "https://tv.delfi.ee/leht/ulekanded-kava"
+
+[[kanal]]
+nimi = "ERR"
+url = "https://jupiter.err.ee/"
+
+[[kanal]]
+nimi = "Postimees"
+url = "https://tv.postimees.ee/"
+
+[[kanal]]
+nimi = "YouTube"
+
+# Delfi TV ülekannete kava (tv.delfi.ee/leht/ulekanded-kava), kontrollitud 2026-11-23
+[[liiga]]
+sport = "vorkpall"
+liigad = ["Balti liiga (mehed)", "Balti liiga (naised)"]
+kanalid = ["Delfi TV"]
+
+[[liiga]]
+sport = "korvpall"
+liigad = ["Eesti-Läti Korvpalliliiga"]
+kanalid = ["Delfi TV"]
+
+# ERR: Premium liiga voorudest üks mäng (ETV/ETV2, sport.err.ee „TÄNA OTSE“), meeste koondise mängud ETV/ETV2-s
+[[liiga]]
+sport = "jalgpall"
+liigad = ["Premium liiga"]
+kanalid = ["ERR"]
+
+[[liiga]]
+sport = "jalgpall"
+liiga_algus = "Meeste koondis"
+kanalid = ["ERR"]
+
+# Postimees: käsipalli meistriliiga mängud (kasipall.ee „Postimees – järelvaatamine“)
+[[liiga]]
+sport = "kasipall"
+liigad = ["Meistriliiga (mehed)"]
+kanalid = ["Postimees"]

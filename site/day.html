@@ -131,6 +131,7 @@
         </span>
         {% if past %}<span class="go">{{ 'Statistika' if e.result else 'Tulemus' }} ↗</span>{% else %}<span class="go" aria-hidden="true">↗</span>{% endif %}
       </a>
+      {% if e.video %}{% set wlabel = ('Vaata järele: ' if past else 'Otse: ') ~ e.video_by %}<a class="watch" href="{{ e.video }}" rel="noopener" title="{{ wlabel }}" aria-label="{{ wlabel }}, {{ e | matchup }}"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 9.2v5.6l4.8-2.8z" fill="currentColor"/></svg></a>{% endif %}
       <button type="button" class="share" data-url="{{ base_url }}m/{{ e.id }}/" data-title="{{ e | matchup }}" data-text="{{ e | share_text }}" aria-label="Jaga: {{ e | matchup }}" title="Jaga"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg></button>
     </li>
   {% endfor %}
