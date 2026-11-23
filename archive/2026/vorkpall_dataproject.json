@@ -3283,6 +3283,12 @@
     "from": "0-1",
     "on": "2026-11-23",
     "to": "0-2"
+   },
+   {
+    "field": "result",
+    "from": "0-2",
+    "on": "2026-11-23",
+    "to": "0-3"
    }
   ],
   "event": {
@@ -3292,7 +3298,7 @@
    "id": "b60d26619a36",
    "league": "Esiliiga (naised)",
    "level": 2,
-   "result": "0-2",
+   "result": "0-3",
    "source": "vorkpall_dataproject",
    "sport": "vorkpall",
    "start": "2026-11-14T12:00:00+02:00",
