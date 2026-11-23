@@ -233,6 +233,21 @@ a { color: var(--link); text-decoration: none; }
 .filters .ext[aria-pressed="false"], .filters .nogames[aria-pressed="false"] { color: var(--empty); }
 .filters .nogames[aria-pressed="false"] .dot { opacity: .35; }
 .sport summary .dot { margin-right: .3rem; }
+/* alade rühmad: rühma nimi valib kõik selle alad, nool avab üksikud alad */
+.filters .grp { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin: .2rem 0; padding: .2rem 0; }
+.filters .grp + .grp { border-top: 0; margin-top: 0; }
+.filters .grow { display: flex; align-items: center; gap: .2rem; }
+.filters .grow > button:first-child { flex: 1; font-weight: 650; }
+.filters .gname { display: inline-flex; align-items: center; gap: .45rem; }
+.gdots { display: inline-flex; gap: 2px; }
+.gdots i { width: .45rem; height: .45rem; border-radius: 50%; }
+.say summary .gdots { margin-right: .35rem; vertical-align: .1em; }
+.filters button.gtog { flex: 0 0 2.4rem; width: 2.4rem; justify-content: center; color: var(--muted); padding: .45rem 0; }
+.filters .gtog span { display: inline-block; transition: transform .15s; }
+.filters .gtog[aria-expanded="true"] span { transform: rotate(180deg); }
+.filters .gsub { padding-left: .9rem; }
+.filters .gsub[hidden] { display: none; }
+.filters .gsub button { font-size: .95rem; }
 .extnote {
   margin: .8rem 0; padding: .7rem .8rem; font-size: .88rem; color: var(--fg);
   background: var(--row); border: 1px solid var(--line); border-left: 4px solid var(--korvpall); border-radius: 0;
