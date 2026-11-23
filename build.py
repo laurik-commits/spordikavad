@@ -578,9 +578,22 @@ def main(argv: list[str] | None = None) -> int:
         log.info("Eemaldasin %d topelt mängu (sama mäng mitmest allikast)", dupes)
     watch: dict = {}
     try:
+        ul_cfg = ulekanded.load()
+        links = ulekanded.load_links()
+        if fetcher is not None:
+            # ülekandjate kavad (Delfi TV …) → mängude otseülekande lingid (data/ulekanded.json)
+            streams, kava_report = ulekanded.fetch_streams(ul_cfg, fetcher)
+            new = ulekanded.match(events, streams)
+            refreshed = {r["channel"] for r in kava_report if r["status"] == "ok"}
+            links = ulekanded.update_links(links, new, today, refreshed)
+            ulekanded.save_links(links)
+            for r in kava_report:
+                r["saved"] = sum(1 for v in new.values() if v["video_by"] == r["channel"])
+            report.extend(kava_report)
+        events = ulekanded.apply(events, links)
         # kes mida näitab: käsitsi teadaolev (ulekanded.toml) + mängudest õpitu (arhiiv + praegused andmed)
-        watch = ulekanded.league_channels(ulekanded.load(),
-                                          archive.past_events(today, ulekanded.LEARN_DAYS) + events)
+        watch = ulekanded.league_channels(
+            ul_cfg, ulekanded.apply(archive.past_events(today, ulekanded.LEARN_DAYS), links) + events)
     except Exception:  # noqa: BLE001 - ülekannete info viga ei tohi lehe ehitust takistada
         log.exception("ülekannete info koostamine ebaõnnestus")
     pages = render(events, cfg, today, watch=watch)
