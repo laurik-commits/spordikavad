@@ -18,6 +18,7 @@ kava = "delfi"
 [[kanal]]
 nimi = "ERR"
 url = "https://jupiter.err.ee/"
+kava = "err"
 
 [[kanal]]
 nimi = "Postimees"

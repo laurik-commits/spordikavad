@@ -636,6 +636,18 @@ kasutus = "adapter:kava_delfi"
 kontrollitud = 2026-11-23
 markus = "Ülekannete kava (JSON, portal-feeds.api.delfi.ee). Ei ole mängude allikas: read seotakse olemasolevate mängudega, mängu juurde tuleb „Otse: Delfi TV“ (ulekanded.py). Praegu võrkpall ja korvpall."
 
+[[allikas]]
+nimi = "ERR telekava (ETV, ETV2)"
+liik = "uudised"
+url = "https://www.err.ee/kava"
+alad = ["kõik"]
+piirkond = "Eesti"
+kuju = "api"
+robots = "lubatud"
+kasutus = "adapter:kava_err"
+kontrollitud = 2026-11-23
+markus = "Telekava JSON (www.err.ee/api/tvSchedule/getTimelineSchedule). Ei ole mängude allikas: spordiülekanded seotakse olemasolevate mängude ja üritustega, mängu juurde tuleb „Otse: ERR“ (ulekanded.py)."
+
 # --- Ürituste alad: võitlusspordid ja autosport (ainult vaatamist väärt: MV, rahvusvahelised, galad) ---
 
 [[allikas]]

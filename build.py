@@ -131,10 +131,13 @@ def only_estonia(events: list[Event], venues: Venues, geo: Geo, today: date | No
 
 
 def collect(cfg: dict, venues: Venues, fetcher: Fetcher | None, today: date,
-            geo: Geo | None = None, archive_root: Path | None = None) -> tuple[list[Event], list[dict]]:
+            geo: Geo | None = None, archive_root: Path | None = None,
+            videos: dict[str, dict] | None = None) -> tuple[list[Event], list[dict]]:
     """Tagastab kõik Eesti mängud ja aruande iga allika kohta.
 
     Ühe allika viga ei peata ehitust: siis kasutatakse selle allika viimaseid salvestatud andmeid.
+    `videos`: siia kogutakse ülekande lingid mängudelt, mis andmetesse ei jäänud (nt kasipall.ee peetud
+    mängul pole saali, mäng tuleb lehele arhiivist) → data/ulekanded.json, vt ulekanded.apply.
     """
     geo = geo or Geo(cfg)
     all_events: list[Event] = []
@@ -172,6 +175,10 @@ def collect(cfg: dict, venues: Venues, fetcher: Fetcher | None, today: date,
                             entry["error"] = (f"Hooaja sees {UPCOMING_DAYS} päeva jooksul 0 mängu: "
                                               + ", ".join(missing) + ". Kas liiga ID on muutunud?")
                         events = only_estonia(fetched, venues, geo, today, entry)
+                        if videos is not None:
+                            kept = {e.id for e in events}
+                            videos.update({e.id: ulekanded.link_of(e) for e in fetched
+                                           if e.video and e.id not in kept})
                         save(name, events)
                         try:
                             archive.update(name, events, today, complete=entry["status"] == "ok",
@@ -565,7 +572,8 @@ def main(argv: list[str] | None = None) -> int:
         cfgmod.user_agent(cfg), delay=http.get("delay", 3.0), host_delays=http.get("host_delays", {}),
         timeout=http.get("timeout", 20.0), retries=http.get("retries", 3))
 
-    events, report = collect(cfg, venues, fetcher, today)
+    videos: dict[str, dict] = {}
+    events, report = collect(cfg, venues, fetcher, today, videos=videos)
     try:
         # möödunud päevad (nt allikad, mis näitavad ainult tulevasi mänge): arhiivist; praegused andmed on eespool
         have = {e.id for e in events}
@@ -585,7 +593,7 @@ def main(argv: list[str] | None = None) -> int:
             streams, kava_report = ulekanded.fetch_streams(ul_cfg, fetcher)
             new = ulekanded.match(events, streams)
             refreshed = {r["channel"] for r in kava_report if r["status"] == "ok"}
-            links = ulekanded.update_links(links, new, today, refreshed)
+            links = ulekanded.update_links(links, {**videos, **new}, today, refreshed)
             ulekanded.save_links(links)
             for r in kava_report:
                 r["saved"] = sum(1 for v in new.values() if v["video_by"] == r["channel"])
