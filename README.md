@@ -1,4 +1,4 @@
-# spordikavad
+# Ela kaasa (spordikavad)
 
 **Visioon, põhimõtted ja strateegia: [docs/VISION.md](docs/VISION.md)**
 

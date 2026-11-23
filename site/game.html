@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {% set match = e | matchup %}
 {% set score = e.result | replace('-', ':') %}
-<title>{{ match }}{% if score %} {{ score }}{% endif %} – {{ day | et_date }} | Spordikavad</title>
+<title>{{ match }}{% if score %} {{ score }}{% endif %} – {{ day | et_date }} | Ela kaasa</title>
 <meta name="description" content="{{ sports[e.sport] }}, {{ e.league }}: {{ e | when_where }}.">
 <link rel="canonical" href="{{ canonical }}">
 {% if past %}<meta name="robots" content="noindex">
 {% endif %}
 <meta property="og:type" content="website">
 <meta property="og:locale" content="et_EE">
-<meta property="og:site_name" content="Spordikavad">
+<meta property="og:site_name" content="Ela kaasa">
 <meta property="og:title" content="{{ match }}{% if score %} {{ score }}{% endif %}">
 <meta property="og:description" content="{{ e | when_where }} · {{ sports[e.sport] }}, {{ e.league }}">
 <meta property="og:url" content="{{ canonical }}">
@@ -26,7 +26,7 @@
 <script>document.documentElement.classList.add("js")</script>
 </head>
 <body data-built="{{ built }}">
-<header class="bar"><div class="wrap"><div class="top"><a class="brand" href="{{ root }}">Spordikavad</a></div></div></header>
+<header class="bar"><div class="wrap"><div class="top"><a class="brand" href="{{ root }}">Ela kaasa</a></div></div></header>
 
 <main class="wrap game{{ ' pastday' if past }}">
   <p class="stale" hidden>Andmed võivad olla aegunud (viimati uuendatud {{ updated }}). Kontrolli kellaaega allika lehelt.</p>

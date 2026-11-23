@@ -15,7 +15,7 @@ def load(path: Path = DEFAULT_PATH) -> dict:
 
 def user_agent(cfg: dict) -> str:
     http = cfg.get("http", {})
-    ua = http.get("user_agent", "spordikavad.ee-bot")
+    ua = http.get("user_agent", "elakaasa-bot")
     contact = http.get("contact", "").strip()
     if contact:
         ua = ua[:-1] + f"; {contact})" if ua.endswith(")") else f"{ua} ({contact})"

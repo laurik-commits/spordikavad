@@ -6,14 +6,14 @@
 {% set human = day | et_date %}
 {% set n = events | length %}
 {% set games = level_info.games %}
-<title>{{ level_info.title }} {{ region.in_form }} – {{ human }} {{ day.year }} | Spordikavad</title>
+<title>{{ level_info.title }} {{ region.in_form }} – {{ human }} {{ day.year }} | Ela kaasa</title>
 <meta name="description" content="{% if n %}{{ human | capitalize }}: {{ n }} {{ 'mäng' if n == 1 else 'mängu' }} {{ region.in_form }}. {% endif %}{{ games | capitalize }} jalgpallist saalihokini ühes nimekirjas, kellaaja järgi.">
 <link rel="canonical" href="{{ canonical }}">
 {% if past or level_info.all %}<meta name="robots" content="noindex">
 {% endif %}
 <meta property="og:type" content="website">
 <meta property="og:locale" content="et_EE">
-<meta property="og:site_name" content="Spordikavad">
+<meta property="og:site_name" content="Ela kaasa">
 <meta property="og:title" content="{{ level_info.title }} {{ region.in_form }} – {{ human }}">
 <meta property="og:description" content="{{ games | capitalize }} {{ region.in_form }} kellaaja järgi.">
 <meta property="og:url" content="{{ canonical }}">
@@ -30,7 +30,7 @@
 <header class="bar">
   <div class="wrap">
     <div class="top">
-      <a class="brand" href="{{ root }}">Spordikavad</a>
+      <a class="brand" href="{{ root }}">Ela kaasa</a>
       <details class="city pick-menu">
         <summary>{{ region.name }} <span aria-hidden="true">▾</span></summary>
         <ul>
