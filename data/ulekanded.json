@@ -14,12 +14,26 @@
    "video": "https://tv.delfi.ee/leht/ulekanded-kava",
    "video_by": "Delfi TV"
   },
+  "14c47e233cf3": {
+   "league": "Meistriliiga (mehed)",
+   "sport": "kasipall",
+   "start": "2026-11-11T19:00:00+02:00",
+   "video": "https://www.youtube.com/watch?v=xpt_kEux5Kc",
+   "video_by": "YouTube"
+  },
   "2398b9f5521d": {
    "league": "Balti liiga (mehed)",
    "sport": "vorkpall",
    "start": "2026-11-27T19:00:00+02:00",
    "video": "https://tv.delfi.ee/leht/ulekanded-kava",
    "video_by": "Delfi TV"
+  },
+  "2588b6b3c5e5": {
+   "league": "Meistriliiga (mehed)",
+   "sport": "kasipall",
+   "start": "2026-11-15T15:00:00+02:00",
+   "video": "https://www.youtube.com/watch?v=OOEUayJ5BOg",
+   "video_by": "YouTube"
   },
   "345937ced9e4": {
    "league": "Eesti-Läti Korvpalliliiga",
@@ -35,12 +49,68 @@
    "video": "https://tv.delfi.ee/leht/ulekanded-kava",
    "video_by": "Delfi TV"
   },
+  "357f774c001b": {
+   "league": "Meistriliiga (naised)",
+   "sport": "kasipall",
+   "start": "2026-10-14T19:00:00+03:00",
+   "video": "https://www.youtube.com/watch?v=h8IURXsbW9o",
+   "video_by": "YouTube"
+  },
+  "3709f689ea15": {
+   "league": "FIBA MM 2027 valiksari (L-alagrupp)",
+   "sport": "korvpall",
+   "start": "2026-11-27T19:00:00+02:00",
+   "video": "https://jupiter.err.ee/1610194190/korvpalli-mm-valikmang",
+   "video_by": "ERR"
+  },
   "3a4dc6488b18": {
    "league": "Balti liiga (mehed)",
    "sport": "vorkpall",
    "start": "2026-12-06T13:00:00+02:00",
    "video": "https://tv.delfi.ee/leht/ulekanded-kava",
    "video_by": "Delfi TV"
+  },
+  "403a2ea3dd54": {
+   "league": "Meistriliiga (mehed)",
+   "sport": "kasipall",
+   "start": "2026-10-29T19:00:00+02:00",
+   "video": "https://sport.postimees.ee/8572403/tana-otseulekanne-kasipalli-meistriliigas-kohtuvad-taisedu-omavad-polva-serviti-ja-viljandi-hc",
+   "video_by": "Postimees"
+  },
+  "4365f1a246f2": {
+   "league": "Meistriliiga (naised)",
+   "sport": "kasipall",
+   "start": "2026-10-08T19:45:00+03:00",
+   "video": "https://www.youtube.com/watch?v=ZAHW37ZW0Pk",
+   "video_by": "YouTube"
+  },
+  "51a2860c273b": {
+   "league": "U19 koondis: EM 26/27 2. valikturniir",
+   "sport": "jalgpall",
+   "start": "2026-11-11T12:00:00+02:00",
+   "video": "https://www.youtube.com/watch?v=7evYscwPbes",
+   "video_by": "YouTube"
+  },
+  "5a8475c3ddf8": {
+   "league": "Meistriliiga (mehed)",
+   "sport": "kasipall",
+   "start": "2026-11-11T19:00:00+02:00",
+   "video": "https://sport.postimees.ee/8580318/otseulekanne-kasipalli-meistriliiga-vastamisi-lahevad-esikolmiku-koha-eest-heitlevad-lahirivaalid",
+   "video_by": "Postimees"
+  },
+  "61667fa9bdb7": {
+   "league": "Meistriliiga (mehed)",
+   "sport": "kasipall",
+   "start": "2026-10-28T19:00:00+02:00",
+   "video": "https://www.youtube.com/watch?v=k6Yuu8wx6ys",
+   "video_by": "YouTube"
+  },
+  "6a74ed3a506f": {
+   "league": "U19 koondis: EM 26/27 2. valikturniir",
+   "sport": "jalgpall",
+   "start": "2026-11-14T15:00:00+02:00",
+   "video": "https://www.youtube.com/watch?v=mBTvHSZUUW0",
+   "video_by": "YouTube"
   },
   "6bb24a8cbb91": {
    "league": "Eesti karikas (mehed)",
@@ -49,12 +119,40 @@
    "video": "https://tv.delfi.ee/leht/ulekanded-kava",
    "video_by": "Delfi TV"
   },
+  "73d822c2100b": {
+   "league": "Meistriliiga (naised)",
+   "sport": "kasipall",
+   "start": "2026-10-08T19:00:00+03:00",
+   "video": "https://www.youtube.com/watch?v=QcUBk02p5Ds",
+   "video_by": "YouTube"
+  },
+  "7a170ef4d587": {
+   "league": "Meistriliiga (mehed)",
+   "sport": "kasipall",
+   "start": "2026-11-18T19:00:00+02:00",
+   "video": "https://sport.postimees.ee/8584896/tana-otseulekanne-viljandi-voorustab-hooaja-esimesi-punkte-puudvat-viimsit",
+   "video_by": "Postimees"
+  },
   "7fc7d3345110": {
    "league": "Balti liiga (mehed)",
    "sport": "vorkpall",
    "start": "2026-12-05T18:00:00+02:00",
    "video": "https://tv.delfi.ee/leht/ulekanded-kava",
    "video_by": "Delfi TV"
+  },
+  "862a19cf0b67": {
+   "league": "Meistriliiga (mehed)",
+   "sport": "kasipall",
+   "start": "2026-11-18T19:00:00+02:00",
+   "video": "https://www.youtube.com/watch?v=8BAJmSargYE",
+   "video_by": "YouTube"
+  },
+  "89c7cc21c535": {
+   "league": "Meistriliiga (naised)",
+   "sport": "kasipall",
+   "start": "2026-11-12T19:00:00+02:00",
+   "video": "https://www.youtube.com/watch?v=GOh7GoRlu4Y",
+   "video_by": "YouTube"
   },
   "8d0c556bfea9": {
    "league": "Balti liiga (naised)",
@@ -63,12 +161,89 @@
    "video": "https://tv.delfi.ee/leht/ulekanded-kava",
    "video_by": "Delfi TV"
   },
+  "97e28a15413d": {
+   "league": "Meistriliiga (naised)",
+   "sport": "kasipall",
+   "start": "2026-10-28T19:00:00+02:00",
+   "video": "https://www.youtube.com/watch?v=XyazwlZanzM",
+   "video_by": "YouTube"
+  },
+  "9eb86e3439cb": {
+   "league": "Meistriliiga (naised)",
+   "sport": "kasipall",
+   "start": "2026-11-11T19:00:00+02:00",
+   "video": "https://www.youtube.com/watch?v=_Uu_jfiNktY",
+   "video_by": "YouTube"
+  },
   "a0111bdd747d": {
    "league": "Balti liiga (mehed)",
    "sport": "vorkpall",
    "start": "2026-12-05T19:00:00+02:00",
    "video": "https://tv.delfi.ee/leht/ulekanded-kava",
    "video_by": "Delfi TV"
+  },
+  "aab5c4885253": {
+   "league": "Meistriliiga (mehed)",
+   "sport": "kasipall",
+   "start": "2026-10-27T19:00:00+02:00",
+   "video": "https://www.youtube.com/watch?v=RbpplKoHi3Q",
+   "video_by": "YouTube"
+  },
+  "b58916cd977d": {
+   "league": "Eesti karikas (mehed)",
+   "sport": "kasipall",
+   "start": "2026-10-14T19:00:00+03:00",
+   "video": "https://www.youtube.com/watch?v=wFjRoWcBpu0",
+   "video_by": "YouTube"
+  },
+  "b8bfd716e95b": {
+   "league": "Meistriliiga (mehed)",
+   "sport": "kasipall",
+   "start": "2026-11-11T19:00:00+02:00",
+   "video": "https://www.youtube.com/watch?v=XtYZnOW3UIo",
+   "video_by": "YouTube"
+  },
+  "bd9e83f3af3b": {
+   "league": "Eesti karikas (mehed)",
+   "sport": "kasipall",
+   "start": "2026-10-15T19:00:00+03:00",
+   "video": "https://www.youtube.com/watch?v=njH8Z9W0oNs",
+   "video_by": "YouTube"
+  },
+  "c5497ede96f8": {
+   "league": "Meistriliiga (mehed)",
+   "sport": "kasipall",
+   "start": "2026-11-14T16:00:00+02:00",
+   "video": "https://www.youtube.com/watch?v=7X3A_wnk7A4",
+   "video_by": "YouTube"
+  },
+  "cc103301876c": {
+   "league": "Meistriliiga (naised)",
+   "sport": "kasipall",
+   "start": "2026-10-15T19:00:00+03:00",
+   "video": "https://www.youtube.com/watch?v=pkKxoYw2L94",
+   "video_by": "YouTube"
+  },
+  "cd08db037287": {
+   "league": "Eesti karikas (mehed)",
+   "sport": "kasipall",
+   "start": "2026-10-20T19:00:00+03:00",
+   "video": "https://www.youtube.com/watch?v=jloiTYwVSw4",
+   "video_by": "YouTube"
+  },
+  "d95ca8a39321": {
+   "league": "Eesti karikas (mehed)",
+   "sport": "kasipall",
+   "start": "2026-10-23T19:00:00+03:00",
+   "video": "https://www.youtube.com/watch?v=lZ08rB8EpGo",
+   "video_by": "YouTube"
+  },
+  "e802c2fb33a9": {
+   "league": "Meistriliiga (naised)",
+   "sport": "kasipall",
+   "start": "2026-11-06T19:45:00+02:00",
+   "video": "https://www.youtube.com/watch?v=eTN3WuAO9Wg",
+   "video_by": "YouTube"
   },
   "f1d14b7536b3": {
    "league": "Eesti-Läti Korvpalliliiga",
