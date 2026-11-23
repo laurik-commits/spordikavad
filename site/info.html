@@ -60,7 +60,7 @@
   {% endif %}
   <h2 id="kontakt">Kontakt</h2>
   <p>Ela kaasa lehte haldab <strong>Tammepost OÜ</strong>.</p>
-  <p>Vead, ettepanekud ja andmete omanike soovid: <a href="{{ contact_url }}">kirjuta meile</a>.</p>
+  <p>Vead, ettepanekud ja andmete omanike soovid: <a href="{{ contact_url }}">{{ contact_url | replace('mailto:', '') }}</a></p>
   <p class="muted">Viimati uuendatud {{ updated }}.</p>
 </main>
 <footer class="wrap">

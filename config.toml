@@ -5,9 +5,8 @@ days_ahead = 14
 # Lehe avalik aadress (kanoonilised lingid, sitemap, jagamislingid). Domeen elakaasa.ee (Zone.ee, DNS → GitHub Pages,
 # kohandatud domeen on seatud GitHub Pagesi seadetes). Vana aadress laurik-commits.github.io/spordikavad suunab siia.
 base_url = "https://elakaasa.ee/"
-# Kontakt jaluses. Ajutiselt GitHubi issue'd; kui elakaasa.ee postkast töötab,
-# muuda: contact_url = "mailto:info@elakaasa.ee"
-contact_url = "https://github.com/laurik-commits/spordikavad/issues"
+# Kontakt (jalus, Meist leht). info@elakaasa.ee suunatakse omaniku postkasti.
+contact_url = "mailto:info@elakaasa.ee"
 # Cloudflare Web Analytics (küpsisevaba, isikuandmeid ei koguta). Omaniku Cloudflare'i konto, sait elakaasa.ee.
 # Token on avalik (on lehe koodis nähtav). Statistika: dash.cloudflare.com → Web Analytics.
 analytics_enabled = true
@@ -15,8 +14,7 @@ analytics_token = "876b8d2ee41c4cf581404cf66f57c76c"
 
 [http]
 # Kontaktaadress lisatakse User-Agenti, et allika omanik saaks vajadusel ühendust võtta.
-# Ajutiselt GitHubi issue'de leht; hiljem "info@elakaasa.ee", kui postkast töötab.
-contact = "https://github.com/laurik-commits/spordikavad/issues"
+contact = "info@elakaasa.ee"
 user_agent = "elakaasa-bot/0.1 (+https://elakaasa.ee/)"
 delay = 3.0       # sekundit päringute vahel samale saidile
 timeout = 20.0
