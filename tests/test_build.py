@@ -84,8 +84,8 @@ class RenderTest(unittest.TestCase):
         self.assertIn('<details class="sport pick-menu">', header)
         self.assertIn('<span class="cur">kõigil aladel</span>', header)
         self.assertIn('data-word="jalgpallis"', header)
-        # päis on lause: Ela kaasa ▾ tippvõistlustele ▾ (ala) ▾ Tallinnas ▾
-        self.assertIn('<summary><b>Ela kaasa</b>', header)
+        # päis on lause: Elan kaasa ▾ tippvõistlustele ▾ (ala) ▾ Tallinnas ▾
+        self.assertIn('<summary><b>Elan kaasa</b>', header)
         self.assertIn('<summary>tippvõistlustele<span class="chev"', header)
         self.assertIn('<summary>Tallinnas<span class="chev"', header)
         self.assertLess(header.index('class="tier'), header.index('class="sport'))
@@ -302,15 +302,13 @@ class RenderTest(unittest.TestCase):
         self.assertIn('<meta name="robots" content="noindex">', page)
         self.assertIn("See päev on möödas", page)
         self.assertIn('<b class="score" title="Tulemus">3:1</b>', page)
-        self.assertIn("Statistika ↗", page)   # tulemusega mäng
-        self.assertIn("Tulemus ↗", page)       # tulemuseta mäng: viide allika lehele
-        self.assertIn('href="https://example.org/mang"', page)
+        self.assertNotIn("↗", page.split('<ol class="games">')[1].split("</ol>")[0])   # mängu real noolt pole
+        self.assertIn('href="https://example.org/mang"', page)   # rida viib allika lehele (tulemus, statistika)
         self.assertNotIn("noindex", (out / "2026-11-21" / "index.html").read_text(encoding="utf-8"))
         self.assertIn('<main class="wrap pastday">', page)   # möödunud päeva mänguread on hallid
         self.assertNotIn("pastday", (out / "2026-11-21" / "index.html").read_text(encoding="utf-8"))
         # vanu päevi ei pakuta otsingumootoritele, valikute numbrid loevad ainult tulevasi mänge
         self.assertNotIn("2026-11-14", (out / "sitemap.xml").read_text(encoding="utf-8"))
-        self.assertNotIn("Statistika", (out / "index.html").read_text(encoding="utf-8"))
         self.assertIn('<span class="n">–</span>', (out / "index.html").read_text(encoding="utf-8"))
 
     def test_info_page_lists_coverage_and_update_time(self):

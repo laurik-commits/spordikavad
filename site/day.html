@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{% import "_watch.html" as wi %}
 {% set human = day | et_date %}
 {% set n = events | length %}
 {% set games = level_info.games %}
@@ -31,7 +32,7 @@
   <div class="wrap">
     <div class="top say">
       <details class="about pick-menu">
-        <summary><b>Ela kaasa</b><span class="chev" aria-hidden="true">▾</span></summary>
+        <summary><b>Elan kaasa</b><span class="chev" aria-hidden="true">▾</span></summary>
         <ul>
           <li><a href="{{ root }}"><span>Tänased mängud</span></a></li>
           <li><a href="{{ root }}info/#meist"><span>Meist</span></a></li>
@@ -129,9 +130,8 @@
           <span class="match">{{ e | matchup }}{% if e.result %} <b class="score" title="Tulemus">{{ e.result | replace('-', ':') }}</b>{% endif %}</span>
           <span class="meta">{% if e.end %}{{ e | date_span }} · {% endif %}{{ e.league }} · {{ e.venue }}{% if show_city and e.city != e.venue %}, {{ e.city }}{% endif %}{% if e.time_tbc and not e.end %} · <em>kellaaeg täpsustamisel</em>{% endif %}</span>
         </span>
-        {% if past %}<span class="go">{{ 'Statistika' if e.result else 'Tulemus' }} ↗</span>{% else %}<span class="go" aria-hidden="true">↗</span>{% endif %}
       </a>
-      {% if e.video %}{% set wlabel = ('Vaata järele: ' if past else 'Otse: ') ~ e.video_by %}<a class="watch" href="{{ e.video }}" rel="noopener" title="{{ wlabel }}" aria-label="{{ wlabel }}, {{ e | matchup }}"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 9.2v5.6l4.8-2.8z" fill="currentColor"/></svg></a>{% endif %}
+      {% if e.video %}{% set wk = e | watch_kind(past) %}{% set wlabel = watch_types[wk].title ~ ': ' ~ e.video_by %}<a class="watch {{ wk }}" href="{{ e.video }}" rel="noopener" title="{{ wlabel }}" aria-label="{{ wlabel }}, {{ e | matchup }}">{{ wi.icon(wk) }}</a>{% endif %}
       <button type="button" class="share" data-url="{{ base_url }}m/{{ e.id }}/" data-title="{{ e | matchup }}" data-text="{{ e | share_text }}" aria-label="Jaga: {{ e | matchup }}" title="Jaga"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg></button>
     </li>
   {% endfor %}

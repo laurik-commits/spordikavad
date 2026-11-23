@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{% import "_watch.html" as wi %}
 {% set match = e | matchup %}
 {% set score = e.result | replace('-', ':') %}
 <title>{{ match }}{% if score %} {{ score }}{% endif %} – {{ day | et_date }} | Ela kaasa</title>
@@ -26,7 +27,7 @@
 <script>document.documentElement.classList.add("js")</script>
 </head>
 <body data-built="{{ built }}">
-<header class="bar"><div class="wrap"><div class="top"><a class="brand" href="{{ root }}">Ela kaasa</a></div></div></header>
+<header class="bar"><div class="wrap"><div class="top"><a class="brand" href="{{ root }}">Elan kaasa</a></div></div></header>
 
 <main class="wrap game{{ ' pastday' if past }}">
   <p class="stale" hidden>Andmed võivad olla aegunud (viimati uuendatud {{ updated }}). Kontrolli kellaaega allika lehelt.</p>
@@ -45,7 +46,7 @@
   </article>
   <p class="actions">
     <a class="btn" href="{{ e.url }}" rel="noopener">{% if e.source == 'kasitsi' %}Teade{% elif past and e.result %}Statistika{% elif e.sport in event_sports %}Võistluse info{% else %}Mänguleht{% endif %} allika saidil ↗</a>
-    {% if e.video %}<a class="btn watch-btn" href="{{ e.video }}" rel="noopener">▶ {{ 'Vaata järele' if past else 'Otse' }}: {{ e.video_by }} ↗</a>{% endif %}
+    {% if e.video %}{% set wk = e | watch_kind(past) %}<a class="btn watch-btn {{ wk }}" href="{{ e.video }}" rel="noopener">{{ wi.icon(wk, 18) }} {{ watch_types[wk].button }}: {{ e.video_by }} ↗</a>{% endif %}
     <button type="button" class="btn share-btn share" data-url="{{ canonical }}" data-title="{{ match }}" data-text="{{ e | share_text }}">Jaga</button>
   </p>
   {% set channels = e | watch %}

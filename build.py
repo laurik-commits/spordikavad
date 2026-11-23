@@ -284,9 +284,12 @@ def regions_for(events: list[Event], geo: Geo) -> list[Region]:
 
 
 def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
-           watch: dict[tuple[str, str], list[dict]] | None = None) -> int:
-    """watch: (ala, liiga) → ülekandjad (ulekanded.league_channels); mängu lehel „Selle liiga mänge on näidanud“."""
+           watch: dict[tuple[str, str], list[dict]] | None = None,
+           channel_types: dict[str, str] | None = None) -> int:
+    """watch: (ala, liiga) → ülekandjad (ulekanded.league_channels); mängu lehel „Selle liiga mänge on näidanud“.
+    channel_types: kanal → "tv" / "veeb" (ulekanded.channel_types): ülekande ikoon ja tekst."""
     watch = watch or {}
+    channel_types = channel_types if channel_types is not None else ulekanded.channel_types(ulekanded.load())
     site_cfg = cfg.get("site", {})
     default_level = int(site_cfg.get("default_level", DEFAULT_LEVEL))
     levels = levels_for(default_level)
@@ -344,6 +347,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
     env.filters["event_day"] = event_day
     env.filters["date_span"] = date_span
     env.filters["watch"] = lambda e: watch.get((e.sport, e.league), [])
+    env.filters["watch_kind"] = lambda e, past: ulekanded.watch_kind(e.video_by, past, channel_types)
     tpl = env.get_template("day.html")
 
     if out.exists():
@@ -378,7 +382,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
         updated=f"{now.day}.{now.month:02d} kell {now:%H:%M}", built=today.isoformat(),
         analytics_enabled=site_cfg.get("analytics_enabled", False),
         analytics_token=site_cfg.get("analytics_token", ""), base_url=base_url,
-        contact_url=site_cfg.get("contact_url", ""),
+        contact_url=site_cfg.get("contact_url", ""), watch_types=ulekanded.TYPES,
     )
 
     urls: list[str] = []
@@ -585,6 +589,7 @@ def main(argv: list[str] | None = None) -> int:
     if dupes:
         log.info("Eemaldasin %d topelt mängu (sama mäng mitmest allikast)", dupes)
     watch: dict = {}
+    ul_cfg: dict = {}
     try:
         ul_cfg = ulekanded.load()
         links = ulekanded.load_links()
@@ -607,7 +612,7 @@ def main(argv: list[str] | None = None) -> int:
             ul_cfg, ulekanded.apply(archive.past_events(today, ulekanded.LEARN_DAYS), links) + events)
     except Exception:  # noqa: BLE001 - ülekannete info viga ei tohi lehe ehitust takistada
         log.exception("ülekannete info koostamine ebaõnnestus")
-    pages = render(events, cfg, today, watch=watch)
+    pages = render(events, cfg, today, watch=watch, channel_types=ulekanded.channel_types(ul_cfg))
     REPORT.write_text(json.dumps({"date": today.isoformat(), "sources": report,
                                   "unknown_venues": sorted(venues.unknown)}, ensure_ascii=False, indent=1),
                       encoding="utf-8")
