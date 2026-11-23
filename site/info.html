@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{% import "_watch.html" as wi %}
 <title>Meist | Ela kaasa</title>
 <meta name="description" content="Ela kaasa on kalender Eesti spordist, mida saab kohapeal vaatamas käia. Meist, visioon ja eesmärk, alad ja andmeallikad ning kontakt.">
 <link rel="canonical" href="{{ canonical }}">
@@ -11,7 +12,7 @@
 <link rel="stylesheet" href="{{ root }}style.css">
 </head>
 <body>
-<header class="bar"><div class="wrap"><div class="top"><a class="brand" href="{{ root }}">Ela kaasa</a></div>
+<header class="bar"><div class="wrap"><div class="top"><a class="brand" href="{{ root }}">Elan kaasa</a></div>
   <nav class="daynav"><h1>Meist</h1></nav></div></header>
 <main class="wrap info">
   <h2 id="meist">Ela kaasa</h2>
@@ -55,7 +56,12 @@
   <p>Üksikud sõprusmängud, turniirid, eriüritused ja koondisemängud on lisatud käsitsi. Need põhinevad liitude, klubide, hallide või korraldajate ametlikel teadetel ja nende mängulehel on link teatele.</p>
   <p><strong>Enne kohaleminekut kontrolli kellaaega</strong>, sest see võib muutuda.</p>
   <h2 id="ulekanded">Ülekanded</h2>
-  <p>Kui teame, kus mängu otse või järele näeb, on mängu real ekraani ikoon ja mängu lehel nupp „Otse“ või „Vaata järele“. Näitame ainult ametlikke ülekandeid: liitude, klubide ja meediamajade omi.</p>
+  <p>Kui teame, kus mängu näeb, on mängu real ikoon ja mängu lehel nupp. Näitame ainult ametlikke ülekandeid: liitude, klubide ja meediamajade omi.</p>
+  <ul class="legend">
+    <li><span class="watch tv">{{ wi.icon('tv') }}</span> Teleülekanne (ERR: ETV, ETV2)</li>
+    <li><span class="watch veeb">{{ wi.icon('veeb') }}</span> Otseülekanne internetis (Delfi TV, Postimees, YouTube)</li>
+    <li><span class="watch jarel">{{ wi.icon('jarel') }}</span> Järelvaatamine, kui mäng on peetud</li>
+  </ul>
   <p>Nimekiri täieneb ise: iga mäng, mille ülekande link leitakse, lisab selle kanali oma liigale.</p>
   {% if watch_rows %}
   <ul>

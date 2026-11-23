@@ -53,6 +53,23 @@ _GENERIC = {"vk", "kk", "bc", "fc", "hc", "sk", "bk", "sc", "vc", "jk", "kc", "t
             "spordiklubi", "vorkpalliklubi", "korvpalliklubi", "kasipalliklubi", "jalgpalliklubi", "basket",
             "volley", "volleyball", "basketball", "handball"}
 
+# ülekande tüüp (lehel oma ikoon ja tekst): kanali `tuup` ([[kanal]]) või peetud mängul järelvaatamine
+TYPES = {
+    "tv": {"title": "Teleülekanne", "button": "Teleülekanne"},        # ERR (ETV, ETV2)
+    "veeb": {"title": "Otseülekanne", "button": "Otseülekanne"},      # internetis: Delfi TV, Postimees, YouTube
+    "jarel": {"title": "Järelvaatamine", "button": "Vaata järele"},  # peetud mäng
+}
+CHANNEL_TYPES = ("tv", "veeb")
+
+
+def watch_kind(video_by: str, past: bool, channel_types: dict[str, str]) -> str:
+    """Mängu ülekande tüüp: peetud mäng → "jarel", muidu kanali tüüp ("tv" või vaikimisi "veeb")."""
+    if past:
+        return "jarel"
+    kind = channel_types.get(video_by, "veeb")
+    return kind if kind in CHANNEL_TYPES else "veeb"
+
+
 # sotsiaalmeedia ei ole allikas ega link (VISION.md); YouTube on videoplatvorm, mitte sotsiaalmeedia voog
 BANNED_HOSTS = ("facebook.com", "fb.com", "instagram.com", "tiktok.com", "x.com", "twitter.com")
 
@@ -82,6 +99,8 @@ def validate(cfg: dict) -> list[str]:
             errors.append(f"kanal {name}: url peab algama https://")
         if any(h in url for h in BANNED_HOSTS):
             errors.append(f"kanal {name}: sotsiaalmeedia link pole lubatud")
+        if k.get("tuup", "veeb") not in CHANNEL_TYPES:
+            errors.append(f"kanal {name}: tuup peab olema {' või '.join(CHANNEL_TYPES)}")
         kava = k.get("kava", "")
         if kava and not re.fullmatch(r"[a-z0-9_]+", kava):
             errors.append(f"kanal {name}: kava peab olema adapteri nimi (scrapers/kava_<nimi>.py)")
@@ -309,6 +328,11 @@ def apply(events: Iterable[Event], links: dict[str, dict]) -> list[Event]:
     """Lisab mängudele kava lingi. Allika enda link (nt järelvaatamine) jääb ette."""
     return [replace(e, video=links[e.id]["video"], video_by=links[e.id]["video_by"])
             if not e.video and e.id in links else e for e in events]
+
+
+def channel_types(cfg: dict) -> dict[str, str]:
+    """Kanali nimi → tüüp ("tv" / "veeb")."""
+    return {k["nimi"]: k.get("tuup", "veeb") for k in cfg.get("kanal", []) if k.get("nimi")}
 
 
 def rows(channels: dict[tuple[str, str], list[dict]]) -> list[dict]:

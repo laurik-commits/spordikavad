@@ -160,26 +160,34 @@ class BuildTest(unittest.TestCase):
         past = ev(14, 18, "Peetud", sport="kasipall", league="Meistriliiga (mehed)", result="30-28",
                   video="https://www.youtube.com/watch?v=abc", video_by="YouTube")
         future = ev(22, 19, "Tulev", video="https://tv.delfi.ee/leht/ulekanded-kava", video_by="Delfi TV")
+        tv = ev(22, 17, "Teles", sport="korvpall", league="Koondis", video="https://jupiter.err.ee/1", video_by="ERR")
         plain = ev(23, 19, "Tavaline")
-        events = [past, future, plain]
+        events = [past, future, tv, plain]
         cfg = {"site": {"days_ahead": 3, "base_url": "https://example.org/sk/", "default_level": 1},
                "geo": OLD_GEO, "source": config.load()["source"]}
         out = Path(tempfile.mkdtemp())
         watch = ulekanded.league_channels(LeagueChannelsTest.CFG, events)
-        build.render(events, cfg, date(2026, 11, 20), out, watch=watch)
+        build.render(events, cfg, date(2026, 11, 20), out, watch=watch, channel_types={"ERR": "tv", "Delfi TV": "veeb"})
         read = lambda rel: (out / rel).read_text(encoding="utf-8")  # noqa: E731
 
+        # kolm tüüpi: järelvaatamine (peetud), otseülekanne internetis, teleülekanne; igaühel oma ikoon
         old_day = read("2026-11-14/index.html")
-        self.assertIn('class="watch" href="https://www.youtube.com/watch?v=abc"', old_day)
-        self.assertIn('title="Vaata järele: YouTube"', old_day)
+        self.assertIn('class="watch jarel" href="https://www.youtube.com/watch?v=abc"', old_day)
+        self.assertIn('title="Järelvaatamine: YouTube"', old_day)
+        self.assertIn('class="wi wi-jarel"', old_day)
         day = read("2026-11-22/index.html")
-        self.assertIn('title="Otse: Delfi TV"', day)
-        self.assertNotIn('class="watch"', read("2026-11-23/index.html"))   # lingita mängul ikooni pole
+        self.assertIn('class="watch veeb" href="https://tv.delfi.ee/leht/ulekanded-kava" rel="noopener" '
+                      'title="Otseülekanne: Delfi TV"', day)
+        self.assertIn('class="watch tv" href="https://jupiter.err.ee/1" rel="noopener" title="Teleülekanne: ERR"', day)
+        self.assertIn('class="live"', day)   # otseülekande punane täpp
+        self.assertNotIn('class="watch ', read("2026-11-23/index.html"))   # lingita mängul ikooni pole
 
         game = read(f"m/{future.id}/index.html")
-        self.assertIn("▶ Otse: Delfi TV ↗", game)
+        self.assertIn("Otseülekanne: Delfi TV ↗", game)
+        self.assertIn('class="btn watch-btn veeb"', game)
         self.assertIn('Selle liiga mänge on näidanud: <a href="https://tv.delfi.ee/" rel="noopener">Delfi TV</a>.', game)
-        self.assertIn("▶ Vaata järele: YouTube ↗", read(f"m/{past.id}/index.html"))
+        self.assertIn("Vaata järele: YouTube ↗", read(f"m/{past.id}/index.html"))
+        self.assertIn("Teleülekanne: ERR ↗", read(f"m/{tv.id}/index.html"))
         plain_game = read(f"m/{plain.id}/index.html")
         self.assertNotIn("watch-btn", plain_game)
         self.assertIn("Selle liiga mänge on näidanud", plain_game)   # liiga info ka ilma mängu lingita
@@ -187,6 +195,18 @@ class BuildTest(unittest.TestCase):
         info = read("info/index.html")
         self.assertIn('id="ulekanded"', info)
         self.assertIn("Käsipall, Meistriliiga (mehed): YouTube", info)
+        for kind in ("tv", "veeb", "jarel"):   # „Meist“ lehel ikoonide selgitus
+            self.assertIn(f'class="wi wi-{kind}"', info)
+
+    def test_watch_kind(self):
+        types = {"ERR": "tv", "Delfi TV": "veeb", "Vale": "raadio"}
+        self.assertEqual(ulekanded.watch_kind("ERR", False, types), "tv")
+        self.assertEqual(ulekanded.watch_kind("Delfi TV", False, types), "veeb")
+        self.assertEqual(ulekanded.watch_kind("Tundmatu", False, types), "veeb")
+        self.assertEqual(ulekanded.watch_kind("Vale", False, types), "veeb")
+        self.assertEqual(ulekanded.watch_kind("ERR", True, types), "jarel")
+        self.assertEqual(ulekanded.channel_types(ulekanded.load())["ERR"], "tv")
+        self.assertIn("tuup", " ".join(ulekanded.validate({"kanal": [{"nimi": "A", "tuup": "raadio"}]})))
 
     def test_render_without_watch_info(self):
         out = Path(tempfile.mkdtemp())

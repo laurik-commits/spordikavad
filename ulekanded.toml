@@ -4,7 +4,9 @@
 #   Nimi peab olema täpselt sama, mis adapteris (`video_by`), nt "YouTube", "Postimees", "Delfi TV".
 #   Ilma url-ita kanal on lehel nimena, lingita (nt YouTube: igal liigal oma kanal).
 #   kava = "<nimi>": kanali ülekannete kava loetakse iga päev automaatselt (scrapers/kava_<nimi>.py) ja
-#   kava read seotakse mängudega: mängu juurde tuleb „Otse: <kanal>“.
+#   kava read seotakse mängudega: mängu juurde tuleb „Otseülekanne: <kanal>“.
+#   tuup = "tv" (teleülekanne, nt ERR) või "veeb" (otseülekanne internetis, vaikimisi). Peetud mängul on
+#   alati „Järelvaatamine“. Igal tüübil on lehel oma ikoon.
 # [[liiga]]: KÄSITSI teadaolev info liiga kaupa. Siia ainult kontrollitud fakt (kava, uudis, liidu teade).
 #   Süsteem õpib ise juurde: iga mäng, millel on ülekande link, lisab selle kanali oma liigale.
 #   liigad = täpsed liiganimed (nagu config.toml-is), liiga_algus = nimi algab nii (koondiste turniirid).
@@ -18,18 +20,22 @@
 nimi = "Delfi TV"
 url = "https://tv.delfi.ee/leht/ulekanded-kava"
 kava = "delfi"
+tuup = "veeb"
 
 [[kanal]]
 nimi = "ERR"
 url = "https://jupiter.err.ee/"
 kava = "err"
+tuup = "tv"
 
 [[kanal]]
 nimi = "Postimees"
 url = "https://tv.postimees.ee/"
+tuup = "veeb"
 
 [[kanal]]
 nimi = "YouTube"
+tuup = "veeb"
 
 # Delfi TV ülekannete kava (tv.delfi.ee/leht/ulekanded-kava), kontrollitud 2026-11-23
 [[liiga]]
