@@ -29,21 +29,19 @@
 <body data-built="{{ built }}" data-region="{{ region.slug }}" data-level="{{ level }}" data-default="{{ default_slug }}" data-default-level="{{ default_level }}" data-levels='{{ level_prefixes }}' data-root="{{ root }}"{% if is_index %} data-index="1"{% endif %}>
 <header class="bar">
   <div class="wrap">
-    <div class="top">
-      <a class="brand" href="{{ root }}">Ela kaasa</a>
-      <details class="city pick-menu">
-        <summary>{{ region.name }} <span aria-hidden="true">▾</span></summary>
+    <div class="top say">
+      <details class="about pick-menu">
+        <summary><b>Ela kaasa</b><span class="chev" aria-hidden="true">▾</span></summary>
         <ul>
-          <li class="cap">Mänge kahe nädala jooksul</li>
-        {% for r in regions %}
-          <li><a href="{{ root }}{{ level_info.prefix }}{{ r.prefix }}{{ day.isoformat() }}/" data-region="{{ r.slug }}" class="{{ 'empty' if not r.count }}{{ ' county' if r.kind == 'county' }}"{% if r.slug == region.slug %} aria-current="true"{% endif %}>
-            <span>{{ r.name }}</span><span class="n">{{ r.count if r.count else '–' }}</span>
-          </a></li>
-        {% endfor %}
+          <li><a href="{{ root }}"><span>Tänased mängud</span></a></li>
+          <li><a href="{{ root }}info/#meist"><span>Meist</span></a></li>
+          <li><a href="{{ root }}info/#visioon"><span>Visioon ja eesmärk</span></a></li>
+          <li><a href="{{ root }}info/#alad"><span>Alad ja allikad</span></a></li>
+          <li><a href="{{ root }}info/#kontakt"><span>Kontakt</span></a></li>
         </ul>
       </details>
       <details class="tier pick-menu">
-        <summary>{{ level_info.name }} <span aria-hidden="true">▾</span></summary>
+        <summary>{{ level_info.to }}<span class="chev" aria-hidden="true">▾</span></summary>
         <ul>
           <li class="cap">Mänge Eestis kahe nädala jooksul</li>
         {% for l in levels %}
@@ -55,19 +53,30 @@
       </details>
       {% if filters or links %}
       <details class="sport pick-menu">
-        <summary><span class="cur">Kõik alad</span> <span aria-hidden="true">▾</span></summary>
+        <summary><span class="cur">kõigil aladel</span><span class="chev" aria-hidden="true">▾</span></summary>
         <ul class="filters" role="group" aria-label="Ala">
           <li class="cap">Mänge kahe nädala jooksul</li>
-          <li><button type="button" data-filter="" aria-pressed="true" data-label="Kõik alad"><span>Kõik alad</span><span class="n">{{ filters | sum(attribute='count') }}</span></button></li>
+          <li><button type="button" data-filter="" aria-pressed="true" data-label="Kõik alad" data-word="kõigil aladel"><span>Kõik alad</span><span class="n">{{ filters | sum(attribute='count') }}</span></button></li>
         {% for f in filters %}
-          <li><button type="button" data-filter="{{ f.key }}" aria-pressed="false"{% if f.none %} class="nogames" data-none="1" title="{{ f.msg }}"{% endif %} data-label="{{ f.label }}"><span><i class="dot s-{{ f.key }}"></i>{{ f.label }}</span><span class="n">{{ f.count or '–' }}</span></button></li>
+          <li><button type="button" data-filter="{{ f.key }}" aria-pressed="false"{% if f.none %} class="nogames" data-none="1" title="{{ f.msg }}"{% endif %} data-label="{{ f.label }}" data-word="{{ sport_in[f.key] }}"><span><i class="dot s-{{ f.key }}"></i>{{ f.label }}</span><span class="n">{{ f.count or '–' }}</span></button></li>
         {% endfor %}
         {% for l in links %}
-          <li><button type="button" class="ext" data-filter="{{ l.sport }}" data-ext="1" aria-pressed="false" data-label="{{ l.label }}"><span><i class="dot s-{{ l.sport }}"></i>{{ l.label }}</span><span class="n">↗</span></button></li>
+          <li><button type="button" class="ext" data-filter="{{ l.sport }}" data-ext="1" aria-pressed="false" data-label="{{ l.label }}" data-word="{{ sport_in[l.sport] }}"><span><i class="dot s-{{ l.sport }}"></i>{{ l.label }}</span><span class="n">↗</span></button></li>
         {% endfor %}
         </ul>
       </details>
       {% endif %}
+      <details class="city pick-menu">
+        <summary>{{ 'üle Eesti' if region.kind == 'all' else region.in_form }}<span class="chev" aria-hidden="true">▾</span></summary>
+        <ul>
+          <li class="cap">Mänge kahe nädala jooksul</li>
+        {% for r in regions %}
+          <li><a href="{{ root }}{{ level_info.prefix }}{{ r.prefix }}{{ day.isoformat() }}/" data-region="{{ r.slug }}" class="{{ 'empty' if not r.count }}{{ ' county' if r.kind == 'county' }}"{% if r.slug == region.slug %} aria-current="true"{% endif %}>
+            <span>{{ r.name }}</span><span class="n">{{ r.count if r.count else '–' }}</span>
+          </a></li>
+        {% endfor %}
+        </ul>
+      </details>
     </div>
     <nav class="daynav" aria-label="Päev">
       {% if prev_day %}<a href="{{ here }}{{ prev_day.isoformat() }}/" rel="prev" aria-label="Eelmine päev">◀</a>{% else %}<span class="off" aria-hidden="true">◀</span>{% endif %}
@@ -93,7 +102,7 @@
   <p class="intro pastnote">See päev on möödas. Tulemused ja statistika leiad allika lehelt, vajuta selleks mängule. <a href="{{ root }}{{ level_info.prefix }}{{ region.prefix }}">Tänased mängud →</a></p>
   {% endif %}
   {% if is_index %}
-  <p class="intro">{{ games | capitalize }}, mida saab kohapeal vaatama minna. <a href="{{ root }}info/">Mis siin on?</a></p>
+  <p class="intro">{{ games | capitalize }}, mida saab kohapeal vaatama minna. <a href="{{ root }}info/">Meist</a></p>
   {% endif %}
   {% for l in links %}
   <p class="extnote" data-note="{{ l.sport }}">{{ l.note }} <a href="{{ l.url }}" rel="noopener">{{ l.link_text or l.label }} ↗</a></p>
@@ -136,7 +145,7 @@
 </main>
 
 <footer class="wrap">
-  <p>Andmed pärinevad liitude, klubide ja korraldajate kodulehtedelt. Enne kohaleminekut kontrolli kellaaega. Viimati uuendatud {{ updated }}. <a href="{{ root }}info/">Mis siin on?</a></p>
+  <p>Andmed pärinevad liitude, klubide ja korraldajate kodulehtedelt. Enne kohaleminekut kontrolli kellaaega. Viimati uuendatud {{ updated }}. <a href="{{ root }}info/">Meist</a></p>
   <p>Kui olete andmete omanik ega soovi, et neid siin näidataks, <a href="{{ contact_url }}">kirjutage meile</a>.</p>
 </footer>
 <script src="{{ root }}app.js" defer></script>

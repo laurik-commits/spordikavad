@@ -44,6 +44,10 @@ MONTHS_IN = ["jaanuaris", "veebruaris", "märtsis", "aprillis", "mais", "juunis"
 SPORT_GEN = {"jalgpall": "jalgpalli", "korvpall": "korvpalli", "jaahoki": "jäähoki", "vorkpall": "võrkpalli",
              "kasipall": "käsipalli", "saalihoki": "saalihoki", "saalijalgpall": "saalijalgpalli",
              "motosport": "motospordi", "kergejoustik": "kergejõustiku"}
+# ala seesütlevas käändes päise lauses: "Ela kaasa koondistele jalgpallis Tallinnas"
+SPORT_IN = {"jalgpall": "jalgpallis", "korvpall": "korvpallis", "jaahoki": "jäähokis", "vorkpall": "võrkpallis",
+            "kasipall": "käsipallis", "saalihoki": "saalihokis", "saalijalgpall": "saalijalgpallis",
+            "motosport": "motospordis", "kergejoustik": "kergejõustikus"}
 MONTHS = ["jaanuar", "veebruar", "märts", "aprill", "mai", "juuni", "juuli",
           "august", "september", "oktoober", "november", "detsember"]
 
@@ -349,7 +353,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
 
     now = datetime.now(TALLINN)
     common = dict(
-        sports=SPORTS, event_sports=EVENT_SPORTS, links=links, sport_notes=sport_notes, today=today, default_slug=Geo.default_slug, default_level=default_level,
+        sports=SPORTS, sport_in=SPORT_IN, event_sports=EVENT_SPORTS, links=links, sport_notes=sport_notes, today=today, default_slug=Geo.default_slug, default_level=default_level,
         level_prefixes=json.dumps({str(k): v["prefix"] for k, v in levels.items()}),
         updated=f"{now.day}.{now.month:02d} kell {now:%H:%M}", built=today.isoformat(),
         analytics_enabled=site_cfg.get("analytics_enabled", False),
@@ -453,7 +457,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
     (out / "404.html").write_text(env.get_template("404.html").render(common, base_path=base_path),
                                   encoding="utf-8")
 
-    # „Mis siin on?“ leht
+    # „Meist“ leht
     info_dir = out / "info"
     info_dir.mkdir()
     (info_dir / "index.html").write_text(
@@ -471,7 +475,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
     return len(urls)
 
 
-# Allikate avalehed „Mis siin on?“ lehe jaoks: ala → [(nimi, URL), ...]
+# Allikate avalehed „Meist“ lehe jaoks: ala → [(nimi, URL), ...]
 SOURCE_SITES = {
     "jalgpall": [("Eesti Jalgpalli Liit", "https://jalgpall.ee/voistlused")],
     "saalijalgpall": [("Eesti Jalgpalli Liit", "https://jalgpall.ee/voistlused")],
@@ -489,7 +493,7 @@ SOURCE_SITES = {
 
 
 def coverage(cfg: dict) -> list[dict]:
-    """„Mis siin on?“ lehe tabel: ala, kõrgliigad (top), esiliigad (low), madalamad liigad (minor), noored (youth), koondised (national), allikas."""
+    """„Meist“ lehe tabel: ala, kõrgliigad (top), esiliigad (low), madalamad liigad (minor), noored (youth), koondised (national), allikas."""
     from scrapers import saalihoki_meistriliiga as floorball
 
     column = {1: "top", 2: "low", 3: "minor", 4: "youth", 5: "national"}

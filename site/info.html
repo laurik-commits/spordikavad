@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mis siin on? | Ela kaasa</title>
-<meta name="description" content="Ela kaasa näitab Eesti spordimänge, mida saab kohapeal vaatamas käia: tippvõistlused (kõrgliigad), esiliigad, noored ja koondised. Siit leiad, millised alad ja liigad on kaetud ja kust andmed tulevad.">
+<title>Meist | Ela kaasa</title>
+<meta name="description" content="Ela kaasa on kalender Eesti spordist, mida saab kohapeal vaatamas käia. Meist, visioon ja eesmärk, alad ja andmeallikad ning kontakt.">
 <link rel="canonical" href="{{ canonical }}">
 <meta name="theme-color" content="#14457a">
 <meta name="color-scheme" content="light dark">
@@ -12,11 +12,21 @@
 </head>
 <body>
 <header class="bar"><div class="wrap"><div class="top"><a class="brand" href="{{ root }}">Ela kaasa</a></div>
-  <nav class="daynav"><h1>Mis siin on?</h1></nav></div></header>
+  <nav class="daynav"><h1>Meist</h1></nav></div></header>
 <main class="wrap info">
-  <p>Ela kaasa on lihtne nimekiri spordimängudest, mida saab <strong>kohapeal vaatama minna</strong>. Iga päeva mängud on kellaaja järgi ja linnade kaupa. Päisest saad valida linna või maakonna ja kalendri: <strong>kõrgliigad</strong>, <strong>esiliigad</strong>, <strong>noored</strong>, <strong>koondised</strong> või <strong>kõik liigad</strong> korraga.</p>
+  <h2 id="meist">Ela kaasa</h2>
+  <p>Ela kaasa on lihtne kalender spordist, mida saab Eestis <strong>kohapeal vaatama minna</strong>: liigamängud, koondised, noored ja võistlused ühes nimekirjas, kellaaja järgi. Päises on lause, mille sõnu saad muuta: vali tase (tippvõistlused, esiliigad, noored, koondised või kõik korraga), ala ja koht.</p>
 
-  <h2>Alad ja liigad</h2>
+  <h2 id="visioon">Visioon ja eesmärk</h2>
+  <p><strong>Iga mäng väärib publikut.</strong> Tahame, et kohalik ja rohujuure sport oleks nähtav ning rohkem inimesi tuleks tribüünile ja platsile.</p>
+  <ul>
+    <li>Kõige täielikum ja õigem kalender Eesti spordist, mida saab kohapeal vaadata.</li>
+    <li>Nähtavus ka neile, keda tavaliselt ei märgata: naiste liigad, noored, väikesed alad ja väikesed kohad.</li>
+    <li>Põhiline kalendriinfo on kõigile tasuta ja ilma segava reklaamita.</li>
+    <li>Ainult lubatud andmed: järgime liitude ja klubide kasutustingimusi ning robots.txt-i.</li>
+  </ul>
+
+  <h2 id="alad">Alad ja liigad</h2>
   <table>
     <thead><tr><th>Ala</th><th>Tippvõistlused</th><th>Esiliigad</th>{% if show_minor %}<th>Madalamad liigad</th>{% endif %}<th>Noored</th><th>Koondised</th></tr></thead>
     <tbody>
@@ -48,6 +58,9 @@
   <h2>Privaatsus</h2>
   <p>Külastusi loendame Cloudflare Web Analyticsiga. See ei kasuta küpsiseid ega kogu isikuandmeid. Näeme ainult koondarve, näiteks mitu korda lehti vaadati ja millistelt seadmetelt.</p>
   {% endif %}
+  <h2 id="kontakt">Kontakt</h2>
+  <p>Ela kaasa lehte haldab <strong>Tammepost OÜ</strong>.</p>
+  <p>Vead, ettepanekud ja andmete omanike soovid: <a href="{{ contact_url }}">kirjuta meile</a>.</p>
   <p class="muted">Viimati uuendatud {{ updated }}.</p>
 </main>
 <footer class="wrap">

@@ -51,8 +51,6 @@ a { color: var(--link); text-decoration: none; }
 .bar { background: var(--bar); color: var(--bar-fg); padding: .6rem 0 .5rem; }
 .top { display: flex; flex-wrap: wrap; align-items: baseline; gap: .4rem .5rem; position: relative; }
 .brand { color: var(--bar-fg); font-weight: 700; font-size: 1.05rem; }
-/* kitsal ekraanil: nimi omal real, kolm valikut (koht, tase, ala) koos järgmisel */
-@media (max-width: 32rem) { .js .brand { flex-basis: 100%; } }
 
 /* linna- ja tasemevalik */
 .pick-menu summary {
@@ -113,7 +111,23 @@ a { color: var(--link); text-decoration: none; }
 
 /* alavalik (päises, töötab ainult JS-iga: filtreerib lehe sees) */
 .sport { display: none; }
-.js .sport { display: block; }
+.js .sport { display: inline-block; }
+
+/* päis lausena: "Ela kaasa ▾ koondistele ▾ jalgpallis ▾ Tallinnas ▾" — iga sõna on valik */
+.say { display: block; font-size: 1.3rem; line-height: 1.6; margin-bottom: .25rem; }
+.say details { display: inline-block; }   /* inline ei sobi: brauser teeb details-i sisu plokiks ja murrab rea */
+.say .pick-menu summary {
+  display: inline; border: 0; border-radius: .35rem; padding: .05rem .3rem; margin: 0 -.05rem;
+  background: rgba(255,255,255,.13); font-size: inherit; opacity: 1;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+.say .pick-menu summary:hover, .say .pick-menu[open] summary { background: rgba(255,255,255,.26); }
+.say .about summary { background: none; padding-left: 0; }
+.say .about summary:hover, .say .about[open] summary { background: rgba(255,255,255,.13); padding-left: .3rem; }
+.say .chev { font-size: .7em; margin-left: .3rem; opacity: .85; vertical-align: .1em; }
+.say summary .dot { margin-right: .35rem; vertical-align: .1em; }
+.say .pick-menu ul { font-size: 1rem; line-height: 1.4; }
+@media (max-width: 32rem) { .say { font-size: 1.2rem; } }
 .filters button {
   font: inherit; width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 1rem;
   padding: .45rem .6rem; border: 0; border-radius: .4rem; background: none; color: var(--fg); cursor: pointer; text-align: left;

@@ -82,7 +82,15 @@ class RenderTest(unittest.TestCase):
         html = self.read("2026-11-22/index.html")
         header = html[html.index('<header'):html.index('</header>')]
         self.assertIn('<details class="sport pick-menu">', header)
-        self.assertIn('<span class="cur">Kõik alad</span>', header)
+        self.assertIn('<span class="cur">kõigil aladel</span>', header)
+        self.assertIn('data-word="jalgpallis"', header)
+        # päis on lause: Ela kaasa ▾ tippvõistlustele ▾ (ala) ▾ Tallinnas ▾
+        self.assertIn('<summary><b>Ela kaasa</b>', header)
+        self.assertIn('<summary>tippvõistlustele<span class="chev"', header)
+        self.assertIn('<summary>Tallinnas<span class="chev"', header)
+        self.assertLess(header.index('class="tier'), header.index('class="sport'))
+        self.assertLess(header.index('class="sport'), header.index('class="city'))
+        self.assertIn('info/#kontakt', header)
         # hall (mängudeta) ala: arvu asemel kriips
         i = header.index('data-filter="saalihoki"')
         self.assertIn('<span class="n">–</span>', header[i:i + 400])
@@ -307,7 +315,10 @@ class RenderTest(unittest.TestCase):
 
     def test_info_page_lists_coverage_and_update_time(self):
         info = self.read("info/index.html")
-        self.assertIn("Mis siin on?", info)
+        self.assertIn("<h1>Meist</h1>", info)
+        self.assertIn("Tammepost OÜ", info)
+        for anchor in ("meist", "visioon", "alad", "kontakt"):
+            self.assertIn(f'id="{anchor}"', info)
         self.assertIn("Korvpall", info)
         self.assertIn("Viimati uuendatud", info)
         self.assertNotIn("Madalamad liigad", info)   # peidetud tase pole info tabelis

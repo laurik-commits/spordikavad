@@ -74,10 +74,10 @@
     var ext = !!(btn && btn.dataset.ext);
     var shown = 0;
     buttons.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.filter === sport)); });
-    // päise valikus näita valitud ala nime (ja värvitäppi)
+    // päise lauses näita valitud ala ("jalgpallis") koos värvitäpiga
     var cur = document.querySelector(".sport summary .cur");
     if (cur && btn) {
-      cur.textContent = btn.dataset.label;
+      cur.textContent = btn.dataset.word || btn.dataset.label;
       if (sport) {
         var dot = document.createElement("i");
         dot.className = "dot s-" + sport;

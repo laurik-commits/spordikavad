@@ -11,6 +11,7 @@ from zoneinfo import ZoneInfo
 TALLINN = ZoneInfo("Europe/Tallinn")
 
 # tase → nimi valikus, kaust, pealkirja algus ja sõnavormid lausetesse:
+#   to:    päise lauses "Ela kaasa koondistele …" (alaleütlev)
 #   games: "tippvõistlused" (sissejuhatus, kirjeldus, "Selle päeva … →")
 #   one:   "Täna ei ole Tallinnas ühtegi tippvõistlust."
 #   many:  "Järgmise kahe nädala jooksul ei ole Tallinnas saalihoki tippvõistlusi."
@@ -19,18 +20,18 @@ TALLINN = ZoneInfo("Europe/Tallinn")
 DEFAULT_LEVEL = 0  # avaleht: kõik liigad (lehe juurkaust); muudetav config.toml [site] default_level
 LEVELS = {
     # 0 = kõik valikus näidatavad tasemed ühes nimekirjas (peidetud taset ei loeta)
-    0: {"name": "Kõik liigad", "slug": "koik", "title": "Kõik spordimängud",
+    0: {"name": "Kõik liigad", "slug": "koik", "title": "Kõik spordimängud", "to": "spordiüritustele",
         "games": "kõik mängud", "one": "mängu", "many": "mänge", "all": True},
-    1: {"name": "Tippvõistlused", "slug": "korgliigad", "title": "Tippsport",
+    1: {"name": "Tippvõistlused", "slug": "korgliigad", "title": "Tippsport", "to": "tippvõistlustele",
         "games": "tippvõistlused", "one": "tippvõistlust", "many": "tippvõistlusi"},
-    2: {"name": "Esiliigad", "slug": "esiliigad", "title": "Esiliigade mängud",
+    2: {"name": "Esiliigad", "slug": "esiliigad", "title": "Esiliigade mängud", "to": "esiliigadele",
         "games": "esiliigade mängud", "one": "esiliigamängu", "many": "esiliigamänge"},
-    3: {"name": "Madalamad liigad", "slug": "madalamad", "title": "Madalamate liigade mängud",
+    3: {"name": "Madalamad liigad", "slug": "madalamad", "title": "Madalamate liigade mängud", "to": "madalamatele liigadele",
         "games": "madalamate liigade mängud", "one": "madalama liiga mängu", "many": "madalamate liigade mänge",
         "hidden": True},  # ajutiselt peidus valikust; lehed ehitatakse edasi
-    4: {"name": "Noored", "slug": "noored", "title": "Noorte mängud",
+    4: {"name": "Noored", "slug": "noored", "title": "Noorte mängud", "to": "noortele",
         "games": "noorte mängud", "one": "noortemängu", "many": "noortemänge"},
-    5: {"name": "Koondised", "slug": "koondised", "title": "Koondiste mängud",
+    5: {"name": "Koondised", "slug": "koondised", "title": "Koondiste mängud", "to": "koondistele",
         "games": "koondiste mängud", "one": "koondisemängu", "many": "koondisemänge"},
 }
 
