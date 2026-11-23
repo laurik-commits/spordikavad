@@ -104,7 +104,7 @@ Kolm sammu: adapter, konfiguratsioonirida ja test.
   1. ✅ Järelvaatamise lingid allikatest (kasipall.ee, jalgpall.ee) ja liiga kaupa „Selle liiga mänge on näidanud“ (`ulekanded.toml` + mängudest õpitu).
   2. ✅ Delfi TV ülekannete kava: tulevastele mängudele „Otse: Delfi TV“ (`scrapers/kava_delfi.py`, seosed `data/ulekanded.json`).
   3. ✅ ERR telekava (ETV, ETV2, 8 päeva; `scrapers/kava_err.py`), ka ürituste alad (suusatamine, ralli …).
-  4. Otsinguagent kontrollib teadaolevaid kanaleid, kelle kava automaatselt ei loe (nt Postimees), ja lisab uusi.
+  4. ✅ Otsinguagent kontrollib kanaleid, kelle kava automaatselt ei loe (nt Postimees), lisab ülekanded (`[[mang]]`) ja liigadele uusi kanaleid (`[[liiga]]`); automaatne merge kontrollib (uue kanali lisab omanik).
 - **Piletid** (omanikuga kokku lepitud 2026-11-20): püsiinfo seadistusfailis (klubi → piletimüüja link), mängu real „Piletid ↗“. Kui allika mängulehel on piletilink juba olemas, võtta see kaasa. Mängupõhist kogumist piletimüüjatelt ei tee (hooldus, tingimused).
 - Päevade ribale kuu nimi, kui riba ulatub üle kuu vahetuse.
 - **Jalgpalli karikad** (omanikuga kokku lepitud „millalgi tulevikus“): Tipneri karikas, naiste karikas, superkarikas. Vaja on iCal-lugejat (vt SOURCES.md „Täiendavate võistluste ülevaade“).

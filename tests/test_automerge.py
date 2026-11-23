@@ -159,6 +159,87 @@ class SourceRegisterGateTest(unittest.TestCase):
         self.assertTrue(any("tundmatu liik" in p for p in self.run_sources(invalid)))
 
 
+BROADCASTS = '''
+[[kanal]]
+nimi = "Postimees"
+url = "https://tv.postimees.ee/"
+
+[[kanal]]
+nimi = "YouTube"
+
+[[liiga]]
+sport = "kasipall"
+liigad = ["Meistriliiga (mehed)"]
+kanalid = ["Postimees"]
+'''
+
+MANG = '''
+[[mang]]
+sport = "kasipall"
+algus = 2026-11-28T18:00:00
+kodu = "Põlva Serviti"
+voorad = "HC Viimsi/Alexela"
+kanal = "Postimees"
+url = "https://sport.postimees.ee/123/tana-otse"
+lisatud = 2026-11-22
+markus = "Postimehe teade"
+'''
+
+ARTICLE = ("<html><body><h1>OTSEÜLEKANNE ⟩ Põlva Serviti võõrustab Viimsit</h1>"
+           "<p>Käsipalli meistriliiga.</p></body></html>")
+
+
+class BroadcastGateTest(unittest.TestCase):
+    def run_broadcasts(self, head, base=BROADCASTS, pages=None):
+        files = {"config.toml": CONFIG, "venues.toml": VENUES, "kasitsi.toml": ""}
+        b = dict(files, **{"ulekanded.toml": base})
+        h = dict(files, **{"ulekanded.toml": head})
+        pages = pages if pages is not None else {"https://sport.postimees.ee/123/tana-otse": (200, ARTICLE)}
+        return am.evaluate(["ulekanded.toml"], b.get, h.get, TODAY, fake_get(pages), UA)
+
+    def test_new_game_and_league_row_pass(self):
+        self.assertEqual(self.run_broadcasts(BROADCASTS + MANG), [])
+        row = '\n[[liiga]]\nsport = "kasipall"\nliigad = ["Meistriliiga (naised)"]\nkanalid = ["YouTube"]\n'
+        self.assertEqual(self.run_broadcasts(BROADCASTS + row, pages={}), [])   # liiga rida lehte ei ava
+
+    def test_page_must_name_both_teams(self):
+        problems = self.run_broadcasts(BROADCASTS + MANG, pages={
+            "https://sport.postimees.ee/123/tana-otse": (200, "<p>Põlva Serviti mängib täna.</p>")})
+        self.assertTrue(any("Viimsi" in p for p in problems))
+        problems = self.run_broadcasts(BROADCASTS + MANG, pages={
+            "https://sport.postimees.ee/robots.txt": (200, "User-agent: *\nDisallow: /"),
+            "https://sport.postimees.ee/123/tana-otse": (200, ARTICLE)})
+        self.assertTrue(any("robots.txt keelab" in p for p in problems))
+
+    def test_entry_rules(self):
+        cases = {
+            "algus = 2026-11-28T18:00:00": ("algus = 2027-01-20T18:00:00", "päeva sees"),
+            "lisatud = 2026-11-22": ("lisatud = 2026-11-01", "lisatud"),
+            'markus = "Postimehe teade"': ('markus = ""', "markus"),
+            'url = "https://sport.postimees.ee/123/tana-otse"': ('url = "https://muu.ee/x"', "kanali"),
+            'kanal = "Postimees"': ('kanal = "Go3"', "pole [[kanal]]"),
+        }
+        for old, (new, expected) in cases.items():
+            problems = self.run_broadcasts(BROADCASTS + MANG.replace(old, new))
+            self.assertTrue(any(expected in p for p in problems), (old, problems))
+
+    def test_owner_only_changes(self):
+        new_channel = BROADCASTS + '\n[[kanal]]\nnimi = "Go3"\nurl = "https://go3.tv/"\n'
+        self.assertTrue(any("[[kanal]]" in p for p in self.run_broadcasts(new_channel)))
+        changed_row = BROADCASTS.replace('kanalid = ["Postimees"]', 'kanalid = ["YouTube"]')
+        self.assertTrue(any("olemasolev [[liiga]]" in p for p in self.run_broadcasts(changed_row)))
+        # tulevast kirjet ei tohi eemaldada, möödunut võib
+        self.assertTrue(any("tulevane" in p for p in self.run_broadcasts(BROADCASTS, base=BROADCASTS + MANG)))
+        past = MANG.replace("2026-11-28T18:00:00", "2026-11-20T18:00:00")
+        row = '\n[[liiga]]\nsport = "kasipall"\nliigad = ["Meistriliiga (naised)"]\nkanalid = ["YouTube"]\n'
+        self.assertEqual(self.run_broadcasts(BROADCASTS + row, base=BROADCASTS + past, pages={}), [])
+
+    def test_repo_file_unchanged_is_not_a_change(self):
+        self.assertEqual(am.check_broadcasts(BROADCASTS, BROADCASTS, TODAY), ([], [], False))
+        self.assertTrue(am.stem_found(am._norm("võõrustab Viimsit"), "HC Viimsi/Alexela"))
+        self.assertFalse(am.stem_found(am._norm("võõrustab Kehrat"), "HC Viimsi/Alexela"))
+
+
 class PageMatchTest(unittest.TestCase):
     def test_date_formats(self):
         d = date(2026, 12, 5)

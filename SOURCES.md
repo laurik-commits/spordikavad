@@ -290,7 +290,7 @@ Otsingu agendi PR (`claude/otsing-*`) läheb `main` harusse ilma omaniku ülevaa
 
 1. **Testid** (töövoog „Testid“): kogu testikomplekt ja `python -m scrapers.kasitsi`.
 2. **Kontroll** (töövoog „Automaatne merge“, skript `scripts/automerge_check.py`). Töövoog ja skript tulevad alati `main` harust, PR-i faile loetakse ainult andmetena, nii et PR ei saa kontrolli muuta.
-   - Muudetud on ainult `kasitsi.toml`, `venues.toml` ja `config.toml`. Koodi muutvad PR-id jäävad alati omanikule.
+   - Muudetud on ainult `kasitsi.toml`, `venues.toml`, `config.toml`, `allikad.toml` ja `ulekanded.toml`. Koodi muutvad PR-id jäävad alati omanikule.
    - `config.toml`: ainult uued kohad `[geo.place]` all olemasoleva maakonnaga.
    - `venues.toml`: olemasolevad saalid muutmata, uusi kuni 5, linn Eestis.
    - `kasitsi.toml`: fail korrektne, olemasolevaid kirjeid ei muudeta, eemaldada võib ainult üle 30 päeva vanu. Uusi 1–10, algus tänasest kuni 60 päeva, `added` viimase 3 päeva sees, `note` (hinnang) olemas, saal teada ja Eestis.
@@ -298,6 +298,7 @@ Otsingu agendi PR (`claude/otsing-*`) läheb `main` harusse ilma omaniku ülevaa
 4. **Merge:** squash, ainult sama commit'iga, mille testid läbisid (`--match-head-commit`). Siis käivitatakse lehe ehitus.
 5. **Järelkontroll:** nädalaplaani agent loetleb eelmise nädala automaatselt merge'itud PR-id. Vale kirje parandamiseks: kustuta see `kasitsi.toml`-ist (tavaline PR).
 6. **Allikate register** (`allikad.toml`): agent võib lisada uusi allikaid (kasutus agent, vihje või keelatud) ning uuendada olemasolevatel välju `kontrollitud`, `markus`, `kuju`, `robots`, `kandidaat`. Kustutada, ümber nimetada või adapteriks märkida saab ainult omanik.
+7. **Ülekanded** (`ulekanded.toml`, lisatud 2026-11-23): agent võib lisada `[[liiga]]` ridu olemasolevate kanalitega (kuni 5) ja `[[mang]]` kirjeid (kuni 10, algus tänasest kuni 21 päeva, `lisatud` viimase 3 päeva sees, `markus` olemas, link kanali saidil). Iga uue `[[mang]]` lingi kohta kontrollitakse robots.txt-i ja et lehel on mõlema võistkonna nimi (käändes sobib). Uue kanali (`[[kanal]]`) lisab või muudab ainult omanik: selline PR jääb ülevaatusele.
 
 ## Allikate register (`allikad.toml`, lisatud 2026-11-22)
 
@@ -318,6 +319,7 @@ Mängu real on ekraani ikoon ja mängu lehel nupp „Otse“ või „Vaata järe
 - **Delfi TV kava** ✅ (adapter `scrapers/kava_delfi.py`, `ulekanded.toml` → `kava = "delfi"`): `portal-feeds.api.delfi.ee/portal-feeds-proxy/v1/stream-schedule` (JSON, sama, mida tv.delfi.ee kava leht kasutab; api hostil robots.txt puudub, tv.delfi.ee robots lubab). Umbes kaks nädalat ette: kuupäev, kellaaeg (UTC), ala (`label`) ja „Kodu - Võõras“. Kava read seotakse olemasolevate mängudega (ala, kellaaeg ±45 min, mõlema võistkonna nimes ühine eristav sõna); kahe võrdse kandidaadi korral jäetakse vahele. Seosed hoitakse failis `data/ulekanded.json` (mängu id → link, 180 päeva), nii jääb link ka möödunud päevale ja õppimisele. 2026-11-23: 15 kava mängust 11 seoti, ülejäänud 4 on korvpallimängud, mida lehel pole (TÜ leht maas, teiste klubide omavahelised mängud). Kava ridu mängudena ei lisata.
 - **ERR telekava** ✅ (adapter `scrapers/kava_err.py`, `kava = "err"`): err.ee telekava lehe JSON `www.err.ee/api/tvSchedule/getTimelineSchedule?day=&month=&year=&channel=etv|etv2` (robots.txt keelab ainult nimelised robotid, `User-agent: *` gruppi pole). Loeme ETV ja ETV2 8 päeva (16 päringut). Spordiülekanne tuntakse ära nime algusest („Korvpalli …“, „Laskesuusatamise …“); pallimängul on pärast esimest punkti „Kodu - Võõras“, tärniga nimi on kordus ja jäetakse välja. Link viib saate Jupiteri lehele. Ürituse aladel (suusatamine, ralli, uisutamine …) seotakse nime sõnade järgi: ülekande päev ürituse päevade sees ja vähemalt 2 ühist sõna (käänded lubatud, „Otepää“ = „Otepääl“). 2026-11-23: ETV2 27.11 kell 18.45 „Korvpalli MM-valikmäng. Eesti - Prantsusmaa“ seoti käsitsi lisatud koondisemänguga.
 - **Postimees** teatab ülekandest uudises alles mängupäeval („TÄNA OTSEÜLEKANNE“), RSS katab umbes ühe päeva ja leht ehitatakse hommikul. Seepärast seda automaatselt ei loe: liiga kaupa on Postimees teada (käsipalli meistriliiga järelvaatamise lingid).
+- **Otsinguagent** (E ja N): kontrollib kanaleid, mille kava automaatselt ei loeta (Postimees, klubide ja liitude YouTube), ning lisab teadaolevad ülekanded `[[mang]]` kirjetena. Need seotakse mängudega samamoodi nagu kava read, seega vale nimi lehele ei jõua. Kui agent leiab liigale uue ülekandja, lisab ta `[[liiga]]` rea (olemasolev kanal) või teeb ettepaneku uue kanali kohta (omanik kinnitab).
 - **Kontroll:** `python ulekanded.py` (faili vead). Testid kontrollivad faili igal PR-il.
 
 ## Pistekontroll 2026-11-20

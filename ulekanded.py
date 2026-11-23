@@ -12,9 +12,13 @@ Kaks allikat:
    hoitakse failis data/ulekanded.json (mängu id → link), et ka möödunud päevadel ja õppimisel oleks see
    olemas. Kava ridu ei lisata mängudena.
 
+4. Käsitsi teadaolev ülekanne (`[[mang]]`, lisab otsinguagent või omanik): käsitletakse nagu kava rida,
+   seega seotakse ainult olemasoleva mänguga.
+
 ulekanded.toml:
   [[kanal]]  ülekandja nimi (sama, mis `video_by`), leht, kuhu link viib, ja valikuliselt kava (adapter)
   [[liiga]]  sport + liigad (täpsed nimed) või liiga_algus (nimi algab nii, nt koondised) + kanalid (nimed)
+  [[mang]]   sport, algus, kodu, voorad, kanal, url (kanali saidil), lisatud, markus
 
     python ulekanded.py   kontrollib faili (väljumiskood 1, kui vigu on)
 """
@@ -33,6 +37,7 @@ from dataclasses import replace
 from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Iterable
+from urllib.parse import urlsplit
 
 from scrapers.model import SPORTS, TALLINN, Event
 
@@ -80,6 +85,20 @@ def validate(cfg: dict) -> list[str]:
         kava = k.get("kava", "")
         if kava and not re.fullmatch(r"[a-z0-9_]+", kava):
             errors.append(f"kanal {name}: kava peab olema adapteri nimi (scrapers/kava_<nimi>.py)")
+    registry = {k.get("nimi", "").strip(): k for k in cfg.get("kanal", [])}
+    for i, m in enumerate(cfg.get("mang", []), 1):
+        label = f"mang {i} ({m.get('kodu', '?')} – {m.get('voorad', '')})"
+        if m.get("sport") not in SPORTS:
+            errors.append(f"{label}: tundmatu ala")
+        if not isinstance(m.get("algus"), datetime):
+            errors.append(f"{label}: algus peab olema kuupäev ja kellaaeg (nt 2026-12-05T18:00:00)")
+        if not str(m.get("kodu", "")).strip():
+            errors.append(f"{label}: kodu puudub")
+        kanal = registry.get(m.get("kanal", ""))
+        if kanal is None:
+            errors.append(f"{label}: kanal {m.get('kanal')!r} pole [[kanal]] nimekirjas")
+        elif not domain_ok(str(m.get("url", "")), kanal):
+            errors.append(f"{label}: url peab olema https ja kanali {kanal['nimi']!r} saidil")
     for i, entry in enumerate(cfg.get("liiga", []), 1):
         label = f"liiga {i} ({entry.get('sport', '?')})"
         if entry.get("sport") not in SPORTS:
@@ -92,6 +111,36 @@ def validate(cfg: dict) -> list[str]:
             if name not in names:
                 errors.append(f"{label}: kanal {name!r} pole [[kanal]] nimekirjas")
     return errors
+
+
+_YOUTUBE = ("youtube.com", "youtu.be")
+
+
+def _site(host: str) -> str:
+    """Saidi domeen: kaks viimast osa (sport.postimees.ee → postimees.ee)."""
+    return ".".join(host.lower().split(".")[-2:])
+
+
+def domain_ok(url: str, kanal: dict) -> bool:
+    """Mängu link peab olema kanali saidil (YouTube'il youtube.com / youtu.be), https ja mitte sotsiaalmeedia."""
+    parts = urlsplit(url)
+    if parts.scheme != "https" or not parts.hostname or any(h in url for h in BANNED_HOSTS):
+        return False
+    if kanal.get("url"):
+        return _site(parts.hostname) == _site(urlsplit(kanal["url"]).hostname or "")
+    return kanal.get("nimi") == "YouTube" and _site(parts.hostname) in _YOUTUBE
+
+
+def manual_streams(cfg: dict) -> list[dict]:
+    """Käsitsi (otsinguagendi) lisatud ülekanded [[mang]] samal kujul nagu kava read (vt match)."""
+    out = []
+    for m in cfg.get("mang", []):
+        if not isinstance(m.get("algus"), datetime):
+            continue
+        start = m["algus"] if m["algus"].tzinfo else m["algus"].replace(tzinfo=TALLINN)
+        out.append({"start": start.astimezone(TALLINN), "sport": m.get("sport", ""), "home": m.get("kodu", ""),
+                    "away": m.get("voorad", ""), "url": m.get("url", ""), "by": m.get("kanal", "")})
+    return out
 
 
 def _matches(entry: dict, sport: str, league: str) -> bool:
