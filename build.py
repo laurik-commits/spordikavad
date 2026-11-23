@@ -379,7 +379,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST) -> int
                 if s in present:
                     filters.append({"key": s, "label": SPORTS[s], "none": False, "msg": "", "count": present[s]})
                 else:
-                    # "saalihokimänge" (kõik liigad) või "saalihoki kõrgliigamänge"
+                    # "saalihokimänge" (kõik liigad) või "saalihoki tippvõistlusi"
                     if s in EVENT_SPORTS:  # "motospordivõistlusi" (üritustel pole liigasid)
                         games = f"{SPORT_GEN[s]}võistlusi"
                     else:

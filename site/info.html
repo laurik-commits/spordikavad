@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mis siin on? | Ela kaasa</title>
-<meta name="description" content="Ela kaasa näitab Eesti spordimänge, mida saab kohapeal vaatamas käia: kõrgliigad, esiliigad, noored ja koondised. Siit leiad, millised alad ja liigad on kaetud ja kust andmed tulevad.">
+<meta name="description" content="Ela kaasa näitab Eesti spordimänge, mida saab kohapeal vaatamas käia: tippvõistlused (kõrgliigad), esiliigad, noored ja koondised. Siit leiad, millised alad ja liigad on kaetud ja kust andmed tulevad.">
 <link rel="canonical" href="{{ canonical }}">
 <meta name="theme-color" content="#14457a">
 <meta name="color-scheme" content="light dark">
@@ -18,7 +18,7 @@
 
   <h2>Alad ja liigad</h2>
   <table>
-    <thead><tr><th>Ala</th><th>Kõrgliigad</th><th>Esiliigad</th>{% if show_minor %}<th>Madalamad liigad</th>{% endif %}<th>Noored</th><th>Koondised</th></tr></thead>
+    <thead><tr><th>Ala</th><th>Tippvõistlused</th><th>Esiliigad</th>{% if show_minor %}<th>Madalamad liigad</th>{% endif %}<th>Noored</th><th>Koondised</th></tr></thead>
     <tbody>
     {% for row in coverage %}
       <tr><td><i class="dot s-{{ row.key }}"></i> {{ row.sport }}</td><td>{{ row.top | join(', ') }}</td><td>{{ row.low | join(', ') or '–' }}</td>{% if show_minor %}<td>{{ row.minor | join(', ') or '–' }}</td>{% endif %}<td>{{ row.youth | join(', ') or '–' }}</td><td>{{ row.national | join(', ') or '–' }}</td></tr>

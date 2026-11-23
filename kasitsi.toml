@@ -17,7 +17,7 @@
 # Väljad:
 #   sport     jalgpall | korvpall | jaahoki | vorkpall | kasipall | saalihoki | saalijalgpall | motosport | kergejoustik
 #   league    liiga või ürituse nimi, nt "Sõprusmäng", "EEVZA U16 neidude turniir"
-#   level     1 kõrgliigad, 2 esiliigad, 4 noored, 5 koondised (määrab, millises kalendris mäng on)
+#   level     1 tippvõistlused (kõrgliigad, MV), 2 esiliigad, 4 noored, 5 koondised (määrab, millises kalendris mäng on)
 #   kind      mäng | sõprusmäng | turniir | eriüritus | võistlus
 #   start     Tallinna aeg 2026-12-05T18:00:00; kui kellaaeg pole teada, ainult kuupäev 2026-12-05
 #   home      kodumeeskond või ürituse nimi (turniiril: "EEVZA U16 neidude turniir")

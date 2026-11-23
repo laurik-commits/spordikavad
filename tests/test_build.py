@@ -52,7 +52,7 @@ class RenderTest(unittest.TestCase):
 
     def test_empty_day_links_to_next_games(self):
         html = self.read("index.html")
-        self.assertIn("Täna ei ole Tallinnas ühtegi kõrgliigamängu.", html)
+        self.assertIn("Täna ei ole Tallinnas ühtegi tippvõistlust.", html)
         self.assertIn('href="2026-11-22/"', html)
 
     def test_day_sorted_and_relative_links(self):
@@ -72,7 +72,7 @@ class RenderTest(unittest.TestCase):
         for s in ("jalgpall", "jaahoki", "vorkpall", "kasipall", "saalihoki", "saalijalgpall"):
             self.assertIn(f'data-filter="{s}"', html)
         self.assertIn('data-filter="saalihoki" aria-pressed="false" class="nogames" data-none="1"', html)
-        self.assertIn("Järgmise kahe nädala jooksul ei ole Tallinnas saalihoki kõrgliigamänge.", html)
+        self.assertIn("Järgmise kahe nädala jooksul ei ole Tallinnas saalihoki tippvõistlusi.", html)
         self.assertIn("Jalgpalli hooaeg algab märtsis.", html)          # talvel hooajaväline
         self.assertNotIn('data-filter="vorkpall" aria-pressed="false" class="nogames"', html)
         # esiliigades jäähokit pole üldse → nuppu pole
@@ -99,7 +99,7 @@ class RenderTest(unittest.TestCase):
         self.assertIn("Tartlased", tartu)
         self.assertNotIn("spordihoone, Tartu</span>", tartu)   # linna vaates linna ei korrata (jagamistekstis on)
         self.assertIn('href="../../style.css"', tartu)
-        self.assertIn("Spordimängud Tartus", tartu)
+        self.assertIn("Tippsport Tartus", tartu)
         harju = self.read("harjumaa/2026-11-21/index.html")
         self.assertIn("Viimsilased", harju)
         self.assertIn("Viimsi Kool, Viimsi", harju)
@@ -107,7 +107,7 @@ class RenderTest(unittest.TestCase):
         eesti = self.read("eesti/2026-11-21/index.html")
         self.assertIn("Tartlased", eesti)
         self.assertIn("Viimsilased", eesti)
-        self.assertIn("Spordimängud Eestis", eesti)
+        self.assertIn("Tippsport Eestis", eesti)
 
     def test_city_picker_links_keep_the_day(self):
         tartu = self.read("tartu/2026-11-21/index.html")
@@ -185,7 +185,7 @@ class RenderTest(unittest.TestCase):
         self.assertTrue((self.tmp / "koik/tartu/2026-11-21/index.html").exists())
         # kõrgliigade valik näitab nüüd valikus "Kõik liigad" esimesena ja sitemapis seda ei ole
         menu = self.read("2026-11-21/index.html")
-        self.assertLess(menu.index("<span>Kõik liigad</span>"), menu.index("<span>Kõrgliigad</span>"))
+        self.assertLess(menu.index("<span>Kõik liigad</span>"), menu.index("<span>Tippvõistlused</span>"))
         self.assertNotIn("/koik/", self.read("sitemap.xml"))
 
     def test_share_button_and_game_page_with_preview(self):

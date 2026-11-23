@@ -11,16 +11,18 @@ from zoneinfo import ZoneInfo
 TALLINN = ZoneInfo("Europe/Tallinn")
 
 # tase → nimi valikus, kaust, pealkirja algus ja sõnavormid lausetesse:
-#   games: "kõrgliigade mängud" (sissejuhatus, kirjeldus, "Selle päeva … →")
-#   one:   "Täna ei ole Tallinnas ühtegi kõrgliigamängu."
-#   many:  "Järgmise kahe nädala jooksul ei ole Tallinnas saalihoki kõrgliigamänge."
+#   games: "tippvõistlused" (sissejuhatus, kirjeldus, "Selle päeva … →")
+#   one:   "Täna ei ole Tallinnas ühtegi tippvõistlust."
+#   many:  "Järgmise kahe nädala jooksul ei ole Tallinnas saalihoki tippvõistlusi."
+# Tase 1 on pallimängudes kõrgliigad, ürituste aladel täiskasvanute tippvõistlused (MV, KV, rahvusvahelised).
+# Kaust jääb "korgliigad/", et vanad lingid töötaksid.
 DEFAULT_LEVEL = 0  # avaleht: kõik liigad (lehe juurkaust); muudetav config.toml [site] default_level
 LEVELS = {
     # 0 = kõik valikus näidatavad tasemed ühes nimekirjas (peidetud taset ei loeta)
     0: {"name": "Kõik liigad", "slug": "koik", "title": "Kõik spordimängud",
         "games": "kõik mängud", "one": "mängu", "many": "mänge", "all": True},
-    1: {"name": "Kõrgliigad", "slug": "korgliigad", "title": "Spordimängud",
-        "games": "kõrgliigade mängud", "one": "kõrgliigamängu", "many": "kõrgliigamänge"},
+    1: {"name": "Tippvõistlused", "slug": "korgliigad", "title": "Tippsport",
+        "games": "tippvõistlused", "one": "tippvõistlust", "many": "tippvõistlusi"},
     2: {"name": "Esiliigad", "slug": "esiliigad", "title": "Esiliigade mängud",
         "games": "esiliigade mängud", "one": "esiliigamängu", "many": "esiliigamänge"},
     3: {"name": "Madalamad liigad", "slug": "madalamad", "title": "Madalamate liigade mängud",
