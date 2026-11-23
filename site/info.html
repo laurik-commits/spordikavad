@@ -41,7 +41,7 @@
     <li><strong>Korvpall:</strong> Bigbank/Kalevi mängud ja Tartu Ülikooli korvpallimeeskonna kodumängud on olemas, need tulevad klubide kodulehtedelt. Korvpalliliidu koduleht ei luba andmeid automaatselt koguda, seepärast on teiste klubide mänge siin vähe. Kõik mängud leiad <a href="https://www.basket.ee/et/ajakava-ja-tulemused?action=schedule">basket.ee lehelt</a>.</li>
     <li><strong>Jäähoki:</strong> Optibet Hokiliiga (HC Panter) on olemas. Unibet Hokiliigast on siin HC Vipersi kodumängud ja kõik HC Everesti mängud, naiste hokiliigast HC Everesti mängud. Teiste klubide omavaheliste mängude ajakava ei saa automaatselt lugeda, neist on siin ainult üksikud käsitsi lisatud mängud.</li>
     <li><strong>Veel tulemas:</strong> naiste käsipallikarikas ja saalijalgpalli esiliiga lisanduvad, kui liidud nende ajakava avaldavad. Jalgpallikarikad lisanduvad hiljem.</li>
-    <li><strong>Turniiritabelid ja ülekanded.</strong> Möödunud mängude tulemusi näitame siis, kui allikas need avaldab.</li>
+    <li><strong>Turniiritabelid.</strong> Möödunud mängude tulemusi näitame siis, kui allikas need avaldab.</li>
   </ul>
   <p>Jalgpalli hooaeg kestab märtsist novembrini, seepärast on talvel jalgpallimänge vähe.</p>
 
@@ -54,6 +54,16 @@
   </ul>
   <p>Üksikud sõprusmängud, turniirid, eriüritused ja koondisemängud on lisatud käsitsi. Need põhinevad liitude, klubide, hallide või korraldajate ametlikel teadetel ja nende mängulehel on link teatele.</p>
   <p><strong>Enne kohaleminekut kontrolli kellaaega</strong>, sest see võib muutuda.</p>
+  <h2 id="ulekanded">Ülekanded</h2>
+  <p>Kui teame, kus mängu otse või järele näeb, on mängu real ekraani ikoon ja mängu lehel nupp „Otse“ või „Vaata järele“. Näitame ainult ametlikke ülekandeid: liitude, klubide ja meediamajade omi.</p>
+  <p>Nimekiri täieneb ise: iga mäng, mille ülekande link leitakse, lisab selle kanali oma liigale.</p>
+  {% if watch_rows %}
+  <ul>
+  {% for row in watch_rows %}
+    <li>{{ row.sport }}, {{ row.league }}: {% for c in row.channels %}{% if c.url %}<a href="{{ c.url }}" rel="noopener">{{ c.name }}</a>{% else %}{{ c.name }}{% endif %}{{ ', ' if not loop.last }}{% endfor %}</li>
+  {% endfor %}
+  </ul>
+  {% endif %}
   {% if analytics_enabled and analytics_token %}
   <h2>Privaatsus</h2>
   <p>Külastusi loendame Cloudflare Web Analyticsiga. See ei kasuta küpsiseid ega kogu isikuandmeid. Näeme ainult koondarve, näiteks mitu korda lehti vaadati ja millistelt seadmetelt.</p>

@@ -308,6 +308,16 @@ Kõik kohad, kust leiab infot Eestis toimuvate mängude kohta, ühes failis: hal
 - **Kontroll:** `python allikad.py` (kokkuvõte ja vead), `python allikad.py --agent` (agendi kontrollnimekiri). Testid kontrollivad faili igal PR-il.
 - **Esimene versioon** (50 allikat) on kontrollitud 2026-11-22: iga url vastas, robots.txt vaadatud. Kalevi spordihallil, Pärnu spordihallil ning Narva spordikeskusel ja jäähallil oma üritustekalendrit ei leitud, nende üritusi otsitakse linnade kalendritest.
 
+## Ülekanded (`ulekanded.toml`, `ulekanded.py`, lisatud 2026-11-23)
+
+Mängu real on ekraani ikoon ja mängu lehel nupp „Otse“ või „Vaata järele“, kui teame mängu ülekande linki (`Event.video`, `video_by`). Mängu lehel on ka rida „Selle liiga mänge on näidanud: …“. Ainult ametlikud ülekanded (liit, klubi, meediamaja).
+
+- **Mängu link allika lehelt:** kasipall.ee liiga lehel on peetud mängul ikoon „YouTube – järelvaatamine“ või „Postimees – järelvaatamine“. jalgpall.ee liiga ja koondise lehel on peetud mängul YouTube'i nupp (`ico-btn yt`). Premium liigas viib see jalgpall.ee klikiloenduri kaudu YouTube'i (`/log/link_counter.php/?id=…&type=3`), seda linki kasutame. Tulevastel mängudel neid linke pole (kontrollitud 2026-11-23).
+- **Liiga kaupa:** käsitsi kontrollitud info (`ulekanded.toml` [[liiga]]) ja mängudest õpitu: iga mäng, millel on `video_by`, lisab selle kanali oma liigale (arhiivist viimased 180 päeva). Nimekiri on ka „Meist“ lehel.
+- **Kontrollitud 2026-11-23:** Delfi TV näitab võrkpalli Balti liigat ja Eesti-Läti korvpalliliigat (tv.delfi.ee ülekannete kava). ERR näitab Premium liigast üht mängu voorus ja meeste koondise mänge. Postimees näitab käsipalli meistriliigat.
+- **Järgmised sammud:** Delfi TV ülekannete kava (`portal-feeds.api.delfi.ee/portal-feeds-proxy/v1/stream-schedule`, JSON, robots.txt puudub, tv.delfi.ee robots lubab) annab kaks nädalat ette mängu kuupäeva, kellaaja ja võistkonnad, seega saab tulevastele mängudele panna „Otse: Delfi TV“. ERR ja Postimees teatavad ülekandest uudises mängupäeval („TÄNA OTSE“).
+- **Kontroll:** `python ulekanded.py` (faili vead). Testid kontrollivad faili igal PR-il.
+
 ## Pistekontroll 2026-11-20
 
 Iga allika kohta üks mäng lehel olevatest andmetest, võrreldud allika enda mängulehega:

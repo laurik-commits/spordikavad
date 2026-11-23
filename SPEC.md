@@ -82,6 +82,8 @@ class Event:
     url: str           # link allika mängulehele (või liiga kalendrile)
     source: str        # adapteri nimi
     time_tbc: bool     # True, kui kellaaeg pole veel kinnitatud
+    video: str         # otseülekande või järelvaatamise link (tühi, kui ei tea), vt ulekanded.py
+    video_by: str      # kes näitab: "YouTube", "Postimees", "Delfi TV" …
 ```
 
 ### Toimumiskohad

@@ -8,6 +8,8 @@ kuupäev, kell, võistkonnad ja protokolli link. Saali nime liiga lehel pole, se
 protokolli lehel (ikoon "location_on"). Protokolli lehti küsitakse ainult lähipäevade mängude kohta.
 Tulevaste mängude protokollis on saal sageli veel määramata – siis kasutatakse kodumeeskonna
 lehe välja "Koduväljak" (üks päring meeskonna kohta).
+Peetud mängu real on ülekande ikoon ("YouTube – järelvaatamine", "Postimees – järelvaatamine"): see läheb
+välja `video` (link) ja `video_by` (ikooni nimi).
 """
 
 from __future__ import annotations
@@ -35,6 +37,8 @@ _VENUE = re.compile(r"location_on\s*</span>.*?<strong>([^<]+)</strong>", re.S)
 _HOME_FIELD = re.compile(r"Koduväljak</h6>.*?<strong>([^<]+)</strong>", re.S)
 _SCORE = re.compile(r'id="calendar_score_text_\d+"[^>]*>\s*([^<]*?)\s*</strong>')  # mängitud: "24 : 33"
 _TEAM_LINK =re.compile(r'href="(https://kasipall\.ee/team/\d+/\d+)"')
+# ülekande ikoon (peetud mängul "YouTube – järelvaatamine", "Postimees – järelvaatamine"): link ja nimi (alt)
+_MEDIA = re.compile(r'<a[^>]+href="(https://[^"]+)"[^>]*>\s*<img[^>]+/image/media/[^"]*"[^>]*\balt="([^"]+)"')
 # Võistkonna nime lõpus olev " N" (naised) või " K" (karikas) – liiga nimi ütleb sama
 _SUFFIX = re.compile(r"\s+[NK]$")
 
@@ -62,8 +66,11 @@ def parse_list(page: str) -> list[dict]:
         seen.add(gid)
         team_link = _TEAM_LINK.search(block)
         score = _SCORE.search(block)
+        media = _MEDIA.search(block)
         games.append({
             "result": parse_score(score.group(1)) if score else "",
+            "video": html.unescape(media.group(1)) if media else "",
+            "video_by": html.unescape(media.group(2)).strip() if media else "",
             "home_team_url": team_link.group(1) if team_link else "",
             "id": gid,
             "start": datetime.strptime(f"{d.group(1)} {t.group(1) if t else '00:00'}", "%d.%m.%Y %H:%M"),
@@ -88,7 +95,7 @@ def to_event(g: dict, venue: str, league: str, level: int = 1) -> Event:
     return new_event(
         source=NAME, sport=SPORT, league=league, start=g["start"], home=g["home"], away=g["away"],
         venue=venue, city="", url=f"{BASE}/protocol/{g['id']}", time_tbc=g["time_tbc"], level=level,
-        result=g.get("result", ""),
+        result=g.get("result", ""), video=g.get("video", ""), video_by=g.get("video_by", ""),
     )
 
 

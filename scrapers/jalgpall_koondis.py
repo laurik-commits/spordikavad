@@ -10,6 +10,7 @@ välisriigi staadion: need jäävad geo-filtriga välja.
 Võtame ainult mängud, kus esimene (kodu-) võistkond on Eesti koondis ("Eesti", "Eesti U21" jne), sest
 võõrsil mängude väljak on välismaal ja tundmatu saali hoiatusi me ei tahaks. Eestis peetavad neutraalse
 kodu-/võõrsil järjekorraga mängud (nt Balti turniir) võivad seetõttu puududa.
+Peetud mängu YouTube'i nupp (`ico-btn yt`) läheb välja `video` (järelvaatamine).
 """
 
 from __future__ import annotations
@@ -18,6 +19,7 @@ import html
 import re
 from datetime import datetime
 
+from .jalgpall_ejl import video_link  # sama sait, sama YouTube'i nupp (`ico-btn yt`)
 from .model import Event, new_event, parse_score
 
 NAME = "jalgpall_koondis"
@@ -55,12 +57,14 @@ def parse(page: str, team_name: str, *, sport: str = SPORT, source: str = NAME) 
         day, hhmm = when.groups()
         res = _RESULT.search(block)
         score = parse_score(re.sub(r"<[^>]+>", " ", res.group(1))) if res else ""
+        video = video_link(block)
         events.append(
             new_event(
                 source=source, sport=sport, league=f"{team_name}: {html.unescape(title.group(1))}",
                 start=datetime.strptime(f"{day} {hhmm}", "%d.%m.%Y %H:%M"),
                 home=home, away=away, venue=place, city="",
                 url=BASE + info.group(1), time_tbc=hhmm == "00:00", level=5, result=score,
+                video=video, video_by="YouTube" if video else "",
             )
         )
     return events

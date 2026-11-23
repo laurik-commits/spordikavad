@@ -81,6 +81,10 @@ class Event:
     result: str = ""  # lõppseis "kodu-võõras" (nt "3-0"; jäähokis võib lõpus olla "OT" või "SO"), tühi kuni mäng on mängitud või kui allikas seda ei anna
     level: int = 1  # 1 = kõrgliiga, 2 = esiliiga, 3 = madalamad liigad, 4 = noored, 5 = koondised (igaühel eraldi kalender)
     end: str = ""  # mitmepäevase ürituse viimane päev "YYYY-MM-DD"; tühi = ühepäevane
+    # ülekanne: link otseülekandele (tulevane mäng) või järelvaatamisele (peetud mäng) ja kes näitab
+    # ("YouTube", "Postimees", "Delfi TV"). Tühi, kui ei tea. Vt ulekanded.py.
+    video: str = ""
+    video_by: str = ""
 
     def __post_init__(self) -> None:
         if self.sport not in SPORTS:
@@ -98,8 +102,9 @@ class Event:
     def to_dict(self) -> dict:
         d = asdict(self)
         d["start"] = self.start.astimezone(TALLINN).isoformat()
-        if not d["end"]:
-            del d["end"]  # ühepäevastel (enamik) välja ei kirjutata: olemasolevad andmefailid ei muutu
+        for key in ("end", "video", "video_by"):
+            if not d[key]:
+                del d[key]  # tühjana välja ei kirjutata: olemasolevad andmefailid ei muutu
         return d
 
     @classmethod
@@ -130,6 +135,8 @@ def new_event(
     level: int = 1,
     result: str = "",
     end: date | None = None,
+    video: str = "",
+    video_by: str = "",
 ) -> Event:
     """Mugav konstruktor adapteritele: arvutab ID ja viib aja Tallinna ajavööndisse."""
     if start.tzinfo is None:
@@ -151,6 +158,8 @@ def new_event(
         level=level,
         result=result,
         end=end.isoformat() if end and end > start.date() else "",
+        video=video.strip() if video else "",
+        video_by=video_by.strip() if video and video_by else "",
     )
 
 
