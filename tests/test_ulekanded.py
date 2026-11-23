@@ -5,8 +5,8 @@ from pathlib import Path
 
 import build
 import ulekanded
-from scrapers import config, jalgpall_ejl, jalgpall_koondis, kasipall_liigad
-from scrapers.model import Event, new_event
+from scrapers import config, jalgpall_ejl, jalgpall_koondis, kasipall_liigad, kava_delfi
+from scrapers.model import TALLINN, Event, new_event
 
 FIX = Path(__file__).parent / "fixtures"
 OLD_GEO = dict(config.load()["geo"], default="tallinn")
@@ -164,6 +164,134 @@ class BuildTest(unittest.TestCase):
         e = ev(20, 19, "A")
         build.render([e], cfg, date(2026, 11, 20), out)
         self.assertNotIn("Selle liiga mänge on näidanud", (out / "m" / e.id / "index.html").read_text(encoding="utf-8"))
+
+
+def game(day, hour, minute, home, away, *, sport="vorkpall", league="Balti liiga (mehed)", tbc=False):
+    return new_event(source="t", sport=sport, league=league, start=datetime(2026, month_of(day), day, hour, minute),
+                     home=home, away=away, venue="Saal", city="Tallinn", url="https://example.org/", time_tbc=tbc)
+
+
+def month_of(day):
+    return 11 if day >= 20 else 12
+
+
+class DelfiKavaTest(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.rows = kava_delfi.parse((FIX / "kava_delfi.json").read_text(encoding="utf-8"))
+
+    def test_only_games_with_local_time(self):
+        self.assertEqual(len(self.rows), 15)   # 18 rida, neist 3 saadet
+        self.assertEqual({r["sport"] for r in self.rows}, {"vorkpall", "korvpall"})
+        r = next(r for r in self.rows if r["home"] == "Audentes/Solarstone" and r["away"] == "Barrus Võru VK")
+        self.assertEqual(r["start"].strftime("%d.%m %H:%M %z"), "27.11 19:00 +0200")   # 17:00Z
+        self.assertEqual((r["url"], r["by"]), (kava_delfi.PAGE, "Delfi TV"))
+
+    def test_hidden_and_shows_skipped(self):
+        text = ('{"attributes": {"data": {"streams": ['
+                '{"date": {"start": "2026-12-01T17:00:00Z"}, "title": "A - B", "label": "Võrkpall", "hidden": true},'
+                '{"date": {"start": "2026-12-01T17:00:00Z"}, "title": "Saade", "label": "Spordisaade"},'
+                '{"date": {"start": "2026-12-01T17:00:00Z"}, "title": "C – D", "label": "Käsipall", "url": "https://tv.delfi.ee/x"}]}}}')
+        rows = kava_delfi.parse(text)
+        self.assertEqual([(r["home"], r["away"], r["sport"], r["url"]) for r in rows],
+                         [("C", "D", "kasipall", "https://tv.delfi.ee/x")])
+        self.assertEqual(kava_delfi.parse("{}"), [])
+
+    def test_match_real_schedule(self):
+        events = [
+            game(27, 19, 0, "Audentes/Solarstone", "Barrus Võru VK"),
+            game(27, 19, 0, "E-Lux Tallinn", "Eesti Küte/Türi SK", league="Esiliiga (mehed)"),   # sama aeg, teised
+            game(28, 19, 0, "PÄRNU Võrkpalliklubi", "Ezerzeme / DU / Homelike"),
+            game(24, 19, 0, "Eesti Maaülikool/Embach", "PÄRNU VK", league="Eesti karikas (mehed)"),
+            game(5, 18, 0, "BIGBANK Tartu", "PÄRNU Võrkpalliklubi"),
+            game(5, 18, 0, "Rae Spordikool/VIASTON", "Kaunas-VDU", league="Balti liiga (naised)"),
+            game(6, 13, 0, "Selver x TalTech", "Jēkabpils Lūši"),
+            game(2, 19, 30, "Keila KK", "Bigbank/Kalev", sport="korvpall", league="Eesti-Läti Korvpalliliiga"),
+            game(5, 18, 0, "Bigbank/Kalev", "Liepaja", sport="korvpall", league="Eesti-Läti Korvpalliliiga"),
+            game(2, 0, 0, "PÄRNU VK", "Eesti Maaülikool/Embach", league="Eesti karikas (mehed)", tbc=True),
+        ]
+        links = ulekanded.match(events, self.rows)
+        matched = {(e.home, e.away) for e in events if e.id in links}
+        self.assertEqual(matched, {
+            ("Audentes/Solarstone", "Barrus Võru VK"), ("PÄRNU Võrkpalliklubi", "Ezerzeme / DU / Homelike"),
+            ("Eesti Maaülikool/Embach", "PÄRNU VK"), ("BIGBANK Tartu", "PÄRNU Võrkpalliklubi"),
+            ("Rae Spordikool/VIASTON", "Kaunas-VDU"), ("Selver x TalTech", "Jēkabpils Lūši"),
+            ("Keila KK", "Bigbank/Kalev"), ("Bigbank/Kalev", "Liepaja")})
+        link = links[events[0].id]
+        self.assertEqual((link["video_by"], link["league"], link["sport"]), ("Delfi TV", "Balti liiga (mehed)", "vorkpall"))
+
+    def test_time_window_swapped_and_tbc(self):
+        row = {"start": datetime(2026, 12, 1, 18, 0, tzinfo=TALLINN), "sport": "kasipall", "home": "Põlva Serviti",
+               "away": "Viljandi HC", "url": "https://tv/1", "by": "Delfi TV"}
+        near = game(1, 18, 30, "Viljandi HC", "Põlva Serviti", sport="kasipall")   # vahetuses, 30 min
+        far = game(1, 20, 0, "Põlva Serviti", "Viljandi HC", sport="kasipall")     # 2 h hiljem
+        tbc = game(1, 0, 0, "Põlva Serviti", "Viljandi HC", sport="kasipall", tbc=True)
+        self.assertEqual(set(ulekanded.match([near], [row])), {near.id})
+        self.assertEqual(ulekanded.match([far], [row]), {})
+        self.assertEqual(set(ulekanded.match([tbc], [row])), {tbc.id})
+
+    def test_ambiguous_row_skipped(self):
+        row = {"start": datetime(2026, 12, 1, 18, 0, tzinfo=TALLINN), "sport": "vorkpall", "home": "Tartu",
+               "away": "Pärnu", "url": "https://tv/1", "by": "Delfi TV"}
+        a = game(1, 18, 0, "Tartu", "Pärnu")
+        b = game(1, 18, 0, "Tartu VK", "Pärnu VK", league="Eesti karikas (mehed)")
+        self.assertEqual(ulekanded.match([a, b], [row]), {})
+
+    def test_generic_words_do_not_match(self):
+        row = {"start": datetime(2026, 12, 1, 18, 0, tzinfo=TALLINN), "sport": "korvpall", "home": "Keila Basket",
+               "away": "BC Pärnu", "url": "https://tv/1", "by": "Delfi TV"}
+        self.assertEqual(ulekanded.match([game(1, 18, 0, "Viimsi Basket", "BC Kalev", sport="korvpall")], [row]), {})
+
+
+class LinksStoreTest(unittest.TestCase):
+    def link(self, day, by="Delfi TV"):
+        return {"video": "https://tv/", "video_by": by, "start": f"2026-{month_of(day):02d}-{day:02d}T19:00:00+02:00",
+                "sport": "vorkpall", "league": "Balti liiga (mehed)"}
+
+    def test_update_prunes_old_and_cancelled(self):
+        today = date(2026, 11, 23)
+        old = {"vana": dict(self.link(1), start="2026-04-01T19:00:00+03:00"),   # üle 180 päeva
+               "peetud": self.link(21), "tana": self.link(23), "ara": self.link(28),
+               "teine": self.link(29, by="ERR")}
+        new = {"uus": self.link(30)}
+        out = ulekanded.update_links(old, new, today, refreshed={"Delfi TV"})
+        self.assertEqual(set(out), {"peetud", "tana", "teine", "uus"})
+        # kava lugemine ebaõnnestus → tulevasi seoseid ei kustutata
+        self.assertIn("ara", ulekanded.update_links(old, {}, today, refreshed=set()))
+
+    def test_save_only_when_changed_and_apply(self):
+        path = Path(tempfile.mkdtemp()) / "data" / "ulekanded.json"
+        e = ev(22, 19, "A")
+        links = {e.id: self.link(22)}
+        ulekanded.save_links(links, path)
+        self.assertEqual(ulekanded.load_links(path), links)
+        mtime = path.stat().st_mtime_ns
+        ulekanded.save_links(dict(links), path)
+        self.assertEqual(path.stat().st_mtime_ns, mtime)
+        own = ev(23, 19, "B", video="https://youtube.com/x", video_by="YouTube")
+        links[own.id] = self.link(23)
+        applied = ulekanded.apply([e, own, ev(24, 19, "C")], links)
+        self.assertEqual([x.video_by for x in applied], ["Delfi TV", "YouTube", ""])   # allika enda link jääb
+
+    def test_fetch_streams_reports_failure(self):
+        class Broken:
+            def get(self, url):
+                raise RuntimeError("võrk maas")
+
+        class Ok:
+            def get(self, url):
+                return (FIX / "kava_delfi.json").read_text(encoding="utf-8")
+
+        cfg = {"kanal": [{"nimi": "Delfi TV", "kava": "delfi"}, {"nimi": "YouTube"}]}
+        rows, report = ulekanded.fetch_streams(cfg, Broken())
+        self.assertEqual((rows, report[0]["status"], report[0]["source"]), ([], "failed", "kava_delfi"))
+        rows, report = ulekanded.fetch_streams(cfg, Ok())
+        self.assertEqual((len(rows), report[0]["status"], report[0]["fetched"]), (15, "ok", 15))
+        self.assertEqual(len(report), 1)   # kavata kanalit ei loeta
+
+    def test_repo_delfi_channel_has_reader(self):
+        delfi = next(k for k in ulekanded.load()["kanal"] if k["nimi"] == "Delfi TV")
+        self.assertEqual(delfi.get("kava"), "delfi")
 
 
 if __name__ == "__main__":

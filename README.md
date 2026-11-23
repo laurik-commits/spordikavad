@@ -102,7 +102,7 @@ Kolm sammu: adapter, konfiguratsioonirida ja test.
 
 - **Ülekanded** (2026-11-23 omaniku soovil, kolmes osas; taust SOURCES.md → Ülekanded):
   1. ✅ Järelvaatamise lingid allikatest (kasipall.ee, jalgpall.ee) ja liiga kaupa „Selle liiga mänge on näidanud“ (`ulekanded.toml` + mängudest õpitu).
-  2. Delfi TV ülekannete kava: tulevastele mängudele „Otse: Delfi TV“.
+  2. ✅ Delfi TV ülekannete kava: tulevastele mängudele „Otse: Delfi TV“ (`scrapers/kava_delfi.py`, seosed `data/ulekanded.json`).
   3. ERR ja Postimees mängupäeva uudistest; otsinguagent kontrollib teadaolevaid kanaleid ja lisab uusi.
 - **Piletid** (omanikuga kokku lepitud 2026-11-20): püsiinfo seadistusfailis (klubi → piletimüüja link), mängu real „Piletid ↗“. Kui allika mängulehel on piletilink juba olemas, võtta see kaasa. Mängupõhist kogumist piletimüüjatelt ei tee (hooldus, tingimused).
 - Päevade ribale kuu nimi, kui riba ulatub üle kuu vahetuse.

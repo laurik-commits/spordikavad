@@ -624,6 +624,18 @@ kasutus = "vihje"
 kontrollitud = 2026-11-22
 markus = "Uudised koondiste kodumängudest ja turniiridest. Kinnitus otsi ametlikust allikast."
 
+[[allikas]]
+nimi = "Delfi TV ülekannete kava"
+liik = "uudised"
+url = "https://tv.delfi.ee/leht/ulekanded-kava"
+alad = ["kõik"]
+piirkond = "Eesti"
+kuju = "api"
+robots = "lubatud"
+kasutus = "adapter:kava_delfi"
+kontrollitud = 2026-11-23
+markus = "Ülekannete kava (JSON, portal-feeds.api.delfi.ee). Ei ole mängude allikas: read seotakse olemasolevate mängudega, mängu juurde tuleb „Otse: Delfi TV“ (ulekanded.py). Praegu võrkpall ja korvpall."
+
 # --- Ürituste alad: võitlusspordid ja autosport (ainult vaatamist väärt: MV, rahvusvahelised, galad) ---
 
 [[allikas]]

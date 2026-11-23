@@ -7,8 +7,13 @@ Kaks allikat:
    (ulekanded.toml [[liiga]]) ja see, mida süsteem ise mängudest õpib: iga mäng, millel on `video_by`,
    lisab selle ülekandja oma liigale (arhiivist viimased LEARN_DAYS päeva). Nii täieneb nimekiri ise.
 
+3. Ülekandja kava (`[[kanal]] kava = "delfi"` → scrapers/kava_delfi.py): kava read seotakse olemasolevate
+   mängudega (`match`: ala, kellaaeg ±MATCH_MINUTES, võistkondade nimedes ühine sõna). Leitud seosed
+   hoitakse failis data/ulekanded.json (mängu id → link), et ka möödunud päevadel ja õppimisel oleks see
+   olemas. Kava ridu ei lisata mängudena.
+
 ulekanded.toml:
-  [[kanal]]  ülekandja nimi (sama, mis `video_by`) ja leht, kuhu „Kus vaadata“ link viib
+  [[kanal]]  ülekandja nimi (sama, mis `video_by`), leht, kuhu link viib, ja valikuliselt kava (adapter)
   [[liiga]]  sport + liigad (täpsed nimed) või liiga_algus (nimi algab nii, nt koondised) + kanalid (nimed)
 
     python ulekanded.py   kontrollib faili (väljumiskood 1, kui vigu on)
@@ -16,17 +21,32 @@ ulekanded.toml:
 
 from __future__ import annotations
 
+import importlib
+import json
+import logging
+import re
 import sys
 import tomllib
+import unicodedata
 from collections import Counter
+from dataclasses import replace
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Iterable
 
-from scrapers.model import SPORTS, Event
+from scrapers.model import SPORTS, TALLINN, Event
+
+log = logging.getLogger("ulekanded")
 
 ROOT = Path(__file__).resolve().parent
 DEFAULT_PATH = ROOT / "ulekanded.toml"
+LINKS_PATH = ROOT / "data" / "ulekanded.json"
 LEARN_DAYS = 180  # nii kaugelt minevikust (arhiivist) õpitakse, kes mida näitab
+MATCH_MINUTES = 45  # kava kellaaeg võib mängu algusest nii palju erineda (ülekanne algab varem)
+# sõnad, mis võistkondi ei erista (klubi tüüp, ala): nende järgi mängu kava reaga ei seota
+_GENERIC = {"vk", "kk", "bc", "fc", "hc", "sk", "bk", "sc", "vc", "jk", "kc", "the", "club", "team", "klubi",
+            "spordiklubi", "vorkpalliklubi", "korvpalliklubi", "kasipalliklubi", "jalgpalliklubi", "basket",
+            "volley", "volleyball", "basketball", "handball"}
 
 # sotsiaalmeedia ei ole allikas ega link (VISION.md); YouTube on videoplatvorm, mitte sotsiaalmeedia voog
 BANNED_HOSTS = ("facebook.com", "fb.com", "instagram.com", "tiktok.com", "x.com", "twitter.com")
@@ -57,6 +77,9 @@ def validate(cfg: dict) -> list[str]:
             errors.append(f"kanal {name}: url peab algama https://")
         if any(h in url for h in BANNED_HOSTS):
             errors.append(f"kanal {name}: sotsiaalmeedia link pole lubatud")
+        kava = k.get("kava", "")
+        if kava and not re.fullmatch(r"[a-z0-9_]+", kava):
+            errors.append(f"kanal {name}: kava peab olema adapteri nimi (scrapers/kava_<nimi>.py)")
     for i, entry in enumerate(cfg.get("liiga", []), 1):
         label = f"liiga {i} ({entry.get('sport', '?')})"
         if entry.get("sport") not in SPORTS:
@@ -106,6 +129,117 @@ def league_channels(cfg: dict, events: Iterable[Event]) -> dict[tuple[str, str],
         if channels:
             out[(sport, league)] = channels
     return out
+
+
+# --- Ülekandja kava → mängud ---------------------------------------------------
+
+def _tokens(name: str) -> set[str]:
+    """Võistkonna nime eristavad sõnad: väiketähed, diakriitikata (Pärnu → parnu, Jēkabpils → jekabpils)."""
+    plain = "".join(c for c in unicodedata.normalize("NFKD", name.lower()) if not unicodedata.combining(c))
+    return {w for w in re.split(r"[^a-z0-9]+", plain) if len(w) >= 3 and w not in _GENERIC}
+
+
+def match(events: Iterable[Event], streams: Iterable[dict]) -> dict[str, dict]:
+    """Kava read → mängud. Tagastab {mängu id: {"video", "video_by", "start", "sport", "league"}}.
+
+    Sama mäng = sama ala, kellaaeg ±MATCH_MINUTES (kellaajata mängul sama päev) ning mõlema võistkonna
+    nimes on kava reaga ühine eristav sõna (kodu/võõras võivad olla vahetuses). Kui kaks mängu sobivad
+    võrdselt hästi, jäetakse rida vahele (parem ilma lingita kui vale link)."""
+    events = list(events)
+    out: dict[str, dict] = {}
+    for s in streams:
+        sh, sa = _tokens(s["home"]), _tokens(s["away"])
+        cands = []
+        for e in events:
+            if e.sport != s["sport"]:
+                continue
+            minutes = abs((e.start - s["start"]).total_seconds()) / 60
+            if not (minutes <= MATCH_MINUTES or (e.time_tbc and e.start.date() == s["start"].date())):
+                continue
+            eh, ea = _tokens(e.home), _tokens(e.away)
+            straight = len(sh & eh) * len(sa & ea) and len(sh & eh) + len(sa & ea)
+            swapped = len(sh & ea) * len(sa & eh) and len(sh & ea) + len(sa & eh)
+            score = max(straight, swapped)
+            if score:
+                cands.append((score, -minutes, e))
+        if not cands:
+            continue
+        cands.sort(key=lambda c: (c[0], c[1]), reverse=True)
+        if len(cands) > 1 and cands[0][:2] == cands[1][:2]:
+            log.info("%s: kava rida %s – %s sobib mitmele mängule, jätan vahele", s["by"], s["home"], s["away"])
+            continue
+        e = cands[0][2]
+        out[e.id] = {"video": s["url"], "video_by": s["by"], "start": e.start.isoformat(),
+                     "sport": e.sport, "league": e.league}
+    return out
+
+
+def fetch_streams(cfg: dict, fetcher) -> tuple[list[dict], list[dict]]:
+    """Kõigi kavaga kanalite read. Tagastab (read, aruanne kanali kaupa build_report.json jaoks).
+
+    Ühe kava viga ei peata ehitust: aruandes status "failed", varasemad seosed jäävad alles."""
+    streams: list[dict] = []
+    report: list[dict] = []
+    for k in cfg.get("kanal", []):
+        if not k.get("kava"):
+            continue
+        entry = {"source": f"kava_{k['kava']}", "channel": k["nimi"], "status": "ok", "fetched": 0, "saved": 0,
+                 "error": ""}
+        try:
+            module = importlib.import_module(f"scrapers.kava_{k['kava']}")
+            rows_ = module.fetch(fetcher)
+            entry["fetched"] = len(rows_)
+            streams.extend(rows_)
+        except Exception as exc:  # noqa: BLE001 - kava viga ei tohi ehitust katki teha
+            entry["status"] = "failed"
+            entry["error"] = f"{type(exc).__name__}: {exc}"
+            log.exception("%s ebaõnnestus", entry["source"])
+        report.append(entry)
+    return streams, report
+
+
+def load_links(path: Path = LINKS_PATH) -> dict[str, dict]:
+    path = Path(path)
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8")).get("links", {})
+    except ValueError:
+        log.warning("%s: vigane fail, alustan tühjalt", path)
+        return {}
+
+
+def save_links(links: dict[str, dict], path: Path = LINKS_PATH) -> None:
+    """Kirjutab ainult siis, kui sisu muutus (igapäevast commit'i pole, kui midagi uut ei leitud)."""
+    path = Path(path)
+    if load_links(path) == links and path.exists():
+        return
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps({"links": links}, ensure_ascii=False, indent=1, sort_keys=True) + "\n",
+                    encoding="utf-8")
+
+
+def update_links(old: dict[str, dict], new: dict[str, dict], today: date,
+                 refreshed: Iterable[str] = ()) -> dict[str, dict]:
+    """Uued seosed vanade peale. Välja lähevad LEARN_DAYS-ist vanemad ning tulevaste päevade seosed
+    kanalitelt, mille kava täna loeti (`refreshed`), kui mäng kavast kadus (ülekanne jäi ära)."""
+    refreshed = set(refreshed)
+    first = today - timedelta(days=LEARN_DAYS)
+    out = {}
+    for eid, link in {**old, **new}.items():
+        day = datetime.fromisoformat(link["start"]).astimezone(TALLINN).date()
+        if day < first:
+            continue
+        if eid not in new and link["video_by"] in refreshed and day > today:
+            continue
+        out[eid] = link
+    return out
+
+
+def apply(events: Iterable[Event], links: dict[str, dict]) -> list[Event]:
+    """Lisab mängudele kava lingi. Allika enda link (nt järelvaatamine) jääb ette."""
+    return [replace(e, video=links[e.id]["video"], video_by=links[e.id]["video_by"])
+            if not e.video and e.id in links else e for e in events]
 
 
 def rows(channels: dict[tuple[str, str], list[dict]]) -> list[dict]:
