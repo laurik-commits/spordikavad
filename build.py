@@ -53,6 +53,32 @@ SPORT_IN = {"jalgpall": "jalgpallis", "korvpall": "korvpallis", "jaahoki": "jä�
             "motosport": "motospordis", "kergejoustik": "kergejõustikus",
             "suusatamine": "suusatamises", "ratsasport": "ratsaspordis",
             "uisutamine": "uisutamises", "voitlusspordid": "võitlusspordis", "autosport": "autospordis"}
+# alade rühmad päise alavalikus: rühma nimi valib kõik selle alad, nool avab üksikud alad (site/app.js).
+# Rühm on menüüs ainult siis, kui sellel tasemel on vähemalt 2 selle rühma ala; muidu on ala eraldi.
+SPORT_GROUPS = [
+    {"key": "g:voistkond", "name": "Võistkonnaalad", "word": "võistkonnaaladel",
+     "sports": ["jalgpall", "saalijalgpall", "korvpall", "vorkpall", "kasipall", "jaahoki", "saalihoki"]},
+    {"key": "g:tali", "name": "Talialad", "word": "talialadel", "sports": ["suusatamine", "uisutamine"]},
+    {"key": "g:mootor", "name": "Mootorsport", "word": "mootorspordis", "sports": ["autosport", "motosport"]},
+]
+
+
+def sport_menu(filters: list[dict]) -> list[dict]:
+    """Alavaliku read: rühmad (SPORT_GROUPS järjekorras) ja siis rühmata alad (filtrite järjekorras).
+    Rühm: {"group": {..., "count", "sports"}, "members": [filter, ...]}; üksik ala: {"item": filter}.
+    (Võti pole "items": Jinja loeks m.items sõnastiku meetodina.)"""
+    by_key = {f["key"]: f for f in filters}
+    menu, used = [], set()
+    for g in SPORT_GROUPS:
+        members = [by_key[s] for s in g["sports"] if s in by_key]
+        if len(members) >= 2:
+            menu.append({"group": dict(g, count=sum(m["count"] for m in members),
+                                       sports=[m["key"] for m in members]), "members": members})
+            used.update(m["key"] for m in members)
+    menu += [{"item": f} for f in filters if f["key"] not in used]
+    return menu
+
+
 # ala nimi värvilises kellaplokis: pikkadesse sõnadesse pehme sidekriips (U+00AD), et kitsal ekraanil
 # murduks kahele reale ("Saali-" / "jalgpall"); laial ekraanil sidekriipsu ei näidata
 SPORT_BLOCK = {"saalijalgpall": "Saali­jalgpall", "kergejoustik": "Kerge­jõustik",
@@ -456,7 +482,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
                 ctx = dict(
                     common, region=r, regions=region_list, level=level, level_info=lv, levels=level_list,
                     show_city=r.kind != "city",
-                    filters=filters, days=day_list,
+                    filters=filters, sport_menu=sport_menu(filters), days=day_list,
                     day=d, past=d < today, events=by_day[d],
                     prev_day=days[i - 1] if i > 0 else None,
                     next_day=days[i + 1] if i + 1 < len(days) else None,

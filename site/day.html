@@ -58,8 +58,15 @@
         <ul class="filters" role="group" aria-label="Ala">
           <li class="cap">Mänge kahe nädala jooksul</li>
           <li><button type="button" data-filter="" aria-pressed="true" data-label="Kõik alad" data-word="kõigil aladel"><span>Kõik alad</span><span class="n">{{ filters | sum(attribute='count') }}</span></button></li>
-        {% for f in filters %}
-          <li><button type="button" data-filter="{{ f.key }}" aria-pressed="false"{% if f.none %} class="nogames" data-none="1" title="{{ f.msg }}"{% endif %} data-label="{{ f.label }}" data-word="{{ sport_in[f.key] }}"><span><i class="dot s-{{ f.key }}"></i>{{ f.label }}</span><span class="n">{{ f.count or '–' }}</span></button></li>
+        {% macro sport_btn(f) %}<button type="button" data-filter="{{ f.key }}" aria-pressed="false"{% if f.none %} class="nogames" data-none="1" title="{{ f.msg }}"{% endif %} data-label="{{ f.label }}" data-word="{{ sport_in[f.key] }}"><span><i class="dot s-{{ f.key }}"></i>{{ f.label }}</span><span class="n">{{ f.count or '–' }}</span></button>{% endmacro %}
+        {% for m in sport_menu %}
+          {% if m.group %}
+          {# rühm: nimi valib kõik rühma alad, nool avab üksikud alad #}
+          <li class="grp"><div class="grow"><button type="button" data-filter="{{ m.group.key }}" data-group="{{ m.group.sports | join(' ') }}" aria-pressed="false" data-label="{{ m.group.name }}" data-word="{{ m.group.word }}"><span class="gname">{{ m.group.name }}<span class="gdots">{% for s in m.group.sports %}<i class="s-{{ s }}"></i>{% endfor %}</span></span><span class="n">{{ m.group.count or '–' }}</span></button><button type="button" class="gtog" aria-expanded="false" aria-label="Näita rühma {{ m.group.name }} alasid"><span aria-hidden="true">▾</span></button></div>
+            <div class="gsub" hidden>{% for f in m.members %}{{ sport_btn(f) }}{% endfor %}</div></li>
+          {% else %}
+          <li>{{ sport_btn(m.item) }}</li>
+          {% endif %}
         {% endfor %}
         {% for l in links %}
           <li><button type="button" class="ext" data-filter="{{ l.sport }}" data-ext="1" aria-pressed="false" data-label="{{ l.label }}" data-word="{{ sport_in[l.sport] }}"><span><i class="dot s-{{ l.sport }}"></i>{{ l.label }}</span><span class="n">↗</span></button></li>

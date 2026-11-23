@@ -2,7 +2,8 @@
 // Välise lingiga ala (korvpall) nupp näitab mängude asemel selgitust ja linki.
 (function () {
   var KEY = "spordikavad-ala";
-  var buttons = document.querySelectorAll(".filters button");
+  // ala või alade rühm (data-group = rühma alad); rühma avamise nool (.gtog) pole valik
+  var buttons = document.querySelectorAll(".filters button[data-filter]");
   var rows = document.querySelectorAll(".games li");
   var empty = document.querySelector(".empty-filter");
   var none = document.querySelector(".none");
@@ -72,22 +73,32 @@
   function apply(sport) {
     var btn = document.querySelector('.filters button[data-filter="' + sport + '"]');
     var ext = !!(btn && btn.dataset.ext);
+    var members = btn && btn.dataset.group ? btn.dataset.group.split(" ") : null;  // alade rühm
+    function matches(s) { return sport === "" || (members ? members.indexOf(s) !== -1 : s === sport); }
     var shown = 0;
     buttons.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.filter === sport)); });
-    // päise lauses näita valitud ala ("jalgpallis") koos värvitäpiga
+    // päise lauses näita valitud ala ("jalgpallis") või rühma ("talialadel") koos värvitäppidega
     var cur = document.querySelector(".sport summary .cur");
     if (cur && btn) {
       cur.textContent = btn.dataset.word || btn.dataset.label;
-      if (sport) {
+      if (members) {
+        var dots = document.createElement("span");
+        dots.className = "gdots";
+        members.forEach(function (s) { var i = document.createElement("i"); i.className = "s-" + s; dots.appendChild(i); });
+        cur.insertBefore(dots, cur.firstChild);
+      } else if (sport) {
         var dot = document.createElement("i");
         dot.className = "dot s-" + sport;
         cur.insertBefore(dot, cur.firstChild);
       }
     }
-    // välise lingi ala (korvpall): märkus mängude asemel; tavalise ala märkus (nt hoki): märkus mängude kohal
-    notes.forEach(function (n) { n.classList.toggle("show", sport !== "" && n.dataset.note === sport); });
+    // valitud ala rühm on menüüs lahti
+    var inGroup = btn && btn.closest(".gsub");
+    if (inGroup) toggleGroup(inGroup.parentNode, true);
+    // välise lingi ala (korvpall): märkus mängude asemel; tavalise ala märkus (nt hoki): märkus mängude kohal (rühmal mitte)
+    notes.forEach(function (n) { n.classList.toggle("show", sport !== "" && !members && n.dataset.note === sport); });
     rows.forEach(function (r) {
-      var hide = ext || (sport !== "" && r.dataset.sport !== sport);
+      var hide = ext || !matches(r.dataset.sport);
       r.hidden = hide;
       if (!hide) shown++;
     });
@@ -98,12 +109,25 @@
     // päevade riba: valitud ala korral on paksud ainult päevad, kus selle ala mänge on
     document.querySelectorAll(".days a[data-sports]").forEach(function (a) {
       var list = a.dataset.sports ? a.dataset.sports.split(" ") : [];
-      var has = sport === "" ? list.length > 0 : list.indexOf(sport) !== -1;
+      var has = sport === "" ? list.length > 0 : list.some(matches);
       a.classList.toggle("empty", !has);
     });
     var list = document.querySelector(".games");
     if (list) list.hidden = ext;
   }
+
+  // rühma nool: avab või sulgeb rühma alad (menüü jääb lahti)
+  function toggleGroup(grp, open) {
+    var tog = grp.querySelector(".gtog"), sub = grp.querySelector(".gsub");
+    if (!tog || !sub) return;
+    var name = grp.querySelector("[data-group]").dataset.label;
+    tog.setAttribute("aria-expanded", String(open));
+    tog.setAttribute("aria-label", (open ? "Peida" : "Näita") + " rühma " + name + " alad");
+    sub.hidden = !open;
+  }
+  document.querySelectorAll(".filters .gtog").forEach(function (t) {
+    t.addEventListener("click", function () { toggleGroup(t.closest(".grp"), t.getAttribute("aria-expanded") !== "true"); });
+  });
 
   var saved = "";
   try { saved = localStorage.getItem(KEY) || ""; } catch (e) {}

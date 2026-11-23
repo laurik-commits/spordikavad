@@ -331,6 +331,24 @@ class RenderTest(unittest.TestCase):
         self.assertIn('kalender.js" defer></script>', html)
         self.assertIn('rel="prev"', html)   # ilma JS-ita töötavad päevalehed nagu enne
 
+    def test_sport_groups_in_menu(self):
+        # RenderTest: kõrgliigad = jäähoki, võrkpall, käsipall, … → võistkonnaalad rühmana, muud alad eraldi
+        header = self.read("2026-11-22/index.html").split("</header>")[0]
+        self.assertIn('data-filter="g:voistkond" data-group="', header)
+        self.assertIn('class="gtog" aria-expanded="false"', header)
+        self.assertIn('data-word="võistkonnaaladel"', header)
+        group = header.split('data-filter="g:voistkond" data-group="')[1].split('"')[0].split()
+        self.assertIn("jaahoki", group)
+        self.assertNotIn("kergejoustik", group)
+        sub = header.split('<div class="gsub" hidden>')[1].split("</div>")[0]
+        self.assertIn('data-filter="jaahoki"', sub)   # üksikud alad rühma all
+        # rühm ainult siis, kui sellel tasemel on vähemalt 2 rühma ala
+        menu = build.sport_menu([{"key": "suusatamine", "count": 3}, {"key": "jalgpall", "count": 2},
+                                 {"key": "kasipall", "count": 0}, {"key": "kergejoustik", "count": 1}])
+        self.assertEqual([m["group"]["key"] if "group" in m else m["item"]["key"] for m in menu],
+                         ["g:voistkond", "suusatamine", "kergejoustik"])
+        self.assertEqual((menu[0]["group"]["count"], menu[0]["group"]["sports"]), (2, ["jalgpall", "kasipall"]))
+
     def test_long_sport_name_breaks_in_time_block(self):
         # kitsal ekraanil "Saali-" / "jalgpall": pehme sidekriips kellaplokis, mujal (valik, filter) tavaline nimi
         html = self.read("noored/2026-11-21/index.html") if (self.tmp / "noored").exists() \

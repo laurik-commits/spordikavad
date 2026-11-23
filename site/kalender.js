@@ -80,14 +80,17 @@
 
   // --- filtrid: tase ja piirkond lehe järgi, ala app.js-i valikust ---
   function sportFilter() {
-    var b = document.querySelector('.filters button[aria-pressed="true"]');
-    return b ? {key: b.dataset.filter || "", ext: !!b.dataset.ext, word: b.dataset.filter ? b.dataset.word : ""} : {key: "", ext: false, word: ""};
+    var b = document.querySelector('.filters button[data-filter][aria-pressed="true"]');
+    if (!b) return {key: "", ext: false, word: "", members: null};
+    return {key: b.dataset.filter || "", ext: !!b.dataset.ext, word: b.dataset.filter ? b.dataset.word : "",
+            members: b.dataset.group ? b.dataset.group.split(" ") : null};  // alade rühm
   }
   function visible(ev, sport) {
     if (sport.ext) return false;
     if (level === 0 ? data.hidden.indexOf(ev.lv) !== -1 : ev.lv !== level) return false;
     if (body.dataset.regionKind !== "all" && ev.rg !== body.dataset.region) return false;
-    return !sport.key || ev.s === sport.key;
+    if (!sport.key) return true;
+    return sport.members ? sport.members.indexOf(ev.s) !== -1 : ev.s === sport.key;
   }
   function dayList(day, sport) {
     return (byDay[day] || []).filter(function (x) { return visible(x.ev, sport); });
@@ -322,9 +325,9 @@
     el.parentNode.replaceChild(b, el);
   });
   document.addEventListener("click", function (e) {
-    var t = e.target.closest("[data-go], .filters button, .share[data-k]");
+    var t = e.target.closest("[data-go], .filters button[data-filter], .share[data-k]");
     if (!t) return;
-    if (t.matches(".filters button")) { if (state.client) render(); return; }  // app.js vahetas ala
+    if (t.matches(".filters button")) { if (state.client) render(); return; }  // app.js vahetas ala või rühma
     if (t.matches(".share[data-k]")) { share(t); return; }
     e.preventDefault();
     if (state.view === "week") state.scrollTo = t.dataset.go;
