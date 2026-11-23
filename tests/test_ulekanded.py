@@ -1,5 +1,6 @@
 import tempfile
 import unittest
+from dataclasses import replace
 from datetime import date, datetime
 from pathlib import Path
 
@@ -114,6 +115,35 @@ class LeagueChannelsTest(unittest.TestCase):
                   ev(20, 19, "F", sport="jalgpall", league="Meeste koondis: X")]
         rows = ulekanded.rows(ulekanded.league_channels(self.CFG, events))
         self.assertEqual([r["sport"] for r in rows], ["Jalgpall", "Käsipall"])
+
+
+class CollectVideosTest(unittest.TestCase):
+    def test_links_of_dropped_games_are_kept(self):
+        import sys
+        import types
+        from unittest import mock
+
+        from scrapers.venues import Venues
+
+        peetud = new_event(source="fake_video_src", sport="kasipall", league="Meistriliiga (mehed)",
+                           start=datetime(2026, 11, 18, 19), home="A", away="B", venue="", city="",
+                           url="https://x/1", result="30-28", video="https://www.youtube.com/watch?v=1", video_by="YouTube")
+        tulev = new_event(source="fake_video_src", sport="kasipall", league="Meistriliiga (mehed)",
+                          start=datetime(2026, 11, 25, 19), home="C", away="D", venue="Kalevi spordihall", city="",
+                          url="https://x/2", video="https://www.youtube.com/watch?v=2", video_by="YouTube")
+        module = types.ModuleType("scrapers.fake_video_src")
+        module.fetch = lambda fetcher: [peetud, tulev]
+        cfg = dict(config.load(), source=[{"name": "fake_video_src", "sport": "kasipall", "league": "X", "check": False}])
+        videos: dict = {}
+        with mock.patch.dict(sys.modules, {"scrapers.fake_video_src": module}), \
+                mock.patch.object(build, "save"), mock.patch("archive.update"):
+            events, report = build.collect(cfg, Venues.load(), object(), date(2026, 11, 23), videos=videos)
+        self.assertEqual([e.id for e in events], [tulev.id])   # saalita mäng andmetesse ei jää
+        self.assertEqual(set(videos), {peetud.id})              # aga selle link jääb alles
+        self.assertEqual(videos[peetud.id]["video_by"], "YouTube")
+        # arhiivist tulev sama mäng saab lingi lehel tagasi
+        archived = replace(peetud, video="", video_by="", venue="Kalevi spordihall", city="Tallinn")
+        self.assertEqual(ulekanded.apply([archived], videos)[0].video, "https://www.youtube.com/watch?v=1")
 
 
 class BuildTest(unittest.TestCase):

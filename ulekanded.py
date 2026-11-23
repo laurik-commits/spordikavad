@@ -145,6 +145,12 @@ def _stem_hits(a: set[str], b: set[str]) -> int:
     return sum(1 for x in a if len(x) >= 4 and any(len(y) >= 4 and (x.startswith(y) or y.startswith(x)) for y in b))
 
 
+def link_of(e: Event, video: str = "", video_by: str = "") -> dict:
+    """Seose kirje data/ulekanded.json jaoks (vaikimisi mängu enda link)."""
+    return {"video": video or e.video, "video_by": video_by or e.video_by, "start": e.start.isoformat(),
+            "sport": e.sport, "league": e.league}
+
+
 def match(events: Iterable[Event], streams: Iterable[dict]) -> dict[str, dict]:
     """Kava read → mängud. Tagastab {mängu id: {"video", "video_by", "start", "sport", "league"}}.
 
@@ -184,8 +190,7 @@ def match(events: Iterable[Event], streams: Iterable[dict]) -> dict[str, dict]:
             log.info("%s: kava rida %s – %s sobib mitmele mängule, jätan vahele", s["by"], s["home"], s["away"])
             continue
         e = cands[0][2]
-        out[e.id] = {"video": s["url"], "video_by": s["by"], "start": e.start.isoformat(),
-                     "sport": e.sport, "league": e.league}
+        out[e.id] = link_of(e, s["url"], s["by"])
     return out
 
 
