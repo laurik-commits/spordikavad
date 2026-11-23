@@ -245,6 +245,32 @@ def share_text(e: Event) -> str:
     return f"{matchup(e)}: {when_where(e)}"
 
 
+def calendar_data(events: list[Event], first: date, last: date, today: date, geo: Geo,
+                  channel_types: dict[str, str]) -> dict:
+    """kalender.json: kõik mängud alates `first` (möödunud päevad) kuni kaugeima tulevaseni, lühikeste võtmetega.
+    Seda loeb site/kalender.js nädala ja kuu vaate, kuupäeva valiku ja 14 päevast kaugemate päevade jaoks.
+    `first`/`last` = staatiliste päevalehtede vahemik (mängulehed /m/<id>/ on ainult selle sees)."""
+    rows = []
+    for e in sorted(events, key=lambda e: (e.start, e.id)):
+        if e.last_day < first:
+            continue
+        region = geo.region_of(e.city)
+        r = {"id": e.id, "s": e.sport, "l": e.league, "t": e.start.isoformat()[:16], "h": e.home, "a": e.away,
+             "v": e.venue, "c": e.city, "u": e.url, "lv": e.level, "rg": region.slug if region else "",
+             "sh": share_text(e)}
+        if e.time_tbc:
+            r["tbc"] = 1
+        if e.result:
+            r["r"] = e.result
+        if e.end:
+            r["e"], r["sp"] = e.end, date_span(e)
+        if e.video:
+            r["vid"], r["vb"], r["vk"] = e.video, e.video_by, channel_types.get(e.video_by, "veeb")
+        rows.append(r)
+    return {"today": today.isoformat(), "first": first.isoformat(), "last": last.isoformat(),
+            "hidden": [k for k, v in LEVELS.items() if v.get("hidden")], "events": rows}
+
+
 def _norm_team(name: str) -> str:
     return re.sub(r"[^\w]+", " ", name.lower()).strip()
 
@@ -357,7 +383,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
     if out.exists():
         shutil.rmtree(out)
     out.mkdir(parents=True)
-    for asset in ("style.css", "app.js", "og.png"):
+    for asset in ("style.css", "app.js", "kalender.js", "og.png"):
         shutil.copy(SITE / asset, out / asset)
 
     # mängud päeva kaupa (14 päeva aken)
@@ -474,6 +500,11 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
                                 level_info=glv, day=gd,
                                 day_href=f"../../{glv['prefix']}{geo.all.prefix}{gd.isoformat()}/"),
                 encoding="utf-8")
+
+    (out / "kalender.json").write_text(
+        json.dumps(calendar_data(events, days[0], days[-1], today, geo, channel_types),
+                   ensure_ascii=False, separators=(",", ":")),
+        encoding="utf-8")
 
     upcoming = sorted((e for e in events if e.start.date() >= today), key=lambda e: (e.start, e.id))
     (out / "events.json").write_text(

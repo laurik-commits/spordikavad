@@ -27,7 +27,7 @@
 <link rel="stylesheet" href="{{ root }}style.css">
 <script>document.documentElement.classList.add("js")</script>
 </head>
-<body data-built="{{ built }}" data-region="{{ region.slug }}" data-level="{{ level }}" data-default="{{ default_slug }}" data-default-level="{{ default_level }}" data-levels='{{ level_prefixes }}' data-root="{{ root }}"{% if is_index %} data-index="1"{% endif %}>
+<body data-built="{{ built }}" data-region="{{ region.slug }}" data-level="{{ level }}" data-default="{{ default_slug }}" data-default-level="{{ default_level }}" data-levels='{{ level_prefixes }}' data-root="{{ root }}" data-day="{{ day.isoformat() }}" data-region-kind="{{ region.kind }}" data-in="{{ region.in_form }}" data-base="{{ base_url }}"{% if is_index %} data-index="1"{% endif %}>
 <header class="bar">
   <div class="wrap">
     <div class="top say">
@@ -79,10 +79,16 @@
         </ul>
       </details>
     </div>
+    {# vaate valik ja kalender (site/kalender.js): ilma JS-ita peidus, päevalehed töötavad nagu enne #}
+    <div class="views" role="group" aria-label="Vaade" hidden>
+      <button type="button" data-view="day" aria-pressed="true">Päev</button>
+      <button type="button" data-view="week" aria-pressed="false">Nädal</button>
+      <button type="button" data-view="month" aria-pressed="false">Kuu</button>
+    </div>
     <nav class="daynav" aria-label="Päev">
-      {% if prev_day %}<a href="{{ here }}{{ prev_day.isoformat() }}/" rel="prev" aria-label="Eelmine päev">◀</a>{% else %}<span class="off" aria-hidden="true">◀</span>{% endif %}
-      <h1>{% if day == today %}Täna, {% endif %}{{ human }}</h1>
-      {% if next_day %}<a href="{{ here }}{{ next_day.isoformat() }}/" rel="next" aria-label="Järgmine päev">▶</a>{% else %}<span class="off" aria-hidden="true">▶</span>{% endif %}
+      {% if prev_day %}<a href="{{ here }}{{ prev_day.isoformat() }}/" rel="prev" class="step" aria-label="Eelmine päev">◀</a>{% else %}<span class="off step" aria-hidden="true">◀</span>{% endif %}
+      <h1><button type="button" class="datebtn" aria-haspopup="dialog" aria-label="Vali kuupäev: {% if day == today %}täna, {% endif %}{{ human }}"><span class="datelabel">{% if day == today %}Täna, {% endif %}{{ human }}</span><svg class="calicon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2.5"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></button></h1>
+      {% if next_day %}<a href="{{ here }}{{ next_day.isoformat() }}/" rel="next" class="step" aria-label="Järgmine päev">▶</a>{% else %}<span class="off step" aria-hidden="true">▶</span>{% endif %}
     </nav>
   </div>
 </header>
@@ -109,13 +115,14 @@
   <p class="extnote" data-note="{{ l.sport }}">{{ l.note }} <a href="{{ l.url }}" rel="noopener">{{ l.link_text or l.label }} ↗</a></p>
   {% endfor %}
   {% for f in filters if f.none %}
-  <p class="extnote sportnote s-border-{{ f.key }}" data-note="{{ f.key }}">{{ f.msg }}</p>
+  <p class="extnote sportnote s-border-{{ f.key }}" data-note="{{ f.key }}" data-none="1">{{ f.msg }}</p>
   {% endfor %}
   {% for f in filters if f.key in sport_notes %}
   {% set sn = sport_notes[f.key] %}
   <p class="extnote sportnote s-border-{{ f.key }}" data-note="{{ f.key }}">{{ sn.note }}{% if sn.url %} <a href="{{ sn.url }}" rel="noopener">{{ sn.link_text or 'Lisainfo' }} ↗</a>{% endif %}</p>
   {% endfor %}
 
+  <div id="list">
   {% if events %}
   <ol class="games">
   {% for e in events %}
@@ -143,6 +150,7 @@
     {% if next_games %}<p><a href="{{ here }}{{ next_games.isoformat() }}/">Järgmised mängud: {{ next_games | et_date }} →</a></p>{% endif %}
   </div>
   {% endif %}
+  </div>
 </main>
 
 <footer class="wrap">
@@ -150,6 +158,7 @@
   <p>Kui olete andmete omanik ega soovi, et neid siin näidataks, <a href="{{ contact_url }}">kirjutage meile</a>.</p>
 </footer>
 <script src="{{ root }}app.js" defer></script>
+<script src="{{ root }}kalender.js" defer></script>
 {% include "_analytics.html" %}
 </body>
 </html>
