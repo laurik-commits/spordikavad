@@ -238,7 +238,8 @@ def match(events: Iterable[Event], streams: Iterable[dict]) -> dict[str, dict]:
             if not s["away"]:  # üritus
                 if not (e.start.date() <= s["start"].date() <= e.last_day):
                     continue
-                score = _stem_hits(_tokens(f"{e.home} {e.away}"), sh)
+                # ürituse nimi, sari ja linn: „IBU laskesuusatamise MM“ + „Otepää“ ↔ „Laskesuusatamise MM Otepääl“
+                score = _stem_hits(_tokens(f"{e.home} {e.away} {e.league} {e.city}"), sh)
                 if score >= 2:
                     cands.append((score, 0, e))
                 continue

@@ -352,6 +352,12 @@ class ErrKavaTest(unittest.TestCase):
         self.assertEqual(set(ulekanded.match([mm], [stream])), {mm.id})
         self.assertEqual(ulekanded.match([mm], [other]), {})   # teine etapp: ainult 1 ühine sõna
         self.assertEqual(ulekanded.match([mm], [late]), {})    # pärast ürituse lõppu
+        # nimi nagu kasitsi.toml-is: koht tuleb linnast (Otepää ↔ Otepääl)
+        ibu = new_event(source="kasitsi", sport="suusatamine", league="Laskesuusatamine", start=datetime(2027, 2, 9),
+                        home="IBU laskesuusatamise maailmameistrivõistlused", away="", venue="Tehvandi Spordikeskus",
+                        city="Otepää", url="https://x/", end=date(2027, 2, 21))
+        self.assertEqual(set(ulekanded.match([ibu], [stream])), {ibu.id})
+        self.assertEqual(ulekanded.match([ibu], [other]), {})
 
 
 class LinksStoreTest(unittest.TestCase):
