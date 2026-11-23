@@ -9,7 +9,7 @@
 #   nimi          allika nimi
 #   liik          hall | linn | liit | klubi | rahvusvaheline | pilet | uudised
 #   url           leht, kust mänge/üritusi leiab (kalender, ajakava, sündmuste leht)
-#   alad          ["kõik"] või alade võtmed: jalgpall, saalijalgpall, korvpall, vorkpall, kasipall, jaahoki, saalihoki
+#   alad          ["kõik"] või alade võtmed scrapers/model.py SPORTS-ist (jalgpall, korvpall, …, voitlusspordid, autosport)
 #   piirkond      linn, maakond, "Eesti" või "rahvusvaheline"
 #   kuju          html (sisu on lehel tekstina) | js (laaditakse JavaScriptiga) | api | pdf
 #   robots        lubatud | keelatud | puudub (robots.txt puudub) | kontrollimata
@@ -623,3 +623,65 @@ robots = "lubatud"
 kasutus = "vihje"
 kontrollitud = 2026-11-22
 markus = "Uudised koondiste kodumängudest ja turniiridest. Kinnitus otsi ametlikust allikast."
+
+# --- Ürituste alad: võitlusspordid ja autosport (ainult vaatamist väärt: MV, rahvusvahelised, galad) ---
+
+[[allikas]]
+nimi = "Eesti Poksiliit"
+liik = "liit"
+url = "https://www.eestipoksiliit.ee/"
+alad = ["voitlusspordid"]
+piirkond = "Eesti"
+kuju = "pdf"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-23
+markus = "„Võistluskalendri“ leht on aastaid vana (ära kasuta). Võistluste juhendid on PDF-ina (/wp-content/uploads/…): Eesti MV, Tallinn Open (sügis), Kalev Open (detsember), Olümpiakinnas."
+
+[[allikas]]
+nimi = "Eesti Maadlusliit"
+liik = "liit"
+url = "https://maadlusliit.ee/kalender/"
+alad = ["voitlusspordid"]
+piirkond = "Eesti"
+kuju = "js"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-23
+markus = "Kalender laeb JavaScriptiga. Meistrivõistluste üldjuhend on PDF-ina (/wp-content/uploads/<aasta>/…uldjuhend…pdf). Suurim rahvusvaheline: K. Palusalu memoriaal Tallinnas (märts)."
+
+[[allikas]]
+nimi = "Eesti Judoliit"
+liik = "liit"
+url = "https://judo.ee/voistlused/"
+alad = ["voitlusspordid"]
+piirkond = "Eesti"
+kuju = "html"
+robots = "lubatud"
+kasutus = "adapter:voitlusspordid_judo"
+kontrollitud = 2026-11-23
+markus = "Külgriba „Upcoming events“ (adapter). Järgmise aasta üritused (European Open Tallinn, Eesti MV) lisatakse tavaliselt veebruaris; aasta kalender ka PDF-ina."
+
+[[allikas]]
+nimi = "Eesti Autospordi Liit"
+liik = "liit"
+url = "https://autosport.ee/events/"
+alad = ["autosport"]
+piirkond = "Eesti"
+kuju = "js"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-23
+markus = "Kalender laeb JavaScriptiga, iCal pole sisse lülitatud. Ürituste lehed (/events/<nimi>/) on loetavad, nimekiri on mec-events-sitemap.xml-is. Vaatamist väärt: ralli EMV etapid, talverallid, ringraja suurüritused."
+
+[[allikas]]
+nimi = "WRC Rally Estonia"
+liik = "rahvusvaheline"
+url = "https://www.rallyestonia.ee/"
+alad = ["autosport"]
+piirkond = "Tartu"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-23
+markus = "Üks üritus aastas (juuli), kuupäev uudistes. 2027: 22.–25.07 (kasitsi.toml). Crawl-delay 2."

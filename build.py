@@ -44,12 +44,14 @@ MONTHS_IN = ["jaanuaris", "veebruaris", "märtsis", "aprillis", "mais", "juunis"
 SPORT_GEN = {"jalgpall": "jalgpalli", "korvpall": "korvpalli", "jaahoki": "jäähoki", "vorkpall": "võrkpalli",
              "kasipall": "käsipalli", "saalihoki": "saalihoki", "saalijalgpall": "saalijalgpalli",
              "motosport": "motospordi", "kergejoustik": "kergejõustiku",
-             "suusatamine": "suusa", "ratsasport": "ratsa"}
+             "suusatamine": "suusa", "ratsasport": "ratsa",
+             "uisutamine": "uisu", "voitlusspordid": "võitlusspordi", "autosport": "autospordi"}
 # ala seesütlevas käändes päise lauses: "Ela kaasa koondistele jalgpallis Tallinnas"
 SPORT_IN = {"jalgpall": "jalgpallis", "korvpall": "korvpallis", "jaahoki": "jäähokis", "vorkpall": "võrkpallis",
             "kasipall": "käsipallis", "saalihoki": "saalihokis", "saalijalgpall": "saalijalgpallis",
             "motosport": "motospordis", "kergejoustik": "kergejõustikus",
-            "suusatamine": "suusatamises", "ratsasport": "ratsaspordis"}
+            "suusatamine": "suusatamises", "ratsasport": "ratsaspordis",
+            "uisutamine": "uisutamises", "voitlusspordid": "võitlusspordis", "autosport": "autospordis"}
 MONTHS = ["jaanuar", "veebruar", "märts", "aprill", "mai", "juuni", "juuli",
           "august", "september", "oktoober", "november", "detsember"]
 
@@ -493,6 +495,18 @@ SOURCE_SITES = {
     "kergejoustik": [("Eesti Kergejõustikuliit", "https://www.ekjl.ee/kalender/")],
     "suusatamine": [("Eesti Suusaliit", "https://www.suusaliit.ee/et/voistlused")],
     "ratsasport": [("Eesti Ratsaspordi Liit", "https://ratsanet.ee/events")],
+    "uisutamine": [("Eesti Uisuliit", "https://www.uisuliit.ee/iluuisutamine/voistlused")],
+    "voitlusspordid": [("Eesti Judoliit", "https://judo.ee/voistlused/"), ("Eesti Maadlusliit", "https://maadlusliit.ee/kalender/"),
+                       ("Eesti Poksiliit", "https://www.eestipoksiliit.ee/")],
+    "autosport": [("Eesti Autospordi Liit", "https://autosport.ee/events/"), ("WRC Rally Estonia", "https://www.rallyestonia.ee/")],
+}
+
+
+# „Meist“ tabelis: alad või nende osad, mille suuremad võistlused lisatakse käsitsi (kasitsi.toml), mitte adapteriga
+MANUAL_COVERAGE = {
+    "suusatamine": "Laskesuusatamine: suured võistlused (käsitsi)",
+    "voitlusspordid": "Poks, maadlus, kikk- ja taipoks: suuremad võistlused (käsitsi)",
+    "autosport": "WRC Rally Estonia ja suuremad etapid (käsitsi)",
 }
 
 
@@ -516,6 +530,9 @@ def coverage(cfg: dict) -> list[dict]:
                 row[column[level]].append(league)
         else:
             row["top"].append(src.get("league", ""))
+    for sport, text in MANUAL_COVERAGE.items():  # käsitsi (kasitsi.toml, otsinguagent) kaetud alad ja osad
+        rows.setdefault(sport, {"key": sport, "sport": SPORTS[sport], "top": [], "low": [], "minor": [], "youth": [],
+                                "national": [], "source": SOURCE_SITES.get(sport, [])})["top"].append(text)
     for row in rows.values():  # sama liiga mitmest allikast (nt Kalev ja Tartu Ülikool) ainult üks kord
         for col in column.values():
             row[col] = list(dict.fromkeys(row[col]))

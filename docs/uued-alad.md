@@ -8,6 +8,8 @@ Analüüs 23.11.2026.
 
 Iga allika robots.txt on kontrollitud. Kõik allpool nimetatud lehed lubavad lugemist. Erand on sport.ee (EOK), mis keelab ClaudeBoti, nii et otsinguagent seda lehte ei kasuta.
 
+**Tehtud 23.11.2026 (kolmas samm):** **uisutamine** (`uisutamine_eul`, iluuisutamise kalenderplaan), **võitlusspordid** (`voitlusspordid_judo` + poks ja maadlus käsitsi; poksiliidu kalender osutus aastaid vanaks) ja **autosport** (käsitsi: Rally Estonia 2027, autosport.ee kalender on JavaScriptis).
+
 ## Põhierinevus: mängud ja üritused
 
 Praegu on igal real **mäng**: kodu- ja võõrmeeskond, üks kellaaeg ja üks saal. Uutel aladel on enamasti **üritus**:

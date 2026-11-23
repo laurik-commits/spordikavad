@@ -52,7 +52,7 @@ name = "Haabersti jäähall"
 city = "Tallinn"
 # lhf.lv näitab HC Panteri kodumängude kohana ainult linna
 # hceverest.ee märgib halli ("A hall" on põhiväljak). B hall on harjutusväljak: kui see ilmub, lisa eraldi saaliks.
-aliases = ["Tallina, Igaunija", "Haabersti Jäähall", "Haabersti Ice Hall", "Haabersti jäähall, A hall"]
+aliases = ["Tallina, Igaunija", "Haabersti Jäähall", "Haabersti Ice Hall", "Haabersti jäähall, A hall", "Haabersti jäähll"]
 
 [[venue]]
 name = "Tondiraba jäähall"
@@ -1314,3 +1314,14 @@ city = "Padise"
 [[venue]]
 name = "Ruila"
 city = "Ruila"
+
+# --- Võitlusspordid ja autosport ---
+
+[[venue]]
+name = "A. Le Coq Spordihoone"
+city = "Tartu"
+
+[[venue]]
+name = "Rally Estonia (Raadi ja Lõuna-Eesti teed)"
+city = "Tartu"
+aliases = ["Rally Estonia"]

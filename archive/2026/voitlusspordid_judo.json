@@ -1,0 +1,40 @@
+{
+ "971e2d791bb0": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Zen Jõuluturniir",
+   "id": "971e2d791bb0",
+   "league": "Judo",
+   "level": 3,
+   "result": "",
+   "source": "voitlusspordid_judo",
+   "sport": "voitlusspordid",
+   "start": "2026-12-05T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://judo.ee/event/zen-jouluturniir-6/",
+   "venue": "A. Le Coq Spordihoone"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "a37c3e169684": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Otepää",
+   "home": "Klubide Karikavõistlused",
+   "id": "a37c3e169684",
+   "league": "Judo",
+   "level": 3,
+   "result": "",
+   "source": "voitlusspordid_judo",
+   "sport": "voitlusspordid",
+   "start": "2026-12-27T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://judo.ee/event/klubide-karikavoistlused-2/",
+   "venue": "Kääriku spordikeskus"
+  },
+  "first_seen": "2026-11-23"
+ }
+}

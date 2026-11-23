@@ -546,6 +546,38 @@ competitions = [
 ]
 
 [[source]]
+name = "uisutamine_eul"
+sport = "uisutamine"
+league = "Uisutamine (Uisuliit)"
+enabled = true
+check = false
+year_round = true
+seasons = [["01-01", "12-31"]]
+# uisuliit.ee iluuisutamise kalenderplaan (robots.txt lubab; /files/ keelatud, PDF-e ei loeta). Hooaja leht leitakse
+# võistluste lehelt. ISU võistlused ja Eesti MV → 1, noorte MV ja Novice/Kids → 4, klubide Interclub → 3 (peidetud).
+competitions = [
+  { league = "ISU võistlused ja Eesti MV", check = false },
+  { league = "Noorte MV, Novice, Kids", level = 4, check = false },
+  { league = "Klubide Interclub-võistlused", level = 3, check = false },
+]
+
+[[source]]
+name = "voitlusspordid_judo"
+sport = "voitlusspordid"
+league = "Judo (Judoliit)"
+enabled = true
+check = false
+year_round = true
+seasons = [["01-01", "12-31"]]
+# judo.ee külgriba „Upcoming events“. Rahvusvahelised ja täiskasvanute Eesti MV → 1, noorte MV → 4,
+# klubide turniirid → 3 (peidetud). Poksi, maadluse, kikk- ja taipoksi suuremad võistlused lisab agent kasitsi.toml-i.
+competitions = [
+  { league = "Rahvusvahelised ja Eesti MV", check = false },
+  { league = "Noorte MV", level = 4, check = false },
+  { league = "Klubide turniirid", level = 3, check = false },
+]
+
+[[source]]
 name = "kasitsi"
 league = "Käsitsi lisatud"
 enabled = true

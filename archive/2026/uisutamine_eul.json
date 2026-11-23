@@ -1,0 +1,262 @@
+{
+ "277566e5a723": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "end": "2026-11-15",
+   "home": "Lõunakeskus Trophy 2026",
+   "id": "277566e5a723",
+   "league": "Iluuisutamine",
+   "level": 1,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2026-11-12T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Astri Arena"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "3762f0a97d69": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2026-10-18",
+   "home": "Gliss Extra",
+   "id": "3762f0a97d69",
+   "league": "Iluuisutamine",
+   "level": 3,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2026-10-16T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Haabersti jäähall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "46cddd5b1c03": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2026-11-22",
+   "home": "ISU Challenger seeria võistlus Tallinn Trophy 2026",
+   "id": "46cddd5b1c03",
+   "league": "Iluuisutamine",
+   "level": 1,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2026-11-16T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Tondiraba jäähall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "563f64b8e099": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2026-11-29",
+   "home": "Tallinn Trophy Novice 2026",
+   "id": "563f64b8e099",
+   "league": "Iluuisutamine",
+   "level": 4,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2026-11-23T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Tondiraba jäähall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "5cd29f405d5d": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2026-12-13",
+   "home": "Eesti juunioride karikavõistlused 2027",
+   "id": "5cd29f405d5d",
+   "league": "Iluuisutamine",
+   "level": 4,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2026-12-12T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Haabersti jäähall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "65c8c78420b3": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2026-12-06",
+   "home": "Olympic Winter Cup",
+   "id": "65c8c78420b3",
+   "league": "Iluuisutamine",
+   "level": 3,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2026-12-04T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Tondiraba jäähall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "766b09a6baa4": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2026-10-04",
+   "home": "Olympic Autumn Cup",
+   "id": "766b09a6baa4",
+   "league": "Iluuisutamine",
+   "level": 3,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2026-10-03T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Tondiraba jäähall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "79b68a3aaa44": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2026-09-13",
+   "home": "Tallinn Open 2026",
+   "id": "79b68a3aaa44",
+   "league": "Iluuisutamine",
+   "level": 1,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2026-09-11T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Haabersti jäähall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "866d59d9cfda": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2026-10-25",
+   "home": "Crystal Skate Open 2026",
+   "id": "866d59d9cfda",
+   "league": "Iluuisutamine",
+   "level": 3,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2026-10-23T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Tondiraba jäähall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "9648e766b253": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2026-11-01",
+   "home": "Talveunistus Trophy 2026",
+   "id": "9648e766b253",
+   "league": "Iluuisutamine",
+   "level": 3,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2026-10-30T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Tondiraba jäähall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "c0dc0595b755": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2026-10-11",
+   "home": "New Star",
+   "id": "c0dc0595b755",
+   "league": "Iluuisutamine",
+   "level": 3,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2026-10-10T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Haabersti jäähall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "cc4cf92fb9f4": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kohtla-Järve",
+   "end": "2026-11-08",
+   "home": "Kohtla-Järve Skate Open III",
+   "id": "cc4cf92fb9f4",
+   "league": "Iluuisutamine",
+   "level": 3,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2026-11-07T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Kohtla-Järve jäähall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "df900bb71189": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2026-12-13",
+   "home": "Eesti Meistrivõistlused 2027",
+   "id": "df900bb71189",
+   "league": "Iluuisutamine",
+   "level": 1,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2026-12-12T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Haabersti jäähall"
+  },
+  "first_seen": "2026-11-23"
+ }
+}

@@ -347,3 +347,19 @@ Iga allika kohta üks mäng lehel olevatest andmetest, võrreldud allika enda m�
 - Serveris renderdatud tabel: kuupäevad, ala lühend (TS, KS, PKS, 3V, KR, RS, V), nimi, koht, riik (EST jt), tase (takistuste kõrgus või koolisõidu klass), staatus.
 - Tase: rahvusvahelised (RV, CSI/CDI/CHI/CEI), Eesti (sise)meistrivõistlused ja takistussõit ≥ 130 cm → 1; ülejäänud klubide võistlused → 3 (peidetud). Välismaa ja tühistatud jäävad välja.
 
+## Uisutamine: Eesti Uisuliidu iluuisutamise kalenderplaan ✅ (lisatud 2026-11-23)
+- Allikas: https://www.uisuliit.ee/iluuisutamine/voistlused → hooaja leht `eul-kalenderplaan-<aasta>-<aasta>` (robots.txt lubab; `/files/` keelatud, PDF-e ei loeta). Adapter `uisutamine_eul`.
+- Serveris renderdatud tabel: kuupäevad, võistlus, koht, korraldaja, kategooria. Kuupäevata (TBA) jääb välja.
+- Tase: ISU kalenderplaani võistlused (Tallinn Trophy, Tallinn Open, Lõunakeskus Trophy, Tallink Hotels Cup, Crystal Skate Spring) ja Eesti MV → 1, noorte MV ja Novice/Kids → 4, klubide Interclub → 3 (peidetud).
+- Kiiruisutamise lehel on ainult eelmine hooaeg ja Härma ovaali väikesed võistlused, seda ei loeta.
+
+## Võitlusspordid ✅ judo, käsitsi poks ja maadlus (lisatud 2026-11-23)
+- **Judo:** https://judo.ee/voistlused/ külgriba „Upcoming events“ (robots.txt lubab). Adapter `voitlusspordid_judo`. Täielik kalender on PDF-is ja ürituste lehtedel; järgmise aasta üritused lisab liit veebruaris. Tase: rahvusvahelised ja täiskasvanute Eesti MV → 1, noorte MV → 4, klubide turniirid → 3.
+- **Poks:** eestipoksiliit.ee „võistluskalender“ on aastaid vana (Moskva EM, Singapuri noorte olümpia), automaatseks allikaks ei sobi. Juhendid on PDF-ina. Otsinguagent (`allikad.toml`) lisab Eesti MV ja suuremad turniirid `kasitsi.toml`-i.
+- **Maadlus:** maadlusliit.ee kalender laeb JavaScriptiga, WordPressi API ei vasta. Agent nagu poksis.
+- **Kikk- ja taipoks, MMA galad:** liitudel kalendrit pole; agent otsib korraldajate ja piletimüügi lehtedelt.
+
+## Autosport: käsitsi ✅ (lisatud 2026-11-23)
+- autosport.ee kalender laeb JavaScriptiga, iCal pole sisse lülitatud (sama MEC plugin kui msport.ee-l). Ürituste lehed on loetavad ja nimekiri on `mec-events-sitemap.xml`-is, aga 2027. aasta etappe veel pole.
+- WRC Rally Estonia 22.–25.07.2027 on `kasitsi.toml`-is. Suuremad etapid (ralli EMV, talverallid) lisab agent.
+

@@ -92,7 +92,7 @@ Kolm sammu: adapter, konfiguratsioonirida ja test.
 
 ## Tulevikuideed
 
-- **Uued alad**: kergejõustik, motosport, suusatamine ja ratsasport on lisatud (üritused, mitte mängud). Laskesuusatamise suured võistlused (Otepää MM 2027) on `kasitsi.toml` failis suusatamise all. Järgmised kandidaadid (võitlusspordid, tantsusport, iluuisutamine) koos allikatega on failis [docs/uued-alad.md](docs/uued-alad.md). Omanik otsustab, millal ja millest jätkata.
+- **Uued alad**: kergejõustik, motosport, suusatamine, ratsasport, uisutamine, võitlusspordid ja autosport on lisatud (üritused, mitte mängud). Laskesuusatamise, poksi, maadluse ja autospordi suured võistlused lisatakse käsitsi (`kasitsi.toml`, otsinguagent). Järgmised kandidaadid (tantsusport, ujumine, ragby) koos allikatega on failis [docs/uued-alad.md](docs/uued-alad.md). Omanik otsustab, millal ja millest jätkata.
 
 - **„Võtan osa“** (omaniku mõte 2026-11-23, suurarendus): päise lause esimese valiku „Ela kaasa“ kõrvale teine valik „Võtan osa“. Sinna sobivad võistlused, kuhu minnakse osalema, mitte vaatama: murdmaasuusatamise EMV ja maratonid, rahvajooksud, klubide ratsavõistlused, kohalikud kergejõustikuvõistlused. Andmed on juba olemas peidetud tasemel 3 (suusatamine, ratsasport, kergejõustik), nii et alustada saab nendest.
 

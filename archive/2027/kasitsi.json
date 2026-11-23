@@ -1,4 +1,24 @@
 {
+ "ea21c43456fb": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "end": "2027-07-25",
+   "home": "WRC Rally Estonia",
+   "id": "ea21c43456fb",
+   "league": "WRC (autoralli MM)",
+   "level": 1,
+   "result": "",
+   "source": "kasitsi",
+   "sport": "autosport",
+   "start": "2027-07-22T12:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.rallyestonia.ee/pealtvaatajale/uudised/uudis/2026/10/08/wrc-rally-estonia-on-taas-fia-autoralli-mm-sarja-2027-aasta-kalendris/",
+   "venue": "Rally Estonia (Raadi ja Lõuna-Eesti teed)"
+  },
+  "first_seen": "2026-11-23"
+ },
  "eb5c9fd785ed": {
   "changes": [],
   "event": {

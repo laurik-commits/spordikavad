@@ -23,6 +23,9 @@
   --kergejoustik: #be185d;
   --suusatamine: #4338ca;
   --ratsasport: #78350f;
+  --uisutamine: #0284c7;
+  --voitlusspordid: #3f3f46;
+  --autosport: #ea580c;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -157,6 +160,9 @@ a { color: var(--link); text-decoration: none; }
 .s-border-kergejoustik { border-left-color: var(--kergejoustik); }
 .s-border-suusatamine { border-left-color: var(--suusatamine); }
 .s-border-ratsasport { border-left-color: var(--ratsasport); }
+.s-border-uisutamine { border-left-color: var(--uisutamine); }
+.s-border-voitlusspordid { border-left-color: var(--voitlusspordid); }
+.s-border-autosport { border-left-color: var(--autosport); }
 .js .extnote { display: none; }       /* JS-iga näidatakse alles nupu vajutamisel */
 .js .extnote.show { display: block; }
 .dot { width: .6rem; height: .6rem; border-radius: 50%; display: inline-block; }
@@ -244,6 +250,9 @@ a { color: var(--link); text-decoration: none; }
 .s-kergejoustik { background: var(--kergejoustik); }
 .s-suusatamine { background: var(--suusatamine); }
 .s-ratsasport { background: var(--ratsasport); }
+.s-uisutamine { background: var(--uisutamine); }
+.s-voitlusspordid { background: var(--voitlusspordid); }
+.s-autosport { background: var(--autosport); }
 
 .none, .empty-filter { padding: 1.5rem .25rem; color: var(--muted); }
 .none p { margin: .3rem 0; }

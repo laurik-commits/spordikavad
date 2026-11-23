@@ -1,0 +1,282 @@
+{
+ "072c84e58f3a": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-03-28",
+   "home": "Talveunistus Cup",
+   "id": "072c84e58f3a",
+   "league": "Iluuisutamine",
+   "level": 3,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2027-03-26T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Tondiraba jäähall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "1ee93064dcef": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-04-18",
+   "home": "Juna Skate Open",
+   "id": "1ee93064dcef",
+   "league": "Iluuisutamine",
+   "level": 3,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2027-04-16T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Haabersti jäähall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "1f623cd20c1f": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-03-21",
+   "home": "Reval Cup",
+   "id": "1f623cd20c1f",
+   "league": "Iluuisutamine",
+   "level": 3,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2027-03-20T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Haabersti jäähall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "2c35259a27e2": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-04-04",
+   "home": "Olympic Spring Cup",
+   "id": "2c35259a27e2",
+   "league": "Iluuisutamine",
+   "level": 3,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2027-04-02T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Tondiraba jäähall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "31fdf0ccb917": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-03-07",
+   "home": "Crystal Skate Spring 2027",
+   "id": "31fdf0ccb917",
+   "league": "Iluuisutamine",
+   "level": 1,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2027-03-04T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Tondiraba jäähall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "6ea10b84efef": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kohtla-Järve",
+   "end": "2027-01-31",
+   "home": "Wiru Cup",
+   "id": "6ea10b84efef",
+   "league": "Iluuisutamine",
+   "level": 3,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2027-01-30T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Kohtla-Järve jäähall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "89190d64971c": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-05-13",
+   "home": "Tallinn Trophy Kids 2027",
+   "id": "89190d64971c",
+   "league": "Iluuisutamine",
+   "level": 4,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2027-05-10T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Tondiraba jäähall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "8a0d6c51354f": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "end": "2027-04-11",
+   "home": "Hope Cup InterClub",
+   "id": "8a0d6c51354f",
+   "league": "Iluuisutamine",
+   "level": 3,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2027-04-08T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Astri Arena"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "ae02c0bc8da8": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Narva",
+   "end": "2027-05-02",
+   "home": "Narva Spring",
+   "id": "ae02c0bc8da8",
+   "league": "Iluuisutamine",
+   "level": 3,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2027-05-01T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Narva jäähall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "b16198218ae6": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-02-21",
+   "home": "Tallink Hotels Cup 2027",
+   "id": "b16198218ae6",
+   "league": "Iluuisutamine",
+   "level": 1,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2027-02-18T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Haabersti jäähall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "d25d0289c112": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kohtla-Järve",
+   "end": "2027-02-07",
+   "home": "Smiles Valentine Cup 2027",
+   "id": "d25d0289c112",
+   "league": "Iluuisutamine",
+   "level": 3,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2027-02-06T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Kohtla-Järve jäähall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "d815282d536f": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-01-24",
+   "home": "Eesti noorte Meistrivõistlused 2027",
+   "id": "d815282d536f",
+   "league": "Iluuisutamine",
+   "level": 4,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2027-01-23T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Tondiraba jäähall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "f67963fb361a": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-01-10",
+   "home": "Juna Cup",
+   "id": "f67963fb361a",
+   "league": "Iluuisutamine",
+   "level": 3,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2027-01-08T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Haabersti jäähall"
+  },
+  "first_seen": "2026-11-23"
+ },
+ "f6e4e23ee749": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-01-17",
+   "home": "Gliss Open",
+   "id": "f6e4e23ee749",
+   "league": "Iluuisutamine",
+   "level": 3,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2027-01-14T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Haabersti jäähall"
+  },
+  "first_seen": "2026-11-23"
+ }
+}

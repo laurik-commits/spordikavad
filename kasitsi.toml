@@ -16,7 +16,7 @@
 #
 # Väljad:
 #   sport     jalgpall | korvpall | jaahoki | vorkpall | kasipall | saalihoki | saalijalgpall | motosport | kergejoustik
-#             | suusatamine (ka laskesuusatamine) | ratsasport
+#             | suusatamine (ka laskesuusatamine) | ratsasport | uisutamine | voitlusspordid | autosport
 #   league    liiga või ürituse nimi, nt "Sõprusmäng", "EEVZA U16 neidude turniir"
 #   level     1 tippvõistlused (kõrgliigad, MV), 2 esiliigad, 4 noored, 5 koondised (määrab, millises kalendris mäng on)
 #   kind      mäng | sõprusmäng | turniir | eriüritus | võistlus
@@ -133,3 +133,17 @@ venue = "Tehvandi Spordikeskus"
 url = "https://www.biathlonotepaa.com/"
 added = 2026-11-23
 note = "Eesti Laskesuusatamise Föderatsiooni kalender (biathlon.ee/kalender/): 09.02.2027–21.02.2027, Otepää. Korraldaja ametlik leht."
+
+[[event]]
+sport = "autosport"
+league = "WRC (autoralli MM)"
+level = 1
+kind = "võistlus"
+start = 2027-07-22
+end = 2027-07-25
+time_tbc = true
+home = "WRC Rally Estonia"
+venue = "Rally Estonia (Raadi ja Lõuna-Eesti teed)"
+url = "https://www.rallyestonia.ee/pealtvaatajale/uudised/uudis/2026/10/08/wrc-rally-estonia-on-taas-fia-autoralli-mm-sarja-2027-aasta-kalendris/"
+added = 2026-11-23
+note = "Korraldaja uudis: 22.–25. juuli 2027, MM-sarja 9. etapp. Keskus Tartus (Raadi)."
