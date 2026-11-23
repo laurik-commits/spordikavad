@@ -221,6 +221,8 @@ a { color: var(--link); text-decoration: none; }
 .watch.jarel { color: var(--muted); }
 .games li > a.watch:hover, .games li > a.watch:focus-visible { color: var(--fg); }
 .wi .live { fill: #e5484d; }
+.wi .mark { stroke: var(--bg); }   /* järelvaatamise märgi ringnool: tausta värvi, hallil täpil */
+.wi .markfill { fill: var(--bg); stroke: none; }
 .watch-btn .wi { flex: none; }
 .watch-btn.tv .wi, .watch-btn.veeb .wi { color: var(--link); }
 .watch-btn.jarel .wi { color: var(--muted); }
