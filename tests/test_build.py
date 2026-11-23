@@ -311,6 +311,13 @@ class RenderTest(unittest.TestCase):
         self.assertNotIn("2026-11-14", (out / "sitemap.xml").read_text(encoding="utf-8"))
         self.assertIn('<span class="n">–</span>', (out / "index.html").read_text(encoding="utf-8"))
 
+    def test_long_sport_name_breaks_in_time_block(self):
+        # kitsal ekraanil "Saali-" / "jalgpall": pehme sidekriips kellaplokis, mujal (valik, filter) tavaline nimi
+        html = self.read("noored/2026-11-21/index.html") if (self.tmp / "noored").exists() \
+            else self.read("2026-11-21/index.html")
+        self.assertIn("<small>Saali­jalgpall</small>", html)
+        self.assertNotIn("Saali­jalgpall</span>", html)
+
     def test_info_page_lists_coverage_and_update_time(self):
         info = self.read("info/index.html")
         self.assertIn("<h1>Meist</h1>", info)

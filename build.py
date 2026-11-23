@@ -53,6 +53,10 @@ SPORT_IN = {"jalgpall": "jalgpallis", "korvpall": "korvpallis", "jaahoki": "jä�
             "motosport": "motospordis", "kergejoustik": "kergejõustikus",
             "suusatamine": "suusatamises", "ratsasport": "ratsaspordis",
             "uisutamine": "uisutamises", "voitlusspordid": "võitlusspordis", "autosport": "autospordis"}
+# ala nimi värvilises kellaplokis: pikkadesse sõnadesse pehme sidekriips (U+00AD), et kitsal ekraanil
+# murduks kahele reale ("Saali-" / "jalgpall"); laial ekraanil sidekriipsu ei näidata
+SPORT_BLOCK = {"saalijalgpall": "Saali­jalgpall", "kergejoustik": "Kerge­jõustik",
+               "voitlusspordid": "Võitlus­spordid", "suusatamine": "Suusa­tamine"}
 MONTHS = ["jaanuar", "veebruar", "märts", "aprill", "mai", "juuni", "juuli",
           "august", "september", "oktoober", "november", "detsember"]
 
@@ -383,6 +387,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
         analytics_enabled=site_cfg.get("analytics_enabled", False),
         analytics_token=site_cfg.get("analytics_token", ""), base_url=base_url,
         contact_url=site_cfg.get("contact_url", ""), watch_types=ulekanded.TYPES,
+        sport_block={k: SPORT_BLOCK.get(k, v) for k, v in SPORTS.items()},
     )
 
     urls: list[str] = []
