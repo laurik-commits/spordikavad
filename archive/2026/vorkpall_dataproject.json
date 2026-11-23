@@ -147,6 +147,12 @@
     "from": "",
     "on": "2026-11-22",
     "to": "2-3"
+   },
+   {
+    "field": "venue",
+    "from": "Rakvere SH",
+    "on": "2026-11-23",
+    "to": "Rakvere spordihall"
    }
   ],
   "event": {
@@ -162,7 +168,7 @@
    "start": "2026-11-06T15:00:00+02:00",
    "time_tbc": false,
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3631&ID=103&PID=155",
-   "venue": "Rakvere SH"
+   "venue": "Rakvere spordihall"
   },
   "first_seen": "2026-11-22"
  },
@@ -199,6 +205,12 @@
     "from": "",
     "on": "2026-11-22",
     "to": "0-3"
+   },
+   {
+    "field": "venue",
+    "from": "Rakvere SH",
+    "on": "2026-11-23",
+    "to": "Rakvere spordihall"
    }
   ],
   "event": {
@@ -214,7 +226,7 @@
    "start": "2026-11-07T11:30:00+02:00",
    "time_tbc": false,
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3633&ID=103&PID=155",
-   "venue": "Rakvere SH"
+   "venue": "Rakvere spordihall"
   },
   "first_seen": "2026-11-22"
  },
@@ -277,6 +289,12 @@
     "from": "",
     "on": "2026-11-22",
     "to": "2-3"
+   },
+   {
+    "field": "venue",
+    "from": "Rakvere SH",
+    "on": "2026-11-23",
+    "to": "Rakvere spordihall"
    }
   ],
   "event": {
@@ -292,9 +310,28 @@
    "start": "2026-11-06T11:30:00+02:00",
    "time_tbc": false,
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3627&ID=103&PID=155",
-   "venue": "Rakvere SH"
+   "venue": "Rakvere spordihall"
   },
   "first_seen": "2026-11-22"
+ },
+ "0fc27357b5d5": {
+  "changes": [],
+  "event": {
+   "away": "Eesti Maaülikool/Embach",
+   "city": "Pärnu",
+   "home": "PÄRNU VK",
+   "id": "0fc27357b5d5",
+   "league": "Eesti karikas (mehed)",
+   "level": 1,
+   "result": "",
+   "source": "vorkpall_dataproject",
+   "sport": "vorkpall",
+   "start": "2026-12-02T00:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3671&ID=100&PID=150",
+   "venue": "Pärnu Spordihall"
+  },
+  "first_seen": "2026-11-23"
  },
  "10c6c8ce854e": {
   "changes": [],
@@ -341,6 +378,12 @@
     "from": "",
     "on": "2026-11-22",
     "to": "3-0"
+   },
+   {
+    "field": "venue",
+    "from": "Rakvere SH",
+    "on": "2026-11-23",
+    "to": "Rakvere spordihall"
    }
   ],
   "event": {
@@ -356,7 +399,7 @@
    "start": "2026-11-06T15:00:00+02:00",
    "time_tbc": false,
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3630&ID=103&PID=155",
-   "venue": "Rakvere SH"
+   "venue": "Rakvere spordihall"
   },
   "first_seen": "2026-11-22"
  },
@@ -651,6 +694,12 @@
     "from": "",
     "on": "2026-11-22",
     "to": "1-3"
+   },
+   {
+    "field": "venue",
+    "from": "Rakvere SH",
+    "on": "2026-11-23",
+    "to": "Rakvere spordihall"
    }
   ],
   "event": {
@@ -666,7 +715,7 @@
    "start": "2026-11-06T11:30:00+02:00",
    "time_tbc": false,
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3628&ID=103&PID=155",
-   "venue": "Rakvere SH"
+   "venue": "Rakvere spordihall"
   },
   "first_seen": "2026-11-22"
  },
@@ -695,6 +744,25 @@
    "venue": "Jüri spordihoone"
   },
   "first_seen": "2026-11-22"
+ },
+ "28a969125d13": {
+  "changes": [],
+  "event": {
+   "away": "TÜ/Bigbank",
+   "city": "Tallinn",
+   "home": "TalTech/Nordaid",
+   "id": "28a969125d13",
+   "league": "Eesti karikas (naised)",
+   "level": 1,
+   "result": "",
+   "source": "vorkpall_dataproject",
+   "sport": "vorkpall",
+   "start": "2026-12-04T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3673&ID=99&PID=149",
+   "venue": "TalTechi spordihall"
+  },
+  "first_seen": "2026-11-23"
  },
  "290414f50070": {
   "changes": [
@@ -1039,6 +1107,12 @@
     "from": "",
     "on": "2026-11-22",
     "to": "0-3"
+   },
+   {
+    "field": "venue",
+    "from": "Rakvere SH",
+    "on": "2026-11-23",
+    "to": "Rakvere spordihall"
    }
   ],
   "event": {
@@ -1054,7 +1128,7 @@
    "start": "2026-11-07T15:00:00+02:00",
    "time_tbc": false,
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3635&ID=103&PID=155",
-   "venue": "Rakvere SH"
+   "venue": "Rakvere spordihall"
   },
   "first_seen": "2026-11-22"
  },
@@ -1777,6 +1851,12 @@
     "from": "",
     "on": "2026-11-22",
     "to": "3-2"
+   },
+   {
+    "field": "venue",
+    "from": "Rakvere SH",
+    "on": "2026-11-23",
+    "to": "Rakvere spordihall"
    }
   ],
   "event": {
@@ -1792,7 +1872,7 @@
    "start": "2026-11-07T18:30:00+02:00",
    "time_tbc": false,
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3637&ID=103&PID=155",
-   "venue": "Rakvere SH"
+   "venue": "Rakvere spordihall"
   },
   "first_seen": "2026-11-22"
  },
@@ -2157,6 +2237,12 @@
     "from": "",
     "on": "2026-11-22",
     "to": "3-0"
+   },
+   {
+    "field": "venue",
+    "from": "Rakvere SH",
+    "on": "2026-11-23",
+    "to": "Rakvere spordihall"
    }
   ],
   "event": {
@@ -2172,7 +2258,7 @@
    "start": "2026-11-07T13:15:00+02:00",
    "time_tbc": false,
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3634&ID=103&PID=155",
-   "venue": "Rakvere SH"
+   "venue": "Rakvere spordihall"
   },
   "first_seen": "2026-11-22"
  },
@@ -2381,6 +2467,25 @@
    "venue": "Jüri spordihoone"
   },
   "first_seen": "2026-11-22"
+ },
+ "8a3602e8c10f": {
+  "changes": [],
+  "event": {
+   "away": "TÜ/Bigbank",
+   "city": "Tallinn",
+   "home": "TalTech/Nordaid",
+   "id": "8a3602e8c10f",
+   "league": "Eesti karikas (naised)",
+   "level": 1,
+   "result": "",
+   "source": "vorkpall_dataproject",
+   "sport": "vorkpall",
+   "start": "2026-12-02T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3672&ID=99&PID=149",
+   "venue": "TalTechi spordihall"
+  },
+  "first_seen": "2026-11-23"
  },
  "8b793379fbc1": {
   "changes": [
@@ -3622,6 +3727,12 @@
     "from": "",
     "on": "2026-11-22",
     "to": "1-3"
+   },
+   {
+    "field": "venue",
+    "from": "Rakvere SH",
+    "on": "2026-11-23",
+    "to": "Rakvere spordihall"
    }
   ],
   "event": {
@@ -3637,7 +3748,7 @@
    "start": "2026-11-06T15:00:00+02:00",
    "time_tbc": false,
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3629&ID=103&PID=155",
-   "venue": "Rakvere SH"
+   "venue": "Rakvere spordihall"
   },
   "first_seen": "2026-11-22"
  },
@@ -3674,6 +3785,12 @@
     "from": "",
     "on": "2026-11-22",
     "to": "3-1"
+   },
+   {
+    "field": "venue",
+    "from": "Rakvere SH",
+    "on": "2026-11-23",
+    "to": "Rakvere spordihall"
    }
   ],
   "event": {
@@ -3689,7 +3806,7 @@
    "start": "2026-11-08T10:00:00+02:00",
    "time_tbc": false,
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3638&ID=103&PID=155",
-   "venue": "Rakvere SH"
+   "venue": "Rakvere spordihall"
   },
   "first_seen": "2026-11-22"
  },
@@ -3881,6 +3998,12 @@
     "from": "",
     "on": "2026-11-22",
     "to": "3-0"
+   },
+   {
+    "field": "venue",
+    "from": "Rakvere SH",
+    "on": "2026-11-23",
+    "to": "Rakvere spordihall"
    }
   ],
   "event": {
@@ -3896,7 +4019,7 @@
    "start": "2026-11-06T11:30:00+02:00",
    "time_tbc": false,
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3626&ID=103&PID=155",
-   "venue": "Rakvere SH"
+   "venue": "Rakvere spordihall"
   },
   "first_seen": "2026-11-22"
  },
@@ -4138,6 +4261,12 @@
     "from": "",
     "on": "2026-11-22",
     "to": "0-3"
+   },
+   {
+    "field": "venue",
+    "from": "Rakvere SH",
+    "on": "2026-11-23",
+    "to": "Rakvere spordihall"
    }
   ],
   "event": {
@@ -4153,7 +4282,7 @@
    "start": "2026-11-07T10:00:00+02:00",
    "time_tbc": false,
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3632&ID=103&PID=155",
-   "venue": "Rakvere SH"
+   "venue": "Rakvere spordihall"
   },
   "first_seen": "2026-11-22"
  },
@@ -4449,7 +4578,14 @@
   "first_seen": "2026-11-22"
  },
  "f41cb172a45a": {
-  "changes": [],
+  "changes": [
+   {
+    "field": "venue",
+    "from": "Rakvere SH",
+    "on": "2026-11-23",
+    "to": "Rakvere spordihall"
+   }
+  ],
   "event": {
    "away": "SK Tats/Rae Spordikool U-18",
    "city": "Rakvere",
@@ -4463,7 +4599,7 @@
    "start": "2026-11-08T13:30:00+02:00",
    "time_tbc": false,
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3640&ID=103&PID=155",
-   "venue": "Rakvere SH"
+   "venue": "Rakvere spordihall"
   },
   "first_seen": "2026-11-22"
  },
@@ -4474,6 +4610,12 @@
     "from": "",
     "on": "2026-11-22",
     "to": "2-3"
+   },
+   {
+    "field": "venue",
+    "from": "Rakvere SH",
+    "on": "2026-11-23",
+    "to": "Rakvere spordihall"
    }
   ],
   "event": {
@@ -4489,7 +4631,7 @@
    "start": "2026-11-07T16:45:00+02:00",
    "time_tbc": false,
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3636&ID=103&PID=155",
-   "venue": "Rakvere SH"
+   "venue": "Rakvere spordihall"
   },
   "first_seen": "2026-11-22"
  },
@@ -4552,6 +4694,12 @@
     "from": "",
     "on": "2026-11-22",
     "to": "3-0"
+   },
+   {
+    "field": "venue",
+    "from": "Rakvere SH",
+    "on": "2026-11-23",
+    "to": "Rakvere spordihall"
    }
   ],
   "event": {
@@ -4567,7 +4715,7 @@
    "start": "2026-11-08T11:45:00+02:00",
    "time_tbc": false,
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3639&ID=103&PID=155",
-   "venue": "Rakvere SH"
+   "venue": "Rakvere spordihall"
   },
   "first_seen": "2026-11-22"
  },

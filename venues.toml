@@ -528,6 +528,7 @@ city = "Jēkabpils"
 [[venue]]
 name = "Pärnu Spordihall"
 city = "Pärnu"
+aliases = ["Pärnu SH"]
 
 [[venue]]
 name = "Rimi Olympic center"
@@ -897,8 +898,9 @@ name = "Jüri Pallihall väike saal"
 city = "Rae vald"
 
 [[venue]]
-name = "Rakvere SH"
+name = "Rakvere spordihall"
 city = "Rakvere"
+aliases = ["Rakvere SH", "Rakvere"]
 
 # Koondiste saalid
 

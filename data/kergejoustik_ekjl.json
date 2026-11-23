@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T15:03:32+02:00",
+ "updated": "2026-11-23T16:16:56+02:00",
  "events": [
   {
    "id": "1dab57ab370a",
@@ -1405,6 +1405,21 @@
    "result": "",
    "level": 4,
    "end": "2027-06-06"
+  },
+  {
+   "id": "af2be242a862",
+   "sport": "kergejoustik",
+   "league": "Kohalikud võistlused",
+   "start": "2027-06-08T18:00:00+03:00",
+   "home": "Rakvere Miil",
+   "away": "",
+   "venue": "Rakvere spordihall",
+   "city": "Rakvere",
+   "url": "https://www.ekjl.ee/kalender/",
+   "source": "kergejoustik_ekjl",
+   "time_tbc": false,
+   "result": "",
+   "level": 3
   },
   {
    "id": "bcc2a3f2e331",
