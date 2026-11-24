@@ -866,6 +866,42 @@
     "from": "https://www.suusaliit.ee/et/voistlused?competition_id=1376",
     "on": "2026-11-24",
     "to": "https://www.suusaliit.ee/et/voistlused?competition_id=1377"
+   },
+   {
+    "field": "league",
+    "from": "Suusahüpped",
+    "on": "2026-11-24",
+    "to": "Murdmaasuusatamine"
+   },
+   {
+    "field": "url",
+    "from": "https://www.suusaliit.ee/et/voistlused?competition_id=1377",
+    "on": "2026-11-24",
+    "to": "https://www.suusaliit.ee/et/voistlused?competition_id=1375"
+   },
+   {
+    "field": "league",
+    "from": "Murdmaasuusatamine",
+    "on": "2026-11-24",
+    "to": "Kahevõistlus"
+   },
+   {
+    "field": "url",
+    "from": "https://www.suusaliit.ee/et/voistlused?competition_id=1375",
+    "on": "2026-11-24",
+    "to": "https://www.suusaliit.ee/et/voistlused?competition_id=1376"
+   },
+   {
+    "field": "league",
+    "from": "Kahevõistlus",
+    "on": "2026-11-24",
+    "to": "Suusahüpped"
+   },
+   {
+    "field": "url",
+    "from": "https://www.suusaliit.ee/et/voistlused?competition_id=1376",
+    "on": "2026-11-24",
+    "to": "https://www.suusaliit.ee/et/voistlused?competition_id=1377"
    }
   ],
   "event": {
