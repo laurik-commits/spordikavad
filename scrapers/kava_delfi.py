@@ -28,6 +28,7 @@ PAGE = "https://tv.delfi.ee/leht/ulekanded-kava"  # link mängu juures, kui kava
 SPORTS = {
     "võrkpall": "vorkpall", "korvpall": "korvpall", "käsipall": "kasipall", "jalgpall": "jalgpall",
     "jäähoki": "jaahoki", "hoki": "jaahoki", "saalihoki": "saalihoki", "saalijalgpall": "saalijalgpall",
+    "tennis": "tennis", "sulgpall": "sulgpall", "lauatennis": "lauatennis",
 }
 
 

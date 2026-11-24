@@ -46,13 +46,15 @@ SPORT_GEN = {"jalgpall": "jalgpalli", "korvpall": "korvpalli", "jaahoki": "jää
              "kasipall": "käsipalli", "saalihoki": "saalihoki", "saalijalgpall": "saalijalgpalli",
              "motosport": "motospordi", "kergejoustik": "kergejõustiku",
              "suusatamine": "suusa", "ratsasport": "ratsa",
-             "uisutamine": "uisu", "voitlusspordid": "võitlusspordi", "autosport": "autospordi"}
+             "uisutamine": "uisu", "voitlusspordid": "võitlusspordi", "autosport": "autospordi",
+             "tennis": "tennise", "sulgpall": "sulgpalli", "lauatennis": "lauatennise"}
 # ala seesütlevas käändes päise lauses: "Ela kaasa koondistele jalgpallis Tallinnas"
 SPORT_IN = {"jalgpall": "jalgpallis", "korvpall": "korvpallis", "jaahoki": "jäähokis", "vorkpall": "võrkpallis",
             "kasipall": "käsipallis", "saalihoki": "saalihokis", "saalijalgpall": "saalijalgpallis",
             "motosport": "motospordis", "kergejoustik": "kergejõustikus",
             "suusatamine": "suusatamises", "ratsasport": "ratsaspordis",
-            "uisutamine": "uisutamises", "voitlusspordid": "võitlusspordis", "autosport": "autospordis"}
+            "uisutamine": "uisutamises", "voitlusspordid": "võitlusspordis", "autosport": "autospordis",
+            "tennis": "tennises", "sulgpall": "sulgpallis", "lauatennis": "lauatennises"}
 # alade rühmad päise alavalikus: rühma nimi valib kõik selle alad, nool avab üksikud alad (site/app.js).
 # Rühm on menüüs ainult siis, kui sellel tasemel on vähemalt 2 selle rühma ala; muidu on ala eraldi.
 SPORT_GROUPS = [
@@ -60,6 +62,7 @@ SPORT_GROUPS = [
      "sports": ["jalgpall", "saalijalgpall", "korvpall", "vorkpall", "kasipall", "jaahoki", "saalihoki"]},
     {"key": "g:tali", "name": "Talialad", "word": "talialadel", "sports": ["suusatamine", "uisutamine"]},
     {"key": "g:mootor", "name": "Mootorsport", "word": "mootorspordis", "sports": ["autosport", "motosport"]},
+    {"key": "g:reket", "name": "Reketialad", "word": "reketialadel", "sports": ["tennis", "sulgpall", "lauatennis"]},
 ]
 
 
@@ -582,6 +585,9 @@ SOURCE_SITES = {
     "voitlusspordid": [("Eesti Judoliit", "https://judo.ee/voistlused/"), ("Eesti Maadlusliit", "https://maadlusliit.ee/kalender/"),
                        ("Eesti Poksiliit", "https://www.eestipoksiliit.ee/")],
     "autosport": [("Eesti Autospordi Liit", "https://autosport.ee/events/"), ("WRC Rally Estonia", "https://www.rallyestonia.ee/")],
+    "tennis": [("Eesti Tennise Liit", "https://tennis.ee/kalender/")],
+    "sulgpall": [("Eesti Sulgpalliliit", "https://badminton.ee/voistle/kalender/voistluskalender/")],
+    "lauatennis": [("Eesti Lauatenniseliit", "https://uus.lauatennis.ee/voistlused/kalender/")],
 }
 
 
@@ -590,6 +596,8 @@ MANUAL_COVERAGE = {
     "suusatamine": "Laskesuusatamine: suured võistlused (käsitsi)",
     "voitlusspordid": "Poks, maadlus, kikk- ja taipoks: suuremad võistlused (käsitsi)",
     "autosport": "WRC Rally Estonia ja suuremad etapid (käsitsi)",
+    "tennis": "WTA Tallinn Open, Davis Cupi ja Billie Jean King Cupi kodumängud (käsitsi)",
+    "lauatennis": "Meistriliiga ja Eesti MV (käsitsi)",
 }
 
 

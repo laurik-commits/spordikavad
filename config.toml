@@ -577,6 +577,41 @@ competitions = [
   { league = "Klubide turniirid", level = 3, check = false },
 ]
 
+# --- Reketialad (lisatud 2026-11-24): tennis ja sulgpall automaatselt, lauatennis käsitsi (otsinguagent) ---
+[[source]]
+name = "tennis_etl"
+sport = "tennis"
+league = "Tennis (Tennise Liit)"
+enabled = true
+check = false
+year_round = true
+seasons = [["01-01", "12-31"]]
+# tennis.ee/kalender/ (robots.txt lubab). Täiskasvanute MV, Masters ja rahvusvahelised → 1, Eesti GP → 2,
+# noorte MV ja rahvusvahelised noorteturniirid → 4, noorte GP ja noorteliiga → 3 (peidetud).
+competitions = [
+  { league = "Eesti MV, Masters, rahvusvahelised", check = false },
+  { league = "Eesti GP", level = 2, check = false },
+  { league = "Noorte MV, ITF ja Tennis Europe noorteturniirid", level = 4, check = false },
+  { league = "Noorte GP, noorteliiga", level = 3, check = false },
+]
+
+[[source]]
+name = "sulgpall_esl"
+sport = "sulgpall"
+league = "Sulgpall (Sulgpalliliit)"
+enabled = true
+check = false
+year_round = true
+seasons = [["01-01", "12-31"]]
+# badminton.ee võistluskalender (robots.txt lubab). Rahvusvahelised, Eesti MV, klubide karikas → 1, GP-sari → 2,
+# noorte MV ja rahvusvahelised noorteturniirid → 4, noorte GP ja harrastajate turniirid → 3 (peidetud), seeniorid välja.
+competitions = [
+  { league = "Rahvusvahelised, Eesti MV, klubide karikas", check = false },
+  { league = "GP-sari", level = 2, check = false },
+  { league = "Noorte MV ja rahvusvahelised noorteturniirid", level = 4, check = false },
+  { league = "Noorte GP, harrastajate turniirid", level = 3, check = false },
+]
+
 [[source]]
 name = "kasitsi"
 league = "Käsitsi lisatud"

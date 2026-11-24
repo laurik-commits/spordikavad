@@ -39,6 +39,7 @@ _SPORT_START = [
     (r"kergejõustik", "kergejoustik"), (r"(iluuisutamis|kiiruisutamis|uisutamis)", "uisutamine"),
     (r"(ralli|rally|wrc)", "autosport"), (r"(motokross|mootorratta)", "motosport"),
     (r"(judo|poksi|maadlus)", "voitlusspordid"), (r"(ratsaspordi|takistussõit)", "ratsasport"),
+    (r"lauatennis", "lauatennis"), (r"tennis", "tennis"), (r"sulgpall", "sulgpall"),
 ]
 _BALL = {"saalijalgpall", "jalgpall", "korvpall", "vorkpall", "kasipall", "jaahoki", "saalihoki"}
 
