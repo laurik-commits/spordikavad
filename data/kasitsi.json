@@ -1,6 +1,21 @@
 {
- "updated": "2026-11-23T16:40:11+02:00",
+ "updated": "2026-11-24T22:55:54+02:00",
  "events": [
+  {
+   "id": "c2ef82f0f560",
+   "sport": "jalgpall",
+   "league": "UEFA noorteliiga",
+   "start": "2026-11-25T18:30:00+02:00",
+   "home": "FC Flora U19",
+   "away": "St. Patrick's Athletic FC U19",
+   "venue": "Sportland Arena",
+   "city": "Tallinn",
+   "url": "https://fcflora.ee/kolmapaeval-kohtuvad-uefa-noorteliiga-fc-flora-ja-st-patricks-athletic-fc-mangust-otseulekannet-ei-toodeta/",
+   "source": "kasitsi",
+   "time_tbc": false,
+   "result": "",
+   "level": 4
+  },
   {
    "id": "3709f689ea15",
    "sport": "korvpall",
