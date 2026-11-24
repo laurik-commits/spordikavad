@@ -330,6 +330,14 @@ Menüüs rühm „Reketialad“ (`build.SPORT_GROUPS`).
 - **Lauatennis**: kalender on allalaaditavas failis (uus.lauatennis.ee), meistriliiga ja tulemused eltl.ee/voistlused. Praegu lisab meistriliiga mängud ja Eesti MV otsinguagent käsitsi; adapteri kandidaat.
 - **Squash ja padel**: peamiselt harrastajate liigad (padel.ee iCal, squash.ee Events Calendar API on olemas), sobivad hiljem „võtan osa“ juurde.
 
+## Kunstilised alad: võimlemine, tantsusport, fitness, käsitsi (lisatud 2026-11-24 omaniku soovil)
+
+Menüüs rühm „Kunstilised alad“. Automaatset lugejat praegu pole, võistlused lisab otsinguagent (`kasitsi.toml`):
+- **Võimlemine** (iluvõimlemine, sportvõimlemine, rühmvõimlemine): kalender.eevl.ee on JavaScripti rakendus, toores HTML-is sündmusi pole ja avalikku andmeaadressi ei leitud. Suurim: Miss Valentine Tartus igal veebruaril (missvalentine.eu; 2026: 25.02–1.03 Tartu Ülikooli spordihoones, 2027 kuupäevad teadmata).
+- **Tantsusport**: dancesport.ee aasta kalendris on ainult kuupäev ja nimi (~5 võistlust, nt 20.03.2027 „EMV ST&LA + Tallinn Trophy“), kohta pole: koht juhendist või uudisest.
+- **Fitness ja kulturism**: kulturism.ee on Events Calendar (iCal ja REST API, robots Crawl-delay 3), aga Eestis toimuvaid võistlusi on vähe (Eesti MV ja Estonian Open Cup, peamiselt kevadel), IFBB rahvusvahelised on enamasti välismaal ja ilma kohata.
+- Kui mõni allikas muutub loetavaks (nt võimlemisliidu kalender saab avaliku voo), saab teha adapteri.
+
 ## Pistekontroll 2026-11-20
 
 Iga allika kohta üks mäng lehel olevatest andmetest, võrreldud allika enda mängulehega:

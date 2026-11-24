@@ -47,14 +47,16 @@ SPORT_GEN = {"jalgpall": "jalgpalli", "korvpall": "korvpalli", "jaahoki": "jää
              "motosport": "motospordi", "kergejoustik": "kergejõustiku",
              "suusatamine": "suusa", "ratsasport": "ratsa",
              "uisutamine": "uisu", "voitlusspordid": "võitlusspordi", "autosport": "autospordi",
-             "tennis": "tennise", "sulgpall": "sulgpalli", "lauatennis": "lauatennise"}
+             "tennis": "tennise", "sulgpall": "sulgpalli", "lauatennis": "lauatennise",
+             "voimlemine": "võimlemis", "tantsusport": "tantsuspordi", "fitness": "fitnessi"}
 # ala seesütlevas käändes päise lauses: "Ela kaasa koondistele jalgpallis Tallinnas"
 SPORT_IN = {"jalgpall": "jalgpallis", "korvpall": "korvpallis", "jaahoki": "jäähokis", "vorkpall": "võrkpallis",
             "kasipall": "käsipallis", "saalihoki": "saalihokis", "saalijalgpall": "saalijalgpallis",
             "motosport": "motospordis", "kergejoustik": "kergejõustikus",
             "suusatamine": "suusatamises", "ratsasport": "ratsaspordis",
             "uisutamine": "uisutamises", "voitlusspordid": "võitlusspordis", "autosport": "autospordis",
-            "tennis": "tennises", "sulgpall": "sulgpallis", "lauatennis": "lauatennises"}
+            "tennis": "tennises", "sulgpall": "sulgpallis", "lauatennis": "lauatennises",
+            "voimlemine": "võimlemises", "tantsusport": "tantsuspordis", "fitness": "fitnessis"}
 # alade rühmad päise alavalikus: rühma nimi valib kõik selle alad, nool avab üksikud alad (site/app.js).
 # Rühm on menüüs ainult siis, kui sellel tasemel on vähemalt 2 selle rühma ala; muidu on ala eraldi.
 SPORT_GROUPS = [
@@ -63,6 +65,8 @@ SPORT_GROUPS = [
     {"key": "g:tali", "name": "Talialad", "word": "talialadel", "sports": ["suusatamine", "uisutamine"]},
     {"key": "g:mootor", "name": "Mootorsport", "word": "mootorspordis", "sports": ["autosport", "motosport"]},
     {"key": "g:reket", "name": "Reketialad", "word": "reketialadel", "sports": ["tennis", "sulgpall", "lauatennis"]},
+    {"key": "g:kunst", "name": "Kunstilised alad", "word": "kunstilistel aladel",
+     "sports": ["voimlemine", "tantsusport", "fitness"]},
 ]
 
 
@@ -588,6 +592,9 @@ SOURCE_SITES = {
     "tennis": [("Eesti Tennise Liit", "https://tennis.ee/kalender/")],
     "sulgpall": [("Eesti Sulgpalliliit", "https://badminton.ee/voistle/kalender/voistluskalender/")],
     "lauatennis": [("Eesti Lauatenniseliit", "https://uus.lauatennis.ee/voistlused/kalender/")],
+    "voimlemine": [("Eesti Võimlemisliit", "https://kalender.eevl.ee/")],
+    "tantsusport": [("Eesti Tantsuspordi Liit", "https://dancesport.ee/voistlused-ja-edetabelid/")],
+    "fitness": [("Eesti Kulturismi ja Fitnessi Liit", "https://kulturism.ee/kalender/")],
 }
 
 
@@ -598,6 +605,9 @@ MANUAL_COVERAGE = {
     "autosport": "WRC Rally Estonia ja suuremad etapid (käsitsi)",
     "tennis": "WTA Tallinn Open, Davis Cupi ja Billie Jean King Cupi kodumängud (käsitsi)",
     "lauatennis": "Meistriliiga ja Eesti MV (käsitsi)",
+    "voimlemine": "Iluvõimlemise rahvusvahelised turniirid (nt Miss Valentine) ja Eesti MV (käsitsi)",
+    "tantsusport": "Eesti MV ja suured rahvusvahelised võistlused (käsitsi)",
+    "fitness": "Fitnessi ja kulturismi Eesti MV ja rahvusvahelised võistlused Eestis (käsitsi)",
 }
 
 

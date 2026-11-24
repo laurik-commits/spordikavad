@@ -29,6 +29,7 @@ SPORTS = {
     "võrkpall": "vorkpall", "korvpall": "korvpall", "käsipall": "kasipall", "jalgpall": "jalgpall",
     "jäähoki": "jaahoki", "hoki": "jaahoki", "saalihoki": "saalihoki", "saalijalgpall": "saalijalgpall",
     "tennis": "tennis", "sulgpall": "sulgpall", "lauatennis": "lauatennis",
+    "võimlemine": "voimlemine", "iluvõimlemine": "voimlemine", "tantsusport": "tantsusport", "fitness": "fitness",
 }
 
 

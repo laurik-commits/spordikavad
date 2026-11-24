@@ -747,3 +747,52 @@ kasutus = "agent"
 kontrollitud = 2026-11-24
 markus = "Kalender on allalaaditavas failis; meistriliiga lehed ja tulemused eltl.ee/voistlused. Meistriliiga mängud ja Eesti MV lisab agent käsitsi."
 kandidaat = true
+
+# --- Kunstilised alad (lisatud 2026-11-24): võistlused lisab agent käsitsi ---
+[[allikas]]
+nimi = "Eesti Tantsuspordi Liit: kalender"
+liik = "liit"
+url = "https://dancesport.ee/voistlused-ja-edetabelid/kalender-2027/"
+alad = ["tantsusport"]
+piirkond = "Eesti"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-24
+markus = "Aasta lehel ainult kuupäev ja nimi (EKV, EMV, Tallinn Trophy), ~5 võistlust aastas, kohta pole: koht võistluse juhendist või uudisest. Vaatamist väärt: EMV ja rahvusvahelised."
+
+[[allikas]]
+nimi = "Eesti Kulturismi ja Fitnessi Liit: kalender"
+liik = "liit"
+url = "https://kulturism.ee/kalender/category/voistlused/"
+alad = ["fitness"]
+piirkond = "Eesti"
+kuju = "api"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-24
+markus = "Events Calendar (iCal /kalender/?ical=1 ja wp-json/tribe/events/v1). Eesti MV ja Estonian Open Cup Eestis; IFBB rahvusvahelised on enamasti välismaal. Crawl-delay 3."
+
+[[allikas]]
+nimi = "Eesti Võimlemisliit: sündmuste kalender"
+liik = "liit"
+url = "https://kalender.eevl.ee/"
+alad = ["voimlemine"]
+piirkond = "Eesti"
+kuju = "js"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-24
+markus = "JavaScripti rakendus (toores HTML-is sündmusi pole). Iluvõimlemine, sportvõimlemine, rühmvõimlemine: Eesti MV ja rahvusvahelised turniirid; kinnitus ka klubide lehtedelt."
+
+[[allikas]]
+nimi = "Miss Valentine (iluvõimlemise turniir, Tartu)"
+liik = "rahvusvaheline"
+url = "https://missvalentine.eu/"
+alad = ["voimlemine"]
+piirkond = "Tartu"
+kuju = "html"
+robots = "kontrollimata"
+kasutus = "agent"
+kontrollitud = 2026-11-24
+markus = "Igal veebruaril Tartus (2026: 25.02–1.03, Tartu Ülikooli spordihoone). 2027 kuupäevad veel teadmata."
