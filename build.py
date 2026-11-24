@@ -409,7 +409,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
     if out.exists():
         shutil.rmtree(out)
     out.mkdir(parents=True)
-    for asset in ("style.css", "app.js", "kalender.js", "og.png"):
+    for asset in ("style.css", "app.js", "kalender.js", "og.png", "paise.webp"):
         shutil.copy(SITE / asset, out / asset)
 
     # mängud päeva kaupa (14 päeva aken)

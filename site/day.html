@@ -28,7 +28,7 @@
 <script>document.documentElement.classList.add("js")</script>
 </head>
 <body data-built="{{ built }}" data-region="{{ region.slug }}" data-level="{{ level }}" data-default="{{ default_slug }}" data-default-level="{{ default_level }}" data-levels='{{ level_prefixes }}' data-root="{{ root }}" data-day="{{ day.isoformat() }}" data-region-kind="{{ region.kind }}" data-in="{{ region.in_form }}" data-base="{{ base_url }}"{% if is_index %} data-index="1"{% endif %}>
-<header class="bar">
+<header class="bar hero">
   <div class="wrap">
     <div class="top say">
       <details class="about pick-menu">
@@ -87,6 +87,7 @@
       </details>
     </div>
     {# vaate valik ja kalender (site/kalender.js): ilma JS-ita peidus, päevalehed töötavad nagu enne #}
+    <div class="ctl">
     <div class="views" role="group" aria-label="Vaade" hidden>
       <button type="button" data-view="day" aria-pressed="true">Päev</button>
       <button type="button" data-view="week" aria-pressed="false">Nädal</button>
@@ -97,6 +98,7 @@
       <h1><button type="button" class="datebtn" aria-haspopup="dialog" aria-label="Vali kuupäev: {% if day == today %}täna, {% endif %}{{ human }}"><span class="datelabel">{% if day == today %}Täna, {% endif %}{{ human }}</span><svg class="calicon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2.5"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></button></h1>
       {% if next_day %}<a href="{{ here }}{{ next_day.isoformat() }}/" rel="next" class="step" aria-label="Järgmine päev">▶</a>{% else %}<span class="off step" aria-hidden="true">▶</span>{% endif %}
     </nav>
+    </div>
   </div>
 </header>
 
