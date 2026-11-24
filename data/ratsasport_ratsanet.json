@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T07:45:16+02:00",
+ "updated": "2026-11-24T21:53:31+02:00",
  "events": [
   {
    "id": "27fe55727089",
@@ -928,6 +928,22 @@
    "end": "2027-06-20"
   },
   {
+   "id": "2cbe011cfec5",
+   "sport": "ratsasport",
+   "league": "Koolisõit, Parakoolisõit",
+   "start": "2027-06-19T00:00:00+03:00",
+   "home": "Toominga suvi",
+   "away": "",
+   "venue": "Toominga tall",
+   "city": "Lilli",
+   "url": "https://ratsanet.ee/events/4654",
+   "source": "ratsasport_ratsanet",
+   "time_tbc": true,
+   "result": "",
+   "level": 3,
+   "end": "2027-06-20"
+  },
+  {
    "id": "5be7afd6dbbd",
    "sport": "ratsasport",
    "league": "Takistussõit",
@@ -974,37 +990,6 @@
    "result": "",
    "level": 1,
    "end": "2027-07-04"
-  },
-  {
-   "id": "cb8e46d45748",
-   "sport": "ratsasport",
-   "league": "Koolisõit, Parakoolisõit",
-   "start": "2027-07-03T00:00:00+03:00",
-   "home": "Toominga suvi",
-   "away": "",
-   "venue": "Toominga tall",
-   "city": "Lilli",
-   "url": "https://ratsanet.ee/events/4654",
-   "source": "ratsasport_ratsanet",
-   "time_tbc": true,
-   "result": "",
-   "level": 3,
-   "end": "2027-07-04"
-  },
-  {
-   "id": "cd21c5b842dd",
-   "sport": "ratsasport",
-   "league": "Takistussõit",
-   "start": "2027-07-03T00:00:00+03:00",
-   "home": "THK Suvekarikas",
-   "away": "",
-   "venue": "Tori Hobusekasvandus",
-   "city": "Tori",
-   "url": "https://ratsanet.ee/events/4699",
-   "source": "ratsasport_ratsanet",
-   "time_tbc": true,
-   "result": "",
-   "level": 3
   }
  ]
 }

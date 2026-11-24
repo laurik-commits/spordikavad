@@ -213,6 +213,26 @@
   },
   "first_seen": "2026-11-23"
  },
+ "2cbe011cfec5": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Lilli",
+   "end": "2027-06-20",
+   "home": "Toominga suvi",
+   "id": "2cbe011cfec5",
+   "league": "Koolisõit, Parakoolisõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-06-19T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4654",
+   "venue": "Toominga tall"
+  },
+  "first_seen": "2026-11-24"
+ },
  "2f9330b16db3": {
   "changes": [],
   "event": {
@@ -896,7 +916,8 @@
    "url": "https://ratsanet.ee/events/4654",
    "venue": "Toominga tall"
   },
-  "first_seen": "2026-11-23"
+  "first_seen": "2026-11-23",
+  "missing_since": "2026-11-24"
  },
  "cd21c5b842dd": {
   "changes": [],
@@ -915,7 +936,8 @@
    "url": "https://ratsanet.ee/events/4699",
    "venue": "Tori Hobusekasvandus"
   },
-  "first_seen": "2026-11-23"
+  "first_seen": "2026-11-23",
+  "missing_since": "2026-11-24"
  },
  "cf2999402f55": {
   "changes": [],

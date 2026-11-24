@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T16:16:56+02:00",
+ "updated": "2026-11-24T21:53:17+02:00",
  "events": [
   {
    "id": "1dab57ab370a",
@@ -785,6 +785,21 @@
    "time_tbc": false,
    "result": "",
    "level": 4
+  },
+  {
+   "id": "25caa11cd612",
+   "sport": "kergejoustik",
+   "league": "Kohalikud võistlused",
+   "start": "2027-02-12T00:00:00+02:00",
+   "home": "Eesti talvised MV para- ja kurtide kergejõustikus 2027",
+   "away": "",
+   "venue": "Lasnamäe Kergejõustikuhall",
+   "city": "Tallinn",
+   "url": "https://www.ekjl.ee/kalender/",
+   "source": "kergejoustik_ekjl",
+   "time_tbc": true,
+   "result": "",
+   "level": 3
   },
   {
    "id": "b8317479c366",

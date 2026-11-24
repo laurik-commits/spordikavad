@@ -1,0 +1,315 @@
+{
+ "17220e924807": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "end": "2026-12-12",
+   "home": "RSL Estonian U17 International 2026",
+   "id": "17220e924807",
+   "league": "Sulgpall",
+   "level": 4,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2026-12-10T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/wp-content/uploads/2026/07/Invitation-RSL-Estonian-U17-International-2026.pdf",
+   "venue": "A. Le Coq Spordihoone"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "17393acf5011": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Paarissuled",
+   "id": "17393acf5011",
+   "league": "Sulgpall",
+   "level": 3,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2026-12-05T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/wp-content/uploads/2026/08/PAARISSULED-2026-juhend-detsember.pdf",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "24ac84304212": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "end": "2026-11-15",
+   "home": "Eesti Noorte Meistrivõistlused 2026",
+   "id": "24ac84304212",
+   "league": "Sulgpall",
+   "level": 4,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2026-11-14T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/wp-content/uploads/2026/07/2026-ENMV-juhend-U11-U17.pdf",
+   "venue": "A. Le Coq Spordihoone"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "2e4489e70e56": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2026-11-01",
+   "home": "RSL Noorte GP-6",
+   "id": "2e4489e70e56",
+   "league": "Sulgpall",
+   "level": 3,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2026-10-31T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/wp-content/uploads/2026/07/RSLNGP-6.pdf",
+   "venue": "Lenne Sulgpallikeskus"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "5eb0be29924a": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Triiton paarismänguturniir",
+   "id": "5eb0be29924a",
+   "league": "Sulgpall",
+   "level": 3,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2026-12-19T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/wp-content/uploads/2026/07/PAARIS-JA-SEGAPAARIS-MANGUTURNIIR.pdf",
+   "venue": "A. Le Coq Spordihoone"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "6a99c3f2d88f": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "SPORTLAND üksikmänguturniir",
+   "id": "6a99c3f2d88f",
+   "league": "Sulgpall",
+   "level": 3,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2026-10-24T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/wp-content/uploads/2026/09/UKSIKMANG_SPORTLAND-1.pdf",
+   "venue": "A. Le Coq Spordihoone"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "7eb61d241585": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Ulsans Christmas",
+   "id": "7eb61d241585",
+   "league": "Sulgpall",
+   "level": 3,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2026-12-19T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/voistle/kalender/voistluskalender/",
+   "venue": "Lenne Sulgpallikeskus"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "8a2460219771": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2026-10-11",
+   "home": "RSL GP-1",
+   "id": "8a2460219771",
+   "league": "Sulgpall",
+   "level": 2,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2026-10-10T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/wp-content/uploads/2026/07/GP-1-2026.pdf",
+   "venue": "Lenne Sulgpallikeskus"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "98b910839c1e": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2026-09-20",
+   "home": "RSL Noorte GP-5",
+   "id": "98b910839c1e",
+   "league": "Sulgpall",
+   "level": 3,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2026-09-19T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/wp-content/uploads/2026/08/RSL-Noorte-GP-5.pdf",
+   "venue": "Lenne Sulgpallikeskus"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "9a835ff42857": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2026-11-08",
+   "home": "RSL GP-2",
+   "id": "9a835ff42857",
+   "league": "Sulgpall",
+   "level": 2,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2026-11-07T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/wp-content/uploads/2026/08/RSL-GP-2.pdf",
+   "venue": "Lenne Sulgpallikeskus"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "9da1eceeba5f": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "end": "2026-12-12",
+   "home": "RSL Estonian Junior 2026",
+   "id": "9da1eceeba5f",
+   "league": "Sulgpall",
+   "level": 4,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2026-12-10T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/wp-content/uploads/2026/07/Invitation-RSL-Estonian-Junior-2026.pdf",
+   "venue": "A. Le Coq Spordihoone"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "b3feb58628c6": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "YOUNG Eliit Seeria I",
+   "id": "b3feb58628c6",
+   "league": "Sulgpall",
+   "level": 3,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2026-10-03T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/wp-content/uploads/2026/08/Young-I-etapp.pdf",
+   "venue": "Lenne Sulgpallikeskus"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "c83704bd2ffe": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Victor Cup I",
+   "id": "c83704bd2ffe",
+   "league": "Sulgpall",
+   "level": 3,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2026-12-12T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/wp-content/uploads/2026/07/Victor-Cup-I-2026-juhend.pdf",
+   "venue": "Lenne Sulgpallikeskus"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "d725924d636c": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Otepää",
+   "end": "2026-11-29",
+   "home": "Klubide Karikas 2026",
+   "id": "d725924d636c",
+   "league": "Sulgpall",
+   "level": 1,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2026-11-27T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/wp-content/uploads/2026/07/Klubide-Karikas-juhend-2026.pdf",
+   "venue": "Kääriku spordikeskus"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "dee6ad049cfd": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "end": "2026-12-12",
+   "home": "RSL Estonian Youth International 2026/ Noorte GP-7",
+   "id": "dee6ad049cfd",
+   "league": "Sulgpall",
+   "level": 4,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2026-12-10T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/wp-content/uploads/2026/07/Invitation-Estonian-Youth-International-U9-U15_2026.pdf",
+   "venue": "A. Le Coq Spordihoone"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "f39484716116": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "SPORTLAND Paarismänguturniir",
+   "id": "f39484716116",
+   "league": "Sulgpall",
+   "level": 3,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2026-10-03T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/wp-content/uploads/2026/07/PAARIS-JA-SEGAPAARIS-MANGUTURNIIR_TEHTUD.pdf",
+   "venue": "A. Le Coq Spordihoone"
+  },
+  "first_seen": "2026-11-24"
+ }
+}

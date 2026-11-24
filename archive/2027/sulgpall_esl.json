@@ -1,0 +1,392 @@
+{
+ "04c51f71660a": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "end": "2027-04-11",
+   "home": "RSL Noorte GP-3",
+   "id": "04c51f71660a",
+   "league": "Sulgpall",
+   "level": 3,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2027-04-10T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/voistle/kalender/voistluskalender/",
+   "venue": "A. Le Coq Spordihoone"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "2b57b5098aa0": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "end": "2027-03-21",
+   "home": "RSL Noorte GP-2",
+   "id": "2b57b5098aa0",
+   "league": "Sulgpall",
+   "level": 3,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2027-03-20T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/voistle/kalender/voistluskalender/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "32ba36414413": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "YOUNG Eliit Seeria II",
+   "id": "32ba36414413",
+   "league": "Sulgpall",
+   "level": 3,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2027-01-30T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/voistle/kalender/voistluskalender/",
+   "venue": "Lenne Sulgpallikeskus"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "45f6e02beb28": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-03-14",
+   "home": "RSL GP-4",
+   "id": "45f6e02beb28",
+   "league": "Sulgpall",
+   "level": 2,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2027-03-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/voistle/kalender/voistluskalender/",
+   "venue": "Lenne Sulgpallikeskus"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "61a14f6f6e30": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Jõgeva",
+   "end": "2027-02-21",
+   "home": "RSL Noorte GP-1",
+   "id": "61a14f6f6e30",
+   "league": "Sulgpall",
+   "level": 3,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2027-02-20T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/voistle/kalender/voistluskalender/",
+   "venue": "Jõgeva spordihoone"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "6a379adb1373": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "XIII Muruturniir",
+   "id": "6a379adb1373",
+   "league": "Sulgpall",
+   "level": 3,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2027-03-27T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/voistle/kalender/voistluskalender/",
+   "venue": "Lenne Sulgpallikeskus"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "76d818036f99": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "end": "2027-02-06",
+   "home": "63. Eesti Meistrivõistlused",
+   "id": "76d818036f99",
+   "league": "Sulgpall",
+   "level": 1,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2027-02-04T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/voistle/kalender/voistluskalender/",
+   "venue": "A. Le Coq Spordihoone"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "82b3ee2dcb41": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Victor Cup III",
+   "id": "82b3ee2dcb41",
+   "league": "Sulgpall",
+   "level": 3,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2027-03-20T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/voistle/kalender/voistluskalender/",
+   "venue": "Lenne Sulgpallikeskus"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "88f9e20d7378": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Triiton paarismänguturniir",
+   "id": "88f9e20d7378",
+   "league": "Sulgpall",
+   "level": 3,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2027-05-15T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/voistle/kalender/voistluskalender/",
+   "venue": "A. Le Coq Spordihoone"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "8cc7bfc1507c": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Triiton paarismänguturniir",
+   "id": "8cc7bfc1507c",
+   "league": "Sulgpall",
+   "level": 3,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2027-03-06T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/voistle/kalender/voistluskalender/",
+   "venue": "A. Le Coq Spordihoone"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "8f5c6d2ca0bf": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-04-04",
+   "home": "Eesti Seenioride ja Juunioride Meistrivõistlused 2027",
+   "id": "8f5c6d2ca0bf",
+   "league": "Sulgpall",
+   "level": 4,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2027-04-03T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/voistle/kalender/voistluskalender/",
+   "venue": "Lenne Sulgpallikeskus"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "9c104d711ae7": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Noorte Klubide Karikas 2027",
+   "id": "9c104d711ae7",
+   "league": "Sulgpall",
+   "level": 4,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2027-05-22T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/voistle/kalender/voistluskalender/",
+   "venue": "Lenne Sulgpallikeskus"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "9fee81240ccd": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-04-25",
+   "home": "RSL GP-5",
+   "id": "9fee81240ccd",
+   "league": "Sulgpall",
+   "level": 2,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2027-04-24T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/voistle/kalender/voistluskalender/",
+   "venue": "Lenne Sulgpallikeskus"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "ad4ab876cdf8": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "end": "2027-01-17",
+   "home": "RSL GP-3",
+   "id": "ad4ab876cdf8",
+   "league": "Sulgpall",
+   "level": 2,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2027-01-16T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/voistle/kalender/voistluskalender/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "c10d5797a6cc": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Paarissuled",
+   "id": "c10d5797a6cc",
+   "league": "Sulgpall",
+   "level": 3,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2027-02-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/voistle/kalender/voistluskalender/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "d3a700b47f97": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-01-10",
+   "home": "European Mixed Team Championships 2027",
+   "id": "d3a700b47f97",
+   "league": "Sulgpall",
+   "level": 1,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2027-01-06T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/voistle/kalender/voistluskalender/",
+   "venue": "Kalevi spordihall"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "dad0dcb601fb": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Triiton üksikmänguturniir",
+   "id": "dad0dcb601fb",
+   "league": "Sulgpall",
+   "level": 3,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2027-01-23T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/voistle/kalender/voistluskalender/",
+   "venue": "A. Le Coq Spordihoone"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "ee0e475a649b": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Victor Cup II",
+   "id": "ee0e475a649b",
+   "league": "Sulgpall",
+   "level": 3,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2027-01-23T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/voistle/kalender/voistluskalender/",
+   "venue": "Lenne Sulgpallikeskus"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "eef5583f8c18": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "YOUNG Eliit Seeria III",
+   "id": "eef5583f8c18",
+   "league": "Sulgpall",
+   "level": 3,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2027-04-17T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/voistle/kalender/voistluskalender/",
+   "venue": "Lenne Sulgpallikeskus"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "f20c43bc6a58": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-05-09",
+   "home": "RSL Noorte GP-4",
+   "id": "f20c43bc6a58",
+   "league": "Sulgpall",
+   "level": 3,
+   "result": "",
+   "source": "sulgpall_esl",
+   "sport": "sulgpall",
+   "start": "2027-05-08T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://badminton.ee/voistle/kalender/voistluskalender/",
+   "venue": "Lenne Sulgpallikeskus"
+  },
+  "first_seen": "2026-11-24"
+ }
+}

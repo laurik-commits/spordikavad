@@ -1,0 +1,295 @@
+{
+ "089afa9c8df2": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Noorteliiga II paarismängu turniir",
+   "id": "089afa9c8df2",
+   "league": "Tennis: noorteliiga",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2026-11-14T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "FV Rackets"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "2d0ced677830": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Eesti Noorte GP paarismängu turniir",
+   "id": "2d0ced677830",
+   "league": "Tennis: tüdrukud ja poisid U16",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2026-11-28T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "MK TK"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "358b37e306c0": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Ratastoolitennise GP",
+   "id": "358b37e306c0",
+   "league": "Tennis",
+   "level": 2,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2026-11-07T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "Tallinn, koht täpsustamisel"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "3fa0b4354080": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2026-11-08",
+   "home": "Masters",
+   "id": "3fa0b4354080",
+   "league": "Tennis: TP12,14,16,18",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2026-11-06T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "Tallinn, koht täpsustamisel"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "4f6700a19a22": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Noorteliiga III",
+   "id": "4f6700a19a22",
+   "league": "Tennis: noorteliiga",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2026-12-05T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "MK TK"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "55c6b36ca5ba": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2026-11-08",
+   "home": "Tennis 10",
+   "id": "55c6b36ca5ba",
+   "league": "Tennis: tüdrukud ja poisid U10",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2026-11-07T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "Tallinn, koht täpsustamisel"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "74164a15f80b": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2026-11-07",
+   "home": "Masters",
+   "id": "74164a15f80b",
+   "league": "Tennis: mehed ja naised",
+   "level": 1,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2026-11-05T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "Tallinn, koht täpsustamisel"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "7f8504bb0dca": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2026-12-06",
+   "home": "Noorteliiga I",
+   "id": "7f8504bb0dca",
+   "league": "Tennis: noorteliiga",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2026-12-05T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "Tondiraba TK"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "8f21838775f9": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2026-11-29",
+   "home": "Noorteliiga II",
+   "id": "8f21838775f9",
+   "league": "Tennis: noorteliiga",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2026-11-28T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "Tallink City SK"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "9d1da57b0d39": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Noorteliiga III",
+   "id": "9d1da57b0d39",
+   "league": "Tennis: noorteliiga",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2026-11-21T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "Tallink City SK"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "a780418752c9": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Saue vald",
+   "end": "2026-11-22",
+   "home": "Noorteliiga I",
+   "id": "a780418752c9",
+   "league": "Tennis: noorteliiga",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2026-11-21T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "Laagri TK"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "ca076b4b1eb5": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "end": "2026-12-13",
+   "home": "Noorteliiga II",
+   "id": "ca076b4b1eb5",
+   "league": "Tennis: noorteliiga",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2026-12-12T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "MK TK"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "d26bc9eba0e8": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Eesti Noorte GP paarismängu turniir",
+   "id": "d26bc9eba0e8",
+   "league": "Tennis: tüdrukud ja poisid U14",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2026-11-21T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "US Tenniseakadeemia"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "edfcb30e9c86": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2026-11-21",
+   "home": "ITF Juniors Tallinn",
+   "id": "edfcb30e9c86",
+   "league": "Tennis: tüdrukud ja poisid U18",
+   "level": 4,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2026-11-16T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "Tallink City SK"
+  },
+  "first_seen": "2026-11-24"
+ },
+ "fa0c440f945f": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Eesti Noorte GP paarismängu turniir",
+   "id": "fa0c440f945f",
+   "league": "Tennis: tüdrukud ja poisid U12",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2026-11-28T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "FV Tennis (Tallinn)"
+  },
+  "first_seen": "2026-11-24"
+ }
+}

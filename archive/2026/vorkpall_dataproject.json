@@ -19,7 +19,14 @@
   "first_seen": "2026-11-22"
  },
  "0317a89a114c": {
-  "changes": [],
+  "changes": [
+   {
+    "field": "result",
+    "from": "",
+    "on": "2026-11-24",
+    "to": "2-1"
+   }
+  ],
   "event": {
    "away": "TBD Pharmatech",
    "city": "Põltsamaa",
@@ -27,7 +34,7 @@
    "id": "0317a89a114c",
    "league": "Esiliiga (naised)",
    "level": 2,
-   "result": "",
+   "result": "2-1",
    "source": "vorkpall_dataproject",
    "sport": "vorkpall",
    "start": "2026-11-23T20:00:00+02:00",
@@ -676,7 +683,14 @@
   "first_seen": "2026-11-22"
  },
  "2692c2711a96": {
-  "changes": [],
+  "changes": [
+   {
+    "field": "result",
+    "from": "",
+    "on": "2026-11-24",
+    "to": "0-3"
+   }
+  ],
   "event": {
    "away": "Selver xTalTech",
    "city": "Võru",
@@ -684,7 +698,7 @@
    "id": "2692c2711a96",
    "league": "Eesti karikas (mehed)",
    "level": 1,
-   "result": "",
+   "result": "0-3",
    "source": "vorkpall_dataproject",
    "sport": "vorkpall",
    "start": "2026-11-14T17:00:00+02:00",
