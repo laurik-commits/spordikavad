@@ -111,7 +111,8 @@ Kolm sammu: adapter, konfiguratsioonirida ja test.
   2. ✅ Alade rühmad menüüs (`build.SPORT_GROUPS`: võistkonnaalad, talialad, mootorsport; rühm ainult siis, kui tasemel on vähemalt 2 selle ala). Hiljem alaliigid (nt autospordis ralli, kardid, ringrada) kolmanda tasemena.
   3. Uued alad järk-järgult (vaatamist väärt võistlused); osalemisüritused eraldi „võtan osa“ ideena.
      - ✅ Reketialad (2026-11-24): tennis (`tennis_etl`), sulgpall (`sulgpall_esl`), lauatennis käsitsi. Vt SOURCES.md → Reketialad.
-     - Järgmised kandidaadid: ujumine, jalgrattasport (Tour of Estonia), fitnessi ja kulturismi võistlused, ragbi, tantsusport, iluvõimlemine.
+     - ✅ Kunstilised alad (2026-11-24): võimlemine, tantsusport, fitness, võistlused lisab otsinguagent käsitsi (allikad pole masinloetavad). Vt SOURCES.md → Kunstilised alad.
+     - Järgmised (omanikuga kokku lepitud järjekord): veealad (ujumine, sõudmine, kanuu, purjetamine), vastupidavusalad (jalgrattasport, triatlon; kergejõustik rühma), suvel ragbi ja rannavõrkpall võistkonnaaladesse, kurling talialadesse, hiljem täpsusalad.
 - **Piletid** (omanikuga kokku lepitud 2026-11-20): püsiinfo seadistusfailis (klubi → piletimüüja link), mängu real „Piletid ↗“. Kui allika mängulehel on piletilink juba olemas, võtta see kaasa. Mängupõhist kogumist piletimüüjatelt ei tee (hooldus, tingimused).
 - Päevade ribale kuu nimi, kui riba ulatub üle kuu vahetuse.
 - **Jalgpalli karikad** (omanikuga kokku lepitud „millalgi tulevikus“): Tipneri karikas, naiste karikas, superkarikas. Vaja on iCal-lugejat (vt SOURCES.md „Täiendavate võistluste ülevaade“).
