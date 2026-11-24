@@ -1,0 +1,21 @@
+{
+ "62057ccda635": {
+  "changes": [],
+  "event": {
+   "away": "Rumeenia",
+   "city": "Tallinn",
+   "home": "Eesti",
+   "id": "62057ccda635",
+   "league": "Meeste koondis: UEFA Rahvuste liiga 2026",
+   "level": 5,
+   "result": "",
+   "source": "jalgpall_koondis",
+   "sport": "jalgpall",
+   "start": "2027-03-27T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://jalgpall.ee/koondis/1/matchinfo/match/4095",
+   "venue": "A. Le Coq Arena"
+  },
+  "first_seen": "2026-11-24"
+ }
+}

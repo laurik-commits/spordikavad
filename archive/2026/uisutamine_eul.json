@@ -1,4 +1,24 @@
 {
+ "0fb002763b66": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2026-12-16",
+   "home": "Eesti Meistrivõistlused 2027",
+   "id": "0fb002763b66",
+   "league": "Iluuisutamine",
+   "level": 1,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2026-12-15T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Haabersti jäähall"
+  },
+  "first_seen": "2026-11-24"
+ },
  "277566e5a723": {
   "changes": [],
   "event": {
@@ -97,7 +117,8 @@
    "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
    "venue": "Haabersti jäähall"
   },
-  "first_seen": "2026-11-23"
+  "first_seen": "2026-11-23",
+  "missing_since": "2026-11-24"
  },
  "65c8c78420b3": {
   "changes": [],
@@ -257,6 +278,27 @@
    "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
    "venue": "Haabersti jäähall"
   },
-  "first_seen": "2026-11-23"
+  "first_seen": "2026-11-23",
+  "missing_since": "2026-11-24"
+ },
+ "feac6120c98d": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2026-12-16",
+   "home": "Eesti juunioride karikavõistlused 2027",
+   "id": "feac6120c98d",
+   "league": "Iluuisutamine",
+   "level": 4,
+   "result": "",
+   "source": "uisutamine_eul",
+   "sport": "uisutamine",
+   "start": "2026-12-15T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2026-2027",
+   "venue": "Haabersti jäähall"
+  },
+  "first_seen": "2026-11-24"
  }
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T20:11:41+02:00",
+ "updated": "2026-11-24T11:10:45+02:00",
  "events": [
   {
    "id": "3c812e967ebc",
@@ -203,6 +203,21 @@
    "venue": "Paide jalgpallihall",
    "city": "Paide",
    "url": "https://jalgpall.ee/koondis/7/matchinfo/match/4056",
+   "source": "jalgpall_koondis",
+   "time_tbc": false,
+   "result": "",
+   "level": 5
+  },
+  {
+   "id": "62057ccda635",
+   "sport": "jalgpall",
+   "league": "Meeste koondis: UEFA Rahvuste liiga 2026",
+   "start": "2027-03-27T19:00:00+02:00",
+   "home": "Eesti",
+   "away": "Rumeenia",
+   "venue": "A. Le Coq Arena",
+   "city": "Tallinn",
+   "url": "https://jalgpall.ee/koondis/1/matchinfo/match/4095",
    "source": "jalgpall_koondis",
    "time_tbc": false,
    "result": "",
