@@ -322,6 +322,14 @@ Mängu real on ekraani ikoon ja mängu lehel nupp „Otse“ või „Vaata järe
 - **Otsinguagent** (E ja N): kontrollib kanaleid, mille kava automaatselt ei loeta (Postimees, klubide ja liitude YouTube), ning lisab teadaolevad ülekanded `[[mang]]` kirjetena. Need seotakse mängudega samamoodi nagu kava read, seega vale nimi lehele ei jõua. Kui agent leiab liigale uue ülekandja, lisab ta `[[liiga]]` rea (olemasolev kanal) või teeb ettepaneku uue kanali kohta (omanik kinnitab).
 - **Kontroll:** `python ulekanded.py` (faili vead). Testid kontrollivad faili igal PR-il.
 
+## Reketialad: tennis ✅, sulgpall ✅, lauatennis käsitsi (lisatud 2026-11-24 omaniku soovil)
+
+Menüüs rühm „Reketialad“ (`build.SPORT_GROUPS`).
+- **Tennis** (`scrapers/tennis_etl.py`, tennis.ee/kalender/, robots.txt lubab): aasta pealkirja („VÕISTLUSKALENDER 2027“) all tabel: algus, lõpp, kategooria (M,N / T18 / P12 / TP14 / NL…), nimi, linn, klubi. Täiskasvanute MV, Masters ja rahvusvahelised → 1, Eesti GP → 2, noorte MV ja rahvusvahelised noorteturniirid (ITF, Tennis Europe „TE14“) → 4, noorte GP ja noorteliiga → 3 (peidetud). Koht „Klubi, Linn“ (venues.toml aliased), „ETL“ → „Linn, koht täpsustamisel“. Sama nimega turniire on samal päeval mitu (vanuseklassid), seepärast on id-s kategooria ja koht. Kalendris oli trükiviga „3o.01“ (o → 0). WTA Tallinn Open, Davis Cupi ja BJK Cupi kodumängud lisab agent käsitsi.
+- **Sulgpall** (`scrapers/sulgpall_esl.py`, badminton.ee võistluskalender, robots.txt lubab): plokid nime, kuupäeva („05.12.2026“, „10. --- 12.12.2026“, üle kuu „31. --- 01.11.2026“), saali ja juhendi lingiga. Rahvusvahelised (International, European … Championships), Eesti MV, klubide karikas → 1, GP-sari → 2, noorte MV ja rahvusvahelised noorteturniirid → 4, noorte GP ja harrastajate turniirid → 3, seeniorid ja edasi lükatud välja. Esimene suur: badmintoni segavõistkondade EM Kalevi spordihallis 6.–10.01.2027.
+- **Lauatennis**: kalender on allalaaditavas failis (uus.lauatennis.ee), meistriliiga ja tulemused eltl.ee/voistlused. Praegu lisab meistriliiga mängud ja Eesti MV otsinguagent käsitsi; adapteri kandidaat.
+- **Squash ja padel**: peamiselt harrastajate liigad (padel.ee iCal, squash.ee Events Calendar API on olemas), sobivad hiljem „võtan osa“ juurde.
+
 ## Pistekontroll 2026-11-20
 
 Iga allika kohta üks mäng lehel olevatest andmetest, võrreldud allika enda mängulehega:

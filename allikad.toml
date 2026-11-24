@@ -709,3 +709,41 @@ robots = "lubatud"
 kasutus = "agent"
 kontrollitud = 2026-11-23
 markus = "Üks üritus aastas (juuli), kuupäev uudistes. 2027: 22.–25.07 (kasitsi.toml). Crawl-delay 2."
+
+# --- Reketialad (lisatud 2026-11-24) ---
+[[allikas]]
+nimi = "Eesti Tennise Liit: võistluskalender"
+liik = "liit"
+url = "https://tennis.ee/kalender/"
+alad = ["tennis"]
+piirkond = "Eesti"
+kuju = "html"
+robots = "lubatud"
+kasutus = "adapter:tennis_etl"
+kontrollitud = 2026-11-24
+markus = "Aasta kaupa tabel: kuupäevad, kategooria (M,N / T18 / NL…), nimi, linn, klubi. Suured rahvusvahelised (WTA Tallinn Open, Davis Cup, BJK Cup) lisab agent käsitsi."
+
+[[allikas]]
+nimi = "Eesti Sulgpalliliit: võistluskalender"
+liik = "liit"
+url = "https://badminton.ee/voistle/kalender/voistluskalender/"
+alad = ["sulgpall"]
+piirkond = "Eesti"
+kuju = "html"
+robots = "lubatud"
+kasutus = "adapter:sulgpall_esl"
+kontrollitud = 2026-11-24
+markus = "Võistluste plokid: nimi, kuupäev(ad), saal, juhendi link. Ka rahvusvahelised (Estonian International, Junior, EM Kalevi spordihallis)."
+
+[[allikas]]
+nimi = "Eesti Lauatenniseliit: kalender ja meistriliiga"
+liik = "liit"
+url = "https://uus.lauatennis.ee/voistlused/kalender/"
+alad = ["lauatennis"]
+piirkond = "Eesti"
+kuju = "html"
+robots = "puudub"
+kasutus = "agent"
+kontrollitud = 2026-11-24
+markus = "Kalender on allalaaditavas failis; meistriliiga lehed ja tulemused eltl.ee/voistlused. Meistriliiga mängud ja Eesti MV lisab agent käsitsi."
+kandidaat = true

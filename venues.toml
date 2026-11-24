@@ -537,7 +537,7 @@ city = "Riia"
 [[venue]]
 name = "Tartu Ülikooli spordihoone"
 city = "Tartu"
-aliases = ["Tartu Ülikooli SH Ilmar Kullami nimeline peaväljak", "TÜ sph", "Ujula 4", "Tartu Ülikooli Akadeemiline Spordiklubi"]
+aliases = ["Tartu Ülikooli SH Ilmar Kullami nimeline peaväljak", "TÜ sph", "Ujula 4", "Tartu Ülikooli Akadeemiline Spordiklubi", "Tartu Ülikooli Akadeemiline Spordihoone", "TÜASK"]
 
 [[venue]]
 name = "Võru Spordikeskus"
@@ -1325,3 +1325,87 @@ city = "Tartu"
 name = "Rally Estonia (Raadi ja Lõuna-Eesti teed)"
 city = "Tartu"
 aliases = ["Rally Estonia"]
+
+# --- Reketialad: tennis (tennis.ee kalender: „Klubi, Linn“) ja sulgpall (badminton.ee) ---
+[[venue]]
+name = "Tallink City SK"
+city = "Tallinn"
+aliases = ["Tallink City SK, Tallinn"]
+
+[[venue]]
+name = "Tondiraba TK"
+city = "Tallinn"
+aliases = ["Tondiraba TK, Tallinn"]
+
+[[venue]]
+name = "Alta TK"
+city = "Tallinn"
+aliases = ["Alta TK, Tallinn"]
+
+[[venue]]
+name = "FV Rackets"
+city = "Tallinn"
+aliases = ["FV Rackets, Tallinn"]
+
+[[venue]]
+name = "FV Tennis (Tallinn)"
+city = "Tallinn"
+aliases = ["FV Tennis, Tallinn"]
+
+[[venue]]
+name = "FV Tennis (Peetri)"
+city = "Rae vald"
+aliases = ["FV Tennis, Peetri"]
+
+[[venue]]
+name = "US Tenniseakadeemia"
+city = "Tallinn"
+aliases = ["US Tenniseakadeemia, Tallinn"]
+
+[[venue]]
+name = "Tallinn, koht täpsustamisel"
+city = "Tallinn"
+# tennis.ee kalendris „ETL“ (liit korraldab, koht pole veel teada)
+
+[[venue]]
+name = "MK TK"
+city = "Tartu"
+aliases = ["MK TK, Tartu"]
+
+[[venue]]
+name = "MK Tennis"
+city = "Tartu"
+aliases = ["MK Tennis, Tartu"]
+
+[[venue]]
+name = "Tähtvere TK"
+city = "Tartu"
+aliases = ["Tähtvere TK, Tartu", "TähtvereTK, Tartu"]
+
+[[venue]]
+name = "Tartu, koht täpsustamisel"
+city = "Tartu"
+
+[[venue]]
+name = "Laagri TK"
+city = "Saue vald"
+aliases = ["Laagri TK, Laagri"]
+
+[[venue]]
+name = "Tabasalu TK"
+city = "Harku vald"
+aliases = ["Tabasalu TK, Tabasalu"]
+
+[[venue]]
+name = "Haapsalu TK"
+city = "Haapsalu"
+aliases = ["Haapsalu TK, Haapsalu"]
+
+[[venue]]
+name = "Top Spin"
+city = "Narva"
+aliases = ["Top Spin, Narva"]
+
+[[venue]]
+name = "Lenne Sulgpallikeskus"
+city = "Tallinn"

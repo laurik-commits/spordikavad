@@ -109,7 +109,9 @@ Kolm sammu: adapter, konfiguratsioonirida ja test.
 - **Kasutajate tagasiside 2026-11-23** (omanikuga kokku lepitud järjekord):
   1. ✅ Kalender: vaade Päev / Nädal / Kuu, kuupäeva valik kuni 12 kuud ette, pühkimine vasakule-paremale (`site/kalender.js`, andmed `kalender.json` = `build.calendar_data`). Päevalehed jäävad staatiliseks (töötavad ilma JS-ita); nädala, kuu ja 14 päevast kaugemad päevad joonistab JS (aadressis `#kuupäev`).
   2. ✅ Alade rühmad menüüs (`build.SPORT_GROUPS`: võistkonnaalad, talialad, mootorsport; rühm ainult siis, kui tasemel on vähemalt 2 selle ala). Hiljem alaliigid (nt autospordis ralli, kardid, ringrada) kolmanda tasemena.
-  3. Uued alad järk-järgult (vaatamist väärt võistlused, nt tennis, ujumine, jalgrattasport, fitnessi ja kulturismi võistlused); osalemisüritused eraldi „võtan osa“ ideena.
+  3. Uued alad järk-järgult (vaatamist väärt võistlused); osalemisüritused eraldi „võtan osa“ ideena.
+     - ✅ Reketialad (2026-11-24): tennis (`tennis_etl`), sulgpall (`sulgpall_esl`), lauatennis käsitsi. Vt SOURCES.md → Reketialad.
+     - Järgmised kandidaadid: ujumine, jalgrattasport (Tour of Estonia), fitnessi ja kulturismi võistlused, ragbi, tantsusport, iluvõimlemine.
 - **Piletid** (omanikuga kokku lepitud 2026-11-20): püsiinfo seadistusfailis (klubi → piletimüüja link), mängu real „Piletid ↗“. Kui allika mängulehel on piletilink juba olemas, võtta see kaasa. Mängupõhist kogumist piletimüüjatelt ei tee (hooldus, tingimused).
 - Päevade ribale kuu nimi, kui riba ulatub üle kuu vahetuse.
 - **Jalgpalli karikad** (omanikuga kokku lepitud „millalgi tulevikus“): Tipneri karikas, naiste karikas, superkarikas. Vaja on iCal-lugejat (vt SOURCES.md „Täiendavate võistluste ülevaade“).
