@@ -113,6 +113,25 @@
   },
   "first_seen": "2026-11-22"
  },
+ "6a4dd7a3bd82": {
+  "changes": [],
+  "event": {
+   "away": "Aruküla SK",
+   "city": "Viimsi",
+   "home": "HC Viimsi/Weckman",
+   "id": "6a4dd7a3bd82",
+   "league": "Esiliiga (mehed)",
+   "level": 2,
+   "result": "",
+   "source": "kasipall_liigad",
+   "sport": "kasipall",
+   "start": "2026-12-09T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://kasipall.ee/protocol/9539",
+   "venue": "Viimsi kooli spordikeskus"
+  },
+  "first_seen": "2026-11-24"
+ },
  "7d2f7876927e": {
   "changes": [],
   "event": {

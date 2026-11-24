@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T00:10:35+02:00",
+ "updated": "2026-11-24T05:51:22+02:00",
  "events": [
   {
    "id": "8c9d3723f8b0",
@@ -206,6 +206,21 @@
    "venue": "Tartu Ülikooli spordihoone",
    "city": "Tartu",
    "url": "https://kasipall.ee/protocol/9578",
+   "source": "kasipall_liigad",
+   "time_tbc": false,
+   "result": "",
+   "level": 2
+  },
+  {
+   "id": "6a4dd7a3bd82",
+   "sport": "kasipall",
+   "league": "Esiliiga (mehed)",
+   "start": "2026-12-09T19:00:00+02:00",
+   "home": "HC Viimsi/Weckman",
+   "away": "Aruküla SK",
+   "venue": "Viimsi kooli spordikeskus",
+   "city": "Viimsi",
+   "url": "https://kasipall.ee/protocol/9539",
    "source": "kasipall_liigad",
    "time_tbc": false,
    "result": "",
