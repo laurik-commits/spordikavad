@@ -148,3 +148,16 @@ venue = "Rally Estonia (Raadi ja Lõuna-Eesti teed)"
 url = "https://www.rallyestonia.ee/pealtvaatajale/uudised/uudis/2026/10/08/wrc-rally-estonia-on-taas-fia-autoralli-mm-sarja-2027-aasta-kalendris/"
 added = 2026-11-23
 note = "Korraldaja uudis: 22.–25. juuli 2027, MM-sarja 9. etapp. Keskus Tartus (Raadi)."
+
+[[event]]
+sport = "jalgpall"
+league = "UEFA noorteliiga"
+level = 4
+kind = "mäng"
+start = 2026-11-25T18:30:00
+home = "FC Flora U19"
+away = "St. Patrick's Athletic FC U19"
+venue = "Sportland Arena"
+url = "https://fcflora.ee/kolmapaeval-kohtuvad-uefa-noorteliiga-fc-flora-ja-st-patricks-athletic-fc-mangust-otseulekannet-ei-toodeta/"
+added = 2026-11-24
+note = "FC Flora ametlik uudis: UEFA noorteliiga III ringi avamäng 25. novembril kell 18.30; Sportland Arena (Delfi Sport 24.11). Otseülekannet UEFA reegli tõttu ei ole."
