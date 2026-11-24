@@ -204,7 +204,9 @@
    "start": "2026-11-25T19:00:00+02:00",
    "time_tbc": false,
    "url": "https://kasipall.ee/protocol/9232",
-   "venue": "Viimsi kooli spordikeskus"
+   "venue": "Viimsi kooli spordikeskus",
+   "video": "https://www.youtube.com/watch?v=IqpUkN1F2PE",
+   "video_by": "YouTube"
   },
   "first_seen": "2026-11-22"
  },
@@ -223,7 +225,9 @@
    "start": "2026-11-25T19:00:00+02:00",
    "time_tbc": false,
    "url": "https://kasipall.ee/protocol/9231",
-   "venue": "Kehra Spordihoone"
+   "venue": "Kehra Spordihoone",
+   "video": "https://www.youtube.com/watch?v=Rp9hop5Fx-w",
+   "video_by": "YouTube"
   },
   "first_seen": "2026-11-22"
  },

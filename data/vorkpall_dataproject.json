@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T22:00:39+02:00",
+ "updated": "2026-11-24T22:40:04+02:00",
  "events": [
   {
    "id": "899216e6d23a",
@@ -2203,7 +2203,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3662&ID=106&PID=164",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
-   "result": "2-2",
+   "result": "3-2",
    "level": 2
   },
   {

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T07:43:24+02:00",
+ "updated": "2026-11-24T22:41:20+02:00",
  "events": [
   {
    "id": "8c9d3723f8b0",
@@ -29,7 +29,9 @@
    "source": "kasipall_liigad",
    "time_tbc": false,
    "result": "",
-   "level": 1
+   "level": 1,
+   "video": "https://www.youtube.com/watch?v=IqpUkN1F2PE",
+   "video_by": "YouTube"
   },
   {
    "id": "b510ff29fe6e",
@@ -44,7 +46,9 @@
    "source": "kasipall_liigad",
    "time_tbc": false,
    "result": "",
-   "level": 1
+   "level": 1,
+   "video": "https://www.youtube.com/watch?v=Rp9hop5Fx-w",
+   "video_by": "YouTube"
   },
   {
    "id": "7d2f7876927e",
