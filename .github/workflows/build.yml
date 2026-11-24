@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+      url: ${{ steps.deploy.outputs.page_url || steps.deploy2.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -68,5 +68,17 @@ jobs:
         with:
           path: dist
 
+      # GitHub ei leia vahel äsja üles laaditud faili („No artifacts named github-pages“, juhtus 24.11 kaks korda).
+      # Siis oota ja proovi samas käigus uuesti. Kui ka teine katse ebaõnnestub, jääb käik punaseks (e-kiri).
+      # NB: ebaõnnestunud käigu „Re-run“ ei aita (siis on käigus 2 faili), käivita uus: gh workflow run build.yml
       - id: deploy
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+
+      - name: Oota enne teist avaldamise katset
+        if: steps.deploy.outcome == 'failure'
+        run: sleep 45
+
+      - id: deploy2
+        if: steps.deploy.outcome == 'failure'
         uses: actions/deploy-pages@v4
