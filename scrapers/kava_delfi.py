@@ -30,6 +30,7 @@ SPORTS = {
     "jäähoki": "jaahoki", "hoki": "jaahoki", "saalihoki": "saalihoki", "saalijalgpall": "saalijalgpall",
     "tennis": "tennis", "sulgpall": "sulgpall", "lauatennis": "lauatennis",
     "võimlemine": "voimlemine", "iluvõimlemine": "voimlemine", "tantsusport": "tantsusport", "fitness": "fitness",
+    "ujumine": "ujumine", "sõudmine": "soudmine", "purjetamine": "purjetamine", "kanuu": "kanuu", "aerutamine": "kanuu",
 }
 
 

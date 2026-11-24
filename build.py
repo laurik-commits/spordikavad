@@ -48,7 +48,8 @@ SPORT_GEN = {"jalgpall": "jalgpalli", "korvpall": "korvpalli", "jaahoki": "jää
              "suusatamine": "suusa", "ratsasport": "ratsa",
              "uisutamine": "uisu", "voitlusspordid": "võitlusspordi", "autosport": "autospordi",
              "tennis": "tennise", "sulgpall": "sulgpalli", "lauatennis": "lauatennise",
-             "voimlemine": "võimlemis", "tantsusport": "tantsuspordi", "fitness": "fitnessi"}
+             "voimlemine": "võimlemis", "tantsusport": "tantsuspordi", "fitness": "fitnessi",
+             "ujumine": "ujumis", "soudmine": "sõudmis", "kanuu": "aerutamis", "purjetamine": "purjetamis"}
 # ala seesütlevas käändes päise lauses: "Ela kaasa koondistele jalgpallis Tallinnas"
 SPORT_IN = {"jalgpall": "jalgpallis", "korvpall": "korvpallis", "jaahoki": "jäähokis", "vorkpall": "võrkpallis",
             "kasipall": "käsipallis", "saalihoki": "saalihokis", "saalijalgpall": "saalijalgpallis",
@@ -56,7 +57,8 @@ SPORT_IN = {"jalgpall": "jalgpallis", "korvpall": "korvpallis", "jaahoki": "jä�
             "suusatamine": "suusatamises", "ratsasport": "ratsaspordis",
             "uisutamine": "uisutamises", "voitlusspordid": "võitlusspordis", "autosport": "autospordis",
             "tennis": "tennises", "sulgpall": "sulgpallis", "lauatennis": "lauatennises",
-            "voimlemine": "võimlemises", "tantsusport": "tantsuspordis", "fitness": "fitnessis"}
+            "voimlemine": "võimlemises", "tantsusport": "tantsuspordis", "fitness": "fitnessis",
+            "ujumine": "ujumises", "soudmine": "sõudmises", "kanuu": "aerutamises", "purjetamine": "purjetamises"}
 # alade rühmad päise alavalikus: rühma nimi valib kõik selle alad, nool avab üksikud alad (site/app.js).
 # Rühm on menüüs ainult siis, kui sellel tasemel on vähemalt 2 selle rühma ala; muidu on ala eraldi.
 SPORT_GROUPS = [
@@ -67,6 +69,8 @@ SPORT_GROUPS = [
     {"key": "g:reket", "name": "Reketialad", "word": "reketialadel", "sports": ["tennis", "sulgpall", "lauatennis"]},
     {"key": "g:kunst", "name": "Kunstilised alad", "word": "kunstilistel aladel",
      "sports": ["voimlemine", "tantsusport", "fitness"]},
+    {"key": "g:vesi", "name": "Veealad", "word": "veealadel",
+     "sports": ["ujumine", "soudmine", "kanuu", "purjetamine"]},
 ]
 
 
@@ -595,6 +599,10 @@ SOURCE_SITES = {
     "voimlemine": [("Eesti Võimlemisliit", "https://kalender.eevl.ee/")],
     "tantsusport": [("Eesti Tantsuspordi Liit", "https://dancesport.ee/voistlused-ja-edetabelid/")],
     "fitness": [("Eesti Kulturismi ja Fitnessi Liit", "https://kulturism.ee/kalender/")],
+    "ujumine": [("Eesti Ujumisliit", "https://swimming.ee/kalender/")],
+    "soudmine": [("Eesti Sõudeliit", "https://www.soudeliit.ee/")],
+    "kanuu": [("Eesti Aerutamisliit", "https://www.aerutaja.ee/")],
+    "purjetamine": [("Eesti Purjetamisliit", "https://puri.ee/")],
 }
 
 
@@ -608,6 +616,9 @@ MANUAL_COVERAGE = {
     "voimlemine": "Iluvõimlemise rahvusvahelised turniirid (nt Miss Valentine) ja Eesti MV (käsitsi)",
     "tantsusport": "Eesti MV ja suured rahvusvahelised võistlused (käsitsi)",
     "fitness": "Fitnessi ja kulturismi Eesti MV ja rahvusvahelised võistlused Eestis (käsitsi)",
+    "soudmine": "Eesti MV, karikaetapid ja rahvusvahelised regatid (käsitsi)",
+    "kanuu": "Eesti MV, karikaetapid ja rahvusvahelised regatid (käsitsi)",
+    "purjetamine": "Eesti MV, Garmin Sailing Series ja rahvusvahelised regatid (käsitsi)",
 }
 
 

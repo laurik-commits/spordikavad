@@ -13,7 +13,8 @@
     saalihoki: "Saalihoki", saalijalgpall: "Saalijalgpall", motosport: "Motosport", kergejoustik: "Kergejõustik",
     suusatamine: "Suusatamine", ratsasport: "Ratsasport", uisutamine: "Uisutamine", voitlusspordid: "Võitlusspordid",
     autosport: "Autosport", tennis: "Tennis", sulgpall: "Sulgpall", lauatennis: "Lauatennis",
-    voimlemine: "Võimlemine", tantsusport: "Tantsusport", fitness: "Fitness"};
+    voimlemine: "Võimlemine", tantsusport: "Tantsusport", fitness: "Fitness",
+    ujumine: "Ujumine", soudmine: "Sõudmine", kanuu: "Aerutamine", purjetamine: "Purjetamine"};
   var BLOCK = {saalijalgpall: "Saali­jalgpall", kergejoustik: "Kerge­jõustik", voitlusspordid: "Võitlus­spordid",
     suusatamine: "Suusa­tamine"};
   var WD = ["esmaspäev", "teisipäev", "kolmapäev", "neljapäev", "reede", "laupäev", "pühapäev"];

@@ -1409,3 +1409,45 @@ aliases = ["Top Spin, Narva"]
 [[venue]]
 name = "Lenne Sulgpallikeskus"
 city = "Tallinn"
+# --- Veealad: ujulad ja veekeskused ---
+
+[[venue]]
+name = "Aura Veekeskus"
+city = "Tartu"
+aliases = ["Tartu, Aura Veekeskus", "Aura keskus"]
+
+[[venue]]
+name = "Nõmme ujula"
+city = "Tallinn"
+aliases = ["Tallinn, Nõmme ujula", "Nõmme"]
+
+[[venue]]
+name = "Kalev SPA"
+city = "Tallinn"
+aliases = ["Tallinn, Kalev SPA"]
+
+[[venue]]
+name = "Wiru Spordikeskus"
+city = "Kohtla-Järve"
+aliases = ["Kohtla-Järve Wiru Spordikeskus", "Kohtla-Järve"]
+
+[[venue]]
+name = "Keila Tervisekeskus"
+city = "Keila"
+
+[[venue]]
+name = "Raja ujula"
+city = "Pärnu"
+aliases = ["Pärnu Raja ujula"]
+
+[[venue]]
+name = "Viimsi"
+city = "Viimsi"
+
+[[venue]]
+name = "Sillamäe"
+city = "Sillamäe"
+
+[[venue]]
+name = "Kaerepere"
+city = "Kaerepere"

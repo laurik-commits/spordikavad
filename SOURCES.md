@@ -338,6 +338,12 @@ Menüüs rühm „Kunstilised alad“. Automaatset lugejat praegu pole, võistlu
 - **Fitness ja kulturism**: kulturism.ee on Events Calendar (iCal ja REST API, robots Crawl-delay 3), aga Eestis toimuvaid võistlusi on vähe (Eesti MV ja Estonian Open Cup, peamiselt kevadel), IFBB rahvusvahelised on enamasti välismaal ja ilma kohata.
 - Kui mõni allikas muutub loetavaks (nt võimlemisliidu kalender saab avaliku voo), saab teha adapteri.
 
+## Veealad: ujumine, sõudmine, aerutamine, purjetamine (lisatud 2026-11-24 omaniku soovil)
+
+Menüüs rühm „Veealad“.
+- **Ujumine** ✅ adapter `ujumine_eul`: swimming.ee/kalender/ (robots.txt lubab kõike). Nimekirjavaade `?view=list&swimming_ajax=1&swimming_ppp=300` annab kogu tuleviku ühe päringuga (tavaline `paged=` lehitsemine töötab ainult saidi JS-iga). Kellaaega pole. Koolitused jäävad välja, duplikaadid liidetakse, välismaa võistlused langevad välja geo.foreign kaudu (uus välismaa koht tuleb sinna lisada). Tase: Eesti MV → 1, Open/Cup/karikad → 2, noorte ja laste sarjad → 4, klubide võistlused → 3 (peidetud).
+- **Sõudmine** (soudeliit.ee), **aerutamine/kanuu** (aerutaja.ee, rajaaerutamise karikasari, Paala sprint, Pühajärve regatt) ja **purjetamine** (puri.ee, Garmin Sailing Series): 2027 kalendreid pole veel avaldatud ja hooaeg on suvel, seega võistlused lisab otsinguagent `kasitsi.toml`-i, kui kalender ilmub. Kõigi kolme robots.txt lubab lugemist.
+
 ## Pistekontroll 2026-11-20
 
 Iga allika kohta üks mäng lehel olevatest andmetest, võrreldud allika enda mängulehega:

@@ -796,3 +796,52 @@ robots = "kontrollimata"
 kasutus = "agent"
 kontrollitud = 2026-11-24
 markus = "Igal veebruaril Tartus (2026: 25.02–1.03, Tartu Ülikooli spordihoone). 2027 kuupäevad veel teadmata."
+
+# --- Veealad (lisatud 2026-11-24) ---
+[[allikas]]
+nimi = "Eesti Ujumisliit: kalender"
+liik = "liit"
+url = "https://swimming.ee/kalender/"
+alad = ["ujumine"]
+piirkond = "Eesti"
+kuju = "html"
+robots = "lubatud"
+kasutus = "adapter:ujumine_eul"
+kontrollitud = 2026-11-24
+markus = "WordPressi arhiiv; nimekirjavaade ?view=list&swimming_ajax=1&swimming_ppp=300 annab kogu tuleviku ühe päringuga. Koolitused ja välismaa võistlused filtreeritakse; kellaaega pole."
+
+[[allikas]]
+nimi = "Eesti Sõudeliit"
+liik = "liit"
+url = "https://www.soudeliit.ee/"
+alad = ["soudmine"]
+piirkond = "Eesti"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-24
+markus = "2027 kalender pole veel avaldatud (hooaeg suvel; sisesõudmise sari-EMV talvel). Eesti MV ja rahvusvahelised regatid lisab agent käsitsi."
+
+[[allikas]]
+nimi = "Eesti Aerutamisliit (aerutaja.ee): kanuu ja kajak"
+liik = "liit"
+url = "https://www.aerutaja.ee/"
+alad = ["kanuu"]
+piirkond = "Eesti"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-24
+markus = "Võistlusjuhendid lehel (rajaaerutamise karikasari, Paala sprint, Pühajärve regatt jm); 2027 kalender pole avaldatud. Agent lisab käsitsi."
+
+[[allikas]]
+nimi = "Eesti Purjetamisliit (puri.ee): Garmin Sailing Series"
+liik = "liit"
+url = "https://puri.ee/en/garmin-sailing-series"
+alad = ["purjetamine"]
+piirkond = "Eesti"
+kuju = "html"
+robots = "lubatud"
+kasutus = "agent"
+kontrollitud = 2026-11-24
+markus = "Hooaja põhisari; 2027 kalender pole avaldatud. Eesti MV ja suuremad regatid lisab agent käsitsi."
