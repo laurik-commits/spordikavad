@@ -187,7 +187,8 @@
    "url": "https://kasipall.ee/protocol/9230",
    "venue": "Kalevi spordihall"
   },
-  "first_seen": "2026-11-22"
+  "first_seen": "2026-11-22",
+  "missing_since": "2026-11-25"
  },
  "ad2706e019c4": {
   "changes": [],
@@ -208,7 +209,8 @@
    "video": "https://www.youtube.com/watch?v=IqpUkN1F2PE",
    "video_by": "YouTube"
   },
-  "first_seen": "2026-11-22"
+  "first_seen": "2026-11-22",
+  "missing_since": "2026-11-25"
  },
  "b510ff29fe6e": {
   "changes": [],
@@ -229,7 +231,8 @@
    "video": "https://www.youtube.com/watch?v=Rp9hop5Fx-w",
    "video_by": "YouTube"
   },
-  "first_seen": "2026-11-22"
+  "first_seen": "2026-11-22",
+  "missing_since": "2026-11-25"
  },
  "b53ecf8e6bcc": {
   "changes": [],
