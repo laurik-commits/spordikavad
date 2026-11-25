@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T10:10:12+02:00",
+ "updated": "2026-11-25T13:57:16+02:00",
  "events": [
   {
    "id": "83dd2400bd5d",
@@ -437,21 +437,6 @@
    "level": 1
   },
   {
-   "id": "8d14e5d8efc2",
-   "sport": "kasipall",
-   "league": "Balti liiga (mehed)",
-   "start": "2026-12-05T16:00:00+02:00",
-   "home": "Tallinna Mistra",
-   "away": "HC Cocks",
-   "venue": "Raasiku spordihoone",
-   "city": "Raasiku",
-   "url": "https://baltichandball.eu/season/206/league/636/game/15217",
-   "source": "kasipall_bhl",
-   "time_tbc": false,
-   "result": "",
-   "level": 1
-  },
-  {
    "id": "ca1f9ba499ec",
    "sport": "kasipall",
    "league": "Balti liiga (mehed)",
@@ -836,6 +821,21 @@
    "venue": "Raasiku spordihoone",
    "city": "Raasiku",
    "url": "https://baltichandball.eu/season/206/league/636/game/15245",
+   "source": "kasipall_bhl",
+   "time_tbc": false,
+   "result": "",
+   "level": 1
+  },
+  {
+   "id": "d9f3e859f6b7",
+   "sport": "kasipall",
+   "league": "Balti liiga (mehed)",
+   "start": "2027-02-28T14:00:00+02:00",
+   "home": "Tallinna Mistra",
+   "away": "HC Cocks",
+   "venue": "Raasiku spordihoone",
+   "city": "Raasiku",
+   "url": "https://baltichandball.eu/season/206/league/636/game/15217",
    "source": "kasipall_bhl",
    "time_tbc": false,
    "result": "",

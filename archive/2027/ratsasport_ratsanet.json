@@ -231,7 +231,8 @@
    "url": "https://ratsanet.ee/events/4654",
    "venue": "Toominga tall"
   },
-  "first_seen": "2026-11-24"
+  "first_seen": "2026-11-24",
+  "missing_since": "2026-11-25"
  },
  "2f9330b16db3": {
   "changes": [],
@@ -1014,6 +1015,25 @@
    "venue": "Kukulinna tall"
   },
   "first_seen": "2026-11-23"
+ },
+ "e2abcba66234": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Lilli",
+   "home": "Toominga Suvi I",
+   "id": "e2abcba66234",
+   "league": "Koolisõit, Parakoolisõit",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-06-19T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4654",
+   "venue": "Toominga tall"
+  },
+  "first_seen": "2026-11-25"
  },
  "e55f947438fb": {
   "changes": [],

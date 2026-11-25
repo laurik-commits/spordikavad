@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T22:40:04+02:00",
+ "updated": "2026-11-25T13:55:29+02:00",
  "events": [
   {
    "id": "899216e6d23a",
@@ -2477,21 +2477,6 @@
    "level": 1
   },
   {
-   "id": "0fc27357b5d5",
-   "sport": "vorkpall",
-   "league": "Eesti karikas (mehed)",
-   "start": "2026-12-02T00:00:00+02:00",
-   "home": "PÄRNU VK",
-   "away": "Eesti Maaülikool/Embach",
-   "venue": "Pärnu Spordihall",
-   "city": "Pärnu",
-   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3671&ID=100&PID=150",
-   "source": "vorkpall_dataproject",
-   "time_tbc": false,
-   "result": "",
-   "level": 1
-  },
-  {
    "id": "8a3602e8c10f",
    "sport": "vorkpall",
    "league": "Eesti karikas (naised)",
@@ -2501,6 +2486,21 @@
    "venue": "TalTechi spordihall",
    "city": "Tallinn",
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3672&ID=99&PID=149",
+   "source": "vorkpall_dataproject",
+   "time_tbc": false,
+   "result": "",
+   "level": 1
+  },
+  {
+   "id": "0fc27357b5d5",
+   "sport": "vorkpall",
+   "league": "Eesti karikas (mehed)",
+   "start": "2026-12-02T20:00:00+02:00",
+   "home": "PÄRNU VK",
+   "away": "Eesti Maaülikool/Embach",
+   "venue": "Pärnu Spordihall",
+   "city": "Pärnu",
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3671&ID=100&PID=150",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
    "result": "",

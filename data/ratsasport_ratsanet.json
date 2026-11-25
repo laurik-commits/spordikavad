@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T05:56:28+02:00",
+ "updated": "2026-11-25T13:58:37+02:00",
  "events": [
   {
    "id": "27fe55727089",
@@ -928,11 +928,11 @@
    "end": "2027-06-20"
   },
   {
-   "id": "2cbe011cfec5",
+   "id": "e2abcba66234",
    "sport": "ratsasport",
    "league": "Koolisõit, Parakoolisõit",
    "start": "2027-06-19T00:00:00+03:00",
-   "home": "Toominga suvi",
+   "home": "Toominga Suvi I",
    "away": "",
    "venue": "Toominga tall",
    "city": "Lilli",
@@ -940,8 +940,7 @@
    "source": "ratsasport_ratsanet",
    "time_tbc": true,
    "result": "",
-   "level": 3,
-   "end": "2027-06-20"
+   "level": 3
   },
   {
    "id": "5be7afd6dbbd",

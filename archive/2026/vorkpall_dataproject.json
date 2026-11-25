@@ -334,7 +334,14 @@
   "first_seen": "2026-11-22"
  },
  "0fc27357b5d5": {
-  "changes": [],
+  "changes": [
+   {
+    "field": "start",
+    "from": "2026-12-02T00:00:00+02:00",
+    "on": "2026-11-25",
+    "to": "2026-12-02T20:00:00+02:00"
+   }
+  ],
   "event": {
    "away": "Eesti Maaülikool/Embach",
    "city": "Pärnu",
@@ -345,7 +352,7 @@
    "result": "",
    "source": "vorkpall_dataproject",
    "sport": "vorkpall",
-   "start": "2026-12-02T00:00:00+02:00",
+   "start": "2026-12-02T20:00:00+02:00",
    "time_tbc": false,
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3671&ID=100&PID=150",
    "venue": "Pärnu Spordihall"
