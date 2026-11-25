@@ -279,7 +279,7 @@ def share_text(e: Event) -> str:
 
 
 def calendar_data(events: list[Event], first: date, last: date, today: date, geo: Geo,
-                  channel_types: dict[str, str]) -> dict:
+                  channel_types: dict[str, str], also: dict[str, list[dict]] | None = None) -> dict:
     """kalender.json: kõik mängud alates `first` (möödunud päevad) kuni kaugeima tulevaseni, lühikeste võtmetega.
     Seda loeb site/kalender.js nädala ja kuu vaate, kuupäeva valiku ja 14 päevast kaugemate päevade jaoks.
     `first`/`last` = staatiliste päevalehtede vahemik (mängulehed /m/<id>/ on ainult selle sees)."""
@@ -299,6 +299,10 @@ def calendar_data(events: list[Event], first: date, last: date, today: date, geo
             r["e"], r["sp"] = e.end, date_span(e)
         if e.video:
             r["vid"], r["vb"], r["vk"] = e.video, e.video_by, channel_types.get(e.video_by, "veeb")
+            more = (also or {}).get(e.id)
+            if more and not e.end and today <= e.start.date() <= last:
+                # mitu kanalit: ikoon viib mängu lehele, kus on kõik ülekande nupud
+                r["vid"], r["vb"] = f"m/{e.id}/", ", ".join([e.video_by] + [a["video_by"] for a in more])
         rows.append(r)
     return {"today": today.isoformat(), "first": first.isoformat(), "last": last.isoformat(),
             "hidden": [k for k, v in LEVELS.items() if v.get("hidden")], "events": rows}
@@ -537,7 +541,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
                 encoding="utf-8")
 
     (out / "kalender.json").write_text(
-        json.dumps(calendar_data(events, days[0], days[-1], today, geo, channel_types),
+        json.dumps(calendar_data(events, days[0], days[-1], today, geo, channel_types, also),
                    ensure_ascii=False, separators=(",", ":")),
         encoding="utf-8")
 

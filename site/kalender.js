@@ -118,7 +118,8 @@
       + '<span class="info"><span class="match">' + match + score + '</span><span class="meta">' + meta + "</span></span></a>";
     if (ev.vid) {
       var kind = past ? "jarel" : ev.vk, label = WATCH[kind] + ": " + esc(ev.vb);
-      html += '<a class="watch ' + kind + '" href="' + esc(ev.vid) + '" rel="noopener" title="' + label + '" aria-label="' + label + ", " + match + '">' + icon(kind) + "</a>";
+      var vhref = /^m\//.test(ev.vid) ? body.dataset.root + ev.vid : ev.vid;
+      html += '<a class="watch ' + kind + '" href="' + esc(vhref) + '" rel="noopener" title="' + label + '" aria-label="' + label + ", " + match + '">' + icon(kind) + "</a>";
     }
     // mängu leht /m/<id>/ on olemas ainult staatiliste päevade vahemikus
     var start = ev.t.slice(0, 10), last = ev.e || start;

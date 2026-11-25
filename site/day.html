@@ -147,7 +147,7 @@
           <span class="meta">{% if e.end %}{{ e | date_span }} · {% endif %}{{ e.league }} · {{ e.venue }}{% if show_city and e.city != e.venue %}, {{ e.city }}{% endif %}{% if e.time_tbc and not e.end %} · <em>kellaaeg täpsustamisel</em>{% endif %}</span>
         </span>
       </a>
-      {% if e.video %}{% set wk = e | watch_kind(past) %}{% set wlabel = watch_types[wk].title ~ ': ' ~ e.video_by %}<a class="watch {{ wk }}" href="{{ e.video }}" rel="noopener" title="{{ wlabel }}" aria-label="{{ wlabel }}, {{ e | matchup }}">{{ wi.icon(wk) }}</a>{% endif %}
+      {% if e.video %}{% set wk = e | watch_kind(past) %}{% set more = e | also %}{% set wlabel = watch_types[wk].title ~ ': ' ~ ([e.video_by] + more | map(attribute='video_by') | list) | join(', ') %}<a class="watch {{ wk }}" href="{{ root ~ 'm/' ~ e.id ~ '/' if more and not past else e.video }}" rel="noopener" title="{{ wlabel }}" aria-label="{{ wlabel }}, {{ e | matchup }}">{{ wi.icon(wk) }}</a>{% endif %}
       <button type="button" class="share" data-url="{{ base_url }}m/{{ e.id }}/" data-title="{{ e | matchup }}" data-text="{{ e | share_text }}" aria-label="Jaga: {{ e | matchup }}" title="Jaga"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg></button>
     </li>
   {% endfor %}
