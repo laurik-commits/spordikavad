@@ -1815,7 +1815,14 @@
   "first_seen": "2026-11-22"
  },
  "648f3ae1220e": {
-  "changes": [],
+  "changes": [
+   {
+    "field": "result",
+    "from": "",
+    "on": "2026-11-25",
+    "to": "1-3"
+   }
+  ],
   "event": {
    "away": "Viljandi Metall",
    "city": "Viimsi",
@@ -1823,7 +1830,7 @@
    "id": "648f3ae1220e",
    "league": "Meistriliiga (naised)",
    "level": 1,
-   "result": "",
+   "result": "1-3",
    "source": "vorkpall_dataproject",
    "sport": "vorkpall",
    "start": "2026-11-18T19:00:00+02:00",
@@ -2247,20 +2254,33 @@
   "first_seen": "2026-11-22"
  },
  "749513e99340": {
-  "changes": [],
+  "changes": [
+   {
+    "field": "league",
+    "from": "Balti liiga (naised)",
+    "on": "2026-11-25",
+    "to": "Meistriliiga (naised)"
+   },
+   {
+    "field": "url",
+    "from": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1628&ID=31&PID=32",
+    "on": "2026-11-25",
+    "to": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3676&ID=97&PID=147"
+   }
+  ],
   "event": {
    "away": "Rae Spordikool/VIASTON",
    "city": "Tartu",
    "home": "TÜ/Bigbank",
    "id": "749513e99340",
-   "league": "Balti liiga (naised)",
+   "league": "Meistriliiga (naised)",
    "level": 1,
    "result": "",
    "source": "vorkpall_dataproject",
    "sport": "vorkpall",
    "start": "2026-11-22T13:00:00+02:00",
    "time_tbc": false,
-   "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1628&ID=31&PID=32",
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3676&ID=97&PID=147",
    "venue": "Tartu Ülikooli spordihoone"
   },
   "first_seen": "2026-11-22"

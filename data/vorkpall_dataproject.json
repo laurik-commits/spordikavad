@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T13:55:29+02:00",
+ "updated": "2026-11-25T14:05:41+02:00",
  "events": [
   {
    "id": "899216e6d23a",
@@ -2098,7 +2098,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3619&ID=97&PID=147",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
-   "result": "",
+   "result": "1-3",
    "level": 1
   },
   {
@@ -2156,6 +2156,21 @@
    "venue": "Tartu Ülikooli spordihoone",
    "city": "Tartu",
    "url": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1628&ID=31&PID=32",
+   "source": "vorkpall_dataproject",
+   "time_tbc": false,
+   "result": "",
+   "level": 1
+  },
+  {
+   "id": "749513e99340",
+   "sport": "vorkpall",
+   "league": "Meistriliiga (naised)",
+   "start": "2026-11-22T13:00:00+02:00",
+   "home": "TÜ/Bigbank",
+   "away": "Rae Spordikool/VIASTON",
+   "venue": "Tartu Ülikooli spordihoone",
+   "city": "Tartu",
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3676&ID=97&PID=147",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
    "result": "",
