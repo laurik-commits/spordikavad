@@ -687,7 +687,8 @@ def main(argv: list[str] | None = None) -> int:
             links = ulekanded.update_links(links, {**videos, **new}, today, refreshed)
             ulekanded.save_links(links)
             for r in kava_report:
-                r["saved"] = sum(1 for v in new.values() if v["video_by"] == r["channel"])
+                r["saved"] = sum(1 for v in new.values()
+                                 if r["channel"] in [v["video_by"]] + [x["video_by"] for x in v.get("also", [])])
             report.extend(kava_report)
         events = ulekanded.apply(events, links)
         also = ulekanded.also(links)
