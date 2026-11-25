@@ -348,7 +348,7 @@ def regions_for(events: list[Event], geo: Geo) -> list[Region]:
 
 def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
            watch: dict[tuple[str, str], list[dict]] | None = None,
-           channel_types: dict[str, str] | None = None) -> int:
+           channel_types: dict[str, str] | None = None, also: dict[str, list[dict]] | None = None) -> int:
     """watch: (ala, liiga) → ülekandjad (ulekanded.league_channels); mängu lehel „Selle liiga mänge on näidanud“.
     channel_types: kanal → "tv" / "veeb" (ulekanded.channel_types): ülekande ikoon ja tekst."""
     watch = watch or {}
@@ -410,7 +410,9 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
     env.filters["event_day"] = event_day
     env.filters["date_span"] = date_span
     env.filters["watch"] = lambda e: watch.get((e.sport, e.league), [])
+    env.filters["also"] = lambda e: (also or {}).get(e.id, [])
     env.filters["watch_kind"] = lambda e, past: ulekanded.watch_kind(e.video_by, past, channel_types)
+    env.filters["watch_kind_by"] = lambda by: ulekanded.watch_kind(by, False, channel_types or {})
     tpl = env.get_template("day.html")
 
     if out.exists():
@@ -670,6 +672,7 @@ def main(argv: list[str] | None = None) -> int:
         log.info("Eemaldasin %d topelt mängu (sama mäng mitmest allikast)", dupes)
     watch: dict = {}
     ul_cfg: dict = {}
+    also: dict = {}
     try:
         ul_cfg = ulekanded.load()
         links = ulekanded.load_links()
@@ -687,12 +690,13 @@ def main(argv: list[str] | None = None) -> int:
                 r["saved"] = sum(1 for v in new.values() if v["video_by"] == r["channel"])
             report.extend(kava_report)
         events = ulekanded.apply(events, links)
+        also = ulekanded.also(links)
         # kes mida näitab: käsitsi teadaolev (ulekanded.toml) + mängudest õpitu (arhiiv + praegused andmed)
         watch = ulekanded.league_channels(
             ul_cfg, ulekanded.apply(archive.past_events(today, ulekanded.LEARN_DAYS), links) + events)
     except Exception:  # noqa: BLE001 - ülekannete info viga ei tohi lehe ehitust takistada
         log.exception("ülekannete info koostamine ebaõnnestus")
-    pages = render(events, cfg, today, watch=watch, channel_types=ulekanded.channel_types(ul_cfg))
+    pages = render(events, cfg, today, watch=watch, channel_types=ulekanded.channel_types(ul_cfg), also=also)
     REPORT.write_text(json.dumps({"date": today.isoformat(), "sources": report,
                                   "unknown_venues": sorted(venues.unknown)}, ensure_ascii=False, indent=1),
                       encoding="utf-8")

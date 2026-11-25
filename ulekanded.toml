@@ -29,6 +29,12 @@ kava = "err"
 tuup = "tv"
 
 [[kanal]]
+nimi = "Go3 (tasuline)"
+url = "https://go3.ee/live_tv"
+kava = "go3"
+tuup = "tv"
+
+[[kanal]]
 nimi = "Postimees"
 url = "https://tv.postimees.ee/"
 tuup = "veeb"

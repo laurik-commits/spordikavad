@@ -259,7 +259,11 @@ def match(events: Iterable[Event], streams: Iterable[dict]) -> dict[str, dict]:
             log.info("%s: kava rida %s – %s sobib mitmele mängule, jätan vahele", s["by"], s["home"], s["away"])
             continue
         e = cands[0][2]
-        out[e.id] = link_of(e, s["url"], s["by"])
+        if e.id not in out:
+            out[e.id] = link_of(e, s["url"], s["by"])
+        elif s["by"] != out[e.id]["video_by"] and all(a["video_by"] != s["by"] for a in out[e.id].get("also", [])):
+            # sama mäng mitmel kanalil: esimene (kanalite järjekord ulekanded.toml-is, tasuta enne) jääb põhiliseks
+            out[e.id].setdefault("also", []).append({"video": s["url"], "video_by": s["by"]})
     return out
 
 
@@ -323,6 +327,11 @@ def update_links(old: dict[str, dict], new: dict[str, dict], today: date,
             continue
         out[eid] = link
     return out
+
+
+def also(links: dict[str, dict]) -> dict[str, list[dict]]:
+    """Mängu teised ülekanded (sama mäng mitmel kanalil): {mängu id: [{"video", "video_by"}]}."""
+    return {eid: link["also"] for eid, link in links.items() if link.get("also")}
 
 
 def apply(events: Iterable[Event], links: dict[str, dict]) -> list[Event]:

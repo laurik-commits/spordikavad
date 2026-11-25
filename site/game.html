@@ -47,6 +47,7 @@
   <p class="actions">
     <a class="btn" href="{{ e.url }}" rel="noopener">{% if e.source == 'kasitsi' %}Teade{% elif past and e.result %}Statistika{% elif e.sport in event_sports %}Võistluse info{% else %}Mänguleht{% endif %} allika saidil ↗</a>
     {% if e.video %}{% set wk = e | watch_kind(past) %}<a class="btn watch-btn {{ wk }}" href="{{ e.video }}" rel="noopener">{{ wi.icon(wk, 18) }} {{ watch_types[wk].button }}: {{ e.video_by }} ↗</a>{% endif %}
+    {% if not past %}{% for a in e | also %}{% set ak = a.video_by | watch_kind_by %}<a class="btn watch-btn {{ ak }}" href="{{ a.video }}" rel="noopener">{{ wi.icon(ak, 18) }} {{ watch_types[ak].button }}: {{ a.video_by }} ↗</a>{% endfor %}{% endif %}
     <button type="button" class="btn share-btn share" data-url="{{ canonical }}" data-title="{{ match }}" data-text="{{ e | share_text }}">Jaga</button>
   </p>
   {% set channels = e | watch %}

@@ -1,0 +1,49 @@
+[
+ {
+  "title": "FIBA Basketball World Cup Qualifiers. Eesti - Prantsusmaa",
+  "since": "2026-11-27T16:50:00Z",
+  "till": "2026-11-27T19:00:00Z",
+  "liveProgramme": true,
+  "genres": [
+   {
+    "name": "Korvpall"
+   },
+   {
+    "name": "Sport"
+   }
+  ],
+  "live": {
+   "type_": "LIVE",
+   "id": 4231570,
+   "geolocked": true
+  }
+ },
+ {
+  "title": "Basketball: FIBA Basketball World Cup Qualifiers. Eesti - Prantsusmaa",
+  "since": "2026-11-27T21:00:00Z",
+  "till": "2026-11-27T23:10:00Z",
+  "liveProgramme": false,
+  "genres": [
+   {
+    "name": "Korvpall"
+   }
+  ],
+  "live": {
+   "type_": "LIVE",
+   "id": 2275257,
+   "geolocked": true
+  }
+ },
+ {
+  "title": "Saadete vahepaus",
+  "since": "2026-11-26T21:00:00Z",
+  "till": "2026-11-26T23:00:00Z",
+  "liveProgramme": false,
+  "genres": [],
+  "live": {
+   "type_": "LIVE",
+   "id": 4150367,
+   "geolocked": true
+  }
+ }
+]
