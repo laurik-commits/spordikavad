@@ -68,8 +68,9 @@ kanalid = ["Postimees"]
 # Koduhallid: kava rida, millega ükski allika mäng ei seostu (nt TalTechil ja Viimsil oma ajakava pole),
 # lisatakse mänguna „<Ala> (kava järgi)“ selle meeskonna kodumänguna. nimi = koduvõistkonna eristavad sõnad
 # (kõik peavad kava rea koduvõistkonna nimes olema), koht = venues.toml nimi. Ainult teadaolevad Eesti
-# meeskonnad ja nende püsivad koduhallid; Kalev jääb välja (mängib mitmes saalis, ajakava on klubi lehel).
+# meeskonnad ja nende püsivad koduhallid; Kalev on ainult linnaga (mängib mitmes saalis).
 # Koduhall tuleb vaadata klubi enda lehelt või varasematest mängudest (data/korvpall_kalev.json).
+# koht on valikuline: kui saal pole kindel, jäta ainult linn (mäng on siis saalita, märkusega „Info telekavast“).
 [[koduhall]]
 sport = "korvpall"
 nimi = "Keila"
@@ -89,3 +90,13 @@ koht = "TalTechi spordihall"
 sport = "korvpall"
 nimi = "Tartu Ülikool"
 koht = "Tartu Ülikooli spordihoone"
+
+[[koduhall]]
+sport = "korvpall"
+nimi = "Pärnu"
+koht = "Pärnu Spordihoone"
+
+[[koduhall]]
+sport = "korvpall"
+nimi = "Kalev"
+linn = "Tallinn"

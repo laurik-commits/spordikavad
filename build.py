@@ -299,6 +299,8 @@ def calendar_data(events: list[Event], first: date, last: date, today: date, geo
             r["tbc"] = 1
         if e.result:
             r["r"] = e.result
+        if e.note:
+            r["n"] = e.note
         if e.end:
             r["e"], r["sp"] = e.end, date_span(e)
         if e.video:
@@ -688,7 +690,9 @@ def main(argv: list[str] | None = None) -> int:
             # ülekandjate kavad (Delfi TV …) → mängude otseülekande lingid (data/ulekanded.json)
             streams, kava_report = ulekanded.fetch_streams(ul_cfg, fetcher)
             # kava rida, mida ühegi allika mäng ei kata ja mille koduhall on teada → mäng „kava järgi“
-            extra = only_estonia(ulekanded.unmatched_games(events, streams, ul_cfg), venues, Geo(cfg))
+            games = ulekanded.unmatched_games(events, streams, ul_cfg)
+            # saaliga mängud normaliseeritakse nagu muud; saalita mäng (koduhalli tabelis ainult linn) jääb saalita
+            extra = only_estonia([e for e in games if e.venue], venues, Geo(cfg)) + [e for e in games if not e.venue]
             if extra:
                 events, _ = dedupe(events + extra)
                 log.info("Lisasin %d mängu ülekannete kava järgi", len(extra))

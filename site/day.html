@@ -144,7 +144,7 @@
         </time>
         <span class="info">
           <span class="match">{{ e | matchup }}{% if e.result %} <b class="score" title="Tulemus">{{ e.result | replace('-', ':') }}</b>{% endif %}</span>
-          <span class="meta">{% if e.end %}{{ e | date_span }} · {% endif %}{{ e.league }} · {{ e.venue }}{% if show_city and e.city != e.venue %}, {{ e.city }}{% endif %}{% if e.time_tbc and not e.end %} · <em>kellaaeg täpsustamisel</em>{% endif %}</span>
+          <span class="meta">{% if e.end %}{{ e | date_span }} · {% endif %}{{ e.league }}{% if e.venue %} · {{ e.venue }}{% endif %}{% if show_city and e.city and e.city != e.venue %}{{ ', ' if e.venue else ' · ' }}{{ e.city }}{% endif %}{% if e.time_tbc and not e.end %} · <em>kellaaeg täpsustamisel</em>{% endif %}{% if e.note %} · <em>{{ e.note }}</em>{% endif %}</span>
         </span>
       </a>
       {% if e.video %}{% set wk = e | watch_kind(past) %}{% set wlabel = watch_types[wk].title ~ ': ' ~ e.video_by %}<a class="watch {{ wk }}" href="{{ e.video }}" rel="noopener" title="{{ wlabel }}" aria-label="{{ wlabel }}, {{ e | matchup }}">{{ wi.icon(wk) }}</a>{% endif %}

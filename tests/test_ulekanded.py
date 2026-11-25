@@ -465,6 +465,21 @@ class KavaGamesTest(unittest.TestCase):
                                                                        "TalTechi spordihall", 1))
         self.assertEqual((e.league, e.video, e.video_by), ("Korvpall (kava järgi)",
                                                            "https://tv.delfi.ee/leht/ulekanded-kava", "Delfi TV"))
+        self.assertEqual(e.note, "Info telekavast: kontrolli algusaega ja toimumiskohta")
+
+    def test_game_without_hall_has_only_city(self):
+        cfg = {"koduhall": [{"sport": "korvpall", "nimi": "Kalev", "linn": "Tallinn"}]}
+        (e,) = ulekanded.unmatched_games([], [self.stream("Bigbank/Kalev", "BC Pärnu")], cfg)
+        self.assertEqual((e.venue, e.city), ("", "Tallinn"))
+        (err,) = ulekanded.validate({"koduhall": [{"sport": "korvpall", "nimi": "Kalev"}]})
+        self.assertTrue(err.endswith("või linn puudub"))
+
+    def test_repo_koduhall_venues_known(self):
+        from scrapers.venues import Venues
+        venues = Venues.load()
+        for h in ulekanded.load().get("koduhall", []):
+            if h.get("koht"):
+                self.assertIsNotNone(venues.lookup(h["koht"]), h["koht"])
 
     def test_row_covered_by_existing_game_is_not_added(self):
         game = new_event(source="x", sport="korvpall", league="Eesti-Läti Korvpalliliiga",
@@ -485,6 +500,26 @@ class KavaGamesTest(unittest.TestCase):
         self.assertEqual(ulekanded.validate(self.CFG), [])
         bad = {"koduhall": [{"sport": "x", "nimi": "KK", "koht": ""}]}
         self.assertEqual(len(ulekanded.validate(bad)), 3)
+
+    def test_note_shown_on_pages_and_blank_venue_is_clean(self):
+        import json
+        import tempfile
+        e = new_event(source="kava_mangud", sport="korvpall", league="Korvpall (kava järgi)",
+                      start=datetime(2026, 11, 22, 19, 0), home="Bigbank/Kalev", away="BC Pärnu", venue="",
+                      city="Tallinn", url="https://tv.delfi.ee/", video="https://tv.delfi.ee/", video_by="Delfi TV",
+                      note=ulekanded.KAVA_NOTE)
+        out = Path(tempfile.mkdtemp())
+        cfg = {"site": {"days_ahead": 3, "base_url": "https://example.org/sk/", "default_level": 1},
+               "geo": OLD_GEO, "source": config.load()["source"]}
+        build.render([e], cfg, date(2026, 11, 20), out)
+        day = (out / "2026-11-22" / "index.html").read_text(encoding="utf-8")
+        self.assertIn("Info telekavast: kontrolli algusaega ja toimumiskohta", day)
+        self.assertNotIn("Korvpall (kava järgi) · </span>", day)
+        self.assertNotIn("(kava järgi) ·  ", day)
+        game = (out / "m" / e.id / "index.html").read_text(encoding="utf-8")
+        self.assertIn("Info telekavast", game)
+        cal = json.loads((out / "kalender.json").read_text(encoding="utf-8"))
+        self.assertEqual(cal["events"][0]["n"], ulekanded.KAVA_NOTE)
 
 if __name__ == "__main__":
     unittest.main()

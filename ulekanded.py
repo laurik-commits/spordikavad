@@ -24,7 +24,7 @@ ulekanded.toml:
   [[kanal]]  ülekandja nimi (sama, mis `video_by`), leht, kuhu link viib, ja valikuliselt kava (adapter)
   [[liiga]]  sport + liigad (täpsed nimed) või liiga_algus (nimi algab nii, nt koondised) + kanalid (nimed)
   [[mang]]   sport, algus, kodu, voorad, kanal, url (kanali saidil), lisatud, markus
-  [[koduhall]]  sport, nimi (koduvõistkonna eristavad sõnad), koht (venues.toml nimi): kava rida, millega ühtegi
+  [[koduhall]]  sport, nimi (koduvõistkonna eristavad sõnad), koht (venues.toml nimi) ja/või linn: kava rida, millega ühtegi
              mängu ei seostu, lisatakse mänguna selle meeskonna kodumänguna (`unmatched_games`)
 
     python ulekanded.py   kontrollib faili (väljumiskood 1, kui vigu on)
@@ -131,8 +131,8 @@ def validate(cfg: dict) -> list[str]:
             errors.append(f"{label}: tundmatu ala")
         if not _tokens(h.get("nimi", "")):
             errors.append(f"{label}: nimi puudub või koosneb ainult üldsõnadest")
-        if not str(h.get("koht", "")).strip():
-            errors.append(f"{label}: koht puudub")
+        if not str(h.get("koht", "")).strip() and not str(h.get("linn", "")).strip():
+            errors.append(f"{label}: koht (saal) või linn puudub")
     for i, entry in enumerate(cfg.get("liiga", []), 1):
         label = f"liiga {i} ({entry.get('sport', '?')})"
         if entry.get("sport") not in SPORTS:
@@ -285,30 +285,34 @@ def match(events: Iterable[Event], streams: Iterable[dict]) -> dict[str, dict]:
 
 
 KAVA_SOURCE = "kava_mangud"
+KAVA_NOTE = "Info telekavast: kontrolli algusaega ja toimumiskohta"
 
 
 def unmatched_games(events: Iterable[Event], streams: Iterable[dict], cfg: dict) -> list[Event]:
     """Kava read, mis ei sobi ühegi olemasoleva mänguga, mängudena (ainult Eesti võistkondade kodumängud).
 
-    Kava annab ainult aja, ala ja „Kodu - Võõras“. Saal tuleb [[koduhall]] tabelist (koduvõistkonna nime
-    kõik eristavad sõnad peavad kava rea koduvõistkonna nimes olema). Rida, millel pole koduhalli (välismaa
-    klubi, tundmatu meeskond), jääb vahele. Rida, mis sobib mitme mänguga, on mõne mänguga seotud: vahele.
+    Kava annab ainult aja, ala ja „Kodu - Võõras“. Saal (või ainult linn, kui saal pole kindel) tuleb
+    [[koduhall]] tabelist (koduvõistkonna nime kõik eristavad sõnad peavad kava rea koduvõistkonna nimes
+    olema). Rida, mille koduvõistkonda tabelis pole (välismaa klubi, tundmatu meeskond), jääb vahele.
+    Mängul on märkus „Info telekavast: kontrolli algusaega ja toimumiskohta“. Rida, mis sobib mitme mänguga, on mõne mänguga seotud: vahele.
     Tase 1, liiga „<Ala> (kava järgi)“; mängul on kohe ülekande link. Ühe päeva kaks rida samale mängule
     (mitu kanalit) liidetakse: alles jääb esimene."""
     from scrapers.model import new_event  # siin, et ulekanded.py importimine ei vajaks mudelit kohe
     events = list(events)
-    halls = [(h["sport"], _tokens(h["nimi"]), h["koht"]) for h in cfg.get("koduhall", []) if _tokens(h.get("nimi", ""))]
+    halls = [(h["sport"], _tokens(h["nimi"]), h.get("koht", ""), h.get("linn", ""))
+             for h in cfg.get("koduhall", []) if _tokens(h.get("nimi", ""))]
     out: dict[str, Event] = {}
     for s in streams:
         if not s["away"] or _candidates(events, s):
             continue
         home = _tokens(s["home"])
-        venue = next((v for sport, toks, v in halls if sport == s["sport"] and toks <= home), None)
-        if venue is None:
+        hall = next((h for h in halls if h[0] == s["sport"] and h[1] <= home), None)
+        if hall is None:
             continue
+        venue, city = hall[2], hall[3]
         e = new_event(source=KAVA_SOURCE, sport=s["sport"], league=f"{SPORTS[s['sport']]} (kava järgi)",
-                      start=s["start"], home=s["home"], away=s["away"], venue=venue, city="", url=s["url"],
-                      level=1, video=s["url"], video_by=s["by"])
+                      start=s["start"], home=s["home"], away=s["away"], venue=venue, city=city, url=s["url"],
+                      level=1, video=s["url"], video_by=s["by"], note=KAVA_NOTE)
         out.setdefault(e.id, e)
     return list(out.values())
 

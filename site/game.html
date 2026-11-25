@@ -40,8 +40,9 @@
     <div class="info">
       <h1 class="match">{{ match }}{% if score %} <b class="score" title="Tulemus">{{ score }}</b>{% endif %}</h1>
       <p class="meta">{% if e.end %}{{ e.start.date() | et_date }} – {{ e.last_day | et_date }}{% else %}{{ day | et_date }}{% if e.time_tbc %} · <em>kellaaeg täpsustamisel</em>{% endif %}{% endif %}</p>
-      <p class="meta">{{ e.venue }}{% if e.city and e.city != e.venue %}, {{ e.city }}{% endif %}</p>
+      {% if e.venue or e.city %}<p class="meta">{{ e.venue }}{% if e.city and e.city != e.venue %}{{ ', ' if e.venue }}{{ e.city }}{% endif %}</p>{% endif %}
       <p class="meta">{{ e.league }}</p>
+      {% if e.note %}<p class="meta"><em>{{ e.note }}</em></p>{% endif %}
     </div>
   </article>
   <p class="actions">
