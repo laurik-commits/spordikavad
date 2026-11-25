@@ -687,6 +687,11 @@ def main(argv: list[str] | None = None) -> int:
         if fetcher is not None:
             # ülekandjate kavad (Delfi TV …) → mängude otseülekande lingid (data/ulekanded.json)
             streams, kava_report = ulekanded.fetch_streams(ul_cfg, fetcher)
+            # kava rida, mida ühegi allika mäng ei kata ja mille koduhall on teada → mäng „kava järgi“
+            extra = only_estonia(ulekanded.unmatched_games(events, streams, ul_cfg), venues, Geo(cfg))
+            if extra:
+                events, _ = dedupe(events + extra)
+                log.info("Lisasin %d mängu ülekannete kava järgi", len(extra))
             new = ulekanded.match(events, streams + ulekanded.manual_streams(ul_cfg))
             # tulevaste päevade seos kustub, kui see enam kavas / ulekanded.toml-is pole (kavata kanalid
             # loetakse alati „värskeks“: nende allikas on ulekanded.toml ja mängude enda lingid)

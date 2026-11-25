@@ -10,7 +10,12 @@ Kaks allikat:
 3. Ülekandja kava (`[[kanal]] kava = "delfi"` → scrapers/kava_delfi.py): kava read seotakse olemasolevate
    mängudega (`match`: ala, kellaaeg ±MATCH_MINUTES, võistkondade nimedes ühine sõna). Leitud seosed
    hoitakse failis data/ulekanded.json (mängu id → link), et ka möödunud päevadel ja õppimisel oleks see
-   olemas. Kava ridu ei lisata mängudena.
+   olemas. Kava ridu ei lisata mängudena, välja arvatud need, mille koduvõistkond on [[koduhall]] tabelis
+   ja millega ükski olemasolev mäng ei seostu (punkt 5).
+
+5. Kava-põhised mängud (`unmatched_games`): allikas, mis mängu ei näita (nt TalTechi kodumäng, Viimsi kodumäng),
+   aga ülekandja kava näitab. Saal pärineb tabelist [[koduhall]], liiga on „<Ala> (kava järgi)“. Neid ei
+   arhiveerita: kui mäng hiljem allika lehel ilmub, seostub kava rida sellega ja kava mängu enam ei teki.
 
 4. Käsitsi teadaolev ülekanne (`[[mang]]`, lisab otsinguagent või omanik): käsitletakse nagu kava rida,
    seega seotakse ainult olemasoleva mänguga.
@@ -19,6 +24,8 @@ ulekanded.toml:
   [[kanal]]  ülekandja nimi (sama, mis `video_by`), leht, kuhu link viib, ja valikuliselt kava (adapter)
   [[liiga]]  sport + liigad (täpsed nimed) või liiga_algus (nimi algab nii, nt koondised) + kanalid (nimed)
   [[mang]]   sport, algus, kodu, voorad, kanal, url (kanali saidil), lisatud, markus
+  [[koduhall]]  sport, nimi (koduvõistkonna eristavad sõnad), koht (venues.toml nimi): kava rida, millega ühtegi
+             mängu ei seostu, lisatakse mänguna selle meeskonna kodumänguna (`unmatched_games`)
 
     python ulekanded.py   kontrollib faili (väljumiskood 1, kui vigu on)
 """
@@ -118,6 +125,14 @@ def validate(cfg: dict) -> list[str]:
             errors.append(f"{label}: kanal {m.get('kanal')!r} pole [[kanal]] nimekirjas")
         elif not domain_ok(str(m.get("url", "")), kanal):
             errors.append(f"{label}: url peab olema https ja kanali {kanal['nimi']!r} saidil")
+    for i, h in enumerate(cfg.get("koduhall", []), 1):
+        label = f"koduhall {i} ({h.get('nimi', '?')})"
+        if h.get("sport") not in SPORTS:
+            errors.append(f"{label}: tundmatu ala")
+        if not _tokens(h.get("nimi", "")):
+            errors.append(f"{label}: nimi puudub või koosneb ainult üldsõnadest")
+        if not str(h.get("koht", "")).strip():
+            errors.append(f"{label}: koht puudub")
     for i, entry in enumerate(cfg.get("liiga", []), 1):
         label = f"liiga {i} ({entry.get('sport', '?')})"
         if entry.get("sport") not in SPORTS:
@@ -219,6 +234,34 @@ def link_of(e: Event, video: str = "", video_by: str = "") -> dict:
             "sport": e.sport, "league": e.league}
 
 
+def _candidates(events: list[Event], s: dict) -> list[tuple]:
+    """Kava rea sobivad mängud: [(skoor, -minutid, mäng)], parim ees."""
+    sh, sa = _tokens(s["home"]), _tokens(s["away"])
+    cands = []
+    for e in events:
+        if e.sport != s["sport"]:
+            continue
+        if not s["away"]:  # üritus
+            if not (e.start.date() <= s["start"].date() <= e.last_day):
+                continue
+            # ürituse nimi, sari ja linn: „IBU laskesuusatamise MM“ + „Otepää“ ↔ „Laskesuusatamise MM Otepääl“
+            score = _stem_hits(_tokens(f"{e.home} {e.away} {e.league} {e.city}"), sh)
+            if score >= 2:
+                cands.append((score, 0, e))
+            continue
+        minutes = abs((e.start - s["start"]).total_seconds()) / 60
+        if not (minutes <= MATCH_MINUTES or (e.time_tbc and e.start.date() == s["start"].date())):
+            continue
+        eh, ea = _tokens(e.home), _tokens(e.away)
+        straight = len(sh & eh) * len(sa & ea) and len(sh & eh) + len(sa & ea)
+        swapped = len(sh & ea) * len(sa & eh) and len(sh & ea) + len(sa & eh)
+        score = max(straight, swapped)
+        if score:
+            cands.append((score, -minutes, e))
+    cands.sort(key=lambda c: (c[0], c[1]), reverse=True)
+    return cands
+
+
 def match(events: Iterable[Event], streams: Iterable[dict]) -> dict[str, dict]:
     """Kava read → mängud. Tagastab {mängu id: {"video", "video_by", "start", "sport", "league"}}.
 
@@ -230,37 +273,44 @@ def match(events: Iterable[Event], streams: Iterable[dict]) -> dict[str, dict]:
     events = list(events)
     out: dict[str, dict] = {}
     for s in streams:
-        sh, sa = _tokens(s["home"]), _tokens(s["away"])
-        cands = []
-        for e in events:
-            if e.sport != s["sport"]:
-                continue
-            if not s["away"]:  # üritus
-                if not (e.start.date() <= s["start"].date() <= e.last_day):
-                    continue
-                # ürituse nimi, sari ja linn: „IBU laskesuusatamise MM“ + „Otepää“ ↔ „Laskesuusatamise MM Otepääl“
-                score = _stem_hits(_tokens(f"{e.home} {e.away} {e.league} {e.city}"), sh)
-                if score >= 2:
-                    cands.append((score, 0, e))
-                continue
-            minutes = abs((e.start - s["start"]).total_seconds()) / 60
-            if not (minutes <= MATCH_MINUTES or (e.time_tbc and e.start.date() == s["start"].date())):
-                continue
-            eh, ea = _tokens(e.home), _tokens(e.away)
-            straight = len(sh & eh) * len(sa & ea) and len(sh & eh) + len(sa & ea)
-            swapped = len(sh & ea) * len(sa & eh) and len(sh & ea) + len(sa & eh)
-            score = max(straight, swapped)
-            if score:
-                cands.append((score, -minutes, e))
+        cands = _candidates(events, s)
         if not cands:
             continue
-        cands.sort(key=lambda c: (c[0], c[1]), reverse=True)
         if len(cands) > 1 and cands[0][:2] == cands[1][:2]:
             log.info("%s: kava rida %s – %s sobib mitmele mängule, jätan vahele", s["by"], s["home"], s["away"])
             continue
         e = cands[0][2]
         out[e.id] = link_of(e, s["url"], s["by"])
     return out
+
+
+KAVA_SOURCE = "kava_mangud"
+
+
+def unmatched_games(events: Iterable[Event], streams: Iterable[dict], cfg: dict) -> list[Event]:
+    """Kava read, mis ei sobi ühegi olemasoleva mänguga, mängudena (ainult Eesti võistkondade kodumängud).
+
+    Kava annab ainult aja, ala ja „Kodu - Võõras“. Saal tuleb [[koduhall]] tabelist (koduvõistkonna nime
+    kõik eristavad sõnad peavad kava rea koduvõistkonna nimes olema). Rida, millel pole koduhalli (välismaa
+    klubi, tundmatu meeskond), jääb vahele. Rida, mis sobib mitme mänguga, on mõne mänguga seotud: vahele.
+    Tase 1, liiga „<Ala> (kava järgi)“; mängul on kohe ülekande link. Ühe päeva kaks rida samale mängule
+    (mitu kanalit) liidetakse: alles jääb esimene."""
+    from scrapers.model import new_event  # siin, et ulekanded.py importimine ei vajaks mudelit kohe
+    events = list(events)
+    halls = [(h["sport"], _tokens(h["nimi"]), h["koht"]) for h in cfg.get("koduhall", []) if _tokens(h.get("nimi", ""))]
+    out: dict[str, Event] = {}
+    for s in streams:
+        if not s["away"] or _candidates(events, s):
+            continue
+        home = _tokens(s["home"])
+        venue = next((v for sport, toks, v in halls if sport == s["sport"] and toks <= home), None)
+        if venue is None:
+            continue
+        e = new_event(source=KAVA_SOURCE, sport=s["sport"], league=f"{SPORTS[s['sport']]} (kava järgi)",
+                      start=s["start"], home=s["home"], away=s["away"], venue=venue, city="", url=s["url"],
+                      level=1, video=s["url"], video_by=s["by"])
+        out.setdefault(e.id, e)
+    return list(out.values())
 
 
 def fetch_streams(cfg: dict, fetcher) -> tuple[list[dict], list[dict]]:

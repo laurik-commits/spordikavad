@@ -8,8 +8,9 @@ Kuju: {"attributes": {"data": {"streams": [{"date": {"start": "2026-11-27T17:00:
 Umbes kaks nädalat ette, sees on ka saated ("Spordisaade", "Otsesaade"): need jäetakse välja (label pole ala).
 robots.txt: api hostil puudub (404), tv.delfi.ee lubab (`User-agent: *`, `Allow: /`). Üks päring päevas.
 
-See EI OLE mängude allikas: kava ridu ei lisata lehele mängudena, need seotakse ainult olemasolevate
-mängudega (ala + kellaaeg + võistkonnad, vt ulekanded.match).
+Kava read seotakse olemasolevate mängudega (ala + kellaaeg + võistkonnad, vt ulekanded.match). Rida, millega
+ükski mäng ei seostu, lisatakse mänguna ainult siis, kui koduvõistkond on ulekanded.toml [[koduhall]] tabelis
+(saal pärineb sealt; vt ulekanded.unmatched_games).
 """
 
 from __future__ import annotations

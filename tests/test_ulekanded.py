@@ -445,5 +445,46 @@ url = "https://www.youtube.com/watch?v=x"
         self.assertEqual((kavas["Delfi TV"], kavas["ERR"]), ("delfi", "err"))
 
 
+
+class KavaGamesTest(unittest.TestCase):
+    """Kava rida, mida ükski allikas ei kata, lisatakse mänguna (ainult teadaoleva koduhalliga)."""
+
+    CFG = {"koduhall": [
+        {"sport": "korvpall", "nimi": "Viimsi", "koht": "Forus Spordikeskus Viimsi"},
+        {"sport": "korvpall", "nimi": "TalTech", "koht": "TalTechi spordihall"},
+    ]}
+
+    @staticmethod
+    def stream(home, away, start="2026-12-06T18:00:00", sport="korvpall"):
+        return {"start": datetime.fromisoformat(start).replace(tzinfo=TALLINN), "sport": sport,
+                "home": home, "away": away, "url": "https://tv.delfi.ee/leht/ulekanded-kava", "by": "Delfi TV"}
+
+    def test_unmatched_row_becomes_game(self):
+        (e,) = ulekanded.unmatched_games([], [self.stream("TalTech/ALEXELA", "BC Pärnu")], self.CFG)
+        self.assertEqual((e.sport, e.home, e.away, e.venue, e.level), ("korvpall", "TalTech/ALEXELA", "BC Pärnu",
+                                                                       "TalTechi spordihall", 1))
+        self.assertEqual((e.league, e.video, e.video_by), ("Korvpall (kava järgi)",
+                                                           "https://tv.delfi.ee/leht/ulekanded-kava", "Delfi TV"))
+
+    def test_row_covered_by_existing_game_is_not_added(self):
+        game = new_event(source="x", sport="korvpall", league="Eesti-Läti Korvpalliliiga",
+                         start=datetime(2026, 12, 6, 18, 0, tzinfo=TALLINN), home="TalTech", away="Pärnu",
+                         venue="TalTechi spordihall", city="Tallinn", url="https://example.ee/")
+        self.assertEqual(ulekanded.unmatched_games([game], [self.stream("TalTech/ALEXELA", "BC Pärnu")], self.CFG), [])
+
+    def test_unknown_or_foreign_home_team_is_skipped(self):
+        streams = [self.stream("Keila KK", "BK Liepaja"), self.stream("BK Liepaja", "TalTech/ALEXELA")]
+        self.assertEqual(ulekanded.unmatched_games([], streams, self.CFG), [])
+
+    def test_other_sport_and_same_game_on_two_channels(self):
+        self.assertEqual(ulekanded.unmatched_games([], [self.stream("Viimsi", "Rapla", sport="kasipall")], self.CFG), [])
+        twice = [self.stream("Viimsi", "Rapla"), {**self.stream("Viimsi", "Rapla"), "by": "ERR"}]
+        self.assertEqual(len(ulekanded.unmatched_games([], twice, self.CFG)), 1)
+
+    def test_validate_koduhall(self):
+        self.assertEqual(ulekanded.validate(self.CFG), [])
+        bad = {"koduhall": [{"sport": "x", "nimi": "KK", "koht": ""}]}
+        self.assertEqual(len(ulekanded.validate(bad)), 3)
+
 if __name__ == "__main__":
     unittest.main()
