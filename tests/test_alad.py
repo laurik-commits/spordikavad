@@ -4,11 +4,13 @@ import unittest
 from pathlib import Path
 
 import build
+from scrapers import sports
 from scrapers.model import EVENT_SPORTS, SPORTS
 
 ROOT = Path(__file__).resolve().parent.parent
-CSS = (ROOT / "site" / "style.css").read_text(encoding="utf-8")
-JS = (ROOT / "site" / "kalender.js").read_text(encoding="utf-8")
+# nagu build.py: värvid ja nimed täidetakse registrist (sports.toml)
+CSS = sports.fill((ROOT / "site" / "style.css").read_text(encoding="utf-8"))
+JS = sports.fill((ROOT / "site" / "kalender.js").read_text(encoding="utf-8"))
 
 
 class SportsConsistencyTest(unittest.TestCase):

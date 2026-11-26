@@ -18,6 +18,7 @@ from __future__ import annotations
 import json
 from datetime import datetime
 
+from . import sports
 from .model import TALLINN
 
 NAME = "kava_delfi"
@@ -25,14 +26,8 @@ BY = "Delfi TV"
 URL = "https://portal-feeds.api.delfi.ee/portal-feeds-proxy/v1/stream-schedule"
 PAGE = "https://tv.delfi.ee/leht/ulekanded-kava"  # link mängu juures, kui kava real oma linki pole
 
-# kava "label" → ala võti (SPORTS)
-SPORTS = {
-    "võrkpall": "vorkpall", "korvpall": "korvpall", "käsipall": "kasipall", "jalgpall": "jalgpall",
-    "jäähoki": "jaahoki", "hoki": "jaahoki", "saalihoki": "saalihoki", "saalijalgpall": "saalijalgpall",
-    "tennis": "tennis", "sulgpall": "sulgpall", "lauatennis": "lauatennis",
-    "võimlemine": "voimlemine", "iluvõimlemine": "voimlemine", "tantsusport": "tantsusport", "fitness": "fitness",
-    "ujumine": "ujumine", "sõudmine": "soudmine", "purjetamine": "purjetamine", "kanuu": "kanuu", "aerutamine": "kanuu",
-}
+# kava "label" → ala võti (registri `delfi` väljad, sports.toml)
+SPORTS = sports.DELFI_LABELS
 
 
 def _teams(title: str) -> tuple[str, str] | None:

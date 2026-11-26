@@ -1,0 +1,347 @@
+# Alade register: IGA ALA ON ÜKS [[sport]] plokk. Uue ala lisamiseks piisab siia ühest plokist (+ adapter/allikas).
+# Sellest tulevad: SPORTS ja EVENT_SPORTS (scrapers/model.py), käänded, rühmad, allikate lingid ja „Meist“ tabeli
+# märkused (build.py), värvid (style.css) ja nimed (kalender.js), Delfi/ERR kava ala tuvastus.
+# Vt scrapers/sports.py ja tests/test_alad.py (kontrollib, et register on korras).
+#
+# Väljad:
+#   key      võti (andmetes, URL-ides, CSS klassis)        name   nimi menüüs ja real
+#   gen      ala omastav lauses „… {gen} mänge/võistlusi“   in     seesütlev: „Ela kaasa … {in} Tallinnas“
+#   color    kellaploki taust (#rrggbb, valge tekst ≥ 4.5:1)
+#   group    rühma võti [[group]]-ist (valikuline); gpos = koht rühmas (valikuline, muidu faili järjekord)
+#   event    true = üritus (home = ürituse nimi, away tühi), mitte kahe võistkonna mäng
+#   block    nimi värvilises kellaplokis pehmete sidekriipsudega (valikuline)
+#   delfi    Delfi TV kava „label“ väärtused (väiketähtedega), go3 = Go3 kava žanrid (väiketähtedega),
+#   err      ERR kava nime alguse regex (kõik valikulised)
+#   sources  allikate avalehed „Meist“ lehe jaoks [{name, url}]   manual = „Meist“ tabeli käsitsi kaetud osa
+# Faili järjekord = alade järjekord lehel.
+
+[[group]]
+key = "g:voistkond"
+name = "Võistkonnaalad"
+word = "võistkonnaaladel"
+
+[[group]]
+key = "g:tali"
+name = "Talialad"
+word = "talialadel"
+
+[[group]]
+key = "g:mootor"
+name = "Mootorsport"
+word = "mootorspordis"
+
+[[group]]
+key = "g:reket"
+name = "Reketialad"
+word = "reketialadel"
+
+[[group]]
+key = "g:kunst"
+name = "Kunstilised alad"
+word = "kunstilistel aladel"
+
+[[group]]
+key = "g:vesi"
+name = "Veealad"
+word = "veealadel"
+
+[[sport]]
+key = "jalgpall"
+name = "Jalgpall"
+gen = "jalgpalli"
+in = "jalgpallis"
+color = "#2e7d32"
+group = "g:voistkond"
+gpos = 0
+delfi = ["jalgpall"]
+go3 = ["jalgpall"]
+err = "jalgpall"
+sources = [{ name = "Eesti Jalgpalli Liit", url = "https://jalgpall.ee/voistlused" }]
+
+[[sport]]
+key = "korvpall"
+name = "Korvpall"
+gen = "korvpalli"
+in = "korvpallis"
+color = "#6b7280"
+group = "g:voistkond"
+gpos = 2
+delfi = ["korvpall"]
+go3 = ["korvpall"]
+err = "korvpall"
+sources = [{ name = "Bigbank/Kalev", url = "https://bckalev.ee/ajakava/" }, { name = "Tartu Ülikool Maks & Moorits", url = "https://basket.ut.ee/kalender-26-27/" }]
+
+[[sport]]
+key = "jaahoki"
+name = "Jäähoki"
+gen = "jäähoki"
+in = "jäähokis"
+color = "#1565c0"
+group = "g:voistkond"
+gpos = 5
+delfi = ["jäähoki", "hoki"]
+go3 = ["jäähoki", "hoki"]
+err = "jäähoki"
+sources = [{ name = "Läti Jäähokiliit (Optibet Hokiliiga)", url = "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/schedule" }, { name = "HC Vipers (Unibet Hokiliiga)", url = "https://hcvipers.ee/?page=games&lang=et" }, { name = "HC Everest (Unibet Hokiliiga, naiste hokiliiga, noored)", url = "https://hceverest.ee/" }]
+
+[[sport]]
+key = "vorkpall"
+name = "Võrkpall"
+gen = "võrkpalli"
+in = "võrkpallis"
+color = "#6a1b9a"
+group = "g:voistkond"
+gpos = 3
+delfi = ["võrkpall"]
+go3 = ["võrkpall"]
+err = "võrkpall"
+sources = [{ name = "DataProject (Eesti Võrkpalli Liit, Balti liiga)", url = "https://evf-web.dataproject.com/MainHome.aspx" }]
+
+[[sport]]
+key = "kasipall"
+name = "Käsipall"
+gen = "käsipalli"
+in = "käsipallis"
+color = "#c2410c"
+group = "g:voistkond"
+gpos = 4
+delfi = ["käsipall"]
+go3 = ["käsipall"]
+err = "käsipall"
+sources = [{ name = "Eesti Käsipalliliit ja Balti Käsipalliliiga", url = "https://kasipall.ee/" }]
+
+[[sport]]
+key = "saalihoki"
+name = "Saalihoki"
+gen = "saalihoki"
+in = "saalihokis"
+color = "#00796b"
+group = "g:voistkond"
+gpos = 6
+delfi = ["saalihoki"]
+go3 = ["saalihoki"]
+err = "saalihoki"
+sources = [{ name = "Eesti Saalihoki Liit", url = "https://www.saalihoki.ee/Events/Uritused.aspx" }]
+
+[[sport]]
+key = "saalijalgpall"
+name = "Saalijalgpall"
+gen = "saalijalgpalli"
+in = "saalijalgpallis"
+color = "#8a5a00"
+group = "g:voistkond"
+gpos = 1
+block = "Saali\u00adjalgpall"
+delfi = ["saalijalgpall"]
+go3 = ["saalijalgpall", "futsal"]
+err = "saalijalgpall"
+sources = [{ name = "Eesti Jalgpalli Liit", url = "https://jalgpall.ee/voistlused" }]
+
+[[sport]]
+key = "motosport"
+name = "Motosport"
+gen = "motospordi"
+in = "motospordis"
+color = "#b91c1c"
+group = "g:mootor"
+gpos = 1
+event = true
+err = "(motokross|mootorratta)"
+sources = [{ name = "Eesti Mootorrattaspordi Föderatsioon", url = "https://msport.ee/kalender/" }]
+
+[[sport]]
+key = "kergejoustik"
+name = "Kergejõustik"
+gen = "kergejõustiku"
+in = "kergejõustikus"
+color = "#be185d"
+event = true
+block = "Kerge\u00adjõustik"
+err = "kergejõustik"
+sources = [{ name = "Eesti Kergejõustikuliit", url = "https://www.ekjl.ee/kalender/" }]
+
+[[sport]]
+key = "suusatamine"
+name = "Suusatamine"
+gen = "suusa"
+in = "suusatamises"
+color = "#4338ca"
+group = "g:tali"
+event = true
+block = "Suusa\u00adtamine"
+err = "(laskesuusatamis|murdmaasuusatamis|suusatamis|suusahüpp|kahevõistlus)"
+sources = [{ name = "Eesti Suusaliit", url = "https://www.suusaliit.ee/et/voistlused" }]
+manual = "Laskesuusatamine: suured võistlused (käsitsi)"
+
+[[sport]]
+key = "ratsasport"
+name = "Ratsasport"
+gen = "ratsa"
+in = "ratsaspordis"
+color = "#78350f"
+event = true
+err = "(ratsaspordi|takistussõit)"
+sources = [{ name = "Eesti Ratsaspordi Liit", url = "https://ratsanet.ee/events" }]
+
+[[sport]]
+key = "uisutamine"
+name = "Uisutamine"
+gen = "uisu"
+in = "uisutamises"
+color = "#0284c7"
+group = "g:tali"
+event = true
+err = "(iluuisutamis|kiiruisutamis|uisutamis)"
+sources = [{ name = "Eesti Uisuliit", url = "https://www.uisuliit.ee/iluuisutamine/voistlused" }]
+
+[[sport]]
+key = "voitlusspordid"
+name = "Võitlusspordid"
+gen = "võitlusspordi"
+in = "võitlusspordis"
+color = "#3f3f46"
+event = true
+block = "Võitlus\u00adspordid"
+err = "(judo|poksi|maadlus)"
+sources = [{ name = "Eesti Judoliit", url = "https://judo.ee/voistlused/" }, { name = "Eesti Maadlusliit", url = "https://maadlusliit.ee/kalender/" }, { name = "Eesti Poksiliit", url = "https://www.eestipoksiliit.ee/" }]
+manual = "Poks, maadlus, kikk- ja taipoks: suuremad võistlused (käsitsi)"
+
+[[sport]]
+key = "autosport"
+name = "Autosport"
+gen = "autospordi"
+in = "autospordis"
+color = "#ea580c"
+group = "g:mootor"
+gpos = 0
+event = true
+err = "(ralli|rally|wrc)"
+sources = [{ name = "Eesti Autospordi Liit", url = "https://autosport.ee/events/" }, { name = "WRC Rally Estonia", url = "https://www.rallyestonia.ee/" }]
+manual = "WRC Rally Estonia ja suuremad etapid (käsitsi)"
+
+[[sport]]
+key = "tennis"
+name = "Tennis"
+gen = "tennise"
+in = "tennises"
+color = "#4d7c0f"
+group = "g:reket"
+event = true
+delfi = ["tennis"]
+err = "tennis"
+sources = [{ name = "Eesti Tennise Liit", url = "https://tennis.ee/kalender/" }]
+manual = "WTA Tallinn Open, Davis Cupi ja Billie Jean King Cupi kodumängud (käsitsi)"
+
+[[sport]]
+key = "sulgpall"
+name = "Sulgpall"
+gen = "sulgpalli"
+in = "sulgpallis"
+color = "#0e7490"
+group = "g:reket"
+event = true
+delfi = ["sulgpall"]
+err = "sulgpall"
+sources = [{ name = "Eesti Sulgpalliliit", url = "https://badminton.ee/voistle/kalender/voistluskalender/" }]
+
+[[sport]]
+key = "lauatennis"
+name = "Lauatennis"
+gen = "lauatennise"
+in = "lauatennises"
+color = "#9f1239"
+group = "g:reket"
+delfi = ["lauatennis"]
+err = "lauatennis"
+sources = [{ name = "Eesti Lauatenniseliit", url = "https://uus.lauatennis.ee/voistlused/kalender/" }]
+manual = "Meistriliiga ja Eesti MV (käsitsi)"
+
+[[sport]]
+key = "voimlemine"
+name = "Võimlemine"
+gen = "võimlemis"
+in = "võimlemises"
+color = "#a21caf"
+group = "g:kunst"
+event = true
+delfi = ["võimlemine", "iluvõimlemine"]
+err = "(iluvõimlemis|võimlemis)"
+sources = [{ name = "Eesti Võimlemisliit", url = "https://kalender.eevl.ee/" }]
+manual = "Iluvõimlemise rahvusvahelised turniirid (nt Miss Valentine) ja Eesti MV (käsitsi)"
+
+[[sport]]
+key = "tantsusport"
+name = "Tantsusport"
+gen = "tantsuspordi"
+in = "tantsuspordis"
+color = "#c2185b"
+group = "g:kunst"
+event = true
+delfi = ["tantsusport"]
+err = "tantsuspordi"
+sources = [{ name = "Eesti Tantsuspordi Liit", url = "https://dancesport.ee/voistlused-ja-edetabelid/" }]
+manual = "Eesti MV ja suured rahvusvahelised võistlused (käsitsi)"
+
+[[sport]]
+key = "fitness"
+name = "Fitness"
+gen = "fitnessi"
+in = "fitnessis"
+color = "#57534e"
+group = "g:kunst"
+event = true
+delfi = ["fitness"]
+err = "(fitnessi|kulturismi)"
+sources = [{ name = "Eesti Kulturismi ja Fitnessi Liit", url = "https://kulturism.ee/kalender/" }]
+manual = "Fitnessi ja kulturismi Eesti MV ja rahvusvahelised võistlused Eestis (käsitsi)"
+
+[[sport]]
+key = "ujumine"
+name = "Ujumine"
+gen = "ujumis"
+in = "ujumises"
+color = "#0369a1"
+group = "g:vesi"
+event = true
+delfi = ["ujumine"]
+err = "ujumis"
+sources = [{ name = "Eesti Ujumisliit", url = "https://swimming.ee/kalender/" }]
+
+[[sport]]
+key = "soudmine"
+name = "Sõudmine"
+gen = "sõudmis"
+in = "sõudmises"
+color = "#0f766e"
+group = "g:vesi"
+event = true
+delfi = ["sõudmine"]
+err = "sõudmis"
+sources = [{ name = "Eesti Sõudeliit", url = "https://www.soudeliit.ee/" }]
+manual = "Eesti MV, karikaetapid ja rahvusvahelised regatid (käsitsi)"
+
+[[sport]]
+key = "kanuu"
+name = "Aerutamine"
+gen = "aerutamis"
+in = "aerutamises"
+color = "#b45309"
+group = "g:vesi"
+event = true
+delfi = ["kanuu", "aerutamine"]
+err = "(aerutamis|kanuu)"
+sources = [{ name = "Eesti Aerutamisliit", url = "https://www.aerutaja.ee/" }]
+manual = "Eesti MV, karikaetapid ja rahvusvahelised regatid (käsitsi)"
+
+[[sport]]
+key = "purjetamine"
+name = "Purjetamine"
+gen = "purjetamis"
+in = "purjetamises"
+color = "#4338ca"
+group = "g:vesi"
+event = true
+delfi = ["purjetamine"]
+err = "purjetamis"
+sources = [{ name = "Eesti Purjetamisliit", url = "https://puri.ee/" }]
+manual = "Eesti MV, Garmin Sailing Series ja rahvusvahelised regatid (käsitsi)"
