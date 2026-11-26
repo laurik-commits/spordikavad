@@ -1,0 +1,101 @@
+{
+ "07141e18f8de": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-01-24",
+   "home": "Segapaaride Tallinna MK-etapp",
+   "id": "07141e18f8de",
+   "league": "Eesti MV ja MK-etapid",
+   "level": 1,
+   "result": "",
+   "source": "kurling_ekl",
+   "sport": "kurling",
+   "start": "2027-01-18T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://kurling.ee/kalender/segapaaride-tallinna-mk-etapp/",
+   "venue": "Tondiraba jäähall"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "10df29b7ec38": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-02-21",
+   "home": "Eesti meistrivõistlused 2027 segapaarid",
+   "id": "10df29b7ec38",
+   "league": "Eesti MV ja MK-etapid",
+   "level": 1,
+   "result": "",
+   "source": "kurling_ekl",
+   "sport": "kurling",
+   "start": "2027-02-15T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://kurling.ee/kalender/eesti-meistrivoistlused-2027-segapaarid/",
+   "venue": "Tondiraba jäähall"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "341d57d30573": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Eesti meistrivõistlused 2027 individuaal",
+   "id": "341d57d30573",
+   "league": "Eesti MV ja MK-etapid",
+   "level": 1,
+   "result": "",
+   "source": "kurling_ekl",
+   "sport": "kurling",
+   "start": "2027-05-16T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://kurling.ee/kalender/eesti-meistrivoistlused-2027-individuaal/",
+   "venue": "Tondiraba jäähall"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "368b3f959ee4": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-02-07",
+   "home": "Eesti meistrivõistlused 2027 naised/mehed",
+   "id": "368b3f959ee4",
+   "league": "Eesti MV ja MK-etapid",
+   "level": 1,
+   "result": "",
+   "source": "kurling_ekl",
+   "sport": "kurling",
+   "start": "2027-02-01T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://kurling.ee/kalender/eesti-meistrivoistlused-2027-naised-mehed/",
+   "venue": "Tondiraba jäähall"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "ea1bda7d22f4": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-03-28",
+   "home": "Eesti meistrivõistlused 2027 segavõistkonnad",
+   "id": "ea1bda7d22f4",
+   "league": "Eesti MV ja MK-etapid",
+   "level": 1,
+   "result": "",
+   "source": "kurling_ekl",
+   "sport": "kurling",
+   "start": "2027-03-22T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://kurling.ee/kalender/eesti-meistrivoistlused-2027-segavoistkonnad/",
+   "venue": "Tondiraba jäähall"
+  },
+  "first_seen": "2026-11-26"
+ }
+}
