@@ -135,6 +135,23 @@ class SiteTest(unittest.TestCase):
                     self.assertTrue(target.exists() and (target.is_file() or (target / "index.html").exists()), target)
 
 
+class HomeIndexableTest(unittest.TestCase):
+    def test_home_page_is_indexable_and_in_sitemap_other_all_pages_are_not(self):
+        out = Path(tempfile.mkdtemp())
+        e = ev(datetime(2026, 11, 22, 18, 0))
+        cfg = {"site": {"days_ahead": 3, "base_url": "https://example.org/", "default_level": 0},
+               "geo": OLD_GEO, "source": config.load()["source"]}
+        build.render([e], cfg, TODAY, out)
+        home = (out / "index.html").read_text(encoding="utf-8")
+        self.assertNotIn("noindex", home)
+        self.assertIn('<link rel="canonical" href="https://example.org/">', home)
+        # avaleht = vaikepiirkond + vaiketase; muud „kõik liigad“ lehed kordavad taseme lehti
+        self.assertIn("noindex", (out / "eesti" / "index.html").read_text(encoding="utf-8"))
+        self.assertIn("<loc>https://example.org/</loc>", (out / "sitemap.xml").read_text(encoding="utf-8"))
+        self.assertTrue((out / "favicon.svg").exists())
+        self.assertIn('rel="icon" href="favicon.svg"', home)
+
+
 class ReservedSlugTest(unittest.TestCase):
     def test_sport_keys_do_not_clash_with_site_folders(self):
         from scrapers.model import LEVELS, SPORTS

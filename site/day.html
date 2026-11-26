@@ -10,7 +10,7 @@
 <title>{{ level_info.title }} {{ region.in_form }} – {{ human }} {{ day.year }} | Ela kaasa</title>
 <meta name="description" content="{% if n %}{{ human | capitalize }}: {{ n }} {{ 'mäng' if n == 1 else 'mängu' }} {{ region.in_form }}. {% endif %}{{ games | capitalize }} jalgpallist saalihokini ühes nimekirjas, kellaaja järgi.">
 <link rel="canonical" href="{{ canonical }}">
-{% if past or level_info.all %}<meta name="robots" content="noindex">
+{% if past or (level_info.all and not (is_index and region.slug == default_slug and level == default_level)) %}<meta name="robots" content="noindex">
 {% endif %}
 <meta property="og:type" content="website">
 <meta property="og:locale" content="et_EE">
@@ -25,6 +25,7 @@
 {% if google_verification %}<meta name="google-site-verification" content="{{ google_verification }}">
 {% endif %}<meta name="theme-color" content="#14457a">
 <meta name="color-scheme" content="light dark">
+<link rel="icon" href="{{ root }}favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="{{ root }}style.css">
 <script>document.documentElement.classList.add("js")</script>
 </head>

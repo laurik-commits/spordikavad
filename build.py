@@ -457,7 +457,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
     if out.exists():
         shutil.rmtree(out)
     out.mkdir(parents=True)
-    for asset in ("app.js", "og.png", "paise.webp"):
+    for asset in ("app.js", "og.png", "paise.webp", "favicon.svg"):
         shutil.copy(SITE / asset, out / asset)
     for asset in ("style.css", "kalender.js"):  # alade värvid ja nimed tulevad registrist (sports.toml)
         (out / asset).write_text(sports.fill((SITE / asset).read_text(encoding="utf-8")), encoding="utf-8")
@@ -557,7 +557,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
                     (rdir / "index.html").write_text(
                         tpl.render(ctx, root="../" * depth, here="", canonical=index_url, is_index=True),
                         encoding="utf-8")
-                    if not lv.get("all"):
+                    if not lv.get("all") or (r.slug == Geo.default_slug and level == default_level):   # avaleht on indekseeritav
                         urls.append(index_url)
 
     # --- mängulehed /m/<id>/ ja ala- ja liigalehed (/<ala>/, /<ala>/<liiga>/) ---
