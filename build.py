@@ -332,10 +332,62 @@ def regions_for(events: list[Event], geo: Geo) -> list[Region]:
     return [geo.all, *pinned, *cities, *counties]
 
 
+TITLE_MAX = 72     # mängulehe pealkirja pikkus (otsingutulemus lõikab pikema ära)
+LIST_LIMIT = 150   # ala- ja liigalehel nähtavate tulevaste mängude arv (ülejäänud: liigalehed)
+SHORT_MONTHS = ["jaan", "veebr", "märts", "apr", "mai", "juuni", "juuli", "aug", "sept", "okt", "nov", "dets"]
+_ASCII = str.maketrans({"ä": "a", "ö": "o", "õ": "o", "ü": "u", "š": "s", "ž": "z", "é": "e", "ō": "o", "ā": "a",
+                        "ē": "e", "ī": "i", "ū": "u", "ļ": "l", "ņ": "n", "ķ": "k", "ģ": "g", "č": "c"})
+
+
+def slugify(text: str) -> str:
+    """„Eesti-Läti Korvpalliliiga“ → „eesti-lati-korvpalliliiga“ (URL-i osa, ainult a–z, 0–9 ja sidekriips)."""
+    s = re.sub(r"[^a-z0-9]+", "-", text.lower().translate(_ASCII)).strip("-")
+    return s[:60].strip("-") or "liiga"
+
+
+def game_title(e: Event, score: str = "") -> str:
+    """Mängulehe pealkiri: „Kodu – Külaline | Liiga | 28. nov 19:00 | Toimumiskoht“ (kõige olulisem ees)."""
+    when = f"{e.start.day}. {SHORT_MONTHS[e.start.month - 1]}"
+    if not e.time_tbc and not e.end:
+        when += f" {e.start:%H:%M}"
+    name = matchup(e) + (f" {score}" if score else "")
+    place = e.venue or e.city
+    # otsingutulemuses jääb nähtavale ~60–70 märki: kõigepealt jääb ära koht, siis liiga, viimaks lõigatakse nimi
+    for parts in ((name, e.league, when, place), (name, e.league, when), (name, when)):
+        title = " | ".join(x for x in parts if x)
+        if len(title) <= TITLE_MAX:
+            return title
+    return title[:TITLE_MAX - 1].rsplit(" ", 1)[0].rstrip(" |,–-") + "…"
+
+
+def event_ld(e: Event, url: str) -> str:
+    """schema.org SportsEvent (JSON-LD) mängulehele. Võistkonnad ainult meeskonnamängul; koht ainult siis, kui see on teada;
+    kellaajata mängul ainult kuupäev."""
+    start = e.start.date().isoformat() if e.time_tbc else e.start.isoformat(timespec="minutes")
+    data: dict = {"@context": "https://schema.org", "@type": "SportsEvent", "name": matchup(e), "url": url,
+                  "startDate": start, "sport": SPORTS[e.sport],
+                  "eventStatus": "https://schema.org/EventScheduled",
+                  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                  "description": f"{SPORTS[e.sport]}, {e.league}"}
+    if e.end:
+        data["endDate"] = e.end
+    if e.venue or e.city:
+        place: dict = {"@type": "Place", "name": e.venue or e.city}
+        if e.city:
+            place["address"] = {"@type": "PostalAddress", "addressLocality": e.city, "addressCountry": "EE"}
+        data["location"] = place
+    if e.away and e.sport not in EVENT_SPORTS:
+        data["homeTeam"] = {"@type": "SportsTeam", "name": e.home}
+        data["awayTeam"] = {"@type": "SportsTeam", "name": e.away}
+    return json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+
+
 def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
            watch: dict[tuple[str, str], list[dict]] | None = None,
-           channel_types: dict[str, str] | None = None, also: dict[str, list[dict]] | None = None) -> int:
-    """watch: (ala, liiga) → ülekandjad (ulekanded.league_channels); mängu lehel „Selle liiga mänge on näidanud“.
+           channel_types: dict[str, str] | None = None, also: dict[str, list[dict]] | None = None,
+           all_games: list[Event] | None = None) -> int:
+    """all_games: lisaks `events`-ile kõik teadaolevad (möödunud) mängud arhiivist: neile tehakse mängulehed.
+    watch: (ala, liiga) → ülekandjad (ulekanded.league_channels); mängu lehel „Selle liiga mänge on näidanud“.
     channel_types: kanal → "tv" / "veeb" (ulekanded.channel_types): ülekande ikoon ja tekst."""
     watch = watch or {}
     channel_types = channel_types if channel_types is not None else ulekanded.channel_types(ulekanded.load())
@@ -435,6 +487,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
         updated=f"{now.day}.{now.month:02d} kell {now:%H:%M}", built=today.isoformat(),
         analytics_enabled=site_cfg.get("analytics_enabled", False),
         analytics_token=site_cfg.get("analytics_token", ""), base_url=base_url,
+        google_verification=site_cfg.get("google_site_verification", ""),
         contact_url=site_cfg.get("contact_url", ""), watch_types=ulekanded.TYPES,
         sport_block={k: SPORT_BLOCK.get(k, v) for k, v in SPORTS.items()},
     )
@@ -506,23 +559,93 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
                     if not lv.get("all"):
                         urls.append(index_url)
 
-    # mängulehed /m/<id>/: jagatud lingi siht, igal mängul oma eelvaade (pealkiri, aeg, koht)
+    # --- mängulehed /m/<id>/ ja ala- ja liigalehed (/<ala>/, /<ala>/<liiga>/) ---
+    # Mängulehed on KÕIGIL teadaolevatel mängudel: tulevastel (ka päevaakna taga) ja möödunud mängudel arhiivist
+    # (link ei anna 404, leht on „toimunud“, noindex). Ala- ja liigalehed loetlevad eelseisvad mängud ja on
+    # mängulehtede sisemiste linkide siht. Peidetud tasemete (level 3) mänge ala- ja liigalehtedel pole.
+    all_game_events: dict[str, Event] = {}
+    for e in list(all_games or []) + list(events):
+        all_game_events[e.id] = e   # praegused andmed (events) on viimane ja kirjutavad arhiivi kirje üle
+
+    def listed(e: Event) -> bool:
+        return not LEVELS[e.level].get("hidden")
+
+    reserved = {"m", "info", *(lv["slug"] for lv in LEVELS.values()), *(r.slug for r in regions)}
+    clash = reserved & set(SPORTS)
+    if clash:
+        raise ValueError(f"ala võti läheb vastuollu lehe kaustaga: {sorted(clash)}")
+    leagues: dict[tuple[str, str], str] = {}   # (ala, liiga) → liiga kausta nimi alal
+    taken: dict[str, set[str]] = {}
+    for e in sorted(all_game_events.values(), key=lambda e: (e.sport, e.league)):
+        if not listed(e) or (e.sport, e.league) in leagues:
+            continue
+        slug, n = slugify(e.league), 2
+        while slug in taken.setdefault(e.sport, set()):
+            slug, n = f"{slugify(e.league)}-{n}", n + 1
+        taken[e.sport].add(slug)
+        leagues[(e.sport, e.league)] = slug
+
     game_tpl = env.get_template("game.html")
-    seen: set[str] = set()
-    for d in days:
-        for e in window[d]:
-            if e.id in seen:
+    for e in sorted(all_game_events.values(), key=lambda e: (e.start, e.id)):
+        past = e.last_day < today
+        in_window = days[0] <= e.start.date() <= days[-1] or (e.start.date() < days[0] <= e.last_day)
+        gd = max(e.start.date(), days[0]) if in_window else e.start.date()
+        glv = levels[e.level]
+        slug = leagues.get((e.sport, e.league))
+        gdir = out / "m" / e.id
+        gdir.mkdir(parents=True)
+        canonical = f"{base_url}m/{e.id}/"
+        (gdir / "index.html").write_text(
+            game_tpl.render(common, e=e, root="../../", canonical=canonical, past=past, level_info=glv, day=gd,
+                            day_href=f"../../{glv['prefix']}{geo.all.prefix}{gd.isoformat()}/" if in_window else "",
+                            league_href=f"../../{e.sport}/{slug}/" if slug else (f"../../{e.sport}/" if listed(e) else ""),
+                            title=game_title(e, e.result.replace("-", ":")), ld=event_ld(e, canonical)),
+            encoding="utf-8")
+        if not past and listed(e):
+            urls.append(canonical)
+
+    list_tpl = env.get_template("list.html")
+
+    def sport_page(path: Path, root: str, canonical: str, heading: str, title: str, description: str,
+                   rows: list[Event], subleagues: list[dict], parent: dict | None, sport: str) -> None:
+        shown = rows[:LIST_LIMIT]
+        path.mkdir(parents=True, exist_ok=True)
+        (path / "index.html").write_text(
+            list_tpl.render(common, root=root, canonical=canonical, heading=heading, title=title,
+                            description=description, rows=shown, more=len(rows) - len(shown), subleagues=subleagues,
+                            parent=parent, sport=sport, noindex=not rows),
+            encoding="utf-8")
+        if rows:
+            urls.append(canonical)
+
+    def next_text(rows: list[Event]) -> str:
+        if not rows:
+            return ""
+        n = rows[0]
+        return f" Järgmine: {matchup(n)}, {when_where(n)}."
+
+    for sport, sport_name in SPORTS.items():
+        sev = [e for e in all_game_events.values() if e.sport == sport and listed(e)]
+        if not sev:
+            continue
+        one, many = ("võistlust", "võistlusi") if sport in EVENT_SPORTS else ("mängu", "mänge")
+        plural = "võistlused" if sport in EVENT_SPORTS else "mängud"
+        up = sorted((e for e in sev if e.last_day >= today), key=lambda e: (e.start, e.id))
+        subs = []
+        for (sp, league), slug in sorted(leagues.items(), key=lambda kv: kv[0][1]):
+            if sp != sport:
                 continue
-            seen.add(e.id)
-            gd = max(e.start.date(), days[0])  # mitmepäevane: alguspäev (või esimene päev aknas)
-            glv = levels[e.level]
-            gdir = out / "m" / e.id
-            gdir.mkdir(parents=True)
-            (gdir / "index.html").write_text(
-                game_tpl.render(common, e=e, root="../../", canonical=f"{base_url}m/{e.id}/", past=e.last_day < today,
-                                level_info=glv, day=gd,
-                                day_href=f"../../{glv['prefix']}{geo.all.prefix}{gd.isoformat()}/"),
-                encoding="utf-8")
+            lup = sorted((e for e in sev if e.league == league and e.last_day >= today), key=lambda e: (e.start, e.id))
+            subs.append({"name": league, "href": f"{slug}/", "count": len(lup)})
+            desc = (f"{league}: {len(lup)} eelseisvat {one} Eestis." if lup
+                    else f"{league}: eelseisvaid {many} praegu pole.") + next_text(lup)
+            sport_page(out / sport / slug, "../../", f"{base_url}{sport}/{slug}/", league,
+                       f"{league} ({sport_name.lower()}): ajakava ja eelseisvad {plural}", desc,
+                       lup, [], {"name": sport_name, "href": "../"}, sport)
+        desc = (f"{sport_name}: {len(up)} eelseisvat {one} Eestis, kohapeal vaatamiseks." if up
+                else f"{sport_name}: eelseisvaid {many} praegu pole.") + next_text(up)
+        sport_page(out / sport, "../", f"{base_url}{sport}/", sport_name,
+                   f"{sport_name} Eestis: eelseisvad {plural} ja ajakava", desc, up, subs, None, sport)
 
     (out / "kalender.json").write_text(
         json.dumps(calendar_data(events, days[0], days[-1], today, geo, channel_types, also),
@@ -551,7 +674,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
     urls.append(f"{base_url}info/")
 
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    sitemap += [f"  <url><loc>{u}</loc><lastmod>{today.isoformat()}</lastmod></url>" for u in urls]
+    sitemap += [f"  <url><loc>{u}</loc></url>" for u in urls]   # lastmod pole: tänane kuupäev kõigil poleks tõene
     sitemap.append("</urlset>")
     (out / "sitemap.xml").write_text("\n".join(sitemap) + "\n", encoding="utf-8")
     (out / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {base_url}sitemap.xml\n", encoding="utf-8")
@@ -659,7 +782,14 @@ def main(argv: list[str] | None = None) -> int:
             ul_cfg, ulekanded.apply(archive.past_events(today, ulekanded.LEARN_DAYS), links) + events)
     except Exception:  # noqa: BLE001 - ülekannete info viga ei tohi lehe ehitust takistada
         log.exception("ülekannete info koostamine ebaõnnestus")
-    pages = render(events, cfg, today, watch=watch, channel_types=ulekanded.channel_types(ul_cfg), also=also)
+    try:
+        # möödunud mängud arhiivist: neile jäävad mängulehed alles (aadress ei anna 404)
+        old_games = archive.past_events(today, 3650)
+    except Exception:  # noqa: BLE001 - arhiivi viga ei tohi lehe ehitust takistada
+        log.exception("arhiivi mängulehtede lugemine ebaõnnestus")
+        old_games = []
+    pages = render(events, cfg, today, watch=watch, channel_types=ulekanded.channel_types(ul_cfg), also=also,
+                   all_games=old_games)
     REPORT.write_text(json.dumps({"date": today.isoformat(), "sources": report,
                                   "unknown_venues": sorted(venues.unknown)}, ensure_ascii=False, indent=1),
                       encoding="utf-8")

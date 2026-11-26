@@ -9,6 +9,9 @@ base_url = "https://elakaasa.ee/"
 contact_url = "mailto:info@elakaasa.ee"
 # Cloudflare Web Analytics (küpsisevaba, isikuandmeid ei koguta). Omaniku Cloudflare'i konto, sait elakaasa.ee.
 # Token on avalik (on lehe koodis nähtav). Statistika: dash.cloudflare.com → Web Analytics.
+# Google Search Console kinnitus (valikuline): meta-sildi sisu (ainult token), vt README „Otsingumootorid“.
+# Tühi = silti pole. Domeeni kinnitamiseks DNS TXT kirjega seda ei vaja.
+google_site_verification = ""
 analytics_enabled = true
 analytics_token = "876b8d2ee41c4cf581404cf66f57c76c"
 

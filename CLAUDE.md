@@ -19,7 +19,8 @@ ehitab ja avaldab iga päev GitHub Pagesi. Omanik tahab hooldusele kulutada peaa
 - `venues.toml`: saalid (peavad olema siin ja linn `config.toml` `[geo]` all; test kontrollib), `config.toml [geo] foreign`: välismaa kohad
 - `kasitsi.toml`: käsitsi lisatud mängud (otsinguagent); `allikad.toml`: allikate register; `ulekanded.toml` + `ulekanded.py`:
   kes mida näitab, kavad (Delfi, ERR, Go3), `[[koduhall]]` (kava rida → mäng)
-- `build.py` (ehitus, leht, sitemap), `site/*.html`, `site/style.css`, `site/app.js`, `site/kalender.js`
+- `build.py` (ehitus, leht, sitemap, mängulehed `/m/<id>/` KÕIGIL mängudel, ala- ja liigalehed `/<ala>/…`; `game_title`, `event_ld`),
+  `site/*.html` (`game.html` mängulehed, `list.html` ala- ja liigalehed), `site/style.css`, `site/app.js`, `site/kalender.js`
 - `scripts/`: `automerge_check.py` (agendi PR-i kontroll), `report_issues.py` (katkised allikad → GitHub Issue)
 - `SOURCES.md`: **allikate otsused ala kaupa** (miks midagi kasutatakse või jäetakse välja). Loe ainult asjakohane osa
   (`grep -n "^## " SOURCES.md`), mitte kogu faili.
