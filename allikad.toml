@@ -569,11 +569,11 @@ liik = "klubi"
 url = "https://www.valk494.ee/"
 alad = ["jaahoki"]
 piirkond = "Tartu"
-kuju = "js"
+kuju = "html"
 robots = "lubatud"
 kasutus = "agent"
-kontrollitud = 2026-11-22
-markus = "Toores HTML on peaaegu tühi."
+kontrollitud = 2026-11-26
+markus = "Avalehe toores HTML-is on tekstina „JÄRGMINE MÄNG“ (kuupäev, kell, koht), ainult üks lähim mäng. Täielikku kava seal pole."
 
 [[allikas]]
 nimi = "Narva Paemurru Spordikool (Narva PSK)"
