@@ -13,11 +13,17 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import subprocess
 import sys
+from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))   # `python scripts/report_issues.py` käivitus: scripts-kaust on pakett
+
+from scripts import maintenance_log  # noqa: E402
+
 LABEL = "allikas"
 VENUE_TITLE = "Tundmatud toimumiskohad"
 NO_VENUE_TITLE = "Mängud ilma toimumiskohata"
@@ -104,21 +110,37 @@ def main(argv: list[str] | None = None) -> int:
     bodies = {i["title"]: i.get("body", "") for i in open_issues}
 
     to_open, to_close, to_update = plan(report, bodies)
+    day = str(report.get("date") or date.today())
+    repo = os.environ.get("GITHUB_REPOSITORY") or maintenance_log.DEFAULT_REPO
+    events: list[dict] = []   # → MAINTENANCE.md (hoolduslogi)
+
+    def log(kind: str, number, title: str, note: str = "") -> None:
+        events.append({"date": day, "event": kind, "what": maintenance_log.issue_link(number, title, repo), "note": note})
+
     for title, body in to_open:
         print(f"Avan: {title}")
         if not args.dry_run:
-            gh("issue", "create", "--title", title, "--body", body, "--label", LABEL)
+            url = gh("issue", "create", "--title", title, "--body", body, "--label", LABEL).strip()
+            if url.rsplit("/", 1)[-1].isdigit():
+                log("avatud", url.rsplit("/", 1)[-1], title)
     for title, body in to_update:
         print(f"Uuendan: {title}")
         if not args.dry_run:
             gh("issue", "edit", str(numbers[title]), "--body", body)
             gh("issue", "comment", str(numbers[title]), "--body", f"Nimekiri muutus ({report.get('date')}).")
+            log("uuendatud", numbers[title], title, "nimekiri muutus")
     for title in to_close:
         print(f"Sulgen: {title}")
         if not args.dry_run:
             msg = {VENUE_TITLE: "Kõik toimumiskohad on nüüd teada",
                    NO_VENUE_TITLE: "Kõigil lähipäevade mängudel on nüüd toimumiskoht"}.get(title, "Allikas töötab jälle")
             gh("issue", "close", str(numbers[title]), "--comment", f"{msg} ({report.get('date')}).")
+            log("suletud", numbers[title], title, msg)
+    if events and not args.dry_run:
+        try:
+            maintenance_log.record(events)
+        except Exception as exc:  # noqa: BLE001 - logi viga ei tohi Issue'de haldust katki teha
+            print(f"MAINTENANCE.md uuendamine ebaõnnestus: {exc}")
     if not (to_open or to_close or to_update):
         print("Muudatusi pole.")
     return 0

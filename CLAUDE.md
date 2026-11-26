@@ -22,7 +22,8 @@ ehitab ja avaldab iga päev GitHub Pagesi. Omanik tahab hooldusele kulutada peaa
 - `build.py` (ehitus, leht, sitemap, mängulehed `/m/<id>/` KÕIGIL mängudel, ala- ja liigalehed `/<ala>/…`; `game_title`, `event_ld`),
   `site/*.html` (`game.html` mängulehed, `list.html` ala- ja liigalehed), `site/style.css`, `site/app.js`, `site/kalender.js`
 - `ogimage.py` + `site/fonts/`: mängu OG-pilt (Pillow, DejaVu; igale eelseisvale mängule `m/<id>/og.png`, muul juhul üldine `og.png`)
-- `scripts/`: `automerge_check.py` (agendi PR-i kontroll), `report_issues.py` (katkised allikad → GitHub Issue)
+- `scripts/`: `automerge_check.py` (agendi PR-i kontroll), `report_issues.py` (katkised allikad → GitHub Issue ja rida `MAINTENANCE.md`-i),
+  `maintenance_log.py` (hoolduslogi ja kokkuvõte)
 - `SOURCES.md`: **allikate otsused ala kaupa** (miks midagi kasutatakse või jäetakse välja). Loe ainult asjakohane osa
   (`grep -n "^## " SOURCES.md`), mitte kogu faili.
 
@@ -32,6 +33,8 @@ ehitab ja avaldab iga päev GitHub Pagesi. Omanik tahab hooldusele kulutada peaa
   treenerid) ei lisata. Ainult Eestis toimuv. Iga allikas: viisakas päring, ühe päeva jooksul üks (`config.toml [http]`).
 - Iga uue adapteri jaoks **fixture-test** (`tests/fixtures/…`, `tests/test_<allikas>.py`), fixture on päris lehe lühendatud HTML.
 - Üritusalad (`event = true`): `home` = ürituse nimi, `away` tühi. Mitmepäevasel on `end`.
+- **Hooldus:** kui parandad katkist allikat või teed muu hoolduse (PR), lisa rida `MAINTENANCE.md` tabelisse „Käsitsi hooldus“
+  (kuupäev | mis oli katki | parandus + PR). Automaatsete Issue'de logi ja kokkuvõte täituvad ise (`scripts/report_issues.py`).
 - Kõik vahele jäetud allikad ja põhjus kirjuta `SOURCES.md`-i; ka allikate register `allikad.toml` ja README „järgmised alad“.
 - Commit'i sõnum eesti keeles, ühe rea kokkuvõte + lühike loend; lõppu eeldatud attribuutiread. PR ainult siis, kui omanik palub,
   merge'i ainult tema käsul (see avaldab lehe).
