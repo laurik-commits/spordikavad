@@ -9,14 +9,8 @@
   var list = document.getElementById("list");
   if (!views || !list) return;
 
-  var SPORTS = {jalgpall: "Jalgpall", korvpall: "Korvpall", jaahoki: "Jäähoki", vorkpall: "Võrkpall", kasipall: "Käsipall",
-    saalihoki: "Saalihoki", saalijalgpall: "Saalijalgpall", motosport: "Motosport", kergejoustik: "Kergejõustik",
-    suusatamine: "Suusatamine", ratsasport: "Ratsasport", uisutamine: "Uisutamine", voitlusspordid: "Võitlusspordid",
-    autosport: "Autosport", tennis: "Tennis", sulgpall: "Sulgpall", lauatennis: "Lauatennis",
-    voimlemine: "Võimlemine", tantsusport: "Tantsusport", fitness: "Fitness",
-    ujumine: "Ujumine", soudmine: "Sõudmine", kanuu: "Aerutamine", purjetamine: "Purjetamine"};
-  var BLOCK = {saalijalgpall: "Saali­jalgpall", kergejoustik: "Kerge­jõustik", voitlusspordid: "Võitlus­spordid",
-    suusatamine: "Suusa­tamine"};
+  /* @sports:js */
+  /* @sports:end */
   var WD = ["esmaspäev", "teisipäev", "kolmapäev", "neljapäev", "reede", "laupäev", "pühapäev"];
   var WDS = ["E", "T", "K", "N", "R", "L", "P"];
   var MON = ["jaanuar", "veebruar", "märts", "aprill", "mai", "juuni", "juuli", "august", "september", "oktoober",

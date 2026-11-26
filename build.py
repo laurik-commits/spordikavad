@@ -24,6 +24,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 import archive
 import ulekanded
 from scrapers import config as cfgmod
+from scrapers import sports
 from scrapers.geo import Geo, Region
 from scrapers.http import Fetcher
 from scrapers.model import DEFAULT_LEVEL, EVENT_SPORTS, LEVELS, SPORTS, TALLINN, Event, levels_for
@@ -41,37 +42,14 @@ WEEKDAYS = ["esmaspäev", "teisipäev", "kolmapäev", "neljapäev", "reede", "la
 SHORT_WEEKDAYS = ["E", "T", "K", "N", "R", "L", "P"]
 MONTHS_IN = ["jaanuaris", "veebruaris", "märtsis", "aprillis", "mais", "juunis", "juulis",
              "augustis", "septembris", "oktoobris", "novembris", "detsembris"]
-# ala omastav ("Tallinnas pole … jalgpalli mänge")
-SPORT_GEN = {"jalgpall": "jalgpalli", "korvpall": "korvpalli", "jaahoki": "jäähoki", "vorkpall": "võrkpalli",
-             "kasipall": "käsipalli", "saalihoki": "saalihoki", "saalijalgpall": "saalijalgpalli",
-             "motosport": "motospordi", "kergejoustik": "kergejõustiku",
-             "suusatamine": "suusa", "ratsasport": "ratsa",
-             "uisutamine": "uisu", "voitlusspordid": "võitlusspordi", "autosport": "autospordi",
-             "tennis": "tennise", "sulgpall": "sulgpalli", "lauatennis": "lauatennise",
-             "voimlemine": "võimlemis", "tantsusport": "tantsuspordi", "fitness": "fitnessi",
-             "ujumine": "ujumis", "soudmine": "sõudmis", "kanuu": "aerutamis", "purjetamine": "purjetamis"}
-# ala seesütlevas käändes päise lauses: "Ela kaasa koondistele jalgpallis Tallinnas"
-SPORT_IN = {"jalgpall": "jalgpallis", "korvpall": "korvpallis", "jaahoki": "jäähokis", "vorkpall": "võrkpallis",
-            "kasipall": "käsipallis", "saalihoki": "saalihokis", "saalijalgpall": "saalijalgpallis",
-            "motosport": "motospordis", "kergejoustik": "kergejõustikus",
-            "suusatamine": "suusatamises", "ratsasport": "ratsaspordis",
-            "uisutamine": "uisutamises", "voitlusspordid": "võitlusspordis", "autosport": "autospordis",
-            "tennis": "tennises", "sulgpall": "sulgpallis", "lauatennis": "lauatennises",
-            "voimlemine": "võimlemises", "tantsusport": "tantsuspordis", "fitness": "fitnessis",
-            "ujumine": "ujumises", "soudmine": "sõudmises", "kanuu": "aerutamises", "purjetamine": "purjetamises"}
-# alade rühmad päise alavalikus: rühma nimi valib kõik selle alad, nool avab üksikud alad (site/app.js).
+# ala omastav ("Tallinnas pole … jalgpalli mänge"), seesütlev ("Ela kaasa koondistele jalgpallis Tallinnas"),
+# rühmad päise alavalikus, nimi värvilises kellaplokis, allikate lingid ja käsitsi kaetud märkused:
+# kõik tulevad alade registrist sports.toml (scrapers/sports.py). Uue ala lisamiseks piisab ühest plokist seal.
+SPORT_GEN = sports.GEN
+SPORT_IN = sports.IN
+# rühma nimi valib kõik selle alad, nool avab üksikud alad (site/app.js).
 # Rühm on menüüs ainult siis, kui sellel tasemel on vähemalt 2 selle rühma ala; muidu on ala eraldi.
-SPORT_GROUPS = [
-    {"key": "g:voistkond", "name": "Võistkonnaalad", "word": "võistkonnaaladel",
-     "sports": ["jalgpall", "saalijalgpall", "korvpall", "vorkpall", "kasipall", "jaahoki", "saalihoki"]},
-    {"key": "g:tali", "name": "Talialad", "word": "talialadel", "sports": ["suusatamine", "uisutamine"]},
-    {"key": "g:mootor", "name": "Mootorsport", "word": "mootorspordis", "sports": ["autosport", "motosport"]},
-    {"key": "g:reket", "name": "Reketialad", "word": "reketialadel", "sports": ["tennis", "sulgpall", "lauatennis"]},
-    {"key": "g:kunst", "name": "Kunstilised alad", "word": "kunstilistel aladel",
-     "sports": ["voimlemine", "tantsusport", "fitness"]},
-    {"key": "g:vesi", "name": "Veealad", "word": "veealadel",
-     "sports": ["ujumine", "soudmine", "kanuu", "purjetamine"]},
-]
+SPORT_GROUPS = sports.groups()
 
 
 def sport_menu(filters: list[dict]) -> list[dict]:
@@ -90,10 +68,8 @@ def sport_menu(filters: list[dict]) -> list[dict]:
     return menu
 
 
-# ala nimi värvilises kellaplokis: pikkadesse sõnadesse pehme sidekriips (U+00AD), et kitsal ekraanil
-# murduks kahele reale ("Saali-" / "jalgpall"); laial ekraanil sidekriipsu ei näidata
-SPORT_BLOCK = {"saalijalgpall": "Saali­jalgpall", "kergejoustik": "Kerge­jõustik",
-               "voitlusspordid": "Võitlus­spordid", "suusatamine": "Suusa­tamine"}
+# ala nimi värvilises kellaplokis: pikkadesse sõnadesse pehme sidekriips (registris `block`)
+SPORT_BLOCK = sports.BLOCK
 MONTHS = ["jaanuar", "veebruar", "märts", "aprill", "mai", "juuni", "juuli",
           "august", "september", "oktoober", "november", "detsember"]
 
@@ -428,8 +404,10 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
     if out.exists():
         shutil.rmtree(out)
     out.mkdir(parents=True)
-    for asset in ("style.css", "app.js", "kalender.js", "og.png", "paise.webp"):
+    for asset in ("app.js", "og.png", "paise.webp"):
         shutil.copy(SITE / asset, out / asset)
+    for asset in ("style.css", "kalender.js"):  # alade värvid ja nimed tulevad registrist (sports.toml)
+        (out / asset).write_text(sports.fill((SITE / asset).read_text(encoding="utf-8")), encoding="utf-8")
 
     # mängud päeva kaupa (14 päeva aken)
     # mitmepäevane üritus on igal oma päeval
@@ -581,53 +559,13 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
     return len(urls)
 
 
-# Allikate avalehed „Meist“ lehe jaoks: ala → [(nimi, URL), ...]
-SOURCE_SITES = {
-    "jalgpall": [("Eesti Jalgpalli Liit", "https://jalgpall.ee/voistlused")],
-    "saalijalgpall": [("Eesti Jalgpalli Liit", "https://jalgpall.ee/voistlused")],
-    "jaahoki": [("Läti Jäähokiliit (Optibet Hokiliiga)", "https://www.lhf.lv/en/tournaments/optibet-hokeja-liga/schedule"),
-                ("HC Vipers (Unibet Hokiliiga)", "https://hcvipers.ee/?page=games&lang=et"),
-                ("HC Everest (Unibet Hokiliiga, naiste hokiliiga, noored)", "https://hceverest.ee/")],
-    "vorkpall": [("DataProject (Eesti Võrkpalli Liit, Balti liiga)", "https://evf-web.dataproject.com/MainHome.aspx")],
-    "korvpall": [("Bigbank/Kalev", "https://bckalev.ee/ajakava/"),
-                 ("Tartu Ülikool Maks & Moorits", "https://basket.ut.ee/kalender-26-27/")],
-    "kasipall": [("Eesti Käsipalliliit ja Balti Käsipalliliiga", "https://kasipall.ee/")],
-    "saalihoki": [("Eesti Saalihoki Liit", "https://www.saalihoki.ee/Events/Uritused.aspx")],
-    "motosport": [("Eesti Mootorrattaspordi Föderatsioon", "https://msport.ee/kalender/")],
-    "kergejoustik": [("Eesti Kergejõustikuliit", "https://www.ekjl.ee/kalender/")],
-    "suusatamine": [("Eesti Suusaliit", "https://www.suusaliit.ee/et/voistlused")],
-    "ratsasport": [("Eesti Ratsaspordi Liit", "https://ratsanet.ee/events")],
-    "uisutamine": [("Eesti Uisuliit", "https://www.uisuliit.ee/iluuisutamine/voistlused")],
-    "voitlusspordid": [("Eesti Judoliit", "https://judo.ee/voistlused/"), ("Eesti Maadlusliit", "https://maadlusliit.ee/kalender/"),
-                       ("Eesti Poksiliit", "https://www.eestipoksiliit.ee/")],
-    "autosport": [("Eesti Autospordi Liit", "https://autosport.ee/events/"), ("WRC Rally Estonia", "https://www.rallyestonia.ee/")],
-    "tennis": [("Eesti Tennise Liit", "https://tennis.ee/kalender/")],
-    "sulgpall": [("Eesti Sulgpalliliit", "https://badminton.ee/voistle/kalender/voistluskalender/")],
-    "lauatennis": [("Eesti Lauatenniseliit", "https://uus.lauatennis.ee/voistlused/kalender/")],
-    "voimlemine": [("Eesti Võimlemisliit", "https://kalender.eevl.ee/")],
-    "tantsusport": [("Eesti Tantsuspordi Liit", "https://dancesport.ee/voistlused-ja-edetabelid/")],
-    "fitness": [("Eesti Kulturismi ja Fitnessi Liit", "https://kulturism.ee/kalender/")],
-    "ujumine": [("Eesti Ujumisliit", "https://swimming.ee/kalender/")],
-    "soudmine": [("Eesti Sõudeliit", "https://www.soudeliit.ee/")],
-    "kanuu": [("Eesti Aerutamisliit", "https://www.aerutaja.ee/")],
-    "purjetamine": [("Eesti Purjetamisliit", "https://puri.ee/")],
-}
+# Allikate avalehed „Meist“ lehe jaoks: ala → [(nimi, URL), ...] (registris `sources`)
+SOURCE_SITES = sports.SOURCE_SITES
 
 
 # „Meist“ tabelis: alad või nende osad, mille suuremad võistlused lisatakse käsitsi (kasitsi.toml), mitte adapteriga
-MANUAL_COVERAGE = {
-    "suusatamine": "Laskesuusatamine: suured võistlused (käsitsi)",
-    "voitlusspordid": "Poks, maadlus, kikk- ja taipoks: suuremad võistlused (käsitsi)",
-    "autosport": "WRC Rally Estonia ja suuremad etapid (käsitsi)",
-    "tennis": "WTA Tallinn Open, Davis Cupi ja Billie Jean King Cupi kodumängud (käsitsi)",
-    "lauatennis": "Meistriliiga ja Eesti MV (käsitsi)",
-    "voimlemine": "Iluvõimlemise rahvusvahelised turniirid (nt Miss Valentine) ja Eesti MV (käsitsi)",
-    "tantsusport": "Eesti MV ja suured rahvusvahelised võistlused (käsitsi)",
-    "fitness": "Fitnessi ja kulturismi Eesti MV ja rahvusvahelised võistlused Eestis (käsitsi)",
-    "soudmine": "Eesti MV, karikaetapid ja rahvusvahelised regatid (käsitsi)",
-    "kanuu": "Eesti MV, karikaetapid ja rahvusvahelised regatid (käsitsi)",
-    "purjetamine": "Eesti MV, Garmin Sailing Series ja rahvusvahelised regatid (käsitsi)",
-}
+# (registris `manual`)
+MANUAL_COVERAGE = sports.MANUAL_COVERAGE
 
 
 def coverage(cfg: dict) -> list[dict]:

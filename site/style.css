@@ -13,30 +13,8 @@
   --past: #e4e6ea;
   --shade: rgba(16,18,22,.45);
   /* alade värvid: valge tekst vähemalt 4.5:1 */
-  --jalgpall: #2e7d32;
-  --korvpall: #6b7280;
-  --jaahoki: #1565c0;
-  --vorkpall: #6a1b9a;
-  --kasipall: #c2410c;
-  --saalihoki: #00796b;
-  --saalijalgpall: #8a5a00;
-  --motosport: #b91c1c;
-  --kergejoustik: #be185d;
-  --suusatamine: #4338ca;
-  --ratsasport: #78350f;
-  --uisutamine: #0284c7;
-  --voitlusspordid: #3f3f46;
-  --autosport: #ea580c;
-  --tennis: #4d7c0f;
-  --sulgpall: #0e7490;
-  --lauatennis: #9f1239;
-  --voimlemine: #a21caf;
-  --tantsusport: #c2185b;
-  --fitness: #57534e;
-  --ujumine: #0369a1;
-  --soudmine: #0f766e;
-  --kanuu: #b45309;
-  --purjetamine: #4338ca;
+/* @sports:vars */
+/* @sports:end */
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -264,29 +242,8 @@ a { color: var(--link); text-decoration: none; }
 }
 .extnote a { display: inline-block; margin-top: .3rem; font-weight: 600; }
 .sportnote { font-size: .82rem; color: var(--muted); }
-.s-border-jaahoki { border-left-color: var(--jaahoki); }
-.s-border-kasipall { border-left-color: var(--kasipall); }
-.s-border-jalgpall { border-left-color: var(--jalgpall); }
-.s-border-vorkpall { border-left-color: var(--vorkpall); }
-.s-border-saalihoki { border-left-color: var(--saalihoki); }
-.s-border-saalijalgpall { border-left-color: var(--saalijalgpall); }
-.s-border-motosport { border-left-color: var(--motosport); }
-.s-border-kergejoustik { border-left-color: var(--kergejoustik); }
-.s-border-suusatamine { border-left-color: var(--suusatamine); }
-.s-border-ratsasport { border-left-color: var(--ratsasport); }
-.s-border-uisutamine { border-left-color: var(--uisutamine); }
-.s-border-voitlusspordid { border-left-color: var(--voitlusspordid); }
-.s-border-autosport { border-left-color: var(--autosport); }
-.s-border-tennis { border-left-color: var(--tennis); }
-.s-border-sulgpall { border-left-color: var(--sulgpall); }
-.s-border-lauatennis { border-left-color: var(--lauatennis); }
-.s-border-voimlemine { border-left-color: var(--voimlemine); }
-.s-border-tantsusport { border-left-color: var(--tantsusport); }
-.s-border-fitness { border-left-color: var(--fitness); }
-.s-border-ujumine { border-left-color: var(--ujumine); }
-.s-border-soudmine { border-left-color: var(--soudmine); }
-.s-border-kanuu { border-left-color: var(--kanuu); }
-.s-border-purjetamine { border-left-color: var(--purjetamine); }
+/* @sports:border */
+/* @sports:end */
 .js .extnote { display: none; }       /* JS-iga näidatakse alles nupu vajutamisel */
 .js .extnote.show { display: block; }
 .dot { width: .6rem; height: .6rem; border-radius: 50%; display: inline-block; }
@@ -381,30 +338,8 @@ a { color: var(--link); text-decoration: none; }
 .btn.share { flex: none; border-left: 1px solid var(--line); position: relative; }
 .btn.share.copied::after { top: -1.2rem; right: 0; transform: none; }
 
-.s-jalgpall { background: var(--jalgpall); }
-.s-korvpall { background: var(--korvpall); }
-.s-jaahoki { background: var(--jaahoki); }
-.s-vorkpall { background: var(--vorkpall); }
-.s-kasipall { background: var(--kasipall); }
-.s-saalihoki { background: var(--saalihoki); }
-.s-saalijalgpall { background: var(--saalijalgpall); }
-.s-motosport { background: var(--motosport); }
-.s-kergejoustik { background: var(--kergejoustik); }
-.s-suusatamine { background: var(--suusatamine); }
-.s-ratsasport { background: var(--ratsasport); }
-.s-uisutamine { background: var(--uisutamine); }
-.s-voitlusspordid { background: var(--voitlusspordid); }
-.s-autosport { background: var(--autosport); }
-.s-tennis { background: var(--tennis); }
-.s-sulgpall { background: var(--sulgpall); }
-.s-lauatennis { background: var(--lauatennis); }
-.s-voimlemine { background: var(--voimlemine); }
-.s-tantsusport { background: var(--tantsusport); }
-.s-fitness { background: var(--fitness); }
-.s-ujumine { background: var(--ujumine); }
-.s-soudmine { background: var(--soudmine); }
-.s-kanuu { background: var(--kanuu); }
-.s-purjetamine { background: var(--purjetamine); }
+/* @sports:fill */
+/* @sports:end */
 
 .none, .empty-filter { padding: 1.5rem .25rem; color: var(--muted); }
 .none p { margin: .3rem 0; }

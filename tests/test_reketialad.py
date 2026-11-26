@@ -3,7 +3,7 @@ from datetime import date
 from pathlib import Path
 
 import build
-from scrapers import config, sulgpall_esl, tennis_etl
+from scrapers import config, sports, sulgpall_esl, tennis_etl
 from scrapers.geo import Geo
 from scrapers.venues import Venues
 
@@ -86,7 +86,7 @@ class RacketSetupTest(unittest.TestCase):
         for sport in ("tennis", "sulgpall", "lauatennis"):
             self.assertIn(sport, build.SPORT_IN)
             self.assertIn(sport, build.SOURCE_SITES)
-        css = (Path(__file__).parent.parent / "site" / "style.css").read_text(encoding="utf-8")
+        css = sports.fill((Path(__file__).parent.parent / "site" / "style.css").read_text(encoding="utf-8"))
         for sport in ("tennis", "sulgpall", "lauatennis"):
             self.assertIn(f".s-{sport} {{", css)
 

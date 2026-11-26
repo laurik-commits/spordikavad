@@ -8,6 +8,8 @@ from dataclasses import asdict, dataclass
 from datetime import date, datetime
 from zoneinfo import ZoneInfo
 
+from . import sports
+
 TALLINN = ZoneInfo("Europe/Tallinn")
 
 # tase → nimi valikus, kaust, pealkirja algus ja sõnavormid lausetesse:
@@ -44,38 +46,12 @@ def levels_for(default_level: int = DEFAULT_LEVEL) -> dict[int, dict]:
 for _k, _v in levels_for().items():  # tagasiühilduvus: LEVELS[k]["prefix"] vaikeseadega
     LEVELS[_k]["prefix"] = _v["prefix"]
 
-SPORTS = {
-    "jalgpall": "Jalgpall",
-    "korvpall": "Korvpall",
-    "jaahoki": "Jäähoki",
-    "vorkpall": "Võrkpall",
-    "kasipall": "Käsipall",
-    "saalihoki": "Saalihoki",
-    "saalijalgpall": "Saalijalgpall",
-    "motosport": "Motosport",
-    "kergejoustik": "Kergejõustik",
-    "suusatamine": "Suusatamine",
-    "ratsasport": "Ratsasport",
-    "uisutamine": "Uisutamine",
-    "voitlusspordid": "Võitlusspordid",
-    "autosport": "Autosport",
-    "tennis": "Tennis",
-    "sulgpall": "Sulgpall",
-    "lauatennis": "Lauatennis",
-    "voimlemine": "Võimlemine",
-    "tantsusport": "Tantsusport",
-    "fitness": "Fitness",
-    "ujumine": "Ujumine",
-    "soudmine": "Sõudmine",
-    "kanuu": "Aerutamine",
-    "purjetamine": "Purjetamine",
-}
+# alade register: sports.toml (üks ala = üks plokk; vt scrapers/sports.py)
+SPORTS = sports.SPORTS
 
 # alad, kus real on üritus (võistlus, etapp), mitte kahe võistkonna mäng: home = ürituse nimi, away tühi
-# (lauatennises on ka meistriliiga mängud, seepärast seda siin pole)
-EVENT_SPORTS = {"motosport", "kergejoustik", "suusatamine", "ratsasport", "uisutamine", "voitlusspordid", "autosport",
-                "tennis", "sulgpall", "voimlemine", "tantsusport", "fitness",
-                "ujumine", "soudmine", "kanuu", "purjetamine"}
+# (lauatennises on ka meistriliiga mängud, seepärast seda seal pole: `event = true` ainult ürituse aladel)
+EVENT_SPORTS = sports.EVENT_SPORTS
 
 
 @dataclass(frozen=True)

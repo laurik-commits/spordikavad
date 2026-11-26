@@ -19,6 +19,7 @@ import logging
 from datetime import date, datetime, time, timedelta
 from urllib.parse import quote
 
+from . import sports
 from .http import FetchError
 from .model import TALLINN
 
@@ -32,9 +33,7 @@ CHANNELS = {4296024: "Go3 Sport 1", 4231570: "Go3 Sport 2", 4150367: "Go3 Sport 
             2275257: "Go3 Sport Open"}
 URL = "https://go3.ee/api/products/lives/programmes?{ids}&since={since}&till={till}&platform=BROWSER&lang=ET&tenant=OM_EE"
 
-GENRES = {"jalgpall": "jalgpall", "korvpall": "korvpall", "võrkpall": "vorkpall", "käsipall": "kasipall",
-          "jäähoki": "jaahoki", "hoki": "jaahoki", "saalihoki": "saalihoki", "saalijalgpall": "saalijalgpall",
-          "futsal": "saalijalgpall"}
+GENRES = sports.GO3_GENRES   # žanr → ala (registri `go3` väljad, sports.toml)
 
 
 def sport_of(genres: list) -> str:

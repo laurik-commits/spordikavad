@@ -19,6 +19,7 @@ import logging
 import re
 from datetime import date, datetime, timedelta
 
+from . import sports
 from .http import FetchError
 from .model import TALLINN
 
@@ -31,18 +32,8 @@ DAYS = 8  # täna + 7 päeva
 URL = "https://www.err.ee/api/tvSchedule/getTimelineSchedule?day={d}&month={m}&year={y}&channel={ch}"
 PAGE = "https://jupiter.err.ee/"
 
-# nime algus → ala (pikemad enne: "saalijalgpall" enne "jalgpall")
-_SPORT_START = [
-    (r"saalijalgpall", "saalijalgpall"), (r"jalgpall", "jalgpall"), (r"korvpall", "korvpall"),
-    (r"võrkpall", "vorkpall"), (r"käsipall", "kasipall"), (r"jäähoki", "jaahoki"), (r"saalihoki", "saalihoki"),
-    (r"(laskesuusatamis|murdmaasuusatamis|suusatamis|suusahüpp|kahevõistlus)", "suusatamine"),
-    (r"kergejõustik", "kergejoustik"), (r"(iluuisutamis|kiiruisutamis|uisutamis)", "uisutamine"),
-    (r"(ralli|rally|wrc)", "autosport"), (r"(motokross|mootorratta)", "motosport"),
-    (r"(judo|poksi|maadlus)", "voitlusspordid"), (r"(ratsaspordi|takistussõit)", "ratsasport"),
-    (r"lauatennis", "lauatennis"), (r"tennis", "tennis"), (r"sulgpall", "sulgpall"),
-    (r"(iluvõimlemis|võimlemis)", "voimlemine"), (r"tantsuspordi", "tantsusport"), (r"(fitnessi|kulturismi)", "fitness"),
-    (r"ujumis", "ujumine"), (r"sõudmis", "soudmine"), (r"purjetamis", "purjetamine"), (r"(aerutamis|kanuu)", "kanuu"),
-]
+# nime algus → ala (registri `err` regexid, sports.toml; `re.match` ankurdab algusesse, järjekord ei loe)
+_SPORT_START = sports.ERR_PATTERNS
 _BALL = {"saalijalgpall", "jalgpall", "korvpall", "vorkpall", "kasipall", "jaahoki", "saalihoki"}
 
 
