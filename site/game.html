@@ -6,7 +6,7 @@
 {% import "_watch.html" as wi %}
 {% set match = e | matchup %}
 {% set score = e.result | replace('-', ':') %}
-<title>{{ match }}{% if score %} {{ score }}{% endif %} – {{ day | et_date }} | Ela kaasa</title>
+<title>{{ title }}</title>
 <meta name="description" content="{{ sports[e.sport] }}, {{ e.league }}: {{ e | when_where }}.">
 <link rel="canonical" href="{{ canonical }}">
 {% if past %}<meta name="robots" content="noindex">
@@ -21,9 +21,11 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#14457a">
+{% if google_verification %}<meta name="google-site-verification" content="{{ google_verification }}">
+{% endif %}<meta name="theme-color" content="#14457a">
 <meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="{{ root }}style.css">
+<script type="application/ld+json">{{ ld | safe }}</script>
 <script>document.documentElement.classList.add("js")</script>
 </head>
 <body data-built="{{ built }}">
@@ -31,7 +33,7 @@
 
 <main class="wrap game{{ ' pastday' if past }}">
   <p class="stale" hidden>Andmed võivad olla aegunud (viimati uuendatud {{ updated }}). Kontrolli kellaaega allika lehelt.</p>
-  {% if past %}<p class="intro pastnote">{{ 'See võistlus on juba toimunud.' if e.sport in event_sports else 'See mäng on juba peetud.' }}</p>{% endif %}
+  {% if past %}<p class="intro pastnote">{{ 'Võistlus on toimunud.' if e.sport in event_sports else 'Mäng on toimunud.' }}{% if league_href %} <a href="{{ league_href }}">Selle {{ 'liiga' if league_href.count('/') > 3 else 'ala' }} järgmised {{ 'võistlused' if e.sport in event_sports else 'mängud' }} →</a>{% endif %}</p>{% endif %}
   <article class="card">
     <time class="s-{{ e.sport }}" datetime="{{ e.start.isoformat() }}">
       <b>{{ '—:—' if e.time_tbc else e.start.strftime('%H:%M') }}</b>
@@ -55,7 +57,8 @@
   {% if channels %}
   <p class="watchnote">Selle liiga mänge on näidanud: {% for c in channels %}{% if c.url %}<a href="{{ c.url }}" rel="noopener">{{ c.name }}</a>{% else %}{{ c.name }}{% endif %}{{ ', ' if not loop.last }}{% endfor %}.</p>
   {% endif %}
-  <p><a href="{{ day_href }}">Selle päeva {{ level_info.games }} →</a></p>
+  {% if day_href %}<p><a href="{{ day_href }}">Selle päeva {{ level_info.games }} →</a></p>{% endif %}
+  {% if league_href and not past %}<p><a href="{{ league_href }}">Rohkem: {{ e.league }} ({{ sports[e.sport] | lower }}) →</a></p>{% endif %}
 </main>
 
 <footer class="wrap">

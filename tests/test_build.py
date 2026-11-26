@@ -213,8 +213,8 @@ class RenderTest(unittest.TestCase):
         self.assertIn('href="https://example.org/A"', game)                 # allika mängu leht
         self.assertIn('href="../../eesti/2026-11-22/"', game)               # sama päeva kõik mängud
         self.assertNotIn("noindex", game)
-        # igal aknas oleval mängul on oma leht (ka teiste tasemete omadel); 30.11 mäng on aknast väljas
-        self.assertEqual(len(list((self.tmp / "m").iterdir())), 8)
+        # igal mängul on oma leht (ka teiste tasemete omadel ja päevaakna taga: 30.11 mäng, 9 kokku)
+        self.assertEqual(len(list((self.tmp / "m").iterdir())), 9)
         self.assertIn("/m/", self.read("404.html"))                         # vana mängu link → tänased mängud
 
     def test_year_round_sources_do_not_hide_offseason_note(self):

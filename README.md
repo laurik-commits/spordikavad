@@ -90,9 +90,34 @@ Kolm sammu: adapter, konfiguratsioonirida ja test.
 - **Issue tuli:** ava Actions'i logi, võrdle allika lehte salvestatud fixture'iga ja paranda adapterit. Kuni seda pole tehtud, näitab leht viimaseid töötanud andmeid.
 - Kontaktaadress jaluses ja User-Agentis: `config.toml` → `site.contact_url` ja `http.contact`.
 
+## Otsingumootorid (SEO) ja Search Console
+
+Leht annab otsingumootoritele: igal mängul oma püsiv aadress `/m/<id>/` (pealkiri „Kodu – Külaline | Liiga | 28. nov 19:00 | Koht“,
+kirjeldus, schema.org `SportsEvent` JSON-LD), ala- ja liigalehed (`/korvpall/`, `/korvpall/eesti-lati-korvpalliliiga/`) eelseisvate
+mängudega, `sitemap.xml` (kõik eelseisvad mängu-, liiga- ja alalehed, uueneb iga ehitusega) ja `robots.txt`, mis viitab sellele.
+Möödunud mängu leht jääb alles („Mäng on toimunud“, link sama liiga järgmistele mängudele), aga on `noindex` ja sitemapis pole.
+
+**Mida omanik peab ühekordselt käsitsi tegema** (umbes 10 minutit, kontod on omaniku):
+1. Ava [Google Search Console](https://search.google.com/search-console) → „Lisa omand“ → **Domeen** → `elakaasa.ee`.
+2. Google annab TXT kirje kujul `google-site-verification=…`. Lisa see Zone.ee halduses domeeni `elakaasa.ee` DNS-kirjetesse
+   (tüüp TXT, nimi tühi või `@`, väärtus kogu Google'i antud rida) ja salvesta. Oota paar minutit ja vajuta Search Console'is „Kinnita“.
+   - **Alternatiiv ilma DNS-ita:** vali „URL-i prefiks“ `https://elakaasa.ee/` → meetod „HTML-silt“. Kopeeri sildi `content="…"` väärtus
+     (ainult token) faili `config.toml` → `[site] google_site_verification = "…"`, merge'i muudatus, oota ehituse avaldamist ja
+     vajuta „Kinnita“. Silt pannakse kõigile lehtedele.
+3. Search Console'is: **Saidikaardid** → lisa `sitemap.xml` → „Esita“.
+4. Valikuline: [Bing Webmaster Tools](https://www.bing.com/webmasters) → „Import from Google Search Console“ (üks klõps).
+5. Paari päeva pärast vaata „Lehed“ ja „Tulemuslikkus“: kui palju lehti on indekseeritud ja mis päringutega leitakse.
+Ilma selleta indekseerib Google lehe ka ise, aga Search Console näitab, kas ja mis puudu on.
+
 ## Tulevikuideed
 
 - **Uued alad**: kergejõustik, motosport, suusatamine, ratsasport, uisutamine, võitlusspordid ja autosport on lisatud (üritused, mitte mängud). Laskesuusatamise, poksi, maadluse ja autospordi suured võistlused lisatakse käsitsi (`kasitsi.toml`, otsinguagent). Järgmised kandidaadid (tantsusport, ujumine, ragby) koos allikatega on failis [docs/uued-alad.md](docs/uued-alad.md). Omanik otsustab, millal ja millest jätkata.
+
+- **Lehe suuruse optimeerimine** (mõõdetud 2026-11-26, omanik otsustas mitte lõigata): kohalik ehitus on 134 MB ja 4691 faili, sellest 3625 on tasemete päevalehed, mille 58% (2088 lehte, 72 piirkonna ja taseme kombinatsiooni) on täiesti tühjad (30 päeva mänge pole). Neid **ei saa lihtsalt ära lõigata**: kõigile 72-le viitab menüü (nt Tartu tasemel „Koondised“) ja päevanavigatsioon, seega tekiks 404. Kui suurus läheneb 400 MB-le (GitHub Pagesi piir on 1 GB), tuleb enne lõikamist muuta menüü ja päevanavigatsioon (tühi kombinatsioon viitab ühele lehele) ja panna ehituse testi **lingikontroll** (kõik sisemised lingid viivad olemasolevale lehele). Ehituse aeg (8–12 min) on enamasti allikate viisakas ooteaeg; paralleelsed päringud eri hostidele võiksid selle 2–3 minutile viia, aga Actions on tasuta, seega pole vaja.
+- **Vehklemine** (omaniku otsus 2026-11-25: hiljem): uus ala `vehklemine` rühmas „Võitlusalad“ koos `voitlusspordid`-iga, üritusala. Liidu kalendri aadress ja robots.txt on kontrollimata; alguses lisab agent võistlused käsitsi.
+- **Ülekannete kavad mängudena** (2026-11-25): Delfi kavast lisatakse mängud juba (`[[koduhall]]`, ulekanded.toml). Edasi: Postimehe ja Go3 kavade loetavus (Go3 on lisatud), ERR-i kava (Premium liiga, koondised) sama reegli alla, kui kava annab saali; Eesti meistriliiga meeskondade koduhallid tabelisse (Rapla, Valga, TLÜ jt) ja sama käsipallile ning võrkpallile.
+- **Sõudmine, aerutamine, purjetamine**: 2027 kalendrid pole veel avaldatud (soudeliit.ee, aerutaja.ee, puri.ee); kui ilmuvad, lisab agent võistlused käsitsi ja siis tasub vaadata adapterit.
+- **Vastupidavusalad, suvealad**: jalgrattasport, triatlon (kergejõustik rühma), ragbi ja rannavõrkpall võistkonnaaladesse, kurling talialadesse, hiljem täpsusalad.
 
 - **Päise uus kujundus** (omaniku mõte 2026-11-24, kavand [docs/paise-kavand.webp](docs/paise-kavand.webp)): ülemine riba ümber kujundada. Ülaosas on lipuvärvides triibud ja sinine pildiriba eri alade sportlastega. Selle all on suur „Elan kaasa“ ja kolm valikunuppu (spordiüritustele, kõigil aladel, üle Eesti). Teisel real on Päev/Nädal/Kuu, kuupäev noolte vahel ja nupp „Näita kaardil“. Kinnitatud kavand (2026-11-24): [docs/paise-kavand.html](docs/paise-kavand.html), arvuti- ja mobiilivaade; mobiilis pilt 30% madalam, „Elan kaasa“ kohe lipu all pildi peal, valikunupud ühel real pildi sinises alaosas, kuupäeva nupp ja nooled asenduvad kalendri ikooniga, „Näita kaardil“ peidus kuni kaardivaateni. Taustapilt on olemas: [site/paise.webp](site/paise.webp) (ChatGPT, 2000×667; ülemine kolmandik sportlased, alumine osa tühi sinine teksti ja nuppude jaoks). Kaardivaadet veel pole, see on eraldi arendus (toimumiskohtade koordinaadid on vaja lisada venues.toml-i).
 - **„Võtan osa“** (omaniku mõte 2026-11-23, suurarendus): päise lause esimese valiku „Ela kaasa“ kõrvale teine valik „Võtan osa“. Sinna sobivad võistlused, kuhu minnakse osalema, mitte vaatama: murdmaasuusatamise EMV ja maratonid, rahvajooksud, klubide ratsavõistlused, kohalikud kergejõustikuvõistlused. Andmed on juba olemas peidetud tasemel 3 (suusatamine, ratsasport, kergejõustik), nii et alustada saab nendest.

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="et">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}">
+<link rel="canonical" href="{{ canonical }}">
+{% if noindex %}<meta name="robots" content="noindex">
+{% endif %}
+<meta property="og:type" content="website">
+<meta property="og:locale" content="et_EE">
+<meta property="og:site_name" content="Ela kaasa">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta property="og:image" content="{{ base_url }}og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+{% if google_verification %}<meta name="google-site-verification" content="{{ google_verification }}">
+{% endif %}<meta name="theme-color" content="#14457a">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="{{ root }}style.css">
+</head>
+<body>
+<header class="bar"><div class="wrap"><div class="top"><a class="brand" href="{{ root }}">Elan kaasa</a></div>
+  <nav class="daynav"><h1>{{ heading }}</h1></nav></div></header>
+<main class="wrap info">
+  {% if parent %}<p class="intro"><a href="{{ parent.href }}">← {{ parent.name }}</a></p>{% endif %}
+  <p class="intro">{{ description }}</p>
+  {% if subleagues %}
+  <h2>Liigad ja sarjad</h2>
+  <ul>
+    {% for l in subleagues %}<li><a href="{{ l.href }}">{{ l.name }}</a>{% if l.count %} ({{ l.count }}){% endif %}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  <h2>Eelseisvad {{ 'võistlused' if sport in event_sports else 'mängud' }}</h2>
+  {% if rows %}
+  <ol class="games">
+    {% for e in rows %}
+    <li data-sport="{{ e.sport }}">
+      <a href="{{ root }}m/{{ e.id }}/">
+        <time class="s-{{ e.sport }}" datetime="{{ e.start.isoformat() }}">
+          <b>{{ '—:—' if e.time_tbc else e.start.strftime('%H:%M') }}</b>
+          <small>{{ '%d.%02d' % (e.start.day, e.start.month) }}</small>
+        </time>
+        <span class="info">
+          <span class="match">{{ e | matchup }}</span>
+          <span class="meta">{% if e.end %}{{ e | date_span }} · {% endif %}{{ e.league }}{% if e.venue or e.city %} · {{ e.venue or e.city }}{% if e.venue and e.city and e.city != e.venue %}, {{ e.city }}{% endif %}{% endif %}</span>
+        </span>
+      </a>
+    </li>
+    {% endfor %}
+  </ol>
+  {% if more %}<p class="intro">Veel {{ more }} hilisemat. Täpsemad nimekirjad on liigalehtedel.</p>{% endif %}
+  {% else %}
+  <p>Eelseisvaid {{ 'võistlusi' if sport in event_sports else 'mänge' }} praegu pole. Hooaja alguses ilmuvad need siia.</p>
+  {% endif %}
+  <p><a href="{{ root }}">Kõik tänased mängud →</a></p>
+</main>
+<footer class="wrap">
+  <p>Andmed pärinevad liitude, klubide ja korraldajate kodulehtedelt. Enne kohaleminekut kontrolli kellaaega. Viimati uuendatud {{ updated }}. <a href="{{ root }}info/">Meist</a></p>
+  <p>Kui olete andmete omanik ega soovi, et neid siin näidataks, <a href="{{ contact_url }}">kirjutage meile</a>.</p>
+</footer>
+{% include "_analytics.html" %}
+</body>
+</html>
