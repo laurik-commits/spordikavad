@@ -56,6 +56,7 @@ _REG = load()
 SPORT_LIST = _REG["sports"]
 SPORTS = {s["key"]: s["name"] for s in SPORT_LIST}
 EVENT_SPORTS = {s["key"] for s in SPORT_LIST if s.get("event")}
+COLORS = {s["key"]: s["color"] for s in SPORT_LIST}
 GEN = {s["key"]: s["gen"] for s in SPORT_LIST}
 IN = {s["key"]: s["in"] for s in SPORT_LIST}
 BLOCK = {s["key"]: s["block"] for s in SPORT_LIST if s.get("block")}
