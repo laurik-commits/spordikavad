@@ -57,17 +57,11 @@
    "video_by": "YouTube"
   },
   "3709f689ea15": {
-   "also": [
-    {
-     "video": "https://go3.ee/live_tv",
-     "video_by": "Go3 (tasuline)"
-    }
-   ],
    "league": "FIBA MM 2027 valiksari (L-alagrupp)",
    "sport": "korvpall",
    "start": "2026-11-27T19:00:00+02:00",
-   "video": "https://jupiter.err.ee/1610194190/korvpalli-mm-valikmang",
-   "video_by": "ERR"
+   "video": "https://go3.ee/live_tv",
+   "video_by": "Go3 (tasuline)"
   },
   "3a4dc6488b18": {
    "league": "Balti liiga (mehed)",
