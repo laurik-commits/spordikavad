@@ -48,7 +48,8 @@ SPORT_GEN = {"jalgpall": "jalgpalli", "korvpall": "korvpalli", "jaahoki": "jää
              "suusatamine": "suusa", "ratsasport": "ratsa",
              "uisutamine": "uisu", "voitlusspordid": "võitlusspordi", "autosport": "autospordi",
              "tennis": "tennise", "sulgpall": "sulgpalli", "lauatennis": "lauatennise",
-             "voimlemine": "võimlemis", "tantsusport": "tantsuspordi", "fitness": "fitnessi"}
+             "voimlemine": "võimlemis", "tantsusport": "tantsuspordi", "fitness": "fitnessi",
+             "ujumine": "ujumis", "soudmine": "sõudmis", "kanuu": "aerutamis", "purjetamine": "purjetamis"}
 # ala seesütlevas käändes päise lauses: "Ela kaasa koondistele jalgpallis Tallinnas"
 SPORT_IN = {"jalgpall": "jalgpallis", "korvpall": "korvpallis", "jaahoki": "jäähokis", "vorkpall": "võrkpallis",
             "kasipall": "käsipallis", "saalihoki": "saalihokis", "saalijalgpall": "saalijalgpallis",
@@ -56,7 +57,8 @@ SPORT_IN = {"jalgpall": "jalgpallis", "korvpall": "korvpallis", "jaahoki": "jä�
             "suusatamine": "suusatamises", "ratsasport": "ratsaspordis",
             "uisutamine": "uisutamises", "voitlusspordid": "võitlusspordis", "autosport": "autospordis",
             "tennis": "tennises", "sulgpall": "sulgpallis", "lauatennis": "lauatennises",
-            "voimlemine": "võimlemises", "tantsusport": "tantsuspordis", "fitness": "fitnessis"}
+            "voimlemine": "võimlemises", "tantsusport": "tantsuspordis", "fitness": "fitnessis",
+            "ujumine": "ujumises", "soudmine": "sõudmises", "kanuu": "aerutamises", "purjetamine": "purjetamises"}
 # alade rühmad päise alavalikus: rühma nimi valib kõik selle alad, nool avab üksikud alad (site/app.js).
 # Rühm on menüüs ainult siis, kui sellel tasemel on vähemalt 2 selle rühma ala; muidu on ala eraldi.
 SPORT_GROUPS = [
@@ -67,6 +69,8 @@ SPORT_GROUPS = [
     {"key": "g:reket", "name": "Reketialad", "word": "reketialadel", "sports": ["tennis", "sulgpall", "lauatennis"]},
     {"key": "g:kunst", "name": "Kunstilised alad", "word": "kunstilistel aladel",
      "sports": ["voimlemine", "tantsusport", "fitness"]},
+    {"key": "g:vesi", "name": "Veealad", "word": "veealadel",
+     "sports": ["ujumine", "soudmine", "kanuu", "purjetamine"]},
 ]
 
 
@@ -295,6 +299,8 @@ def calendar_data(events: list[Event], first: date, last: date, today: date, geo
             r["tbc"] = 1
         if e.result:
             r["r"] = e.result
+        if e.note:
+            r["n"] = e.note
         if e.end:
             r["e"], r["sp"] = e.end, date_span(e)
         if e.video:
@@ -601,6 +607,10 @@ SOURCE_SITES = {
     "voimlemine": [("Eesti Võimlemisliit", "https://kalender.eevl.ee/")],
     "tantsusport": [("Eesti Tantsuspordi Liit", "https://dancesport.ee/voistlused-ja-edetabelid/")],
     "fitness": [("Eesti Kulturismi ja Fitnessi Liit", "https://kulturism.ee/kalender/")],
+    "ujumine": [("Eesti Ujumisliit", "https://swimming.ee/kalender/")],
+    "soudmine": [("Eesti Sõudeliit", "https://www.soudeliit.ee/")],
+    "kanuu": [("Eesti Aerutamisliit", "https://www.aerutaja.ee/")],
+    "purjetamine": [("Eesti Purjetamisliit", "https://puri.ee/")],
 }
 
 
@@ -614,6 +624,9 @@ MANUAL_COVERAGE = {
     "voimlemine": "Iluvõimlemise rahvusvahelised turniirid (nt Miss Valentine) ja Eesti MV (käsitsi)",
     "tantsusport": "Eesti MV ja suured rahvusvahelised võistlused (käsitsi)",
     "fitness": "Fitnessi ja kulturismi Eesti MV ja rahvusvahelised võistlused Eestis (käsitsi)",
+    "soudmine": "Eesti MV, karikaetapid ja rahvusvahelised regatid (käsitsi)",
+    "kanuu": "Eesti MV, karikaetapid ja rahvusvahelised regatid (käsitsi)",
+    "purjetamine": "Eesti MV, Garmin Sailing Series ja rahvusvahelised regatid (käsitsi)",
 }
 
 
@@ -683,6 +696,13 @@ def main(argv: list[str] | None = None) -> int:
         if fetcher is not None:
             # ülekandjate kavad (Delfi TV …) → mängude otseülekande lingid (data/ulekanded.json)
             streams, kava_report = ulekanded.fetch_streams(ul_cfg, fetcher)
+            # kava rida, mida ühegi allika mäng ei kata ja mille koduhall on teada → mäng „kava järgi“
+            games = ulekanded.unmatched_games(events, streams, ul_cfg)
+            # saaliga mängud normaliseeritakse nagu muud; saalita mäng (koduhalli tabelis ainult linn) jääb saalita
+            extra = only_estonia([e for e in games if e.venue], venues, Geo(cfg)) + [e for e in games if not e.venue]
+            if extra:
+                events, _ = dedupe(events + extra)
+                log.info("Lisasin %d mängu ülekannete kava järgi", len(extra))
             new = ulekanded.match(events, streams + ulekanded.manual_streams(ul_cfg))
             # tulevaste päevade seos kustub, kui see enam kavas / ulekanded.toml-is pole (kavata kanalid
             # loetakse alati „värskeks“: nende allikas on ulekanded.toml ja mängude enda lingid)

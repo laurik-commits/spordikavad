@@ -13,7 +13,8 @@
     saalihoki: "Saalihoki", saalijalgpall: "Saalijalgpall", motosport: "Motosport", kergejoustik: "Kergejõustik",
     suusatamine: "Suusatamine", ratsasport: "Ratsasport", uisutamine: "Uisutamine", voitlusspordid: "Võitlusspordid",
     autosport: "Autosport", tennis: "Tennis", sulgpall: "Sulgpall", lauatennis: "Lauatennis",
-    voimlemine: "Võimlemine", tantsusport: "Tantsusport", fitness: "Fitness"};
+    voimlemine: "Võimlemine", tantsusport: "Tantsusport", fitness: "Fitness",
+    ujumine: "Ujumine", soudmine: "Sõudmine", kanuu: "Aerutamine", purjetamine: "Purjetamine"};
   var BLOCK = {saalijalgpall: "Saali­jalgpall", kergejoustik: "Kerge­jõustik", voitlusspordid: "Võitlus­spordid",
     suusatamine: "Suusa­tamine"};
   var WD = ["esmaspäev", "teisipäev", "kolmapäev", "neljapäev", "reede", "laupäev", "pühapäev"];
@@ -110,9 +111,10 @@
     var time = later ? x.n + "./" + x.total + ". päev" : ev.tbc ? "—:—" : ev.t.slice(11, 16);
     var match = ev.a ? esc(ev.h) + " – " + esc(ev.a) : esc(ev.h);
     var score = ev.r ? ' <b class="score" title="Tulemus">' + esc(ev.r.replace("-", ":")) + "</b>" : "";
-    var city = body.dataset.regionKind !== "city" && ev.c && ev.c !== ev.v ? ", " + esc(ev.c) : "";
-    var meta = (ev.sp ? esc(ev.sp) + " · " : "") + esc(ev.l) + " · " + esc(ev.v) + city
-      + (ev.tbc && !ev.e ? " · <em>kellaaeg täpsustamisel</em>" : "");
+    var city = body.dataset.regionKind !== "city" && ev.c && ev.c !== ev.v ? (ev.v ? ", " : " · ") + esc(ev.c) : "";
+    var meta = (ev.sp ? esc(ev.sp) + " · " : "") + esc(ev.l) + (ev.v ? " · " + esc(ev.v) : "") + city
+      + (ev.tbc && !ev.e ? " · <em>kellaaeg täpsustamisel</em>" : "")
+      + (ev.n ? " · <em>" + esc(ev.n) + "</em>" : "");
     var html = '<li data-sport="' + ev.s + '"><a href="' + esc(ev.u) + '" rel="noopener"><time class="s-' + ev.s + '">'
       + "<b" + (later ? ' class="dayno"' : "") + ">" + time + "</b><small>" + (BLOCK[ev.s] || SPORTS[ev.s] || "") + "</small></time>"
       + '<span class="info"><span class="match">' + match + score + '</span><span class="meta">' + meta + "</span></span></a>";

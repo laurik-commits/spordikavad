@@ -34,11 +34,14 @@ class SportsConsistencyTest(unittest.TestCase):
         kunst = next(g for g in build.SPORT_GROUPS if g["key"] == "g:kunst")
         self.assertEqual((kunst["name"], kunst["sports"]), ("Kunstilised alad", ["voimlemine", "tantsusport", "fitness"]))
         self.assertTrue({"voimlemine", "tantsusport", "fitness"} <= EVENT_SPORTS)
+        vesi = next(g for g in build.SPORT_GROUPS if g["key"] == "g:vesi")
+        self.assertEqual((vesi["name"], vesi["sports"]), ("Veealad", ["ujumine", "soudmine", "kanuu", "purjetamine"]))
+        self.assertTrue(set(vesi["sports"]) <= EVENT_SPORTS)
 
     def test_manual_sports_are_in_coverage(self):
         # käsitsi kaetud alad (otsinguagent) on „Meist“ tabelis ja menüüs
         cov = {row["key"]: row for row in build.coverage({"source": []})}
-        for s in ("voimlemine", "tantsusport", "fitness", "lauatennis"):
+        for s in ("voimlemine", "tantsusport", "fitness", "lauatennis", "soudmine", "kanuu", "purjetamine"):
             self.assertTrue(cov[s]["top"], s)
 
 

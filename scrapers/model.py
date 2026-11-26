@@ -65,12 +65,17 @@ SPORTS = {
     "voimlemine": "Võimlemine",
     "tantsusport": "Tantsusport",
     "fitness": "Fitness",
+    "ujumine": "Ujumine",
+    "soudmine": "Sõudmine",
+    "kanuu": "Aerutamine",
+    "purjetamine": "Purjetamine",
 }
 
 # alad, kus real on üritus (võistlus, etapp), mitte kahe võistkonna mäng: home = ürituse nimi, away tühi
 # (lauatennises on ka meistriliiga mängud, seepärast seda siin pole)
 EVENT_SPORTS = {"motosport", "kergejoustik", "suusatamine", "ratsasport", "uisutamine", "voitlusspordid", "autosport",
-                "tennis", "sulgpall", "voimlemine", "tantsusport", "fitness"}
+                "tennis", "sulgpall", "voimlemine", "tantsusport", "fitness",
+                "ujumine", "soudmine", "kanuu", "purjetamine"}
 
 
 @dataclass(frozen=True)
@@ -93,6 +98,8 @@ class Event:
     # ("YouTube", "Postimees", "Delfi TV"). Tühi, kui ei tea. Vt ulekanded.py.
     video: str = ""
     video_by: str = ""
+    # märkus mängu real ja lehel (nt „Info telekavast: kontrolli algusaega ja toimumiskohta“); tühi = pole
+    note: str = ""
 
     def __post_init__(self) -> None:
         if self.sport not in SPORTS:
@@ -110,7 +117,7 @@ class Event:
     def to_dict(self) -> dict:
         d = asdict(self)
         d["start"] = self.start.astimezone(TALLINN).isoformat()
-        for key in ("end", "video", "video_by"):
+        for key in ("end", "video", "video_by", "note"):
             if not d[key]:
                 del d[key]  # tühjana välja ei kirjutata: olemasolevad andmefailid ei muutu
         return d
@@ -145,6 +152,7 @@ def new_event(
     end: date | None = None,
     video: str = "",
     video_by: str = "",
+    note: str = "",
 ) -> Event:
     """Mugav konstruktor adapteritele: arvutab ID ja viib aja Tallinna ajavööndisse."""
     if start.tzinfo is None:
@@ -168,6 +176,7 @@ def new_event(
         end=end.isoformat() if end and end > start.date() else "",
         video=video.strip() if video else "",
         video_by=video_by.strip() if video and video_by else "",
+        note=note.strip(),
     )
 
 

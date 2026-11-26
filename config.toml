@@ -38,7 +38,9 @@ foreign = ["Cēsis", "Daugavpils", "Elektrėnai", "Jelgava", "Jēkabpils", "Kaun
            "Valmiera", "Kosovo", "Türgi", "Ķekava", "Spuņciems", "Aizkraukle",
            "Manchester", "Poola", "Prantsusmaa",
            # ürituste kalendrite (kergejõustik) välismaa võistluspaigad: koha asemel ainult linn või riik
-           "Belgrad", "Bydgoszcz", "Varssav", "Leedu", "Lignano Sabbiadoro", "Mannheim", "Nikosia", "Valencia", "İstanbul"]
+           "Belgrad", "Bydgoszcz", "Varssav", "Leedu", "Lignano Sabbiadoro", "Mannheim", "Nikosia", "Valencia", "İstanbul",
+           # ujumise välismaa võistluspaigad
+           "Soome", "Espoo", "Peking"]
 
 [[geo.city]]
 slug = "tallinn"
@@ -121,6 +123,7 @@ county = "Põlvamaa"
 "Tartu vald" = "Tartumaa"
 "Elva" = "Tartumaa"
 "Märjamaa" = "Raplamaa"
+"Kaerepere" = "Raplamaa"
 "Jõgeva" = "Jõgevamaa"
 "Tapa" = "Lääne-Virumaa"
 "Maardu" = "Harjumaa"
@@ -610,6 +613,24 @@ competitions = [
   { league = "GP-sari", level = 2, check = false },
   { league = "Noorte MV ja rahvusvahelised noorteturniirid", level = 4, check = false },
   { league = "Noorte GP, harrastajate turniirid", level = 3, check = false },
+]
+
+# --- Veealad (lisatud 2026-11-24): ujumine automaatselt, sõudmine, aerutamine ja purjetamine käsitsi (otsinguagent) ---
+[[source]]
+name = "ujumine_eul"
+sport = "ujumine"
+league = "Ujumine (Ujumisliit)"
+enabled = true
+check = false
+year_round = true
+seasons = [["01-01", "12-31"]]
+# swimming.ee/kalender/ (robots.txt lubab). Eesti MV (ka masters) → 1, lahtised võistlused ja karikad → 2,
+# noorte ja laste sarjad → 4, klubide võistlused ja maakonna MV → 3 (peidetud). Koolitused ja välismaa võistlused välja.
+competitions = [
+  { league = "Eesti MV", check = false },
+  { league = "Lahtised võistlused ja karikad", level = 2, check = false },
+  { league = "Noorte võistlused", level = 4, check = false },
+  { league = "Klubide võistlused", level = 3, check = false },
 ]
 
 [[source]]

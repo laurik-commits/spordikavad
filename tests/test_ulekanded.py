@@ -445,5 +445,81 @@ url = "https://www.youtube.com/watch?v=x"
         self.assertEqual((kavas["Delfi TV"], kavas["ERR"]), ("delfi", "err"))
 
 
+
+class KavaGamesTest(unittest.TestCase):
+    """Kava rida, mida ükski allikas ei kata, lisatakse mänguna (ainult teadaoleva koduhalliga)."""
+
+    CFG = {"koduhall": [
+        {"sport": "korvpall", "nimi": "Viimsi", "koht": "Forus Spordikeskus Viimsi"},
+        {"sport": "korvpall", "nimi": "TalTech", "koht": "TalTechi spordihall"},
+    ]}
+
+    @staticmethod
+    def stream(home, away, start="2026-12-06T18:00:00", sport="korvpall"):
+        return {"start": datetime.fromisoformat(start).replace(tzinfo=TALLINN), "sport": sport,
+                "home": home, "away": away, "url": "https://tv.delfi.ee/leht/ulekanded-kava", "by": "Delfi TV"}
+
+    def test_unmatched_row_becomes_game(self):
+        (e,) = ulekanded.unmatched_games([], [self.stream("TalTech/ALEXELA", "BC Pärnu")], self.CFG)
+        self.assertEqual((e.sport, e.home, e.away, e.venue, e.level), ("korvpall", "TalTech/ALEXELA", "BC Pärnu",
+                                                                       "TalTechi spordihall", 1))
+        self.assertEqual((e.league, e.video, e.video_by), ("Korvpall (kava järgi)",
+                                                           "https://tv.delfi.ee/leht/ulekanded-kava", "Delfi TV"))
+        self.assertEqual(e.note, "Info telekavast: kontrolli algusaega ja toimumiskohta")
+
+    def test_game_without_hall_has_only_city(self):
+        cfg = {"koduhall": [{"sport": "korvpall", "nimi": "Kalev", "linn": "Tallinn"}]}
+        (e,) = ulekanded.unmatched_games([], [self.stream("Bigbank/Kalev", "BC Pärnu")], cfg)
+        self.assertEqual((e.venue, e.city), ("", "Tallinn"))
+        (err,) = ulekanded.validate({"koduhall": [{"sport": "korvpall", "nimi": "Kalev"}]})
+        self.assertTrue(err.endswith("või linn puudub"))
+
+    def test_repo_koduhall_venues_known(self):
+        from scrapers.venues import Venues
+        venues = Venues.load()
+        for h in ulekanded.load().get("koduhall", []):
+            if h.get("koht"):
+                self.assertIsNotNone(venues.lookup(h["koht"]), h["koht"])
+
+    def test_row_covered_by_existing_game_is_not_added(self):
+        game = new_event(source="x", sport="korvpall", league="Eesti-Läti Korvpalliliiga",
+                         start=datetime(2026, 12, 6, 18, 0, tzinfo=TALLINN), home="TalTech", away="Pärnu",
+                         venue="TalTechi spordihall", city="Tallinn", url="https://example.ee/")
+        self.assertEqual(ulekanded.unmatched_games([game], [self.stream("TalTech/ALEXELA", "BC Pärnu")], self.CFG), [])
+
+    def test_unknown_or_foreign_home_team_is_skipped(self):
+        streams = [self.stream("Keila KK", "BK Liepaja"), self.stream("BK Liepaja", "TalTech/ALEXELA")]
+        self.assertEqual(ulekanded.unmatched_games([], streams, self.CFG), [])
+
+    def test_other_sport_and_same_game_on_two_channels(self):
+        self.assertEqual(ulekanded.unmatched_games([], [self.stream("Viimsi", "Rapla", sport="kasipall")], self.CFG), [])
+        twice = [self.stream("Viimsi", "Rapla"), {**self.stream("Viimsi", "Rapla"), "by": "ERR"}]
+        self.assertEqual(len(ulekanded.unmatched_games([], twice, self.CFG)), 1)
+
+    def test_validate_koduhall(self):
+        self.assertEqual(ulekanded.validate(self.CFG), [])
+        bad = {"koduhall": [{"sport": "x", "nimi": "KK", "koht": ""}]}
+        self.assertEqual(len(ulekanded.validate(bad)), 3)
+
+    def test_note_shown_on_pages_and_blank_venue_is_clean(self):
+        import json
+        import tempfile
+        e = new_event(source="kava_mangud", sport="korvpall", league="Korvpall (kava järgi)",
+                      start=datetime(2026, 11, 22, 19, 0), home="Bigbank/Kalev", away="BC Pärnu", venue="",
+                      city="Tallinn", url="https://tv.delfi.ee/", video="https://tv.delfi.ee/", video_by="Delfi TV",
+                      note=ulekanded.KAVA_NOTE)
+        out = Path(tempfile.mkdtemp())
+        cfg = {"site": {"days_ahead": 3, "base_url": "https://example.org/sk/", "default_level": 1},
+               "geo": OLD_GEO, "source": config.load()["source"]}
+        build.render([e], cfg, date(2026, 11, 20), out)
+        day = (out / "2026-11-22" / "index.html").read_text(encoding="utf-8")
+        self.assertIn("Info telekavast: kontrolli algusaega ja toimumiskohta", day)
+        self.assertNotIn("Korvpall (kava järgi) · </span>", day)
+        self.assertNotIn("(kava järgi) ·  ", day)
+        game = (out / "m" / e.id / "index.html").read_text(encoding="utf-8")
+        self.assertIn("Info telekavast", game)
+        cal = json.loads((out / "kalender.json").read_text(encoding="utf-8"))
+        self.assertEqual(cal["events"][0]["n"], ulekanded.KAVA_NOTE)
+
 if __name__ == "__main__":
     unittest.main()
