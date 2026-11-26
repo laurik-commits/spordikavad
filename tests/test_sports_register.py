@@ -34,6 +34,16 @@ class RegisterTest(unittest.TestCase):
         self.assertIn("ujumine", sports.EVENT_SPORTS)
         self.assertNotIn("lauatennis", sports.EVENT_SPORTS)   # lauatennises on ka meistriliiga mängud
 
+    def test_sport_colors_have_readable_white_text(self):
+        """Valge tekst värvilisel kellaplokil: kontrast vähemalt 4.5:1 (WCAG AA, Lighthouse)."""
+        def lum(h):
+            f = lambda c: c / 12.92 if c <= 0.03928 else ((c + 0.055) / 1.055) ** 2.4
+            r, g, b = (f(int(h[i:i + 2], 16) / 255) for i in (1, 3, 5))
+            return 0.2126 * r + 0.7152 * g + 0.0722 * b
+        for s in sports.SPORT_LIST:
+            with self.subTest(sport=s["key"]):
+                self.assertGreaterEqual(1.05 / (lum(s["color"]) + 0.05), 4.5, s["color"])
+
     def test_validation_errors(self):
         sports.parse(OK)
         for bad, why in ((OK.replace('color = "#112233"', 'color = "red"'), "värv"),

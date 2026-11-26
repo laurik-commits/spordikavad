@@ -7,6 +7,9 @@ ehitab ja avaldab iga päev GitHub Pagesi. Omanik tahab hooldusele kulutada peaa
 ## Käsud
 - Testid: `python -m unittest discover -s tests` (~20 s, peavad enne iga commit'i läbima)
 - Ehitus kohapeal: `python build.py --offline` (5 s, kasutab salvestatud `data/`, tulemus `dist/`, gitignore'is)
+- Lighthouse (mobiil): `python build.py --offline`, `cd dist && python3 -m http.server 8765 &`, `npx lighthouse http://localhost:8765/ --only-categories=performance,accessibility,best-practices,seo`
+  (Chromium: `CHROME_PATH=/opt/pw-browsers/chromium`, lipud `--headless=new --no-sandbox`). Eesmärk: kõik ≥ 95 (mõõdetud 2026-11-26: 99–100, Best Practices 96:
+  kohalikul serveril Cloudflare'i analüütika CORS-viga, päris lehel seda pole). Värvikontrast ≥ 4.5:1 (test kontrollib ala värve).
 - Täisehitus võrguga käib ainult Actionsis (8–12 min, enamus on allikate viisakas ooteaeg). `data/` ja `archive/` commit'ib
   töövoog („Andmete uuendus …“): neid käsitsi ei muuda.
 

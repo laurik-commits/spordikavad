@@ -9,7 +9,7 @@
   --bar: #14457a;
   --bar-fg: #fff;
   --chip: #fff;
-  --empty: #a3a9b3;
+  --empty: #6e7580;
   --past: #e4e6ea;
   --shade: rgba(16,18,22,.45);
   /* alade värvid: valge tekst vähemalt 4.5:1 */
@@ -26,7 +26,7 @@
     --link: #8ab8f0;
     --bar: #0f3460;
     --chip: #191c22;
-    --empty: #5b616b;
+    --empty: #8a919c;
     --past: #2a2e36;
     --shade: rgba(0,0,0,.6);
   }
@@ -40,6 +40,15 @@ body {
   font: 16px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 a { color: var(--link); text-decoration: none; }
+/* lingid lauses ei tohi eristuda ainult värvi poolest (ligipääsetavus): allajoonitus */
+.intro a, .stale a, .farnote a, .watchnote a, footer a, .info > p a, .info > ul a, .info td a, .game > p:not(.actions) > a { text-decoration: underline; text-underline-offset: .15em; }
+/* puutealad: lingid loendites ja päises vähemalt ~40 px kõrged (WCAG 2.2: miinimum 24 px, soovitus 44 px) */
+.info > ul li { padding: .3rem 0; }
+.game > p:not(.actions) > a { display: inline-block; padding: .45rem 0; }
+.info > ul { margin: .3rem 0 .6rem; }
+.brand { display: inline-block; padding: .4rem 0; }
+.views button { min-height: 2.4rem; }
+.hero .say .pick-menu:not(.about) summary { min-height: 2.4rem; }
 .wrap { max-width: 42rem; margin: 0 auto; padding: 0 .75rem; }
 
 /* päis */
