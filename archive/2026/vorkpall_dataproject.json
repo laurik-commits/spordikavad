@@ -974,7 +974,14 @@
   "first_seen": "2026-11-22"
  },
  "34b79d88222f": {
-  "changes": [],
+  "changes": [
+   {
+    "field": "result",
+    "from": "",
+    "on": "2026-11-26",
+    "to": "0-3"
+   }
+  ],
   "event": {
    "away": "PÄRNU VK",
    "city": "Tartu",
@@ -982,7 +989,7 @@
    "id": "34b79d88222f",
    "league": "Eesti karikas (mehed)",
    "level": 1,
-   "result": "",
+   "result": "0-3",
    "source": "vorkpall_dataproject",
    "sport": "vorkpall",
    "start": "2026-11-24T19:00:00+02:00",
@@ -1464,6 +1471,12 @@
     "from": "",
     "on": "2026-11-26",
     "to": "1-0"
+   },
+   {
+    "field": "result",
+    "from": "1-0",
+    "on": "2026-11-26",
+    "to": "3-2"
    }
   ],
   "event": {
@@ -1473,7 +1486,7 @@
    "id": "4b0eb2f0b6b9",
    "league": "Esiliiga (naised)",
    "level": 2,
-   "result": "1-0",
+   "result": "3-2",
    "source": "vorkpall_dataproject",
    "sport": "vorkpall",
    "start": "2026-11-24T20:15:00+02:00",
@@ -2322,6 +2335,30 @@
     "field": "url",
     "from": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1628&ID=31&PID=32",
     "on": "2026-11-25",
+    "to": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3676&ID=97&PID=147"
+   },
+   {
+    "field": "league",
+    "from": "Meistriliiga (naised)",
+    "on": "2026-11-26",
+    "to": "Balti liiga (naised)"
+   },
+   {
+    "field": "url",
+    "from": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3676&ID=97&PID=147",
+    "on": "2026-11-26",
+    "to": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1628&ID=31&PID=32"
+   },
+   {
+    "field": "league",
+    "from": "Balti liiga (naised)",
+    "on": "2026-11-26",
+    "to": "Meistriliiga (naised)"
+   },
+   {
+    "field": "url",
+    "from": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1628&ID=31&PID=32",
+    "on": "2026-11-26",
     "to": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3676&ID=97&PID=147"
    },
    {
@@ -4540,7 +4577,14 @@
   "first_seen": "2026-11-22"
  },
  "e71e9ab009ce": {
-  "changes": [],
+  "changes": [
+   {
+    "field": "result",
+    "from": "",
+    "on": "2026-11-26",
+    "to": "3-0"
+   }
+  ],
   "event": {
    "away": "Advokaadibüroo Premium/Rae vald",
    "city": "Tartu",
@@ -4548,7 +4592,7 @@
    "id": "e71e9ab009ce",
    "league": "Esiliiga (mehed)",
    "level": 2,
-   "result": "",
+   "result": "3-0",
    "source": "vorkpall_dataproject",
    "sport": "vorkpall",
    "start": "2026-11-15T18:00:00+02:00",

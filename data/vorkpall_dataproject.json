@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T18:48:06+02:00",
+ "updated": "2026-11-26T21:46:24+02:00",
  "events": [
   {
    "id": "899216e6d23a",
@@ -2083,7 +2083,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3542&ID=98&PID=148",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
-   "result": "",
+   "result": "3-0",
    "level": 2
   },
   {
@@ -2233,7 +2233,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3663&ID=100&PID=150",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
-   "result": "",
+   "result": "0-3",
    "level": 1
   },
   {
@@ -2248,7 +2248,7 @@
    "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3656&ID=106&PID=164",
    "source": "vorkpall_dataproject",
    "time_tbc": false,
-   "result": "1-0",
+   "result": "3-2",
    "level": 2
   },
   {
