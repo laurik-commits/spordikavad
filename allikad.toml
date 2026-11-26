@@ -845,3 +845,16 @@ robots = "lubatud"
 kasutus = "agent"
 kontrollitud = 2026-11-24
 markus = "Hooaja põhisari; 2027 kalender pole avaldatud. Eesti MV ja suuremad regatid lisab agent käsitsi."
+
+# --- Kurling ja hooajavälised alad (kontrollitud 2026-11-26) ---
+[[allikas]]
+nimi = "Eesti Curlingu Liit: kalender"
+liik = "liit"
+url = "https://kurling.ee/kalender/"
+alad = ["kurling"]
+piirkond = "Eesti"
+kuju = "api"
+robots = "lubatud"
+kasutus = "adapter:kurling_ekl"
+kontrollitud = 2026-11-26
+markus = "The Events Calendar REST (wp-json/tribe/events/v1/events), terve päeva sündmused. Eestis toimuvad (country = Eesti): Eesti MV ja Tallinna MK-etapp Tondiraba jäähallis; koondiste välismaa võistlused jäetakse välja."

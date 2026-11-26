@@ -637,6 +637,21 @@ competitions = [
 ]
 
 [[source]]
+name = "kurling_ekl"
+sport = "kurling"
+league = "Kurling (Curlingu Liit)"
+enabled = true
+check = false
+year_round = true
+seasons = [["01-01", "12-31"]]
+# kurling.ee/kalender/ (robots.txt lubab): The Events Calendar REST-voog. Ainult Eestis toimuvad (country = Eesti, Tondiraba
+# jäähall): Eesti MV ja MK-etapid → 1, MM-kvalifikatsioonimängud ja turniirid → 2. Koondiste välismaa võistlused välja.
+competitions = [
+  { league = "Eesti MV ja MK-etapid", check = false },
+  { league = "Muud võistlused", level = 2, check = false },
+]
+
+[[source]]
 name = "kasitsi"
 league = "Käsitsi lisatud"
 enabled = true

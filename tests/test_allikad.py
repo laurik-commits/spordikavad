@@ -27,7 +27,7 @@ class RegisterTest(unittest.TestCase):
             "puudub 'url'": item(url=None),
             "tundmatu liik": item(liik="baar"),
             "tundmatu kuju": item(kuju="flash"),
-            "alad peab olema": item(alad=["kurling"]),
+            "alad peab olema": item(alad=["petank"]),
             "sotsiaalmeedia": item(url="https://www.facebook.com/hall"),
             "adapterit 'puudub'": item(kasutus="adapter:puudub"),
             "kasutus peab olema \"keelatud\"": item(robots="keelatud", kasutus="agent"),

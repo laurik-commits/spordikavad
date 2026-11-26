@@ -17,7 +17,7 @@
 # Väljad:
 #   sport     jalgpall | korvpall | jaahoki | vorkpall | kasipall | saalihoki | saalijalgpall | motosport | kergejoustik
 #             | suusatamine (ka laskesuusatamine) | ratsasport | uisutamine | voitlusspordid | autosport
-#             | tennis | sulgpall | lauatennis | voimlemine (ka iluvõimlemine) | tantsusport | fitness (ka kulturism)
+#             | tennis | sulgpall | lauatennis | voimlemine (ka iluvõimlemine) | tantsusport | fitness (ka kulturism) | kurling
 #             | ujumine | soudmine | kanuu (aerutamine) | purjetamine
 #   league    liiga või ürituse nimi, nt "Sõprusmäng", "EEVZA U16 neidude turniir"
 #   level     1 tippvõistlused (kõrgliigad, MV), 2 esiliigad, 4 noored, 5 koondised (määrab, millises kalendris mäng on)

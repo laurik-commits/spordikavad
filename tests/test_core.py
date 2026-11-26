@@ -41,7 +41,7 @@ class ModelTest(unittest.TestCase):
 
     def test_unknown_sport_rejected(self):
         with self.assertRaises(ValueError):
-            sample(sport="kurling")
+            sample(sport="petank")
 
 
 class VenuesTest(unittest.TestCase):

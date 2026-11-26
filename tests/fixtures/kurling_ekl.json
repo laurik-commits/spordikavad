@@ -1,0 +1,602 @@
+{
+ "events": [
+  {
+   "id": 5292,
+   "global_id": "kurling.ee?id=5292",
+   "global_id_lineage": [
+    "kurling.ee?id=5292"
+   ],
+   "author": "4",
+   "status": "publish",
+   "date": "2026-11-12 08:42:04",
+   "date_utc": "2026-11-12 08:42:04",
+   "modified": "2026-11-12 08:48:50",
+   "modified_utc": "2026-11-12 08:48:50",
+   "url": "https://kurling.ee/kalender/ratastoolikurlingu-segapaaride-turniir-riias/",
+   "rest_url": "https://kurling.ee/wp-json/tribe/events/v1/events/5292",
+   "title": "Ratastoolikurlingu segapaaride turniir Riias",
+   "slug": "ratastoolikurlingu-segapaaride-turniir-riias",
+   "all_day": true,
+   "start_date": "2026-11-12 00:00:00",
+   "start_date_details": {
+    "year": "2026",
+    "month": "11",
+    "day": "12",
+    "hour": "00",
+    "minutes": "00",
+    "seconds": "00"
+   },
+   "end_date": "2026-11-15 23:59:59",
+   "end_date_details": {
+    "year": "2026",
+    "month": "11",
+    "day": "15",
+    "hour": "23",
+    "minutes": "59",
+    "seconds": "59"
+   },
+   "utc_start_date": "2026-11-12 00:00:00",
+   "utc_start_date_details": {
+    "year": "2026",
+    "month": "11",
+    "day": "12",
+    "hour": "00",
+    "minutes": "00",
+    "seconds": "00"
+   },
+   "utc_end_date": "2026-11-15 23:59:59",
+   "utc_end_date_details": {
+    "year": "2026",
+    "month": "11",
+    "day": "15",
+    "hour": "23",
+    "minutes": "59",
+    "seconds": "59"
+   },
+   "timezone": "UTC+0",
+   "timezone_abbr": "UTC+0",
+   "cost": "",
+   "cost_details": {
+    "currency_symbol": "€",
+    "currency_code": "EUR",
+    "currency_position": "suffix",
+    "values": []
+   },
+   "website": "",
+   "show_map": false,
+   "show_map_link": false,
+   "hide_from_listings": false,
+   "sticky": false,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Ratastooli kurling",
+     "slug": "ratastooli-kurling"
+    },
+    {
+     "name": "Sündmused",
+     "slug": "sundmused"
+    }
+   ],
+   "tags": [],
+   "venue": {
+    "id": 5293,
+    "venue": "Riia, Läti",
+    "city": null,
+    "country": null,
+    "address": null
+   },
+   "custom_fields": []
+  },
+  {
+   "id": 5280,
+   "global_id": "kurling.ee?id=5280",
+   "global_id_lineage": [
+    "kurling.ee?id=5280"
+   ],
+   "author": "4",
+   "status": "publish",
+   "date": "2026-11-11 12:59:59",
+   "date_utc": "2026-11-11 12:59:59",
+   "modified": "2026-11-11 13:07:47",
+   "modified_utc": "2026-11-11 13:07:47",
+   "url": "https://kurling.ee/kalender/segapaaride-mm-kvalifikatsioonmangud/",
+   "rest_url": "https://kurling.ee/wp-json/tribe/events/v1/events/5280",
+   "title": "Segapaaride MM-kvalifikatsioonimängud",
+   "slug": "segapaaride-mm-kvalifikatsioonmangud",
+   "all_day": true,
+   "start_date": "2026-11-14 00:00:00",
+   "start_date_details": {
+    "year": "2026",
+    "month": "11",
+    "day": "14",
+    "hour": "00",
+    "minutes": "00",
+    "seconds": "00"
+   },
+   "end_date": "2026-11-15 23:59:59",
+   "end_date_details": {
+    "year": "2026",
+    "month": "11",
+    "day": "15",
+    "hour": "23",
+    "minutes": "59",
+    "seconds": "59"
+   },
+   "utc_start_date": "2026-11-14 00:00:00",
+   "utc_start_date_details": {
+    "year": "2026",
+    "month": "11",
+    "day": "14",
+    "hour": "00",
+    "minutes": "00",
+    "seconds": "00"
+   },
+   "utc_end_date": "2026-11-15 23:59:59",
+   "utc_end_date_details": {
+    "year": "2026",
+    "month": "11",
+    "day": "15",
+    "hour": "23",
+    "minutes": "59",
+    "seconds": "59"
+   },
+   "timezone": "UTC+0",
+   "timezone_abbr": "UTC+0",
+   "cost": "",
+   "cost_details": {
+    "currency_symbol": "€",
+    "currency_code": "EUR",
+    "currency_position": "suffix",
+    "values": []
+   },
+   "website": "",
+   "show_map": false,
+   "show_map_link": false,
+   "hide_from_listings": false,
+   "sticky": false,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Sündmused",
+     "slug": "sundmused"
+    }
+   ],
+   "tags": [],
+   "venue": {
+    "id": 2319,
+    "venue": "Tondiraba Jäähall",
+    "city": "Tallinn",
+    "country": "Eesti",
+    "address": "Varraku 14"
+   },
+   "custom_fields": []
+  },
+  {
+   "id": 5259,
+   "global_id": "kurling.ee?id=5259",
+   "global_id_lineage": [
+    "kurling.ee?id=5259"
+   ],
+   "author": "4",
+   "status": "publish",
+   "date": "2026-11-11 12:34:56",
+   "date_utc": "2026-11-11 12:34:56",
+   "modified": "2026-11-11 12:36:18",
+   "modified_utc": "2026-11-11 12:36:18",
+   "url": "https://kurling.ee/kalender/naistekoondise-mm-kvalifikatsioon/",
+   "rest_url": "https://kurling.ee/wp-json/tribe/events/v1/events/5259",
+   "title": "Naistekoondise MM-kvalifikatsioon",
+   "slug": "naistekoondise-mm-kvalifikatsioon",
+   "all_day": true,
+   "start_date": "2026-11-21 00:00:00",
+   "start_date_details": {
+    "year": "2026",
+    "month": "11",
+    "day": "21",
+    "hour": "00",
+    "minutes": "00",
+    "seconds": "00"
+   },
+   "end_date": "2026-11-26 23:59:59",
+   "end_date_details": {
+    "year": "2026",
+    "month": "11",
+    "day": "26",
+    "hour": "23",
+    "minutes": "59",
+    "seconds": "59"
+   },
+   "utc_start_date": "2026-11-21 00:00:00",
+   "utc_start_date_details": {
+    "year": "2026",
+    "month": "11",
+    "day": "21",
+    "hour": "00",
+    "minutes": "00",
+    "seconds": "00"
+   },
+   "utc_end_date": "2026-11-26 23:59:59",
+   "utc_end_date_details": {
+    "year": "2026",
+    "month": "11",
+    "day": "26",
+    "hour": "23",
+    "minutes": "59",
+    "seconds": "59"
+   },
+   "timezone": "UTC+0",
+   "timezone_abbr": "UTC+0",
+   "cost": "",
+   "cost_details": {
+    "currency_symbol": "€",
+    "currency_code": "EUR",
+    "currency_position": "suffix",
+    "values": []
+   },
+   "website": "https://worldcurling.org/events/womenworldqualifier/",
+   "show_map": false,
+   "show_map_link": true,
+   "hide_from_listings": false,
+   "sticky": false,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Sündmused",
+     "slug": "sundmused"
+    }
+   ],
+   "tags": [],
+   "venue": {
+    "id": 5260,
+    "venue": "Östersund, Rootsi",
+    "city": null,
+    "country": null,
+    "address": null
+   },
+   "custom_fields": []
+  },
+  {
+   "id": 5269,
+   "global_id": "kurling.ee?id=5269",
+   "global_id_lineage": [
+    "kurling.ee?id=5269"
+   ],
+   "author": "4",
+   "status": "publish",
+   "date": "2026-11-11 12:52:01",
+   "date_utc": "2026-11-11 12:52:01",
+   "modified": "2026-11-11 12:52:01",
+   "modified_utc": "2026-11-11 12:52:01",
+   "url": "https://kurling.ee/kalender/segapaaride-tallinna-mk-etapp/",
+   "rest_url": "https://kurling.ee/wp-json/tribe/events/v1/events/5269",
+   "title": "Segapaaride Tallinna MK-etapp",
+   "slug": "segapaaride-tallinna-mk-etapp",
+   "all_day": true,
+   "start_date": "2027-01-18 00:00:00",
+   "start_date_details": {
+    "year": "2027",
+    "month": "01",
+    "day": "18",
+    "hour": "00",
+    "minutes": "00",
+    "seconds": "00"
+   },
+   "end_date": "2027-01-24 23:59:59",
+   "end_date_details": {
+    "year": "2027",
+    "month": "01",
+    "day": "24",
+    "hour": "23",
+    "minutes": "59",
+    "seconds": "59"
+   },
+   "utc_start_date": "2027-01-18 00:00:00",
+   "utc_start_date_details": {
+    "year": "2027",
+    "month": "01",
+    "day": "18",
+    "hour": "00",
+    "minutes": "00",
+    "seconds": "00"
+   },
+   "utc_end_date": "2027-01-24 23:59:59",
+   "utc_end_date_details": {
+    "year": "2027",
+    "month": "01",
+    "day": "24",
+    "hour": "23",
+    "minutes": "59",
+    "seconds": "59"
+   },
+   "timezone": "UTC+0",
+   "timezone_abbr": "UTC+0",
+   "cost": "",
+   "cost_details": {
+    "currency_symbol": "€",
+    "currency_code": "EUR",
+    "currency_position": "suffix",
+    "values": []
+   },
+   "website": "",
+   "show_map": false,
+   "show_map_link": false,
+   "hide_from_listings": false,
+   "sticky": false,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Sündmused",
+     "slug": "sundmused"
+    }
+   ],
+   "tags": [],
+   "venue": {
+    "id": 2319,
+    "venue": "Tondiraba Jäähall",
+    "city": "Tallinn",
+    "country": "Eesti",
+    "address": "Varraku 14"
+   },
+   "custom_fields": []
+  },
+  {
+   "id": 5272,
+   "global_id": "kurling.ee?id=5272",
+   "global_id_lineage": [
+    "kurling.ee?id=5272"
+   ],
+   "author": "4",
+   "status": "publish",
+   "date": "2026-11-11 12:53:15",
+   "date_utc": "2026-11-11 12:53:15",
+   "modified": "2026-11-24 10:11:38",
+   "modified_utc": "2026-11-24 10:11:38",
+   "url": "https://kurling.ee/kalender/eesti-meistrivoistlused-2027-naised-mehed/",
+   "rest_url": "https://kurling.ee/wp-json/tribe/events/v1/events/5272",
+   "title": "Eesti meistrivõistlused 2027 naised/mehed",
+   "slug": "eesti-meistrivoistlused-2027-naised-mehed",
+   "all_day": true,
+   "start_date": "2027-02-01 00:00:00",
+   "start_date_details": {
+    "year": "2027",
+    "month": "02",
+    "day": "01",
+    "hour": "00",
+    "minutes": "00",
+    "seconds": "00"
+   },
+   "end_date": "2027-02-07 23:59:59",
+   "end_date_details": {
+    "year": "2027",
+    "month": "02",
+    "day": "07",
+    "hour": "23",
+    "minutes": "59",
+    "seconds": "59"
+   },
+   "utc_start_date": "2027-02-01 00:00:00",
+   "utc_start_date_details": {
+    "year": "2027",
+    "month": "02",
+    "day": "01",
+    "hour": "00",
+    "minutes": "00",
+    "seconds": "00"
+   },
+   "utc_end_date": "2027-02-07 23:59:59",
+   "utc_end_date_details": {
+    "year": "2027",
+    "month": "02",
+    "day": "07",
+    "hour": "23",
+    "minutes": "59",
+    "seconds": "59"
+   },
+   "timezone": "UTC+0",
+   "timezone_abbr": "UTC+0",
+   "cost": "",
+   "cost_details": {
+    "currency_symbol": "€",
+    "currency_code": "EUR",
+    "currency_position": "suffix",
+    "values": []
+   },
+   "website": "",
+   "show_map": false,
+   "show_map_link": false,
+   "hide_from_listings": false,
+   "sticky": false,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Sündmused",
+     "slug": "sundmused"
+    }
+   ],
+   "tags": [],
+   "venue": {
+    "id": 2319,
+    "venue": "Tondiraba Jäähall",
+    "city": "Tallinn",
+    "country": "Eesti",
+    "address": "Varraku 14"
+   },
+   "custom_fields": []
+  },
+  {
+   "id": 5307,
+   "global_id": "kurling.ee?id=5307",
+   "global_id_lineage": [
+    "kurling.ee?id=5307"
+   ],
+   "author": "4",
+   "status": "publish",
+   "date": "2026-11-12 08:53:59",
+   "date_utc": "2026-11-12 08:53:59",
+   "modified": "2026-11-12 08:53:59",
+   "modified_utc": "2026-11-12 08:53:59",
+   "url": "https://kurling.ee/kalender/ratastoolikurlingu-segapaaride-maailmameistrivoistlused-2027/",
+   "rest_url": "https://kurling.ee/wp-json/tribe/events/v1/events/5307",
+   "title": "Ratastoolikurlingu segapaaride maailmameistrivõistlused 2027",
+   "slug": "ratastoolikurlingu-segapaaride-maailmameistrivoistlused-2027",
+   "all_day": true,
+   "start_date": "2027-03-01 00:00:00",
+   "start_date_details": {
+    "year": "2027",
+    "month": "03",
+    "day": "01",
+    "hour": "00",
+    "minutes": "00",
+    "seconds": "00"
+   },
+   "end_date": "2027-03-07 23:59:59",
+   "end_date_details": {
+    "year": "2027",
+    "month": "03",
+    "day": "07",
+    "hour": "23",
+    "minutes": "59",
+    "seconds": "59"
+   },
+   "utc_start_date": "2027-03-01 00:00:00",
+   "utc_start_date_details": {
+    "year": "2027",
+    "month": "03",
+    "day": "01",
+    "hour": "00",
+    "minutes": "00",
+    "seconds": "00"
+   },
+   "utc_end_date": "2027-03-07 23:59:59",
+   "utc_end_date_details": {
+    "year": "2027",
+    "month": "03",
+    "day": "07",
+    "hour": "23",
+    "minutes": "59",
+    "seconds": "59"
+   },
+   "timezone": "UTC+0",
+   "timezone_abbr": "UTC+0",
+   "cost": "",
+   "cost_details": {
+    "currency_symbol": "€",
+    "currency_code": "EUR",
+    "currency_position": "suffix",
+    "values": []
+   },
+   "website": "",
+   "show_map": false,
+   "show_map_link": false,
+   "hide_from_listings": false,
+   "sticky": false,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Ratastooli kurling",
+     "slug": "ratastooli-kurling"
+    },
+    {
+     "name": "Sündmused",
+     "slug": "sundmused"
+    }
+   ],
+   "tags": [],
+   "venue": {
+    "id": 5265,
+    "venue": "Lohja, Soome",
+    "city": null,
+    "country": null,
+    "address": null
+   },
+   "custom_fields": []
+  },
+  {
+   "id": 5278,
+   "global_id": "kurling.ee?id=5278",
+   "global_id_lineage": [
+    "kurling.ee?id=5278"
+   ],
+   "author": "4",
+   "status": "publish",
+   "date": "2026-11-11 12:56:30",
+   "date_utc": "2026-11-11 12:56:30",
+   "modified": "2026-11-11 12:56:30",
+   "modified_utc": "2026-11-11 12:56:30",
+   "url": "https://kurling.ee/kalender/eesti-meistrivoistlused-2027-individuaal/",
+   "rest_url": "https://kurling.ee/wp-json/tribe/events/v1/events/5278",
+   "title": "Eesti meistrivõistlused 2027 individuaal",
+   "slug": "eesti-meistrivoistlused-2027-individuaal",
+   "all_day": true,
+   "start_date": "2027-05-16 00:00:00",
+   "start_date_details": {
+    "year": "2027",
+    "month": "05",
+    "day": "16",
+    "hour": "00",
+    "minutes": "00",
+    "seconds": "00"
+   },
+   "end_date": "2027-05-16 23:59:59",
+   "end_date_details": {
+    "year": "2027",
+    "month": "05",
+    "day": "16",
+    "hour": "23",
+    "minutes": "59",
+    "seconds": "59"
+   },
+   "utc_start_date": "2027-05-16 00:00:00",
+   "utc_start_date_details": {
+    "year": "2027",
+    "month": "05",
+    "day": "16",
+    "hour": "00",
+    "minutes": "00",
+    "seconds": "00"
+   },
+   "utc_end_date": "2027-05-16 23:59:59",
+   "utc_end_date_details": {
+    "year": "2027",
+    "month": "05",
+    "day": "16",
+    "hour": "23",
+    "minutes": "59",
+    "seconds": "59"
+   },
+   "timezone": "UTC+0",
+   "timezone_abbr": "UTC+0",
+   "cost": "",
+   "cost_details": {
+    "currency_symbol": "€",
+    "currency_code": "EUR",
+    "currency_position": "suffix",
+    "values": []
+   },
+   "website": "",
+   "show_map": false,
+   "show_map_link": false,
+   "hide_from_listings": false,
+   "sticky": false,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Sündmused",
+     "slug": "sundmused"
+    }
+   ],
+   "tags": [],
+   "venue": {
+    "id": 2319,
+    "venue": "Tondiraba Jäähall",
+    "city": "Tallinn",
+    "country": "Eesti",
+    "address": "Varraku 14"
+   },
+   "custom_fields": []
+  }
+ ],
+ "total": 7,
+ "total_pages": 1
+}

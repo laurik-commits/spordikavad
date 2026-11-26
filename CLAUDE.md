@@ -39,8 +39,8 @@ ehitab ja avaldab iga päev GitHub Pagesi. Omanik tahab hooldusele kulutada peaa
 - **Hooldus:** kui parandad katkist allikat või teed muu hoolduse (PR), lisa rida `MAINTENANCE.md` tabelisse „Käsitsi hooldus“
   (kuupäev | mis oli katki | parandus + PR). Automaatsete Issue'de logi ja kokkuvõte täituvad ise (`scripts/report_issues.py`).
 - Kõik vahele jäetud allikad ja põhjus kirjuta `SOURCES.md`-i; ka allikate register `allikad.toml` ja README „järgmised alad“.
-- Commit'i sõnum eesti keeles, ühe rea kokkuvõte + lühike loend; lõppu eeldatud attribuutiread. PR ainult siis, kui omanik palub,
-  merge'i ainult tema käsul (see avaldab lehe).
+- Commit'i sõnum eesti keeles, ühe rea kokkuvõte + lühike loend; lõppu eeldatud attribuutiread. **Püsiv luba (omanik 2026-11-26): PR-i teeb ja merge'ib (squash) agent ise, küsimata**,
+  kui testid läbivad; seejärel kontrolli ehituse tulemust (Actions) ja anna lühike kokkuvõte. Jätkuvalt omaniku käsitsi samm: kontod (Search Console, Cloudflare).
 
 ## Uue ala lisamine (kontrollnimekiri)
 1. `sports.toml`: uus `[[sport]]` (+ vajadusel `[[group]]`). Test `tests/test_alad.py` ja `tests/test_sports_register.py` kontrollivad.

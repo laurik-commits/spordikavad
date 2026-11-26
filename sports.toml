@@ -195,6 +195,17 @@ err = "(iluuisutamis|kiiruisutamis|uisutamis)"
 sources = [{ name = "Eesti Uisuliit", url = "https://www.uisuliit.ee/iluuisutamine/voistlused" }]
 
 [[sport]]
+key = "kurling"
+name = "Kurling"
+gen = "kurlingu"
+in = "kurlingus"
+color = "#5b6b2f"
+group = "g:tali"
+event = true
+err = "(kurlingu|curlingu)"
+sources = [{ name = "Eesti Curlingu Liit", url = "https://kurling.ee/kalender/" }]
+
+[[sport]]
 key = "voitlusspordid"
 name = "Võitlusspordid"
 gen = "võitlusspordi"
