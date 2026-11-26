@@ -22,6 +22,7 @@ from pathlib import Path
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 import archive
+import ogimage
 import ulekanded
 from scrapers import config as cfgmod
 from scrapers import sports
@@ -595,11 +596,21 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
         gdir = out / "m" / e.id
         gdir.mkdir(parents=True)
         canonical = f"{base_url}m/{e.id}/"
+        og_image = ""
+        if not past:   # eelseisva mängu oma eelvaate pilt (mäng, aeg, koht); möödunud ja puuduva Pillow korral üldine og.png
+            when = (f"{et_date(e.start.date())} – {et_date(e.last_day)}" if e.end
+                    else et_date(e.start.date()) + ("" if e.time_tbc else f" kell {e.start:%H:%M}"))
+            png = ogimage.render(matchup(e), when, ", ".join(dict.fromkeys(x for x in (e.venue, e.city) if x)),
+                                 e.league, SPORTS[e.sport], sports.COLORS[e.sport])
+            if png:
+                (gdir / "og.png").write_bytes(png)
+                og_image = f"{canonical}og.png"
         (gdir / "index.html").write_text(
             game_tpl.render(common, e=e, root="../../", canonical=canonical, past=past, level_info=glv, day=gd,
                             day_href=f"../../{glv['prefix']}{geo.all.prefix}{gd.isoformat()}/" if in_window else "",
                             league_href=f"../../{e.sport}/{slug}/" if slug else (f"../../{e.sport}/" if listed(e) else ""),
-                            title=game_title(e, e.result.replace("-", ":")), ld=event_ld(e, canonical)),
+                            title=game_title(e, e.result.replace("-", ":")), ld=event_ld(e, canonical),
+                            og_image=og_image),
             encoding="utf-8")
         if not past and listed(e):
             urls.append(canonical)

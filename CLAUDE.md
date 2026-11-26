@@ -21,6 +21,7 @@ ehitab ja avaldab iga päev GitHub Pagesi. Omanik tahab hooldusele kulutada peaa
   kes mida näitab, kavad (Delfi, ERR, Go3), `[[koduhall]]` (kava rida → mäng)
 - `build.py` (ehitus, leht, sitemap, mängulehed `/m/<id>/` KÕIGIL mängudel, ala- ja liigalehed `/<ala>/…`; `game_title`, `event_ld`),
   `site/*.html` (`game.html` mängulehed, `list.html` ala- ja liigalehed), `site/style.css`, `site/app.js`, `site/kalender.js`
+- `ogimage.py` + `site/fonts/`: mängu OG-pilt (Pillow, DejaVu; igale eelseisvale mängule `m/<id>/og.png`, muul juhul üldine `og.png`)
 - `scripts/`: `automerge_check.py` (agendi PR-i kontroll), `report_issues.py` (katkised allikad → GitHub Issue)
 - `SOURCES.md`: **allikate otsused ala kaupa** (miks midagi kasutatakse või jäetakse välja). Loe ainult asjakohane osa
   (`grep -n "^## " SOURCES.md`), mitte kogu faili.

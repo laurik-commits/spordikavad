@@ -1,2 +1,3 @@
 jinja2>=3.1
 tzdata  # ajavööndid Windowsis; Linuxis ei tee halba
+Pillow>=10  # OG-pildid (ogimage.py); puudumisel kasutatakse üldist og.png-d
