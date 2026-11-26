@@ -2412,6 +2412,30 @@
     "from": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1628&ID=31&PID=32",
     "on": "2026-11-26",
     "to": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3676&ID=97&PID=147"
+   },
+   {
+    "field": "league",
+    "from": "Meistriliiga (naised)",
+    "on": "2026-11-26",
+    "to": "Balti liiga (naised)"
+   },
+   {
+    "field": "url",
+    "from": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3676&ID=97&PID=147",
+    "on": "2026-11-26",
+    "to": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1628&ID=31&PID=32"
+   },
+   {
+    "field": "league",
+    "from": "Balti liiga (naised)",
+    "on": "2026-11-26",
+    "to": "Meistriliiga (naised)"
+   },
+   {
+    "field": "url",
+    "from": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1628&ID=31&PID=32",
+    "on": "2026-11-26",
+    "to": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3676&ID=97&PID=147"
    }
   ],
   "event": {
