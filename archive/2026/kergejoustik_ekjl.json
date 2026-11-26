@@ -285,6 +285,25 @@
   },
   "first_seen": "2026-11-23"
  },
+ "804dd74bb906": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Valga",
+   "home": "Valgamaa koolinoorte sisekergejõustiku MV",
+   "id": "804dd74bb906",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2026-12-11T10:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Valga Spordihoone"
+  },
+  "first_seen": "2026-11-26"
+ },
  "86e8714cbcb0": {
   "changes": [],
   "event": {

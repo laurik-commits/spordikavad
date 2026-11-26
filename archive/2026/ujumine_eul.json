@@ -1,0 +1,289 @@
+{
+ "008477505cc6": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Briisi Päkapikuvõistlus",
+   "id": "008477505cc6",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2026-12-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/briisi-pakapikuvoistlus/",
+   "venue": "Tallinn"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "0fd5a906b688": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Yess talvestardid",
+   "id": "0fd5a906b688",
+   "league": "Klubide võistlused",
+   "level": 3,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2026-11-28T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/yess-talvestardid/",
+   "venue": "Aura Veekeskus"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "5087068fda37": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Keila",
+   "home": "Keila Swimclubi Jõuluvõistlus",
+   "id": "5087068fda37",
+   "league": "Klubide võistlused",
+   "level": 3,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2026-12-15T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/keila-swimclubi-jouluvoistlus-4/",
+   "venue": "Keila Tervisekeskus"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "54edd0c7374a": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Speedo Räimeralli FINAAL",
+   "id": "54edd0c7374a",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2026-12-05T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/speedo-raimeralli-finaal-4/",
+   "venue": "Aura Veekeskus"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "5aad57863ab6": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Spordiklubi SharK Jõulukuuvõistlus",
+   "id": "5aad57863ab6",
+   "league": "Klubide võistlused",
+   "level": 3,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2026-12-05T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/spordiklubi-shark-joulukuuvoistlus/",
+   "venue": "Tallinn"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "67d76e1b0ed5": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "USKi Talvestardid",
+   "id": "67d76e1b0ed5",
+   "league": "Klubide võistlused",
+   "level": 3,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2026-12-12T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/uski-talvestardid/",
+   "venue": "Aura Veekeskus"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "6d27839c1d91": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Audentese Jõuluvõistlus",
+   "id": "6d27839c1d91",
+   "league": "Klubide võistlused",
+   "level": 3,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2026-12-10T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/audentese-jouluvoistlus/",
+   "venue": "Tallinn"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "71f437961b05": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kohtla-Järve",
+   "end": "2026-12-13",
+   "home": "Wiru Swim Cup",
+   "id": "71f437961b05",
+   "league": "Lahtised võistlused ja karikad",
+   "level": 2,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2026-12-12T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/wiru-swim-cup/",
+   "venue": "Wiru Spordikeskus"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "8807ccc47a2d": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Viimsi",
+   "home": "Viimsi Veeklubi Jõuluvõistlus",
+   "id": "8807ccc47a2d",
+   "league": "Klubide võistlused",
+   "level": 3,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2026-12-11T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/viimsi-veeklubi-jouluvoistlus-3/",
+   "venue": "Viimsi"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "97aa9f9d3359": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Eesti masters-ujumise lühiraja meistrivõistlused (Supermasters)",
+   "id": "97aa9f9d3359",
+   "league": "Eesti MV",
+   "level": 1,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2026-12-05T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/eesti-masters-ujumise-luhiraja-meistrivoistlused-supermasters/",
+   "venue": "Nõmme ujula"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "a5d062a60a19": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Pärnu",
+   "home": "Pärnu piparkoogi võistlused",
+   "id": "a5d062a60a19",
+   "league": "Klubide võistlused",
+   "level": 3,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2026-12-12T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/parnu-piparkoogi-voistlused/",
+   "venue": "Pärnu"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "b64d68254d2a": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "KUK Aastalõpuvõistlus",
+   "id": "b64d68254d2a",
+   "league": "Klubide võistlused",
+   "level": 3,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2026-12-12T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/kuk-aastalopuvoistlus-3/",
+   "venue": "Tallinn"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "d33098ca87bf": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Briisi kontrollvõistlus",
+   "id": "d33098ca87bf",
+   "league": "Klubide võistlused",
+   "level": 3,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2026-11-27T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/briisi-kontrollvoistlus/",
+   "venue": "Tallinn"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "e8deab5bccbe": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kohtla-Järve",
+   "end": "2026-12-20",
+   "home": "Eesti lühiraja meistrivõistlused 2026",
+   "id": "e8deab5bccbe",
+   "league": "Eesti MV",
+   "level": 1,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2026-12-18T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/eesti-luhiraja-meistrivoistlused-2026/",
+   "venue": "Wiru Spordikeskus"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "eb7587772420": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Tartumaa MV",
+   "id": "eb7587772420",
+   "league": "Klubide võistlused",
+   "level": 3,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2026-12-12T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/tartumaa-mv/",
+   "venue": "Aura Veekeskus"
+  },
+  "first_seen": "2026-11-26"
+ }
+}

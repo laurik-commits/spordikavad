@@ -1,0 +1,420 @@
+{
+ "1d26f25547cc": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Uju ja Jookse II etapp",
+   "id": "1d26f25547cc",
+   "league": "Klubide võistlused",
+   "level": 3,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2027-01-30T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/uju-ja-jookse-ii-etapp/",
+   "venue": "Tartu"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "1e86da31c227": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Sillamäe",
+   "home": "Staier",
+   "id": "1e86da31c227",
+   "league": "Klubide võistlused",
+   "level": 3,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2027-02-20T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/staier/",
+   "venue": "Sillamäe"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "207f1eecae7b": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kohtla-Järve",
+   "home": "Aastaalguse Mitmevõistlus",
+   "id": "207f1eecae7b",
+   "league": "Lahtised võistlused ja karikad",
+   "level": 2,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2027-01-15T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/aastaalguse-mitmevoistlus/",
+   "venue": "Wiru Spordikeskus"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "270c1709bbf6": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Audentese Spordiklubi karikavõistlused",
+   "id": "270c1709bbf6",
+   "league": "Lahtised võistlused ja karikad",
+   "level": 2,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2027-01-23T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/audentese-spordiklubi-karikavoistlused/",
+   "venue": "Tallinn"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "27683ca69c2e": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Keila",
+   "home": "Keila Swimclubi kevadvõistlus",
+   "id": "27683ca69c2e",
+   "league": "Klubide võistlused",
+   "level": 3,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2027-03-09T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/keila-swimclubi-kevadvoistlus/",
+   "venue": "Keila"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "4e284d5f72cd": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Viimsi",
+   "home": "Kilpkonna Cup V etapp",
+   "id": "4e284d5f72cd",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2027-02-12T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/kilpkonna-cup-v-etapp/",
+   "venue": "Viimsi"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "732d285b82f2": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kohtla-Järve",
+   "home": "Mega Swim",
+   "id": "732d285b82f2",
+   "league": "Klubide võistlused",
+   "level": 3,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2027-02-20T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/mega-swim/",
+   "venue": "Wiru Spordikeskus"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "8b80d8101e8f": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Tallinna Koolinoorte Teateujumine (eelujumised)",
+   "id": "8b80d8101e8f",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2027-01-12T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/tallinna-koolinoorte-teateujumine-eelujumised/",
+   "venue": "Tallinn"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "992b80adadf6": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Sile Silk talvevõistlus",
+   "id": "992b80adadf6",
+   "league": "Klubide võistlused",
+   "level": 3,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2027-01-15T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/sile-silk-talvevoistlus/",
+   "venue": "Tallinn"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "a8001b05ebd7": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Keila",
+   "home": "Kõik Meie Pardikesed, II etapp",
+   "id": "a8001b05ebd7",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2027-01-24T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/koik-meie-pardikesed-ii-etapp/",
+   "venue": "Keila"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "acfd24b37984": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Speedo Räimeralli 1. etapp",
+   "id": "acfd24b37984",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2027-01-23T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/speedo-raimeralli-1-etapp/",
+   "venue": "Tartu"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "ae7f15fd4593": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Viimsi",
+   "home": "Kilpkonna Cup VI etapp",
+   "id": "ae7f15fd4593",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2027-03-12T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/kilpkonna-cup-vi-etapp-2/",
+   "venue": "Viimsi"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "b5e14c9174f6": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Sillamäe",
+   "home": "Sillamäe Open",
+   "id": "b5e14c9174f6",
+   "league": "Lahtised võistlused ja karikad",
+   "level": 2,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2027-01-30T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/sillamae-open/",
+   "venue": "Sillamäe"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "b9b34031100c": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Viimsi",
+   "home": "Kilpkonna Cup IV etapp",
+   "id": "b9b34031100c",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2027-01-15T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/kilpkonna-cup-iv-etapp/",
+   "venue": "Viimsi"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "d081dee43559": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kaerepere",
+   "home": "Valtu Open",
+   "id": "d081dee43559",
+   "league": "Lahtised võistlused ja karikad",
+   "level": 2,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2027-02-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/valtu-open/",
+   "venue": "Kaerepere"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "d4dd6197bf46": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Ühel lainel",
+   "id": "d4dd6197bf46",
+   "league": "Klubide võistlused",
+   "level": 3,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2027-02-21T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/uhel-lainel/",
+   "venue": "Tartu"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "de26091a094f": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Anna Hoogu",
+   "id": "de26091a094f",
+   "league": "Klubide võistlused",
+   "level": 3,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2027-02-21T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/anna-hoogu/",
+   "venue": "Tartu"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "e38899d70ede": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "UK Briisi kontrollvõistlus",
+   "id": "e38899d70ede",
+   "league": "Klubide võistlused",
+   "level": 3,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2027-01-29T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/uk-briisi-kontrollvoistlus-4/",
+   "venue": "Nõmme ujula"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "eaf0b5621285": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Pärnu",
+   "home": "Sõprade kohtumine Pärnus",
+   "id": "eaf0b5621285",
+   "league": "Klubide võistlused",
+   "level": 3,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2027-01-30T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/soprade-kohtumine-parnus/",
+   "venue": "Raja ujula"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "f71a42e0c45a": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kohtla-Järve",
+   "home": "Ida-Virumaa ujumistähed I etapp",
+   "id": "f71a42e0c45a",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2027-01-30T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/ida-virumaa-ujumistahed-i-etapp/",
+   "venue": "Wiru Spordikeskus"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "f92969ad929b": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Kalevi Ujumiskooli Kontrollvõistlus",
+   "id": "f92969ad929b",
+   "league": "Klubide võistlused",
+   "level": 3,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2027-01-09T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/kalevi-ujumiskooli-kontrollvoistlus/",
+   "venue": "Kalev SPA"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "fb1aaff2c5af": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "home": "Noortesari",
+   "id": "fb1aaff2c5af",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2027-02-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/noortesari-4/",
+   "venue": "Tartu"
+  },
+  "first_seen": "2026-11-26"
+ }
+}

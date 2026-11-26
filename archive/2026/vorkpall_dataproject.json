@@ -2364,6 +2364,30 @@
     "from": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1628&ID=31&PID=32",
     "on": "2026-11-26",
     "to": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3676&ID=97&PID=147"
+   },
+   {
+    "field": "league",
+    "from": "Meistriliiga (naised)",
+    "on": "2026-11-26",
+    "to": "Balti liiga (naised)"
+   },
+   {
+    "field": "url",
+    "from": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3676&ID=97&PID=147",
+    "on": "2026-11-26",
+    "to": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1628&ID=31&PID=32"
+   },
+   {
+    "field": "league",
+    "from": "Balti liiga (naised)",
+    "on": "2026-11-26",
+    "to": "Meistriliiga (naised)"
+   },
+   {
+    "field": "url",
+    "from": "https://bvl-web.dataproject.com/MatchStatistics.aspx?mID=1628&ID=31&PID=32",
+    "on": "2026-11-26",
+    "to": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3676&ID=97&PID=147"
    }
   ],
   "event": {
@@ -4935,6 +4959,25 @@
    "venue": "Rakvere spordihall"
   },
   "first_seen": "2026-11-22"
+ },
+ "f8834b840b14": {
+  "changes": [],
+  "event": {
+   "away": "Rae Spordikool/VIASTON",
+   "city": "Viljandi",
+   "home": "Viljandi Metall",
+   "id": "f8834b840b14",
+   "league": "Eesti karikas (naised)",
+   "level": 1,
+   "result": "",
+   "source": "vorkpall_dataproject",
+   "sport": "vorkpall",
+   "start": "2026-12-02T19:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://evf-web.dataproject.com/MatchStatistics.aspx?mID=3678&ID=99&PID=149",
+   "venue": "Viljandi SH"
+  },
+  "first_seen": "2026-11-26"
  },
  "fbf1a5dcf81f": {
   "changes": [

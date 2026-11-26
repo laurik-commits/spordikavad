@@ -21,6 +21,20 @@
    "video": "https://www.youtube.com/watch?v=xpt_kEux5Kc",
    "video_by": "YouTube"
   },
+  "19b6c6067b12": {
+   "league": "Korvpall (kava järgi)",
+   "sport": "korvpall",
+   "start": "2026-12-02T19:00:00+02:00",
+   "video": "https://tv.delfi.ee/leht/ulekanded-kava",
+   "video_by": "Delfi TV"
+  },
+  "1a7862d56086": {
+   "league": "Korvpall (kava järgi)",
+   "sport": "korvpall",
+   "start": "2026-12-06T17:00:00+02:00",
+   "video": "https://tv.delfi.ee/leht/ulekanded-kava",
+   "video_by": "Delfi TV"
+  },
   "2398b9f5521d": {
    "league": "Balti liiga (mehed)",
    "sport": "vorkpall",
@@ -60,8 +74,8 @@
    "league": "FIBA MM 2027 valiksari (L-alagrupp)",
    "sport": "korvpall",
    "start": "2026-11-27T19:00:00+02:00",
-   "video": "https://go3.ee/live_tv",
-   "video_by": "Go3 (tasuline)"
+   "video": "https://jupiter.err.ee/1610194190/korvpalli-mm-valikmang",
+   "video_by": "ERR"
   },
   "3a4dc6488b18": {
    "league": "Balti liiga (mehed)",
@@ -175,6 +189,13 @@
    "video": "https://www.youtube.com/watch?v=XyazwlZanzM",
    "video_by": "YouTube"
   },
+  "9a68b0f0231d": {
+   "league": "Korvpall (kava järgi)",
+   "sport": "korvpall",
+   "start": "2026-12-06T17:00:00+02:00",
+   "video": "https://tv.delfi.ee/leht/ulekanded-kava",
+   "video_by": "Delfi TV"
+  },
   "9eb86e3439cb": {
    "league": "Meistriliiga (naised)",
    "sport": "kasipall",
@@ -237,6 +258,13 @@
    "start": "2026-11-14T16:00:00+02:00",
    "video": "https://www.youtube.com/watch?v=7X3A_wnk7A4",
    "video_by": "YouTube"
+  },
+  "c7e56158a6d4": {
+   "league": "Korvpall (kava järgi)",
+   "sport": "korvpall",
+   "start": "2026-12-06T18:00:00+02:00",
+   "video": "https://tv.delfi.ee/leht/ulekanded-kava",
+   "video_by": "Delfi TV"
   },
   "cc103301876c": {
    "league": "Meistriliiga (naised)",
