@@ -3,4 +3,6 @@ __pycache__/
 .venv/
 dist/
 build_report.json
-.claude/
+# .claude: ainult projekti alamagendid on repos, kohalikud seaded (settings.local.json jms) mitte
+.claude/*
+!.claude/agents/

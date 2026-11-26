@@ -42,6 +42,12 @@ ehitab ja avaldab iga päev GitHub Pagesi. Omanik tahab hooldusele kulutada peaa
 - Commit'i sõnum eesti keeles, ühe rea kokkuvõte + lühike loend; lõppu eeldatud attribuutiread. **Püsiv luba (omanik 2026-11-26): PR-i teeb ja merge'ib (squash) agent ise, küsimata**,
   kui testid läbivad; seejärel kontrolli ehituse tulemust (Actions) ja anna lühike kokkuvõte. Jätkuvalt omaniku käsitsi samm: kontod (Search Console, Cloudflare).
 
+## Alamagendid (`.claude/agents/`, omanik 2026-11-26 lubas kasutada töö keerukuse järgi)
+- `allika-adapter` (Sonnet): uus allikas või ala mustri järgi (kontroll robots.txt-ga, adapter, fixture-test, seadistus, päris vastuse vastu proov). Ei tee PR-i.
+- `ulevaataja` (Opus): loeb muudatuse üle enne merge'i (korrektsus, reeglid, testid, ehituse ja lehe mõju); ei muuda midagi.
+- Põhisessioon teeb arhitektuuri, ümberehitused ja raske silumise ise; mustritööd ja kiired kontrollid võib delegeerida. Uus alamagent: fail
+  `.claude/agents/<nimi>.md` (frontmatter `name`, `description`, `tools`, `model`); ainult need kaustas on repos, ülejäänud `.claude/` on gitignore'is.
+
 ## Uue ala lisamine (kontrollnimekiri)
 1. `sports.toml`: uus `[[sport]]` (+ vajadusel `[[group]]`). Test `tests/test_alad.py` ja `tests/test_sports_register.py` kontrollivad.
 2. Kui on adapter: `scrapers/<nimi>.py` + `config.toml [[source]]` (+ `venues.toml`, `[geo] foreign`/`place`) + fixture-test.
