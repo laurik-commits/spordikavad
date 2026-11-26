@@ -19,7 +19,14 @@
   "first_seen": "2026-11-22"
  },
  "2ca47ec169d5": {
-  "changes": [],
+  "changes": [
+   {
+    "field": "result",
+    "from": "",
+    "on": "2026-11-26",
+    "to": "8-1"
+   }
+  ],
   "event": {
    "away": "RĪGAS HS/DINABURGA",
    "city": "Tallinn",
@@ -27,7 +34,7 @@
    "id": "2ca47ec169d5",
    "league": "Optibet Hokiliiga",
    "level": 1,
-   "result": "",
+   "result": "8-1",
    "source": "jaahoki_optibet",
    "sport": "jaahoki",
    "start": "2026-11-25T19:00:00+02:00",

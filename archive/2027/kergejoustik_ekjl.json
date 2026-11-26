@@ -745,6 +745,25 @@
   },
   "first_seen": "2026-11-23"
  },
+ "7195fde67a20": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Jõhvi",
+   "home": "Jõhvi Sprint 2027",
+   "id": "7195fde67a20",
+   "league": "Täiskasvanute võistlused",
+   "level": 1,
+   "result": "",
+   "source": "kergejoustik_ekjl",
+   "sport": "kergejoustik",
+   "start": "2027-06-01T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://www.ekjl.ee/kalender/",
+   "venue": "Heino Lipu staadion"
+  },
+  "first_seen": "2026-11-26"
+ },
  "73d3f62304c9": {
   "changes": [],
   "event": {

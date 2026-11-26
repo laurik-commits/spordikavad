@@ -1,21 +1,6 @@
 {
- "updated": "2026-11-23T11:07:14+02:00",
+ "updated": "2026-11-26T05:54:22+02:00",
  "events": [
-  {
-   "id": "7dec2d2e5e5f",
-   "sport": "motosport",
-   "league": "Motokross",
-   "start": "2026-09-26T00:00:00+03:00",
-   "home": "Saku Tankodroomi Motokross 2026",
-   "away": "",
-   "venue": "Saku Tankodroom",
-   "city": "Saku",
-   "url": "https://msport.ee/events/tanko-mx-liiga-6-etapp-65-85cc-2026/",
-   "source": "motosport_emf",
-   "time_tbc": true,
-   "result": "",
-   "level": 1
-  },
   {
    "id": "299392969e6a",
    "sport": "motosport",

@@ -170,6 +170,25 @@
   },
   "first_seen": "2026-11-22"
  },
+ "89137a6e668a": {
+  "changes": [],
+  "event": {
+   "away": "Mustamäe Käsipalliklubi",
+   "city": "Valga",
+   "home": "Käsipalliklubi Käval",
+   "id": "89137a6e668a",
+   "league": "Esiliiga (mehed)",
+   "level": 2,
+   "result": "",
+   "source": "kasipall_liigad",
+   "sport": "kasipall",
+   "start": "2026-12-11T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://kasipall.ee/protocol/9535",
+   "venue": "Valga Spordihoone"
+  },
+  "first_seen": "2026-11-26"
+ },
  "8c9d3723f8b0": {
   "changes": [],
   "event": {

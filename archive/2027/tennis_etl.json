@@ -39,6 +39,46 @@
   },
   "first_seen": "2026-11-24"
  },
+ "09b765157547": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "end": "2027-02-27",
+   "home": "ITF Juniors Tartu",
+   "id": "09b765157547",
+   "league": "Tennis: tüdrukud ja poisid U18",
+   "level": 4,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2027-02-22T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "MK TK"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "1154c35e37bb": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-03-15",
+   "home": "Eesti Noorte GP",
+   "id": "1154c35e37bb",
+   "league": "Tennis: poisid U14",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2027-03-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "Tallink City SK"
+  },
+  "first_seen": "2026-11-26"
+ },
  "173561d77d9d": {
   "changes": [],
   "event": {
@@ -199,6 +239,65 @@
   },
   "first_seen": "2026-11-24"
  },
+ "408d4996f7dd": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Noorteliiga III",
+   "id": "408d4996f7dd",
+   "league": "Tennis: noorteliiga",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2027-02-20T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "Tondiraba TK"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "4e7b93251d7e": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "end": "2027-03-15",
+   "home": "Eesti Noorte GP",
+   "id": "4e7b93251d7e",
+   "league": "Tennis: tüdrukud U14",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2027-03-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "MK TK"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "51b1a325f1c5": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "end": "2027-03-14",
+   "home": "Tennis 10",
+   "id": "51b1a325f1c5",
+   "league": "Tennis: tüdrukud ja poisid U10",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2027-03-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "Tähtvere TK"
+  },
+  "first_seen": "2026-11-26"
+ },
  "54fc41e25e0b": {
   "changes": [],
   "event": {
@@ -238,6 +337,25 @@
    "venue": "Tähtvere TK"
   },
   "first_seen": "2026-11-24"
+ },
+ "68b58612cc98": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Haapsalu",
+   "home": "Paarismänguturniir",
+   "id": "68b58612cc98",
+   "league": "Tennis: noorteliiga",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2027-02-06T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "Haapsalu TK"
+  },
+  "first_seen": "2026-11-26"
  },
  "6cd823ec7828": {
   "changes": [],
@@ -299,6 +417,46 @@
   },
   "first_seen": "2026-11-24"
  },
+ "79e810d08fa7": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "end": "2027-03-30",
+   "home": "Eesti Noorte Karikavõistlused",
+   "id": "79e810d08fa7",
+   "league": "Tennis: TP12,14,16,18",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2027-03-26T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "Tartu, koht täpsustamisel"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "82445ae876c8": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Saue vald",
+   "end": "2027-02-21",
+   "home": "Eesti Noorte GP alagrupiturniir",
+   "id": "82445ae876c8",
+   "league": "Tennis: tüdrukud U14",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2027-02-20T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "Laagri TK"
+  },
+  "first_seen": "2026-11-26"
+ },
  "8c1225cb5a8f": {
   "changes": [],
   "event": {
@@ -339,6 +497,86 @@
   },
   "first_seen": "2026-11-24"
  },
+ "95317d38fc8f": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-02-14",
+   "home": "Klubide Karikavõistlused",
+   "id": "95317d38fc8f",
+   "league": "Tennis: mehed ja naised",
+   "level": 2,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2027-02-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "Tallinn, koht täpsustamisel"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "9767a545b1dd": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "end": "2027-03-07",
+   "home": "Klubide Karikavõistlused",
+   "id": "9767a545b1dd",
+   "league": "Tennis: mehed ja naised",
+   "level": 2,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2027-03-06T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "Tartu, koht täpsustamisel"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "9a157b157edf": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-02-28",
+   "home": "Noorteliiga II",
+   "id": "9a157b157edf",
+   "league": "Tennis: noorteliiga",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2027-02-27T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "US Tenniseakadeemia"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "9ece178224c4": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Harku vald",
+   "end": "2027-02-14",
+   "home": "Paarismänguturniir",
+   "id": "9ece178224c4",
+   "league": "Tennis: noorteliiga",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2027-02-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "Tabasalu TK"
+  },
+  "first_seen": "2026-11-26"
+ },
  "a88fa82ff66a": {
   "changes": [],
   "event": {
@@ -359,6 +597,26 @@
   },
   "first_seen": "2026-11-24"
  },
+ "a9bd3b80e869": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-03-07",
+   "home": "Klubide Karikavõistlused",
+   "id": "a9bd3b80e869",
+   "league": "Tennis: TP10,11,13",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2027-03-06T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "Tallinn, koht täpsustamisel"
+  },
+  "first_seen": "2026-11-26"
+ },
  "b46312f1286f": {
   "changes": [],
   "event": {
@@ -377,6 +635,66 @@
    "venue": "Tallink City SK"
   },
   "first_seen": "2026-11-24"
+ },
+ "b574cc2b71c1": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Saue vald",
+   "end": "2027-02-28",
+   "home": "Noorteliiga II",
+   "id": "b574cc2b71c1",
+   "league": "Tennis: noorteliiga",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2027-02-27T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "Laagri TK"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "bfb846ec4b36": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "end": "2027-03-06",
+   "home": "ITF Juniors Tallinn",
+   "id": "bfb846ec4b36",
+   "league": "Tennis: tüdrukud ja poisid U18",
+   "level": 4,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2027-03-01T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "Tallink City SK"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "c558b0affb31": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "end": "2027-02-07",
+   "home": "Eesti Noorte GP alagrupiturniir",
+   "id": "c558b0affb31",
+   "league": "Tennis: tüdrukud U12",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2027-02-06T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "MK TK"
+  },
+  "first_seen": "2026-11-26"
  },
  "d4a43d1fa928": {
   "changes": [],
@@ -416,5 +734,64 @@
    "venue": "Tallink City SK"
   },
   "first_seen": "2026-11-24"
+ },
+ "e5b23e2019c0": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "end": "2027-02-21",
+   "home": "Eesti Noorte GP alagrupiturniir",
+   "id": "e5b23e2019c0",
+   "league": "Tennis: poisid U14",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2027-02-20T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "Tähtvere TK"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "f43877b6704c": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tartu",
+   "end": "2027-02-07",
+   "home": "Eesti Noorte GP alagrupiturniir",
+   "id": "f43877b6704c",
+   "league": "Tennis: poisid U12",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2027-02-06T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "Tähtvere TK"
+  },
+  "first_seen": "2026-11-26"
+ },
+ "ff28c0f50d85": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Tallinn",
+   "home": "Noorteliiga III 75%",
+   "id": "ff28c0f50d85",
+   "league": "Tennis: noorteliiga",
+   "level": 3,
+   "result": "",
+   "source": "tennis_etl",
+   "sport": "tennis",
+   "start": "2027-03-21T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://tennis.ee/kalender/",
+   "venue": "FV Tennis (Tallinn)"
+  },
+  "first_seen": "2026-11-26"
  }
 }

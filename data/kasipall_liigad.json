@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T05:54:36+02:00",
+ "updated": "2026-11-26T05:52:07+02:00",
  "events": [
   {
    "id": "7d2f7876927e",
@@ -176,6 +176,21 @@
    "venue": "Viimsi kooli spordikeskus",
    "city": "Viimsi",
    "url": "https://kasipall.ee/protocol/9539",
+   "source": "kasipall_liigad",
+   "time_tbc": false,
+   "result": "",
+   "level": 2
+  },
+  {
+   "id": "89137a6e668a",
+   "sport": "kasipall",
+   "league": "Esiliiga (mehed)",
+   "start": "2026-12-11T19:00:00+02:00",
+   "home": "Käsipalliklubi Käval",
+   "away": "Mustamäe Käsipalliklubi",
+   "venue": "Valga Spordihoone",
+   "city": "Valga",
+   "url": "https://kasipall.ee/protocol/9535",
    "source": "kasipall_liigad",
    "time_tbc": false,
    "result": "",

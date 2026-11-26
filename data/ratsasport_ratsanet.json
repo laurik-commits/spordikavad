@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T13:58:37+02:00",
+ "updated": "2026-11-26T05:54:25+02:00",
  "events": [
   {
    "id": "27fe55727089",
@@ -462,6 +462,22 @@
    "end": "2027-04-18"
   },
   {
+   "id": "864efc540cf8",
+   "sport": "ratsasport",
+   "league": "Takistussõit",
+   "start": "2027-04-23T00:00:00+03:00",
+   "home": "Valgeranna hooaja avamine",
+   "away": "",
+   "venue": "Valgeranna Tall",
+   "city": "Valgeranna",
+   "url": "https://ratsanet.ee/events/4775",
+   "source": "ratsasport_ratsanet",
+   "time_tbc": true,
+   "result": "",
+   "level": 1,
+   "end": "2027-04-25"
+  },
+  {
    "id": "6e0b1c0c3e61",
    "sport": "ratsasport",
    "league": "Kolmevõistlus",
@@ -743,6 +759,22 @@
    "end": "2027-05-30"
   },
   {
+   "id": "c1c48e704244",
+   "sport": "ratsasport",
+   "league": "Takistussõit",
+   "start": "2027-05-28T00:00:00+03:00",
+   "home": "Ruila Kevad",
+   "away": "",
+   "venue": "Ruila",
+   "city": "Ruila",
+   "url": "https://ratsanet.ee/events/4777",
+   "source": "ratsasport_ratsanet",
+   "time_tbc": true,
+   "result": "",
+   "level": 1,
+   "end": "2027-05-30"
+  },
+  {
    "id": "f7bfcdac4182",
    "sport": "ratsasport",
    "league": "Takistussõit",
@@ -832,7 +864,8 @@
    "source": "ratsasport_ratsanet",
    "time_tbc": true,
    "result": "",
-   "level": 1
+   "level": 1,
+   "end": "2027-06-06"
   },
   {
    "id": "19fa1e67ce96",
@@ -957,53 +990,6 @@
    "result": "",
    "level": 1,
    "end": "2027-06-27"
-  },
-  {
-   "id": "43ff421bd2cd",
-   "sport": "ratsasport",
-   "league": "Kestvusratsutamine",
-   "start": "2027-06-29T00:00:00+03:00",
-   "home": "CEI3*/CEI2*/CEI1*/CEIYJ2*/CEIYJ1*",
-   "away": "",
-   "venue": "Padise",
-   "city": "Padise",
-   "url": "https://ratsanet.ee/events/4720",
-   "source": "ratsasport_ratsanet",
-   "time_tbc": true,
-   "result": "",
-   "level": 1,
-   "end": "2027-07-04"
-  },
-  {
-   "id": "2424e20efdc1",
-   "sport": "ratsasport",
-   "league": "Takistussõit",
-   "start": "2027-07-02T00:00:00+03:00",
-   "home": "Kukulinna Suvi",
-   "away": "",
-   "venue": "Kukulinna tall",
-   "city": "Kukulinna",
-   "url": "https://ratsanet.ee/events/4743",
-   "source": "ratsasport_ratsanet",
-   "time_tbc": true,
-   "result": "",
-   "level": 1,
-   "end": "2027-07-04"
-  },
-  {
-   "id": "cd21c5b842dd",
-   "sport": "ratsasport",
-   "league": "Takistussõit",
-   "start": "2027-07-03T00:00:00+03:00",
-   "home": "THK Suvekarikas",
-   "away": "",
-   "venue": "Tori Hobusekasvandus",
-   "city": "Tori",
-   "url": "https://ratsanet.ee/events/4699",
-   "source": "ratsasport_ratsanet",
-   "time_tbc": true,
-   "result": "",
-   "level": 3
   }
  ]
 }

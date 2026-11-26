@@ -151,7 +151,8 @@
    "url": "https://ratsanet.ee/events/4743",
    "venue": "Kukulinna tall"
   },
-  "first_seen": "2026-11-23"
+  "first_seen": "2026-11-23",
+  "missing_since": "2026-11-26"
  },
  "243b5c84f270": {
   "changes": [],
@@ -350,7 +351,8 @@
    "url": "https://ratsanet.ee/events/4720",
    "venue": "Padise"
   },
-  "first_seen": "2026-11-23"
+  "first_seen": "2026-11-23",
+  "missing_since": "2026-11-26"
  },
  "4420ef0bbe35": {
   "changes": [],
@@ -585,6 +587,26 @@
    "venue": "Ihaste Ratsakool"
   },
   "first_seen": "2026-11-23"
+ },
+ "864efc540cf8": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Valgeranna",
+   "end": "2027-04-25",
+   "home": "Valgeranna hooaja avamine",
+   "id": "864efc540cf8",
+   "league": "Takistussõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-04-23T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4775",
+   "venue": "Valgeranna Tall"
+  },
+  "first_seen": "2026-11-26"
  },
  "889bc3d06dc0": {
   "changes": [],
@@ -899,6 +921,26 @@
   },
   "first_seen": "2026-11-23"
  },
+ "c1c48e704244": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Ruila",
+   "end": "2027-05-30",
+   "home": "Ruila Kevad",
+   "id": "c1c48e704244",
+   "league": "Takistussõit",
+   "level": 1,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-05-28T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4777",
+   "venue": "Ruila"
+  },
+  "first_seen": "2026-11-26"
+ },
  "cb8e46d45748": {
   "changes": [],
   "event": {
@@ -937,7 +979,8 @@
    "url": "https://ratsanet.ee/events/4699",
    "venue": "Tori Hobusekasvandus"
   },
-  "first_seen": "2026-11-23"
+  "first_seen": "2026-11-23",
+  "missing_since": "2026-11-26"
  },
  "cf2999402f55": {
   "changes": [],
@@ -1040,6 +1083,7 @@
   "event": {
    "away": "",
    "city": "Kukulinna",
+   "end": "2027-06-06",
    "home": "Kukulinna Suvealgus",
    "id": "e55f947438fb",
    "league": "Takistussõit",
