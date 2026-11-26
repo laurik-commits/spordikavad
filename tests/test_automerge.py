@@ -67,7 +67,7 @@ class GateTest(unittest.TestCase):
                 self.assertTrue(any(message in p for p in problems), problems)
 
     def test_invalid_file_and_limits(self):
-        self.assertIn("tundmatu ala", run(ENTRY.replace('"korvpall"', '"kurling"'))[0])
+        self.assertIn("tundmatu ala", run(ENTRY.replace('"korvpall"', '"petank"'))[0])
         many = "".join(ENTRY.replace("BC Kalev/Cramo", f"Klubi {i}") for i in range(11))
         self.assertTrue(any("uusi kirjeid 11" in p for p in run(many)))
 

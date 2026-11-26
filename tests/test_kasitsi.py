@@ -71,7 +71,7 @@ class ParseTest(unittest.TestCase):
 
     def test_errors_name_entry_and_problem(self):
         cases = {
-            "sport": ('"kurling"', "tundmatu ala"),
+            "sport": ('"petank"', "tundmatu ala"),
             "level": ("3", "tase 3 pole lubatud"),
             "kind": ('"pidu"', "tundmatu liik"),
             "url": ('"https://www.facebook.com/klubi/posts/1"', "sotsiaalmeedia"),

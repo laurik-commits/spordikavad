@@ -354,6 +354,16 @@ Korvpalli meistriliiga mänge, mida klubilehed ei näita (TalTech, Viimsi, TÜ k
 - **Uue meeskonna lisamine:** lisa `[[koduhall]]` rida, kontrolli koduhall klubi lehelt või varasematest mängudest. 2026-11-25 kontrollitud: Keila KK → Keila Tervisekeskus ja Viimsi → Forus Spordikeskus Viimsi (data/korvpall_kalev.json), TalTech → TalTechi spordihall, TÜ → Tartu Ülikooli spordihoone. Pärnu → Pärnu Spordihoone (BC Pärnu kodumängud Kalevi lehel), Kalev → ainult Tallinn.
 - Käsipallile, võrkpallile ja teistele aladele sama saab, kui lisada nende klubide `[[koduhall]]` read.
 
+## Kurling ✅ ja hooajavälised alad vahele (kontrollitud 2026-11-26)
+
+- **Kurling ✅** adapter `kurling_ekl`: Eesti Curlingu Liit, https://kurling.ee/kalender/ (robots.txt lubab kõike). The Events Calendar REST-voog `wp-json/tribe/events/v1/events?per_page=100&start_date=…` (avalik, JSON). Terve päeva sündmused, mitmepäevasel algus ja lõpp. Ainult `venue.country == "Eesti"` (Tondiraba jäähall): Eesti MV ja Tallinna MK-etapp → tase 1, MM-kvalifikatsioonimängud ja turniirid → tase 2. Koondiste välismaa võistlused (Östersund, Lohja, Genf jm) jäävad välja, sest koha väljal pole riiki. Ala `kurling` on Talialade rühmas. Fixture: `tests/fixtures/kurling_ekl.json` (7 sündmust).
+- **Triatlon ⏭** triatlon.ee/voistlused/kalender/ (robots lubab). Hooajaväline (karikasari kevad–sügis), 2027 kalender pole avaldatud, kalender on JavaScripti vidin (HTML-is ainult filtrid). Vaata uuesti kevadel.
+- **Jalgrattasport ⏭** ejl.ee/voistlused/ (robots lubab). Hooajaväline, nähtavad ainult 2026 võistlused (23.05–25.06), nimekiri laetakse JavaScriptiga. Vaata uuesti kevadel.
+- **Ragbi ⏭** rugby.ee: sait ei vastanud kontrollimisel (ühenduse viga, robots.txt-i ei saanud lugeda). docs/uued-alad.md järgi iCal `/events/?ical=1`, hooajaväline. Vaata uuesti kevadel.
+- **Rannavõrkpall ⏭** hooajaväline (suvi); võrkpalli liit (volley.ee) robots lubab, kuid rannavõrkpalli kalendrit pole eraldi leitud. Vaata uuesti kevadel.
+- **Vehklemine ⏭** omaniku otsus 2026-11-25: hiljem. **Täpsusalad ⏭** omaniku järjekorras viimased.
+- Kui hooajaväline ala saab andmeid, lisa: `sports.toml` plokk, adapter + fixture-test, `config.toml`, `allikad.toml`, siia osa.
+
 ## Pistekontroll 2026-11-20
 
 Iga allika kohta üks mäng lehel olevatest andmetest, võrreldud allika enda mängulehega:
