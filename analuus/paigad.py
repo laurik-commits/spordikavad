@@ -8,7 +8,9 @@ Miks: üks kompleks on andmetes sageli mitu kohta (nt „Maarjamäe staadion“ 
     linn = "Tallinn"
     lat = 59.4297
     lon = 24.8350
-    tapsus = "tapne"                      # "tapne" = koht leitud, "linn" = ainult linna keskpunkt (kohta ei leitud või koha asemel on linn)
+    tapsus = "tapne"                      # "tapne" = OSM-objekt nimega ühtib, "umbes" = sama kompleks/piirkond (nimi ei ühti täpselt),
+                                          # "linn" = ainult linna keskpunkt (kohta ei leitud või koha asemel on linn)
+    osm = "way/599357226"                 # OpenStreetMapi objekt (valikuline)
     kohad = ["Maarjamäe staadion", "Maarjamäe kunstmuruväljak"]   # venues.toml nimed (sama paik)
     kontrollitud = true                   # käsitsi kontrollitud kaardil (valikuline)
 
@@ -26,7 +28,7 @@ from pathlib import Path
 
 PATH = Path(__file__).resolve().parent.parent / "paigad.toml"
 EESTI = (57.45, 59.85, 21.7, 28.3)    # lat min/max, lon min/max: kaugemad punktid on vigased
-TAPSUS = ("tapne", "linn")
+TAPSUS = ("tapne", "umbes", "linn")
 
 
 @dataclass(frozen=True)
@@ -38,6 +40,7 @@ class Paik:
     tapsus: str
     kohad: tuple[str, ...]
     kontrollitud: bool = False
+    osm: str = ""                                  # OpenStreetMapi objekt (`way/123`), kust koordinaat pärineb
     aliased: tuple[str, ...] = field(default=())   # venues.toml nimevariandid (täidetakse laadimisel)
 
 
@@ -64,7 +67,7 @@ class Paigad:
                 raise ValueError(f"{m['nimi']}: koordinaadid ({lat}, {lon}) pole Eestis")
             kohad = tuple(m["kohad"])
             al = tuple(sorted({a for k in kohad for a in aliases.get(k, [])}))
-            out.append(Paik(m["nimi"], m["linn"], lat, lon, m["tapsus"], kohad, bool(m.get("kontrollitud", False)), al))
+            out.append(Paik(m["nimi"], m["linn"], lat, lon, m["tapsus"], kohad, bool(m.get("kontrollitud", False)), m.get("osm", ""), al))
         return cls(out)
 
     def paik_of(self, venue: str) -> Paik | None:

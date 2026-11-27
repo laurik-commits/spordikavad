@@ -149,6 +149,14 @@ class GeokoodTest(unittest.TestCase):
                       nimi="Lasnamäe staadion")
         self.assertEqual(r["tapsus"], "linn")
 
+    def test_place_or_district_match_is_only_approximate(self):
+        # „Laagri, Saue vald“ annab asula, mitte staadioni: pole „tapne“
+        r = self._run({"Laagri kunstmurustaadion, Tallinn": [{"lat": "59.43", "lon": "24.72", "category": "place", "type": "village", "name": "Laagri"}]},
+                      nimi="Laagri kunstmurustaadion")
+        self.assertEqual(r["tapsus"], "umbes")
+        r2 = self._run({"Raja jalgpallihall, Tallinn": [{"lat": "59.43", "lon": "24.71", "category": "building", "type": "sports_hall", "name": "Raja"}]})
+        self.assertEqual(r2["tapsus"], "tapne")
+
     def test_prefers_sports_object_over_street(self):
         r = self._run({"Raja jalgpallihall, Tallinn": [{"lat": "59.431", "lon": "24.711", "category": "place", "name": "Raja", "display_name": "p"},
                                                         {"lat": "59.43", "lon": "24.72", "category": "leisure", "name": "Raja jalgpallihall", "display_name": "l"}]})

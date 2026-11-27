@@ -3,8 +3,8 @@
     python -m analuus.geokodeeri --puudu              # geokodeerib kohad, millel `paigad.toml`-is veel paika pole, ja kirjutab JSON-i
     python -m analuus.geokodeeri --valja tulemus.json # kuhu tulemus kirjutatakse (vaikimisi stdout)
 
-Tulemus on ettepanek, mitte lõplik tabel: iga koht saab kandidaadi, mille kaugus linna keskpunktist ei ületa piiri; muidu langeb tagasi
-linna keskpunkti (`tapsus = "linn"`). Tippkohad kontrollitakse käsitsi enne `paigad.toml`-i kirjutamist. Päringute tulemusi hoitakse lokaalselt (`--vahemalu`),
+Tulemus on ettepanek, mitte lõplik tabel: `tapne` = OSM-i spordiobjekt (leisure/sport/spordihoone), mille nimi ühtib; `umbes` = lähedal olev muu objekt
+(asula, linnaosa, kool); `linn` = linna keskpunkt (kohta ei leitud). Kandidaadi kaugus linna keskpunktist ei tohi ületada piiri. Tippkohad kontrollitakse käsitsi enne `paigad.toml`-i kirjutamist. Päringute tulemusi hoitakse lokaalselt (`--vahemalu`),
 nii et sama koht ei tule teist korda.
 """
 
@@ -25,7 +25,12 @@ UA = "elakaasa-bot/0.1 (+https://elakaasa.ee/; info@elakaasa.ee)"
 PAUS = 1.1          # sekundit päringute vahel (Nominatimi kasutuspoliitika)
 RAADIUS_KM = 12.0   # kandidaat peab olema nii lähedal linna keskpunktile
 RAADIUS_VALD_KM = 25.0
-HEAD = {"leisure", "sport", "building", "amenity", "tourism", "man_made", "highway"}
+SPORDIHOONED = {"sports_hall", "stadium", "sports_centre", "gymnasium", "sports_hall;school"}
+
+
+def on_spordiobjekt(c: dict) -> bool:
+    """Täpne vaste: spordiobjekt (leisure/sport) või spordihoone. Asula, linnaosa, tänav, kool jms on ainult „umbes“."""
+    return c.get("category") in ("leisure", "sport") or (c.get("category") == "building" and c.get("type") in SPORDIHOONED)
 _last = [0.0]
 
 
@@ -107,6 +112,7 @@ def geokodeeri(nimi: str, city: str, vahemalu: dict) -> dict:
         return {"tapsus": "puudub", "paring": "", "osm": "linna keskpunkti ei leitud"}
     if nimi == city or "täpsustamisel" in nimi:
         return {"lat": kesk[0], "lon": kesk[1], "tapsus": "linn", "osm": f"{city} keskpunkt", "paring": city, "kaugus_km": 0.0}
+    umbes = None
     for q in variandid(nimi, city):
         key = f"koht|{q}"
         if key not in vahemalu:
@@ -116,12 +122,17 @@ def geokodeeri(nimi: str, city: str, vahemalu: dict) -> dict:
             p = (float(c["lat"]), float(c["lon"]))
             d = kaugus_km(p, kesk)
             if d <= piir and sobib(c, nimi, city):
-                kand.append((0 if c.get("category") in HEAD else 1, d, c))
-        if kand:
-            _, d, c = sorted(kand, key=lambda x: (x[0], x[1]))[0]
-            return {"lat": round(float(c["lat"]), 6), "lon": round(float(c["lon"]), 6), "tapsus": "tapne",
-                    "osm": c.get("display_name", "")[:140], "osm_id": f"{c.get('osm_type')}/{c.get('osm_id')}", "paring": q,
-                    "kaugus_km": round(d, 1)}
+                kand.append((0 if on_spordiobjekt(c) else 1, d, c))
+        for _, d, c in sorted(kand, key=lambda x: (x[0], x[1])):
+            vaste = {"lat": round(float(c["lat"]), 6), "lon": round(float(c["lon"]), 6), "tapsus": "tapne" if on_spordiobjekt(c) else "umbes",
+                     "osm": c.get("display_name", "")[:140], "osm_id": f"{c.get('osm_type')}/{c.get('osm_id')}", "paring": q,
+                     "kaugus_km": round(d, 1)}
+            if vaste["tapsus"] == "tapne":
+                return vaste
+            umbes = umbes or vaste
+            break
+    if umbes:
+        return umbes   # asula, linnaosa, kool vms: lähedal, aga mitte täpne rajatis
     return {"lat": kesk[0], "lon": kesk[1], "tapsus": "linn", "osm": f"{city} keskpunkt (koha ei leitud)", "paring": nimi, "kaugus_km": 0.0}
 
 
