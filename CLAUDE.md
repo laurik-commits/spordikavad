@@ -24,6 +24,9 @@ ehitab ja avaldab iga päev GitHub Pagesi. Omanik tahab hooldusele kulutada peaa
   kes mida näitab, kavad (Delfi, ERR, Go3), `[[koduhall]]` (kava rida → mäng)
 - `build.py` (ehitus, leht, sitemap, mängulehed `/m/<id>/` KÕIGIL mängudel, ala- ja liigalehed `/<ala>/…`; `game_title`, `event_ld`),
   `site/*.html` (`game.html` mängulehed, `list.html` ala- ja liigalehed), `site/style.css`, `site/app.js`, `site/kalender.js`
+- `site/praktikum/`: eraldiseisev praktikumi alamleht `/praktikum/` (omaniku TalTechi praktikum, tegi ChatGPT, avaldatud 2026-11-27): staatiline `index.html` + `assets/` (PDF, DOCX),
+  `build.py` kopeerib kausta `site/praktikum/` väljundisse; `noindex, nofollow, noarchive`, sitemapis, menüüs ja statistikas pole, test `test_praktikum_is_private_from_navigation_and_search`.
+  **Avalik** (GitHub Pages ei piira ligipääsu), seega ei pane sinna isikuandmeid ega salajast. Uus fail: pane `assets/` alla ja lisa link `index.html`-i.
 - `ogimage.py` + `site/fonts/`: mängu OG-pilt (Pillow, DejaVu; igale eelseisvale mängule `m/<id>/og.png`, muul juhul üldine `og.png`)
 - `scripts/`: `automerge_check.py` (agendi PR-i kontroll), `report_issues.py` (katkised allikad → GitHub Issue ja rida `MAINTENANCE.md`-i),
   `maintenance_log.py` (hoolduslogi ja kokkuvõte)
