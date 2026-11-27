@@ -1,0 +1,50 @@
+# Meeskonnanimede aliased (vt analuus/meeskonnad.py). Suur-/väiketähed, kirjavahemärgid ja täpitähed ühtlustatakse ise
+# („Barrus/Võru VK“ = „BARRUS/Võru VK“ = „Barrus Võru VK“), siia tulevad ainult erinevad nimed, mis on SAMA meeskond.
+# Noorte- ja teise võistkonna nimed (U-20, II, (13)) on tahtlikult eraldi meeskonnad: ära liida neid põhimeeskonnaga.
+# Kandidaadid ülevaatuseks:  python -m analuus.meeskonnad   (kontrollimata ei liida: nt „Sparta“ ~ „Sparta Team Automaailm“,
+# „Pärnu SK/VK“ ~ „PÄRNU VK“, „Audentese SG“ ~ „Audentese SG / NT“).
+
+[[meeskond]]
+sport = "korvpall"
+nimi = "Valmiera Glass VIA"
+aliased = ["Valmiera"]
+
+[[meeskond]]
+sport = "korvpall"
+nimi = "BK Ventspils"
+aliased = ["Ventspils"]
+
+[[meeskond]]
+sport = "korvpall"
+nimi = "BK Ogre"
+aliased = ["Ogre"]
+
+[[meeskond]]
+sport = "korvpall"
+nimi = "BC Pärnu"
+aliased = ["Pärnu"]
+
+[[meeskond]]
+sport = "jaahoki"
+nimi = "Viru Sputnik"
+aliased = ["SK Viru Sputnik", "Tornaado / Viru Sputnik"]
+
+[[meeskond]]
+sport = "kasipall"
+nimi = "Tallinna Mistra"
+aliased = ["Mistra"]
+
+[[meeskond]]
+sport = "kasipall"
+nimi = "SK Tapa/Tapa valla Spordikool"
+aliased = ["Tapa valla Spordikool/SK Tapa"]
+
+[[meeskond]]
+sport = "jalgpall"
+nimi = "Tallinna FC Flora U19"
+aliased = ["FC Flora U19"]
+
+[[meeskond]]
+sport = "vorkpall"
+nimi = "Selver x TalTech"
+aliased = ["Selver xTalTech"]

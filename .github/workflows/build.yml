@@ -47,13 +47,18 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: python scripts/report_issues.py
 
+      - name: Nädalaraport (üllatused, seeriad, tasavägised mängud, rekordid)
+        # kirjutab raportid/<nädal>.md ja .json; sama nädala raport kirjutatakse üle (korduv), viga ei tohi avaldamist takistada
+        continue-on-error: true
+        run: python -m analuus.nadalaraport
+
       - name: Salvesta uuendatud andmed
         # ei tohi avaldamist takistada (nt kui main on vahepeal liikunud)
         continue-on-error: true
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ archive/ MAINTENANCE.md
+          git add data/ archive/ MAINTENANCE.md raportid/
           if git diff --cached --quiet; then
             echo "Andmed ei muutunud"
           else
