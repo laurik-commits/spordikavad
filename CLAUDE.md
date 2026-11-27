@@ -31,6 +31,9 @@ ehitab ja avaldab iga päev GitHub Pagesi. Omanik tahab hooldusele kulutada peaa
   `meeskonnad.py` ühtlustab meeskonnanimed (`meeskonnad.toml` aliased; kandidaadid: `python -m analuus.meeskonnad`), `lood.py` detektorid (üllatused tabeli järgi,
   seeriad, tasavägised, rekordid), `nadalaraport.py` kirjutab `raportid/<nädal>.md` ja `.json` (töövoog igal ehitusel; sama nädal kirjutatakse üle). Tulemused on ainult
   7 alal, jalgpall on 92% neist; tabelit andmetes pole (arvutatakse), seetõttu loe `analuus/lood.py` docstringi enne tulemuste tõlgendamist.
+- `paigad.toml` + `analuus/paigad.py` + `analuus/geokodeeri.py`: toimumiskohtade tabel: **paik** = üks või mitu `venues.toml` kohta ühe koordinaadiga (duplikaadid seotud),
+  `tapsus` = `tapne` (OSM spordiobjekt, nimi ühtib) | `umbes` (lähedal olev objekt, asula, kool) | `linn` (ainult linna keskpunkt). Uus koht lehel:
+  `python -m analuus.paigad --puudu`, siis `python -m analuus.geokodeeri` (Nominatim, 1 päring sekundis) ja lisa tulemus `paigad.toml`-i; test nõuab ≥ 95% mängudest paigaga.
 - `ogimage.py` + `site/fonts/`: mängu OG-pilt (Pillow, DejaVu; igale eelseisvale mängule `m/<id>/og.png`, muul juhul üldine `og.png`)
 - `scripts/`: `automerge_check.py` (agendi PR-i kontroll), `report_issues.py` (katkised allikad → GitHub Issue ja rida `MAINTENANCE.md`-i),
   `maintenance_log.py` (hoolduslogi ja kokkuvõte)
