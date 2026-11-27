@@ -1,21 +1,6 @@
 {
- "updated": "2026-11-26T05:54:22+02:00",
+ "updated": "2026-11-27T05:55:47+02:00",
  "events": [
-  {
-   "id": "299392969e6a",
-   "sport": "motosport",
-   "league": "e-bike",
-   "start": "2026-09-27T00:00:00+03:00",
-   "home": "PMC Maardu Särtsukad VI etapp",
-   "away": "",
-   "venue": "Maardu",
-   "city": "Maardu",
-   "url": "https://msport.ee/events/pmc-maardu-sartsukad-vi-etapp/",
-   "source": "motosport_emf",
-   "time_tbc": true,
-   "result": "",
-   "level": 4
-  },
   {
    "id": "6abbd9fb82ae",
    "sport": "motosport",
