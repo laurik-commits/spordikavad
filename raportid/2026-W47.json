@@ -2,16 +2,16 @@
  "nadal": "2026-W47",
  "algus": "2026-11-16",
  "lopp": "2026-11-22",
- "mange_tulemusega": 13,
+ "mange_tulemusega": 14,
  "mange_alade_kaupa": {
-  "vorkpall": 5,
+  "vorkpall": 6,
   "saalijalgpall": 4,
   "korvpall": 2,
   "jalgpall": 1,
   "jaahoki": 1
  },
  "mange_taseme_kaupa": {
-  "Tipp": 11,
+  "Tipp": 12,
   "Noored": 1,
   "Koondised": 1
  },

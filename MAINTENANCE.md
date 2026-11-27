@@ -8,10 +8,10 @@ muud asja parandab (inimene või agent, üks rida: mis oli katki, mis parandus o
 
 | Kuu | Avatud | Suletud | Käsitsi parandusi |
 |---|---|---|---|
-| 2026-11 | 11 | 10 | 0 |
-| **Kokku** | **11** | **10** | **0** |
+| 2026-11 | 12 | 10 | 0 |
+| **Kokku** | **12** | **10** | **0** |
 
-- Praegu avatud automaatseid Issue'sid: **1**: [#21](https://github.com/laurik-commits/spordikavad/issues/21) Tundmatud toimumiskohad
+- Praegu avatud automaatseid Issue'sid: **2**: [#21](https://github.com/laurik-commits/spordikavad/issues/21) Tundmatud toimumiskohad, [#72](https://github.com/laurik-commits/spordikavad/issues/72) Allikas katki: jaahoki_everest
 - Keskmine aeg avamisest sulgemiseni: 0.6 päeva (10 suletud Issue't)
 
 ## Käsitsi hooldus
@@ -45,3 +45,4 @@ muud asja parandab (inimene või agent, üks rida: mis oli katki, mis parandus o
 | 2026-11-26 | suletud | [#62](https://github.com/laurik-commits/spordikavad/issues/62) Allikas katki: kava_err | algseis, sulgemise kuupäev ligikaudu |
 | 2026-11-27 | uuendatud | [#21](https://github.com/laurik-commits/spordikavad/issues/21) Tundmatud toimumiskohad | nimekiri muutus |
 | 2026-11-27 | suletud | [#7](https://github.com/laurik-commits/spordikavad/issues/7) Allikas katki: korvpall_ut | Allikas töötab jälle |
+| 2026-11-27 | avatud | [#72](https://github.com/laurik-commits/spordikavad/issues/72) Allikas katki: jaahoki_everest |  |
