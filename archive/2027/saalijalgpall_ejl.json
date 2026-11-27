@@ -76,7 +76,14 @@
   "first_seen": "2026-11-22"
  },
  "48d3f6edfb49": {
-  "changes": [],
+  "changes": [
+   {
+    "field": "start",
+    "from": "2027-01-17T17:00:00+02:00",
+    "on": "2026-11-27",
+    "to": "2027-01-17T12:00:00+02:00"
+   }
+  ],
   "event": {
    "away": "U-18 Põlva FC Lootos",
    "city": "Jõhvi",
@@ -87,7 +94,7 @@
    "result": "",
    "source": "saalijalgpall_ejl",
    "sport": "saalijalgpall",
-   "start": "2027-01-17T17:00:00+02:00",
+   "start": "2027-01-17T12:00:00+02:00",
    "time_tbc": false,
    "url": "https://jalgpall.ee/voistlused/match_info/197370",
    "venue": "Jõhvi Spordihall"

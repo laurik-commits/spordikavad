@@ -1,0 +1,268 @@
+{
+ "2384ae96a6bf": {
+  "changes": [],
+  "event": {
+   "away": "Iraklis BC (GRE)",
+   "city": "Tartu",
+   "home": "Tartu Ülikool Maks&Moorits",
+   "id": "2384ae96a6bf",
+   "league": "FIBA Europe Cup",
+   "level": 1,
+   "result": "101-100",
+   "source": "korvpall_ut",
+   "sport": "korvpall",
+   "start": "2026-10-28T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://basket.ut.ee/kalender-26-27/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-27"
+ },
+ "29531d4120f0": {
+  "changes": [],
+  "event": {
+   "away": "TalTech/ALEXELA",
+   "city": "Tartu",
+   "home": "Tartu Ülikool Maks&Moorits",
+   "id": "29531d4120f0",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "65-41",
+   "source": "korvpall_ut",
+   "sport": "korvpall",
+   "start": "2026-10-24T19:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://basket.ut.ee/kalender-26-27/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-27"
+ },
+ "37ab0e8044c2": {
+  "changes": [],
+  "event": {
+   "away": "Larnaca Petrolina",
+   "city": "Tartu",
+   "home": "Tartu Ülikool Maks&Moorits",
+   "id": "37ab0e8044c2",
+   "league": "FIBA Europe Cup",
+   "level": 1,
+   "result": "",
+   "source": "korvpall_ut",
+   "sport": "korvpall",
+   "start": "2026-12-09T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://basket.ut.ee/kalender-26-27/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-27"
+ },
+ "4f9f678c9fc5": {
+  "changes": [],
+  "event": {
+   "away": "Bigbank/Kalev",
+   "city": "Tartu",
+   "home": "Tartu Ülikool Maks&Moorits",
+   "id": "4f9f678c9fc5",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "90-63",
+   "source": "korvpall_ut",
+   "sport": "korvpall",
+   "start": "2026-09-24T19:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://basket.ut.ee/kalender-26-27/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-27"
+ },
+ "6606dc9fe3d1": {
+  "changes": [],
+  "event": {
+   "away": "Dziki Warsaw",
+   "city": "Tartu",
+   "home": "Tartu Ülikool Maks&Moorits",
+   "id": "6606dc9fe3d1",
+   "league": "FIBA Europe Cup",
+   "level": 1,
+   "result": "76-103",
+   "source": "korvpall_ut",
+   "sport": "korvpall",
+   "start": "2026-10-06T19:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://basket.ut.ee/kalender-26-27/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-27"
+ },
+ "8d58c1c39c53": {
+  "changes": [],
+  "event": {
+   "away": "LU",
+   "city": "Tartu",
+   "home": "Tartu Ülikool Maks&Moorits",
+   "id": "8d58c1c39c53",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "",
+   "source": "korvpall_ut",
+   "sport": "korvpall",
+   "start": "2026-12-12T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://basket.ut.ee/kalender-26-27/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-27"
+ },
+ "a6a81fc88c76": {
+  "changes": [],
+  "event": {
+   "away": "Würzburg",
+   "city": "Tartu",
+   "home": "Tartu Ülikool Maks&Moorits",
+   "id": "a6a81fc88c76",
+   "league": "FIBA Europe Cup",
+   "level": 1,
+   "result": "",
+   "source": "korvpall_ut",
+   "sport": "korvpall",
+   "start": "2026-12-22T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://basket.ut.ee/kalender-26-27/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-27"
+ },
+ "aa7b2b5eba86": {
+  "changes": [],
+  "event": {
+   "away": "Valmiera",
+   "city": "Tartu",
+   "home": "Tartu Ülikool Maks&Moorits",
+   "id": "aa7b2b5eba86",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "86-93",
+   "source": "korvpall_ut",
+   "sport": "korvpall",
+   "start": "2026-11-07T18:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://basket.ut.ee/kalender-26-27/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-27"
+ },
+ "ce6af439fca5": {
+  "changes": [],
+  "event": {
+   "away": "VIIMSI",
+   "city": "Tartu",
+   "home": "Tartu Ülikool Maks&Moorits",
+   "id": "ce6af439fca5",
+   "league": "Eelhooaja mäng",
+   "level": 1,
+   "result": "",
+   "source": "korvpall_ut",
+   "sport": "korvpall",
+   "start": "2026-09-18T19:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://basket.ut.ee/kalender-26-27/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-27"
+ },
+ "cfd036947f81": {
+  "changes": [],
+  "event": {
+   "away": "Liepaja",
+   "city": "Tartu",
+   "home": "Tartu Ülikool Maks&Moorits",
+   "id": "cfd036947f81",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "",
+   "source": "korvpall_ut",
+   "sport": "korvpall",
+   "start": "2026-12-19T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://basket.ut.ee/kalender-26-27/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-27"
+ },
+ "dfae4a330689": {
+  "changes": [],
+  "event": {
+   "away": "Ogre",
+   "city": "Tartu",
+   "home": "Tartu Ülikool Maks&Moorits",
+   "id": "dfae4a330689",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "",
+   "source": "korvpall_ut",
+   "sport": "korvpall",
+   "start": "2026-11-21T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://basket.ut.ee/kalender-26-27/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-27"
+ },
+ "e06d26939448": {
+  "changes": [],
+  "event": {
+   "away": "Rigas Zelli",
+   "city": "Tartu",
+   "home": "Tartu Ülikool Maks&Moorits",
+   "id": "e06d26939448",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "74-94",
+   "source": "korvpall_ut",
+   "sport": "korvpall",
+   "start": "2026-10-09T19:00:00+03:00",
+   "time_tbc": false,
+   "url": "https://basket.ut.ee/kalender-26-27/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-27"
+ },
+ "e806a3440337": {
+  "changes": [],
+  "event": {
+   "away": "Skopje",
+   "city": "Tartu",
+   "home": "Tartu Ülikool Maks&Moorits",
+   "id": "e806a3440337",
+   "league": "FIBA Europe Cup",
+   "level": 1,
+   "result": "82-89",
+   "source": "korvpall_ut",
+   "sport": "korvpall",
+   "start": "2026-11-18T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://basket.ut.ee/kalender-26-27/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-27"
+ },
+ "f2841a92fddc": {
+  "changes": [],
+  "event": {
+   "away": "Keila Basket",
+   "city": "Tartu",
+   "home": "Tartu Ülikool Maks&Moorits",
+   "id": "f2841a92fddc",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "",
+   "source": "korvpall_ut",
+   "sport": "korvpall",
+   "start": "2026-12-02T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://basket.ut.ee/kalender-26-27/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-27"
+ }
+}

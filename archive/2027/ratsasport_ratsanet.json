@@ -393,6 +393,26 @@
   },
   "first_seen": "2026-11-23"
  },
+ "4955469e6c07": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kose",
+   "end": "2027-04-11",
+   "home": "Kose Kevad 2027",
+   "id": "4955469e6c07",
+   "league": "Kolmevõistlus",
+   "level": 3,
+   "result": "",
+   "source": "ratsasport_ratsanet",
+   "sport": "ratsasport",
+   "start": "2027-04-10T00:00:00+03:00",
+   "time_tbc": true,
+   "url": "https://ratsanet.ee/events/4758",
+   "venue": "Kose"
+  },
+  "first_seen": "2026-11-27"
+ },
  "4d7cfbe43af2": {
   "changes": [],
   "event": {
@@ -489,7 +509,8 @@
    "url": "https://ratsanet.ee/events/4748",
    "venue": "Ruila"
   },
-  "first_seen": "2026-11-23"
+  "first_seen": "2026-11-23",
+  "missing_since": "2026-11-27"
  },
  "5c3a173904e8": {
   "changes": [],
@@ -548,7 +569,8 @@
    "url": "https://ratsanet.ee/events/4758",
    "venue": "Kose"
   },
-  "first_seen": "2026-11-23"
+  "first_seen": "2026-11-23",
+  "missing_since": "2026-11-27"
  },
  "758ccae72f84": {
   "changes": [],

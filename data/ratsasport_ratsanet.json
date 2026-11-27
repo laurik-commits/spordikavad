@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T05:54:25+02:00",
+ "updated": "2026-11-27T17:15:59+02:00",
  "events": [
   {
    "id": "27fe55727089",
@@ -400,6 +400,22 @@
    "level": 3
   },
   {
+   "id": "4955469e6c07",
+   "sport": "ratsasport",
+   "league": "Kolmevõistlus",
+   "start": "2027-04-10T00:00:00+03:00",
+   "home": "Kose Kevad 2027",
+   "away": "",
+   "venue": "Kose",
+   "city": "Kose",
+   "url": "https://ratsanet.ee/events/4758",
+   "source": "ratsasport_ratsanet",
+   "time_tbc": true,
+   "result": "",
+   "level": 3,
+   "end": "2027-04-11"
+  },
+  {
    "id": "4d7cfbe43af2",
    "sport": "ratsasport",
    "league": "Koolisõit",
@@ -475,22 +491,6 @@
    "time_tbc": true,
    "result": "",
    "level": 1,
-   "end": "2027-04-25"
-  },
-  {
-   "id": "6e0b1c0c3e61",
-   "sport": "ratsasport",
-   "league": "Kolmevõistlus",
-   "start": "2027-04-24T00:00:00+03:00",
-   "home": "Kose Kevad 2027",
-   "away": "",
-   "venue": "Kose",
-   "city": "Kose",
-   "url": "https://ratsanet.ee/events/4758",
-   "source": "ratsasport_ratsanet",
-   "time_tbc": true,
-   "result": "",
-   "level": 3,
    "end": "2027-04-25"
   },
   {
@@ -974,22 +974,6 @@
    "time_tbc": true,
    "result": "",
    "level": 3
-  },
-  {
-   "id": "5be7afd6dbbd",
-   "sport": "ratsasport",
-   "league": "Takistussõit",
-   "start": "2027-06-25T00:00:00+03:00",
-   "home": "Ruila Suvi 1.0",
-   "away": "",
-   "venue": "Ruila",
-   "city": "Ruila",
-   "url": "https://ratsanet.ee/events/4748",
-   "source": "ratsasport_ratsanet",
-   "time_tbc": true,
-   "result": "",
-   "level": 1,
-   "end": "2027-06-27"
   }
  ]
 }

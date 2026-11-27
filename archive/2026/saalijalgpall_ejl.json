@@ -546,7 +546,14 @@
   "first_seen": "2026-11-22"
  },
  "cd6624430bd8": {
-  "changes": [],
+  "changes": [
+   {
+    "field": "start",
+    "from": "2026-12-06T12:00:00+02:00",
+    "on": "2026-11-27",
+    "to": "2026-12-06T17:00:00+02:00"
+   }
+  ],
   "event": {
    "away": "U-18 Põltsamaa Motiiv Sport",
    "city": "Valga",
@@ -557,7 +564,7 @@
    "result": "",
    "source": "saalijalgpall_ejl",
    "sport": "saalijalgpall",
-   "start": "2026-12-06T12:00:00+02:00",
+   "start": "2026-12-06T17:00:00+02:00",
    "time_tbc": false,
    "url": "https://jalgpall.ee/voistlused/match_info/197366",
    "venue": "Valga Spordihoone"

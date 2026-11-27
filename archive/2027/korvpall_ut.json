@@ -1,0 +1,116 @@
+{
+ "1cbdad9af403": {
+  "changes": [],
+  "event": {
+   "away": "Keila KK",
+   "city": "Tartu",
+   "home": "Tartu Ülikool Maks&Moorits",
+   "id": "1cbdad9af403",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "",
+   "source": "korvpall_ut",
+   "sport": "korvpall",
+   "start": "2027-01-16T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://basket.ut.ee/kalender-26-27/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-27"
+ },
+ "251a66f2b1d2": {
+  "changes": [],
+  "event": {
+   "away": "Viimsi",
+   "city": "Tartu",
+   "home": "Tartu Ülikool Maks&Moorits",
+   "id": "251a66f2b1d2",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "",
+   "source": "korvpall_ut",
+   "sport": "korvpall",
+   "start": "2027-03-03T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://basket.ut.ee/kalender-26-27/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-27"
+ },
+ "85333f75f6d7": {
+  "changes": [],
+  "event": {
+   "away": "VEF",
+   "city": "Tartu",
+   "home": "Tartu Ülikool Maks&Moorits",
+   "id": "85333f75f6d7",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "",
+   "source": "korvpall_ut",
+   "sport": "korvpall",
+   "start": "2027-03-06T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://basket.ut.ee/kalender-26-27/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-27"
+ },
+ "b246acd0ba51": {
+  "changes": [],
+  "event": {
+   "away": "Pärnu",
+   "city": "Tartu",
+   "home": "Tartu Ülikool Maks&Moorits",
+   "id": "b246acd0ba51",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "",
+   "source": "korvpall_ut",
+   "sport": "korvpall",
+   "start": "2027-01-30T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://basket.ut.ee/kalender-26-27/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-27"
+ },
+ "bee54c1ab97f": {
+  "changes": [],
+  "event": {
+   "away": "Ventspils",
+   "city": "Tartu",
+   "home": "Tartu Ülikool Maks&Moorits",
+   "id": "bee54c1ab97f",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "",
+   "source": "korvpall_ut",
+   "sport": "korvpall",
+   "start": "2027-02-12T19:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://basket.ut.ee/kalender-26-27/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-27"
+ },
+ "bf3d987d801d": {
+  "changes": [],
+  "event": {
+   "away": "Rigas EJ",
+   "city": "Tartu",
+   "home": "Tartu Ülikool Maks&Moorits",
+   "id": "bf3d987d801d",
+   "league": "Eesti-Läti Korvpalliliiga",
+   "level": 1,
+   "result": "",
+   "source": "korvpall_ut",
+   "sport": "korvpall",
+   "start": "2027-03-07T17:00:00+02:00",
+   "time_tbc": false,
+   "url": "https://basket.ut.ee/kalender-26-27/",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-27"
+ }
+}

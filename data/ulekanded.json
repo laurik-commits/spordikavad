@@ -21,13 +21,6 @@
    "video": "https://www.youtube.com/watch?v=xpt_kEux5Kc",
    "video_by": "YouTube"
   },
-  "19b6c6067b12": {
-   "league": "Korvpall (kava järgi)",
-   "sport": "korvpall",
-   "start": "2026-12-02T19:00:00+02:00",
-   "video": "https://tv.delfi.ee/leht/ulekanded-kava",
-   "video_by": "Delfi TV"
-  },
   "1a7862d56086": {
    "league": "Korvpall (kava järgi)",
    "sport": "korvpall",
@@ -39,7 +32,7 @@
    "league": "Balti liiga (mehed)",
    "sport": "vorkpall",
    "start": "2026-11-27T19:00:00+02:00",
-   "video": "https://tv.delfi.ee/leht/ulekanded-kava",
+   "video": "https://sport.delfi.ee/artikkel/120627792/tana-delfi-tv-s-audentessolarstone-ile-soidab-kulla-voru-barrus#dalblokk-ulekanded",
    "video_by": "Delfi TV"
   },
   "2588b6b3c5e5": {
@@ -298,6 +291,13 @@
    "league": "Eesti-Läti Korvpalliliiga",
    "sport": "korvpall",
    "start": "2026-12-02T19:30:00+02:00",
+   "video": "https://tv.delfi.ee/leht/ulekanded-kava",
+   "video_by": "Delfi TV"
+  },
+  "f2841a92fddc": {
+   "league": "Eesti-Läti Korvpalliliiga",
+   "sport": "korvpall",
+   "start": "2026-12-02T19:00:00+02:00",
    "video": "https://tv.delfi.ee/leht/ulekanded-kava",
    "video_by": "Delfi TV"
   }
