@@ -76,7 +76,7 @@ class PaigadTest(unittest.TestCase):
         with self.assertRaises(ValueError):   # väljaspool Eestit
             Paigad.load(*files(TOML.replace("lat = 59.43", "lat = 48.85")))
         with self.assertRaises(ValueError):   # tundmatu täpsus
-            Paigad.load(*files(TOML.replace('tapsus = "tapne"', 'tapsus = "umbes"')))
+            Paigad.load(*files(TOML.replace('tapsus = "tapne"', 'tapsus = "arvatud"')))
 
 
 @unittest.skipUnless(PATH.exists(), "paigad.toml pole veel koostatud (etapp 2 pooleli)")
