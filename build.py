@@ -457,6 +457,8 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
     if out.exists():
         shutil.rmtree(out)
     out.mkdir(parents=True)
+    # Eraldiseisev praktikumi alamleht ei kuulu navigatsiooni ega saidikaarti.
+    shutil.copytree(SITE / "praktikum", out / "praktikum")
     for asset in ("app.js", "og.png", "paise.webp", "favicon.svg"):
         shutil.copy(SITE / asset, out / asset)
     for asset in ("style.css", "kalender.js"):  # alade värvid ja nimed tulevad registrist (sports.toml)
@@ -571,7 +573,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
     def listed(e: Event) -> bool:
         return not LEVELS[e.level].get("hidden")
 
-    reserved = {"m", "info", *(lv["slug"] for lv in LEVELS.values()), *(r.slug for r in regions)}
+    reserved = {"m", "info", "praktikum", *(lv["slug"] for lv in LEVELS.values()), *(r.slug for r in regions)}
     clash = reserved & set(SPORTS)
     if clash:
         raise ValueError(f"ala võti läheb vastuollu lehe kaustaga: {sorted(clash)}")

@@ -50,6 +50,15 @@ class RenderTest(unittest.TestCase):
         self.assertFalse((self.tmp / "2026-11-24").exists())
         self.assertFalse((self.tmp / "parnu").exists())  # Pärnus mänge pole → valikus pole
 
+    def test_praktikum_is_private_from_navigation_and_search(self):
+        page = self.read("praktikum/index.html")
+        self.assertIn('name="robots" content="noindex, nofollow, noarchive"', page)
+        self.assertNotIn("/praktikum/", self.read("sitemap.xml"))
+        self.assertNotIn("praktikum", self.read("index.html").lower())
+        for name in ("laboritoo_juhend.pdf", "laboritoo_juhend.docx", "praktikumi_esitlus.pdf"):
+            self.assertTrue((self.tmp / "praktikum" / "assets" / name).is_file())
+            self.assertIn("assets/" + name, page)
+
     def test_empty_day_links_to_next_games(self):
         html = self.read("index.html")
         self.assertIn("Täna ei ole Tallinnas ühtegi tippvõistlust.", html)

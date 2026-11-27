@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="et">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Metallide 3D-printimise praktikum – TalTech</title>
+<style>
+:root{color-scheme:light;--ink:#222641;--muted:#5c6074;--accent:#aa0a50;--border:#dedce4;--bg:#f8f8fa}*{box-sizing:border-box}html{font-family:Verdana,Arial,sans-serif}body{margin:0;background:var(--bg);color:var(--ink);line-height:1.55}main{width:min(100% - 40px,920px);margin:0 auto;padding:66px 0 80px}.eyebrow{font-size:.8rem;letter-spacing:.09em;font-weight:700;text-transform:uppercase;color:var(--accent)}h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.12;letter-spacing:-.035em;max-width:760px;margin:12px 0 20px}h2{font-size:1.4rem;line-height:1.25;margin:0 0 14px}p{margin:0 0 18px}.lead{color:var(--muted);font-size:1.05rem;max-width:670px}section{margin-top:48px} .files{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.file{display:flex;min-height:145px;flex-direction:column;justify-content:space-between;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px;font-weight:700}.file:hover{border-color:var(--accent);color:var(--accent)}.format{color:var(--accent);font-size:.85rem}.prompt{background:#fff;border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:8px;padding:24px}.prompt p{line-height:1.7;margin:0 0 22px}.button{border:0;border-radius:6px;background:var(--accent);color:#fff;padding:12px 19px;font:inherit;font-weight:700;cursor:pointer}.button:hover{background:#81083d}.button:focus-visible,.file:focus-visible{outline:3px solid #275b9b;outline-offset:3px}.status{display:inline-block;margin:0 0 0 10px;color:var(--muted)}footer{color:var(--muted);border-top:1px solid var(--border);margin-top:60px;padding-top:20px;font-size:.9rem}@media(max-width:650px){main{padding-top:38px}.files{grid-template-columns:1fr}.file{min-height:95px}.status{display:block;margin:10px 0 0}}
+</style>
+</head>
+<body><main>
+<div class="eyebrow">TalTech · praktikum</div>
+<h1>Metallide 3D-printimise praktikum</h1>
+<p class="lead">Laboritöö juhend, praktikumi esitlus ja algprompt ühes kohas.</p>
+<section aria-labelledby="files"><h2 id="files">Praktikumi materjalid</h2><p class="lead">Laadi juhend alla sobivas vormingus ja ava esitlus.</p>
+<div class="files">
+<a class="file" href="assets/laboritoo_juhend.pdf" download><span>Laboritöö juhend</span><span class="format">Laadi alla · PDF</span></a>
+<a class="file" href="assets/laboritoo_juhend.docx" download><span>Laboritöö juhend</span><span class="format">Laadi alla · DOCX</span></a>
+<a class="file" href="assets/praktikumi_esitlus.pdf" download><span>Praktikumi esitlus</span><span class="format">Laadi alla · PDF</span></a>
+</div></section>
+<section aria-labelledby="prompt-title"><h2 id="prompt-title">Alusta ChatGPT-ga</h2><p class="lead">Laadi laboritöö juhend vestlusesse ja kasuta alustamiseks seda teksti.</p>
+<div class="prompt"><p id="prompt">Olen algaja. Aita mul lahendada lisatud laboritöö ülesanne samm-sammult. Kasuta lihtsaid selgitusi ja visuaalseid skeeme. Küsi minult üks küsimus korraga. Ära alusta kohe 3D-modelleerimisega. Kui jõuame modelleerimiseni, aita koostada ülesanne Codexile.</p><button type="button" class="button" id="copy">Kopeeri prompt</button><span id="status" class="status" role="status" aria-live="polite"></span></div>
+</section><footer>Metallide 3D-printimise praktikum · Tallinna Tehnikaülikool</footer>
+</main><script>
+const button=document.getElementById('copy'), status=document.getElementById('status'), prompt=document.getElementById('prompt');
+button.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(prompt.textContent.trim());status.textContent='Prompt on kopeeritud.'}catch(error){const range=document.createRange();range.selectNodeContents(prompt);const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);status.textContent='Tekst on valitud. Kopeerimiseks vajuta Ctrl+C või Cmd+C.'}});
+</script></body></html>
