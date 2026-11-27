@@ -27,6 +27,10 @@ ehitab ja avaldab iga päev GitHub Pagesi. Omanik tahab hooldusele kulutada peaa
 - `site/praktikum/`: eraldiseisev praktikumi alamleht `/praktikum/` (omaniku TalTechi praktikum, tegi ChatGPT, avaldatud 2026-11-27): staatiline `index.html` + `assets/` (PDF, DOCX),
   `build.py` kopeerib kausta `site/praktikum/` väljundisse; `noindex, nofollow, noarchive`, sitemapis, menüüs ja statistikas pole, test `test_praktikum_is_private_from_navigation_and_search`.
   **Avalik** (GitHub Pages ei piira ligipääsu), seega ei pane sinna isikuandmeid ega salajast. Uus fail: pane `assets/` alla ja lisa link `index.html`-i.
+- `analuus/` + `meeskonnad.toml` + `raportid/`: andmepõhine analüüs (kiirstart: `python -m analuus.nadalaraport --stdout`). `tulemus.py` ühtlustab võit/kaotus/viik/vahe ala kaupa,
+  `meeskonnad.py` ühtlustab meeskonnanimed (`meeskonnad.toml` aliased; kandidaadid: `python -m analuus.meeskonnad`), `lood.py` detektorid (üllatused tabeli järgi,
+  seeriad, tasavägised, rekordid), `nadalaraport.py` kirjutab `raportid/<nädal>.md` ja `.json` (töövoog igal ehitusel; sama nädal kirjutatakse üle). Tulemused on ainult
+  7 alal, jalgpall on 92% neist; tabelit andmetes pole (arvutatakse), seetõttu loe `analuus/lood.py` docstringi enne tulemuste tõlgendamist.
 - `ogimage.py` + `site/fonts/`: mängu OG-pilt (Pillow, DejaVu; igale eelseisvale mängule `m/<id>/og.png`, muul juhul üldine `og.png`)
 - `scripts/`: `automerge_check.py` (agendi PR-i kontroll), `report_issues.py` (katkised allikad → GitHub Issue ja rida `MAINTENANCE.md`-i),
   `maintenance_log.py` (hoolduslogi ja kokkuvõte)
