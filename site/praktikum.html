@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="et">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }}</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#14457a">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="{{ root }}favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="{{ root }}style.css">
+</head>
+<body>
+<header class="bar"><div class="wrap">
+  <nav class="daynav"><h1>{{ title }}</h1></nav></div></header>
+<main class="wrap info">
+  {% if intro %}<p class="intro">{{ intro }}</p>{% endif %}
+  {% for s in sections %}
+  {% if s.title %}<h2>{{ s.title }}</h2>{% endif %}
+  <ul>
+    {% for f in s.files %}<li><a href="{{ f.href }}" download>{{ f.name }}</a> <span class="intro">({{ f.size }})</span>{% if f.description %}<br><span class="intro">{{ f.description }}</span>{% endif %}</li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+</main>
+</body>
+</html>

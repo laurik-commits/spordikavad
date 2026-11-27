@@ -23,6 +23,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 import archive
 import ogimage
+import praktikum
 import ulekanded
 from scrapers import config as cfgmod
 from scrapers import sports
@@ -386,7 +387,7 @@ def event_ld(e: Event, url: str) -> str:
 def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
            watch: dict[tuple[str, str], list[dict]] | None = None,
            channel_types: dict[str, str] | None = None, also: dict[str, list[dict]] | None = None,
-           all_games: list[Event] | None = None) -> int:
+           all_games: list[Event] | None = None, praktikum_dir: Path | None = None) -> int:
     """all_games: lisaks `events`-ile kõik teadaolevad (möödunud) mängud arhiivist: neile tehakse mängulehed.
     watch: (ala, liiga) → ülekandjad (ulekanded.league_channels); mängu lehel „Selle liiga mänge on näidanud“.
     channel_types: kanal → "tv" / "veeb" (ulekanded.channel_types): ülekande ikoon ja tekst."""
@@ -571,7 +572,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
     def listed(e: Event) -> bool:
         return not LEVELS[e.level].get("hidden")
 
-    reserved = {"m", "info", *(lv["slug"] for lv in LEVELS.values()), *(r.slug for r in regions)}
+    reserved = {"m", "info", praktikum.SLUG, *(lv["slug"] for lv in LEVELS.values()), *(r.slug for r in regions)}
     clash = reserved & set(SPORTS)
     if clash:
         raise ValueError(f"ala võti läheb vastuollu lehe kaustaga: {sorted(clash)}")
@@ -683,6 +684,10 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
                                              watch_rows=ulekanded.rows(watch)),
         encoding="utf-8")
     urls.append(f"{base_url}info/")
+
+    # praktikumi lisaleht /praktikum/ (site/praktikum/materjalid/…): ainult kui seal on faile; sitemapis ja menüüs pole
+    if praktikum.build(praktikum_dir if praktikum_dir is not None else SITE / "praktikum", out, env, common):
+        log.info("Praktikumi leht /%s/ tehtud", praktikum.SLUG)
 
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     sitemap += [f"  <url><loc>{u}</loc></url>" for u in urls]   # lastmod pole: tänane kuupäev kõigil poleks tõene
