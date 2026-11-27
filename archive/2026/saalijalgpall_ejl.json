@@ -428,7 +428,14 @@
   "first_seen": "2026-11-22"
  },
  "ad96eb449464": {
-  "changes": [],
+  "changes": [
+   {
+    "field": "result",
+    "from": "",
+    "on": "2026-11-27",
+    "to": "2-5"
+   }
+  ],
   "event": {
    "away": "Pärnu SJK Hagalaz",
    "city": "Saku",
@@ -436,7 +443,7 @@
    "id": "ad96eb449464",
    "league": "Saalijalgpalli meistriliiga",
    "level": 1,
-   "result": "",
+   "result": "2-5",
    "source": "saalijalgpall_ejl",
    "sport": "saalijalgpall",
    "start": "2026-11-27T19:45:00+02:00",
@@ -753,7 +760,14 @@
   "first_seen": "2026-11-22"
  },
  "ee918caeca1f": {
-  "changes": [],
+  "changes": [
+   {
+    "field": "result",
+    "from": "",
+    "on": "2026-11-27",
+    "to": "3-2"
+   }
+  ],
   "event": {
    "away": "U-18 Tartu vald Ravens Futsal",
    "city": "Põltsamaa",
@@ -761,7 +775,7 @@
    "id": "ee918caeca1f",
    "league": "U18 saalijalgpalli eliitliiga",
    "level": 4,
-   "result": "",
+   "result": "3-2",
    "source": "saalijalgpall_ejl",
    "sport": "saalijalgpall",
    "start": "2026-11-27T19:30:00+02:00",
