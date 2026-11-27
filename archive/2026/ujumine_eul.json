@@ -19,7 +19,20 @@
   "first_seen": "2026-11-26"
  },
  "0fd5a906b688": {
-  "changes": [],
+  "changes": [
+   {
+    "field": "venue",
+    "from": "Aura Veekeskus",
+    "on": "2026-11-28",
+    "to": "Tartu"
+   },
+   {
+    "field": "url",
+    "from": "https://swimming.ee/kalender/yess-talvestardid/",
+    "on": "2026-11-28",
+    "to": "https://swimming.ee/kalender/yess-talvestardid-3/"
+   }
+  ],
   "event": {
    "away": "",
    "city": "Tartu",
@@ -32,8 +45,8 @@
    "sport": "ujumine",
    "start": "2026-11-28T00:00:00+02:00",
    "time_tbc": true,
-   "url": "https://swimming.ee/kalender/yess-talvestardid/",
-   "venue": "Aura Veekeskus"
+   "url": "https://swimming.ee/kalender/yess-talvestardid-3/",
+   "venue": "Tartu"
   },
   "first_seen": "2026-11-26"
  },

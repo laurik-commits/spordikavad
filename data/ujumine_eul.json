@@ -1,21 +1,6 @@
 {
- "updated": "2026-11-26T17:14:23+02:00",
+ "updated": "2026-11-28T00:24:47+02:00",
  "events": [
-  {
-   "id": "d33098ca87bf",
-   "sport": "ujumine",
-   "league": "Klubide võistlused",
-   "start": "2026-11-27T00:00:00+02:00",
-   "home": "Briisi kontrollvõistlus",
-   "away": "",
-   "venue": "Tallinn",
-   "city": "Tallinn",
-   "url": "https://swimming.ee/kalender/briisi-kontrollvoistlus/",
-   "source": "ujumine_eul",
-   "time_tbc": true,
-   "result": "",
-   "level": 3
-  },
   {
    "id": "0fd5a906b688",
    "sport": "ujumine",
@@ -23,9 +8,9 @@
    "start": "2026-11-28T00:00:00+02:00",
    "home": "Yess talvestardid",
    "away": "",
-   "venue": "Aura Veekeskus",
+   "venue": "Tartu",
    "city": "Tartu",
-   "url": "https://swimming.ee/kalender/yess-talvestardid/",
+   "url": "https://swimming.ee/kalender/yess-talvestardid-3/",
    "source": "ujumine_eul",
    "time_tbc": true,
    "result": "",
@@ -557,6 +542,37 @@
    "time_tbc": true,
    "result": "",
    "level": 4
+  },
+  {
+   "id": "bda5750fedd2",
+   "sport": "ujumine",
+   "league": "Klubide võistlused",
+   "start": "2027-03-13T00:00:00+02:00",
+   "home": "Sajaste võistlus",
+   "away": "",
+   "venue": "Pärnu",
+   "city": "Pärnu",
+   "url": "https://swimming.ee/kalender/sajaste-voistlus/",
+   "source": "ujumine_eul",
+   "time_tbc": true,
+   "result": "",
+   "level": 3
+  },
+  {
+   "id": "8eb22a9669b0",
+   "sport": "ujumine",
+   "league": "Noorte võistlused",
+   "start": "2027-03-19T00:00:00+02:00",
+   "home": "Põhjamaade noorte meistrivõistlused kujundujumises",
+   "away": "",
+   "venue": "Wiru Spordikeskus",
+   "city": "Kohtla-Järve",
+   "url": "https://swimming.ee/kalender/pohjamaade-noorte-meistrivoistlused-kujundujumises/",
+   "source": "ujumine_eul",
+   "time_tbc": true,
+   "result": "",
+   "level": 4,
+   "end": "2027-03-21"
   }
  ]
 }

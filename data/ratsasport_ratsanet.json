@@ -1,21 +1,6 @@
 {
- "updated": "2026-11-27T17:15:59+02:00",
+ "updated": "2026-11-28T00:24:37+02:00",
  "events": [
-  {
-   "id": "27fe55727089",
-   "sport": "ratsasport",
-   "league": "Takistussõit",
-   "start": "2026-11-07T00:00:00+02:00",
-   "home": "THK Sügiskarikas 2026",
-   "away": "",
-   "venue": "Tori Hobusekasvandus",
-   "city": "Tori",
-   "url": "https://ratsanet.ee/events/4442",
-   "source": "ratsasport_ratsanet",
-   "time_tbc": true,
-   "result": "",
-   "level": 1
-  },
   {
    "id": "403943d970f2",
    "sport": "ratsasport",
@@ -974,6 +959,22 @@
    "time_tbc": true,
    "result": "",
    "level": 3
+  },
+  {
+   "id": "5be7afd6dbbd",
+   "sport": "ratsasport",
+   "league": "Takistussõit",
+   "start": "2027-06-25T00:00:00+03:00",
+   "home": "Ruila Suvi 1.0",
+   "away": "",
+   "venue": "Ruila",
+   "city": "Ruila",
+   "url": "https://ratsanet.ee/events/4748",
+   "source": "ratsasport_ratsanet",
+   "time_tbc": true,
+   "result": "",
+   "level": 1,
+   "end": "2027-06-27"
   }
  ]
 }

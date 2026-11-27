@@ -151,6 +151,26 @@
   },
   "first_seen": "2026-11-26"
  },
+ "8eb22a9669b0": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Kohtla-Järve",
+   "end": "2027-03-21",
+   "home": "Põhjamaade noorte meistrivõistlused kujundujumises",
+   "id": "8eb22a9669b0",
+   "league": "Noorte võistlused",
+   "level": 4,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2027-03-19T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/pohjamaade-noorte-meistrivoistlused-kujundujumises/",
+   "venue": "Wiru Spordikeskus"
+  },
+  "first_seen": "2026-11-28"
+ },
  "992b80adadf6": {
   "changes": [],
   "event": {
@@ -264,6 +284,25 @@
    "venue": "Viimsi"
   },
   "first_seen": "2026-11-26"
+ },
+ "bda5750fedd2": {
+  "changes": [],
+  "event": {
+   "away": "",
+   "city": "Pärnu",
+   "home": "Sajaste võistlus",
+   "id": "bda5750fedd2",
+   "league": "Klubide võistlused",
+   "level": 3,
+   "result": "",
+   "source": "ujumine_eul",
+   "sport": "ujumine",
+   "start": "2027-03-13T00:00:00+02:00",
+   "time_tbc": true,
+   "url": "https://swimming.ee/kalender/sajaste-voistlus/",
+   "venue": "Pärnu"
+  },
+  "first_seen": "2026-11-28"
  },
  "d081dee43559": {
   "changes": [],

@@ -309,5 +309,24 @@
    "venue": "Aruküla spordihoone"
   },
   "first_seen": "2026-11-22"
+ },
+ "f23e1481aac8": {
+  "changes": [],
+  "event": {
+   "away": "Aruküla SK",
+   "city": "Tartu",
+   "home": "Tartu Ülikool",
+   "id": "f23e1481aac8",
+   "league": "Esiliiga (mehed)",
+   "level": 2,
+   "result": "",
+   "source": "kasipall_liigad",
+   "sport": "kasipall",
+   "start": "2026-12-13T17:30:00+02:00",
+   "time_tbc": false,
+   "url": "https://kasipall.ee/protocol/9567",
+   "venue": "Tartu Ülikooli spordihoone"
+  },
+  "first_seen": "2026-11-28"
  }
 }

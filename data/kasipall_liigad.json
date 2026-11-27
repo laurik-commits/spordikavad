@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T05:52:07+02:00",
+ "updated": "2026-11-28T00:22:57+02:00",
  "events": [
   {
    "id": "7d2f7876927e",
@@ -191,6 +191,21 @@
    "venue": "Valga Spordihoone",
    "city": "Valga",
    "url": "https://kasipall.ee/protocol/9535",
+   "source": "kasipall_liigad",
+   "time_tbc": false,
+   "result": "",
+   "level": 2
+  },
+  {
+   "id": "f23e1481aac8",
+   "sport": "kasipall",
+   "league": "Esiliiga (mehed)",
+   "start": "2026-12-13T17:30:00+02:00",
+   "home": "Tartu Ülikool",
+   "away": "Aruküla SK",
+   "venue": "Tartu Ülikooli spordihoone",
+   "city": "Tartu",
+   "url": "https://kasipall.ee/protocol/9567",
    "source": "kasipall_liigad",
    "time_tbc": false,
    "result": "",
