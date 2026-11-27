@@ -1,0 +1,1781 @@
+# Toimumiskohtade tabel (vt analuus/paigad.py). paik = koht kaardil: üks või mitu venues.toml kohta ühe koordinaadiga.
+# tapsus: "tapne" = koht leitud OpenStreetMapist (Nominatim), "linn" = ainult linna keskpunkt (kohta ei leitud või koha asemel on linn).
+# kontrollitud = true: koordinaat kontrollitud käsitsi. Uued kohad: python -m analuus.paigad --puudu ja python -m analuus.geokodeeri.
+
+[[paik]]
+nimi = "Sportland Arena"
+linn = "Tallinn"
+lat = 59.420736
+lon = 24.734248
+tapsus = "tapne"
+osm = "way/599357226"
+kohad = ["Sportland Arena", "Nike Arena", "A. Le Coq Arena"]
+
+[[paik]]
+nimi = "Lasnamäe spordikompleksi kunstmurustaadion"
+linn = "Tallinn"
+lat = 59.443662
+lon = 24.835884
+tapsus = "tapne"
+osm = "way/807375780"
+kohad = ["Lasnamäe spordikompleksi kunstmurustaadion", "Lasnamäe staadion"]
+
+[[paik]]
+nimi = "Sõle kunstmuruväljak"
+linn = "Tallinn"
+lat = 59.442343
+lon = 24.708093
+tapsus = "tapne"
+osm = "way/1116311613"
+kohad = ["Sõle kunstmuruväljak", "Sõle spordikeskus"]
+
+[[paik]]
+nimi = "Laagri kunstmurustaadion"
+linn = "Saue vald"
+lat = 59.345059
+lon = 24.615632
+tapsus = "tapne"
+osm = "way/26882927"
+kohad = ["Laagri kunstmurustaadion", "Laagri TK"]
+
+[[paik]]
+nimi = "Tartu Coop staadioni kunstmuruväljak"
+linn = "Tartu"
+lat = 58.36661
+lon = 26.71359
+tapsus = "umbes"
+osm = "way/Tamme staadion"
+kohad = ["Tartu Coop staadioni kunstmuruväljak"]
+
+[[paik]]
+nimi = "Raja jalgpallihall"
+linn = "Tallinn"
+lat = 59.397634
+lon = 24.663185
+tapsus = "umbes"
+osm = "node/344388713"
+kohad = ["Raja jalgpallihall"]
+
+[[paik]]
+nimi = "Männiku kunstmuruväljak"
+linn = "Tallinn"
+lat = 59.374738
+lon = 24.716884
+tapsus = "umbes"
+osm = "relation/11128996"
+kohad = ["Männiku kunstmuruväljak", "Männiku staadion"]
+
+[[paik]]
+nimi = "Paide kunstmuruväljak"
+linn = "Paide"
+lat = 58.876599
+lon = 25.541118
+tapsus = "tapne"
+osm = "way/76395358"
+kohad = ["Paide kunstmuruväljak", "Paide jalgpallihall"]
+
+[[paik]]
+nimi = "Kalevi keskstaadioni kunstmuruväljak"
+linn = "Tallinn"
+lat = 59.42649
+lon = 24.759726
+tapsus = "tapne"
+osm = "way/26889408"
+kohad = ["Kalevi keskstaadioni kunstmuruväljak", "Tallinna Kergejõustikuhall", "Kalevi spordihall", "Kalevi Keskstaadion"]
+
+[[paik]]
+nimi = "Holm jalgpallipark"
+linn = "Tartu"
+lat = 58.394198
+lon = 26.740961
+tapsus = "tapne"
+osm = "way/1003277403"
+kohad = ["Holm jalgpallipark"]
+
+[[paik]]
+nimi = "Hiiu staadion"
+linn = "Tallinn"
+lat = 59.385473
+lon = 24.659541
+tapsus = "tapne"
+osm = "way/22818726"
+kohad = ["Hiiu staadion"]
+
+[[paik]]
+nimi = "Maarjamäe kunstmuruväljak"
+linn = "Tallinn"
+lat = 59.457638
+lon = 24.817805
+tapsus = "tapne"
+osm = "way/78784249"
+kohad = ["Maarjamäe kunstmuruväljak", "Maarjamäe staadion"]
+
+[[paik]]
+nimi = "Tartu Annelinna kunstmurustaadion"
+linn = "Tartu"
+lat = 58.374995
+lon = 26.770644
+tapsus = "umbes"
+osm = "way/651764621"
+kohad = ["Tartu Annelinna kunstmurustaadion"]
+
+[[paik]]
+nimi = "Viimsi staadion"
+linn = "Viimsi"
+lat = 59.509762
+lon = 24.834841
+tapsus = "tapne"
+osm = "way/722410121"
+kohad = ["Viimsi staadion", "Viimsi kooli spordikeskus", "Viimsi Kool", "Forus Spordikeskus Viimsi"]
+
+[[paik]]
+nimi = "Wismari jalgpallistaadion"
+linn = "Tallinn"
+lat = 59.431469
+lon = 24.732844
+tapsus = "tapne"
+osm = "way/8036483"
+kohad = ["Wismari jalgpallistaadion"]
+
+[[paik]]
+nimi = "Pärnu Rannastaadion"
+linn = "Pärnu"
+lat = 58.374816
+lon = 24.503285
+tapsus = "tapne"
+osm = "way/68331288"
+kohad = ["Pärnu Rannastaadion", "Pärnu kunstmurustaadion", "Pärnu Jalgpallihall"]
+
+[[paik]]
+nimi = "Rakvere kunstmurustaadion"
+linn = "Rakvere"
+lat = 59.343801
+lon = 26.358333
+tapsus = "tapne"
+osm = "way/38349668"
+kohad = ["Rakvere kunstmurustaadion", "Rakvere spordihall", "Rakvere Spordikeskus", "Rakvere staadion"]
+
+[[paik]]
+nimi = "Narva Kalev-Fama staadion"
+linn = "Narva"
+lat = 59.3812
+lon = 28.18792
+tapsus = "umbes"
+osm = "Kalev Fama stadium (OSM punkt)"
+kohad = ["Narva Kalev-Fama staadion"]
+
+[[paik]]
+nimi = "Tabasalu Arena"
+linn = "Harku vald"
+lat = 59.428566
+lon = 24.534222
+tapsus = "tapne"
+osm = "way/659906722"
+kohad = ["Tabasalu Arena", "Tabasalu kooli spordihoone", "Tabasalu TK"]
+
+[[paik]]
+nimi = "Tartu Ülikooli spordihoone"
+linn = "Tartu"
+lat = 58.388248
+lon = 26.721799
+tapsus = "tapne"
+osm = "way/856487659"
+kohad = ["Tartu Ülikooli spordihoone"]
+
+[[paik]]
+nimi = "Nike Arena Elva"
+linn = "Elva"
+lat = 58.216726
+lon = 26.414295
+tapsus = "tapne"
+osm = "way/309633408"
+kohad = ["Nike Arena Elva"]
+
+[[paik]]
+nimi = "Jüri staadion"
+linn = "Rae vald"
+lat = 59.354186
+lon = 24.910174
+tapsus = "tapne"
+osm = "way/392987821"
+kohad = ["Jüri staadion", "Jüri spordihoone", "Jüri Pallihall väike saal"]
+
+[[paik]]
+nimi = "Saku staadion"
+linn = "Saku"
+lat = 59.304298
+lon = 24.672558
+tapsus = "tapne"
+osm = "way/40440624"
+kohad = ["Saku staadion", "Saku kunstmuruväljak", "Saku Gümnaasiumi Spordikompleks"]
+
+[[paik]]
+nimi = "Põlva Lootospark"
+linn = "Põlva"
+lat = 58.05177
+lon = 27.04966
+tapsus = "tapne"
+osm = "Põlva Lootos staadion"
+kohad = ["Põlva Lootospark", "Mesikäpa hall"]
+
+[[paik]]
+nimi = "Kohtla-Järve kunstmuruväljak"
+linn = "Kohtla-Järve"
+lat = 59.396723
+lon = 27.278489
+tapsus = "tapne"
+osm = "way/86936479"
+kohad = ["Kohtla-Järve kunstmuruväljak"]
+
+[[paik]]
+nimi = "Võru Spordikeskus"
+linn = "Võru"
+lat = 57.844893
+lon = 27.009528
+tapsus = "tapne"
+osm = "way/176018149"
+kohad = ["Võru Spordikeskus", "Võru Spordikeskuse staadion", "Võru staadion"]
+
+[[paik]]
+nimi = "Kernu Põhikooli staadion"
+linn = "Saue vald"
+lat = 59.136373
+lon = 24.499155
+tapsus = "umbes"
+osm = "node/30401939"
+kohad = ["Kernu Põhikooli staadion", "Kernu staadion"]
+
+[[paik]]
+nimi = "Pärnu Raeküla staadion"
+linn = "Pärnu"
+lat = 58.357847
+lon = 24.574009
+tapsus = "umbes"
+osm = "way/1009591011"
+kohad = ["Pärnu Raeküla staadion", "Raeküla kool"]
+
+[[paik]]
+nimi = "Ajaxi kunstmuruväljak"
+linn = "Tallinn"
+lat = 59.437242
+lon = 24.7572693
+tapsus = "linn"
+kohad = ["Ajaxi kunstmuruväljak"]
+
+[[paik]]
+nimi = "Kotka staadion"
+linn = "Tallinn"
+lat = 59.408717
+lon = 24.72101
+tapsus = "tapne"
+osm = "way/65182764"
+kohad = ["Kotka staadion"]
+
+[[paik]]
+nimi = "Tondiraba jäähall"
+linn = "Tallinn"
+lat = 59.44326
+lon = 24.848764
+tapsus = "tapne"
+osm = "way/307050026"
+kohad = ["Tondiraba jäähall", "Tondiraba TK"]
+
+[[paik]]
+nimi = "Ülenurme staadion"
+linn = "Kambja vald"
+lat = 58.323232
+lon = 26.722897
+tapsus = "tapne"
+osm = "way/64774064"
+kohad = ["Ülenurme staadion"]
+
+[[paik]]
+nimi = "Kohtla-Järve jäähall"
+linn = "Kohtla-Järve"
+lat = 59.39689
+lon = 27.257265
+tapsus = "tapne"
+osm = "way/64045514"
+kohad = ["Kohtla-Järve jäähall"]
+
+[[paik]]
+nimi = "Tartu Tamme staadion"
+linn = "Tartu"
+lat = 58.366617
+lon = 26.7136
+tapsus = "tapne"
+osm = "way/30191487"
+kohad = ["Tartu Tamme staadion", "Tartu Tamme kunstmuruväljak"]
+
+[[paik]]
+nimi = "Keila staadioni muruväljak"
+linn = "Keila"
+lat = 59.313194
+lon = 24.409248
+tapsus = "tapne"
+osm = "way/613902315"
+kohad = ["Keila staadioni muruväljak", "Keila staadioni kunstmuruväljak"]
+
+[[paik]]
+nimi = "Raasiku Põhikooli kunstmuruväljak"
+linn = "Raasiku"
+lat = 59.369448
+lon = 25.187379
+tapsus = "tapne"
+osm = "way/50729969"
+kohad = ["Raasiku Põhikooli kunstmuruväljak"]
+
+[[paik]]
+nimi = "Haabersti jäähall"
+linn = "Tallinn"
+lat = 59.426139
+lon = 24.644407
+tapsus = "tapne"
+osm = "way/26846503"
+kohad = ["Haabersti jäähall"]
+
+[[paik]]
+nimi = "Pärnu Rehepapi kunstmuruväljak"
+linn = "Pärnu"
+lat = 58.3870659
+lon = 24.5026059
+tapsus = "linn"
+kohad = ["Pärnu Rehepapi kunstmuruväljak"]
+
+[[paik]]
+nimi = "Elva linnastaadion"
+linn = "Elva"
+lat = 58.22521
+lon = 26.40493
+tapsus = "tapne"
+osm = "Elva staadion"
+kohad = ["Elva linnastaadion"]
+
+[[paik]]
+nimi = "Raasiku spordihoone"
+linn = "Raasiku"
+lat = 59.368527
+lon = 25.185359
+tapsus = "tapne"
+osm = "way/114802789"
+kohad = ["Raasiku spordihoone"]
+
+[[paik]]
+nimi = "Jõhvi Spordihall"
+linn = "Jõhvi"
+lat = 59.350426
+lon = 27.416254
+tapsus = "tapne"
+osm = "way/61718195"
+kohad = ["Jõhvi Spordihall", "Heino Lipu staadion"]
+
+[[paik]]
+nimi = "Viljandi linnastaadion"
+linn = "Viljandi"
+lat = 58.361198
+lon = 25.606804
+tapsus = "tapne"
+osm = "way/185302599"
+kohad = ["Viljandi linnastaadion"]
+
+[[paik]]
+nimi = "Aruküla staadion"
+linn = "Aruküla"
+lat = 59.364637
+lon = 25.076283
+tapsus = "tapne"
+osm = "node/3161159115"
+kohad = ["Aruküla staadion", "Aruküla spordihoone"]
+
+[[paik]]
+nimi = "Maardu linnastaadion"
+linn = "Maardu"
+lat = 59.468192
+lon = 24.9896751
+tapsus = "linn"
+kohad = ["Maardu linnastaadion"]
+
+[[paik]]
+nimi = "Viljandi kunstmuruväljak"
+linn = "Viljandi"
+lat = 58.364174
+lon = 25.593697
+tapsus = "tapne"
+osm = "way/445329354"
+kohad = ["Viljandi kunstmuruväljak", "Viljandi spordikeskus", "Viljandi SH"]
+
+[[paik]]
+nimi = "Kuressaare linnastaadion"
+linn = "Kuressaare"
+lat = 58.242103
+lon = 22.479968
+tapsus = "tapne"
+osm = "way/50807023"
+kohad = ["Kuressaare linnastaadion"]
+
+[[paik]]
+nimi = "Eesti Maaülikooli spordihoone"
+linn = "Tartu"
+lat = 58.365537
+lon = 26.669357
+tapsus = "umbes"
+osm = "way/845476059"
+kohad = ["Eesti Maaülikooli spordihoone"]
+
+[[paik]]
+nimi = "Maardu kunstmuruväljak"
+linn = "Maardu"
+lat = 59.485856
+lon = 25.025163
+tapsus = "tapne"
+osm = "way/26896774"
+kohad = ["Maardu kunstmuruväljak"]
+
+[[paik]]
+nimi = "Lenne Sulgpallikeskus"
+linn = "Tallinn"
+lat = 59.360853
+lon = 24.901798
+tapsus = "umbes"
+osm = "way/1115933898"
+kohad = ["Lenne Sulgpallikeskus"]
+
+[[paik]]
+nimi = "Tapa spordihoone"
+linn = "Tapa"
+lat = 59.26368
+lon = 25.956789
+tapsus = "tapne"
+osm = "way/967623600"
+kohad = ["Tapa spordihoone", "Tapa Valla Spordikeskus"]
+
+[[paik]]
+nimi = "Kuressaare kunstmurustaadion"
+linn = "Kuressaare"
+lat = 58.258481
+lon = 22.486492
+tapsus = "tapne"
+osm = "way/53557706"
+kohad = ["Kuressaare kunstmurustaadion"]
+
+[[paik]]
+nimi = "TalTechi spordihall"
+linn = "Tallinn"
+lat = 59.39359
+lon = 24.67822
+tapsus = "tapne"
+osm = "TTÜ spordihoone"
+kohad = ["TalTechi spordihall"]
+
+[[paik]]
+nimi = "Lasnamäe Kergejõustikuhall"
+linn = "Tallinn"
+lat = 59.436031
+lon = 24.838843
+tapsus = "tapne"
+osm = "node/1313162059"
+kohad = ["Lasnamäe Kergejõustikuhall"]
+
+[[paik]]
+nimi = "Viljandi Männimäe jalgpallihall"
+linn = "Viljandi"
+lat = 58.35435
+lon = 25.58475
+tapsus = "umbes"
+osm = "Männimäe asum"
+kohad = ["Viljandi Männimäe jalgpallihall"]
+
+[[paik]]
+nimi = "Tehvandi staadion"
+linn = "Otepää"
+lat = 58.052655
+lon = 26.502802
+tapsus = "tapne"
+osm = "way/259050699"
+kohad = ["Tehvandi staadion"]
+
+[[paik]]
+nimi = "Rapla Kesklinna Kooli staadion"
+linn = "Rapla"
+lat = 59.005861
+lon = 24.786381
+tapsus = "tapne"
+osm = "way/161431874"
+kohad = ["Rapla Kesklinna Kooli staadion"]
+
+[[paik]]
+nimi = "Kärdla linnastaadion"
+linn = "Kärdla"
+lat = 58.9988376
+lon = 22.7478094
+tapsus = "linn"
+kohad = ["Kärdla linnastaadion"]
+
+[[paik]]
+nimi = "Lilleküla harjutusväljak I"
+linn = "Tallinn"
+lat = 59.419808
+lon = 24.711005
+tapsus = "umbes"
+osm = "relation/11129083"
+kohad = ["Lilleküla harjutusväljak I"]
+
+[[paik]]
+nimi = "Kuusalu Keskkooli staadion"
+linn = "Kuusalu"
+lat = 59.450809
+lon = 25.415517
+tapsus = "tapne"
+osm = "way/90156271"
+kohad = ["Kuusalu Keskkooli staadion", "Kuusalu staadion"]
+
+[[paik]]
+nimi = "Audentese spordihall"
+linn = "Tallinn"
+lat = 59.405293
+lon = 24.713536
+tapsus = "tapne"
+osm = "way/884124375"
+kohad = ["Audentese spordihall"]
+
+[[paik]]
+nimi = "Pärnu Spordihall"
+linn = "Pärnu"
+lat = 58.376241
+lon = 24.532411
+tapsus = "tapne"
+osm = "way/814643842"
+kohad = ["Pärnu Spordihall"]
+
+[[paik]]
+nimi = "Nord Spordihoone"
+linn = "Tallinn"
+lat = 59.437242
+lon = 24.7572693
+tapsus = "linn"
+kohad = ["Nord Spordihoone"]
+
+[[paik]]
+nimi = "Paldiski Alexela Arena"
+linn = "Paldiski"
+lat = 59.349089
+lon = 24.0801736
+tapsus = "linn"
+kohad = ["Paldiski Alexela Arena"]
+
+[[paik]]
+nimi = "Vändra staadion"
+linn = "Vändra"
+lat = 58.655054
+lon = 25.041331
+tapsus = "umbes"
+osm = "node/4632473075"
+kohad = ["Vändra staadion"]
+
+[[paik]]
+nimi = "Türi linnastaadion"
+linn = "Türi"
+lat = 58.8101662
+lon = 25.4252349
+tapsus = "linn"
+kohad = ["Türi linnastaadion"]
+
+[[paik]]
+nimi = "Narva Spordikeskus"
+linn = "Narva"
+lat = 59.385152
+lon = 28.192815
+tapsus = "tapne"
+osm = "way/42936862"
+kohad = ["Narva Spordikeskus", "Narva Jalgpallihall"]
+
+[[paik]]
+nimi = "Kose Gümnaasiumi staadion"
+linn = "Kose"
+lat = 57.813586
+lon = 27.034747
+tapsus = "umbes"
+osm = "way/219790707"
+kohad = ["Kose Gümnaasiumi staadion"]
+
+[[paik]]
+nimi = "Märjamaa staadion"
+linn = "Märjamaa"
+lat = 58.877628
+lon = 24.484814
+tapsus = "tapne"
+osm = "way/1180000592"
+kohad = ["Märjamaa staadion"]
+
+[[paik]]
+nimi = "Tallinna Ülikooli spordihoone"
+linn = "Tallinn"
+lat = 59.439015
+lon = 24.770964
+tapsus = "tapne"
+osm = "node/11311344078"
+kohad = ["Tallinna Ülikooli spordihoone"]
+
+[[paik]]
+nimi = "Tuule spordihoone"
+linn = "Rae vald"
+lat = 59.359036
+lon = 24.904504
+tapsus = "tapne"
+osm = "way/1227104124"
+kohad = ["Tuule spordihoone"]
+
+[[paik]]
+nimi = "A. Le Coq Spordihoone"
+linn = "Tartu"
+lat = 58.371344
+lon = 26.752049
+tapsus = "tapne"
+osm = "way/30233873"
+kohad = ["A. Le Coq Spordihoone"]
+
+[[paik]]
+nimi = "Kiili SH"
+linn = "Kiili"
+lat = 59.304457
+lon = 24.839926
+tapsus = "tapne"
+osm = "way/473599829"
+kohad = ["Kiili SH", "Kiili Spordihoone"]
+
+[[paik]]
+nimi = "Valga Kungla kunstmurustaadion"
+linn = "Valga"
+lat = 57.777034
+lon = 26.0315628
+tapsus = "linn"
+kohad = ["Valga Kungla kunstmurustaadion"]
+
+[[paik]]
+nimi = "Kohila staadion"
+linn = "Kohila"
+lat = 59.168024
+lon = 24.753216
+tapsus = "tapne"
+osm = "way/52920933"
+kohad = ["Kohila staadion"]
+
+[[paik]]
+nimi = "Soe keskasula staadion"
+linn = "Tõrva"
+lat = 58.0028204
+lon = 25.9253612
+tapsus = "linn"
+kohad = ["Soe keskasula staadion"]
+
+[[paik]]
+nimi = "Tallink City SK"
+linn = "Tallinn"
+lat = 59.437242
+lon = 24.7572693
+tapsus = "linn"
+kohad = ["Tallink City SK"]
+
+[[paik]]
+nimi = "Hiiumaa spordikeskuse kunstmuruväljak"
+linn = "Kärdla"
+lat = 58.9978
+lon = 22.75759
+tapsus = "tapne"
+osm = "Hiiumaa spordikeskus"
+kohad = ["Hiiumaa spordikeskuse kunstmuruväljak"]
+
+[[paik]]
+nimi = "Jõgeva aleviku staadion"
+linn = "Jõgeva"
+lat = 58.768738
+lon = 26.394582
+tapsus = "tapne"
+osm = "way/1189798500"
+kohad = ["Jõgeva aleviku staadion"]
+
+[[paik]]
+nimi = "Haapsalu linnastaadion"
+linn = "Haapsalu"
+lat = 58.93638
+lon = 23.53954
+tapsus = "tapne"
+osm = "Haapsalu staadion"
+kohad = ["Haapsalu linnastaadion"]
+
+[[paik]]
+nimi = "Türi spordihoone"
+linn = "Türi"
+lat = 58.810116
+lon = 25.433053
+tapsus = "tapne"
+osm = "way/226033741"
+kohad = ["Türi spordihoone"]
+
+[[paik]]
+nimi = "Ahtme spordihall"
+linn = "Kohtla-Järve"
+lat = 59.32619
+lon = 27.421493
+tapsus = "tapne"
+osm = "way/55786380"
+kohad = ["Ahtme spordihall"]
+
+[[paik]]
+nimi = "Tallinn"
+linn = "Tallinn"
+lat = 59.437242
+lon = 24.7572693
+tapsus = "linn"
+kohad = ["Tallinn"]
+
+[[paik]]
+nimi = "Tori Hobusekasvandus"
+linn = "Tori"
+lat = 58.480409
+lon = 24.812907
+tapsus = "umbes"
+osm = "way/850739120"
+kohad = ["Tori Hobusekasvandus"]
+
+[[paik]]
+nimi = "Vaimastvere Arena"
+linn = "Jõgeva"
+lat = 58.812715
+lon = 26.284882
+tapsus = "tapne"
+osm = "way/591767093"
+kohad = ["Vaimastvere Arena"]
+
+[[paik]]
+nimi = "Loo kunstmuruväljak"
+linn = "Jõelähtme vald"
+lat = 59.432048
+lon = 24.943395
+tapsus = "tapne"
+osm = "way/26848686"
+kohad = ["Loo kunstmuruväljak"]
+
+[[paik]]
+nimi = "Rapla Jalgpallihall"
+linn = "Rapla"
+lat = 59.003449
+lon = 24.785345
+tapsus = "tapne"
+osm = "way/1032864183"
+kohad = ["Rapla Jalgpallihall"]
+
+[[paik]]
+nimi = "Paide linnastaadion"
+linn = "Paide"
+lat = 58.87843
+lon = 25.540584
+tapsus = "tapne"
+osm = "way/59947131"
+kohad = ["Paide linnastaadion"]
+
+[[paik]]
+nimi = "Kukulinna tall"
+linn = "Kukulinna"
+lat = 58.5162961
+lon = 26.7157197
+tapsus = "linn"
+kohad = ["Kukulinna tall"]
+
+[[paik]]
+nimi = "Järva-Jaani Kasekopli staadion"
+linn = "Järva-Jaani"
+lat = 59.0421342
+lon = 25.881395
+tapsus = "linn"
+kohad = ["Järva-Jaani Kasekopli staadion"]
+
+[[paik]]
+nimi = "Lähte spordihoone"
+linn = "Tartu vald"
+lat = 58.494648
+lon = 26.687099
+tapsus = "tapne"
+osm = "way/720150006"
+kohad = ["Lähte spordihoone"]
+
+[[paik]]
+nimi = "Kõrveküla kooli SH"
+linn = "Tartu vald"
+lat = 58.421259
+lon = 26.767862
+tapsus = "tapne"
+osm = "way/249391810"
+kohad = ["Kõrveküla kooli SH"]
+
+[[paik]]
+nimi = "Perila"
+linn = "Perila"
+lat = 59.2804457
+lon = 25.2134732
+tapsus = "linn"
+kohad = ["Perila"]
+
+[[paik]]
+nimi = "Toominga tall"
+linn = "Lilli"
+lat = 57.9958662
+lon = 25.536045
+tapsus = "linn"
+kohad = ["Toominga tall"]
+
+[[paik]]
+nimi = "Ihaste Ratsakool"
+linn = "Tartu"
+lat = 58.344934
+lon = 26.771934
+tapsus = "tapne"
+osm = "way/1307918126"
+kohad = ["Ihaste Ratsakool"]
+
+[[paik]]
+nimi = "MK TK"
+linn = "Tartu"
+lat = 58.3779528
+lon = 26.7290023
+tapsus = "linn"
+kohad = ["MK TK"]
+
+[[paik]]
+nimi = "Kääriku Kunstmurustaadion"
+linn = "Otepää"
+lat = 58.003579
+lon = 26.390445
+tapsus = "tapne"
+osm = "node/2260449561"
+kohad = ["Kääriku Kunstmurustaadion", "Kääriku spordikeskus"]
+
+[[paik]]
+nimi = "Jõgeva linnastaadion"
+linn = "Jõgeva"
+lat = 58.7634819
+lon = 26.399928
+tapsus = "linn"
+kohad = ["Jõgeva linnastaadion"]
+
+[[paik]]
+nimi = "Põltsamaa Felixhall"
+linn = "Põltsamaa"
+lat = 58.65597
+lon = 25.973008
+tapsus = "tapne"
+osm = "node/392792306"
+kohad = ["Põltsamaa Felixhall"]
+
+[[paik]]
+nimi = "Valga Spordihoone"
+linn = "Valga"
+lat = 57.778891
+lon = 26.049924
+tapsus = "tapne"
+osm = "node/3785246864"
+kohad = ["Valga Spordihoone"]
+
+[[paik]]
+nimi = "Narva jäähall"
+linn = "Narva"
+lat = 59.364453
+lon = 28.18323
+tapsus = "tapne"
+osm = "way/42218048"
+kohad = ["Narva jäähall"]
+
+[[paik]]
+nimi = "Kindluse spordihoone"
+linn = "Rae vald"
+lat = 59.379095
+lon = 24.826623
+tapsus = "tapne"
+osm = "way/1003688116"
+kohad = ["Kindluse spordihoone"]
+
+[[paik]]
+nimi = "Kristiine spordihall"
+linn = "Tallinn"
+lat = 59.4206
+lon = 24.686611
+tapsus = "tapne"
+osm = "way/26848780"
+kohad = ["Kristiine spordihall"]
+
+[[paik]]
+nimi = "Kuusalu spordikeskus"
+linn = "Kuusalu"
+lat = 59.451625
+lon = 25.41898
+tapsus = "tapne"
+osm = "node/10162277114"
+kohad = ["Kuusalu spordikeskus"]
+
+[[paik]]
+nimi = "Jõgeva spordihoone"
+linn = "Jõgeva"
+lat = 58.747199
+lon = 26.386768
+tapsus = "tapne"
+osm = "way/291244088"
+kohad = ["Jõgeva spordihoone"]
+
+[[paik]]
+nimi = "Ääsmäe spordihoone"
+linn = "Ääsmäe"
+lat = 59.245401
+lon = 24.507998
+tapsus = "tapne"
+osm = "way/712094021"
+kohad = ["Ääsmäe spordihoone"]
+
+[[paik]]
+nimi = "Haapsalu Uuemõisa kunstmuruväljak"
+linn = "Haapsalu"
+lat = 58.944409
+lon = 23.581673
+tapsus = "tapne"
+osm = "way/227203584"
+kohad = ["Haapsalu Uuemõisa kunstmuruväljak", "Haapsalu Uuemõisa jalgpallihall"]
+
+[[paik]]
+nimi = "Barrus Arena Võru"
+linn = "Võru"
+lat = 57.8385759
+lon = 27.0086505
+tapsus = "linn"
+kohad = ["Barrus Arena Võru"]
+
+[[paik]]
+nimi = "Vastseliina Gümnaasiumi jalgpalliväljak"
+linn = "Võru vald"
+lat = 57.8097317
+lon = 27.1792358
+tapsus = "linn"
+kohad = ["Vastseliina Gümnaasiumi jalgpalliväljak"]
+
+[[paik]]
+nimi = "Rõuge staadion"
+linn = "Võru vald"
+lat = 57.730874
+lon = 26.929647
+tapsus = "tapne"
+osm = "way/1346380268"
+kohad = ["Rõuge staadion"]
+
+[[paik]]
+nimi = "Rahu Hall"
+linn = "Rakvere"
+lat = 59.334776
+lon = 26.355196
+tapsus = "tapne"
+osm = "way/40748584"
+kohad = ["Rahu Hall"]
+
+[[paik]]
+nimi = "Õismäe sportmängude hall"
+linn = "Tallinn"
+lat = 59.420156
+lon = 24.649419
+tapsus = "tapne"
+osm = "way/290574899"
+kohad = ["Õismäe sportmängude hall"]
+
+[[paik]]
+nimi = "Tartu"
+linn = "Tartu"
+lat = 58.3779528
+lon = 26.7290023
+tapsus = "linn"
+kohad = ["Tartu"]
+
+[[paik]]
+nimi = "Tehvandi Spordikeskus"
+linn = "Otepää"
+lat = 58.052928
+lon = 26.507212
+tapsus = "tapne"
+osm = "way/669100181"
+kohad = ["Tehvandi Spordikeskus"]
+
+[[paik]]
+nimi = "Maria talu"
+linn = "Kõpu"
+lat = 58.3255407
+lon = 25.3054951
+tapsus = "linn"
+kohad = ["Maria talu"]
+
+[[paik]]
+nimi = "Wiru Spordikeskus"
+linn = "Kohtla-Järve"
+lat = 59.397683
+lon = 27.276195
+tapsus = "tapne"
+osm = "way/967250222"
+kohad = ["Wiru Spordikeskus"]
+
+[[paik]]
+nimi = "Viimsi Jalgpalli- ja Kergejõustikuhall"
+linn = "Viimsi"
+lat = 59.501063
+lon = 24.844253
+tapsus = "tapne"
+osm = "node/13172776408"
+kohad = ["Viimsi Jalgpalli- ja Kergejõustikuhall"]
+
+[[paik]]
+nimi = "Astri Arena"
+linn = "Tartu"
+lat = 58.372659
+lon = 26.693701
+tapsus = "umbes"
+osm = "way/29981051"
+kohad = ["Astri Arena"]
+
+[[paik]]
+nimi = "Keila Tervisekeskus"
+linn = "Keila"
+lat = 59.314687
+lon = 24.411818
+tapsus = "tapne"
+osm = "way/103022468"
+kohad = ["Keila Tervisekeskus"]
+
+[[paik]]
+nimi = "Saku Suurhall"
+linn = "Tallinn"
+lat = 59.437242
+lon = 24.7572693
+tapsus = "linn"
+kohad = ["Saku Suurhall"]
+
+[[paik]]
+nimi = "Märjamaa Valla Spordikeskus"
+linn = "Märjamaa"
+lat = 58.906176
+lon = 24.425357
+tapsus = "tapne"
+osm = "node/10095603909"
+kohad = ["Märjamaa Valla Spordikeskus"]
+
+[[paik]]
+nimi = "Jõgeva Virtus"
+linn = "Jõgeva"
+lat = 58.7634819
+lon = 26.399928
+tapsus = "linn"
+kohad = ["Jõgeva Virtus"]
+
+[[paik]]
+nimi = "Kose"
+linn = "Kose"
+lat = 57.8144111
+lon = 27.0331231
+tapsus = "linn"
+kohad = ["Kose"]
+
+[[paik]]
+nimi = "Adrenalin Arena"
+linn = "Sõmerpalu"
+lat = 57.855111
+lon = 26.838948
+tapsus = "tapne"
+osm = "way/209231393"
+kohad = ["Adrenalin Arena"]
+
+[[paik]]
+nimi = "Valgehobusemäe suusa- ja puhkekeskus"
+linn = "Valgehobusemäe"
+lat = 59.221584
+lon = 25.56314
+tapsus = "tapne"
+osm = "node/600187188"
+kohad = ["Valgehobusemäe suusa- ja puhkekeskus"]
+
+[[paik]]
+nimi = "Veskimetsa Ratsakool"
+linn = "Tallinn"
+lat = 59.437242
+lon = 24.7572693
+tapsus = "linn"
+kohad = ["Veskimetsa Ratsakool"]
+
+[[paik]]
+nimi = "Tallinn, koht täpsustamisel"
+linn = "Tallinn"
+lat = 59.437242
+lon = 24.7572693
+tapsus = "linn"
+kohad = ["Tallinn, koht täpsustamisel"]
+
+[[paik]]
+nimi = "Viimsi"
+linn = "Viimsi"
+lat = 59.5002216
+lon = 24.8413395
+tapsus = "linn"
+kohad = ["Viimsi"]
+
+[[paik]]
+nimi = "Sillamäe Kalevi staadion"
+linn = "Sillamäe"
+lat = 59.394985
+lon = 27.772477
+tapsus = "tapne"
+osm = "way/664134725"
+kohad = ["Sillamäe Kalevi staadion"]
+
+[[paik]]
+nimi = "Sillamäe Spordikompleks"
+linn = "Sillamäe"
+lat = 59.391822
+lon = 27.794171
+tapsus = "tapne"
+osm = "way/409519471"
+kohad = ["Sillamäe Spordikompleks"]
+
+[[paik]]
+nimi = "NET spordihall"
+linn = "Tartu"
+lat = 58.369721
+lon = 26.754327
+tapsus = "tapne"
+osm = "way/1221772896"
+kohad = ["NET spordihall"]
+
+[[paik]]
+nimi = "Katoliku SK"
+linn = "Tartu"
+lat = 58.3779528
+lon = 26.7290023
+tapsus = "linn"
+kohad = ["Katoliku SK"]
+
+[[paik]]
+nimi = "Pärnu"
+linn = "Pärnu"
+lat = 58.3870659
+lon = 24.5026059
+tapsus = "linn"
+kohad = ["Pärnu"]
+
+[[paik]]
+nimi = "Alutaguse Tervisespordikeskus"
+linn = "Pannjärve"
+lat = 59.289609
+lon = 27.559037
+tapsus = "tapne"
+osm = "node/603237035"
+kohad = ["Alutaguse Tervisespordikeskus"]
+
+[[paik]]
+nimi = "Haanja Puhke- ja Suusakeskus"
+linn = "Haanja"
+lat = 57.7201307
+lon = 27.0549091
+tapsus = "linn"
+kohad = ["Haanja Puhke- ja Suusakeskus"]
+
+[[paik]]
+nimi = "Gramina Stud"
+linn = "Külitse"
+lat = 58.3178019
+lon = 26.6110832
+tapsus = "linn"
+kohad = ["Gramina Stud"]
+
+[[paik]]
+nimi = "Valgeranna Tall"
+linn = "Valgeranna"
+lat = 58.415613
+lon = 24.415239
+tapsus = "tapne"
+osm = "way/815489443"
+kohad = ["Valgeranna Tall"]
+
+[[paik]]
+nimi = "Tähtvere TK"
+linn = "Tartu"
+lat = 58.3779528
+lon = 26.7290023
+tapsus = "linn"
+kohad = ["Tähtvere TK"]
+
+[[paik]]
+nimi = "Aura Veekeskus"
+linn = "Tartu"
+lat = 58.375533
+lon = 26.734354
+tapsus = "tapne"
+osm = "way/30232722"
+kohad = ["Aura Veekeskus"]
+
+[[paik]]
+nimi = "Oru Põhikooli staadion"
+linn = "Kose"
+lat = 57.8144111
+lon = 27.0331231
+tapsus = "linn"
+kohad = ["Oru Põhikooli staadion"]
+
+[[paik]]
+nimi = "Jõhvi jalgpallikeskus"
+linn = "Jõhvi"
+lat = 59.3579433
+lon = 27.4135654
+tapsus = "linn"
+kohad = ["Jõhvi jalgpallikeskus"]
+
+[[paik]]
+nimi = "Tartu Annemõisa jalgpallihall"
+linn = "Tartu"
+lat = 58.377308
+lon = 26.774317
+tapsus = "tapne"
+osm = "way/1116962315"
+kohad = ["Tartu Annemõisa jalgpallihall"]
+
+[[paik]]
+nimi = "Lilleküla gümnaasium"
+linn = "Tallinn"
+lat = 59.414747
+lon = 24.720939
+tapsus = "umbes"
+osm = "way/783596621"
+kohad = ["Lilleküla gümnaasium"]
+
+[[paik]]
+nimi = "Kehra Spordihoone"
+linn = "Kehra"
+lat = 59.334823
+lon = 25.332437
+tapsus = "umbes"
+osm = "node/11736656526"
+kohad = ["Kehra Spordihoone"]
+
+[[paik]]
+nimi = "Rapla Sadolin Spordihoone"
+linn = "Rapla"
+lat = 58.998033
+lon = 24.813346
+tapsus = "tapne"
+osm = "node/10058591491"
+kohad = ["Rapla Sadolin Spordihoone"]
+
+[[paik]]
+nimi = "Pärnu kergejõustikuhall"
+linn = "Pärnu"
+lat = 58.381708
+lon = 24.515718
+tapsus = "tapne"
+osm = "way/824956373"
+kohad = ["Pärnu kergejõustikuhall"]
+
+[[paik]]
+nimi = "Sillamäe terviserada"
+linn = "Sillamäe"
+lat = 59.4034594
+lon = 27.7291939
+tapsus = "linn"
+kohad = ["Sillamäe terviserada"]
+
+[[paik]]
+nimi = "Tallinna Lauluväljak"
+linn = "Tallinn"
+lat = 59.445067
+lon = 24.806062
+tapsus = "umbes"
+osm = "relation/14384584"
+kohad = ["Tallinna Lauluväljak"]
+
+[[paik]]
+nimi = "Vabaduse väljak"
+linn = "Tallinn"
+lat = 59.433041
+lon = 24.745506
+tapsus = "umbes"
+osm = "way/636371687"
+kohad = ["Vabaduse väljak"]
+
+[[paik]]
+nimi = "Mammaste"
+linn = "Põlva"
+lat = 58.068526
+lon = 27.066931
+tapsus = "umbes"
+osm = "way/28863575"
+kohad = ["Mammaste"]
+
+[[paik]]
+nimi = "Holstre-Polli Tervisespordikeskus"
+linn = "Holstre"
+lat = 58.2774133
+lon = 25.6911998
+tapsus = "linn"
+kohad = ["Holstre-Polli Tervisespordikeskus"]
+
+[[paik]]
+nimi = "Ecu tallid"
+linn = "Järiste"
+lat = 58.297295
+lon = 26.565019
+tapsus = "tapne"
+osm = "way/1314407966"
+kohad = ["Ecu tallid"]
+
+[[paik]]
+nimi = "Massu"
+linn = "Massu"
+lat = 58.6589704
+lon = 23.6521168
+tapsus = "linn"
+kohad = ["Massu"]
+
+[[paik]]
+nimi = "Pallase tallid"
+linn = "Kadrina"
+lat = 59.3382495
+lon = 26.1384322
+tapsus = "linn"
+kohad = ["Pallase tallid"]
+
+[[paik]]
+nimi = "Särevere"
+linn = "Särevere"
+lat = 58.786779
+lon = 25.4293885
+tapsus = "linn"
+kohad = ["Särevere"]
+
+[[paik]]
+nimi = "Ruila"
+linn = "Ruila"
+lat = 59.1946674
+lon = 24.4755375
+tapsus = "linn"
+kohad = ["Ruila"]
+
+[[paik]]
+nimi = "Padise"
+linn = "Padise"
+lat = 59.2168172
+lon = 24.1313406
+tapsus = "linn"
+kohad = ["Padise"]
+
+[[paik]]
+nimi = "US Tenniseakadeemia"
+linn = "Tallinn"
+lat = 59.437242
+lon = 24.7572693
+tapsus = "linn"
+kohad = ["US Tenniseakadeemia"]
+
+[[paik]]
+nimi = "Haapsalu TK"
+linn = "Haapsalu"
+lat = 58.9399019
+lon = 23.5414798
+tapsus = "linn"
+kohad = ["Haapsalu TK"]
+
+[[paik]]
+nimi = "Tartu, koht täpsustamisel"
+linn = "Tartu"
+lat = 58.3779528
+lon = 26.7290023
+tapsus = "linn"
+kohad = ["Tartu, koht täpsustamisel"]
+
+[[paik]]
+nimi = "Nõmme ujula"
+linn = "Tallinn"
+lat = 59.36781
+lon = 24.649527
+tapsus = "tapne"
+osm = "way/26892932"
+kohad = ["Nõmme ujula"]
+
+[[paik]]
+nimi = "Keila"
+linn = "Keila"
+lat = 59.3110918
+lon = 24.420907
+tapsus = "linn"
+kohad = ["Keila"]
+
+[[paik]]
+nimi = "Sillamäe"
+linn = "Sillamäe"
+lat = 59.4034594
+lon = 27.7291939
+tapsus = "linn"
+kohad = ["Sillamäe"]
+
+[[paik]]
+nimi = "Saaremaa Nooruse Hall (Kuressaare jalgpallihall)"
+linn = "Kuressaare"
+lat = 58.2527693
+lon = 22.4849207
+tapsus = "linn"
+kohad = ["Saaremaa Nooruse Hall (Kuressaare jalgpallihall)"]
+
+[[paik]]
+nimi = "Pärnu Spordihoone"
+linn = "Pärnu"
+lat = 58.405246
+lon = 24.658104
+tapsus = "tapne"
+osm = "way/1319232877"
+kohad = ["Pärnu Spordihoone"]
+
+[[paik]]
+nimi = "EJL TNTK jalgpalliväljak"
+linn = "Tallinn"
+lat = 59.437242
+lon = 24.7572693
+tapsus = "linn"
+kohad = ["EJL TNTK jalgpalliväljak"]
+
+[[paik]]
+nimi = "Märjamaa spordihoone"
+linn = "Märjamaa"
+lat = 58.902045
+lon = 24.470083
+tapsus = "tapne"
+osm = "relation/14336789"
+kohad = ["Märjamaa spordihoone"]
+
+[[paik]]
+nimi = "Paalalinna viilhall"
+linn = "Viljandi"
+lat = 58.36454
+lon = 25.5878074
+tapsus = "linn"
+kohad = ["Paalalinna viilhall"]
+
+[[paik]]
+nimi = "Haapsalu spordikeskus"
+linn = "Haapsalu"
+lat = 58.937506
+lon = 23.541052
+tapsus = "tapne"
+osm = "way/146176344"
+kohad = ["Haapsalu spordikeskus"]
+
+[[paik]]
+nimi = "Vabaõhumuuseumi tee 8"
+linn = "Tallinn"
+lat = 59.437242
+lon = 24.7572693
+tapsus = "linn"
+kohad = ["Vabaõhumuuseumi tee 8"]
+
+[[paik]]
+nimi = "Sütiste park-mets"
+linn = "Tallinn"
+lat = 59.437242
+lon = 24.7572693
+tapsus = "linn"
+kohad = ["Sütiste park-mets"]
+
+[[paik]]
+nimi = "Viljandi Jakobsoni Kool"
+linn = "Viljandi"
+lat = 58.346286
+lon = 25.581571
+tapsus = "umbes"
+osm = "way/143987931"
+kohad = ["Viljandi Jakobsoni Kool"]
+
+[[paik]]
+nimi = "Kuressaare"
+linn = "Kuressaare"
+lat = 58.2527693
+lon = 22.4849207
+tapsus = "linn"
+kohad = ["Kuressaare"]
+
+[[paik]]
+nimi = "Niidupargi staadion"
+linn = "Pärnu"
+lat = 58.386491
+lon = 24.544564
+tapsus = "tapne"
+osm = "way/617679223"
+kohad = ["Niidupargi staadion"]
+
+[[paik]]
+nimi = "Järvakandi terviserajad"
+linn = "Järvakandi"
+lat = 58.7769273
+lon = 24.8116817
+tapsus = "linn"
+kohad = ["Järvakandi terviserajad"]
+
+[[paik]]
+nimi = "Loksa staadion"
+linn = "Loksa"
+lat = 59.578382
+lon = 25.717369
+tapsus = "tapne"
+osm = "way/60096611"
+kohad = ["Loksa staadion"]
+
+[[paik]]
+nimi = "Jõhvi Kesklinna Kooli staadion"
+linn = "Jõhvi"
+lat = 59.357537
+lon = 27.420779
+tapsus = "tapne"
+osm = "way/96686086"
+kohad = ["Jõhvi Kesklinna Kooli staadion"]
+
+[[paik]]
+nimi = "Kohtla-Nõmme Kooli staadion"
+linn = "Kohtla-Nõmme"
+lat = 59.358685
+lon = 27.174394
+tapsus = "tapne"
+osm = "node/12987533622"
+kohad = ["Kohtla-Nõmme Kooli staadion"]
+
+[[paik]]
+nimi = "Valga Keskstaadion"
+linn = "Valga"
+lat = 57.777454
+lon = 26.041048
+tapsus = "tapne"
+osm = "way/741674000"
+kohad = ["Valga Keskstaadion"]
+
+[[paik]]
+nimi = "Jõulumäe tervisespordikeskus"
+linn = "Jõulumäe"
+lat = 58.223478
+lon = 24.515967
+tapsus = "tapne"
+osm = "way/937841517"
+kohad = ["Jõulumäe tervisespordikeskus"]
+
+[[paik]]
+nimi = "Kadrioru staadion"
+linn = "Tallinn"
+lat = 59.434412
+lon = 24.783458
+tapsus = "tapne"
+osm = "way/119962464"
+kohad = ["Kadrioru staadion"]
+
+[[paik]]
+nimi = "Saku Tankodroom"
+linn = "Saku"
+lat = 59.301578
+lon = 24.6541952
+tapsus = "linn"
+kohad = ["Saku Tankodroom"]
+
+[[paik]]
+nimi = "Maardu"
+linn = "Maardu"
+lat = 59.468192
+lon = 24.9896751
+tapsus = "linn"
+kohad = ["Maardu"]
+
+[[paik]]
+nimi = "Paikuse"
+linn = "Paikuse"
+lat = 58.3697272
+lon = 24.6195334
+tapsus = "linn"
+kohad = ["Paikuse"]
+
+[[paik]]
+nimi = "Väike-Maarja"
+linn = "Väike-Maarja"
+lat = 59.1278643
+lon = 26.2498475
+tapsus = "linn"
+kohad = ["Väike-Maarja"]
+
+[[paik]]
+nimi = "Valga"
+linn = "Valga"
+lat = 57.777034
+lon = 26.0315628
+tapsus = "linn"
+kohad = ["Valga"]
+
+[[paik]]
+nimi = "Tartu Lumepark"
+linn = "Tartu"
+lat = 58.3779528
+lon = 26.7290023
+tapsus = "linn"
+kohad = ["Tartu Lumepark"]
+
+[[paik]]
+nimi = "Kiviõli Seikluskeskus"
+linn = "Kiviõli"
+lat = 59.365902
+lon = 26.952157
+tapsus = "umbes"
+osm = "way/1204839117"
+kohad = ["Kiviõli Seikluskeskus"]
+
+[[paik]]
+nimi = "Pariisi Puhkeküla"
+linn = "Kadrina"
+lat = 59.269635
+lon = 26.154152
+tapsus = "umbes"
+osm = "way/51357118"
+kohad = ["Pariisi Puhkeküla"]
+
+[[paik]]
+nimi = "Nõmme Lumepark"
+linn = "Tallinn"
+lat = 59.388715
+lon = 24.670532
+tapsus = "umbes"
+osm = "way/1550013162"
+kohad = ["Nõmme Lumepark"]
+
+[[paik]]
+nimi = "Andsumäe"
+linn = "Võru"
+lat = 57.795206
+lon = 27.182903
+tapsus = "umbes"
+osm = "node/1973425205"
+kohad = ["Andsumäe"]
+
+[[paik]]
+nimi = "Kütioru suusakeskus"
+linn = "Kütiorg"
+lat = 57.8133374
+lon = 27.1570055
+tapsus = "linn"
+kohad = ["Kütioru suusakeskus"]
+
+[[paik]]
+nimi = "Kõrvemaa Matka- ja Suusakeskus"
+linn = "Kõrvemaa"
+lat = 58.4234914
+lon = 26.7505411
+tapsus = "linn"
+kohad = ["Kõrvemaa Matka- ja Suusakeskus"]
+
+[[paik]]
+nimi = "Sindi"
+linn = "Sindi"
+lat = 58.4075128
+lon = 24.6583155
+tapsus = "linn"
+kohad = ["Sindi"]
+
+[[paik]]
+nimi = "Tartu Maratoni rada (Otepää–Elva)"
+linn = "Otepää"
+lat = 58.115243
+lon = 26.388205
+tapsus = "umbes"
+osm = "way/296408593"
+kohad = ["Tartu Maratoni rada (Otepää–Elva)"]
+
+[[paik]]
+nimi = "Kuutsemäe puhkekeskus"
+linn = "Kuutsemäe"
+lat = 58.026209
+lon = 26.322127
+tapsus = "tapne"
+osm = "node/2690493028"
+kohad = ["Kuutsemäe puhkekeskus"]
+
+[[paik]]
+nimi = "Munakas"
+linn = "Otepää"
+lat = 58.039057
+lon = 26.507443
+tapsus = "tapne"
+osm = "node/2260450287"
+kohad = ["Munakas"]
+
+[[paik]]
+nimi = "Koordi tallid"
+linn = "Koordi"
+lat = 58.988281
+lon = 25.664952
+tapsus = "tapne"
+osm = "way/1424426453"
+kohad = ["Koordi tallid"]
+
+[[paik]]
+nimi = "Tartu Ratsakool"
+linn = "Tartu"
+lat = 58.3779528
+lon = 26.7290023
+tapsus = "linn"
+kohad = ["Tartu Ratsakool"]
+
+[[paik]]
+nimi = "FV Rackets"
+linn = "Tallinn"
+lat = 59.437242
+lon = 24.7572693
+tapsus = "linn"
+kohad = ["FV Rackets"]
+
+[[paik]]
+nimi = "Top Spin"
+linn = "Narva"
+lat = 59.3767458
+lon = 28.1919315
+tapsus = "linn"
+kohad = ["Top Spin"]
+
+[[paik]]
+nimi = "FV Tennis (Tallinn)"
+linn = "Tallinn"
+lat = 59.437242
+lon = 24.7572693
+tapsus = "linn"
+kohad = ["FV Tennis (Tallinn)"]
+
+[[paik]]
+nimi = "Kalev SPA"
+linn = "Tallinn"
+lat = 59.439743
+lon = 24.751285
+tapsus = "umbes"
+osm = "way/47009171"
+kohad = ["Kalev SPA"]
+
+[[paik]]
+nimi = "Raja ujula"
+linn = "Pärnu"
+lat = 58.364856
+lon = 24.546359
+tapsus = "tapne"
+osm = "node/13411183845"
+kohad = ["Raja ujula"]
+
+[[paik]]
+nimi = "Kaerepere"
+linn = "Kaerepere"
+lat = 58.9615243
+lon = 24.8400311
+tapsus = "linn"
+kohad = ["Kaerepere"]
+
+[[paik]]
+nimi = "Rally Estonia (Raadi ja Lõuna-Eesti teed)"
+linn = "Tartu"
+lat = 58.3779528
+lon = 26.7290023
+tapsus = "linn"
+kohad = ["Rally Estonia (Raadi ja Lõuna-Eesti teed)"]
+
