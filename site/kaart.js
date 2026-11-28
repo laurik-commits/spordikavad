@@ -1,6 +1,6 @@
 // Spordikaart: ringid toimumiskohtades (suurus = mängude arv ajaaknas, värv = peamine ala). Andmed: andmed.json (analuus/kaart.py), mängude tekstid: tekstid.json.
-// Kaks vaadet: kindel kuupäev (terve päev, mängude nimekiri kellaaja järgi) ja tüüpiline nädal (nädalapäev × kellaaeg, keskmine aktiivsete nädalate kohta).
-// Seis on URL-is (?v=…&d=…&t=…&a=…&l=…&c=lat,lon&z=suum): link taastab sama vaate. Algvaade: terve Eesti (linnalehe nupp lisab ?linn=…, siis avaneb see linn).
+// Kaks vaadet: päev (valitud kuupäeva mängud) ja nädal (7 päeva alates valitud kuupäevast); nimekiri kellaaja järgi, nädalal päevade kaupa. Filtrid kehtivad terve valitud vahemiku peale.
+// Seis on URL-is (?v=paev|nadal&d=…&a=…&l=…&tbc=0&c=lat,lon&z=suum): link taastab sama vaate. Algvaade: terve Eesti (linnalehe nupp lisab ?linn=…, siis avaneb see linn).
 (function () {
   "use strict";
   var mapEl = document.getElementById("map");
@@ -8,8 +8,6 @@
   if (!mapEl || !ctl || !window.L) return;
 
   var BASE = Date.UTC(2026, 0, 1);
-  var AKEN = 180;
-  var DEFAULT_START = 18 * 60;
   var EESTI = [58.65, 25.3];                      // terve Eesti: keskpunkt; suum sõltub kaardi laiusest (kitsas ekraan 6, lai 7)
   function eestiSuum() { return mapEl.clientWidth >= 600 ? 7 : 6; }
   var WD = ["esmaspäev", "teisipäev", "kolmapäev", "neljapäev", "reede", "laupäev", "pühapäev"];
@@ -60,7 +58,7 @@
   function init(D) {
     var days = D.mangud.map(function (g) { return g[1]; });
     var minDay = Math.min.apply(null, days), maxDay = Math.max.apply(null, days);
-    var st = {mode: "paev", day: null, wd: 4, start: DEFAULT_START, tbc: true, sports: {}, levels: {}};
+    var st = {mode: "paev", day: null, tbc: true, sports: {}, levels: {}};
     var levels = [];
     D.mangud.forEach(function (g) { if (levels.indexOf(g[4]) < 0) levels.push(g[4]); });
     levels.sort();
@@ -80,14 +78,15 @@
     if (defaultDay == null) defaultDay = maxDay;
     st.day = defaultDay;
 
-    var kuup = q("kuup"), kell = q("kell"), main = document.querySelector("main.kaart");
+    var kuup = q("kuup"), main = document.querySelector("main.kaart");
     kuup.min = ymd(minDay); kuup.max = ymd(maxDay);
 
-    // ---- alade ja tasemete valikud ----
-    function chip(parent, label, color, on, onclick) {
-      var b = el("button", {type: "button", "aria-pressed": on ? "true" : "false"});
+    // ---- alade ja tasemete valikud (nupul on mängude arv valitud vahemikus; tühjad hallid ja lõpus) ----
+    function chip(parent, label, color, onclick) {
+      var b = el("button", {type: "button", "aria-pressed": "true"});
       if (color) { var d = el("i", {"class": "dot"}); d.style.background = color; b.appendChild(d); }
       b.appendChild(document.createTextNode(label));
+      var n = el("span", {"class": "n"}); b.appendChild(n);
       b.addEventListener("click", function () { onclick(b); });
       parent.appendChild(b);
       return b;
@@ -98,17 +97,43 @@
       else if (every) keys.forEach(function (k) { set[k] = k === String(key); });     // kõik sees: vali ainult see
       else set[key] = !set[key];
       if (!keys.some(function (k) { return set[k]; })) keys.forEach(function (k) { set[k] = true; });
-      refreshChips(); changed(true);
+      changed(true);
     }
     var chipEls = [];
     var kokku = [
-      [st.sports, chip(q("alad"), "Kõik", null, true, function () { toggle(st.sports, "k"); })],
-      [st.levels, chip(q("tasemed"), "Kõik", null, true, function () { toggle(st.levels, "k"); })]];
-    D.alad.forEach(function (a, i) { chipEls.push([st.sports, i, chip(q("alad"), a.n, a.c, true, function () { toggle(st.sports, i); })]); });
-    levels.forEach(function (l) { chipEls.push([st.levels, l, chip(q("tasemed"), TASE[l] || ("Tase " + l), null, true, function () { toggle(st.levels, l); })]); });
+      [st.sports, chip(q("alad"), "Kõik", null, function () { toggle(st.sports, "k"); }), q("alad")],
+      [st.levels, chip(q("tasemed"), "Kõik", null, function () { toggle(st.levels, "k"); }), q("tasemed")]];
+    D.alad.forEach(function (a, i) { chipEls.push([st.sports, i, chip(q("alad"), a.n, a.c, function () { toggle(st.sports, i); }), q("alad")]); });
+    levels.forEach(function (l) { chipEls.push([st.levels, l, chip(q("tasemed"), TASE[l] || ("Tase " + l), null, function () { toggle(st.levels, l); }), q("tasemed")]); });
+    function inRange(g) { var hi = st.mode === "nadal" ? st.day + 6 : st.day; return g[1] >= st.day && g[1] <= hi && (g[2] >= 0 || st.tbc); }
     function refreshChips() {
-      kokku.forEach(function (c) { c[1].setAttribute("aria-pressed", Object.keys(c[0]).every(function (k) { return c[0][k]; }) ? "true" : "false"); });
-      chipEls.forEach(function (c) { c[2].setAttribute("aria-pressed", c[0][c[1]] ? "true" : "false"); });
+      // mängude arv valitud vahemikus: alanupul arvestatakse taseme valikut, tasemenupul alade valikut
+      var cs = {}, cl = {};
+      D.mangud.forEach(function (g) {
+        if (!inRange(g)) return;
+        if (st.levels[g[4]]) cs[g[3]] = (cs[g[3]] || 0) + 1;
+        if (st.sports[g[3]]) cl[g[4]] = (cl[g[4]] || 0) + 1;
+      });
+      kokku.forEach(function (c) {
+        var every = Object.keys(c[0]).every(function (k) { return c[0][k]; });
+        c[1].setAttribute("aria-pressed", every ? "true" : "false");
+      });
+      var every = {sports: Object.keys(st.sports).every(function (k) { return st.sports[k]; }), levels: Object.keys(st.levels).every(function (k) { return st.levels[k]; })};
+      chipEls.forEach(function (c) {
+        var isSport = c[0] === st.sports, n = (isSport ? cs : cl)[c[1]] || 0;
+        c[2].querySelector(".n").textContent = " " + n;
+        c[2].setAttribute("aria-pressed", c[0][c[1]] ? "true" : "false");
+        // tühi nupp on välja lülitatud, välja arvatud juba valitud nupp alamhulga režiimis (et seda saaks tühistada)
+        var off = n === 0 && ((isSport ? every.sports : every.levels) || !c[0][c[1]]);
+        c[2].disabled = off;
+        c[2].classList.toggle("tyhi", n === 0);
+      });
+      // tühjad nupud lõppu (algjärjekord jääb muus osas samaks)
+      [q("alad"), q("tasemed")].forEach(function (box) {
+        var list = chipEls.filter(function (c) { return c[3] === box; });
+        list.filter(function (c) { return !c[2].classList.contains("tyhi"); }).concat(list.filter(function (c) { return c[2].classList.contains("tyhi"); }))
+          .forEach(function (c) { box.appendChild(c[2]); });
+      });
     }
     function ok(g) { return st.sports[g[3]] && st.levels[g[4]]; }
     function subset(set) { return Object.keys(set).some(function (k) { return !set[k]; }); }
@@ -117,15 +142,16 @@
     var toggleBtn = q("filtritoggle");
     function activeCount() {
       var n = 0;
-      if (st.mode === "nadal") n++;
-      else if (st.day !== defaultDay) n++;
-      if (st.mode === "nadal" && st.start !== DEFAULT_START) n++;
+      if (st.day !== defaultDay) n++;
       if (!st.tbc) n++;
       if (subset(st.sports)) n++;
       if (subset(st.levels)) n++;
       return n;
     }
-    function setPanel(open) { main.classList.toggle("suletud", !open); toggleBtn.setAttribute("aria-expanded", open ? "true" : "false"); }
+    function setPanel(open) {
+      main.classList.toggle("suletud", !open); toggleBtn.setAttribute("aria-expanded", open ? "true" : "false");
+      setTimeout(function () { map.invalidateSize(); }, 60);       // kaart muudab kõrgust (mobiilis jääb filtreid avades nähtavale)
+    }
     toggleBtn.addEventListener("click", function () { setPanel(main.classList.contains("suletud")); });
     setPanel(false);
 
@@ -134,7 +160,6 @@
       var p = new URLSearchParams();
       p.set("v", st.mode);
       p.set("d", ymd(st.day));
-      if (st.mode === "nadal") { p.set("t", String(st.start)); p.set("w", String(st.wd)); }
       if (subset(st.sports)) p.set("a", D.alad.filter(function (a, i) { return st.sports[i]; }).map(function (a) { return a.k; }).join(","));
       if (subset(st.levels)) p.set("l", levels.filter(function (l) { return st.levels[l]; }).join(","));
       if (!st.tbc) p.set("tbc", "0");
@@ -150,12 +175,10 @@
       try { history[push ? "pushState" : "replaceState"](null, "", location.pathname + u); } catch (e) {}
     }
     function decode(p, resetMissing) {
-      if (resetMissing) { allOn(); st.mode = "paev"; st.day = defaultDay; st.wd = 4; st.start = DEFAULT_START; st.tbc = true; }
+      if (resetMissing) { allOn(); st.mode = "paev"; st.day = defaultDay; st.tbc = true; }
       if (p.get("v") === "nadal" || p.get("v") === "paev") st.mode = p.get("v");
       var d = (p.get("d") || "").split("-");
       if (d.length === 3 && isFinite(+d[0])) st.day = Math.min(maxDay, Math.max(minDay, dayOf(+d[0], +d[1] - 1, +d[2])));
-      if (p.has("t") && isFinite(+p.get("t"))) st.start = Math.min(1380, Math.max(0, Math.round(+p.get("t") / 30) * 30));
-      if (p.has("w") && +p.get("w") >= 0 && +p.get("w") <= 6) st.wd = Math.round(+p.get("w"));
       if (p.get("tbc") === "0") st.tbc = false;
       if (p.has("a")) {
         var keys = p.get("a").split(","), any = false;
@@ -170,42 +193,33 @@
     }
     function syncControls() {
       kuup.value = ymd(st.day);
-      q("nadalapaev").value = String(st.wd);
-      kell.value = String(st.start);
       q("tbc").checked = st.tbc;
       Array.prototype.forEach.call(document.querySelectorAll('input[name="vaade"]'), function (r) { r.checked = r.value === st.mode; });
-      q("paevarida").hidden = st.mode !== "paev"; q("nadalarida").hidden = st.mode !== "nadal"; q("kellarida").hidden = st.mode !== "nadal";
-      refreshChips();
+      modeUi();
+    }
+    function modeUi() {
+      var w = st.mode === "nadal";
+      q("kuuplabel").textContent = w ? "Nädala algus" : "Kuupäev";
+      q("eelmine").setAttribute("aria-label", w ? "Eelmine nädal" : "Eelmine päev");
+      q("jargmine").setAttribute("aria-label", w ? "Järgmine nädal" : "Järgmine päev");
     }
     function changed(push) { draw(); writeUrl(push); }
 
     // ---- arvutus ----
-    // {res: {paik: {n, s:{ala:arv}}}, games: [mängu rea indeksid] (ainult kindel kuupäev), tbc, nw, total, lo, hi}
+    // {res: {paik: {n, s:{ala:arv}, d:{päev:arv}}}, games: [mängu rea indeksid], tbc, total, lo, hi}; vahemik = valitud päev või 7 päeva alates sellest
     function compute() {
-      var lo = st.mode === "paev" ? 0 : st.start, hi = st.mode === "paev" ? 1440 : Math.min(st.start + AKEN, 1440), res = {}, games = [];
-      var weeks = {}, nw = 0, tbc = 0, total = 0;
-      function add(g, idx) { var r = res[g[0]] || (res[g[0]] = {n: 0, s: {}}); r.n++; r.s[g[3]] = (r.s[g[3]] || 0) + 1; total++; if (st.mode === "paev") games.push(idx); }
+      var lo = st.day, hi = st.mode === "nadal" ? st.day + 6 : st.day, res = {}, games = [], tbc = 0, total = 0;
       D.mangud.forEach(function (g, idx) {
-        if (!ok(g)) return;
-        if (st.mode === "paev") {
-          if (g[1] !== st.day) return;
-          if (g[2] < 0) { if (st.tbc) { add(g, idx); tbc++; } }
-          else if (g[2] >= lo && g[2] < hi) add(g, idx);
-        } else {
-          if (g[2] < 0) return;
-          var w = Math.floor((g[1] + 3) / 7);
-          if (!weeks[w]) { weeks[w] = 1; nw++; }
-          if (weekday(g[1]) === st.wd && g[2] >= lo && g[2] < hi) add(g, idx);
-        }
+        if (g[1] < lo || g[1] > hi || !ok(g)) return;
+        if (g[2] < 0) { if (!st.tbc) return; tbc++; }
+        var r = res[g[0]] || (res[g[0]] = {n: 0, s: {}, d: {}});
+        r.n++; r.s[g[3]] = (r.s[g[3]] || 0) + 1; r.d[g[1]] = (r.d[g[1]] || 0) + 1; total++; games.push(idx);
       });
-      if (st.mode === "nadal" && nw) Object.keys(res).forEach(function (k) {
-        res[k].n = res[k].n / nw; Object.keys(res[k].s).forEach(function (s) { res[k].s[s] /= nw; });
-      });
-      return {res: res, games: games, tbc: tbc, nw: nw, total: total, lo: lo, hi: hi};
+      return {res: res, games: games, tbc: tbc, total: total, lo: lo, hi: hi};
     }
     function dominant(s) { var best = null; Object.keys(s).forEach(function (k) { if (best == null || s[k] > s[best]) best = k; }); return +best; }
     function radius(n) { return Math.max(5, 7 + 9 * Math.sqrt(n)); }
-    function fmt(n) { return st.mode === "paev" ? String(Math.round(n)) : (n < 10 ? n.toFixed(1).replace(".", ",") : String(Math.round(n))); }
+    function fmt(n) { return String(Math.round(n)); }
     function title(idx) { return T && T[idx] ? T[idx][0] : D.alad[D.mangud[idx][3]].n; }
 
     function popup(i, r) {
@@ -214,9 +228,13 @@
       box.appendChild(el("div", {"class": "meta"}, k.l + (k.t !== "tapne" ? " · asukoht " + (k.t === "umbes" ? "ligikaudne" : "on linna keskpunkt") : "")));
       var ul = el("ul");
       Object.keys(r.s).sort(function (a, b) { return r.s[b] - r.s[a]; }).forEach(function (s) {
-        ul.appendChild(el("li", null, D.alad[s].n + ": " + fmt(r.s[s]) + (st.mode === "nadal" ? " nädalas" : "")));
+        ul.appendChild(el("li", null, D.alad[s].n + ": " + fmt(r.s[s])));
       });
       box.appendChild(ul);
+      if (st.mode === "nadal") {
+        var ds = Object.keys(r.d).map(Number).sort(function (a, b) { return a - b; });
+        box.appendChild(el("div", {"class": "meta"}, "Päevad: " + ds.map(function (d) { return WD[weekday(d)].slice(0, 3) + " " + dmy(d) + " (" + r.d[d] + ")"; }).join(", ")));
+      }
       var best = null;
       D.mangud.forEach(function (g, idx) {
         if (g[0] !== i || !ok(g) || !(g[1] > now.d || (g[1] === now.d && (g[2] < 0 || g[2] >= now.m)))) return;
@@ -248,10 +266,10 @@
       if (rows.length) ol.scrollTo({top: Math.max(0, rows[0].offsetTop - 4), behavior: REDUCED ? "auto" : "smooth"});
     }
     function pointOf(li) { var p = li && li.getAttribute("data-p"); return p == null ? null : +p; }
-    ol.addEventListener("mouseover", function (e) { var li = e.target.closest("li"); if (li) highlight(pointOf(li), true); });
-    ol.addEventListener("mouseout", function (e) { var li = e.target.closest("li"); if (li) highlight(pointOf(li), false); });
-    ol.addEventListener("focusin", function (e) { var li = e.target.closest("li"); if (li) highlight(pointOf(li), true); });
-    ol.addEventListener("focusout", function (e) { var li = e.target.closest("li"); if (li) highlight(pointOf(li), false); });
+    ol.addEventListener("mouseover", function (e) { var li = e.target.closest("li"); if (li && pointOf(li) != null) highlight(pointOf(li), true); });
+    ol.addEventListener("mouseout", function (e) { var li = e.target.closest("li"); if (li && pointOf(li) != null) highlight(pointOf(li), false); });
+    ol.addEventListener("focusin", function (e) { var li = e.target.closest("li"); if (li && pointOf(li) != null) highlight(pointOf(li), true); });
+    ol.addEventListener("focusout", function (e) { var li = e.target.closest("li"); if (li && pointOf(li) != null) highlight(pointOf(li), false); });
     ol.addEventListener("click", function (e) {
       if (e.target.closest("a")) return;                               // mängu link avab mängu lehe
       var li = e.target.closest("li"), i = pointOf(li);
@@ -273,47 +291,36 @@
         m.on("mouseout", function () { highlight(i, false); });
         m.addTo(layer); markers[i] = m;
       });
-      var kellaTekst = hm(c.lo) + "–" + hm(c.hi);
-      q("kellatekst").textContent = kellaTekst;
-      var t;
-      if (st.mode === "paev") {
-        t = "Mänge kuupäeval " + dmy(st.day) + " (" + WD[weekday(st.day)] + "): " + Math.round(c.total) + ", kohti " + order.length +
-          (c.tbc ? ", sh " + c.tbc + " kellaajata üritust" : "") + ".";
-      } else {
-        var sum = order.reduce(function (s, k) { return s + c.res[k].n; }, 0);
-        t = "Tüüpiline " + WD[st.wd] + " kell " + kellaTekst + ": keskmiselt " + fmt(sum) + " mängu nädalas, kohti " + order.length + ". Keskmine on jagatud " + c.nw +
-          " aktiivse nädalaga (nädalad, kus valitud aladel oli vähemalt üks kellaajaga mäng). Aluseks on kõik andmetes olevad mängud, möödunud ja tulevased; kellaajata üritusi ei arvestata.";
-      }
+      var t = "Mänge " + (st.mode === "nadal" ? dmy(c.lo) + " – " + dmy(c.hi) : dmy(st.day) + " (" + WD[weekday(st.day)] + ")") + ": " + c.total + ", kohti " + order.length +
+        (c.tbc ? ", sh " + c.tbc + " kellaajata üritust" : "") + ".";
       q("selgitus").textContent = t;
       toggleBtn.textContent = "Filtrid (" + activeCount() + " aktiivset)";
+      refreshChips();
 
       while (ol.firstChild) ol.removeChild(ol.firstChild);
-      if (!order.length) { ol.appendChild(el("li", {"class": "tyhi"}, "Valitud aknas mänge pole. Muuda kuupäeva, kellaaega või valikuid.")); return; }
-      if (st.mode === "paev") {
-        // kindel kuupäev: mängud kellaaja järgi (kellaajata lõpus), iga rida viib mängu lehele
-        var rows = c.games.slice().sort(function (a, b) {
-          var ma = D.mangud[a][2], mb = D.mangud[b][2];
-          return (ma < 0 ? 9999 : ma) - (mb < 0 ? 9999 : mb) || title(a).localeCompare(title(b), "et");
-        });
-        rows.slice(0, 400).forEach(function (idx) {
-          var g = D.mangud[idx], k = D.kohad[g[0]], li = el("li", {"data-p": String(g[0]), "class": "mang"});
-          li.appendChild(el("span", {"class": "kell"}, g[2] < 0 ? "terve päev" : hm(g[2])));
-          li.appendChild(el("a", {href: "../m/" + g[5] + "/"}, title(idx)));
-          var sub = el("span", {"class": "rida2"}), dot = el("i", {"class": "dot"});
-          dot.style.background = D.alad[g[3]].c;
-          sub.appendChild(dot);
-          sub.appendChild(document.createTextNode(D.alad[g[3]].n + " · " + k.n + ", " + k.l + (T && T[idx] ? " · " + T[idx][1] : "")));
-          li.appendChild(sub);
-          ol.appendChild(li);
-        });
-      } else {
-        // tüüpiline nädal: kellaaegu pole (keskmine paljude nädalate kohta), seega kohad mängude arvu järgi
-        order.slice(0, 40).forEach(function (key) {
-          var i = +key, li = el("li", {"data-p": String(i)});
-          li.appendChild(el("button", {type: "button"}, D.kohad[i].n + " (" + D.kohad[i].l + "): " + fmt(c.res[key].n) + " mängu nädalas"));
-          ol.appendChild(li);
-        });
-      }
+      if (!order.length) { ol.appendChild(el("li", {"class": "tyhi"}, "Valitud ajavahemikus mänge pole. Muuda kuupäeva või valikuid.")); return; }
+      // mängud päeva ja kellaaja järgi (kellaajata päeva lõpus); nädalavaates päevapealkirjad; iga rida viib mängu lehele
+      var rows = c.games.slice().sort(function (a, b) {
+        var ga = D.mangud[a], gb = D.mangud[b];
+        return ga[1] - gb[1] || (ga[2] < 0 ? 9999 : ga[2]) - (gb[2] < 0 ? 9999 : gb[2]) || title(a).localeCompare(title(b), "et");
+      });
+      var lastDay = null;
+      rows.slice(0, 600).forEach(function (idx) {
+        var g = D.mangud[idx], k = D.kohad[g[0]];
+        if (st.mode === "nadal" && g[1] !== lastDay) {
+          lastDay = g[1];
+          ol.appendChild(el("li", {"class": "paevakiri"}, WD[weekday(g[1])].charAt(0).toUpperCase() + WD[weekday(g[1])].slice(1) + ", " + dmy(g[1])));
+        }
+        var li = el("li", {"data-p": String(g[0]), "class": "mang"});
+        li.appendChild(el("span", {"class": "kell"}, g[2] < 0 ? "terve päev" : hm(g[2])));
+        li.appendChild(el("a", {href: "../m/" + g[5] + "/"}, title(idx)));
+        var sub = el("span", {"class": "rida2"}), dot = el("i", {"class": "dot"});
+        dot.style.background = D.alad[g[3]].c;
+        sub.appendChild(dot);
+        sub.appendChild(document.createTextNode(D.alad[g[3]].n + " · " + k.n + ", " + k.l + (T && T[idx] ? " · " + T[idx][1] : "")));
+        li.appendChild(sub);
+        ol.appendChild(li);
+      });
       if (active != null) Array.prototype.forEach.call(rowsOf(active), function (li) { li.classList.add("aktiivne"); });
     }
     redraw = draw;
@@ -323,16 +330,14 @@
     kuup.addEventListener("change", function () {
       var p = kuup.value.split("-"); if (p.length === 3) setDay(dayOf(+p[0], +p[1] - 1, +p[2]));
     });
-    q("eelmine").addEventListener("click", function () { setDay(st.day - 1); });
-    q("jargmine").addEventListener("click", function () { setDay(st.day + 1); });
+    q("eelmine").addEventListener("click", function () { setDay(st.day - (st.mode === "nadal" ? 7 : 1)); });
+    q("jargmine").addEventListener("click", function () { setDay(st.day + (st.mode === "nadal" ? 7 : 1)); });
     q("tana").addEventListener("click", function () { setDay(now.d); });
     q("tbc").addEventListener("change", function (e) { st.tbc = e.target.checked; changed(true); });
-    q("nadalapaev").addEventListener("change", function (e) { st.wd = +e.target.value; changed(true); });
-    kell.addEventListener("input", function () { st.start = +kell.value; draw(); writeUrl(false); });   // lohistamine ei täida ajalugu
     Array.prototype.forEach.call(document.querySelectorAll('input[name="vaade"]'), function (r) {
       r.addEventListener("change", function () {
         st.mode = r.value;
-        q("paevarida").hidden = st.mode !== "paev"; q("nadalarida").hidden = st.mode !== "nadal"; q("kellarida").hidden = st.mode !== "nadal";
+        modeUi();
         changed(true);
       });
     });

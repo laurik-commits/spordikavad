@@ -130,6 +130,11 @@ class KaartLehtTest(unittest.TestCase):
         for key in ("pushState", "replaceState", "popstate", "URLSearchParams", "Kogu Eesti" if False else "EESTI"):
             self.assertIn(key, js)
         page = self.read("kaart/index.html")
+        self.assertIn("Nädal (7 päeva)", page)                   # päris nädalavaade, mitte „tüüpiline nädal“
+        for gone in ("nadalapaev", "kellarida", "Tüüpiline nädal", 'id="kell"'):
+            self.assertNotIn(gone, page)
+        self.assertNotIn("AKEN", js)
+        self.assertIn("paevakiri", js)                           # nädalavaates päevapealkirjad
         self.assertIn('id="filtritoggle"', page)
         self.assertIn('id="kogu"', page)
         self.assertLess(page.index('id="map"'), page.index('id="kontrollid"'))   # kaart on dokumendis esimene (mobiilis kohe päise all)
