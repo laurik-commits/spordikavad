@@ -1,6 +1,6 @@
 // Spordikaart: ringid toimumiskohtades (suurus = mängude arv ajaaknas, värv = peamine ala). Andmed: andmed.json (analuus/kaart.py), mängude tekstid: tekstid.json.
 // Kaks vaadet: kindel kuupäev (terve päev, mängude nimekiri kellaaja järgi) ja tüüpiline nädal (nädalapäev × kellaaeg, keskmine aktiivsete nädalate kohta).
-// Seis on URL-is (?v=…&d=…&t=…&a=…&l=…&c=lat,lon&z=suum): link taastab sama vaate. Algvaade: Tallinn või viimati valitud linn (?linn=… või localStorage).
+// Seis on URL-is (?v=…&d=…&t=…&a=…&l=…&c=lat,lon&z=suum): link taastab sama vaate. Algvaade: terve Eesti (linnalehe nupp lisab ?linn=…, siis avaneb see linn).
 (function () {
   "use strict";
   var mapEl = document.getElementById("map");
@@ -10,8 +10,8 @@
   var BASE = Date.UTC(2026, 0, 1);
   var AKEN = 180;
   var DEFAULT_START = 18 * 60;
-  var TALLINN = [59.424, 24.744, 12];
-  var EESTI = [[57.5, 21.7], [59.8, 28.2]];
+  var EESTI = [58.65, 25.3];                      // terve Eesti: keskpunkt; suum sõltub kaardi laiusest (kitsas ekraan 6, lai 7)
+  function eestiSuum() { return mapEl.clientWidth >= 600 ? 7 : 6; }
   var WD = ["esmaspäev", "teisipäev", "kolmapäev", "neljapäev", "reede", "laupäev", "pühapäev"];
   var MON = ["jaan", "veebr", "märts", "apr", "mai", "juuni", "juuli", "aug", "sept", "okt", "nov", "dets"];
   var TASE = {1: "Tipp", 2: "Esiliigad", 4: "Noored", 5: "Koondised"};
@@ -41,8 +41,8 @@
 
   var params = new URLSearchParams(location.search);
   var hasView = params.has("c") && params.has("z");
-  // kaart ja aluskaardi plaadid luuakse kohe (algvaade Tallinn), andmed laaditakse paralleelselt: LCP ei oota JSON-i
-  var start = TALLINN;
+  // kaart ja aluskaardi plaadid luuakse kohe (algvaade terve Eesti), andmed laaditakse paralleelselt: LCP ei oota JSON-i
+  var start = [EESTI[0], EESTI[1], eestiSuum()];
   if (hasView) { var cc = params.get("c").split(","); if (cc.length === 2 && isFinite(+cc[0]) && isFinite(+cc[1])) start = [+cc[0], +cc[1], +params.get("z") || 12]; else hasView = false; }
   var map = L.map(mapEl, {minZoom: 6, maxZoom: 17, zoomControl: true}).setView([start[0], start[1]], start[2]);
   // aluskaart: OpenStreetMapi standardplaadid (CARTO „light_all“ nõuab 2026. aastast API võtit); CSS teeb need heledaks (style.css .kaart .leaflet-tile-pane)
@@ -336,7 +336,7 @@
         changed(true);
       });
     });
-    q("kogu").addEventListener("click", function () { map.fitBounds(EESTI); });
+    q("kogu").addEventListener("click", function () { map.setView(EESTI, eestiSuum()); });
     var moveTimer = null;
     map.on("moveend", function () { clearTimeout(moveTimer); moveTimer = setTimeout(function () { writeUrl(false); }, 250); });
     window.addEventListener("popstate", function () {
@@ -349,11 +349,11 @@
       setTimeout(function () { applying = false; }, 400);
     });
 
-    // ---- algseis: URL → muidu viimati valitud linn (?linn= või localStorage) → muidu Tallinn ----
+    // ---- algseis: URL (c, z) → muidu ?linn= (linnalehelt tulnud) → muidu terve Eesti ----
     decode(params, false);
     syncControls();
     if (!hasView) {
-      var slug = params.get("linn") || store("spordikavad-linn");
+      var slug = params.get("linn");
       var city = (D.linnad || []).filter(function (x) { return x.s === slug; })[0];
       if (city) map.setView([city.la, city.lo], city.z, {animate: false});
     }
