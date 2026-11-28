@@ -39,6 +39,8 @@ class UlevaadeTest(unittest.TestCase):
         self.assertTrue(u["enne"])
         txt = " ".join(i for s in u["enne"] for i in s["items"])
         self.assertIn("Mudeli hinnang", txt)
+        self.assertIn("Tugevusnumber (meie hinnang, algus 1500)", txt)
+        self.assertRegex(txt, r"A \d+0 \(±\d+0\)")
         self.assertIn("ei tea vigastustest", txt)
         self.assertNotIn("kihlvedu", txt.lower())
 
