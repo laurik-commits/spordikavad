@@ -288,7 +288,11 @@ class Ulevaated:
         else:
             test = (f"Selle ala ennustust ei ole testitud: andmestikus on {self.n_tulemusi[r.sport]} tulemust, mis on liiga vähe, et täpsust mõõta. "
                     "Tõenäosused on seetõttu ainult ligikaudsed ja võivad olla eksitavad.")
-        return {"title": "Meelelahutuslik ennustus", "items": ["Mudeli hinnang: " + "; ".join(parts) + ".", why, test,
+        def nr(rating: float, n: int) -> str:
+            return f"{int(round(rating / 10.0)) * 10} (±{int(round(350 / math.sqrt(max(n, 1)) / 10.0)) * 10})"
+        tugevus = (f"Tugevusnumber (meie hinnang, algus 1500): {r.kodu} {nr(r.r_enne[0], n1)}, {r.kyl} {nr(r.r_enne[1], n2)}. "
+                   "Mida suurem number, seda tugevam; ± on ligikaudne ebakindlus, lähedased numbrid tähendavad praktiliselt võrdset tugevust.")
+        return {"title": "Meelelahutuslik ennustus", "items": ["Mudeli hinnang: " + "; ".join(parts) + ".", tugevus, why, test,
                                                               "See on analüüs ja ei ole kihlveo nõuanne."]}
 
     def _enne(self, r: Rec) -> dict:
