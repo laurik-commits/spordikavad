@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Spordikaart: kus ja millal Eestis mängitakse | Ela kaasa</title>
-<meta name="description" content="Kaart Eesti spordipaikadest: mitu mängu ja võistlust toimub kindlal kuupäeval või tüüpilisel nädalal, alade kaupa. Lisaks kodumeeskonna võidud halli kaupa.">
+<meta name="description" content="Kaart Eesti spordipaikadest: mitu mängu ja võistlust toimub kindlal kuupäeval või tüüpilisel nädalal, alade kaupa.">
 <link rel="canonical" href="{{ canonical }}">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="et_EE">
@@ -21,13 +21,12 @@
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="{{ root }}favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://tile.openstreetmap.org">
-<!-- vaikevaate (z7: keskpunkt 58,65 N 25,3 E) keskmised 6 plaati ette, et nad ei ootaks JS-i (LCP); töölaual lisanduvad x 71 ja 74 hiljem -->
-<link rel="preload" as="image" href="https://tile.openstreetmap.org/7/72/37.png">
-<link rel="preload" as="image" href="https://tile.openstreetmap.org/7/72/38.png">
-<link rel="preload" as="image" href="https://tile.openstreetmap.org/7/72/39.png">
-<link rel="preload" as="image" href="https://tile.openstreetmap.org/7/73/37.png">
-<link rel="preload" as="image" href="https://tile.openstreetmap.org/7/73/38.png">
-<link rel="preload" as="image" href="https://tile.openstreetmap.org/7/73/39.png">
+<!-- algvaade on Tallinn (z12, keskpunkt 59,424 N 24,744 E): keskmised plaadid ette, et nad ei ootaks JS-i (LCP) -->
+<link rel="preload" as="image" href="https://tile.openstreetmap.org/12/2329/1201.png">
+<link rel="preload" as="image" href="https://tile.openstreetmap.org/12/2329/1202.png">
+<link rel="preload" as="image" href="https://tile.openstreetmap.org/12/2329/1203.png">
+<link rel="preload" as="image" href="https://tile.openstreetmap.org/12/2328/1202.png">
+<link rel="preload" as="image" href="https://tile.openstreetmap.org/12/2330/1202.png">
 <link rel="stylesheet" href="{{ root }}vendor/leaflet/leaflet.css">
 <link rel="stylesheet" href="{{ root }}style.css">
 <script>document.documentElement.classList.add("js")</script>
@@ -37,15 +36,17 @@
 <body>
 <header class="bar"><div class="wrap"><div class="top"><a class="brand" href="{{ root }}">Elan kaasa</a></div>
   <nav class="daynav"><h1>Spordikaart</h1></nav></div></header>
-<main class="wrap info kaart">
-  <p class="intro">Kus Eestis mängitakse ja millal? Ringi suurus on mängude arv valitud ajaaknas, värv on selle koha enamlevinud ala. Vajuta ringile, et näha alasid ja järgmist mängu.</p>
-  <p class="intro"><strong>Andmed katavad ainult kalendris olevaid liigasid</strong> ({{ paiku }} paika, {{ mange }} mängu ja võistlust), mitte kogu Eesti sporti. Mitmepäevased üritused on arvestatud alguspäeva järgi.</p>
+<main class="wrap info kaart suletud laeb">
+  <div id="map" role="application" aria-label="Spordipaikade kaart"></div>
+  <button type="button" id="filtritoggle" class="filtritoggle" aria-expanded="false" aria-controls="kontrollid filtrid">Filtrid</button>
+  <p class="intro" id="selgitus">Kaart laeb …</p>
 
   <div class="mapctl" id="kontrollid">
     <fieldset class="vaade">
       <legend>Vaade</legend>
       <label><input type="radio" name="vaade" value="paev" checked> Kindel kuupäev</label>
       <label><input type="radio" name="vaade" value="nadal"> Tüüpiline nädal</label>
+      <button type="button" id="kogu">Kogu Eesti</button>
     </fieldset>
     <div class="rida" id="paevarida">
       <label for="kuup">Kuupäev</label>
@@ -67,32 +68,26 @@
       <input type="range" id="kell" min="0" max="1380" step="30" value="1080">
       <output id="kellatekst" for="kell">18:00–21:00</output>
     </div>
-    <p class="intro" id="selgitus">Kaart laeb …</p>
   </div>
-
-  <div id="map" role="application" aria-label="Spordipaikade kaart"></div>
   <div class="mapctl" id="filtrid">
     <fieldset class="chips" id="alad"><legend>Alad</legend></fieldset>
     <fieldset class="chips" id="tasemed"><legend>Tase</legend></fieldset>
   </div>
-  <p class="intro" id="kaardimark">Kaart laeb … (kui seda ei juhtu, vajab kaart JavaScripti; allpool on tabel kodumeeskonna võitudest halli kaupa).</p>
-  <h2>Valitud ajaaknas</h2>
-  <ol id="nimekiri" class="kohalist" aria-live="polite"></ol>
 
-  <h2 id="moju">Halli mõju: kodumeeskonna võidud</h2>
-  <p>Kodumeeskonna võitude osakaal halli kaupa, kus on vähemalt {{ min_tulemusi }} tulemust, võrreldes sama liiga ja hooaja kõigi mängude keskmisega (ootus). Usaldusvahemik on Wilsoni 95%. <strong>See ei ole põhjuslik</strong>: kui hallis mängib peamiselt üks klubi, näitab number klubi tugevust, mitte halli. Üle 15 mängu on väike valim, nii et vahemikud on laiad (tärn märgib ootusest väljas olevat).</p>
-  <div class="tabel">
-  <table>
-    <caption class="sr">Kodumeeskonna võidud halli kaupa</caption>
-    <thead><tr><th scope="col">Koht</th><th scope="col">Mänge</th><th scope="col">Kodu võit</th><th scope="col">Ootus</th><th scope="col">Vahe</th><th scope="col">95% vahemik</th><th scope="col">Meeskondi</th></tr></thead>
-    <tbody>
-    {% for x in moju %}<tr><th scope="row">{{ x.paik }}, {{ x.linn }}</th><td>{{ x.n }}</td><td>{{ x.kodu_pct|string|replace(".", ",") }}%</td><td>{{ x.oodatav_pct|string|replace(".", ",") }}%</td><td>{{ ('%+.1f' % x.vahe_pp)|replace(".", ",") }} pp{% if x.oluline %} *{% endif %}</td><td>{{ x.lo|round|int }}–{{ x.hi|round|int }}%</td><td>{{ x.kodumeeskondi }}</td></tr>
-    {% endfor %}
-    </tbody>
-  </table>
-  </div>
-  <p class="intro">Täielik andmestik: <a href="andmed.json">andmed.json</a>. Koordinaadid on OpenStreetMapist; „umbes" ja „linna keskpunkt" asukohad on kaardil punktiirringiga.</p>
-  <p><a href="{{ root }}">← Tänased mängud</a></p>
+  <p class="intro" id="kaardimark" hidden></p>
+  <section id="valitud">
+    <h2>Valitud ajaaknas</h2>
+    <ol id="nimekiri" class="kohalist" aria-live="polite"></ol>
+  </section>
+
+  <section id="sissejuhatus">
+    <p class="intro">Kus Eestis mängitakse ja millal? Ringi suurus on mängude arv valitud ajaaknas, värv on selle koha enamlevinud ala. Vajuta ringile, et näha alasid ja järgmist mängu; nimekiri allpool tõstab sama koha mängud esile.</p>
+    <p class="intro"><strong>Andmed katavad ainult kalendris olevaid liigasid</strong> ({{ paiku }} paika, {{ mange }} mängu ja võistlust), mitte kogu Eesti sporti. Mitmepäevased üritused on arvestatud alguspäeva järgi. Kodumeeskondade statistika on lehel <a href="{{ root }}analuus/">Analüüs</a>.</p>
+  </section>
+  <section id="lisa">
+    <p class="intro">Täielik andmestik: <a href="andmed.json">andmed.json</a>. Koordinaadid on OpenStreetMapist; „umbes" ja „linna keskpunkt" asukohad on kaardil punktiirringiga.</p>
+    <p><a href="{{ root }}">← Tänased mängud</a></p>
+  </section>
 </main>
 <footer class="wrap">
   <p>Andmed pärinevad liitude, klubide ja korraldajate kodulehtedelt. Enne kohaleminekut kontrolli kellaaega. <a href="{{ root }}info/">Meist</a></p>

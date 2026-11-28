@@ -35,8 +35,13 @@ ehitab ja avaldab iga päev GitHub Pagesi. Omanik tahab hooldusele kulutada peaa
   `tapsus` = `tapne` (OSM spordiobjekt, nimi ühtib) | `umbes` (lähedal olev objekt, asula, kool) | `linn` (ainult linna keskpunkt). Uus koht lehel:
   `python -m analuus.paigad --puudu`, siis `python -m analuus.geokodeeri` (Nominatim, 1 päring sekundis) ja lisa tulemus `paigad.toml`-i; test nõuab ≥ 95% mängudest paigaga.
 - `analuus/kaart.py` + `site/kaart.html` + `site/kaart.js` + `site/vendor/leaflet/`: spordikaart `/kaart/` (Leaflet 1.9.4 oma koopiana, ei CDN-i; aluskaart OSM-i standardplaadid heledaks CSS-filtriga:
-  CARTO `light_all` nõuab 2026. aastast API võtit ja annab vesimärgiga plaadi). Ringid paikade kaupa (suurus = mängude arv ajaaknas, värv = peamine ala), vaated kindel kuupäev (3 h aken) ja tüüpiline nädal
-  (nädalapäev × kellaaeg, summa ÷ aktiivsete nädalate arv); `kaart/andmed.json` (~100 KB) ja halli mõju tabel (kodu võidud ootuse suhtes, ≥ 15 tulemust, Wilsoni 95%; mitte põhjuslik). Ainult nähtavad tasemed.
+  CARTO `light_all` nõuab 2026. aastast API võtit ja annab vesimärgiga plaadi). Ringid paikade kaupa (suurus = mängude arv ajaaknas, värv = peamine ala), vaated kindel kuupäev (3 h aken, nimekiri kellaaja järgi,
+  iga rida viib mängulehele) ja tüüpiline nädal (nädalapäev × kellaaeg, summa ÷ aktiivsete nädalate arv). `kaart/andmed.json` (paigad, linnad, mängud reana koos id-ga) ja `kaart/tekstid.json` (pealkirjad, laetakse hiljem).
+  Mobiilis kaart kohe päise all ja filtrid kokkuvolditud ribas „Filtrid (N aktiivset)“ (CSS `order`); algvaade Tallinn või `?linn=`/localStorage `spordikavad-linn`; nupp „Kogu Eesti“; **seis on URL-is** (v, d, t, w, a, l, tbc, c, z; pushState/popstate).
+  Ring ja nimekirja rida tõstavad teineteist esile, ringi klõps kerib nimekirja. Ainult nähtavad tasemed.
+- `/analuus/` (`site/analuus.html`, `kaart.ehita_analuus`): praegu ainult „tulekul“, noindex, sitemapis pole; halli mõju tabelit seal ei avaldata enne omaniku ülevaatust.
+  `analuus/halliefekt.py`: halli efekt = meeskonna kodu-% hallis miinus sama meeskonna võõrsil-% samal hooajal (kaalutud, viik eraldi, Newcombe'i vahemik; välistab koondised, turniirid/karika, mitte-regulaarkasutajad);
+  raport: `python -m analuus.halliefekt --koht Wismari`. **Mitte põhjuslik.**
 - `analuus/ennustus.py` + `analuus/tagasivaatav.py` + `analuus/ulevaade.py`: Elo-tüüpi tugevusnumber (jalgpall, võit/viik/kaotus), tagasivaatav test (`python -m analuus.tagasivaatav --kontroll`: parameetrid valitakse teistel liigadel, ennustus ainult varasemate mängudega) ja
   **mängu lehe automaatne ülevaade** (`site/game.html`): enne (tõenäosused, vorm, arvutatud tabelikoht, omavahelised mängud, koht; ennustus alles kui mõlemal meeskonnal ≥ 3 mängu liiga andmetes) ja pärast (kas ennustus pidas, üllatus,
   tugevusnumbri muutus, mõlema järgmine mäng). **Ainult arvutatud faktid** (ei vigastusi, taustu, piletiandmeid; kihlveofirmasid ei lingita, panustamise sõnavara pole); tekst on reeglipõhine, mitte keelemudeli kirjutatud ja lehel nii öeldud.

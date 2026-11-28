@@ -423,7 +423,6 @@ footer p { margin: .3rem 0; }
 .mapctl button { font: inherit; border: 1px solid var(--line); background: var(--row); color: var(--fg); border-radius: .4rem; padding: .35rem .7rem; cursor: pointer; min-height: 2.4rem; }
 .mapctl input[type="range"] { flex: 1 1 12rem; min-width: 10rem; }
 .mapctl output { font-variant-numeric: tabular-nums; font-weight: 600; min-width: 6.5rem; }
-.mapctl #selgitus { min-height: 4.2em; margin: 0; }
 #filtrid { min-height: 11rem; }
 #kaardimark { min-height: 1.4em; }
 .chips { display: flex; flex-wrap: wrap; gap: .3rem; }
@@ -431,8 +430,33 @@ footer p { margin: .3rem 0; }
 .chips button { border-radius: 999px; padding: .25rem .7rem; font-size: .85rem; display: inline-flex; align-items: center; gap: .35rem; }
 .chips button[aria-pressed="false"] { opacity: .5; text-decoration: line-through; }
 .chips button[aria-pressed="true"] { background: var(--bar); color: var(--bar-fg); border-color: var(--bar); }
-.kohalist { list-style: none; padding: 0; margin: 0 0 1rem; }
-.kohalist button { font: inherit; background: none; border: 0; padding: .4rem 0; color: var(--link); cursor: pointer; text-align: left; text-decoration: underline; text-underline-offset: .15em; min-height: 2.4rem; }
+/* kaardi leht: töölaual juhtnupud kaardi kohal, mobiilis kaart kohe päise all ja filtrid kokkuvolditud ribas */
+.kaart { display: flex; flex-direction: column; }
+.kaart > * { order: 0; }
+#sissejuhatus { order: 1; } #kontrollid { order: 2; } #selgitus { order: 3; } #map { order: 4; } #filtrid { order: 5; }
+#kaardimark { order: 6; } #valitud { order: 7; } #lisa { order: 8; }
+.filtritoggle { display: none; }
+.js .kaart.laeb #sissejuhatus, .js .kaart.laeb #lisa, .js .kaart.laeb ~ footer { visibility: hidden; }   /* nimekiri täitub andmetega: selle all olev tekst ei tohi nihkuda (CLS) */
+#selgitus { margin: 0; min-height: 4.6em; }
+.kohalist { list-style: none; padding: 0; margin: 0 0 1rem; max-height: 26rem; overflow-y: auto; position: relative; border: 1px solid var(--line); border-radius: .4rem; }
+.kohalist li { padding: .15rem .6rem; border-bottom: 1px solid var(--line); border-left: 4px solid transparent; }
+.kohalist li:last-child { border-bottom: 0; }
+.kohalist li.esile { background: var(--row); border-left-color: var(--bar); }
+.kohalist li.tyhi { color: var(--muted); }
+.kohalist li.mang { display: grid; grid-template-columns: 3.4rem 1fr; column-gap: .5rem; align-items: baseline; }
+.kohalist .kell { font-variant-numeric: tabular-nums; font-weight: 700; padding: .4rem 0; }
+.kohalist .rida2 { grid-column: 2; font-size: .8rem; color: var(--muted); padding-bottom: .35rem; }
+.kohalist li.aktiivne { background: var(--row); border-left-color: var(--link); }
+.kohalist a, .kohalist button { font: inherit; background: none; border: 0; padding: .4rem 0; color: var(--link); cursor: pointer; text-align: left; text-decoration: underline; text-underline-offset: .15em; min-height: 2.4rem; }
+.kohalist .dot { display: inline-block; width: .65rem; height: .65rem; border-radius: 50%; margin-right: .35rem; }
+@media (max-width: 40rem) {
+  .kaart > #map { order: 1; height: 56vh; min-height: 300px; margin: .4rem 0; }
+  .kaart > .filtritoggle { order: 2; display: block; width: 100%; font: inherit; font-weight: 600; border: 1px solid var(--line); background: var(--row); color: var(--fg); border-radius: .4rem; padding: .5rem .7rem; min-height: 2.6rem; text-align: left; cursor: pointer; }
+  .kaart > #selgitus { order: 3; margin-top: .5rem; }
+  .kaart > #kontrollid { order: 4; } .kaart > #filtrid { order: 5; }
+  .kaart > #kaardimark { order: 6; } .kaart > #valitud { order: 7; } .kaart > #sissejuhatus { order: 8; } .kaart > #lisa { order: 9; }
+  .js .kaart.suletud > #kontrollid, .js .kaart.suletud > #filtrid { display: none; }
+}
 .popup { font-size: .88rem; line-height: 1.35; }
 .popup ul { margin: .3rem 0; padding-left: 1.1rem; }
 .popup .meta { color: #555; font-size: .8rem; margin-top: .15rem; }

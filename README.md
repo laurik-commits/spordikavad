@@ -111,8 +111,9 @@ Ilma selleta indekseerib Google lehe ka ise, aga Search Console näitab, kas ja 
 
 ## Spordikaart (`/kaart/`)
 
-Kaart näitab, kus ja millal Eestis mängitakse (ainult kalendris olevad liigad): ringi suurus on mängude arv valitud ajaaknas, värv on koha peamine ala, punktiirringiga on kohad, mille asukoht on ligikaudne. Kaks vaadet: **kindel kuupäev** (3 tunni aken, ka kellaajata üritused) ja **tüüpiline nädal** (nädalapäev × kellaaeg, mängude arv jagatud nädalate arvuga, kus valitud aladel oli vähemalt üks kellaajaga mäng). Ala- ja tasemefilter, klõps ringil näitab alasid, järgmist mängu ja halli mõju.
-**Halli mõju**: kodumeeskonna võitude osakaal halli kaupa (vähemalt 15 tulemust) võrreldes sama liiga ja hooaja keskmisega, Wilsoni 95% vahemikuga. See ei ole põhjuslik (ühe klubi hallis näitab number klubi tugevust).
+Kaart näitab, kus ja millal Eestis mängitakse (ainult kalendris olevad liigad): ringi suurus on mängude arv valitud ajaaknas, värv on koha peamine ala, punktiirringiga on kohad, mille asukoht on ligikaudne. Kaks vaadet: **kindel kuupäev** (3 tunni aken, ka kellaajata üritused; nimekiri kellaaja järgi, iga rida viib mängu lehele) ja **tüüpiline nädal** (nädalapäev × kellaaeg, mängude arv jagatud nädalate arvuga). Ala- ja tasemefilter. Ring ja nimekirja rida tõstavad teineteist esile; ringi klõps kerib nimekirja õige koha juurde.
+Mobiilis on kaart kohe päise all ja filtrid kokkuvolditud ribas „Filtrid (N aktiivset)“. Algvaade on Tallinn (või viimati valitud linn); nupp „Kogu Eesti“. **Kogu seis on URL-is** (`?v=…&d=…&t=…&a=…&l=…&c=lat,lon&z=suum`): link taastab sama vaate, brauseri tagasi-nupp liigub eelmisele valikule.
+**Halli mõju** statistikat kaardil ei ole. Leht `/analuus/` on praegu „tulekul“ (noindex); uus metoodika (`analuus/halliefekt.py`: meeskonna kodu-% miinus sama meeskonna võõrsil-% samal hooajal) avaldatakse alles pärast omaniku ülevaatust. See ei ole põhjuslik seos.
 Tehnika: Leaflet 1.9.4 on repos (`site/vendor/leaflet/`), aluskaart OpenStreetMapi standardplaadid, heledaks CSS-filtriga; **CARTO „light_all" plaadid nõuavad 2026. aastast API võtit** (annavad vesimärgiga „API KEY REQUIRED"), seepärast neid ei kasutata. OSM-i plaadiserver on ühiskasutuses: kui liiklus kasvab, vaheta pakkuja (nt võtmega CARTO või MapTiler) `site/kaart.js`-is.
 
 ## Tulevikuideed
