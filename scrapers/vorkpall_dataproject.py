@@ -42,14 +42,14 @@ def _field(block: str, suffix: str) -> str:
     return html.unescape(re.sub(r"<[^>]+>", "", m.group(1))).strip()
 
 
-def _hidden(block: str, suffix: str) -> str:
-    m = re.search(r'RADLIST_Matches_ctrl\d+_' + suffix + r'"[^>]*\svalue="([^"]*)"', block)
-    return m.group(1).strip() if m else ""
-
-
 def _result(block: str) -> str:
-    """Võidetud setid "kodu-võõras" (nt "3-1"). Mängimata mängul on mõlemad 0 või puuduvad: tulemus tühi."""
-    home, guest = _hidden(block, "HF_WonSetHome"), _hidden(block, "HF_WonSetGuest")
+    """Võidetud setid "kodu-võõras" (nt "3-1") rea ENDA nähtavatest väljadest (LB_SetCasa / LB_SetOspiti, väiksel ekraanil Label1 / Label5).
+    Mängimata mängul on väljad tühjad või mõlemad 0: tulemus tühi.
+
+    NB: peidetud väljad HF_WonSetHome / HF_WonSetGuest ei sobi: HTML-is on igal plokil lõpus KÕRVAL OLEVA (järgmise) rea peidetud väljad,
+    mis andis igale mängule järgmise mängu tulemuse (viga parandatud 2026-11-28)."""
+    home = _field(block, "LB_SetCasa") or _field(block, "Label1")
+    guest = _field(block, "LB_SetOspiti") or _field(block, "Label5")
     if home.isdigit() and guest.isdigit() and int(home) + int(guest) > 0:
         return f"{int(home)}-{int(guest)}"
     return ""
