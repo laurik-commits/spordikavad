@@ -2,10 +2,10 @@
  "nadal": "2026-W45",
  "algus": "2026-11-02",
  "lopp": "2026-11-08",
- "mange_tulemusega": 76,
+ "mange_tulemusega": 78,
  "mange_alade_kaupa": {
   "jalgpall": 41,
-  "vorkpall": 32,
+  "vorkpall": 34,
   "kasipall": 1,
   "korvpall": 1,
   "saalijalgpall": 1
@@ -14,7 +14,7 @@
   "Tipp": 18,
   "Esiliigad": 11,
   "Madalamad liigad": 9,
-  "Noored": 38
+  "Noored": 40
  },
  "ullatused": [
   {
@@ -193,6 +193,30 @@
     "viimane": "U-17 FA Tartu Kalev ja JK Merkuur-Juunior ÜM – U-17 Paide Linnameeskond I 3:3",
     "paev": "2026-11-07",
     "usaldusvaarne": true
+   },
+   {
+    "meeskond": "Selver Tallinn U-18",
+    "sport": "vorkpall",
+    "liiga": "U-18 neiud",
+    "tase": 4,
+    "tyyp": "võidud",
+    "pikkus": 5,
+    "sel_nadalal_pikenes": true,
+    "viimane": "Selver Tallinn U-18 – Tartu Katoliku SK I 3:0",
+    "paev": "2026-11-08",
+    "usaldusvaarne": true
+   },
+   {
+    "meeskond": "Tallinna SS Kalev U18",
+    "sport": "vorkpall",
+    "liiga": "U-18 neiud",
+    "tase": 4,
+    "tyyp": "kaotused",
+    "pikkus": 5,
+    "sel_nadalal_pikenes": true,
+    "viimane": "Rae Spordikool U-18 – Tallinna SS Kalev U18 3:0",
+    "paev": "2026-11-08",
+    "usaldusvaarne": true
    }
   ],
   "katkes": [
@@ -280,18 +304,6 @@
    "kokku": 9
   },
   {
-   "mang": "Barrus Võru VK – BIGBANK Tartu 3:2",
-   "id": "3a021d96fdf6",
-   "sport": "vorkpall",
-   "liiga": "Balti liiga (mehed)",
-   "tase": 1,
-   "paev": "2026-11-04",
-   "tulemus": "3:2",
-   "pohjus": "viiene set",
-   "vahe": 1,
-   "kokku": 5
-  },
-  {
    "mang": "Viimsi JK (N) – Saku Sporting (N) 3:2",
    "id": "2063b617f917",
    "sport": "jalgpall",
@@ -376,10 +388,10 @@
    "kokku": 7
   },
   {
-   "mang": "Selver Tallinn U-18 – Selver Tallinn U-18 II 2:3",
-   "id": "0e888b1212c6",
+   "mang": "Selver Tallinn U-18 II – Rae Spordikool U-18 2:3",
+   "id": "0600c9bd7020",
    "sport": "vorkpall",
-   "liiga": "U-18 noormehed",
+   "liiga": "U-18 neiud",
    "tase": 4,
    "paev": "2026-11-06",
    "tulemus": "2:3",
@@ -388,20 +400,8 @@
    "kokku": 5
   },
   {
-   "mang": "SK Tats/Rae Spordikool U-18 – Selver Tallinn U-18 II 2:3",
-   "id": "08c9e5e6e8d0",
-   "sport": "vorkpall",
-   "liiga": "U-18 noormehed",
-   "tase": 4,
-   "paev": "2026-11-06",
-   "tulemus": "2:3",
-   "pohjus": "viiene set",
-   "vahe": 1,
-   "kokku": 5
-  },
-  {
-   "mang": "Pärnu SK U-18 – Selver Tallinn U-18 2:3",
-   "id": "f42b167a0862",
+   "mang": "Selver Tallinn U-18 – Bigbank Tartu U-18 2:3",
+   "id": "ea3d26d6b24b",
    "sport": "vorkpall",
    "liiga": "U-18 noormehed",
    "tase": 4,
@@ -412,12 +412,24 @@
    "kokku": 5
   },
   {
-   "mang": "SK Tats/Rae Spordikool U-18 – Rakvere SK U-18 3:2",
+   "mang": "SK Tats/Rae Spordikool U-18 – Rakvere SK U-18 2:3",
    "id": "661650827aad",
    "sport": "vorkpall",
    "liiga": "U-18 noormehed",
    "tase": 4,
    "paev": "2026-11-07",
+   "tulemus": "2:3",
+   "pohjus": "viiene set",
+   "vahe": 1,
+   "kokku": 5
+  },
+  {
+   "mang": "Selver Tallinn U-18 II – Pärnu SK U-18 3:2",
+   "id": "cfb0122223d6",
+   "sport": "vorkpall",
+   "liiga": "U-18 noormehed",
+   "tase": 4,
+   "paev": "2026-11-08",
    "tulemus": "3:2",
    "pohjus": "viiene set",
    "vahe": 1,
@@ -704,7 +716,7 @@
    "kategooria": "pikim võiduseeria",
    "vaartus": 5,
    "ühik": "võitu järjest",
-   "mang": "Tartu Katoliku SK U-20",
+   "mang": "Selver Tallinn SK U-20",
    "liiga": "U-20 neiud",
    "tase": 4,
    "paev": "2026-10-11",
