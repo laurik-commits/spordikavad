@@ -135,7 +135,7 @@ class KaartLehtTest(unittest.TestCase):
         self.assertIn("Andmed katavad ainult kalendris olevaid liigasid", page)
         self.assertIn("OpenStreetMapi", page)                     # aluskaardi viide
         self.assertIn("See ei ole põhjuslik", page)
-        self.assertIn('<script src="../vendor/leaflet/leaflet.js">', page)
+        self.assertIn('<script src="../vendor/leaflet/leaflet.js" defer>', page)
         data = json.loads(self.read("kaart/andmed.json"))
         self.assertEqual([k["n"] for k in data["kohad"]], ["Kalevi keskstaadioni kunstmuruväljak"])   # paigad.toml nimi
         self.assertTrue((self.out / "vendor" / "leaflet" / "leaflet.js").exists())
