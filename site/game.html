@@ -62,7 +62,7 @@
   {% set parts = ulevaade.enne or ulevaade.parast %}
   <section class="ulevaade" aria-labelledby="ulevaade-h">
     <h2 id="ulevaade-h">Automaatne ülevaade <small>{{ 'enne mängu' if ulevaade.enne else 'pärast mängu' }}</small></h2>
-    <p class="ulenote">Arvutatud ainult meie andmestikust (tulemused, kohad, ülekanded), mitte tehisintellekti kirjutatud. Ennustus on meelelahutuslik analüüs, mitte soovitus.</p>
+    <p class="ulenote">Arvutatud ainult meie andmestikust (tulemused, kohad, ülekanded), mitte tehisintellekti kirjutatud.{% if ulevaade.ennustus %} Ennustus on meelelahutuslik analüüs, mitte soovitus ega kihlveo nõuanne.{% endif %}</p>
     {% for s in parts %}
     <h3>{{ s.title }}</h3>
     <ul>{% for it in s["items"] %}<li>{% if s.ids and s.ids[loop.index0] %}<a href="../{{ s.ids[loop.index0] }}/">{{ it }}</a>{% else %}{{ it }}{% endif %}</li>{% endfor %}</ul>
