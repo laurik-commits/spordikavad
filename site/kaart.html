@@ -63,7 +63,7 @@
         <option value="3">neljapäev</option><option value="4">reede</option><option value="5">laupäev</option><option value="6">pühapäev</option>
       </select>
     </div>
-    <div class="rida">
+    <div class="rida" id="kellarida" hidden>
       <label for="kell">Kellaaeg</label>
       <input type="range" id="kell" min="0" max="1380" step="30" value="1080">
       <output id="kellatekst" for="kell">18:00–21:00</output>
@@ -76,7 +76,7 @@
 
   <p class="intro" id="kaardimark" hidden></p>
   <section id="valitud">
-    <h2>Valitud ajaaknas</h2>
+    <h2>Valitud mängud</h2>
     <ol id="nimekiri" class="kohalist" aria-live="polite"></ol>
   </section>
 

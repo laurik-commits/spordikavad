@@ -1,5 +1,5 @@
 // Spordikaart: ringid toimumiskohtades (suurus = mängude arv ajaaknas, värv = peamine ala). Andmed: andmed.json (analuus/kaart.py), mängude tekstid: tekstid.json.
-// Kaks vaadet: kindel kuupäev (3 tunni aken, mängude nimekiri kellaaja järgi) ja tüüpiline nädal (nädalapäev × kellaaeg, keskmine aktiivsete nädalate kohta).
+// Kaks vaadet: kindel kuupäev (terve päev, mängude nimekiri kellaaja järgi) ja tüüpiline nädal (nädalapäev × kellaaeg, keskmine aktiivsete nädalate kohta).
 // Seis on URL-is (?v=…&d=…&t=…&a=…&l=…&c=lat,lon&z=suum): link taastab sama vaate. Algvaade: Tallinn või viimati valitud linn (?linn=… või localStorage).
 (function () {
   "use strict";
@@ -119,7 +119,7 @@
       var n = 0;
       if (st.mode === "nadal") n++;
       else if (st.day !== defaultDay) n++;
-      if (st.start !== DEFAULT_START) n++;
+      if (st.mode === "nadal" && st.start !== DEFAULT_START) n++;
       if (!st.tbc) n++;
       if (subset(st.sports)) n++;
       if (subset(st.levels)) n++;
@@ -134,8 +134,7 @@
       var p = new URLSearchParams();
       p.set("v", st.mode);
       p.set("d", ymd(st.day));
-      p.set("t", String(st.start));
-      if (st.mode === "nadal") p.set("w", String(st.wd));
+      if (st.mode === "nadal") { p.set("t", String(st.start)); p.set("w", String(st.wd)); }
       if (subset(st.sports)) p.set("a", D.alad.filter(function (a, i) { return st.sports[i]; }).map(function (a) { return a.k; }).join(","));
       if (subset(st.levels)) p.set("l", levels.filter(function (l) { return st.levels[l]; }).join(","));
       if (!st.tbc) p.set("tbc", "0");
@@ -175,7 +174,7 @@
       kell.value = String(st.start);
       q("tbc").checked = st.tbc;
       Array.prototype.forEach.call(document.querySelectorAll('input[name="vaade"]'), function (r) { r.checked = r.value === st.mode; });
-      q("paevarida").hidden = st.mode !== "paev"; q("nadalarida").hidden = st.mode !== "nadal";
+      q("paevarida").hidden = st.mode !== "paev"; q("nadalarida").hidden = st.mode !== "nadal"; q("kellarida").hidden = st.mode !== "nadal";
       refreshChips();
     }
     function changed(push) { draw(); writeUrl(push); }
@@ -183,7 +182,7 @@
     // ---- arvutus ----
     // {res: {paik: {n, s:{ala:arv}}}, games: [mängu rea indeksid] (ainult kindel kuupäev), tbc, nw, total, lo, hi}
     function compute() {
-      var lo = st.start, hi = Math.min(st.start + AKEN, 1440), res = {}, games = [];
+      var lo = st.mode === "paev" ? 0 : st.start, hi = st.mode === "paev" ? 1440 : Math.min(st.start + AKEN, 1440), res = {}, games = [];
       var weeks = {}, nw = 0, tbc = 0, total = 0;
       function add(g, idx) { var r = res[g[0]] || (res[g[0]] = {n: 0, s: {}}); r.n++; r.s[g[3]] = (r.s[g[3]] || 0) + 1; total++; if (st.mode === "paev") games.push(idx); }
       D.mangud.forEach(function (g, idx) {
@@ -278,7 +277,7 @@
       q("kellatekst").textContent = kellaTekst;
       var t;
       if (st.mode === "paev") {
-        t = "Mänge kuupäeval " + dmy(st.day) + " (" + WD[weekday(st.day)] + ") kell " + kellaTekst + ": " + Math.round(c.total) + ", kohti " + order.length +
+        t = "Mänge kuupäeval " + dmy(st.day) + " (" + WD[weekday(st.day)] + "): " + Math.round(c.total) + ", kohti " + order.length +
           (c.tbc ? ", sh " + c.tbc + " kellaajata üritust" : "") + ".";
       } else {
         var sum = order.reduce(function (s, k) { return s + c.res[k].n; }, 0);
@@ -333,7 +332,7 @@
     Array.prototype.forEach.call(document.querySelectorAll('input[name="vaade"]'), function (r) {
       r.addEventListener("change", function () {
         st.mode = r.value;
-        q("paevarida").hidden = st.mode !== "paev"; q("nadalarida").hidden = st.mode !== "nadal";
+        q("paevarida").hidden = st.mode !== "paev"; q("nadalarida").hidden = st.mode !== "nadal"; q("kellarida").hidden = st.mode !== "nadal";
         changed(true);
       });
     });
