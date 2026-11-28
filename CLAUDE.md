@@ -48,6 +48,7 @@ ehitab ja avaldab iga päev GitHub Pagesi. Omanik tahab hooldusele kulutada peaa
   Ennustus alles kui mõlemal meeskonnal ≥ 3 mängu liiga andmetes. **Ainult arvutatud faktid** (ei vigastusi, taustu, piletiandmeid; kihlveofirmasid ei lingita, panustamise sõnavara pole); tekst on reeglipõhine, mitte keelemudeli kirjutatud ja lehel nii öeldud.
   Andmetes on üks hooaeg (2026), hooaja vahetuse taandumist pole testitud.
 - `ogimage.py` + `site/fonts/`: mängu OG-pilt (Pillow, DejaVu; igale eelseisvale mängule `m/<id>/og.png`, muul juhul üldine `og.png`)
+- `scripts/tulemuste_audit.py`: **tulemuste audit** (`python scripts/tulemuste_audit.py [jalgpall|saalijalgpall|vorkpall]`): meie tulemustest arvutatud tabel vs allika ametlik tabel (jalgpall.ee, DataProject). Käivita pärast iga tulemusi lugeva adapteri muutust ja uue allika lisamisel; „sama mängude arvuga erineb“ = adapteri viga (nihe, vale suund), „meil vähem mänge“ = tehnilised tulemused, mida kalender ei näita.
 - `scripts/`: `automerge_check.py` (agendi PR-i kontroll), `report_issues.py` (katkised allikad → GitHub Issue ja rida `MAINTENANCE.md`-i),
   `maintenance_log.py` (hoolduslogi ja kokkuvõte)
 - `SOURCES.md`: **allikate otsused ala kaupa** (miks midagi kasutatakse või jäetakse välja). Loe ainult asjakohane osa

@@ -2,16 +2,16 @@
  "nadal": "2026-W47",
  "algus": "2026-11-16",
  "lopp": "2026-11-22",
- "mange_tulemusega": 14,
+ "mange_tulemusega": 15,
  "mange_alade_kaupa": {
-  "vorkpall": 6,
+  "vorkpall": 7,
   "saalijalgpall": 4,
   "korvpall": 2,
   "jalgpall": 1,
   "jaahoki": 1
  },
  "mange_taseme_kaupa": {
-  "Tipp": 12,
+  "Tipp": 13,
   "Noored": 1,
   "Koondised": 1
  },
@@ -34,6 +34,18 @@
   "katkes": []
  },
  "tasavagised": [
+  {
+   "mang": "Advokaadibüroo Premium/Rae vald – Structura/Tartu vald 2:3",
+   "id": "4e29eb9cad32",
+   "sport": "vorkpall",
+   "liiga": "Eesti karikas (mehed)",
+   "tase": 1,
+   "paev": "2026-11-21",
+   "tulemus": "2:3",
+   "pohjus": "viiene set",
+   "vahe": 1,
+   "kokku": 5
+  },
   {
    "mang": "Bigbank/Kalev – Valmiera Glass VIA 83:81",
    "id": "1d8fac9900de",
@@ -185,6 +197,22 @@
    "mitu_hoidjat": 1
   },
   {
+   "ulatus": "tipp",
+   "sport": "vorkpall",
+   "hooaeg": "2026/2027",
+   "kategooria": "pikim võiduseeria",
+   "vaartus": 5,
+   "ühik": "võitu järjest",
+   "mang": "Tallinna Ülikool",
+   "liiga": "Esiliiga (mehed)",
+   "tase": 2,
+   "paev": "2026-11-15",
+   "uus": false,
+   "voordsustas": false,
+   "mitu_hoidjat": 1,
+   "jatkub": true
+  },
+  {
    "ulatus": "kõik",
    "sport": "jalgpall",
    "hooaeg": "2026",
@@ -327,10 +355,10 @@
    "kategooria": "pikim võiduseeria",
    "vaartus": 5,
    "ühik": "võitu järjest",
-   "mang": "Tartu Katoliku SK U-20",
-   "liiga": "U-20 neiud",
-   "tase": 4,
-   "paev": "2026-10-11",
+   "mang": "Tallinna Ülikool",
+   "liiga": "Esiliiga (mehed)",
+   "tase": 2,
+   "paev": "2026-11-15",
    "uus": false,
    "voordsustas": false,
    "mitu_hoidjat": 1,
