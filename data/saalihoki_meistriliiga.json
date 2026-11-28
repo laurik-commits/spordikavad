@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T00:29:35+02:00",
+ "updated": "2026-11-28T14:23:37+02:00",
  "events": [
   {
    "id": "3f1079a79a0b",
@@ -105,6 +105,21 @@
    "time_tbc": false,
    "result": "5-4",
    "level": 1
+  },
+  {
+   "id": "0f4bbf2bf162",
+   "sport": "saalihoki",
+   "league": "Energialiiga",
+   "start": "2026-11-28T12:30:00+02:00",
+   "home": "Flash by FF",
+   "away": "Järva - Jaani",
+   "venue": "Tapa spordihoone",
+   "city": "Tapa",
+   "url": "https://www.saalihoki.ee/Protokoll.aspx?id=kFehtOZbQ+g=",
+   "source": "saalihoki_meistriliiga",
+   "time_tbc": false,
+   "result": "0-5",
+   "level": 2
   },
   {
    "id": "b15897373df8",
