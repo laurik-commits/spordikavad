@@ -89,6 +89,7 @@
         {% endfor %}
         </ul>
       </details>
+      <a class="maplink" href="{{ root }}kaart/{% if region.kind == 'city' %}?linn={{ region.slug }}{% endif %}">Kaart</a>
     </div>
     {# vaate valik ja kalender (site/kalender.js): ilma JS-ita peidus, päevalehed töötavad nagu enne #}
     <div class="ctl">
