@@ -576,7 +576,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
     def listed(e: Event) -> bool:
         return not LEVELS[e.level].get("hidden")
 
-    reserved = {"m", "info", "praktikum", "kaart", "vendor", *(lv["slug"] for lv in LEVELS.values()), *(r.slug for r in regions)}
+    reserved = {"m", "info", "praktikum", "kaart", "analuus", "vendor", *(lv["slug"] for lv in LEVELS.values()), *(r.slug for r in regions)}
     clash = reserved & set(SPORTS)
     if clash:
         raise ValueError(f"ala võti läheb vastuollu lehe kaustaga: {sorted(clash)}")
@@ -628,10 +628,13 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
 
     # spordikaart /kaart/ (paigad.toml + mängude ajad; analuus/kaart.py): ainult kui toimumiskohtade tabel on olemas
     try:
-        if kaart.ehita(out, env, common, list(all_game_events.values()), today, base_url, urls):
+        cities = [{"slug": c["slug"], "name": name} for name, c in geo.cities.items()]
+        if kaart.ehita(out, env, common, list(all_game_events.values()), today, base_url, urls, cities=cities):
             log.info("Kaardileht /kaart/ tehtud")
     except Exception:  # noqa: BLE001 - kaardi viga ei tohi lehe ehitust katki teha
         log.exception("kaardi ehitamine ebaõnnestus")
+
+    kaart.ehita_analuus(out, env, common, base_url)   # /analuus/: praegu „tulekul“ (noindex, sitemapis pole)
 
     list_tpl = env.get_template("list.html")
 
