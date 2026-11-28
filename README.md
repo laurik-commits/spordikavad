@@ -109,6 +109,12 @@ Möödunud mängu leht jääb alles („Mäng on toimunud“, link sama liiga j�
 5. Paari päeva pärast vaata „Lehed“ ja „Tulemuslikkus“: kui palju lehti on indekseeritud ja mis päringutega leitakse.
 Ilma selleta indekseerib Google lehe ka ise, aga Search Console näitab, kas ja mis puudu on.
 
+## Spordikaart (`/kaart/`)
+
+Kaart näitab, kus ja millal Eestis mängitakse (ainult kalendris olevad liigad): ringi suurus on mängude arv valitud ajaaknas, värv on koha peamine ala, punktiirringiga on kohad, mille asukoht on ligikaudne. Kaks vaadet: **kindel kuupäev** (3 tunni aken, ka kellaajata üritused) ja **tüüpiline nädal** (nädalapäev × kellaaeg, mängude arv jagatud nädalate arvuga, kus valitud aladel oli vähemalt üks kellaajaga mäng). Ala- ja tasemefilter, klõps ringil näitab alasid, järgmist mängu ja halli mõju.
+**Halli mõju**: kodumeeskonna võitude osakaal halli kaupa (vähemalt 15 tulemust) võrreldes sama liiga ja hooaja keskmisega, Wilsoni 95% vahemikuga. See ei ole põhjuslik (ühe klubi hallis näitab number klubi tugevust).
+Tehnika: Leaflet 1.9.4 on repos (`site/vendor/leaflet/`), aluskaart OpenStreetMapi standardplaadid, heledaks CSS-filtriga; **CARTO „light_all" plaadid nõuavad 2026. aastast API võtit** (annavad vesimärgiga „API KEY REQUIRED"), seepärast neid ei kasutata. OSM-i plaadiserver on ühiskasutuses: kui liiklus kasvab, vaheta pakkuja (nt võtmega CARTO või MapTiler) `site/kaart.js`-is.
+
 ## Tulevikuideed
 
 - **Uued alad**: kergejõustik, motosport, suusatamine, ratsasport, uisutamine, võitlusspordid ja autosport on lisatud (üritused, mitte mängud). Laskesuusatamise, poksi, maadluse ja autospordi suured võistlused lisatakse käsitsi (`kasitsi.toml`, otsinguagent). Järgmised kandidaadid (tantsusport, ujumine, ragby) koos allikatega on failis [docs/uued-alad.md](docs/uued-alad.md). Omanik otsustab, millal ja millest jätkata.

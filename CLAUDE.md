@@ -34,6 +34,9 @@ ehitab ja avaldab iga päev GitHub Pagesi. Omanik tahab hooldusele kulutada peaa
 - `paigad.toml` + `analuus/paigad.py` + `analuus/geokodeeri.py`: toimumiskohtade tabel: **paik** = üks või mitu `venues.toml` kohta ühe koordinaadiga (duplikaadid seotud),
   `tapsus` = `tapne` (OSM spordiobjekt, nimi ühtib) | `umbes` (lähedal olev objekt, asula, kool) | `linn` (ainult linna keskpunkt). Uus koht lehel:
   `python -m analuus.paigad --puudu`, siis `python -m analuus.geokodeeri` (Nominatim, 1 päring sekundis) ja lisa tulemus `paigad.toml`-i; test nõuab ≥ 95% mängudest paigaga.
+- `analuus/kaart.py` + `site/kaart.html` + `site/kaart.js` + `site/vendor/leaflet/`: spordikaart `/kaart/` (Leaflet 1.9.4 oma koopiana, ei CDN-i; aluskaart OSM-i standardplaadid heledaks CSS-filtriga:
+  CARTO `light_all` nõuab 2026. aastast API võtit ja annab vesimärgiga plaadi). Ringid paikade kaupa (suurus = mängude arv ajaaknas, värv = peamine ala), vaated kindel kuupäev (3 h aken) ja tüüpiline nädal
+  (nädalapäev × kellaaeg, summa ÷ aktiivsete nädalate arv); `kaart/andmed.json` (~100 KB) ja halli mõju tabel (kodu võidud ootuse suhtes, ≥ 15 tulemust, Wilsoni 95%; mitte põhjuslik). Ainult nähtavad tasemed.
 - `ogimage.py` + `site/fonts/`: mängu OG-pilt (Pillow, DejaVu; igale eelseisvale mängule `m/<id>/og.png`, muul juhul üldine `og.png`)
 - `scripts/`: `automerge_check.py` (agendi PR-i kontroll), `report_issues.py` (katkised allikad → GitHub Issue ja rida `MAINTENANCE.md`-i),
   `maintenance_log.py` (hoolduslogi ja kokkuvõte)
