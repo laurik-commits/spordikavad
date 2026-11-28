@@ -8,8 +8,8 @@ muud asja parandab (inimene või agent, üks rida: mis oli katki, mis parandus o
 
 | Kuu | Avatud | Suletud | Käsitsi parandusi |
 |---|---|---|---|
-| 2026-11 | 15 | 13 | 0 |
-| **Kokku** | **15** | **13** | **0** |
+| 2026-11 | 15 | 13 | 1 |
+| **Kokku** | **15** | **13** | **1** |
 
 - Praegu avatud automaatseid Issue'sid: **3**: [#21](https://github.com/laurik-commits/spordikavad/issues/21) Tundmatud toimumiskohad, [#72](https://github.com/laurik-commits/spordikavad/issues/72) Allikas katki: jaahoki_everest, [#85](https://github.com/laurik-commits/spordikavad/issues/85) Allikas katki: kava_err
 - Keskmine aeg avamisest sulgemiseni: 0.5 päeva (12 suletud Issue't)
@@ -18,6 +18,7 @@ muud asja parandab (inimene või agent, üks rida: mis oli katki, mis parandus o
 
 | Kuupäev | Mis oli katki | Parandus |
 |---|---|---|
+| 2026-11-28 | Võrkpalli tulemused (DataProject) olid nihkunud: adapter luges igale mängule järgmise mängu tulemuse (HTML-is on plokil lõpus naaberrea peidetud väljad); 52 rida 125-st fikstuuris oli vale | `scrapers/vorkpall_dataproject.py` loeb tulemuse rea enda nähtavatest väljadest; regressioonitestid; vanad nädalaraportid (W45–W47) uuendatakse parandatud andmetega |
 
 ## Automaatsete Issue'de logi
 
