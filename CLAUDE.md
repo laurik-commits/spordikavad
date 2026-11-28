@@ -37,6 +37,10 @@ ehitab ja avaldab iga päev GitHub Pagesi. Omanik tahab hooldusele kulutada peaa
 - `analuus/kaart.py` + `site/kaart.html` + `site/kaart.js` + `site/vendor/leaflet/`: spordikaart `/kaart/` (Leaflet 1.9.4 oma koopiana, ei CDN-i; aluskaart OSM-i standardplaadid heledaks CSS-filtriga:
   CARTO `light_all` nõuab 2026. aastast API võtit ja annab vesimärgiga plaadi). Ringid paikade kaupa (suurus = mängude arv ajaaknas, värv = peamine ala), vaated kindel kuupäev (3 h aken) ja tüüpiline nädal
   (nädalapäev × kellaaeg, summa ÷ aktiivsete nädalate arv); `kaart/andmed.json` (~100 KB) ja halli mõju tabel (kodu võidud ootuse suhtes, ≥ 15 tulemust, Wilsoni 95%; mitte põhjuslik). Ainult nähtavad tasemed.
+- `analuus/ennustus.py` + `analuus/tagasivaatav.py` + `analuus/ulevaade.py`: Elo-tüüpi tugevusnumber (jalgpall, võit/viik/kaotus), tagasivaatav test (`python -m analuus.tagasivaatav --kontroll`: parameetrid valitakse teistel liigadel, ennustus ainult varasemate mängudega) ja
+  **mängu lehe automaatne ülevaade** (`site/game.html`): enne (tõenäosused, vorm, arvutatud tabelikoht, omavahelised mängud, koht; ennustus alles kui mõlemal meeskonnal ≥ 3 mängu liiga andmetes) ja pärast (kas ennustus pidas, üllatus,
+  tugevusnumbri muutus, mõlema järgmine mäng). **Ainult arvutatud faktid** (ei vigastusi, taustu, piletiandmeid; kihlveofirmasid ei lingita, panustamise sõnavara pole); tekst on reeglipõhine, mitte keelemudeli kirjutatud ja lehel nii öeldud.
+  Andmetes on üks hooaeg (2026), hooaja vahetuse taandumist pole testitud. Muud alad: ülevaadet pole.
 - `ogimage.py` + `site/fonts/`: mängu OG-pilt (Pillow, DejaVu; igale eelseisvale mängule `m/<id>/og.png`, muul juhul üldine `og.png`)
 - `scripts/`: `automerge_check.py` (agendi PR-i kontroll), `report_issues.py` (katkised allikad → GitHub Issue ja rida `MAINTENANCE.md`-i),
   `maintenance_log.py` (hoolduslogi ja kokkuvõte)
