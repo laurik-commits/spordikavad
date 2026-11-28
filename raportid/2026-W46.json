@@ -33,6 +33,30 @@
     "usaldusvaarne": true
    },
    {
+    "meeskond": "E-Lux Tallinn",
+    "sport": "vorkpall",
+    "liiga": "Esiliiga (mehed)",
+    "tase": 2,
+    "tyyp": "kaotused",
+    "pikkus": 5,
+    "sel_nadalal_pikenes": true,
+    "viimane": "Pärnu SK/VK – E-Lux Tallinn 3:0",
+    "paev": "2026-11-14",
+    "usaldusvaarne": true
+   },
+   {
+    "meeskond": "Tallinna Ülikool",
+    "sport": "vorkpall",
+    "liiga": "Esiliiga (mehed)",
+    "tase": 2,
+    "tyyp": "võidud",
+    "pikkus": 5,
+    "sel_nadalal_pikenes": true,
+    "viimane": "Tallinna Ülikool – BMF/Rakvere VK 3:1",
+    "paev": "2026-11-15",
+    "usaldusvaarne": true
+   },
+   {
     "meeskond": "FC Nõmme United (11)",
     "sport": "jalgpall",
     "liiga": "U16 esiliiga",
@@ -133,11 +157,11 @@
    "kokku": 9
   },
   {
-   "mang": "Dorpat/Tartu vald/ TKSK – Rae Spordikool 3:2",
-   "id": "60591120f161",
+   "mang": "Eesti Maaülikool/Embach – Audentes/Solarstone 3:2",
+   "id": "8ed4a38ddfe5",
    "sport": "vorkpall",
-   "liiga": "Esiliiga (naised)",
-   "tase": 2,
+   "liiga": "Eesti karikas (mehed)",
+   "tase": 1,
    "paev": "2026-11-12",
    "tulemus": "3:2",
    "pohjus": "viiene set",
@@ -145,8 +169,32 @@
    "kokku": 5
   },
   {
-   "mang": "Pärnu SK/VK – E-Lux Tallinn 2:3",
-   "id": "9506ff932f9e",
+   "mang": "Eesti Küte/Türi SK – Pärnu SK/VK 2:3",
+   "id": "e8130ace65e0",
+   "sport": "vorkpall",
+   "liiga": "Esiliiga (mehed)",
+   "tase": 2,
+   "paev": "2026-11-13",
+   "tulemus": "2:3",
+   "pohjus": "viiene set",
+   "vahe": 1,
+   "kokku": 5
+  },
+  {
+   "mang": "TBD Pharmatech – EstNor/Kiili 3:2",
+   "id": "b60d26619a36",
+   "sport": "vorkpall",
+   "liiga": "Esiliiga (naised)",
+   "tase": 2,
+   "paev": "2026-11-14",
+   "tulemus": "3:2",
+   "pohjus": "viiene set",
+   "vahe": 1,
+   "kokku": 5
+  },
+  {
+   "mang": "BMF/Rakvere VK – Eesti Küte/Türi SK 2:3",
+   "id": "ef964ed85432",
    "sport": "vorkpall",
    "liiga": "Esiliiga (mehed)",
    "tase": 2,
@@ -157,8 +205,8 @@
    "kokku": 5
   },
   {
-   "mang": "EstNor/Kiili – Structura/Tartu vald 2:3",
-   "id": "8c1f78185d74",
+   "mang": "Eesti Maaülikool/Embach – Advokaadibüroo Premium/Rae vald 2:3",
+   "id": "e71e9ab009ce",
    "sport": "vorkpall",
    "liiga": "Esiliiga (mehed)",
    "tase": 2,
@@ -307,6 +355,22 @@
    "mitu_hoidjat": 1
   },
   {
+   "ulatus": "tipp",
+   "sport": "vorkpall",
+   "hooaeg": "2026/2027",
+   "kategooria": "pikim võiduseeria",
+   "vaartus": 5,
+   "ühik": "võitu järjest",
+   "mang": "Tallinna Ülikool",
+   "liiga": "Esiliiga (mehed)",
+   "tase": 2,
+   "paev": "2026-11-15",
+   "uus": true,
+   "voordsustas": false,
+   "mitu_hoidjat": 1,
+   "jatkub": true
+  },
+  {
    "ulatus": "kõik",
    "sport": "jalgpall",
    "hooaeg": "2026",
@@ -449,10 +513,10 @@
    "kategooria": "pikim võiduseeria",
    "vaartus": 5,
    "ühik": "võitu järjest",
-   "mang": "Tartu Katoliku SK U-20",
-   "liiga": "U-20 neiud",
-   "tase": 4,
-   "paev": "2026-10-11",
+   "mang": "Tallinna Ülikool",
+   "liiga": "Esiliiga (mehed)",
+   "tase": 2,
+   "paev": "2026-11-15",
    "uus": false,
    "voordsustas": false,
    "mitu_hoidjat": 1,
