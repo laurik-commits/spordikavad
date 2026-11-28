@@ -12,6 +12,7 @@ Faktid (vorm, omavahelised mängud, arvutatud tabelikoht, koht, järgmised mäng
 
 from __future__ import annotations
 
+import math
 from collections import defaultdict
 from dataclasses import dataclass, field
 from datetime import date, datetime
@@ -211,6 +212,46 @@ class Ulevaated:
         nxt = [(t, self._jargmine(t, r), (self._next(t, r) or r).id) for t in (r.kodu, r.kyl)]
         nxt = [x for x in nxt if x[1]]
         return {"title": "Järgmised mängud", "items": [x[1] for x in nxt] or ["Järgmisi mänge andmestikus (veel) pole."], "ids": [x[2] for x in nxt]}
+
+    def tabel(self, sport: str, liiga: str) -> dict | None:
+        """Liigalehe „meie tabel“: võistkonnad meie mudeli tugevuse järgi (viimane hooaeg selles liigas) + arvutatud punktid ja vorm.
+        Ainult alal ja tasemel, kus ennustus on lubatud (`ENNUSTA`, `ENNUSTUSE_TASEMED`); karikad, turniirid ja finaalid välja.
+        Tugevuse ebakindlus ≈ 350/√mänge (ligikaudne: 36 mängu ±60); lähedased numbrid on praktiliselt võrdsed."""
+        nimi = liiga.lower()
+        if sport not in ENNUSTA or any(w in nimi for w in ("karikas", "turniir", "finaal")):
+            return None
+        games = [r for r in self.recs.values() if r.sport == sport and r.liiga == liiga and r.level in ENNUSTUSE_TASEMED and r.t]
+        if not games:
+            return None
+        hoo = max(r.hooaeg for r in games)
+        games = sorted((r for r in games if r.hooaeg == hoo), key=lambda r: (r.start, r.id))
+        st: dict[str, dict] = defaultdict(lambda: {"m": 0, "v": 0, "x": 0, "k": 0, "gf": 0, "ga": 0, "pts": 0, "letters": [], "rating": en.ALGUS})
+        for r in games:
+            for team, kodus, rt in ((r.kodu, True, r.r_parast[0] if r.r_parast else None), (r.kyl, False, r.r_parast[1] if r.r_parast else None)):
+                x = st[team]
+                gf, ga = (r.t.kodu, r.t.kylaline) if kodus else (r.t.kylaline, r.t.kodu)
+                letter = _voit(r.t, kodus)
+                x["m"] += 1
+                x["v"] += letter == "V"
+                x["x"] += letter == "X"
+                x["k"] += letter == "K"
+                x["gf"] += gf
+                x["ga"] += ga
+                kp, gp = tul.liigapunktid(sport, r.t)
+                x["pts"] += kp if kodus else gp
+                x["letters"].append(letter)
+                if rt is not None:
+                    x["rating"] = rt
+        by_pts = sorted(st, key=lambda t: (-st[t]["pts"], -(st[t]["gf"] - st[t]["ga"]), -st[t]["gf"], t))
+        pts_rank = {t: i + 1 for i, t in enumerate(by_pts)}
+        rows = []
+        for i, t in enumerate(sorted(st, key=lambda t: (-st[t]["rating"], t)), 1):
+            x = st[t]
+            rows.append({"koht": i, "team": t, "tugevus": int(round(x["rating"] / 10.0)) * 10, "unc": int(round(350 / math.sqrt(x["m"]) / 10.0)) * 10,
+                         "m": x["m"], "v": x["v"], "x": x["x"], "k": x["k"], "gf": x["gf"], "ga": x["ga"], "pts": x["pts"],
+                         "pts_koht": pts_rank[t], "vorm": " ".join(x["letters"][-VORM:])})
+        return {"hooaeg": hoo, "rows": rows, "viigiga": sport in tul.DRAWS, "yhik": tul.UNITS_PL[tul.UNITS[sport]], "mangud": len(games),
+                "testimata": sport != "jalgpall", "n_tulemusi": self.n_tulemusi[sport]}
 
     def for_game(self, e) -> dict | None:
         """{"enne"|"parast": [{"title", "items"[, "ids"]}], "ennustus": bool, "meetod": str} või None, kui seda mängu ülevaade ei kata."""

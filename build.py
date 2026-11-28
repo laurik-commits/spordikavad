@@ -639,15 +639,15 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
     list_tpl = env.get_template("list.html")
 
     def sport_page(path: Path, root: str, canonical: str, heading: str, title: str, description: str,
-                   rows: list[Event], subleagues: list[dict], parent: dict | None, sport: str) -> None:
+                   rows: list[Event], subleagues: list[dict], parent: dict | None, sport: str, table: dict | None = None) -> None:
         shown = rows[:LIST_LIMIT]
         path.mkdir(parents=True, exist_ok=True)
         (path / "index.html").write_text(
             list_tpl.render(common, root=root, canonical=canonical, heading=heading, title=title,
                             description=description, rows=shown, more=len(rows) - len(shown), subleagues=subleagues,
-                            parent=parent, sport=sport, noindex=not rows),
+                            parent=parent, sport=sport, table=table, noindex=not rows and not table),
             encoding="utf-8")
-        if rows:
+        if rows or table:
             urls.append(canonical)
 
     def next_text(rows: list[Event]) -> str:
@@ -673,7 +673,8 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
                     else f"{league}: eelseisvaid {many} praegu pole.") + next_text(lup)
             sport_page(out / sport / slug, "../../", f"{base_url}{sport}/{slug}/", league,
                        f"{league} ({sport_name.lower()}): ajakava ja eelseisvad {plural}", desc,
-                       lup, [], {"name": sport_name, "href": "../"}, sport)
+                       lup, [], {"name": sport_name, "href": "../"}, sport,
+                       table=overview.tabel(sport, league) if overview else None)
         desc = (f"{sport_name}: {len(up)} eelseisvat {one} Eestis, kohapeal vaatamiseks." if up
                 else f"{sport_name}: eelseisvaid {many} praegu pole.") + next_text(up)
         sport_page(out / sport, "../", f"{base_url}{sport}/", sport_name,

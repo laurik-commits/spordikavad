@@ -37,6 +37,21 @@
     {% endfor %}
   </ul>
   {% endif %}
+  {% if table %}
+  <h2>Meie tabel ({{ table.hooaeg }})</h2>
+  <p class="intro">Võistkonnad on järjestatud <strong>meie mudeli tugevushinnangu</strong> järgi (hiljutised mängud kaaluvad rohkem). See ei ole ametlik tabel ega ennustus. Arvesse lähevad ainult meie andmestikus olevad tulemused: Eestist väljaspool peetud mängud ja tehnilised tulemused (loobumised) puuduvad, seega arvutatud punktid ja koht ei pruugi ametlikuga ühtida. Tugevusnumber on ligikaudne (±): lähedased numbrid tähendavad praktiliselt võrdset tugevust.{% if table.testimata %} <strong>Selle ala mudelit ei ole testitud</strong>: tulemusi on andmestikus {{ table.n_tulemusi }}, mis on liiga vähe täpsuse mõõtmiseks, seega on hinnang eriti ebakindel.{% endif %}</p>
+  <div class="tabel">
+  <table>
+    <caption class="sr">Meie tabel: {{ heading }}</caption>
+    <thead><tr><th scope="col">#</th><th scope="col">Võistkond</th><th scope="col">Tugevus</th><th scope="col">Mänge</th><th scope="col">{{ 'V–X–K' if table.viigiga else 'V–K' }}</th><th scope="col">{{ table.yhik | capitalize }}</th><th scope="col">Punkte</th><th scope="col">Arvutatud koht</th><th scope="col">Vorm</th></tr></thead>
+    <tbody>
+    {% for r in table.rows %}<tr><td>{{ r.koht }}</td><th scope="row">{{ r.team }}</th><td>{{ r.tugevus }} ±{{ r.unc }}</td><td>{{ r.m }}</td><td>{{ r.v }}–{% if table.viigiga %}{{ r.x }}–{% endif %}{{ r.k }}</td><td>{{ r.gf }}:{{ r.ga }}</td><td>{{ r.pts }}</td><td>{{ r.pts_koht }}.</td><td>{{ r.vorm }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  <p class="intro">Tugevus on meie Elo-tüüpi hinnang (algus 1500), punktid on arvutatud tulemustest hinnangulise süsteemiga ({{ 'võit 3, viik 1' if table.viigiga else '3:0 ja 3:1 võit 3 punkti, 3:2 võit 2 punkti, 2:3 kaotus 1 punkt' }}). V = võit, {% if table.viigiga %}X = viik, {% endif %}K = kaotus.</p>
+  {% endif %}
   <h2>Eelseisvad {{ 'võistlused' if sport in event_sports else 'mängud' }}</h2>
   {% if rows %}
   <ol class="games">
