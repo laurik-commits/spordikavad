@@ -26,6 +26,7 @@ import ogimage
 import ulekanded
 from scrapers import config as cfgmod
 from scrapers import sports
+from analuus import kaart
 from scrapers.geo import Geo, Region
 from scrapers.http import Fetcher
 from scrapers.model import DEFAULT_LEVEL, EVENT_SPORTS, LEVELS, SPORTS, TALLINN, Event, levels_for
@@ -459,6 +460,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
     out.mkdir(parents=True)
     # Eraldiseisev praktikumi alamleht ei kuulu navigatsiooni ega saidikaarti.
     shutil.copytree(SITE / "praktikum", out / "praktikum")
+    shutil.copytree(SITE / "vendor", out / "vendor")   # Leaflet (kaardileht), oma koopia: ei sõltu kolmanda poole CDN-ist
     for asset in ("app.js", "og.png", "paise.webp", "favicon.svg"):
         shutil.copy(SITE / asset, out / asset)
     for asset in ("style.css", "kalender.js"):  # alade värvid ja nimed tulevad registrist (sports.toml)
@@ -573,7 +575,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
     def listed(e: Event) -> bool:
         return not LEVELS[e.level].get("hidden")
 
-    reserved = {"m", "info", "praktikum", *(lv["slug"] for lv in LEVELS.values()), *(r.slug for r in regions)}
+    reserved = {"m", "info", "praktikum", "kaart", "vendor", *(lv["slug"] for lv in LEVELS.values()), *(r.slug for r in regions)}
     clash = reserved & set(SPORTS)
     if clash:
         raise ValueError(f"ala võti läheb vastuollu lehe kaustaga: {sorted(clash)}")
@@ -616,6 +618,13 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
             encoding="utf-8")
         if not past and listed(e):
             urls.append(canonical)
+
+    # spordikaart /kaart/ (paigad.toml + mängude ajad; analuus/kaart.py): ainult kui toimumiskohtade tabel on olemas
+    try:
+        if kaart.ehita(out, env, common, list(all_game_events.values()), today, base_url, urls):
+            log.info("Kaardileht /kaart/ tehtud")
+    except Exception:  # noqa: BLE001 - kaardi viga ei tohi lehe ehitust katki teha
+        log.exception("kaardi ehitamine ebaõnnestus")
 
     list_tpl = env.get_template("list.html")
 
