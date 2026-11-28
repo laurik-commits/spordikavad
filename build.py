@@ -26,7 +26,8 @@ import ogimage
 import ulekanded
 from scrapers import config as cfgmod
 from scrapers import sports
-from analuus import kaart
+from analuus import kaart, ulevaade
+from analuus.meeskonnad import Teams
 from scrapers.geo import Geo, Region
 from scrapers.http import Fetcher
 from scrapers.model import DEFAULT_LEVEL, EVENT_SPORTS, LEVELS, SPORTS, TALLINN, Event, levels_for
@@ -591,6 +592,12 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
         leagues[(e.sport, e.league)] = slug
 
     game_tpl = env.get_template("game.html")
+    try:   # automaatne ülevaade (jalgpall): viga ei tohi lehe ehitust katki teha
+        _evs = list(all_game_events.values())
+        overview = ulevaade.Ulevaated(_evs, Teams.load().fit(_evs), today)
+    except Exception:  # noqa: BLE001
+        log.exception("ülevaate arvutamine ebaõnnestus")
+        overview = None
     for e in sorted(all_game_events.values(), key=lambda e: (e.start, e.id)):
         past = e.last_day < today
         in_window = days[0] <= e.start.date() <= days[-1] or (e.start.date() < days[0] <= e.last_day)
@@ -614,7 +621,7 @@ def render(events: list[Event], cfg: dict, today: date, out: Path = DIST,
                             day_href=f"../../{glv['prefix']}{geo.all.prefix}{gd.isoformat()}/" if in_window else "",
                             league_href=f"../../{e.sport}/{slug}/" if slug else (f"../../{e.sport}/" if listed(e) else ""),
                             title=game_title(e, e.result.replace("-", ":")), ld=event_ld(e, canonical),
-                            og_image=og_image),
+                            og_image=og_image, ulevaade=overview.for_game(e) if overview else None),
             encoding="utf-8")
         if not past and listed(e):
             urls.append(canonical)

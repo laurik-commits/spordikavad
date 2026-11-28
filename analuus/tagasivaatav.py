@@ -104,7 +104,8 @@ def main() -> None:
     ap.add_argument("--hooaeg", default="2026")
     ap.add_argument("--kontroll", action="store_true", help="lisa: iga suur liiga korda testina")
     a = ap.parse_args()
-    ms = lood.mangud(load_events(), Teams.load() if hasattr(Teams, "load") else Teams())
+    events = load_events()
+    ms = lood.mangud(events, Teams.load().fit(events))
     print(raport(ms, a.liiga, a.hooaeg))
     if a.kontroll:
         print("\n## Kontroll: iga suur liiga korda testina (alates soojendusest)\n")

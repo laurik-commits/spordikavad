@@ -58,6 +58,17 @@
   {% if channels %}
   <p class="watchnote">Selle liiga mänge on näidanud: {% for c in channels %}{% if c.url %}<a href="{{ c.url }}" rel="noopener">{{ c.name }}</a>{% else %}{{ c.name }}{% endif %}{{ ', ' if not loop.last }}{% endfor %}.</p>
   {% endif %}
+  {% if ulevaade %}
+  {% set parts = ulevaade.enne or ulevaade.parast %}
+  <section class="ulevaade" aria-labelledby="ulevaade-h">
+    <h2 id="ulevaade-h">Automaatne ülevaade <small>{{ 'enne mängu' if ulevaade.enne else 'pärast mängu' }}</small></h2>
+    <p class="ulenote">Arvutatud ainult meie andmestikust (tulemused, kohad, ülekanded), mitte tehisintellekti kirjutatud. Ennustus on meelelahutuslik analüüs, mitte soovitus.</p>
+    {% for s in parts %}
+    <h3>{{ s.title }}</h3>
+    <ul>{% for it in s["items"] %}<li>{% if s.ids and s.ids[loop.index0] %}<a href="../{{ s.ids[loop.index0] }}/">{{ it }}</a>{% else %}{{ it }}{% endif %}</li>{% endfor %}</ul>
+    {% endfor %}
+  </section>
+  {% endif %}
   {% if day_href %}<p><a href="{{ day_href }}">Selle päeva {{ level_info.games }} →</a></p>{% endif %}
   {% if league_href and not past %}<p><a href="{{ league_href }}">Rohkem: {{ e.league }} ({{ sports[e.sport] | lower }}) →</a></p>{% endif %}
 </main>
