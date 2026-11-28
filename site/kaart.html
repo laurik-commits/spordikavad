@@ -10,7 +10,7 @@
 <meta property="og:locale" content="et_EE">
 <meta property="og:site_name" content="Ela kaasa">
 <meta property="og:title" content="Spordikaart: kus ja millal Eestis mängitakse">
-<meta property="og:description" content="{{ paiku }} spordipaika, {{ mange }} mängu ja võistlust: kindel kuupäev või tüüpiline nädal, alade kaupa.">
+<meta property="og:description" content="{{ paiku }} spordipaika, {{ mange }} mängu ja võistlust: päev või nädal, alade kaupa.">
 <meta property="og:url" content="{{ canonical }}">
 <meta property="og:image" content="{{ base_url }}og.png">
 <meta property="og:image:width" content="1200">
@@ -51,31 +51,19 @@
   <div class="mapctl" id="vaadevalik">
     <fieldset class="vaade">
       <legend>Vaade</legend>
-      <label><input type="radio" name="vaade" value="paev" checked> Kindel kuupäev</label>
-      <label><input type="radio" name="vaade" value="nadal"> Tüüpiline nädal</label>
+      <label><input type="radio" name="vaade" value="paev" checked> Päev</label>
+      <label><input type="radio" name="vaade" value="nadal"> Nädal (7 päeva)</label>
       <button type="button" id="kogu">Kogu Eesti</button>
     </fieldset>
   </div>
   <div class="mapctl" id="kontrollid">
     <div class="rida" id="paevarida">
-      <label for="kuup">Kuupäev</label>
+      <label for="kuup" id="kuuplabel">Kuupäev</label>
       <button type="button" id="eelmine" aria-label="Eelmine päev">◀</button>
       <input type="date" id="kuup">
       <button type="button" id="jargmine" aria-label="Järgmine päev">▶</button>
       <button type="button" id="tana">Täna</button>
       <label class="kaasa"><input type="checkbox" id="tbc" checked> ka kellaajata üritused (terve päev)</label>
-    </div>
-    <div class="rida" id="nadalarida" hidden>
-      <label for="nadalapaev">Nädalapäev</label>
-      <select id="nadalapaev">
-        <option value="0">esmaspäev</option><option value="1">teisipäev</option><option value="2">kolmapäev</option>
-        <option value="3">neljapäev</option><option value="4">reede</option><option value="5">laupäev</option><option value="6">pühapäev</option>
-      </select>
-    </div>
-    <div class="rida" id="kellarida" hidden>
-      <label for="kell">Kellaaeg</label>
-      <input type="range" id="kell" min="0" max="1380" step="30" value="1080">
-      <output id="kellatekst" for="kell">18:00–21:00</output>
     </div>
   </div>
   <div class="mapctl" id="filtrid">
@@ -90,7 +78,7 @@
   </section>
 
   <section id="sissejuhatus">
-    <p class="intro">Kus Eestis mängitakse ja millal? Ringi suurus on mängude arv valitud ajaaknas, värv on selle koha enamlevinud ala. Vajuta ringile, et näha alasid ja järgmist mängu; nimekiri allpool tõstab sama koha mängud esile.</p>
+    <p class="intro">Kus Eestis mängitakse ja millal? Ringi suurus on mängude arv valitud päeval või nädalal, värv on selle koha enamlevinud ala. Vajuta ringile, et näha alasid ja järgmist mängu; nimekiri allpool tõstab sama koha mängud esile.</p>
     <p class="intro"><strong>Andmed katavad ainult kalendris olevaid liigasid</strong> ({{ paiku }} paika, {{ mange }} mängu ja võistlust), mitte kogu Eesti sporti. Mitmepäevased üritused on arvestatud alguspäeva järgi. Kodumeeskondade statistika on lehel <a href="{{ root }}analuus/">Analüüs</a>.</p>
   </section>
   <section id="lisa">

@@ -435,6 +435,8 @@ footer p { margin: .3rem 0; }
 .chips button { border-radius: 999px; padding: .25rem .7rem; font-size: .85rem; display: inline-flex; align-items: center; gap: .35rem; }
 .chips button[aria-pressed="false"] { opacity: .5; text-decoration: line-through; }
 .chips button[aria-pressed="true"] { background: var(--bar); color: var(--bar-fg); border-color: var(--bar); }
+.chips button .n { font-variant-numeric: tabular-nums; opacity: .8; }
+.chips button:disabled { background: var(--row); color: var(--muted); border: 1px dashed var(--line); opacity: .55; text-decoration: none; cursor: default; }
 /* kaardi leht: töölaual juhtnupud kaardi kohal, mobiilis kaart kohe päise all ja filtrid kokkuvolditud ribas */
 .kaart { display: flex; flex-direction: column; }
 .kaart > * { order: 0; }
@@ -446,6 +448,7 @@ footer p { margin: .3rem 0; }
 .kohalist { list-style: none; padding: 0; margin: 0 0 1rem; max-height: 26rem; overflow-y: auto; position: relative; border: 1px solid var(--line); border-radius: .4rem; }
 .kohalist li { padding: .15rem .6rem; border-bottom: 1px solid var(--line); border-left: 4px solid transparent; }
 .kohalist li:last-child { border-bottom: 0; }
+.kohalist li.paevakiri { position: sticky; top: 0; z-index: 1; background: var(--row); font-weight: 700; font-size: .85rem; padding: .35rem .6rem; border-left-color: var(--bar); }
 .kohalist li.esile { background: var(--row); border-left-color: var(--bar); }
 .kohalist li.tyhi { color: var(--muted); }
 .kohalist li.mang { display: grid; grid-template-columns: 3.4rem 1fr; column-gap: .5rem; align-items: baseline; }
@@ -462,6 +465,8 @@ footer p { margin: .3rem 0; }
   .kaart > #kontrollid { order: 5; } .kaart > #filtrid { order: 6; }
   .kaart > #kaardimark { order: 7; } .kaart > #valitud { order: 8; } .kaart > #sissejuhatus { order: 9; } .kaart > #lisa { order: 10; }
   .js .kaart.suletud > #kontrollid, .js .kaart.suletud > #filtrid { display: none; }
+  /* filtrid avatud: kaart jääb ekraani ülaossa nähtavale, filtrid kerivad selle all */
+  .js .kaart:not(.suletud) > #map { position: sticky !important; top: 0; z-index: 5; height: 36vh; min-height: 220px; margin-top: 0; }
 }
 .popup { font-size: .88rem; line-height: 1.35; }
 .popup ul { margin: .3rem 0; padding-left: 1.1rem; }
