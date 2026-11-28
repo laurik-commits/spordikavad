@@ -57,11 +57,9 @@ a { color: var(--link); text-decoration: none; }
 .brand { color: var(--bar-fg); font-weight: 700; font-size: 1.05rem; }
 .navlink { color: var(--bar-fg); font-weight: 600; font-size: .95rem; margin-left: auto; padding: .4rem .6rem; border-radius: .35rem; background: rgba(255,255,255,.13); text-decoration: none; }
 .navlink:hover, .navlink[aria-current] { background: rgba(255,255,255,.26); }
-.say .maplink { color: var(--bar-fg); background: rgba(255,255,255,.13); border-radius: .35rem; padding: .05rem .5rem; text-decoration: none; }
-.say .maplink:hover { background: rgba(255,255,255,.26); }
-.hero .say .maplink { display: inline-flex; align-items: center; min-height: 2.4rem; border: 1.5px solid #6fa8ee; background: rgba(10,45,100,.55); border-radius: 999px; padding: .35rem 1rem; font-weight: 600; margin: 0; }
-.hero .say .maplink:hover { background: rgba(60,120,200,.45); }
-@media (max-width: 40rem) { .hero .say .maplink { padding: .3rem .8rem; } }
+.mapbtn { display: inline-flex; align-items: center; justify-content: center; gap: .4rem; flex: none; color: var(--bar-fg); text-decoration: none; font-weight: 600; font-size: .95rem; border: 1.5px solid #6fa8ee; background: rgba(10,45,100,.55); border-radius: 999px; padding: .35rem 1rem; min-height: 2.4rem; }
+.mapbtn:hover { background: rgba(60,120,200,.45); }
+@media (max-width: 40rem) { .mapbtn { padding: .45rem .6rem; } .mapbtn .maplabel { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); } }
 
 /* linna- ja tasemevalik */
 .pick-menu summary {

@@ -89,7 +89,6 @@
         {% endfor %}
         </ul>
       </details>
-      <a class="maplink" href="{{ root }}kaart/{% if region.kind == 'city' %}?linn={{ region.slug }}{% endif %}">Kaart</a>
     </div>
     {# vaate valik ja kalender (site/kalender.js): ilma JS-ita peidus, päevalehed töötavad nagu enne #}
     <div class="ctl">
@@ -103,6 +102,7 @@
       <h1><button type="button" class="datebtn" aria-haspopup="dialog" aria-label="Vali kuupäev: {% if day == today %}täna, {% endif %}{{ human }}"><span class="datelabel">{% if day == today %}Täna, {% endif %}{{ human }}</span><svg class="calicon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2.5"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></button></h1>
       {% if next_day %}<a href="{{ here }}{{ next_day.isoformat() }}/" rel="next" class="step" aria-label="Järgmine päev">▶</a>{% else %}<span class="off step" aria-hidden="true">▶</span>{% endif %}
     </nav>
+    <a class="mapbtn" href="{{ root }}kaart/{% if region.kind == 'city' %}?linn={{ region.slug }}{% endif %}" aria-label="Kaart" title="Spordikaart"><span class="maplabel">Kaart</span><svg class="mapicon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></a>
     </div>
   </div>
 </header>
