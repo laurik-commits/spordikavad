@@ -45,6 +45,7 @@ ehitab ja avaldab iga päev GitHub Pagesi. Omanik tahab hooldusele kulutada peaa
   **mängu lehe automaatne ülevaade** (`site/game.html`): kõigil meeskonnamängude aladel faktid (vorm, arvutatud tabelikoht, omavahelised mängud, koht, mõlema järgmine mäng).
   **Tõenäosused (ennustus) ainult jalgpallil ja võrkpallil, tase 1–2** (`ulevaade.ENNUSTA`, `ENNUSTUSE_TASEMED`, omaniku otsus 2026-11-28: noored, madalamad liigad ja koondised ei saa tõenäosusi, ei enne ega pärast mängu).
   Ennustusel on tekst „Mudeli hinnang“ ja „ei ole kihlveo nõuanne“; võrkpalli mudel on **testimata** (andmeid vähe) ja lehel on see täpsustusena; kevadel teha sama tagasivaatav test kui jalgpallil.
+  **Liigalehe „meie tabel“** (`list.html`, `Ulevaated.tabel`): samal alal ja tasemel (jalgpall, võrkpall; tase 1–2; karikad, turniirid ja finaalid välja) järjestus meie tugevushinnangu järgi (± ≈ 350/√mänge) + arvutatud punktid, väravad/setid ja vorm; lehel „ei ole ametlik tabel ega ennustus“, võrkpallil lisaks „mudelit ei ole testitud“. Arvutatud tabel klapib allika omaga (`scripts/tulemuste_audit.py`).
   Ennustus alles kui mõlemal meeskonnal ≥ 3 mängu liiga andmetes. **Ainult arvutatud faktid** (ei vigastusi, taustu, piletiandmeid; kihlveofirmasid ei lingita, panustamise sõnavara pole); tekst on reeglipõhine, mitte keelemudeli kirjutatud ja lehel nii öeldud.
   Andmetes on üks hooaeg (2026), hooaja vahetuse taandumist pole testitud.
 - `ogimage.py` + `site/fonts/`: mängu OG-pilt (Pillow, DejaVu; igale eelseisvale mängule `m/<id>/og.png`, muul juhul üldine `og.png`)

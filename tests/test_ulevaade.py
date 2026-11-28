@@ -131,5 +131,75 @@ class UlevaadeTest(unittest.TestCase):
         self.assertTrue(any("Omavahelised" in s["title"] for s in u["enne"]))
 
 
+class TabelTest(unittest.TestCase):
+    def build(self, events):
+        return Ulevaated(events, Teams().fit(events), TODAY)
+
+    def test_football_table_sorted_by_strength_with_computed_points(self):
+        t = self.build(liiga()).tabel("jalgpall", "Premium liiga")
+        self.assertEqual(len(t["rows"]), 8)
+        self.assertEqual(t["rows"][0]["team"], "A")                       # A võidab kõik
+        self.assertEqual([r["koht"] for r in t["rows"]], list(range(1, 9)))
+        tugevused = [r["tugevus"] for r in t["rows"]]
+        self.assertEqual(tugevused, sorted(tugevused, reverse=True))
+        a = t["rows"][0]
+        self.assertEqual((a["v"], a["k"], a["pts"], a["pts_koht"]), (a["m"], 0, 3 * a["m"], 1))
+        self.assertTrue(t["viigiga"] and not t["testimata"])
+        self.assertGreater(a["unc"], 0)
+
+    def test_table_only_for_allowed_sport_level_and_league_kind(self):
+        base = liiga()
+        youth = [Event(**{**e.__dict__, "level": 4}) for e in base]
+        self.assertIsNone(self.build(youth).tabel("jalgpall", "Premium liiga"))             # noorte tase: tabelit pole
+        cup = [Event(**{**e.__dict__, "league": "Eesti karikas"}) for e in base]
+        self.assertIsNone(self.build(cup).tabel("jalgpall", "Eesti karikas"))               # karikas pole liiga
+        k = [ev(i, "A", "B", "80-70", sport="korvpall", liiga="KML") for i in range(5)]
+        self.assertIsNone(self.build(k).tabel("korvpall", "KML"))                          # korvpallil mudelit pole
+
+    def test_volleyball_table_is_flagged_untested_and_has_no_draw(self):
+        evs = []
+        i = 0
+        for _ in range(2):
+            for a in "ABCD":
+                for b in "ABCD":
+                    if a != b:
+                        i += 1
+                        evs.append(ev(4000 + i, a, b, "3-0" if a == "A" else "0-3" if b == "A" else "3-2", day=1 + i % 25, liiga="Meistriliiga", sport="vorkpall"))
+        t = self.build(evs).tabel("vorkpall", "Meistriliiga")
+        self.assertTrue(t["testimata"] and not t["viigiga"])
+        self.assertEqual(t["rows"][0]["team"], "A")
+        self.assertEqual(t["yhik"], "setti")
+        self.assertTrue(all(r["x"] == 0 for r in t["rows"]))
+
+
+class LiigaleheTabelTest(unittest.TestCase):
+    def test_league_page_shows_table_with_disclaimers_and_youth_page_does_not(self):
+        import tempfile
+        from pathlib import Path
+        import build
+        from scrapers import config
+        evs = []
+        i = 0
+        for league, level in (("Meistriliiga (naised)", 1), ("U-18 neiud", 4)):
+            for _ in range(2):
+                for a in "ABCD":
+                    for b in "ABCD":
+                        if a != b:
+                            i += 1
+                            evs.append(Event(**{**ev(5000 + i, a + league[:1], b + league[:1], "3-1", day=1 + i % 25, liiga=league, sport="vorkpall", level=level).__dict__,
+                                                "start": datetime(2026, 11, 1 + i % 25, 18, tzinfo=TALLINN)}))
+        out = Path(tempfile.mkdtemp())
+        cfg = {"site": {"days_ahead": 3, "base_url": "https://example.org/", "default_level": 1},
+               "geo": dict(config.load()["geo"], default="tallinn"), "source": config.load()["source"]}
+        build.render(evs, cfg, date(2026, 11, 30), out)
+        page = (out / "vorkpall" / "meistriliiga-naised" / "index.html").read_text(encoding="utf-8")
+        self.assertIn("Meie tabel", page)
+        self.assertIn("ei ole ametlik tabel ega ennustus", page)
+        self.assertIn("ei ole testitud", page)                                              # võrkpalli täpsustus
+        self.assertIn("<table", page)
+        youth = (out / "vorkpall" / "u-18-neiud" / "index.html").read_text(encoding="utf-8")
+        self.assertNotIn("Meie tabel", youth)
+
+
 if __name__ == "__main__":
     unittest.main()
