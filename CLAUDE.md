@@ -42,9 +42,11 @@ ehitab ja avaldab iga päev GitHub Pagesi. Omanik tahab hooldusele kulutada peaa
   `analuus/halliefekt.py`: halli efekt = meeskonna kodu-% hallis miinus sama meeskonna võõrsil-% samal hooajal (kaalutud, viik eraldi, Newcombe'i vahemik; välistab koondised, turniirid/karika, mitte-regulaarkasutajad);
   raport: `python -m analuus.halliefekt --koht Wismari`. **Mitte põhjuslik.**
 - `analuus/ennustus.py` + `analuus/tagasivaatav.py` + `analuus/ulevaade.py`: Elo-tüüpi tugevusnumber (jalgpall, võit/viik/kaotus), tagasivaatav test (`python -m analuus.tagasivaatav --kontroll`: parameetrid valitakse teistel liigadel, ennustus ainult varasemate mängudega) ja
-  **mängu lehe automaatne ülevaade** (`site/game.html`): enne (tõenäosused, vorm, arvutatud tabelikoht, omavahelised mängud, koht; ennustus alles kui mõlemal meeskonnal ≥ 3 mängu liiga andmetes) ja pärast (kas ennustus pidas, üllatus,
-  tugevusnumbri muutus, mõlema järgmine mäng). **Ainult arvutatud faktid** (ei vigastusi, taustu, piletiandmeid; kihlveofirmasid ei lingita, panustamise sõnavara pole); tekst on reeglipõhine, mitte keelemudeli kirjutatud ja lehel nii öeldud.
-  Andmetes on üks hooaeg (2026), hooaja vahetuse taandumist pole testitud. Muud alad: ülevaadet pole.
+  **mängu lehe automaatne ülevaade** (`site/game.html`): kõigil meeskonnamängude aladel faktid (vorm, arvutatud tabelikoht, omavahelised mängud, koht, mõlema järgmine mäng).
+  **Tõenäosused (ennustus) ainult jalgpallil ja võrkpallil, tase 1–2** (`ulevaade.ENNUSTA`, `ENNUSTUSE_TASEMED`, omaniku otsus 2026-11-28: noored, madalamad liigad ja koondised ei saa tõenäosusi, ei enne ega pärast mängu).
+  Ennustusel on tekst „Mudeli hinnang“ ja „ei ole kihlveo nõuanne“; võrkpalli mudel on **testimata** (andmeid vähe) ja lehel on see täpsustusena; kevadel teha sama tagasivaatav test kui jalgpallil.
+  Ennustus alles kui mõlemal meeskonnal ≥ 3 mängu liiga andmetes. **Ainult arvutatud faktid** (ei vigastusi, taustu, piletiandmeid; kihlveofirmasid ei lingita, panustamise sõnavara pole); tekst on reeglipõhine, mitte keelemudeli kirjutatud ja lehel nii öeldud.
+  Andmetes on üks hooaeg (2026), hooaja vahetuse taandumist pole testitud.
 - `ogimage.py` + `site/fonts/`: mängu OG-pilt (Pillow, DejaVu; igale eelseisvale mängule `m/<id>/og.png`, muul juhul üldine `og.png`)
 - `scripts/`: `automerge_check.py` (agendi PR-i kontroll), `report_issues.py` (katkised allikad → GitHub Issue ja rida `MAINTENANCE.md`-i),
   `maintenance_log.py` (hoolduslogi ja kokkuvõte)

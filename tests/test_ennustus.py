@@ -46,6 +46,16 @@ class EloTest(unittest.TestCase):
         self.assertGreater(full, half)
 
 
+class KaheTulemusegaTest(unittest.TestCase):
+    def test_summa_on_yks_viiki_pole_ja_kodueelis_toimib(self):
+        p = en.Parameetrid(kodueelis=60.0)
+        ph, pv, pg = en.tõenäosused_kaks(1500, 1500, p)
+        self.assertEqual(pv, 0.0)
+        self.assertAlmostEqual(ph + pg, 1.0)
+        self.assertGreater(ph, 0.5)
+        self.assertGreater(en.tõenäosused_kaks(1700, 1500, p)[0], ph)
+
+
 class MoodikudTest(unittest.TestCase):
     def test_brier(self):
         self.assertEqual(en.brier((1, 0, 0), "kodu"), 0.0)

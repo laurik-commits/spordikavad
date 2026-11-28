@@ -42,6 +42,12 @@ def tõenäosused(r_kodu: float, r_kyl: float, p: Parameetrid) -> tuple[float, f
     return ph, max(0.0, 1.0 - ph - pa), pa
 
 
+def tõenäosused_kaks(r_kodu: float, r_kyl: float, p: Parameetrid) -> tuple[float, float, float]:
+    """Alad ilma viigita (võrkpall): P(kodu) = σ(x), P(viik) = 0, P(külaline) = 1 − P(kodu); x = (reitingute vahe + kodueelis) · ln10/400."""
+    ph = sigma((r_kodu - r_kyl + p.kodueelis) * LN10_400)
+    return ph, 0.0, 1.0 - ph
+
+
 def tegelik(m) -> str:
     """„kodu“ | „viik“ | „kylaline“ (ilma täpitähtedeta, et sobiks mudeli väljundi võtmetega)."""
     w = tul.voitja(m.t)
