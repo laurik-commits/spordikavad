@@ -438,8 +438,8 @@ footer p { margin: .3rem 0; }
 /* kaardi leht: töölaual juhtnupud kaardi kohal, mobiilis kaart kohe päise all ja filtrid kokkuvolditud ribas */
 .kaart { display: flex; flex-direction: column; }
 .kaart > * { order: 0; }
-#sissejuhatus { order: 1; } #kontrollid { order: 2; } #selgitus { order: 3; } #map { order: 4; } #filtrid { order: 5; }
-#kaardimark { order: 6; } #valitud { order: 7; } #lisa { order: 8; }
+#sissejuhatus { order: 1; } #vaadevalik { order: 2; } #kontrollid { order: 3; } #selgitus { order: 4; } #map { order: 5; } #filtrid { order: 6; }
+#kaardimark { order: 7; } #valitud { order: 8; } #lisa { order: 9; }
 .filtritoggle { display: none; }
 .js .kaart.laeb #sissejuhatus, .js .kaart.laeb #lisa, .js .kaart.laeb ~ footer { visibility: hidden; }   /* nimekiri täitub andmetega: selle all olev tekst ei tohi nihkuda (CLS) */
 #selgitus { margin: 0; min-height: 4.6em; }
@@ -456,10 +456,11 @@ footer p { margin: .3rem 0; }
 .kohalist .dot { display: inline-block; width: .65rem; height: .65rem; border-radius: 50%; margin-right: .35rem; }
 @media (max-width: 40rem) {
   .kaart > #map { order: 1; height: 56vh; min-height: 300px; margin: .4rem 0; }
-  .kaart > .filtritoggle { order: 2; display: block; width: 100%; font: inherit; font-weight: 600; border: 1px solid var(--line); background: var(--row); color: var(--fg); border-radius: .4rem; padding: .5rem .7rem; min-height: 2.6rem; text-align: left; cursor: pointer; }
-  .kaart > #selgitus { order: 3; margin-top: .5rem; }
-  .kaart > #kontrollid { order: 4; } .kaart > #filtrid { order: 5; }
-  .kaart > #kaardimark { order: 6; } .kaart > #valitud { order: 7; } .kaart > #sissejuhatus { order: 8; } .kaart > #lisa { order: 9; }
+  .kaart > .filtritoggle { order: 3; display: block; width: 100%; font: inherit; font-weight: 600; border: 1px solid var(--line); background: var(--row); color: var(--fg); border-radius: .4rem; padding: .5rem .7rem; min-height: 2.6rem; text-align: left; cursor: pointer; }
+  .kaart > #vaadevalik { order: 2; margin: .4rem 0; }
+  .kaart > #selgitus { order: 4; margin-top: .5rem; }
+  .kaart > #kontrollid { order: 5; } .kaart > #filtrid { order: 6; }
+  .kaart > #kaardimark { order: 7; } .kaart > #valitud { order: 8; } .kaart > #sissejuhatus { order: 9; } .kaart > #lisa { order: 10; }
   .js .kaart.suletud > #kontrollid, .js .kaart.suletud > #filtrid { display: none; }
 }
 .popup { font-size: .88rem; line-height: 1.35; }
