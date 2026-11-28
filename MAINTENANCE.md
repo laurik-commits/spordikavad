@@ -8,10 +8,10 @@ muud asja parandab (inimene või agent, üks rida: mis oli katki, mis parandus o
 
 | Kuu | Avatud | Suletud | Käsitsi parandusi |
 |---|---|---|---|
-| 2026-11 | 13 | 11 | 0 |
-| **Kokku** | **13** | **11** | **0** |
+| 2026-11 | 14 | 12 | 0 |
+| **Kokku** | **14** | **12** | **0** |
 
-- Praegu avatud automaatseid Issue'sid: **2**: [#21](https://github.com/laurik-commits/spordikavad/issues/21) Tundmatud toimumiskohad, [#72](https://github.com/laurik-commits/spordikavad/issues/72) Allikas katki: jaahoki_everest
+- Praegu avatud automaatseid Issue'sid: **3**: [#21](https://github.com/laurik-commits/spordikavad/issues/21) Tundmatud toimumiskohad, [#72](https://github.com/laurik-commits/spordikavad/issues/72) Allikas katki: jaahoki_everest, [#80](https://github.com/laurik-commits/spordikavad/issues/80) Allikas katki: jaahoki_everest
 - Keskmine aeg avamisest sulgemiseni: 0.5 päeva (11 suletud Issue't)
 
 ## Käsitsi hooldus
@@ -48,3 +48,5 @@ muud asja parandab (inimene või agent, üks rida: mis oli katki, mis parandus o
 | 2026-11-27 | avatud | [#72](https://github.com/laurik-commits/spordikavad/issues/72) Allikas katki: jaahoki_everest |  |
 | 2026-11-28 | avatud | [#75](https://github.com/laurik-commits/spordikavad/issues/75) Allikas katki: jaahoki_everest |  |
 | 2026-11-28 | suletud | [#75](https://github.com/laurik-commits/spordikavad/issues/75) Allikas katki: jaahoki_everest | Allikas töötab jälle |
+| 2026-11-28 | avatud | [#80](https://github.com/laurik-commits/spordikavad/issues/80) Allikas katki: jaahoki_everest |  |
+| 2026-11-28 | suletud | [#79](https://github.com/laurik-commits/spordikavad/issues/79) Allikas katki: kava_err | Allikas töötab jälle |
