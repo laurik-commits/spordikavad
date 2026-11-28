@@ -1,21 +1,6 @@
 {
- "updated": "2026-11-27T05:55:36+02:00",
+ "updated": "2026-11-28T07:01:53+02:00",
  "events": [
-  {
-   "id": "f8c32b150a6d",
-   "sport": "kergejoustik",
-   "league": "Noorte võistlused",
-   "start": "2026-11-27T13:00:00+02:00",
-   "home": "TV 10 Olümpiastarti Valgamaa I etapp",
-   "away": "",
-   "venue": "Valga Spordihoone",
-   "city": "Valga",
-   "url": "https://www.ekjl.ee/kalender/",
-   "source": "kergejoustik_ekjl",
-   "time_tbc": false,
-   "result": "",
-   "level": 4
-  },
   {
    "id": "df6cc1f1c0d3",
    "sport": "kergejoustik",
